@@ -1,0 +1,1 @@
+neuron_id,layer,neuron_idx,category,prompt_id,orig_entropy,ablated_entropy,entropy_shift,orig_top1_prob,ablated_top1_prob,direct_effect_score,split
