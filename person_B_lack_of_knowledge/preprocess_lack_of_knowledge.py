@@ -38,84 +38,104 @@ def clone_repo():
 
 def find_nec_files():
     """
-    Searches the cloned repo for files whose name suggests the NEC
-    (Non-Existent Concepts) subset. Adjust the glob pattern once you've
-    seen the actual repo layout.
+    The repo's `data/NEC/` folder holds the actual dataset (2 clean files:
+    NEC_answerable.json, NEC_unanswerable.json). Everything under `outputs/`
+    is experiment results (model responses, confidence scores, eval logs
+    from the paper) -- not the base dataset, and some of those are
+    JSON-Lines rather than plain JSON, which breaks a naive json.load().
+    Only search data/NEC/ to avoid pulling those in.
     """
-    candidates = list(CLONE_DIR.rglob("*nec*")) + list(CLONE_DIR.rglob("*NEC*"))
-    candidates = [c for c in candidates if c.suffix in (".json", ".jsonl", ".csv")]
+    data_dir = CLONE_DIR / "data" / "NEC"
+    candidates = list(data_dir.glob("*.json"))
     return candidates
+
+
+def _load_json_or_jsonl(filepath):
+    """
+    Some files in this repo are named .json but are actually JSON-Lines
+    (one JSON object per line) rather than a single JSON array/object.
+    Try standard json.load() first; if that fails with "Extra data"
+    (the telltale sign of JSONL), fall back to line-by-line parsing.
+    """
+    with open(filepath) as fh:
+        content = fh.read()
+    try:
+        data = json.loads(content)
+        return data if isinstance(data, list) else list(data.values())
+    except json.JSONDecodeError:
+        records = []
+        for line in content.splitlines():
+            line = line.strip()
+            if line:
+                records.append(json.loads(line))
+        return records
 
 
 def inspect_structure(files):
     """
-    Run this FIRST, standalone, before trusting the rest of the script.
-    Prints the first record of each candidate file so you can see the
-    real field names.
+    Run this FIRST, before trusting extract_prompt_and_label(). Prints the
+    first record of each file so you can confirm the question/prompt field name.
     """
     for f in files:
         print(f"\n--- {f} ---")
-        if f.suffix == ".jsonl":
-            with open(f) as fh:
-                first_line = fh.readline()
-            print(json.loads(first_line))
-        elif f.suffix == ".json":
-            with open(f) as fh:
-                data = json.load(fh)
-            item = data[0] if isinstance(data, list) else next(iter(data.values()))
-            print(item)
-        else:
-            with open(f) as fh:
-                print(fh.readline())
-                print(fh.readline())
+        items = _load_json_or_jsonl(f)
+        print(items[0])
+
+
+def convert_to_cloze_prompt(question: str, suffix: str = " The answer is") -> str:
+    """
+    Converts an open-ended question into a completion-style prompt.
+
+    WHY: raw questions like "What is the proper way to eat X?" put the
+    meaningful uncertainty several tokens into the model's response, not at
+    the very next token -- the first generated token is mostly determined
+    by English grammar / chat-assistant habits ("The", "There", "I"), not
+    by whether the model actually knows the entity. Appending a fixed
+    completion trigger pulls the uncertainty signal to the next token,
+    matching the cloze-style measurement already used by the ambiguity and
+    contradictory-context categories, so entropy means roughly the same
+    thing across all three categories.
+    """
+    q = question.strip()
+    if not q.endswith("?"):
+        q += "?"
+    return q + suffix
 
 
 def extract_prompt_and_label(record: dict) -> tuple[str, bool] | None:
     """
-    TODO: adjust these key names after running inspect_structure() and
-    seeing the real schema. Common possibilities based on the paper's
-    description (fabricated entity + matched answerable control) are
-    sketched below -- treat this as a starting guess, not verified fact.
-
-    Returns (question_text, is_non_existent) or None to skip a record.
+    is_non_existent comes from load_nec_records() tagging based on which
+    file the record was loaded from (reliable). Only the question/prompt
+    TEXT field name still needs verifying via inspect_structure() --
+    adjust the fallbacks below if none of them match what you see printed.
     """
-    # --- Likely candidate field names, try in this order ---
     question = (
         record.get("question")
         or record.get("query")
         or record.get("prompt")
+        or record.get("text")
     )
     if question is None:
         return None
 
-    # is_non_existent: True for fabricated-entity (NEC) items,
-    # False for their matched answerable controls
-    is_non_existent = record.get("is_fabricated")
-    if is_non_existent is None:
-        is_non_existent = record.get("label") == "non-existent"
-    if is_non_existent is None:
-        # fallback: some UnknownBench-style sets mark this via a
-        # "type" or "category" field instead
-        is_non_existent = str(record.get("type", "")).lower() in (
-            "nec", "non_existent", "fabricated"
-        )
-
+    is_non_existent = record.get("_is_non_existent", False)
     return question.strip(), bool(is_non_existent)
 
 
 def load_nec_records(files) -> list[dict]:
+    """
+    Tags each record with is_non_existent based on which FILE it came from
+    (NEC_unanswerable.json vs NEC_answerable.json), since the filename is a
+    more reliable signal than guessing an internal field name.
+    """
     all_records = []
     for f in files:
-        if f.suffix == ".jsonl":
-            with open(f) as fh:
-                for line in fh:
-                    line = line.strip()
-                    if line:
-                        all_records.append(json.loads(line))
-        elif f.suffix == ".json":
-            with open(f) as fh:
-                data = json.load(fh)
-            all_records.extend(data if isinstance(data, list) else list(data.values()))
+        is_unanswerable_file = "unanswerable" in f.stem.lower()
+        items = _load_json_or_jsonl(f)
+        for item in items:
+            item = dict(item) if isinstance(item, dict) else {"raw": item}
+            item["_is_non_existent"] = is_unanswerable_file
+            all_records.append(item)
     return all_records
 
 
@@ -143,7 +163,7 @@ def main():
             continue
         question, is_non_existent = parsed
         if is_non_existent:  # keep only the NEC (unanswerable) items
-            raw_prompts.append(question)
+            raw_prompts.append(convert_to_cloze_prompt(question))
 
     print(f"Extracted {len(raw_prompts)} non-existent-concept questions "
           f"(need >= 120 to subsample).")

@@ -8,3 +8,5 @@ scipy
 scikit-learn
 matplotlib
 jupyter
+jinja2
+huggingface_hub

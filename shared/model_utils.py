@@ -66,6 +66,46 @@ def compute_top1_prob(probs):
     return torch.max(probs).item()
 
 
+def compute_multi_token_entropy(model, tokenizer, prompt, k=5):
+    """
+    Supplementary metric for prompts where single-token entropy isn't
+    meaningful (e.g. open-ended questions where the first generated token
+    is mostly grammatical/conversational scaffolding, not a genuine
+    confidence signal). Prefer reformatting the prompt into a cloze/
+    completion style instead where possible (see convert_to_cloze_prompt()
+    in person_B_lack_of_knowledge/preprocess_lack_of_knowledge.py) --
+    this function is a documented fallback, not a silent replacement.
+
+    NOTE ON INTERPRETATION: this is noisier than single-token entropy.
+    Each step is conditioned on a greedily-picked previous token, so an
+    early "wrong turn" skews every later value -- these are not k
+    independent samples. The choice of k, and of greedy vs. sampled
+    decoding, are hidden hyperparameters this metric introduces that
+    single-token entropy does not have. If used, report this explicitly
+    as a methodological choice, not hide it.
+
+    Returns dict with mean_entropy, max_entropy, and the raw per-token list.
+    """
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    generated_ids = inputs["input_ids"]
+    entropies = []
+
+    with torch.no_grad():
+        for _ in range(k):
+            outputs = model(input_ids=generated_ids)
+            logits = outputs.logits[0, -1, :]
+            probs = F.softmax(logits, dim=-1)
+            entropies.append(compute_entropy(probs))
+            next_token = torch.argmax(probs).unsqueeze(0).unsqueeze(0)
+            generated_ids = torch.cat([generated_ids, next_token], dim=1)
+
+    return {
+        "mean_entropy": sum(entropies) / len(entropies),
+        "max_entropy": max(entropies),
+        "per_token_entropy": entropies,
+    }
+
+
 if __name__ == "__main__":
     # Sanity check — run this first. Confident prompt should have lower entropy
     # than an ambiguous one. If this doesn't hold, something's wrong before you go further.
