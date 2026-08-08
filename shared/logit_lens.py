@@ -21,11 +21,12 @@ def direct_effect_logits(model, layer_idx, neuron_idx):
 
     Handles both quantized (4-bit) and full-precision weight tensors.
     """
-    unembed = model.get_output_embeddings().weight
+    unembed = model.get_output_embeddings().weight  # [vocab_size, hidden_dim]
     down_proj = model.model.layers[layer_idx].mlp.down_proj
 
     if hasattr(down_proj.weight, "quant_state"):
-        # 4-bit quantized weight — dequantize this one matrix on demand
+        # 4-bit quantized weight (bitsandbytes Params4bit) — dequantize this one
+        # matrix on demand before indexing into it
         weight = bnb_F.dequantize_4bit(down_proj.weight, down_proj.weight.quant_state)
     else:
         # full precision — use as-is
@@ -37,11 +38,17 @@ def direct_effect_logits(model, layer_idx, neuron_idx):
 
 
 def top_direct_effect_tokens(model, tokenizer, layer_idx, neuron_idx, k=5):
+    """Convenience: return the top-k tokens this neuron pushes toward directly."""
     logits = direct_effect_logits(model, layer_idx, neuron_idx)
     top = torch.topk(logits, k)
     return [(tokenizer.decode(idx), val.item()) for val, idx in zip(top.values, top.indices)]
 
 
 def direct_effect_score(model, layer_idx, neuron_idx):
+    """
+    A single summary number for direct effect magnitude: the max absolute logit value
+    a neuron produces via the direct pathway. Small = likely indirect/null-space mechanism.
+    Large = likely a direct, token-specific effect.
+    """
     logits = direct_effect_logits(model, layer_idx, neuron_idx)
     return torch.max(torch.abs(logits)).item()

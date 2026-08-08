@@ -11,6 +11,12 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 
 def load_model(model_id="meta-llama/Llama-3.1-8B-Instruct", quantize=True):
+    """Tool 1: load the model and tokenizer.
+
+    quantize=True uses 4-bit loading (fits in 16GB, good for Kaggle free GPUs).
+    Set quantize=False for precision-sensitive Phase 3/4 runs if you have access
+    to a 24GB+ GPU — quantization is a known confound for neuron-level measurements.
+    """
     tokenizer = AutoTokenizer.from_pretrained(model_id)
 
     if quantize:
@@ -21,10 +27,15 @@ def load_model(model_id="meta-llama/Llama-3.1-8B-Instruct", quantize=True):
             bnb_4bit_quant_type="nf4",
         )
         model = AutoModelForCausalLM.from_pretrained(
-            model_id, quantization_config=bnb_config, device_map="auto",
+            model_id,
+            quantization_config=bnb_config,
+            device_map="auto",
         )
     else:
-        model = AutoModelForCausalLM.from_pretrained(model_id, device_map="auto")
+        model = AutoModelForCausalLM.from_pretrained(
+            model_id,
+            device_map="auto",
+        )
 
     model.eval()
     return model, tokenizer
