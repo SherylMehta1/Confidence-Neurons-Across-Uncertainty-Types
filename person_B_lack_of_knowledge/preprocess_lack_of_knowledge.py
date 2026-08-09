@@ -17,6 +17,7 @@ than silently guess wrong field names.
 import sys
 sys.path.append(".")  # run this script from the repo root
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -25,6 +26,45 @@ from shared.schema_utils import load_tokenizer, build_records, save_records
 REPO_URL = "https://github.com/genglinliu/UnknownBench.git"
 CLONE_DIR = Path("UnknownBench")
 OUTPUT_PATH = "data/lack_of_knowledge/prompts.jsonl"
+
+# --- Factoid filter -----------------------------------------------------
+# We restrict to short-answer, single-entity questions (matching the
+# cloze-completion structure the contradictory-context category already
+# has by construction) and drop open-ended / explanatory questions, since
+# the latter don't have a natural single-token-ish answer and would dilute
+# the entropy signal with generic sentence-starter tokens instead of
+# content that actually reflects whether the model knows the entity.
+# See project discussion: appending "The answer is" alone doesn't fix this
+# -- question STRUCTURE has to be short-answer to begin with.
+
+FACTOID_STARTS = (
+    "what is", "what was", "what are the name", "who is", "who was",
+    "where is", "where was", "when did", "when was", "which",
+)
+
+OPEN_ENDED_PATTERNS = (
+    r"^how\b",              # "How do/does/did/is/are..."
+    r"^why\b",               # "Why is/does..."
+    r"what are the (methods|steps|ways|effects|reasons|benefits|"
+    r"advantages|disadvantages|causes|consequences|implications)",
+    r"^describe\b", r"^explain\b", r"^discuss\b",
+    r"in what ways", r"to what extent",
+)
+
+
+def is_factoid_question(question: str) -> bool:
+    """
+    Keep only questions with a natural short-answer / single-entity
+    completion. Reject explicitly open-ended / explanatory phrasing even
+    if it happens to start with an otherwise-allowed word.
+    """
+    q = question.strip().lower()
+
+    for pattern in OPEN_ENDED_PATTERNS:
+        if re.search(pattern, q):
+            return False
+
+    return q.startswith(FACTOID_STARTS)
 
 
 def clone_repo():
@@ -157,16 +197,24 @@ def main():
     print(f"Loaded {len(raw_records)} raw records.")
 
     raw_prompts = []
+    n_dropped_non_factoid = 0
     for r in raw_records:
         parsed = extract_prompt_and_label(r)
         if parsed is None:
             continue
         question, is_non_existent = parsed
-        if is_non_existent:  # keep only the NEC (unanswerable) items
-            raw_prompts.append(convert_to_cloze_prompt(question))
+        if not is_non_existent:  # keep only the NEC (unanswerable) items
+            continue
+        if not is_factoid_question(question):
+            n_dropped_non_factoid += 1
+            continue
+        raw_prompts.append(convert_to_cloze_prompt(question))
 
-    print(f"Extracted {len(raw_prompts)} non-existent-concept questions "
+    print(f"Extracted {len(raw_prompts)} factoid non-existent-concept questions "
           f"(need >= 120 to subsample).")
+    print(f"Dropped {n_dropped_non_factoid} open-ended/explanatory questions "
+          f"(e.g. 'how'/'why'/'what are the methods...') -- these don't have a "
+          f"natural single-entity completion, see is_factoid_question() docstring.")
 
     tokenizer = load_tokenizer()
     records = build_records(
