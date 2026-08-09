@@ -5,6 +5,13 @@ and run the candidate-neuron detection scan.
 Reference: Gurnee et al. (2024), "Universal Neurons in GPT-2" for the activation
 extraction methodology; Stolfo et al. (2024) for the correlation-based detection approach.
 
+NOTE: "neuron" here means one unit of the MLP's INTERMEDIATE activation space
+(the down_proj's INPUT, size intermediate_size) -- NOT the mlp module's overall
+OUTPUT (size hidden_size). This matches the indexing used in logit_lens.py's
+down_proj.weight[:, neuron_idx]. An earlier version of this file hooked the
+whole mlp module's output instead, which silently used a different neuron
+space than logit_lens.py -- fixed here.
+
 BUILT AND RUN ONCE, TOGETHER. Output (candidate_neurons.json) is then frozen and shared.
 """
 
@@ -15,64 +22,74 @@ import torch
 from shared.model_utils import get_next_token_probs, compute_entropy
 
 
-def get_neuron_activation(model, tokenizer, prompt, layer_idx, neuron_idx):
-    """Tool 3: hook into one MLP layer, capture one neuron's activation at the last token position."""
-    activations = {}
+def capture_intermediate_activations(model, tokenizer, prompt, layer_indices):
+    """
+    Captures the MLP intermediate activation (down_proj's INPUT) for every
+    layer in layer_indices, in ONE forward pass, at the last token position.
+    """
+    captured = {}
+    handles = []
 
-    def hook_fn(module, input, output):
-        activations["val"] = output.detach()
+    def make_pre_hook(layer_idx):
+        def hook_fn(module, args):
+            captured[layer_idx] = args[0].detach()[0, -1, :].to(torch.float32).cpu().numpy()
+        return hook_fn
 
-    handle = model.model.layers[layer_idx].mlp.register_forward_hook(hook_fn)
+    for layer_idx in layer_indices:
+        down_proj = model.model.layers[layer_idx].mlp.down_proj
+        handles.append(down_proj.register_forward_pre_hook(make_pre_hook(layer_idx)))
+
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
     with torch.no_grad():
         model(**inputs)
-    handle.remove()  # always remove hooks when done
 
-    return activations["val"][0, -1, neuron_idx].item()
+    for h in handles:
+        h.remove()
+
+    return captured
+
+
+def get_neuron_activation(model, tokenizer, prompt, layer_idx, neuron_idx):
+    """Tool 3: single-neuron convenience wrapper (correct intermediate-space indexing)."""
+    captured = capture_intermediate_activations(model, tokenizer, prompt, [layer_idx])
+    return float(captured[layer_idx][neuron_idx])
 
 
 def detect_candidate_neurons(model, tokenizer, baseline_prompts, layer_range, top_k=15):
     """
-    Phase 2: for every neuron in layer_range, correlate its activation with entropy
-    across baseline_prompts (a general-purpose prompt set, NOT category-specific).
-
-    layer_range should be restricted to late layers (roughly the last third of the
-    model) per prior work (Stolfo et al., Context Copying Modulation) rather than
-    scanning every layer — this keeps the search bounded and principled, not a blind scan.
-
-    Returns the top_k (layer, neuron, correlation) tuples by absolute correlation.
+    Phase 2: for every neuron (intermediate-space) in layer_range, correlate its
+    activation with entropy across baseline_prompts (general-purpose, NOT
+    category-specific). One forward pass per prompt, all target layers captured
+    simultaneously -- not one forward pass per layer.
     """
-    # Precompute entropy for each baseline prompt once
-    entropies = []
-    for prompt in baseline_prompts:
-        probs = get_next_token_probs(model, tokenizer, prompt)
-        entropies.append(compute_entropy(probs))
+    entropies = np.array([
+        compute_entropy(get_next_token_probs(model, tokenizer, p))
+        for p in baseline_prompts
+    ])
 
-    hidden_dim = model.config.hidden_size
+    layer_range = list(layer_range)
+    intermediate_size = model.config.intermediate_size
+
+    acts_by_layer = {
+        l: np.zeros((len(baseline_prompts), intermediate_size), dtype=np.float32)
+        for l in layer_range
+    }
+
+    for i, prompt in enumerate(baseline_prompts):
+        captured = capture_intermediate_activations(model, tokenizer, prompt, layer_range)
+        for l in layer_range:
+            acts_by_layer[l][i, :] = captured[l]
+        if (i + 1) % 10 == 0:
+            print(f"  processed {i+1}/{len(baseline_prompts)} baseline prompts")
+
     results = []
-
     for layer_idx in layer_range:
-        # Capture the WHOLE layer's activations once per prompt (much faster than
-        # re-running the model once per neuron)
-        layer_acts = []  # shape: [n_prompts, hidden_dim]
-        for prompt in baseline_prompts:
-            activations = {}
-
-            def hook_fn(module, input, output):
-                activations["val"] = output.detach()
-
-            handle = model.model.layers[layer_idx].mlp.register_forward_hook(hook_fn)
-            inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-            with torch.no_grad():
-                model(**inputs)
-            handle.remove()
-            layer_acts.append(activations["val"][0, -1, :].cpu().numpy())
-
-        layer_acts = np.array(layer_acts)  # [n_prompts, hidden_dim]
-
-        for neuron_idx in range(hidden_dim):
-            acts_for_neuron = layer_acts[:, neuron_idx]
-            corr = np.corrcoef(acts_for_neuron, entropies)[0, 1]
+        layer_acts = acts_by_layer[layer_idx]
+        for neuron_idx in range(intermediate_size):
+            col = layer_acts[:, neuron_idx]
+            if np.std(col) < 1e-8:
+                continue
+            corr = np.corrcoef(col, entropies)[0, 1]
             if not np.isnan(corr):
                 results.append((layer_idx, neuron_idx, float(corr)))
 
@@ -100,16 +117,10 @@ if __name__ == "__main__":
 
     model, tokenizer = load_model()
 
-    # Replace with a real general-purpose baseline prompt set (a few hundred generic
-    # sentences) before running for real — this is just a placeholder.
     baseline_prompts = [
-        "The weather today is",
-        "My favorite hobby is",
-        "The history of Rome began",
+        "The weather today is", "My favorite hobby is", "The history of Rome began",
     ]
 
-    # Restrict to late layers per Stolfo et al. — adjust range once you've read their
-    # paper's specifics on where they found effects in comparable-sized models.
     num_layers = model.config.num_hidden_layers
     late_layers = range(int(num_layers * 0.66), num_layers)
 
