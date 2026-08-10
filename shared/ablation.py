@@ -31,13 +31,24 @@ def compute_mean_activation(model, tokenizer, baseline_prompts, layer_idx, neuro
 
 
 def mean_ablate_and_get_probs(model, tokenizer, prompt, layer_idx, neuron_idx, mean_val):
-    """Force a neuron to mean_val for this forward pass, return the resulting next-token probs."""
+    """
+    Force a neuron to mean_val for this forward pass, return the resulting next-token probs.
 
-    def hook_fn(module, input, output):
-        output[:, :, neuron_idx] = mean_val
-        return output
+    NOTE: hooks down_proj's INPUT (intermediate space, size intermediate_size),
+    matching the neuron space used in detection.py and logit_lens.py. An earlier
+    version hooked the mlp module's OUTPUT (hidden_size space) -- that no longer
+    matches candidate_neurons.json's neuron_idx values (which now range up to
+    intermediate_size-1, e.g. 14335 for Llama-3.1-8B) and would throw an
+    out-of-bounds error.
+    """
+    down_proj = model.model.layers[layer_idx].mlp.down_proj
 
-    handle = model.model.layers[layer_idx].mlp.register_forward_hook(hook_fn)
+    def hook_fn(module, args):
+        modified = args[0].clone()
+        modified[:, :, neuron_idx] = mean_val
+        return (modified,) + args[1:]
+
+    handle = down_proj.register_forward_pre_hook(hook_fn)
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
     with torch.no_grad():
         outputs = model(**inputs)
