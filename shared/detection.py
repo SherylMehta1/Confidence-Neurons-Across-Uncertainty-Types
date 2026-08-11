@@ -108,8 +108,29 @@ def save_candidate_neurons(results, path="candidate_neurons.json"):
 
 
 def load_candidate_neurons(path="candidate_neurons.json"):
+    """
+    Always returns a list of dicts with keys: neuron_id, layer, neuron_idx,
+    detection_correlation -- regardless of whether the file on disk was saved
+    as dicts (via save_candidate_neurons) or as raw [layer, neuron, corr] lists.
+    """
     with open(path) as f:
-        return json.load(f)
+        raw = json.load(f)
+
+    normalized = []
+    for item in raw:
+        if isinstance(item, dict):
+            normalized.append(item)
+        elif isinstance(item, (list, tuple)):
+            layer, neuron_idx, corr = item[0], item[1], item[2]
+            normalized.append({
+                "neuron_id": f"L{layer}_N{neuron_idx}",
+                "layer": layer,
+                "neuron_idx": neuron_idx,
+                "detection_correlation": corr,
+            })
+        else:
+            raise ValueError(f"Unexpected candidate format: {item}")
+    return normalized
 
 
 if __name__ == "__main__":
