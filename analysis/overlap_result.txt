@@ -1,0 +1,8 @@
+lack_of_knowledge ∩ ambiguity: {'L24_N7891'}
+lack_of_knowledge ∩ contradictory_context: none
+ambiguity ∩ contradictory_context: {'L29_N10092'}
+
+All three categories: none
+Unique to lack_of_knowledge: {'L31_N2477', 'L26_N2788', 'L29_N11308'}
+Unique to ambiguity: {'L23_N12156'}
+Unique to contradictory_context: {'L29_N8568'}
