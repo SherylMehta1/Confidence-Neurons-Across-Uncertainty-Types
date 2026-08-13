@@ -109,7 +109,12 @@ def load_results() -> pd.DataFrame:
     for category, path in RESULT_FILES.items():
         df = pd.read_csv(path)
         if HELD_OUT_ONLY:
-            df = df[df["split"] == "held-out"]
+            df = df[df["split"] == "held_out"]  # underscore, matches RESULTS_SCHEMA.md
+            assert len(df) > 0, (
+                f"Held-out filter returned 0 rows for {category} ({path}). "
+                f"Check that prompts.jsonl actually contains split=='held_out' "
+                f"rows and that this string matches exactly."
+            )
         frames.append(df)
     return pd.concat(frames, ignore_index=True)
 
