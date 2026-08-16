@@ -30,9 +30,18 @@ Two changes from preprocess_contradictory_context.py:
    as the working set where possible, so the control is a genuine twin, not just
    a different sample.
 
+3. TURN-BOUNDARY FIX (added after verify_induction_quality + generation inspection
+   showed this category has the SAME bug as A/B, contrary to shared/prompt_format.py's
+   original assumption): the "Redefine: ... {base_prompt}" construction was ending
+   the USER turn on the bare relation phrase, then opening a FRESH assistant turn --
+   model was generating turn-openers ("I couldn't find any information...", "I think
+   there may be a mistake...") instead of continuing the sentence. Fixed by routing
+   through build_completion_prompt / build_records_with_formatter so base_prompt is
+   PREFILLED into the assistant turn instead of left as an open new turn.
+
 Run from repo root, inside a Kaggle/RunPod session with model+tokenizer already
 loaded (same convention as build_dataset.py):
-    exec(open("person_C_contradictory_context/preprocess_contradictory_context_v2.py").read())
+    exec(open("person_C_contradictory_context/preprocess_contradictory_context.py").read())
     build_and_save(model, tokenizer)
 """
 
@@ -45,7 +54,7 @@ from person_C_contradictory_context.old_preprocess_contradictory_context import 
     build_template_overrides, get_field,
 )
 from shared.model_utils import get_next_token_probs, compute_top1_prob
-from shared.schema_utils import load_tokenizer, build_records
+from shared.prompt_format import build_completion_prompt, build_records_with_formatter
 
 OUTPUT_PATH = "data/contradictory_context/prompts.jsonl"
 CONTROLS_OUTPUT_PATH = "data/contradictory_context/controls.jsonl"
@@ -125,6 +134,24 @@ def extract_fields_flexible(record, unresolved: set):
     }
 
 
+def _redefine_formatter(tokenizer, raw_prompt, **kwargs):
+    """
+    raw_prompt arrives as 'Redefine: {base_prompt} {target}.|||SPLIT|||{base_prompt}'.
+    Splits into the user-turn content (the full Redefine sentence) and the
+    continuation (bare base_prompt) that must be PREFILLED into the assistant
+    turn, not left as a fresh open turn -- this is the fix for the
+    turn-boundary bug confirmed via verify_induction_quality + generation
+    inspection (model was producing "I couldn't find any information..." /
+    "I think there may be a mistake..." instead of continuing the sentence).
+    """
+    user_content, continuation = raw_prompt.split("|||SPLIT|||")
+    formatted = build_completion_prompt(
+        tokenizer, user_content, cloze_suffix=continuation, ensure_question_mark=False,
+    )
+    formatted["raw_prompt"] = f"{user_content} {continuation}"
+    return formatted
+
+
 def build_and_save(model, tokenizer, n_target=120, knows_fact_min_prob=None, verbose_knows_fact=False, seed=42):
     print("Building template overrides from ParaRel...")
     overrides, unresolved = build_template_overrides()
@@ -150,10 +177,10 @@ def build_and_save(model, tokenizer, n_target=120, knows_fact_min_prob=None, ver
         knows_fact_count += 1
 
         contradiction_raw.append(
-            f"Redefine: {base_prompt} {fields['target_new']}. {base_prompt}"
+            f"Redefine: {base_prompt} {fields['target_new']}.|||SPLIT|||{base_prompt}"
         )
         control_raw.append(
-            f"Redefine: {base_prompt} {fields['target_true']}. {base_prompt}"
+            f"Redefine: {base_prompt} {fields['target_true']}.|||SPLIT|||{base_prompt}"
         )
 
         if len(contradiction_raw) >= n_target * 2:  # headroom before subsampling in build_records
@@ -163,12 +190,13 @@ def build_and_save(model, tokenizer, n_target=120, knows_fact_min_prob=None, ver
           f"({knows_fact_count/max(checked,1)*100:.1f}%) -- these are the only ones "
           f"used, for both the contradiction set and its matched true-object control.")
 
-    records = build_records(
+    records = build_records_with_formatter(
         raw_prompts=contradiction_raw,
         category="contradictory_context",
         source_dataset="CounterFact + ParaRel, model-knows-filtered",
         prefix="cc",
         tokenizer=tokenizer,
+        formatter=_redefine_formatter,
         n_working=n_target,
         split_ratio=0.7,
         seed=seed,
@@ -178,20 +206,20 @@ def build_and_save(model, tokenizer, n_target=120, knows_fact_min_prob=None, ver
             f.write(json.dumps(r) + "\n")
     print(f"Saved {len(records)} contradiction prompts to {OUTPUT_PATH}")
 
-    control_records = build_records(
+    control_records = build_records_with_formatter(
         raw_prompts=control_raw,
         category="contradictory_context",
         source_dataset="CounterFact + ParaRel, true-object control (matched)",
         prefix="cc_ctrl",
         tokenizer=tokenizer,
+        formatter=_redefine_formatter,
         n_working=n_target,
         split_ratio=0.7,
         seed=seed,  # SAME seed + same underlying subject/relation ordering as
                     # the contradiction set above, so cc_ctrl_0007 and cc_0007
                     # are the SAME subject/relation -- a true matched pair.
+        is_control=True,
     )
-    for r in control_records:
-        r["is_control"] = True
     with open(CONTROLS_OUTPUT_PATH, "w") as f:
         for r in control_records:
             f.write(json.dumps(r) + "\n")
