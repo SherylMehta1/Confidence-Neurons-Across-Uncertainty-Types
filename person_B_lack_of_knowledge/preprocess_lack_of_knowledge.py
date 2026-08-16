@@ -1,232 +1,127 @@
 """
-preprocess_lack_of_knowledge.py -- Person B
-Category: lack_of_knowledge
-Source: UnknownBench (github.com/genglinliu/UnknownBench), NEC
-(Non-Existent Concepts) subset -- 2,078 fabricated-entity questions with
-matched answerable controls.
+preprocess_lack_of_knowledge_v2.py -- Person B, Phase 3
 
-IMPORTANT -- READ BEFORE RUNNING:
-UnknownBench is not on the HF Hub, so we clone the repo and load its raw
-files directly. The exact field names inside the NEC json/jsonl files are
-NOT verified here -- run the `inspect_structure()` step first (it just
-prints the first raw record) and adjust `extract_prompt_and_label()` to
-match what you actually see. This script is written to fail loudly rather
-than silently guess wrong field names.
+Two changes from the Phase-1/2 version (preprocess_lack_of_knowledge.py):
+
+1. POSITION FIX: uses shared.prompt_format.build_completion_prompt instead
+   of baking "The answer is" into the raw_prompt text. See
+   shared/prompt_format.py's module docstring for why this matters -- this
+   is the "Fix lack-of-knowledge position" row in the remediation plan.
+
+2. MATCHED CONTROLS: also builds data/lack_of_knowledge/controls.jsonl from
+   the ANSWERABLE half of UnknownBench-NEC (same factoid filter, same
+   cloze-prefill format, same subject-matter distribution -- just real
+   entities instead of fabricated ones). This is the "genuinely known"
+   twin condition: same prompt shape, same source dataset, low uncertainty.
+   Without this, a neuron that tracks "this looks like a trivia question"
+   is indistinguishable from a neuron that tracks "the model doesn't know
+   this" -- the whole point of Phase 3's control-prompt row.
+
+Run from repo root: `python person_B_lack_of_knowledge/preprocess_lack_of_knowledge_v2.py`
+Requires model + tokenizer in memory if you want to run verify_induction_quality
+inline (recommended) -- otherwise it only needs the tokenizer.
 """
 
 import sys
-sys.path.append(".")  # run this script from the repo root
-import json
+sys.path.append(".")
 import re
-import subprocess
 from pathlib import Path
 
-from shared.schema_utils import load_tokenizer, build_records, save_records
+# Reuse everything from the Phase-1/2 script except the cloze conversion --
+# the UnknownBench loading/parsing/factoid-filter logic is unchanged and
+# already correct.
+from person_B_lack_of_knowledge.preprocess_lack_of_knowledge import (
+    clone_repo, find_nec_files, inspect_structure, is_factoid_question,
+    load_nec_records,
+)
+from shared.schema_utils import load_tokenizer, save_records
+from shared.prompt_format import build_records_with_formatter, build_completion_prompt
 
-REPO_URL = "https://github.com/genglinliu/UnknownBench.git"
-CLONE_DIR = Path("UnknownBench")
 OUTPUT_PATH = "data/lack_of_knowledge/prompts.jsonl"
-
-# --- Factoid filter -----------------------------------------------------
-# We restrict to short-answer, single-entity questions (matching the
-# cloze-completion structure the contradictory-context category already
-# has by construction) and drop open-ended / explanatory questions, since
-# the latter don't have a natural single-token-ish answer and would dilute
-# the entropy signal with generic sentence-starter tokens instead of
-# content that actually reflects whether the model knows the entity.
-# See project discussion: appending "The answer is" alone doesn't fix this
-# -- question STRUCTURE has to be short-answer to begin with.
-
-FACTOID_STARTS = (
-    "what is", "what was", "what are the name", "who is", "who was",
-    "where is", "where was", "when did", "when was", "which",
-)
-
-OPEN_ENDED_PATTERNS = (
-    r"^how\b",              # "How do/does/did/is/are..."
-    r"^why\b",               # "Why is/does..."
-    r"what are the (methods|steps|ways|effects|reasons|benefits|"
-    r"advantages|disadvantages|causes|consequences|implications)",
-    r"^describe\b", r"^explain\b", r"^discuss\b",
-    r"in what ways", r"to what extent",
-)
+CONTROLS_OUTPUT_PATH = "data/lack_of_knowledge/controls.jsonl"
 
 
-def is_factoid_question(question: str) -> bool:
+def extract_factoid_questions(records, want_non_existent: bool) -> list[str]:
     """
-    Keep only questions with a natural short-answer / single-entity
-    completion. Reject explicitly open-ended / explanatory phrasing even
-    if it happens to start with an otherwise-allowed word.
+    Shared extraction logic for both the unanswerable set (the actual
+    lack-of-knowledge prompts) and the answerable set (Phase 3 controls).
     """
-    q = question.strip().lower()
-
-    for pattern in OPEN_ENDED_PATTERNS:
-        if re.search(pattern, q):
-            return False
-
-    return q.startswith(FACTOID_STARTS)
-
-
-def clone_repo():
-    if CLONE_DIR.exists():
-        print(f"{CLONE_DIR} already exists, skipping clone.")
-        return
-    print(f"Cloning {REPO_URL} ...")
-    subprocess.run(["git", "clone", "--depth", "1", REPO_URL, str(CLONE_DIR)],
-                    check=True)
-
-
-def find_nec_files():
-    """
-    The repo's `data/NEC/` folder holds the actual dataset (2 clean files:
-    NEC_answerable.json, NEC_unanswerable.json). Everything under `outputs/`
-    is experiment results (model responses, confidence scores, eval logs
-    from the paper) -- not the base dataset, and some of those are
-    JSON-Lines rather than plain JSON, which breaks a naive json.load().
-    Only search data/NEC/ to avoid pulling those in.
-    """
-    data_dir = CLONE_DIR / "data" / "NEC"
-    candidates = list(data_dir.glob("*.json"))
-    return candidates
-
-
-def _load_json_or_jsonl(filepath):
-    """
-    Some files in this repo are named .json but are actually JSON-Lines
-    (one JSON object per line) rather than a single JSON array/object.
-    Try standard json.load() first; if that fails with "Extra data"
-    (the telltale sign of JSONL), fall back to line-by-line parsing.
-    """
-    with open(filepath) as fh:
-        content = fh.read()
-    try:
-        data = json.loads(content)
-        return data if isinstance(data, list) else list(data.values())
-    except json.JSONDecodeError:
-        records = []
-        for line in content.splitlines():
-            line = line.strip()
-            if line:
-                records.append(json.loads(line))
-        return records
-
-
-def inspect_structure(files):
-    """
-    Run this FIRST, before trusting extract_prompt_and_label(). Prints the
-    first record of each file so you can confirm the question/prompt field name.
-    """
-    for f in files:
-        print(f"\n--- {f} ---")
-        items = _load_json_or_jsonl(f)
-        print(items[0])
-
-
-def convert_to_cloze_prompt(question: str, suffix: str = " The answer is") -> str:
-    """
-    Converts an open-ended question into a completion-style prompt.
-
-    WHY: raw questions like "What is the proper way to eat X?" put the
-    meaningful uncertainty several tokens into the model's response, not at
-    the very next token -- the first generated token is mostly determined
-    by English grammar / chat-assistant habits ("The", "There", "I"), not
-    by whether the model actually knows the entity. Appending a fixed
-    completion trigger pulls the uncertainty signal to the next token,
-    matching the cloze-style measurement already used by the ambiguity and
-    contradictory-context categories, so entropy means roughly the same
-    thing across all three categories.
-    """
-    q = question.strip()
-    if not q.endswith("?"):
-        q += "?"
-    return q + suffix
-
-
-def extract_prompt_and_label(record: dict) -> tuple[str, bool] | None:
-    """
-    is_non_existent comes from load_nec_records() tagging based on which
-    file the record was loaded from (reliable). Only the question/prompt
-    TEXT field name still needs verifying via inspect_structure() --
-    adjust the fallbacks below if none of them match what you see printed.
-    """
-    question = (
-        record.get("question")
-        or record.get("query")
-        or record.get("prompt")
-        or record.get("text")
-    )
-    if question is None:
-        return None
-
-    is_non_existent = record.get("_is_non_existent", False)
-    return question.strip(), bool(is_non_existent)
-
-
-def load_nec_records(files) -> list[dict]:
-    """
-    Tags each record with is_non_existent based on which FILE it came from
-    (NEC_unanswerable.json vs NEC_answerable.json), since the filename is a
-    more reliable signal than guessing an internal field name.
-    """
-    all_records = []
-    for f in files:
-        is_unanswerable_file = "unanswerable" in f.stem.lower()
-        items = _load_json_or_jsonl(f)
-        for item in items:
-            item = dict(item) if isinstance(item, dict) else {"raw": item}
-            item["_is_non_existent"] = is_unanswerable_file
-            all_records.append(item)
-    return all_records
+    questions = []
+    for r in records:
+        if bool(r.get("_is_non_existent", False)) != want_non_existent:
+            continue
+        q = r.get("question") or r.get("query") or r.get("prompt") or r.get("text")
+        if q is None:
+            continue
+        q = q.strip()
+        if is_factoid_question(q):
+            questions.append(q)
+    return questions
 
 
 def main():
     clone_repo()
     files = find_nec_files()
     if not files:
-        raise FileNotFoundError(
-            "No files matching '*nec*' found in the cloned repo. "
-            "List UnknownBench/ manually and update find_nec_files()."
-        )
-
-    print(f"Found candidate NEC files: {[str(f) for f in files]}")
-    print("\n>>> Run inspect_structure(files) interactively first if you "
-          "haven't verified the schema yet. <<<\n")
-    inspect_structure(files)
+        raise FileNotFoundError("No NEC files found -- see preprocess_lack_of_knowledge.py")
 
     raw_records = load_nec_records(files)
     print(f"Loaded {len(raw_records)} raw records.")
 
-    raw_prompts = []
-    n_dropped_non_factoid = 0
-    for r in raw_records:
-        parsed = extract_prompt_and_label(r)
-        if parsed is None:
-            continue
-        question, is_non_existent = parsed
-        if not is_non_existent:  # keep only the NEC (unanswerable) items
-            continue
-        if not is_factoid_question(question):
-            n_dropped_non_factoid += 1
-            continue
-        raw_prompts.append(convert_to_cloze_prompt(question))
-
-    print(f"Extracted {len(raw_prompts)} factoid non-existent-concept questions "
-          f"(need >= 120 to subsample).")
-    print(f"Dropped {n_dropped_non_factoid} open-ended/explanatory questions "
-          f"(e.g. 'how'/'why'/'what are the methods...') -- these don't have a "
-          f"natural single-entity completion, see is_factoid_question() docstring.")
+    unanswerable_qs = extract_factoid_questions(raw_records, want_non_existent=True)
+    answerable_qs = extract_factoid_questions(raw_records, want_non_existent=False)
+    print(f"{len(unanswerable_qs)} factoid unanswerable (fabricated-entity) questions")
+    print(f"{len(answerable_qs)} factoid answerable (real-entity) questions -- Phase 3 controls")
 
     tokenizer = load_tokenizer()
-    records = build_records(
-        raw_prompts=raw_prompts,
+
+    # --- Main lack-of-knowledge set (position-fixed) ---
+    records = build_records_with_formatter(
+        raw_prompts=unanswerable_qs,
         category="lack_of_knowledge",
-        source_dataset="UnknownBench-NEC",
+        source_dataset="UnknownBench-NEC (unanswerable)",
         prefix="lok",
         tokenizer=tokenizer,
+        formatter=build_completion_prompt,
         n_working=120,
         split_ratio=0.7,
     )
     save_records(records, OUTPUT_PATH)
+
+    # --- Matched controls: same shape, real entities ---
+    control_records = build_records_with_formatter(
+        raw_prompts=answerable_qs,
+        category="lack_of_knowledge",
+        source_dataset="UnknownBench-NEC (answerable, matched control)",
+        prefix="lok_ctrl",
+        tokenizer=tokenizer,
+        formatter=build_completion_prompt,
+        n_working=120,
+        split_ratio=0.7,  # keep working/held-out split so controls get the same replication check
+        is_control=True,
+    )
+    Path(CONTROLS_OUTPUT_PATH).parent.mkdir(parents=True, exist_ok=True)
+    import json
+    with open(CONTROLS_OUTPUT_PATH, "w") as f:
+        for r in control_records:
+            f.write(json.dumps(r) + "\n")
+    print(f"Saved {len(control_records)} control prompts to {CONTROLS_OUTPUT_PATH}")
+
+    print("\n--- Sample lack-of-knowledge prompts (position-fixed) ---")
+    for r in records[:5]:
+        print(f"  [{r['prompt_id']}] ...{r['chat_formatted_prompt'][-80:]!r}")
+    print("\n--- Sample control prompts ---")
+    for r in control_records[:5]:
+        print(f"  [{r['prompt_id']}] ...{r['chat_formatted_prompt'][-80:]!r}")
+
+    print(
+        "\nNEXT: with model+tokenizer loaded, run "
+        "shared.prompt_format.verify_induction_quality(model, tokenizer, records[:25]) "
+        "and the same on control_records[:25] -- expect LOW top1 on the unanswerable "
+        "set and HIGH top1 (near your control baseline) on the answerable set. If both "
+        "look similar, the factoid filter or the fix itself needs another look before "
+        "you trust this data."
+    )
 
 
 if __name__ == "__main__":
