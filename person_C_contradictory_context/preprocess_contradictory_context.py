@@ -41,7 +41,7 @@ sys.path.append(".")
 import json
 from datasets import load_dataset
 
-from person_C_contradictory_context.preprocess_contradictory_context import (
+from person_C_contradictory_context.old_preprocess_contradictory_context import (
     build_template_overrides, get_field,
 )
 from shared.model_utils import get_next_token_probs, compute_top1_prob
