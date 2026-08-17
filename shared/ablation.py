@@ -16,7 +16,7 @@ import torch
 import numpy as np
 
 from shared.model_utils import get_next_token_probs, compute_entropy, compute_top1_prob
-from shared.detection import get_neuron_activation
+from shared.old_detection import get_neuron_activation
 from shared.logit_lens import direct_effect_score
 
 
