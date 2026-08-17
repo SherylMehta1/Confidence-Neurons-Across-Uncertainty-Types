@@ -31,9 +31,9 @@ import pandas as pd
 from pathlib import Path
 
 RESULT_FILES = {
-    "ambiguity": "person_A_ambiguity/results/results.csv",
-    "lack_of_knowledge": "person_B_lack_of_knowledge/results/results.csv",
-    "contradictory_context": "person_C_contradictory_context/results/results.csv",
+    "ambiguity": "person_A_ambiguity/results/results_v3.csv",
+    "lack_of_knowledge": "person_B_lack_of_knowledge/results/results_v3.csv",
+    "contradictory_context": "person_C_contradictory_context/results/results_v3.csv",
 }
 
 # Set to True to only use the held-out split (the stricter generalization
