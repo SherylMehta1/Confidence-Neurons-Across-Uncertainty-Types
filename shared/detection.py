@@ -37,7 +37,7 @@ import hashlib
 import json
 import numpy as np
 
-from shared.detection import capture_intermediate_activations
+from shared.old_detection import capture_intermediate_activations
 from shared.model_utils import get_next_token_probs, compute_entropy
 
 
