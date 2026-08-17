@@ -38,7 +38,7 @@ from pathlib import Path
 # Reuse everything from the Phase-1/2 script except the cloze conversion --
 # the UnknownBench loading/parsing/factoid-filter logic is unchanged and
 # already correct.
-from person_B_lack_of_knowledge.preprocess_lack_of_knowledge import (
+from person_B_lack_of_knowledge.old_preprocess_lack_of_knowledge import (
     clone_repo, find_nec_files, inspect_structure, is_factoid_question,
     load_nec_records,
 )
@@ -71,7 +71,7 @@ def main():
     clone_repo()
     files = find_nec_files()
     if not files:
-        raise FileNotFoundError("No NEC files found -- see preprocess_lack_of_knowledge.py")
+        raise FileNotFoundError("No NEC files found -- see old_preprocess_lack_of_knowledge.py")
 
     raw_records = load_nec_records(files)
     print(f"Loaded {len(raw_records)} raw records.")
