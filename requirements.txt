@@ -10,3 +10,4 @@ matplotlib
 jupyter
 jinja2
 huggingface_hub
+statsmodels>=0.14.0

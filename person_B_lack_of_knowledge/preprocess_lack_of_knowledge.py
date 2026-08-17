@@ -17,9 +17,17 @@ Two changes from the Phase-1/2 version (preprocess_lack_of_knowledge.py):
    is indistinguishable from a neuron that tracks "the model doesn't know
    this" -- the whole point of Phase 3's control-prompt row.
 
-Run from repo root: `python person_B_lack_of_knowledge/preprocess_lack_of_knowledge_v2.py`
-Requires model + tokenizer in memory if you want to run verify_induction_quality
-inline (recommended) -- otherwise it only needs the tokenizer.
+Run inside your Kaggle/RunPod session with `exec()` (same convention as
+build_dataset.py / preprocess_contradictory_context_v2.py), NOT as a plain
+`python script.py` subprocess -- main() returns records and control_records
+so you can immediately run the induction-quality check on them in the same
+session:
+
+    exec(open("person_B_lack_of_knowledge/preprocess_lack_of_knowledge_v2.py").read())
+    records, control_records = main()
+
+This only needs the tokenizer to build the data; load the model too if you
+want to run verify_induction_quality in the same session (recommended).
 """
 
 import sys
@@ -122,6 +130,8 @@ def main():
         "look similar, the factoid filter or the fix itself needs another look before "
         "you trust this data."
     )
+
+    return records, control_records
 
 
 if __name__ == "__main__":
