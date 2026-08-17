@@ -25,7 +25,7 @@ already loaded):
 import json
 import pandas as pd
 
-from shared.detection import load_candidate_neurons
+from shared.old_detection import load_candidate_neurons
 from shared.ablation import compute_mean_activation, run_ablation_experiment
 
 
