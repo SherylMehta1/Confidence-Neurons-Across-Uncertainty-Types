@@ -35,3 +35,16 @@ entropy neuron signatures. Any downstream causal results (Phase 3/4) for this ca
 should be interpreted with this limitation in mind -- a null or weak result for
 contradictory-context neurons may reflect genuinely weak induced uncertainty in the
 dataset rather than absence of a shared mechanism.
+
+## Reproducibility
+
+The committed `data/contradictory_context/prompts.jsonl` and `controls.jsonl` were generated
+with the NF4-quantized model, and the knows-fact filter that selected their CounterFact rows
+measured the base prompt in an **unprefilled** position (the bare `base_prompt` as the user
+turn, fresh assistant turn) rather than the prefilled assistant-turn position the data itself
+is measured at. Both are fixed in the current `preprocess_contradictory_context.py` (bf16
+required, knows-fact check at the prefilled position, pinned dataset revisions, logged in
+`knows_fact_log.jsonl` / `provenance.json`). The committed files must be regenerated with
+that script in bf16 before any result built on them is reported:
+
+    python person_C_contradictory_context/preprocess_contradictory_context.py

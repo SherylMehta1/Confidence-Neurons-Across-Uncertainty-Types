@@ -1,0 +1,63 @@
+{
+  "model_id": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "precision": "bf16",
+  "quant_config": null,
+  "dtype": "torch.bfloat16",
+  "transformers_version": "5.14.1",
+  "torch_version": "2.11.0+cu130",
+  "candidate_file_sha256": "07369dd3458526472e8428b719c07b320896d59cd98c7dc57b8ae2db765a4216",
+  "data_file_sha256s": {
+    "/marimo/repo/data/ambiguity/prompts.jsonl": "dfae18637da1443bca057bd73ba669d1720f5a65f4d74b5a044861f45c6b78e2",
+    "/marimo/repo/data/ambiguity/controls.jsonl": "06e2713ba40d70b5dd71ba9b14593e40cf68fc209e1ae82940657c45bcd996a7"
+  },
+  "baseline_prompt_sha256": "26d4e37e81868904903bfffc64de795ed727cff5781fe57b70de4692268a5f3e",
+  "n_baseline_prompts": 168,
+  "seed": 42,
+  "layer_range": null,
+  "top_k_per_half": null,
+  "top_k_final": null,
+  "min_abs_corr": null,
+  "git_head_sha": "631a8a8b527886c679838f69414614f9b81638d7",
+  "timestamp": "2026-08-21T20:38:57.645668+00:00",
+  "category": "ambiguity",
+  "mean_source": "pooled_controls",
+  "positions": "last",
+  "candidate_neurons": [
+    "L31_N11541",
+    "L31_N6772",
+    "L20_N5595",
+    "L31_N2477",
+    "L29_N13925",
+    "L30_N13098"
+  ],
+  "control_neurons": [
+    "L20_N409",
+    "L30_N4012",
+    "L29_N2286",
+    "L20_N11087",
+    "L20_N9674"
+  ],
+  "n_prompts": 120,
+  "n_controls": 120,
+  "results_csv": "results/ablation_bf16_keyset_pooled/results_ambiguity.csv",
+  "schema_version": 4,
+  "columns": [
+    "neuron_id",
+    "layer",
+    "neuron_idx",
+    "category",
+    "prompt_id",
+    "orig_entropy",
+    "ablated_entropy",
+    "entropy_shift",
+    "orig_top1_prob",
+    "ablated_top1_prob",
+    "direct_effect_score",
+    "split",
+    "is_control",
+    "orig_activation",
+    "mean_val",
+    "mean_source",
+    "precision"
+  ]
+}

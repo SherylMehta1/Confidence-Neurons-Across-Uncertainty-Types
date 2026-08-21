@@ -1,74 +1,62 @@
 """
-rebuild_lack_of_knowledge_whitelisted.py -- Person B, final Phase 3 data build
+rebuild_lack_of_knowledge_whitelisted.py -- Person B, lack-of-knowledge.
+Step 2 of the live pipeline (run screen_templates.py first).
 
-WHY THIS EXISTS: screen_templates.py's screen_all_templates() (n=6) found 15
-templates with gap >= 0.15. rescreen_candidates() (n=15, or full pool where
-smaller) re-tested those 15 and found 3 of them were sampling noise that
-collapsed below threshold at the larger sample:
-    - "What equipment and playing environment are required for {}?"  0.193 -> 0.093
-    - "How accessible and affordable is {} for casual players?"      0.152 -> 0.136
-    - "How long does a regular game or match tend to last in {}?"    0.173 -> 0.030
-3 more shrank but stayed above 0.15 (borderline -- smaller/shakier pools):
-    - "Can {} lead to dependence or addiction with long-term use?"          0.260 -> 0.177
-    - "What are the basic rules and objectives of {}?"                     0.174 -> 0.169
-    - "Who are some famous historical and contemporary figures from {}?"   (pool capped ~10) -> 0.152
-9 held up as genuinely stable and are what this script uses:
+    python person_B_lack_of_knowledge/rebuild_lack_of_knowledge_whitelisted.py
+        [--n 120] [--seed 42] [--min-gap 0.15] [--use-fallback-whitelist]
 
-    gap(n=15)  template
-    +0.716     What is the capital city of {}?
-    +0.627     Are there any interesting behaviors or habits associated with {}?
-    +0.546     Does {} interact with any foods, drinks, or other medications?
-    +0.477     Is there significance to when or how often {} is served?
-    +0.466     Does {} play any significant role in its ecosystem?
-    +0.375     What are the official languages spoken in {}?
-    +0.295     What are some major historical events that happened in {}?
-    +0.271     What cooking methods and techniques are used to prepare {}?
-    +0.246     What form of government does {} have?
+Builds
+    data/lack_of_knowledge/prompts.jsonl    fabricated-entity (unanswerable) prompts
+    data/lack_of_knowledge/controls.jsonl   real-entity (answerable) matched controls
+    person_B_lack_of_knowledge/template_quota_report.json
 
-Combined pool (min(unanswerable, answerable) per template, from the original
-full screening run): ~187 per side -- comfortably above the 120/side target,
-so this deliberately drops the 3 borderline templates rather than stretching
-to include them. A smaller, template-validated set beats a padded one that
-still contains noisy phrasings -- same principle the project already used to
-justify a shrunk split-half candidate list in Step 2.
+from UnknownBench-NEC (pinned commit, see nec_templates.UNKNOWNBENCH_COMMIT),
+restricted to the templates that empirically separate known from unknown
+under the cloze prefill -- the whitelist is READ from
+person_B_lack_of_knowledge/template_screen_results.json (gap >= --min-gap,
+unanswerable mean top1 <= 0.5). FALLBACK_WHITELIST (the 9 templates from the
+original bf16 n=15 rescreen) is used only with --use-fallback-whitelist or
+when the screen results file is absent, and the choice is recorded in
+template_quota_report.json.
 
-CAVEAT WORTH ONE LINE IN THE WRITEUP: not all 9 templates fail the same way
-for a fabricated entity. "capital city" / "official languages" / "form of
-government" fail via genuine fact-retrieval collapse -- there's no capital
-to retrieve. Several of the others (interesting behaviors, interacts with
-foods/medications, significant role in ecosystem) plausibly fail via a
-different route: the model recognizing the entity name doesn't pattern-match
-anything real, which is closer to an entity-recognition confidence signal
-than pure fact-retrieval. Both are legitimate "the model doesn't know this"
-signals for this project's purposes, but they're not identical mechanisms --
-worth a sentence in limitations, not a reason to drop templates.
+Sampling: the SAME per-template quota is used on both sides. Quotas are
+proportional to min(unanswerable_pool, answerable_pool) per template
+(largest-remainder rounding, capped at the smaller pool), drawn with
+random.Random(seed) per side, so the two files have identical template
+composition and differ only in whether the entity is real.
 
-Run in the same Kaggle/RunPod session, tokenizer loaded (model not required
-here, only for the optional verify step at the end):
+Each record carries the 7 shared fields plus `template` (the NEC template
+string) and `nec_category` (animals/food/countries/medicines/sports/generic).
 
-    exec(open("person_B_lack_of_knowledge/rebuild_lack_of_knowledge_whitelisted.py").read())
-    records, control_records = rebuild()
-
-This OVERWRITES data/lack_of_knowledge/prompts.jsonl and controls.jsonl --
-the ones from preprocess_lack_of_knowledge_v2.py used the broad
-is_factoid_question filter across all templates; this replaces that filter
-with the empirically-validated 9-template whitelist.
+Needs only the tokenizer (no model, no torch import).
 """
 
-import sys
-sys.path.append(".")
+import argparse
 import json
 import random
+import sys
+from datetime import datetime
 from pathlib import Path
 
-from person_B_lack_of_knowledge.screen_templates import load_and_classify
-from shared.schema_utils import load_tokenizer
-from shared.prompt_format import build_records_with_formatter, build_completion_prompt
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
-OUTPUT_PATH = "data/lack_of_knowledge/prompts.jsonl"
-CONTROLS_OUTPUT_PATH = "data/lack_of_knowledge/controls.jsonl"
+from person_B_lack_of_knowledge.nec_templates import (  # noqa: E402
+    SOURCE_DATASET_BASE, TEMPLATE_TO_CATEGORY, UNKNOWNBENCH_COMMIT, load_and_classify,
+)
 
-WHITELIST = [
+DATA_DIR = REPO_ROOT / "data" / "lack_of_knowledge"
+OUTPUT_PATH = DATA_DIR / "prompts.jsonl"
+CONTROLS_OUTPUT_PATH = DATA_DIR / "controls.jsonl"
+SCREEN_RESULTS_PATH = REPO_ROOT / "person_B_lack_of_knowledge" / "template_screen_results.json"
+QUOTA_REPORT_PATH = REPO_ROOT / "person_B_lack_of_knowledge" / "template_quota_report.json"
+
+# Fallback only. These 9 templates held gap >= 0.15 in the original bf16
+# rescreen at n=15 (capital city +0.716 ... form of government +0.246); 3
+# more templates that passed the n=6 screen collapsed at n=15 and were
+# dropped. Prefer the derivable whitelist from template_screen_results.json.
+FALLBACK_WHITELIST = [
     "What is the capital city of {}?",
     "Are there any interesting behaviors or habits associated with {}?",
     "Does {} interact with any foods, drinks, or other medications?",
@@ -80,128 +68,180 @@ WHITELIST = [
     "What form of government does {} have?",
 ]
 
-TARGET_PER_SIDE = 120
+
+def load_whitelist(min_gap: float, use_fallback: bool, max_unanswerable_mean: float = 0.5):
+    """Returns (whitelist, provenance dict)."""
+    if not use_fallback and SCREEN_RESULTS_PATH.exists():
+        with open(SCREEN_RESULTS_PATH, encoding="utf-8") as f:
+            screen = json.load(f)
+        wl = [r["template"] for r in screen["results"]
+              if "gap" in r and r["gap"] >= min_gap
+              and r["unanswerable_mean_top1"] <= max_unanswerable_mean]
+        prov = {"source": str(SCREEN_RESULTS_PATH.relative_to(REPO_ROOT)),
+                "screen_precision": screen.get("precision"),
+                "screen_n_per_side": screen.get("n_per_side"),
+                "min_gap": min_gap, "max_unanswerable_mean_top1": max_unanswerable_mean}
+        if screen.get("precision") != "bf16":
+            print(f"WARNING: template_screen_results.json was produced at precision "
+                  f"{screen.get('precision')!r}, not bf16. Re-run screen_templates.py in bf16 "
+                  f"before committing data built from it.")
+        return wl, prov
+    if not use_fallback:
+        print(f"{SCREEN_RESULTS_PATH.name} not found -- using FALLBACK_WHITELIST "
+              f"(run screen_templates.py to derive it properly).")
+    return list(FALLBACK_WHITELIST), {"source": "FALLBACK_WHITELIST (hard-coded)"}
 
 
-def stratified_sample(pools: dict, target: int, seed: int) -> list[str]:
-    """
-    pools: {template: [prompt, ...]}. Allocates a per-template quota
-    proportional to each template's pool size (largest-remainder method),
-    capped at that template's own pool size, so no single template can
-    dominate the final set just because it happens to have the biggest pool.
-    Falls back to taking everything if the combined pool is short of target.
-    """
-    rng = random.Random(seed)
-    total_available = sum(len(p) for p in pools.values())
-    if total_available <= target:
-        out = []
-        for t, p in pools.items():
-            out.extend(p)
-        rng.shuffle(out)
-        return out
-
-    # largest-remainder proportional allocation
-    raw_quotas = {t: len(p) / total_available * target for t, p in pools.items()}
-    quotas = {t: int(raw_quotas[t]) for t in pools}
-    remainders = sorted(pools.keys(), key=lambda t: raw_quotas[t] - quotas[t], reverse=True)
+def allocate_quotas(u_pools: dict, a_pools: dict, target: int) -> dict:
+    """Per-template quota proportional to min(len(u), len(a)), largest-
+    remainder rounding, capped at that min. Same quota applies to both sides."""
+    caps = {t: min(len(u_pools.get(t, [])), len(a_pools.get(t, []))) for t in set(u_pools) | set(a_pools)}
+    caps = {t: c for t, c in caps.items() if c > 0}
+    total = sum(caps.values())
+    if total <= target:
+        return dict(caps)
+    raw = {t: c / total * target for t, c in caps.items()}
+    quotas = {t: int(raw[t]) for t in caps}
     shortfall = target - sum(quotas.values())
-    for t in remainders[:shortfall]:
+    for t in sorted(caps, key=lambda t: raw[t] - quotas[t], reverse=True)[:shortfall]:
         quotas[t] += 1
-    # cap at pool size, redistribute any overflow to templates with spare capacity
+    # cap and redistribute overflow
     overflow = 0
-    for t in pools:
-        if quotas[t] > len(pools[t]):
-            overflow += quotas[t] - len(pools[t])
-            quotas[t] = len(pools[t])
-    if overflow > 0:
-        spare = [t for t in pools if quotas[t] < len(pools[t])]
-        spare.sort(key=lambda t: len(pools[t]) - quotas[t], reverse=True)
-        i = 0
-        while overflow > 0 and spare:
-            t = spare[i % len(spare)]
-            if quotas[t] < len(pools[t]):
-                quotas[t] += 1
-                overflow -= 1
-            i += 1
-            if i > 10000:
-                break  # safety valve, shouldn't trigger given the ~187 pool math
+    for t in caps:
+        if quotas[t] > caps[t]:
+            overflow += quotas[t] - caps[t]
+            quotas[t] = caps[t]
+    guard = 0
+    while overflow > 0:
+        spare = [t for t in caps if quotas[t] < caps[t]]
+        if not spare or guard > 10000:
+            break
+        for t in sorted(spare, key=lambda t: caps[t] - quotas[t], reverse=True):
+            if overflow == 0:
+                break
+            quotas[t] += 1
+            overflow -= 1
+        guard += 1
+    return quotas
 
+
+def sample_side(pools: dict, quotas: dict, seed: int) -> list:
+    """Draw quotas[t] prompts from each template pool with random.Random(seed)."""
+    rng = random.Random(seed)
     out = []
-    for t, p in pools.items():
-        out.extend(rng.sample(p, min(quotas[t], len(p))))
+    for t in sorted(quotas):
+        out.extend(rng.sample(sorted(pools[t]), quotas[t]))
     rng.shuffle(out)
     return out
 
 
-def rebuild(seed: int = 42):
-    unans, ans = load_and_classify()
+def _attach(records, prompt_to_template):
+    for r in records:
+        t = prompt_to_template.get(r["raw_prompt"])
+        r["template"] = t
+        r["nec_category"] = TEMPLATE_TO_CATEGORY.get(t)
+    return records
+
+
+def _save(records, path: Path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        for r in records:
+            f.write(json.dumps(r) + "\n")
+    n_w = sum(1 for r in records if r["split"] == "working")
+    print(f"Saved {len(records)} -> {path} ({n_w} working / {len(records) - n_w} held-out)")
+
+
+def rebuild(n: int = 120, seed: int = 42, min_gap: float = 0.15, use_fallback: bool = False):
+    from shared.schema_utils import load_tokenizer
+    from shared.prompt_format import build_records_with_formatter, build_completion_prompt
+
+    whitelist, wl_prov = load_whitelist(min_gap, use_fallback)
+    if not whitelist:
+        raise SystemExit("Empty whitelist -- nothing passes the gap threshold.")
+    unans, ans, unmatched = load_and_classify()
 
     u_pools, a_pools = {}, {}
     for r in unans:
-        if r["template"] in WHITELIST:
+        if r["template"] in whitelist:
             u_pools.setdefault(r["template"], []).append(r["prompt"])
     for r in ans:
-        if r["template"] in WHITELIST:
+        if r["template"] in whitelist:
             a_pools.setdefault(r["template"], []).append(r["prompt"])
 
-    print("Whitelisted-template pool sizes (unanswerable / answerable):")
-    for t in WHITELIST:
-        print(f"  {len(u_pools.get(t, [])):>4} / {len(a_pools.get(t, [])):>4}   {t}")
+    quotas = allocate_quotas(u_pools, a_pools, n)
+    print("Whitelisted templates: quota  (unanswerable pool / answerable pool)")
+    for t in whitelist:
+        print(f"  {quotas.get(t, 0):>4}   ({len(u_pools.get(t, [])):>4} / {len(a_pools.get(t, [])):>4})   {t}")
+    n_sel = sum(quotas.values())
+    if n_sel < n:
+        print(f"WARNING: only {n_sel} matched pairs available (target {n}); building the smaller set.")
 
-    unanswerable_qs = stratified_sample(u_pools, TARGET_PER_SIDE, seed=seed)
-    answerable_qs = stratified_sample(a_pools, TARGET_PER_SIDE, seed=seed + 1)
-    print(f"\nSelected {len(unanswerable_qs)} unanswerable, {len(answerable_qs)} answerable "
-          f"(target was {TARGET_PER_SIDE} each).")
+    unanswerable_qs = sample_side(u_pools, quotas, seed)
+    answerable_qs = sample_side(a_pools, quotas, seed)
+    print(f"\nSelected {len(unanswerable_qs)} unanswerable, {len(answerable_qs)} answerable.")
+
+    prompt_to_template = {r["prompt"]: r["template"] for r in unans + ans}
+    # build_completion_prompt may append '?' -- key both forms
+    for p, t in list(prompt_to_template.items()):
+        if not p.endswith("?"):
+            prompt_to_template[p + "?"] = t
 
     tokenizer = load_tokenizer()
-
     records = build_records_with_formatter(
-        raw_prompts=unanswerable_qs,
-        category="lack_of_knowledge",
-        source_dataset="UnknownBench-NEC (unanswerable, template-whitelisted)",
-        prefix="lok",
-        tokenizer=tokenizer,
-        formatter=build_completion_prompt,
-        n_working=len(unanswerable_qs),
-        split_ratio=0.7,
+        raw_prompts=unanswerable_qs, category="lack_of_knowledge",
+        source_dataset=f"{SOURCE_DATASET_BASE} (unanswerable, template-whitelisted)",
+        prefix="lok", tokenizer=tokenizer, formatter=build_completion_prompt,
+        n_working=len(unanswerable_qs), split_ratio=0.7, seed=seed,
     )
-    from shared.schema_utils import save_records
-    save_records(records, OUTPUT_PATH)
+    _attach(records, prompt_to_template)
+    _save(records, OUTPUT_PATH)
 
     control_records = build_records_with_formatter(
-        raw_prompts=answerable_qs,
-        category="lack_of_knowledge",
-        source_dataset="UnknownBench-NEC (answerable, template-whitelisted, matched control)",
-        prefix="lok_ctrl",
-        tokenizer=tokenizer,
-        formatter=build_completion_prompt,
-        n_working=len(answerable_qs),
-        split_ratio=0.7,
-        is_control=True,
+        raw_prompts=answerable_qs, category="lack_of_knowledge",
+        source_dataset=f"{SOURCE_DATASET_BASE} (answerable, template-whitelisted, matched control)",
+        prefix="lok_ctrl", tokenizer=tokenizer, formatter=build_completion_prompt,
+        n_working=len(answerable_qs), split_ratio=0.7, seed=seed, is_control=True,
     )
-    Path(CONTROLS_OUTPUT_PATH).parent.mkdir(parents=True, exist_ok=True)
-    with open(CONTROLS_OUTPUT_PATH, "w") as f:
-        for r in control_records:
-            f.write(json.dumps(r) + "\n")
+    _attach(control_records, prompt_to_template)
+    _save(control_records, CONTROLS_OUTPUT_PATH)
 
-    print(f"\nSaved {len(records)} -> {OUTPUT_PATH}")
-    print(f"Saved {len(control_records)} -> {CONTROLS_OUTPUT_PATH}")
-    print(
-        "\nNEXT: with model+tokenizer loaded, re-run the induction-quality check "
-        "on this rebuilt set as a final sanity gate before moving to Step 2 "
-        "(detection):\n"
-        "    from shared.prompt_format import verify_induction_quality\n"
-        "    verify_induction_quality(model, tokenizer, records[:25])\n"
-        "    verify_induction_quality(model, tokenizer, control_records[:25])\n"
-        "This time also print the two MEANS yourself and diff them directly -- "
-        "don't rely on verify_induction_quality's own PASS/FAIL line, it only "
-        "checks individual items against an absolute ceiling and won't catch "
-        "two similar group means (that's exactly how the first, unwhitelisted "
-        "version of this data slipped through)."
-    )
-
+    report = {
+        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "unknownbench_commit": UNKNOWNBENCH_COMMIT,
+        "seed": seed, "target_per_side": n,
+        "whitelist_provenance": wl_prov,
+        "whitelist": whitelist,
+        "n_unmatched_nec_prompts": len(unmatched),
+        "per_template": [
+            {"template": t, "nec_category": TEMPLATE_TO_CATEGORY.get(t), "quota": quotas.get(t, 0),
+             "unanswerable_pool": len(u_pools.get(t, [])), "answerable_pool": len(a_pools.get(t, []))}
+            for t in whitelist
+        ],
+        "n_records": len(records), "n_control_records": len(control_records),
+    }
+    with open(QUOTA_REPORT_PATH, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2)
+    print(f"Wrote {QUOTA_REPORT_PATH}")
+    print("\nNEXT: with the bf16 model loaded, run verify_induction_quality on records[:25] and "
+          "control_records[:25] and compare the two MEANS directly.")
     return records, control_records
 
 
+def parse_args(argv=None):
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--n", type=int, default=120, help="records per side")
+    p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--min-gap", type=float, default=0.15)
+    p.add_argument("--use-fallback-whitelist", action="store_true",
+                   help="ignore template_screen_results.json and use the hard-coded 9-template list")
+    return p.parse_args(argv)
+
+
+def main(argv=None):
+    args = parse_args(argv)
+    return rebuild(n=args.n, seed=args.seed, min_gap=args.min_gap, use_fallback=args.use_fallback_whitelist)
+
+
 if __name__ == "__main__":
-    print("Load model/tokenizer first, then call rebuild() directly (see module docstring).")
+    main()

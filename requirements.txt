@@ -1,13 +1,23 @@
 torch>=2.1.0
-transformers>=4.43.0
+# transformers v5 renamed from_pretrained(torch_dtype=) -> dtype=; shared.model_utils.load_model
+# handles both, but the pipeline is tested on 4.43-4.53 only.
+transformers>=4.43,<5
 accelerate>=0.30.0
-bitsandbytes>=0.43.0
+# bitsandbytes is OPTIONAL: only needed for load_model(quantize=True) / --quantize (nf4).
+# It is imported lazily; reported results use unquantized bf16 and do not need it.
+# bitsandbytes>=0.43.0
 numpy
 pandas
 scipy
+statsmodels>=0.14.0
 scikit-learn
 matplotlib
 jupyter
 jinja2
 huggingface_hub
-statsmodels>=0.14.0
+# HF datasets: AmbigQA / CounterFact / ParaRel loaders in the preprocess scripts and the
+# unigram corpus in analysis/token_frequency_neurons.py
+datasets
+# optional: scripts/analyze_rerun.py uses DataFrame.to_markdown when tabulate is present
+tabulate
+pytest

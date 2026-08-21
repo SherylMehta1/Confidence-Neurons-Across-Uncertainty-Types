@@ -1,97 +1,97 @@
 """
-stats_significance.py
+results/stats_significance.py -- per-cell significance, equivalence (TOST),
+retrospective power/MDE, and cross-category correlation significance.
 
-Adds proper statistical backing on top of merge_and_analyze.py's output,
-addressing two open questions:
+Runs from ANY working directory (all paths are resolved relative to this
+file) and writes every output into results/.
 
-1. Are the per-neuron, per-category mean entropy shifts actually
-   significant, or could eyeballed "shift != 0" calls be sampling noise
-   from a small held-out split? -> sign-flip permutation test + bootstrap
-   CI per (neuron, category), with FDR correction across the 45 tests
-   (15 neurons x 3 categories) instead of relying on a raw threshold.
+INPUT (live data): person_*/results/results_v3.csv -- the per-prompt
+ablation results for the current candidate set (candidate_neurons.json).
+The number of neurons / categories / prompts is READ FROM THE DATA, never
+hard-coded. Schema v3 columns are required; schema v4 columns
+(is_control, orig_activation, mean_val, mean_source, precision) are
+optional -- when is_control is absent it is derived as split == "control".
 
-2. Is the 0.55-0.69 cross-category correlation real, or could it be
-   driven by 2-3 large-magnitude neurons out of only 15 data points?
-   -> permutation test (neuron-label shuffle) + bootstrap CI on the
-   correlation itself.
+OUTPUTS (all in results/):
+  significance_results.csv          pooled working + held_out prompts
+  significance_results_heldout.csv  held_out split only (stricter generalization test)
+  correlation_significance.csv      cross-category correlation of per-neuron mean shifts (pooled)
+  correlation_significance_heldout.csv   same, held_out only
+  power_mde.csv                     per-cell SE and minimum detectable effect (both subsets)
 
-Reads the raw per-prompt results.csv files (NOT merged_summary.csv --
-that's already averaged, and averages are exactly what needs a CI/p-value
-computed on their underlying variability, so we go back to the per-prompt
-source).
+FDR FAMILIES (Benjamini-Hochberg at FDR_ALPHA). Each family is corrected
+SEPARATELY because each tests a different null hypothesis; p-values are
+never pooled across families:
+  F1  per-cell shifts: one sign-flip permutation p per (neuron, category),
+      H0: mean entropy_shift = 0.                      -> significant_fdr
+      (the pooled and the held-out runs are two separate F1 families)
+  F2  TOST equivalence: one TOST p per (neuron, category) and per SESOI,
+      H0: |true dz| >= SESOI.                           -> equivalent_at_sesoi*
+  F3  cross-category correlations: the 3 category-pair permutation p-values.
+                                                        -> significant_fdr
+  F4  mixed-model per-neuron coefficients  -- results/mixed_model_stats.py
+  F5  candidate-vs-control                 -- results/mixed_model_stats.py
 
-Expected schema per results.csv (per project convention):
-neuron_id, layer, neuron_idx, category, prompt_id, orig_entropy,
-ablated_entropy, entropy_shift, orig_top1_prob, ablated_top1_prob,
-direct_effect_score, split
+PER-CELL SEEDING: every (neuron, category) cell gets its own RNG seeded by
+RNG_SEED + stable sha256 hash of (neuron_id, category), so re-running or
+changing a single cell never changes any other cell's bootstrap or
+permutation result.
+
+TOST: two one-sided paired t-tests on the per-prompt shifts against the
+bounds +/- SESOI * sd(shift); the smallest effect size of interest is
+declared in paired Cohen's dz units (SESOI_DZ_PRIMARY = 0.2, also reported
+at SESOI_DZ_SECONDARY = 0.1). tost_p = max(p_lower, p_upper); equivalence
+is claimed when tost_p survives BH within the TOST family.
+
+POWER / MDE (retrospective): minimum detectable mean shift at 80% power for
+a two-sided paired t-test, MDE = (t_{1-alpha/2, n-1} + t_{0.80, n-1}) * SE,
+for alpha = 0.05 and alpha = 0.01 / n_cells (a Bonferroni-level stand-in
+for the FDR threshold).
 """
+
+import hashlib
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from pathlib import Path
+from scipy import stats
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+RESULTS_DIR = REPO_ROOT / "results"
 
 RESULT_FILES = {
-    "ambiguity": "person_A_ambiguity/results/results_v3.csv",
-    "lack_of_knowledge": "person_B_lack_of_knowledge/results/results_v3.csv",
-    "contradictory_context": "person_C_contradictory_context/results/results_v3.csv",
+    "ambiguity": REPO_ROOT / "person_A_ambiguity/results/results_v3.csv",
+    "lack_of_knowledge": REPO_ROOT / "person_B_lack_of_knowledge/results/results_v3.csv",
+    "contradictory_context": REPO_ROOT / "person_C_contradictory_context/results/results_v3.csv",
 }
 
-# Set to True to only use the held-out split (the stricter generalization
-# test per your eval criteria). False uses everything available.
-HELD_OUT_ONLY = False
-
 N_BOOT = 10_000
-N_PERM = 10_000
+N_PERM = 20_000
 FDR_ALPHA = 0.01
 RNG_SEED = 42
-
-rng = np.random.default_rng(RNG_SEED)
+CI_LEVEL = 95.0
+SESOI_DZ_PRIMARY = 0.2     # "small" paired effect; primary equivalence bound
+SESOI_DZ_SECONDARY = 0.1   # stricter bound, reported alongside
+POWER_TARGET = 0.80
 
 
 # ---------------------------------------------------------------------
-# Part 1: per-neuron, per-category significance of the mean entropy shift
+# helpers
 # ---------------------------------------------------------------------
 
-def bootstrap_ci_mean(values: np.ndarray, n_boot: int = N_BOOT, ci: float = 95.0):
-    """Percentile bootstrap CI on the mean of `values`."""
-    n = len(values)
-    boot_means = np.empty(n_boot)
-    for i in range(n_boot):
-        sample = rng.choice(values, size=n, replace=True)
-        boot_means[i] = sample.mean()
-    lower = np.percentile(boot_means, (100 - ci) / 2)
-    upper = np.percentile(boot_means, 100 - (100 - ci) / 2)
-    return values.mean(), lower, upper
-
-
-def sign_flip_permutation_test(values: np.ndarray, n_perm: int = N_PERM) -> float:
-    """
-    Two-sided sign-flip permutation test for H0: true mean shift = 0.
-    Under H0, the sign of each prompt's shift is exchangeable (equally
-    likely positive or negative), since ablation would have no
-    systematic effect. Randomly flip signs, recompute the mean, and see
-    how often the permuted mean is as extreme as the observed one.
-    """
-    observed = np.abs(values.mean())
-    n = len(values)
-    count_extreme = 0
-    for _ in range(n_perm):
-        signs = rng.choice([-1, 1], size=n)
-        perm_mean = np.abs((values * signs).mean())
-        if perm_mean >= observed:
-            count_extreme += 1
-    return (count_extreme + 1) / (n_perm + 1)  # +1 avoids p=0
+def cell_rng(*keys, seed: int = RNG_SEED) -> np.random.Generator:
+    """Per-cell RNG: seed + stable hash (independent of PYTHONHASHSEED)."""
+    key = "|".join(str(k) for k in keys).encode()
+    offset = int(hashlib.sha256(key).hexdigest()[:8], 16)
+    return np.random.default_rng(seed + offset)
 
 
 def benjamini_hochberg(pvals: np.ndarray, alpha: float = FDR_ALPHA) -> np.ndarray:
-    """
-    Returns a boolean array: which p-values survive FDR correction at
-    `alpha`, across all tests jointly (not per-category separately) --
-    correct since you're running 45 tests (15 neurons x 3 categories) and
-    want to control the overall false-discovery rate, not just each
-    category's raw threshold in isolation.
-    """
+    """Boolean mask of p-values rejected by BH at `alpha` within ONE family."""
+    pvals = np.asarray(pvals, dtype=float)
     n = len(pvals)
+    if n == 0:
+        return np.zeros(0, dtype=bool)
     order = np.argsort(pvals)
     ranked = pvals[order]
     thresholds = (np.arange(1, n + 1) / n) * alpha
@@ -104,162 +104,221 @@ def benjamini_hochberg(pvals: np.ndarray, alpha: float = FDR_ALPHA) -> np.ndarra
     return significant
 
 
-def load_results() -> pd.DataFrame:
+def bootstrap_ci_mean(values: np.ndarray, rng: np.random.Generator,
+                      n_boot: int = N_BOOT, ci: float = CI_LEVEL):
+    """Vectorised percentile bootstrap CI on the mean."""
+    n = len(values)
+    idx = rng.integers(0, n, size=(n_boot, n))
+    boot_means = values[idx].mean(axis=1)
+    lo, hi = np.percentile(boot_means, [(100 - ci) / 2, 100 - (100 - ci) / 2])
+    return float(values.mean()), float(lo), float(hi)
+
+
+def sign_flip_permutation_test(values: np.ndarray, rng: np.random.Generator,
+                               n_perm: int = N_PERM) -> float:
+    """Vectorised two-sided sign-flip permutation test, H0: mean = 0."""
+    observed = abs(values.mean())
+    signs = rng.choice(np.array([-1.0, 1.0]), size=(n_perm, len(values)))
+    perm_means = np.abs((signs * values).mean(axis=1))
+    return float((np.sum(perm_means >= observed) + 1) / (n_perm + 1))
+
+
+def tost_paired(values: np.ndarray, sesoi_dz: float):
+    """
+    Two one-sided paired t-tests against +/- sesoi_dz * sd(values).
+    Returns (p_lower, p_upper, tost_p = max). H0: |true mean| >= bound.
+    """
+    n = len(values)
+    sd = values.std(ddof=1)
+    if n < 2 or sd == 0 or np.isnan(sd):
+        return np.nan, np.nan, np.nan
+    se = sd / np.sqrt(n)
+    bound = sesoi_dz * sd
+    m = values.mean()
+    df = n - 1
+    t_lower = (m + bound) / se          # H0: mean <= -bound
+    t_upper = (m - bound) / se          # H0: mean >= +bound
+    p_lower = stats.t.sf(t_lower, df)
+    p_upper = stats.t.cdf(t_upper, df)
+    return float(p_lower), float(p_upper), float(max(p_lower, p_upper))
+
+
+def mde_paired(sd: float, n: int, alpha: float, power: float = POWER_TARGET) -> float:
+    """Minimum detectable mean shift at `power` for a two-sided paired t-test."""
+    df = n - 1
+    se = sd / np.sqrt(n)
+    return float((stats.t.ppf(1 - alpha / 2, df) + stats.t.ppf(power, df)) * se)
+
+
+# ---------------------------------------------------------------------
+# loading
+# ---------------------------------------------------------------------
+
+def load_results(held_out_only: bool = False) -> pd.DataFrame:
     frames = []
     for category, path in RESULT_FILES.items():
+        if not path.exists():
+            print(f"WARNING: {path} not found -- skipping {category}.")
+            continue
         df = pd.read_csv(path)
-        if HELD_OUT_ONLY:
-            df = df[df["split"] == "held_out"]  # underscore, matches RESULTS_SCHEMA.md
-            assert len(df) > 0, (
-                f"Held-out filter returned 0 rows for {category} ({path}). "
-                f"Check that prompts.jsonl actually contains split=='held_out' "
-                f"rows and that this string matches exactly."
-            )
+        if "is_control" not in df.columns:           # schema v3 -> derive
+            df["is_control"] = df["split"].eq("control")
+        df = df[~df["is_control"].astype(bool)]
+        if held_out_only:
+            df = df[df["split"] == "held_out"]
+            assert len(df) > 0, (f"held_out filter returned 0 rows for {category} ({path}); "
+                                 f"check that split == 'held_out' exists.")
         frames.append(df)
+    if not frames:
+        raise FileNotFoundError("No results_v3.csv files found.")
     return pd.concat(frames, ignore_index=True)
 
 
-def compute_significance_table(df: pd.DataFrame) -> pd.DataFrame:
-    rows = []
+# ---------------------------------------------------------------------
+# Part 1: per-cell significance, TOST, power
+# ---------------------------------------------------------------------
+
+def compute_significance_table(df: pd.DataFrame):
+    rows, power_rows = [], []
+    n_cells = df.groupby(["neuron_id", "category"]).ngroups
+    alphas = {"alpha05": 0.05, f"alpha01_over_{n_cells}": 0.01 / n_cells}
+    sec = f"dz{SESOI_DZ_SECONDARY}"
+
     for (neuron_id, category), group in df.groupby(["neuron_id", "category"]):
-        shifts = group["entropy_shift"].to_numpy()
-        n_prompts = len(shifts)
-        if n_prompts < 5:
-            print(f"WARNING: {neuron_id}/{category} has only {n_prompts} "
-                  f"held-out prompts -- CI/p-value will be unstable.")
-
-        mean_shift, ci_lo, ci_hi = bootstrap_ci_mean(shifts)
-        p_value = sign_flip_permutation_test(shifts)
-
+        shifts = group["entropy_shift"].to_numpy(dtype=float)
+        n = len(shifts)
+        if n < 5:
+            print(f"WARNING: {neuron_id}/{category} has only {n} prompts -- unstable.")
+        rng = cell_rng(neuron_id, category)
+        mean_shift, ci_lo, ci_hi = bootstrap_ci_mean(shifts, rng)
+        p_value = sign_flip_permutation_test(shifts, rng)
+        sd = shifts.std(ddof=1)
+        se = sd / np.sqrt(n)
+        dz = mean_shift / sd if sd > 0 else np.nan
+        _, _, tost_p1 = tost_paired(shifts, SESOI_DZ_PRIMARY)
+        _, _, tost_p2 = tost_paired(shifts, SESOI_DZ_SECONDARY)
         rows.append({
-            "neuron_id": neuron_id,
-            "category": category,
-            "n_prompts": n_prompts,
-            "mean_shift": mean_shift,
-            "ci_lower": ci_lo,
-            "ci_upper": ci_hi,
+            "neuron_id": neuron_id, "category": category, "n_prompts": n,
+            "mean_shift": mean_shift, "sd_shift": sd, "se_shift": se, "dz": dz,
+            "ci_lower": ci_lo, "ci_upper": ci_hi,
             "ci_excludes_zero": (ci_lo > 0) or (ci_hi < 0),
             "p_value_raw": p_value,
+            "tost_p": tost_p1, f"tost_p_{sec}": tost_p2,
         })
+        prow = {"neuron_id": neuron_id, "category": category, "n": n,
+                "observed_mean_shift": mean_shift, "observed_dz": dz,
+                "sd_shift": sd, "se_shift": se}
+        for name, a in alphas.items():
+            mde = mde_paired(sd, n, a)
+            prow[f"mde_{name}"] = mde
+            prow[f"mde_dz_{name}"] = mde / sd if sd > 0 else np.nan
+        power_rows.append(prow)
 
-    result = pd.DataFrame(rows)
-    result["significant_fdr"] = benjamini_hochberg(result["p_value_raw"].to_numpy())
-    return result.sort_values("p_value_raw")
+    res = pd.DataFrame(rows)
+    # F1: per-cell shifts
+    res["significant_fdr"] = benjamini_hochberg(res["p_value_raw"].to_numpy())
+    # F2: TOST (one family per SESOI)
+    res["equivalent_at_sesoi"] = benjamini_hochberg(res["tost_p"].fillna(1.0).to_numpy())
+    res[f"equivalent_at_sesoi_{sec}"] = benjamini_hochberg(res[f"tost_p_{sec}"].fillna(1.0).to_numpy())
+    res["sesoi_dz_primary"] = SESOI_DZ_PRIMARY
+    return res.sort_values("p_value_raw").reset_index(drop=True), pd.DataFrame(power_rows)
 
 
 # ---------------------------------------------------------------------
-# Part 2: significance of the cross-category correlation matrix
+# Part 2: cross-category correlation significance
 # ---------------------------------------------------------------------
 
-def permutation_test_correlation(x: np.ndarray, y: np.ndarray, n_perm: int = N_PERM) -> float:
-    """
-    Two-sided permutation test for H0: no association between the two
-    categories' per-neuron effect vectors. Shuffle one vector relative to
-    the other (breaking the neuron-to-neuron pairing) and see how often
-    the permuted |correlation| is as extreme as observed.
-    """
-    observed = np.abs(np.corrcoef(x, y)[0, 1])
+def permutation_test_correlation(x, y, rng, n_perm: int = N_PERM) -> float:
+    observed = abs(np.corrcoef(x, y)[0, 1])
     n = len(x)
-    count_extreme = 0
-    y_perm = y.copy()
-    for _ in range(n_perm):
-        rng.shuffle(y_perm)
-        perm_corr = np.abs(np.corrcoef(x, y_perm)[0, 1])
-        if perm_corr >= observed:
-            count_extreme += 1
-    return (count_extreme + 1) / (n_perm + 1)
+    perm_idx = rng.permuted(np.tile(np.arange(n), (n_perm, 1)), axis=1)
+    yp = y[perm_idx]                                   # (n_perm, n)
+    xc = x - x.mean()
+    ypc = yp - yp.mean(axis=1, keepdims=True)
+    r = (ypc @ xc) / (np.sqrt((xc ** 2).sum()) * np.sqrt((ypc ** 2).sum(axis=1)))
+    return float((np.sum(np.abs(r) >= observed) + 1) / (n_perm + 1))
 
 
-def bootstrap_ci_correlation(x: np.ndarray, y: np.ndarray, n_boot: int = N_BOOT, ci: float = 95.0):
-    """
-    Bootstrap CI on the correlation itself, resampling NEURONS (pairs)
-    with replacement. With only 15 neurons this CI will be wide -- that's
-    expected and worth reporting honestly rather than hiding.
-    """
+def bootstrap_ci_correlation(x, y, rng, n_boot: int = N_BOOT, ci: float = CI_LEVEL):
     n = len(x)
-    idx = np.arange(n)
-    boot_corrs = np.empty(n_boot)
-    for i in range(n_boot):
-        sample_idx = rng.choice(idx, size=n, replace=True)
-        xs, ys = x[sample_idx], y[sample_idx]
-        if xs.std() == 0 or ys.std() == 0:
-            boot_corrs[i] = np.nan  # degenerate resample, skip
-        else:
-            boot_corrs[i] = np.corrcoef(xs, ys)[0, 1]
-    boot_corrs = boot_corrs[~np.isnan(boot_corrs)]
-    lower = np.percentile(boot_corrs, (100 - ci) / 2)
-    upper = np.percentile(boot_corrs, 100 - (100 - ci) / 2)
-    return lower, upper
+    idx = rng.integers(0, n, size=(n_boot, n))
+    xs, ys = x[idx], y[idx]
+    xc = xs - xs.mean(axis=1, keepdims=True)
+    yc = ys - ys.mean(axis=1, keepdims=True)
+    denom = np.sqrt((xc ** 2).sum(axis=1)) * np.sqrt((yc ** 2).sum(axis=1))
+    with np.errstate(invalid="ignore", divide="ignore"):
+        r = (xc * yc).sum(axis=1) / denom
+    r = r[np.isfinite(r)]
+    lo, hi = np.percentile(r, [(100 - ci) / 2, 100 - (100 - ci) / 2])
+    return float(lo), float(hi)
 
 
-def compute_correlation_significance(merged_summary: pd.DataFrame) -> pd.DataFrame:
-    """
-    merged_summary: wide-format DataFrame, index=neuron_id, columns=
-    category, values=mean entropy_shift -- i.e. exactly what
-    merge_and_analyze.py already prints/saves.
-    """
-    categories = merged_summary.columns.tolist()
+def compute_correlation_significance(wide: pd.DataFrame) -> pd.DataFrame:
+    categories = wide.columns.tolist()
     rows = []
     for i, cat_a in enumerate(categories):
         for cat_b in categories[i + 1:]:
-            x = merged_summary[cat_a].to_numpy()
-            y = merged_summary[cat_b].to_numpy()
-            observed_r = np.corrcoef(x, y)[0, 1]
-            p_value = permutation_test_correlation(x, y)
-            ci_lo, ci_hi = bootstrap_ci_correlation(x, y)
+            x = wide[cat_a].to_numpy(dtype=float)
+            y = wide[cat_b].to_numpy(dtype=float)
+            rng = cell_rng("corr", cat_a, cat_b)
+            p = permutation_test_correlation(x, y, rng)
+            lo, hi = bootstrap_ci_correlation(x, y, rng)
             rows.append({
-                "category_a": cat_a,
-                "category_b": cat_b,
-                "n_neurons": len(x),
-                "observed_r": observed_r,
-                "ci_lower": ci_lo,
-                "ci_upper": ci_hi,
-                "p_value": p_value,
+                "category_a": cat_a, "category_b": cat_b, "n_neurons": len(x),
+                "observed_r": float(np.corrcoef(x, y)[0, 1]),
+                "ci_lower": lo, "ci_upper": hi, "p_value": p,
             })
-    return pd.DataFrame(rows)
+    out = pd.DataFrame(rows)
+    out["significant_fdr"] = benjamini_hochberg(out["p_value"].to_numpy())   # F3
+    return out
 
 
 # ---------------------------------------------------------------------
 
+def run_subset(label: str, held_out_only: bool):
+    df = load_results(held_out_only=held_out_only)
+    n_neurons, n_cats = df["neuron_id"].nunique(), df["category"].nunique()
+    print(f"\n===== {label}: {len(df)} rows, {n_neurons} neurons x {n_cats} categories "
+          f"= {n_neurons * n_cats} cells =====")
+
+    sig, power = compute_significance_table(df)
+    power.insert(0, "subset", label)
+    suffix = "_heldout" if held_out_only else ""
+    sig.to_csv(RESULTS_DIR / f"significance_results{suffix}.csv", index=False)
+    sec = f"dz{SESOI_DZ_SECONDARY}"
+    print(f"\n--- F1 per-cell shifts + F2 TOST ({label}) ---")
+    print(sig.to_string(index=False))
+    print(f"\nF1: {sig['significant_fdr'].sum()} / {len(sig)} cells significant at FDR {FDR_ALPHA}.")
+    print(f"F2: {sig['equivalent_at_sesoi'].sum()} / {len(sig)} cells equivalent to 0 "
+          f"at SESOI dz={SESOI_DZ_PRIMARY} (FDR {FDR_ALPHA}); "
+          f"{sig[f'equivalent_at_sesoi_{sec}'].sum()} / {len(sig)} at dz={SESOI_DZ_SECONDARY}.")
+    print(f"    paired dz range: {sig['dz'].min():.4f} .. {sig['dz'].max():.4f}")
+
+    wide = df.pivot_table(index="neuron_id", columns="category", values="entropy_shift", aggfunc="mean")
+    corr = compute_correlation_significance(wide)
+    corr.to_csv(RESULTS_DIR / f"correlation_significance{suffix}.csv", index=False)
+    print(f"\n--- F3 cross-category correlations ({label}; n_neurons={len(wide)}) ---")
+    print(corr.to_string(index=False))
+    print(f"F3: {corr['significant_fdr'].sum()} / {len(corr)} pairs significant at FDR {FDR_ALPHA}.")
+    return sig, power, corr
+
+
 def main():
-    print(f"Loading raw per-prompt results "
-          f"({'held-out split only' if HELD_OUT_ONLY else 'all splits'})...")
-    df = load_results()
-    print(f"Loaded {len(df)} rows across "
-          f"{df['neuron_id'].nunique()} neurons x {df['category'].nunique()} categories.")
+    print(f"FDR families (each BH-corrected separately, FDR_ALPHA = {FDR_ALPHA}):")
+    print("  F1 per-cell shifts | F2 TOST equivalence | F3 cross-category correlations")
+    print("  F4 mixed-model per-neuron | F5 candidate-vs-control  (F4/F5: mixed_model_stats.py)")
+    print(f"N_BOOT={N_BOOT}, N_PERM={N_PERM}, per-cell seeding from RNG_SEED={RNG_SEED}")
 
-    print("\n--- Part 1: per-neuron, per-category significance ---")
-    sig_table = compute_significance_table(df)
-    sig_table.to_csv("significance_results.csv", index=False)
-    print(sig_table.to_string(index=False))
-    n_sig = sig_table["significant_fdr"].sum()
-    print(f"\n{n_sig} / {len(sig_table)} (neuron, category) shifts survive "
-          f"FDR correction at alpha={FDR_ALPHA}.")
-    print("Compare this to your original overlap sets -- if far fewer "
-          "survive here, the raw-threshold overlap sets were likely "
-          "inflated by multiple-comparisons / small-sample noise.")
+    _, power_pooled, _ = run_subset("pooled(working+held_out)", held_out_only=False)
+    _, power_heldout, _ = run_subset("held_out_only", held_out_only=True)
 
-    print("\n--- Part 2: cross-category correlation significance ---")
-    # Rebuild the wide-format table merge_and_analyze.py already computes,
-    # here from the same (possibly held-out-filtered) data for consistency.
-    wide = df.pivot_table(index="neuron_id", columns="category",
-                           values="entropy_shift", aggfunc="mean")
-    corr_table = compute_correlation_significance(wide)
-    corr_table.to_csv("correlation_significance.csv", index=False)
-    print(corr_table.to_string(index=False))
-
-    print("\nInterpretation guide:")
-    print("- p_value here tests whether the correlation is distinguishable")
-    print("  from chance pairing of only 15 neurons -- NOT the same as the")
-    print("  correlation being 'large'. A significant p-value with a wide")
-    print("  CI still means shared direction, uncertain magnitude.")
-    print("- If a category pair's CI comfortably excludes 0, that's your")
-    print("  strongest evidence for H1-leaning shared effect on that pair.")
-    print("- Cross-reference against Part 1: a pair can show a significant")
-    print("  correlation while having ZERO individually-significant shared")
-    print("  neurons -- that's the H3 (partial overlap) signature: a weak,")
-    print("  diffuse shared trend plus category-specific standouts, rather")
-    print("  than a few neurons carrying the whole effect.")
+    power = pd.concat([power_pooled, power_heldout], ignore_index=True)
+    power.to_csv(RESULTS_DIR / "power_mde.csv", index=False)
+    print(f"\n--- Retrospective power / MDE ({POWER_TARGET:.0%} power, two-sided paired t) ---")
+    mde_cols = [c for c in power.columns if c.startswith("mde_")]
+    summ = power.groupby("subset")[["se_shift"] + mde_cols].agg(["min", "median", "max"])
+    print(summ.T.to_string())
+    print(f"\nWrote outputs into {RESULTS_DIR}")
 
 
 if __name__ == "__main__":

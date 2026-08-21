@@ -20,12 +20,17 @@ pip install -r requirements.txt
 ## 3. Kaggle-specific notes
 - Turn ON "Internet" in notebook settings (needed for pip installs + model download).
 - Verify your phone number on Kaggle to unlock GPU quota (30 hrs/week).
-- Start with 4-bit quantization for early pipeline testing (fits in 16GB). Move precision-sensitive
-  Phase 3/4 runs to a paid GPU rental (RunPod/Vast.ai) if full precision is needed.
+- 4-bit (NF4) loading fits Kaggle's 16 GB and is fine for pipeline *development* only. Every
+  reported measurement and every model-dependent data-building step (`screen_templates.py`,
+  `preprocess_contradictory_context.py`) must run on the unquantized bf16 model (~17 GB VRAM) --
+  use a paid GPU (RunPod/Vast.ai). Those scripts refuse NF4 unless `--allow-nf4` is passed.
 - Sessions disconnect after ~12 hours — save intermediate results to files regularly, don't rely on
   keeping everything in notebook memory.
 
-## 4. First thing everyone should run
+## 4. Run order
+See `PHASE3_GUIDE.md`: per-person `preprocess_*.py` data builders, then the `scripts/` pipeline.
+
+## 5. First thing everyone should run
 `notebooks/00_hello_world.ipynb` — loads the model, runs a forward pass, computes entropy on two
 test prompts, and confirms the ambiguous prompt has higher entropy than the confident one. If this
 runs cleanly, your environment is ready.

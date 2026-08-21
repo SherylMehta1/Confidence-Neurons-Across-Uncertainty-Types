@@ -18,3 +18,10 @@ __pycache__/
 
 # jupyter
 .ipynb_checkpoints
+
+# run bookkeeping and transfer scratch
+runs/
+*.log
+.pytest_cache/
+*.b64
+*.tgz

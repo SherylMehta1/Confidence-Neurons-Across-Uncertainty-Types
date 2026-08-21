@@ -1,252 +1,171 @@
 """
-screen_templates.py -- Person B, follow-up to the induction-quality check
+screen_templates.py -- Person B, lack-of-knowledge. Step 1 of the live pipeline.
 
-WHY THIS EXISTS: verify_induction_quality on the first 25 lack-of-knowledge /
-control items showed almost no separation overall (mean top1 0.377 vs 0.410),
-but the per-template breakdown showed the signal is real for SOME of NEC's
-question templates (capital city: +0.744 gap) and reversed for others
-(typical diet: -0.187, dosage/schedule: -0.280). NEC's 78 templates
-(prompts/NEC_question_templates.py in the UnknownBench repo) were built for
-full free-text response evaluation, not single-next-token cloze completion --
-most of them don't have one canonical short answer even when the entity is
-real, so top1 there measures phrasing convergence, not knowledge.
+    python person_B_lack_of_knowledge/screen_templates.py [--n-per-side 15] [--seed 42]
+                                                          [--allow-nf4] [--min-gap 0.15]
 
-This script tests EVERY template (not just the 8 that happened to appear in
-one 25-item sample) on a small matched batch of real + fabricated entities,
-and reports which ones show a genuine, consistently-signed gap. Use the
-output to build a template WHITELIST, then rebuild
-data/lack_of_knowledge/prompts.jsonl and controls.jsonl from only those
-templates -- that replaces the current is_factoid_question phrase-matching
-filter (which screens by sentence-starter, not by whether the template
-actually has a single-fact answer) with something that screens by what
-actually matters: does this template empirically separate known from
-unknown.
+WHY: NEC's 78 question templates were built for free-text evaluation, not
+single-next-token cloze completion. For most of them, top-1 probability on
+"The answer is" measures phrasing convergence, not knowledge -- the
+fabricated-entity and real-entity versions come out equally peaked. This
+script measures EVERY template on a seeded, matched batch of unanswerable
+(fabricated) and answerable (real) entities and writes the full table to
 
-Needs model + tokenizer loaded. Run with:
-    exec(open("person_B_lack_of_knowledge/screen_templates.py").read())
-    template_results = screen_all_templates(model, tokenizer)
+    person_B_lack_of_knowledge/template_screen_results.json
+
+which rebuild_lack_of_knowledge_whitelisted.py reads to derive the template
+whitelist (gap = answerable_mean_top1 - unanswerable_mean_top1 >= min_gap).
+
+PRECISION: this is a measurement that decides the dataset, so it must be run
+on the unquantized bf16 model (load_model(quantize=False), the default). NF4
+is refused unless --allow-nf4 is passed, and the precision is recorded in
+the output file either way.
+
+Needs GPU + gated Llama-3.1-8B-Instruct. Tokenizer-only steps live in
+nec_templates.py.
 """
 
-import re
+import argparse
 import json
-from pathlib import Path
+import random
+import sys
 from collections import defaultdict
+from datetime import datetime
+from pathlib import Path
 
-from shared.model_utils import get_next_token_probs, compute_top1_prob
-from shared.prompt_format import build_completion_prompt
+REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
-# Pulled directly from UnknownBench's prompts/NEC_question_templates.py --
-# keep this in sync if that file ever changes upstream.
-NEC_TEMPLATES = {
-    "animals": [
-        "What is the habitat of {}?", "What is the typical diet of {}?",
-        "How does {} reproduce?", "What are the physical characteristics of {}?",
-        "Is {} considered to be endangered or threatened?",
-        "What are the main predators of {}?",
-        "How does {} communicate with others of its species?",
-        "Are there any interesting behaviors or habits associated with {}?",
-        "How long is the typical lifespan of {} in the wild?",
-        "Does {} play any significant role in its ecosystem?",
-    ],
-    "food": [
-        "What are the main ingredients in {}?",
-        "What cuisine or culture does {} originate from?",
-        "What cooking methods and techniques are used to prepare {}?",
-        "How long does it take to prepare and cook {}?",
-        "What are the different flavors and seasonings used to flavor {}?",
-        "Is there significance to when or how often {} is served?",
-        "How is {} typically presented or plated?",
-        "What sides or accompaniments complement {}?",
-        "Are there any variations or regional differences for {}?",
-        "What is the nutrition breakdown and calorie count per serving for {}?",
-        "Are there certain ingredients that could be substituted or modified in {}?",
-        "What is the proper way to eat and enjoy {}?",
-    ],
-    "countries": [
-        "What is the capital city of {}?", "What form of government does {} have?",
-        "What are the official languages spoken in {}?",
-        "What are some major geographic features located in {}?",
-        "What religions are predominantly practiced in {}?",
-        "What are some of {}'s major exports and industries?",
-        "What type of climate exist in different regions of {}?",
-        "What are some major historical events that happened in {}?",
-        "Who are some famous historical and contemporary figures from {}?",
-        "What are some examples of art, music, and cuisine native to {}?",
-        "What ethnic and cultural groups live in or originate from {}?",
-        "How does the education system work in {}?",
-        "What are some national holidays and traditions celebrated in {}?",
-        "What are some societal issues or challenges currently facing {}?",
-    ],
-    "medicines": [
-        "What medical condition(s) is {} used to treat?",
-        "What is the generic name and chemical makeup of {}?",
-        "How is {} administered (oral, injection, topical, etc.)?",
-        "What is the typical dosage and schedule for taking {}?",
-        "What are the common side effects and risks associated with taking {}?",
-        "Does {} interact with any foods, drinks, or other medications?",
-        "How long does it take for the medicine {} to take effect?",
-        "How long will the effects of {} last after taking it?",
-        "Can {} lead to dependence or addiction with long-term use?",
-        "How should {} be stored properly at home?",
-        "How expensive is {} and is it covered by insurance plans?",
-        "When did {} first become available and who manufactures it?",
-        "What should you do if you overdose on {}?",
-    ],
-    "sports": [
-        "What are the basic rules and objectives of {}?",
-        "What equipment and playing environment are required for {}?",
-        "How many players are on each team for {}?",
-        "What are the different positions or roles that players take on in {}?",
-        "How long does a regular game or match tend to last in {}?",
-        "How does scoring work in {} and how do you win?",
-        "What major leagues, competitions, or tournaments exist for {}?",
-        "What skills, strengths, and abilities are required to excel at {}?",
-        "Who are some all-time great professional players in {}?",
-        "What are some common injuries or health risks associated with {}?",
-        "Has {} seen any major rule changes, innovations, or controversies over time?",
-        "What equipment and safety gear are required or recommended for {}?",
-        "Is {} predominantly played by males, females, or both equally?",
-        "At what age do most athletes begin competing in {}?",
-        "How accessible and affordable is {} for casual players?",
-    ],
-    "generic": [
-        "Can you provide examples to help illustrate {}?", "Explain {} to me.",
-        "What is {}?", "What is the meaning of {}?",
-        "What do people usually use {} for?", "Explain {} to a 5-year-old child.",
-        "What is the definition of {}?",
-        "The concept of {} is not very widely known. Explain it in layman's terms.",
-        "Explain this concept: {}.",
-        "What are some related concepts that are often confused with {}?",
-        "Describe some real-world applications of {}?",
-        "What are some historical events or figures associated with {}?",
-        "What are some interesting facts or trivia related to {}?",
-        "How do people use {} in everyday life?",
-    ],
-}
+from person_B_lack_of_knowledge.nec_templates import (  # noqa: E402
+    TEMPLATE_TO_CATEGORY, UNKNOWNBENCH_COMMIT, load_and_classify,
+)
+
+RESULTS_PATH = REPO_ROOT / "person_B_lack_of_knowledge" / "template_screen_results.json"
 
 
-def _template_to_regex(template: str) -> re.Pattern:
-    """Turn a "...{}..." template into a regex that captures the entity."""
-    escaped = re.escape(template).replace(re.escape("{}"), "(.+)")
-    return re.compile("^" + escaped + "$")
+def _model_precision(model) -> str:
+    prec = getattr(model, "cn_precision", None)
+    if prec:
+        return prec
+    qc = getattr(getattr(model, "config", None), "quantization_config", None)
+    if qc is not None:
+        return "nf4" if getattr(qc, "load_in_4bit", False) else "quantized"
+    return "unknown"
 
 
-def load_and_classify(nec_dir="UnknownBench/data/NEC"):
+def screen_all_templates(model, tokenizer, n_per_side: int = 15, seed: int = 42, verbose: bool = True):
     """
-    Loads NEC_answerable.json / NEC_unanswerable.json and tags each record
-    with which exact template generated it, by regex-matching against
-    NEC_TEMPLATES for that record's category. Records that don't match any
-    template for their category (rare -- covers upstream data quirks) are
-    dropped with a warning count.
+    For every (category, template) pair with >= 2 items per side, sample up
+    to n_per_side unanswerable + n_per_side answerable prompts (seeded),
+    measure top-1 under the position-fixed cloze prompt, and return a list
+    of per-template dicts sorted by gap descending.
     """
-    regexes = {
-        cat: [(t, _template_to_regex(t)) for t in templates]
-        for cat, templates in NEC_TEMPLATES.items()
-    }
+    from shared.model_utils import get_next_token_probs, compute_top1_prob
+    from shared.prompt_format import build_completion_prompt
 
-    def load_one(path, is_unanswerable):
-        with open(path) as f:
-            records = [json.loads(l) for l in f]
-        classified, unmatched = [], 0
-        for r in records:
-            cat = r.get("category")
-            prompt = r.get("prompt", "")
-            if cat not in regexes:
-                unmatched += 1
-                continue
-            matched_template = None
-            for template, rx in regexes[cat]:
-                if rx.match(prompt):
-                    matched_template = template
-                    break
-            if matched_template is None:
-                unmatched += 1
-                continue
-            classified.append({
-                "prompt": prompt, "category": cat, "template": matched_template,
-                "is_unanswerable": is_unanswerable,
-            })
-        print(f"{path}: {len(classified)} classified, {unmatched} unmatched (dropped)")
-        return classified
-
-    nec_dir = Path(nec_dir)
-    unans = load_one(nec_dir / "NEC_unanswerable.json", True)
-    ans = load_one(nec_dir / "NEC_answerable.json", False)
-    return unans, ans
-
-
-def screen_all_templates(model, tokenizer, n_per_side: int = 6, seed: int = 42):
-    """
-    For every (category, template) pair, samples n_per_side unanswerable +
-    n_per_side answerable items, measures top1 under the position-fixed
-    cloze prompt, and reports the gap. Returns a list of dicts sorted by
-    gap descending -- use this to decide your whitelist.
-    """
-    import random
-    random.seed(seed)
-
-    unans, ans = load_and_classify()
-    by_template_u = defaultdict(list)
-    by_template_a = defaultdict(list)
+    rng = random.Random(seed)
+    unans, ans, _unmatched = load_and_classify()
+    by_u, by_a = defaultdict(list), defaultdict(list)
     for r in unans:
-        by_template_u[r["template"]].append(r["prompt"])
+        by_u[r["template"]].append(r["prompt"])
     for r in ans:
-        by_template_a[r["template"]].append(r["prompt"])
+        by_a[r["template"]].append(r["prompt"])
+
+    def top1(prompt):
+        formatted = build_completion_prompt(tokenizer, prompt)
+        return compute_top1_prob(get_next_token_probs(model, tokenizer, formatted["chat_formatted_prompt"]))
 
     results = []
-    all_templates = sorted(set(by_template_u) | set(by_template_a))
+    all_templates = sorted(set(by_u) | set(by_a))
     for i, template in enumerate(all_templates):
-        u_pool = by_template_u.get(template, [])
-        a_pool = by_template_a.get(template, [])
+        u_pool, a_pool = by_u.get(template, []), by_a.get(template, [])
         if len(u_pool) < 2 or len(a_pool) < 2:
-            continue  # too few instances of this template to say anything
-
-        u_sample = random.sample(u_pool, min(n_per_side, len(u_pool)))
-        a_sample = random.sample(a_pool, min(n_per_side, len(a_pool)))
-
-        u_top1s, a_top1s = [], []
-        for prompt in u_sample:
-            formatted = build_completion_prompt(tokenizer, prompt)
-            probs = get_next_token_probs(model, tokenizer, formatted["chat_formatted_prompt"])
-            u_top1s.append(compute_top1_prob(probs))
-        for prompt in a_sample:
-            formatted = build_completion_prompt(tokenizer, prompt)
-            probs = get_next_token_probs(model, tokenizer, formatted["chat_formatted_prompt"])
-            a_top1s.append(compute_top1_prob(probs))
-
+            results.append({"template": template, "nec_category": TEMPLATE_TO_CATEGORY.get(template),
+                            "n_unanswerable_pool": len(u_pool), "n_answerable_pool": len(a_pool),
+                            "skipped": "too few items per side"})
+            continue
+        u_sample = rng.sample(u_pool, min(n_per_side, len(u_pool)))
+        a_sample = rng.sample(a_pool, min(n_per_side, len(a_pool)))
+        u_top1s = [top1(p) for p in u_sample]
+        a_top1s = [top1(p) for p in a_sample]
         u_mean = sum(u_top1s) / len(u_top1s)
         a_mean = sum(a_top1s) / len(a_top1s)
         results.append({
-            "template": template,
+            "template": template, "nec_category": TEMPLATE_TO_CATEGORY.get(template),
             "n_unanswerable_pool": len(u_pool), "n_answerable_pool": len(a_pool),
-            "unanswerable_mean_top1": u_mean, "control_mean_top1": a_mean,
+            "n_unanswerable_measured": len(u_top1s), "n_answerable_measured": len(a_top1s),
+            "unanswerable_mean_top1": u_mean, "answerable_mean_top1": a_mean,
             "gap": a_mean - u_mean,
+            "unanswerable_top1s": u_top1s, "answerable_top1s": a_top1s,
         })
-        print(f"[{i+1}/{len(all_templates)}] gap={a_mean-u_mean:+.3f}  "
-              f"(unans={u_mean:.3f}, ctrl={a_mean:.3f})  {template}")
+        if verbose:
+            print(f"[{i+1}/{len(all_templates)}] gap={a_mean-u_mean:+.3f}  "
+                  f"(unans={u_mean:.3f}, ans={a_mean:.3f})  {template}")
 
-    results.sort(key=lambda r: -r["gap"])
+    results.sort(key=lambda r: -r.get("gap", float("-inf")))
     return results
 
 
-def print_whitelist_recommendation(results, min_gap=0.15, max_unanswerable_mean=0.5):
-    """
-    A template is worth keeping if fabricated entities are clearly LESS
-    confident than real ones (gap >= min_gap) AND the fabricated-entity
-    mean isn't already so peaked that the position fix isn't doing its job
-    for this phrasing (unanswerable_mean <= max_unanswerable_mean). Adjust
-    both thresholds after eyeballing the full table -- these are starting
-    points, not fixed rules.
-    """
-    good = [r for r in results if r["gap"] >= min_gap and r["unanswerable_mean_top1"] <= max_unanswerable_mean]
-    total_pool = sum(min(r["n_unanswerable_pool"], r["n_answerable_pool"]) for r in good)
-    print(f"\n{len(good)} / {len(results)} templates pass (gap >= {min_gap}, "
-          f"unanswerable_mean <= {max_unanswerable_mean}):")
-    for r in good:
-        print(f"  gap={r['gap']:+.3f}  pool(unans/ctrl)={r['n_unanswerable_pool']}/{r['n_answerable_pool']}  {r['template']}")
-    print(f"\nTotal available pool from passing templates (min of unans/ctrl per template, summed): ~{total_pool}")
-    print("Compare this to the 120 you need per side -- if it's short, either "
-          "lower min_gap and re-inspect, or accept a smaller working set (a "
-          "smaller-but-clean dataset is better than a padded-but-noisy one, "
-          "per the project's own scope/limitations language).")
-    return good
+def whitelist_from_results(results, min_gap: float = 0.15, max_unanswerable_mean: float = 0.5):
+    """Templates whose fabricated-entity mean is clearly lower than the
+    real-entity mean, and whose fabricated mean is not already peaked."""
+    return [r["template"] for r in results
+            if "gap" in r and r["gap"] >= min_gap and r["unanswerable_mean_top1"] <= max_unanswerable_mean]
+
+
+def save_results(results, model, n_per_side, seed, min_gap, path=RESULTS_PATH):
+    payload = {
+        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "model_id": getattr(model, "cn_model_id", None),
+        "precision": _model_precision(model),
+        "unknownbench_commit": UNKNOWNBENCH_COMMIT,
+        "n_per_side": n_per_side, "seed": seed,
+        "whitelist_rule": {"min_gap": min_gap, "max_unanswerable_mean_top1": 0.5},
+        "whitelist": whitelist_from_results(results, min_gap),
+        "results": results,
+    }
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    print(f"\nWrote {len(results)} template rows -> {path}")
+    print(f"{len(payload['whitelist'])} templates pass gap >= {min_gap}:")
+    for t in payload["whitelist"]:
+        print(f"  {t}")
+    return payload
+
+
+def parse_args(argv=None):
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--n-per-side", type=int, default=15)
+    p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--min-gap", type=float, default=0.15)
+    p.add_argument("--allow-nf4", action="store_true",
+                   help="allow a 4-bit model (development only; results are NOT usable for the dataset)")
+    p.add_argument("--quantize", action="store_true", help="load the model in NF4 (requires --allow-nf4)")
+    return p.parse_args(argv)
+
+
+def main(argv=None):
+    args = parse_args(argv)
+    from shared.model_utils import load_model
+
+    if args.quantize and not args.allow_nf4:
+        sys.exit("Refusing to screen templates with an NF4 model. Pass --allow-nf4 to override "
+                 "(development only).")
+    model, tokenizer = load_model(quantize=args.quantize)
+    prec = _model_precision(model)
+    if prec != "bf16":
+        if not args.allow_nf4:
+            sys.exit(f"Model precision is {prec!r}, not bf16 -- refusing. Pass --allow-nf4 to override.")
+        print("\n" + "!" * 78 + f"\nWARNING: screening with a {prec} model. The whitelist derived from this run "
+              "is for pipeline development only and must NOT be used to build committed data.\n" + "!" * 78 + "\n")
+
+    results = screen_all_templates(model, tokenizer, n_per_side=args.n_per_side, seed=args.seed)
+    save_results(results, model, args.n_per_side, args.seed, args.min_gap)
+    print("\nNEXT: python person_B_lack_of_knowledge/rebuild_lack_of_knowledge_whitelisted.py")
+    return results
+
+
+if __name__ == "__main__":
+    main()

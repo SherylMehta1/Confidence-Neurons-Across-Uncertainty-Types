@@ -1,0 +1,32 @@
+[
+  {
+    "subset": "pooled(working+held_out)",
+    "n_prompts": 360,
+    "n_neurons": 17,
+    "n_categories": 3,
+    "F_interaction": 1.1254853535735192,
+    "df_int": 32,
+    "df_res": 5712,
+    "partial_eta2": 0.006265733124440119,
+    "p_permutation": 0.28523573821308934,
+    "p_parametric_reference": 0.28678457049237244,
+    "n_perm": 20000,
+    "significant_at_alpha": false,
+    "alpha": 0.01
+  },
+  {
+    "subset": "held_out_only",
+    "n_prompts": 108,
+    "n_neurons": 17,
+    "n_categories": 3,
+    "F_interaction": 1.1563935781172852,
+    "df_int": 32,
+    "df_res": 1680,
+    "partial_eta2": 0.02155183196264793,
+    "p_permutation": 0.26228688565571723,
+    "p_parametric_reference": 0.2516021384277722,
+    "n_perm": 20000,
+    "significant_at_alpha": false,
+    "alpha": 0.01
+  }
+]

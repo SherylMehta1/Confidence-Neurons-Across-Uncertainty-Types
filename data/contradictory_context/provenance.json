@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-08-21T19:40:50",
+  "model_id": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "precision": "bf16",
+  "counterfact_revision": "c01c413f856ee38f5c080c9fc5e87aff478e2ff9",
+  "pararel_revision": "aadfae52549bb0eb5b6729b27f0d8240d4f55f4f",
+  "seed": 42,
+  "n_target": 120,
+  "knows_fact_min_prob": 0.0,
+  "knows_fact_user_text": "Complete the sentence.",
+  "knows_fact_position": "assistant-prefilled base_prompt",
+  "checked": 925,
+  "passed": 240,
+  "n_template_overrides": 41,
+  "unresolved_templates": [
+    [
+      "P1303",
+      "{} plays"
+    ],
+    [
+      "P1303",
+      "{} plays the"
+    ],
+    [
+      "P1303",
+      "{} plays the instrument"
+    ],
+    [
+      "P1303",
+      "{}, playing the"
+    ],
+    [
+      "P1303",
+      "{}, the"
+    ],
+    [
+      "P136",
+      "What does {} play? They play"
+    ],
+    [
+      "P136",
+      "{} performs"
+    ],
+    [
+      "P136",
+      "{} plays"
+    ],
+    [
+      "P136",
+      "{}, who plays"
+    ],
+    [
+      "P37",
+      "In {}, they understand"
+    ],
+    [
+      "P37",
+      "The law in {} declares the language"
+    ],
+    [
+      "P641",
+      "What sport does {} play? They play"
+    ],
+    [
+      "P641",
+      "{} plays"
+    ],
+    [
+      "P641",
+      "{} professionally plays the sport"
+    ],
+    [
+      "P641",
+      "{}, the"
+    ]
+  ],
+  "template_overrides": {
+    "P103|{} spoke the language": "The native language of {} is",
+    "P103|{}, a native": "The native language of {} is",
+    "P103|{}, speaker of": "The native language of {} is",
+    "P106|{} works as": "{}'s occupation is",
+    "P106|{}, who works as": "{}'s occupation is",
+    "P108|{}, of": "{} works for",
+    "P127|{} owner": "{} is owned by",
+    "P127|{}'s owner": "{} is owned by",
+    "P127|{}, by": "{} is owned by",
+    "P127|{}, from": "{} is owned by",
+    "P131|{}, in": "{} is located in",
+    "P138|{}, called after": "{} is named after",
+    "P138|{}, named after": "{} is named after",
+    "P138|{}, named for": "{} is named after",
+    "P17|{}, in": "{} is located in",
+    "P17|{}, located in": "{} is located in",
+    "P176|{}, created by": "{} is produced by",
+    "P176|{}, developed by": "{} is produced by",
+    "P176|{}, produced by": "{} is produced by",
+    "P178|{}, created by": "{} is developed by",
+    "P178|{}, developed by": "{} is developed by",
+    "P19|{} originates from": "{} was born in",
+    "P264|{} label :": "{} is represented by music label",
+    "P264|{}, released by": "{} is represented by music label",
+    "P30|{}, in": "{} is located in",
+    "P36|{}'s capital city,": "The capital of {} is",
+    "P36|{}'s capital,": "The capital of {} is",
+    "P36|{}, which has the capital": "The capital of {} is",
+    "P36|{}, which has the capital city": "The capital of {} is",
+    "P413|Which position does {} play? They play as": "{} plays in the position of",
+    "P413|{} plays as": "{} plays in the position of",
+    "P413|{}, the": "{} plays in the position of",
+    "P413|{}, who plays the position": "{} plays in the position of",
+    "P449|{} premiered on": "{} was originally aired on",
+    "P495|{} from": "{} was created in",
+    "P495|{}, created in": "{} was created in",
+    "P495|{}, developed in": "{} was created in",
+    "P495|{}, formulated in": "{} was created in",
+    "P495|{}, from": "{} was created in",
+    "P740|{}, created in": "{} was founded in",
+    "P740|{}, founded in": "{} was founded in"
+  }
+}

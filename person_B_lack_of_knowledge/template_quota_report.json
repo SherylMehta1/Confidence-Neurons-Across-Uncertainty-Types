@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-08-21T19:39:55",
+  "unknownbench_commit": "7283e4218b9146275d3069306927c3289fad576a",
+  "seed": 42,
+  "target_per_side": 120,
+  "whitelist_provenance": {
+    "source": "person_B_lack_of_knowledge/template_screen_results.json",
+    "screen_precision": "bf16",
+    "screen_n_per_side": 15,
+    "min_gap": 0.15,
+    "max_unanswerable_mean_top1": 0.5
+  },
+  "whitelist": [
+    "What is the capital city of {}?",
+    "Does {} interact with any foods, drinks, or other medications?",
+    "Are there any interesting behaviors or habits associated with {}?",
+    "Does {} play any significant role in its ecosystem?",
+    "Is there significance to when or how often {} is served?",
+    "What are the official languages spoken in {}?",
+    "What cuisine or culture does {} originate from?",
+    "What form of government does {} have?",
+    "What ethnic and cultural groups live in or originate from {}?",
+    "How is {} administered (oral, injection, topical, etc.)?"
+  ],
+  "n_unmatched_nec_prompts": 649,
+  "per_template": [
+    {
+      "template": "What is the capital city of {}?",
+      "nec_category": "countries",
+      "quota": 9,
+      "unanswerable_pool": 17,
+      "answerable_pool": 21
+    },
+    {
+      "template": "Does {} interact with any foods, drinks, or other medications?",
+      "nec_category": "medicines",
+      "quota": 12,
+      "unanswerable_pool": 22,
+      "answerable_pool": 28
+    },
+    {
+      "template": "Are there any interesting behaviors or habits associated with {}?",
+      "nec_category": "animals",
+      "quota": 16,
+      "unanswerable_pool": 35,
+      "answerable_pool": 30
+    },
+    {
+      "template": "Does {} play any significant role in its ecosystem?",
+      "nec_category": "animals",
+      "quota": 15,
+      "unanswerable_pool": 34,
+      "answerable_pool": 28
+    },
+    {
+      "template": "Is there significance to when or how often {} is served?",
+      "nec_category": "food",
+      "quota": 13,
+      "unanswerable_pool": 24,
+      "answerable_pool": 29
+    },
+    {
+      "template": "What are the official languages spoken in {}?",
+      "nec_category": "countries",
+      "quota": 6,
+      "unanswerable_pool": 22,
+      "answerable_pool": 12
+    },
+    {
+      "template": "What cuisine or culture does {} originate from?",
+      "nec_category": "food",
+      "quota": 15,
+      "unanswerable_pool": 35,
+      "answerable_pool": 28
+    },
+    {
+      "template": "What form of government does {} have?",
+      "nec_category": "countries",
+      "quota": 11,
+      "unanswerable_pool": 20,
+      "answerable_pool": 20
+    },
+    {
+      "template": "What ethnic and cultural groups live in or originate from {}?",
+      "nec_category": "countries",
+      "quota": 9,
+      "unanswerable_pool": 19,
+      "answerable_pool": 17
+    },
+    {
+      "template": "How is {} administered (oral, injection, topical, etc.)?",
+      "nec_category": "medicines",
+      "quota": 14,
+      "unanswerable_pool": 27,
+      "answerable_pool": 30
+    }
+  ],
+  "n_records": 120,
+  "n_control_records": 120
+}
