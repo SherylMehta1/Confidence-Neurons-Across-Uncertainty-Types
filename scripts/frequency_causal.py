@@ -42,6 +42,17 @@ from shared.detection import load_candidate_neurons
 from shared.provenance import build_provenance, write_provenance
 
 
+
+def align_logfreq(logfreq, vocab_rows):
+    """Align a unigram log-frequency vector to the unembedding's row count: truncate if the
+    tokenizer has more entries than the matrix, pad with the minimum (unseen-token) value if the
+    matrix is larger (padded vocab, e.g. Qwen: 152064 rows vs 151665 tokens)."""
+    import numpy as _np
+    lf = _np.asarray(logfreq, dtype=_np.float64)
+    if len(lf) >= vocab_rows:
+        return lf[:vocab_rows]
+    return _np.concatenate([lf, _np.full(vocab_rows - len(lf), lf.min())])
+
 def dist_metrics(p, logu):
     """p: fp32 probs [V]; logu: log unigram [V] (same device). Returns (entropy, elogu, kl)."""
     p = p.float()
@@ -137,7 +148,7 @@ def main():
     uni = args.unigram or sorted(glob.glob(str(REPO_ROOT / "results/unigram_logfreq_*.npy")))[-1]
     logu_np = np.load(uni)
     vocab_rows = model.get_output_embeddings().weight.shape[0]
-    logu = torch.tensor(logu_np[:vocab_rows], dtype=torch.float32, device=model.device)
+    logu = torch.tensor(align_logfreq(logu_np, vocab_rows), dtype=torch.float32, device=model.device)
     levels = [float(x) for x in args.sigma_levels.split(",")]
 
     if args.neurons:

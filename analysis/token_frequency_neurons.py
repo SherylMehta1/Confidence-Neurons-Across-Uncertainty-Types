@@ -37,6 +37,17 @@ from shared.detection import load_candidate_neurons
 from shared.provenance import build_provenance, write_provenance
 
 
+
+def align_logfreq(logfreq, vocab_rows):
+    """Align a unigram log-frequency vector to the unembedding's row count: truncate if the
+    tokenizer has more entries than the matrix, pad with the minimum (unseen-token) value if the
+    matrix is larger (padded vocab, e.g. Qwen: 152064 rows vs 151665 tokens)."""
+    import numpy as _np
+    lf = _np.asarray(logfreq, dtype=_np.float64)
+    if len(lf) >= vocab_rows:
+        return lf[:vocab_rows]
+    return _np.concatenate([lf, _np.full(vocab_rows - len(lf), lf.min())])
+
 def unigram_logfreq(tokenizer, n_docs, cache_dir, verbose=True):
     """log p(token) over the vocab from a WikiText-103 slice; cached by tokenizer+n_docs."""
     key = hashlib.sha256(f"{tokenizer.name_or_path}|{n_docs}|{len(tokenizer)}".encode()).hexdigest()[:12]
@@ -101,7 +112,7 @@ def main():
     vocab_rows = unembed.shape[0]
 
     logfreq, cache = unigram_logfreq(tokenizer, args.n_docs, REPO_ROOT / "results")
-    lf = torch.tensor(logfreq[:vocab_rows], dtype=torch.float32, device=device)
+    lf = torch.tensor(align_logfreq(logfreq, vocab_rows), dtype=torch.float32, device=device)
     lf_c = lf - lf.mean()
     lf_var = (lf_c ** 2).sum()
 

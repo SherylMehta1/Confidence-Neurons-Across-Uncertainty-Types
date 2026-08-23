@@ -1,0 +1,28 @@
+{
+  "category": "situated",
+  "model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "precision": "bf16",
+  "n_candidates": 600,
+  "n_pairs": 3,
+  "n_working": 2,
+  "n_held_out": 1,
+  "n_consistently_wrong": 0,
+  "fails": {
+    "control_not_known": 519,
+    "uncertain_not_unknown": 0,
+    "len": 54,
+    "entropy": 5,
+    "hedge": 19
+  },
+  "gate": {
+    "entropy_gap": 0.5,
+    "hedge_gap": 0.3,
+    "require_hedge": true,
+    "max_len_diff": 3
+  },
+  "mean_entropy_uncertain": 3.2097495396931968,
+  "mean_entropy_control": 1.6849519809087117,
+  "mean_hedge_uncertain": 0.5555555555555555,
+  "mean_hedge_control": 0.0,
+  "entropy_gap_all_candidates": -0.19907971784472467
+}

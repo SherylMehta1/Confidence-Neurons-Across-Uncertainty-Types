@@ -38,8 +38,8 @@ def parse_categories(arg):
     if cats == ["all"]:
         return list(CATEGORIES)
     for c in cats:
-        if c not in CATEGORIES:
-            raise SystemExit(f"unknown category {c!r}; choose from {CATEGORIES}")
+        if c not in CATEGORIES and not (REPO_ROOT / "data" / c / "prompts.jsonl").exists():
+            raise SystemExit(f"unknown category {c!r}; choose from {CATEGORIES} or any data/<name>/prompts.jsonl")
     return cats
 
 

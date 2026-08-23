@@ -73,6 +73,8 @@ def load_model(model_id=None, quantize=False, dtype=None,
     else:
         model = _from_pretrained_with_dtype(AutoModelForCausalLM, model_id, dtype,
                                             device_map=device_map, **kwargs)
+        if device_map is None and torch.cuda.is_available() and next(model.parameters()).device.type == "cpu":
+            model.to("cuda")  # without accelerate the model lands on CPU; that silently made a sandbox run 30x slower
         precision = {torch.bfloat16: "bf16", torch.float16: "fp16", torch.float32: "fp32"}.get(dtype, str(dtype))
 
     model.eval()

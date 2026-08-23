@@ -1,0 +1,28 @@
+{
+  "category": "conflict",
+  "model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "precision": "bf16",
+  "n_candidates": 600,
+  "n_pairs": 6,
+  "n_working": 4,
+  "n_held_out": 2,
+  "n_consistently_wrong": 0,
+  "fails": {
+    "control_not_known": 299,
+    "uncertain_not_unknown": 0,
+    "len": 0,
+    "entropy": 56,
+    "hedge": 239
+  },
+  "gate": {
+    "entropy_gap": 0.5,
+    "hedge_gap": 0.3,
+    "require_hedge": true,
+    "max_len_diff": 3
+  },
+  "mean_entropy_uncertain": 1.783469299475352,
+  "mean_entropy_control": 0.3328542585174243,
+  "mean_hedge_uncertain": 0.3888888888888889,
+  "mean_hedge_control": 0.0,
+  "entropy_gap_all_candidates": 0.8102332934892426
+}
