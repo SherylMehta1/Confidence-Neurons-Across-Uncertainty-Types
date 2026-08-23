@@ -1,0 +1,26 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "precision": "bf16",
+  "quant_config": null,
+  "dtype": "torch.bfloat16",
+  "transformers_version": "5.14.1",
+  "torch_version": "2.11.0+cu130",
+  "candidate_file_sha256": null,
+  "data_file_sha256s": {
+    "/marimo/repo/data/conflict/prompts.jsonl": "17ef5d91ff035f95e04ff7f19876273ee3101a60ad3f4f66f1bdf55de6bbae87",
+    "/marimo/repo/data/conflict/controls.jsonl": "e6a020676a498aa1fbd306b6a844b24c6ddc1b9dcb6c71b354600974e728a744"
+  },
+  "baseline_prompt_sha256": null,
+  "n_baseline_prompts": null,
+  "seed": null,
+  "layer_range": null,
+  "top_k_per_half": null,
+  "top_k_final": null,
+  "min_abs_corr": null,
+  "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+  "timestamp": "2026-08-23T11:57:15.065405+00:00",
+  "categories": [
+    "conflict"
+  ],
+  "per_prompt_csv": "results/induction_check_conflict_per_prompt.csv"
+}

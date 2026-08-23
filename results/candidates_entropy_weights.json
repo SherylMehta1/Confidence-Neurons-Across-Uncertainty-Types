@@ -1,0 +1,239 @@
+{
+  "provenance": {
+    "model_id": "unsloth/Meta-Llama-3.1-8B-Instruct",
+    "precision": "bf16",
+    "quant_config": null,
+    "dtype": "torch.bfloat16",
+    "transformers_version": "5.14.1",
+    "torch_version": "2.11.0+cu130",
+    "candidate_file_sha256": null,
+    "data_file_sha256s": null,
+    "baseline_prompt_sha256": null,
+    "n_baseline_prompts": null,
+    "seed": null,
+    "layer_range": null,
+    "top_k_per_half": null,
+    "top_k_final": null,
+    "min_abs_corr": null,
+    "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+    "timestamp": "2026-08-22T19:06:10.878119+00:00",
+    "script": "scripts/reverse_nomination.py",
+    "layers": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "k": 20,
+    "norm_quantile": 0.75,
+    "n_scanned": 114688,
+    "unigram": "/marimo/repo/results/unigram_logfreq_43be1456fdd4.npy",
+    "nomination": "entropy_weights"
+  },
+  "candidates": [
+    {
+      "neuron_id": "L31_N993",
+      "layer": 31,
+      "neuron_idx": 993,
+      "w_norm": 2.0604066848754883,
+      "logit_var": 0.00010616333020152524,
+      "nullfrac_k64": 0.47484713792800903,
+      "freq_corr": 0.09339907020330429,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N13664",
+      "layer": 30,
+      "neuron_idx": 13664,
+      "w_norm": 2.1208434104919434,
+      "logit_var": 0.00010974991891998798,
+      "nullfrac_k64": 0.18901880085468292,
+      "freq_corr": -0.01078405324369669,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L31_N12106",
+      "layer": 31,
+      "neuron_idx": 12106,
+      "w_norm": 2.0138630867004395,
+      "logit_var": 0.00010998722427757457,
+      "nullfrac_k64": 0.3728722631931305,
+      "freq_corr": 0.0013212024932727218,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L29_N1141",
+      "layer": 29,
+      "neuron_idx": 1141,
+      "w_norm": 2.1465401649475098,
+      "logit_var": 0.00011794017336796969,
+      "nullfrac_k64": 0.031161440536379814,
+      "freq_corr": -0.11794720590114594,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L31_N2287",
+      "layer": 31,
+      "neuron_idx": 2287,
+      "w_norm": 2.206620931625366,
+      "logit_var": 0.00012063920439686626,
+      "nullfrac_k64": 0.08258461952209473,
+      "freq_corr": 0.10648174583911896,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N3794",
+      "layer": 30,
+      "neuron_idx": 3794,
+      "w_norm": 2.02724552154541,
+      "logit_var": 0.00012174901348771527,
+      "nullfrac_k64": 0.42134952545166016,
+      "freq_corr": -0.05657675489783287,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L31_N8677",
+      "layer": 31,
+      "neuron_idx": 8677,
+      "w_norm": 2.155034303665161,
+      "logit_var": 0.00012789452739525586,
+      "nullfrac_k64": 0.23691849410533905,
+      "freq_corr": -0.07928963750600815,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L29_N4803",
+      "layer": 29,
+      "neuron_idx": 4803,
+      "w_norm": 1.9907053709030151,
+      "logit_var": 0.00012805237201973796,
+      "nullfrac_k64": 0.36370906233787537,
+      "freq_corr": -0.021225443109869957,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N12730",
+      "layer": 30,
+      "neuron_idx": 12730,
+      "w_norm": 1.947095274925232,
+      "logit_var": 0.00013140680675860494,
+      "nullfrac_k64": 0.01467751245945692,
+      "freq_corr": 0.04082674905657768,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L31_N9032",
+      "layer": 31,
+      "neuron_idx": 9032,
+      "w_norm": 2.2711668014526367,
+      "logit_var": 0.0001325298217125237,
+      "nullfrac_k64": 0.2087084949016571,
+      "freq_corr": -0.05587462708353996,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N13446",
+      "layer": 30,
+      "neuron_idx": 13446,
+      "w_norm": 1.9937472343444824,
+      "logit_var": 0.00013393939298111945,
+      "nullfrac_k64": 0.031917572021484375,
+      "freq_corr": 0.05485500022768974,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N2034",
+      "layer": 30,
+      "neuron_idx": 2034,
+      "w_norm": 2.012794256210327,
+      "logit_var": 0.00013423406926449388,
+      "nullfrac_k64": 0.26757264137268066,
+      "freq_corr": -0.036844804883003235,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N3519",
+      "layer": 30,
+      "neuron_idx": 3519,
+      "w_norm": 2.170489549636841,
+      "logit_var": 0.00013600627426058054,
+      "nullfrac_k64": 0.2814045548439026,
+      "freq_corr": 0.030608797445893288,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N889",
+      "layer": 30,
+      "neuron_idx": 889,
+      "w_norm": 2.195439338684082,
+      "logit_var": 0.00013683788711205125,
+      "nullfrac_k64": 0.06047143042087555,
+      "freq_corr": 0.019074419513344765,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L31_N2895",
+      "layer": 31,
+      "neuron_idx": 2895,
+      "w_norm": 2.191756010055542,
+      "logit_var": 0.000136844115331769,
+      "nullfrac_k64": 0.2822624444961548,
+      "freq_corr": -0.015226009301841259,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L29_N4169",
+      "layer": 29,
+      "neuron_idx": 4169,
+      "w_norm": 2.028989315032959,
+      "logit_var": 0.0001378498418489471,
+      "nullfrac_k64": 0.031880225986242294,
+      "freq_corr": 0.06692275404930115,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L31_N12734",
+      "layer": 31,
+      "neuron_idx": 12734,
+      "w_norm": 1.9592691659927368,
+      "logit_var": 0.00013789039803668857,
+      "nullfrac_k64": 0.18590690195560455,
+      "freq_corr": -0.07270888239145279,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N10549",
+      "layer": 30,
+      "neuron_idx": 10549,
+      "w_norm": 2.172854423522949,
+      "logit_var": 0.000138309012982063,
+      "nullfrac_k64": 0.0746263712644577,
+      "freq_corr": -0.048489928245544434,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L30_N1217",
+      "layer": 30,
+      "neuron_idx": 1217,
+      "w_norm": 2.0143730640411377,
+      "logit_var": 0.0001389339449815452,
+      "nullfrac_k64": 0.41607949137687683,
+      "freq_corr": 0.27175164222717285,
+      "nomination": "entropy_weights"
+    },
+    {
+      "neuron_id": "L31_N1852",
+      "layer": 31,
+      "neuron_idx": 1852,
+      "w_norm": 2.3907482624053955,
+      "logit_var": 0.00013901629426982254,
+      "nullfrac_k64": 0.3169328272342682,
+      "freq_corr": 0.05532683804631233,
+      "nomination": "entropy_weights"
+    }
+  ]
+}

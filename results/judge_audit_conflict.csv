@@ -1,0 +1,66 @@
+prompt_id,side,kind,question,gold,answer,grader,hedged,slick,judge,judge_margin,agree,kind_group
+cq_00484_c,control,sample0,Who was the producer of Adopted?,Pauly Shore | Paul Montgomery Shore,"not explicitly mentioned in the given source. However, it is",False,False,HighlyKnown,False,-17.124988555908203,True,sample
+cq_00165_c,control,sample3,Who was the screenwriter for Bullet?,Mickey Rourke,: The screenplay was written by Bruce Rubenstein and Mickey R,False,False,HighlyKnown,False,-4.000001907348633,True,sample
+cq_00189_c,control,sample0,Who was the screenwriter for Tracks?,Henry Jaglom | Henry David Jaglom,"not in the source, but it can be looked up.",False,False,HighlyKnown,False,-16.2499942779541,True,sample
+cq_00533_c,control,sample1,What is Mr. Porter's occupation?,record producer | music producer,": Mr. Porter is an American rapper, singer, songwriter",False,False,HighlyKnown,False,-16.124988555908203,True,sample
+cq_00103_c,control,sample6,What genre is The Wedding?,romance novel,Romance.,False,False,HighlyKnown,True,20.49951171875,False,sample
+cq_00427_c,control,greedy,Who was the director of Father?,Wang Shuo,Wang Shuo.,True,False,HighlyKnown,True,19.499704360961914,True,greedy
+cq_00410_c,control,sample9,Who is the author of Chance?,Joseph Conrad | Jozef Teodor Konrad Korzeniowski,Joseph Conrad.,True,False,HighlyKnown,True,23.124570846557617,True,sample
+cq_00011_c,control,sample0,Who was the director of Kitchen?,Yim Ho,Yim Ho.,True,False,HighlyKnown,True,20.124643325805664,True,sample
+cq_00582_c,control,sample5,Who was the director of Coming Home?,Arlene Sanford,Arlene Sanford.,True,False,HighlyKnown,True,8.499988555908203,True,sample
+cq_00279_c,control,sample2,Who is the author of Now I Know?,Aidan Chambers,Aidan Chambers.,True,False,HighlyKnown,True,21.499666213989258,True,sample
+cq_00016_c,control,sample0,Who was the screenwriter for The Detail?,Ed Burns | David Simon | David Judah Simon,"David Simon. He wrote ""The Detail"" episode from a",True,False,HighlyKnown,True,9.999980926513672,True,sample
+cq_00065_c,control,sample2,Who is the author of Crave?,Sarah Kane | Sarah Marie Kane,Sarah Kane.,True,False,HighlyKnown,True,24.124570846557617,True,sample
+cq_00356_c,control,sample4,What genre is 10 Years?,"comedy-drama | dramedy | comedic drama | tragicomedy | seriocomedy | comedy drama | dramatic comedy | Comedy-drama, dramedy | romantic comedy | romedy | romcom",: Romantic Comedy.,True,False,HighlyKnown,True,4.499995231628418,True,sample
+cq_00239_c,control,sample0,In what country is Rakhyah District?,Yemen | Republic of Yemen | ye | Rep. Yemen | 🇾🇪 | YEM,Yemen.,True,False,HighlyKnown,True,24.874412536621094,True,sample
+cq_00368_c,control,sample9,Who was the screenwriter for Cleaning Up?,George Pelecanos | George P. Pelecanos | Ed Burns | David Simon | David Judah Simon,"George Pelecanos. He wrote the episode ""Cleaning",True,False,HighlyKnown,True,7.499997138977051,True,sample
+cq_00282_c,control,sample2,Who was the producer of Secret of Mana?,Hiromichi Tanaka,"Hiromichi Tanaka, a veteran Square designer.",True,False,HighlyKnown,True,18.374868392944336,True,sample
+cq_00390_c,control,sample0,Who was the composer of I'll Be Seeing You?,Daniele Amfitheatrof | Daniel Anfiteatrov | Daniele Alexandrovich Amfitheatrof,"Daniele Amfitheatrof, who composed the soundtrack for",True,False,HighlyKnown,True,6.999997615814209,True,sample
+cq_00468_c,control,sample3,Who was the producer of Mass?,Akkineni Nagarjuna | Nagarjuna Akkineni | Nagarjuna | Akkineni Nagarjuna Rao,Akkineni Nagarjuna. He produced the film under,True,False,HighlyKnown,True,9.999991416931152,True,sample
+cq_00003_c,control,sample2,Who was the director of Five?,Arch Oboler,Arch Oboler.,True,False,HighlyKnown,True,22.49951171875,True,sample
+cq_00036_c,control,sample5,Who is the author of Red Leaves?,William Faulkner | William Cuthbert Faulkner | William Falkner | William Cuthbert Falkner,William Faulkner.,True,False,HighlyKnown,True,25.499290466308594,True,sample
+cq_00134_c,control,sample0,What genre is In Deep?,science fiction | SF | scifi | sci Fi | sci-Fi | science-fiction | sci fi | sciencefiction | short story | tale | pripovijetka,Science Fiction.,True,False,HighlyKnown,True,22.999664306640625,True,sample
+cq_00464_c,control,sample1,Who was the screenwriter for ...Y mañana serán mujeres?,Luis Alcoriza | Luis Alcoriza de la Vega,Luis Alcoriza.,True,False,HighlyKnown,True,22.624290466308594,True,sample
+cq_00179_c,control,sample1,Who was the director of Run for Money?,Reha Erdem,Reha Erdem.,True,False,HighlyKnown,True,20.749664306640625,True,sample
+cq_00093_c,control,sample1,Who is the mother of Matilda of Scotland?,Saint Margaret of Scotland | Margaret of Scotland | St. Margaret,Saint Margaret of Scotland.,True,False,HighlyKnown,True,24.999412536621094,True,sample
+cq_00392_c,control,sample2,Who was the screenwriter for Rainbow?,Wanda Wasilewska,"Wanda Wasilewska, based on her novel """,True,False,HighlyKnown,True,12.999979972839355,True,sample
+cq_00003_c,control,sample8,Who was the director of Five?,Arch Oboler,Arch Oboler.,True,False,HighlyKnown,True,22.624446868896484,True,sample
+cq_00036_c,control,sample6,Who is the author of Red Leaves?,William Faulkner | William Cuthbert Faulkner | William Falkner | William Cuthbert Falkner,William Faulkner.,True,False,HighlyKnown,True,25.499332427978516,True,sample
+cq_00318_c,control,sample6,Who was the director of The Cure?,Charlie Chaplin | Charles Spencer Chaplin | Charles Chaplin | Sir Charles Spencer Chaplin,Charlie Chaplin.,True,False,HighlyKnown,True,12.249796867370605,True,sample
+cq_00088_c,control,sample1,Who is the author of The Ball?,James Shirley,James Shirley.,True,False,HighlyKnown,True,22.249643325805664,True,sample
+cq_00450_c,control,sample8,Who was the producer of The Cure?,Eric Eisner | Eloise Breckenridge Eisner | Scarlet Haven Eisner | Athena Belle Eisner,not explicitly stated in the source as Eric Eisner is only,True,False,HighlyKnown,False,-11.249999046325684,False,sample
+cq_00542_c,control,sample4,Who was the producer of The Metro?,Dileep (Gopalakrishnan P Pillai),Dileep (Gopalakrishnan P Pillai,True,False,HighlyKnown,True,4.499997615814209,True,sample
+cq_00077_c,control,sample3,Who is the author of Coal?,Audre Lorde | Audre Geraldine Lorde,Audre Lorde.,True,False,HighlyKnown,True,22.999595642089844,True,sample
+cq_00266_c,control,sample7,Who was the director of Chance?,Amber Benson | Amber Nicole Benson,"Amber Benson. She directed, wrote, produced, and starred",True,False,HighlyKnown,True,8.749996185302734,True,sample
+cq_00147_c,control,sample4,Who is the author of The Treatment?,Mo Hayder | Beatrice Clare Dunkel | Clare Damaris Bastin | Candy Davis | Theo Clare | Clare Dunkel,"Mo Hayder, a British crime-writer.",True,False,HighlyKnown,True,19.749832153320312,True,sample
+cq_00438_c,control,sample2,Who was the director of Sunny?,Lee Joon-ik | Lee Jun Ik,Lee Joon-ik.,True,False,HighlyKnown,True,23.74951171875,True,sample
+cq_00284_c,control,sample9,Who was the director of The Valley?,Ghassan Salhab,Ghassan Salhab.,True,False,HighlyKnown,True,21.874544143676758,True,sample
+cq_00429_c,control,sample5,In what city was Richard S. Bull born?,Wilkinsburg,": Wilkinsburg, Pennsylvania.",True,False,HighlyKnown,True,10.74998950958252,True,sample
+cq_00303_c,control,sample1,Who was the producer of The Hole?,Jeremy Bolt,Jeremy Bolt.,True,False,HighlyKnown,True,22.874481201171875,True,sample
+cq_00566_c,control,sample9,Who was the director of The Chief?,Charles Reisner,Charles Reisner.,True,False,HighlyKnown,True,22.499664306640625,True,sample
+cq_00039_c,control,sample5,Who is the author of Sweetness?,Torgny Lindgren | Gustav Torgny Lindgren,Torgny Lindgren.,True,False,HighlyKnown,True,23.624513626098633,True,sample
+cq_00160_c,control,sample2,What genre is El Aura?,neo-noir | new-black,Neo-Noir.,True,False,HighlyKnown,True,22.624664306640625,True,sample
+cq_00165_c,control,sample8,Who was the screenwriter for Bullet?,Mickey Rourke,: Bruce Rubenstein and Mickey Rourke (under a pseud,True,False,HighlyKnown,False,-2.5000009536743164,False,sample
+cq_00132_c,control,sample7,Who is the author of Chicago?,Maurine Dallas Watkins | Maurine Watkins,Maurine Dallas Watkins.,True,False,HighlyKnown,True,24.124597549438477,True,sample
+cq_00282_c,control,sample3,Who was the producer of Secret of Mana?,Hiromichi Tanaka,"Hiromichi Tanaka, a veteran Square designer.",True,False,HighlyKnown,True,18.499876022338867,True,sample
+cq_00174_c,control,sample0,Who was the producer of The Swan?,Dore Schary,Dore Schary.,True,False,HighlyKnown,True,21.749542236328125,True,sample
+cq_00553_c,control,sample3,Who was the composer of Nelson?,Lennox Berkeley | Lennox Randal Francis Berkeley | Sir Lennox Berkeley | Sir Lennox Randal Francis Berkeley,Lennox Berkeley.,True,False,HighlyKnown,True,23.124542236328125,True,sample
+cq_00585_c,control,sample7,Who was the director of Too Short a Season?,Rob Bowman | Rob Stanton Bowman | Rob S. Bowman,Rob Bowman.,True,False,HighlyKnown,True,25.249290466308594,True,sample
+cq_00349_c,control,sample8,Who is the author of Deadline?,Seanan McGuire | Mira Grant,"Seanan McGuire, who wrote under the pen name M",True,False,HighlyKnown,True,8.749996185302734,True,sample
+cq_00596_c,control,sample9,Who was the screenwriter for The Island?,Peter Benchley | Peter Bradford Benchley,Peter Benchley. He wrote the screenplay for the 198,True,False,HighlyKnown,True,6.749995231628418,True,sample
+cq_00468_c,control,sample8,Who was the producer of Mass?,Akkineni Nagarjuna | Nagarjuna Akkineni | Nagarjuna | Akkineni Nagarjuna Rao,"Akkineni Nagarjuna, who produced the film on",True,False,HighlyKnown,True,10.749988555908203,True,sample
+cq_00315_c,control,sample5,Who is the author of The Girl?,Meridel Le Sueur,Meridel Le Sueur.,True,False,HighlyKnown,True,21.12468719482422,True,sample
+cq_00386_c,control,sample2,Who is the father of Zhuozi?,Duke Xian of Jin,Duke Xian of Jin.,True,False,HighlyKnown,True,23.874513626098633,True,sample
+cq_00186_c,control,sample9,What genre is Slim?,rhythm and blues | R&B | RnB | RNB | R and B | R & B,R&B (contemporary R&B singer).,True,False,HighlyKnown,True,15.4998779296875,True,sample
+cq_00147_c,control,sample5,Who is the author of The Treatment?,Mo Hayder | Beatrice Clare Dunkel | Clare Damaris Bastin | Candy Davis | Theo Clare | Clare Dunkel,"Mo Hayder, a British crime-writer.",True,False,HighlyKnown,True,19.874820709228516,True,sample
+cq_00089_c,control,sample5,Who was the director of The Silence?,Ingmar Bergman | Ernst Ingmar Bergman,Ingmar Bergman.,True,False,HighlyKnown,True,23.249570846557617,True,sample
+cq_00457_c,control,sample1,Who is the father of Archduchess Assunta of Austria?,Archduke Leopold Salvator of Austria,Archduke Leopold Salvator of Austria.,True,False,HighlyKnown,True,23.999542236328125,True,sample
+cq_00065_c,control,sample7,Who is the author of Crave?,Sarah Kane | Sarah Marie Kane,Sarah Kane.,True,False,HighlyKnown,True,23.999542236328125,True,sample
+cq_00358_c,control,sample4,Who was the screenwriter for Eve?,Chris Brancato | Kenneth Biller,Kenneth Biller and Chris Brancato.,True,False,HighlyKnown,True,6.499997138977051,True,sample
+cq_00218_c,control,sample6,Who is the father of Ram?,Hezron,Hezron.,True,False,HighlyKnown,True,14.374859809875488,True,sample
+cq_00211_c,control,sample0,Who is the author of Victoria?,Knut Hamsun | Knut Pedersen Hamsun | Hamsun,Knut Hamsun.,True,False,HighlyKnown,True,23.749595642089844,True,sample
+cq_00025_c,control,sample7,Who is the author of Recursion?,Tony Ballantyne,Tony Ballantyne.,True,False,HighlyKnown,True,22.374704360961914,True,sample
+cq_00582_c,control,sample2,Who was the director of Coming Home?,Arlene Sanford,Arlene Sanford.,True,False,HighlyKnown,True,8.49998664855957,True,sample
+cq_00270_c,control,sample5,Who is the author of Prime Time?,Mike Tucker,Mike Tucker.,True,False,HighlyKnown,True,22.749542236328125,True,sample
+cq_00288_c,control,sample4,In what city was Valérie Létard born?,Orchies,Orchies.,True,False,HighlyKnown,True,22.874597549438477,True,sample
+cq_00431_c,control,sample9,Who was the screenwriter for Yellow?,Chris Chan Lee,Chris Chan Lee. He wrote the screenplay for the film Yellow,True,False,HighlyKnown,True,8.99998950958252,True,sample

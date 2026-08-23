@@ -1,0 +1,70 @@
+{
+  "provenance": {
+    "note": "correlation-selected candidates flagged as token-frequency neurons by weights (|freq_corr| >= 99th pct vs 1000 random), from results/token_frequency_neurons.csv"
+  },
+  "candidates": [
+    {
+      "neuron_id": "L29_N11909",
+      "layer": 29,
+      "neuron_idx": 11909,
+      "freq_corr": -0.5412424206733704,
+      "abs_freq_corr_pctile": 100.0
+    },
+    {
+      "neuron_id": "L30_N1777",
+      "layer": 30,
+      "neuron_idx": 1777,
+      "freq_corr": -0.4895664751529693,
+      "abs_freq_corr_pctile": 100.0
+    },
+    {
+      "neuron_id": "L30_N1457",
+      "layer": 30,
+      "neuron_idx": 1457,
+      "freq_corr": 0.4548135995864868,
+      "abs_freq_corr_pctile": 100.0
+    },
+    {
+      "neuron_id": "L31_N3330",
+      "layer": 31,
+      "neuron_idx": 3330,
+      "freq_corr": -0.4658483266830444,
+      "abs_freq_corr_pctile": 100.0
+    },
+    {
+      "neuron_id": "L29_N10092",
+      "layer": 29,
+      "neuron_idx": 10092,
+      "freq_corr": -0.4097545444965362,
+      "abs_freq_corr_pctile": 99.9
+    },
+    {
+      "neuron_id": "L31_N5966",
+      "layer": 31,
+      "neuron_idx": 5966,
+      "freq_corr": -0.4046629071235657,
+      "abs_freq_corr_pctile": 99.9
+    },
+    {
+      "neuron_id": "L31_N2477",
+      "layer": 31,
+      "neuron_idx": 2477,
+      "freq_corr": 0.4238231182098388,
+      "abs_freq_corr_pctile": 99.9
+    },
+    {
+      "neuron_id": "L30_N7102",
+      "layer": 30,
+      "neuron_idx": 7102,
+      "freq_corr": -0.2972248494625091,
+      "abs_freq_corr_pctile": 99.5
+    },
+    {
+      "neuron_id": "L31_N14143",
+      "layer": 31,
+      "neuron_idx": 14143,
+      "freq_corr": -0.2534784376621246,
+      "abs_freq_corr_pctile": 99.2
+    }
+  ]
+}

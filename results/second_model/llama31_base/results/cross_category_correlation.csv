@@ -1,0 +1,4 @@
+category,ambiguity,contradictory_context,lack_of_knowledge
+ambiguity,1.0,0.456710801404388,-0.44997634953266336
+contradictory_context,0.456710801404388,1.0,-0.14621374315269647
+lack_of_knowledge,-0.44997634953266336,-0.14621374315269647,1.0

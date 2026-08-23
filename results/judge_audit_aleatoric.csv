@@ -1,0 +1,61 @@
+prompt_id,side,kind,question,gold,answer,grader,hedged,slick,judge,judge_margin,agree,kind_group
+ale_05_0_c,control,sample3,Name the largest planet in the solar system.,Jupiter,Jupiter.,True,False,HighlyKnown,True,24.374568939208984,True,sample
+ale_05_0_c,control,sample7,Name the largest planet in the solar system.,Jupiter,Jupiter. Jupiter is the largest of all the planets in our,True,False,HighlyKnown,True,9.749992370605469,True,sample
+ale_06_1_c,control,sample5,In one word: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,21.624753952026367,True,sample
+ale_05_4_c,control,sample2,Give one example. Name the largest planet in the solar system.,Jupiter,Jupiter.,True,False,HighlyKnown,True,24.87451171875,True,sample
+ale_06_0_c,control,sample1,Name the first month of the year.,January,January.,True,False,HighlyKnown,True,22.624643325805664,True,sample
+ale_08_5_c,control,greedy,I'm curious: Name the continent that contains Brazil.,South America,South America.,True,False,HighlyKnown,True,22.87472152709961,True,greedy
+ale_11_1_c,control,sample3,In one word: Name the capital city of France.,Paris,: Paris,True,False,HighlyKnown,True,13.49991512298584,True,sample
+ale_01_3_c,control,sample5,Quick question: Name the first colour of the rainbow.,red,Red.,True,False,HighlyKnown,True,23.749595642089844,True,sample
+ale_01_2_c,control,sample9,Please answer briefly. Name the first colour of the rainbow.,red,Red.,True,False,HighlyKnown,True,23.624568939208984,True,sample
+ale_11_4_c,control,sample9,Give one example. Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.24962043762207,True,sample
+ale_11_0_c,control,sample0,Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.12451171875,True,sample
+ale_19_2_c,control,greedy,Please answer briefly. Name the largest mammal on Earth.,blue whale | whale,the blue whale.,True,False,HighlyKnown,True,20.624753952026367,True,greedy
+ale_11_1_c,control,sample7,In one word: Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,21.874704360961914,True,sample
+ale_06_2_c,control,greedy,Please answer briefly. Name the first month of the year.,January,January.,True,False,HighlyKnown,True,21.999685287475586,True,greedy
+ale_09_2_c,control,sample9,Please answer briefly. Name the largest ocean on Earth.,Pacific | Pacific Ocean,the Pacific Ocean.,True,False,HighlyKnown,True,22.749412536621094,True,sample
+ale_06_3_c,control,sample7,Quick question: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,22.49972152709961,True,sample
+ale_08_0_c,control,sample6,Name the continent that contains Brazil.,South America,South America. Brazil is a country located in the continent of,True,False,HighlyKnown,True,7.499996185302734,True,sample
+ale_05_3_c,control,sample4,Quick question: Name the largest planet in the solar system.,Jupiter,Jupiter.,True,False,HighlyKnown,True,24.374643325805664,True,sample
+ale_19_4_c,control,greedy,Give one example. Name the largest mammal on Earth.,blue whale | whale,the Blue Whale.,True,False,HighlyKnown,True,23.249685287475586,True,greedy
+ale_11_0_c,control,greedy,Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.624481201171875,True,greedy
+ale_05_1_c,control,sample1,In one word: Name the largest planet in the solar system.,Jupiter,: Jupiter,True,False,HighlyKnown,True,12.499954223632812,True,sample
+ale_05_0_c,control,sample0,Name the largest planet in the solar system.,Jupiter,Jupiter.,True,False,HighlyKnown,True,24.499481201171875,True,sample
+ale_06_3_c,control,sample4,Quick question: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,22.749704360961914,True,sample
+ale_11_2_c,control,sample0,Please answer briefly. Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,22.37462043762207,True,sample
+ale_14_0_c,control,greedy,Name the longest bone in the human body.,femur,"the femur, also known as the thigh bone. It",True,False,HighlyKnown,True,11.999948501586914,True,greedy
+ale_11_5_c,control,sample1,I'm curious: Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.249595642089844,True,sample
+ale_11_0_c,control,sample9,Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.624481201171875,True,sample
+ale_11_0_c,control,sample1,Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.624481201171875,True,sample
+ale_11_3_c,control,sample8,Quick question: Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,22.499643325805664,True,sample
+ale_18_1_c,control,sample5,In one word: Name the number that comes after 6.,7 | seven,7.,True,False,HighlyKnown,True,19.249723434448242,True,sample
+ale_01_2_c,control,sample0,Please answer briefly. Name the first colour of the rainbow.,red,Red.,True,False,HighlyKnown,True,23.999568939208984,True,sample
+ale_01_3_c,control,sample3,Quick question: Name the first colour of the rainbow.,red,Red.,True,False,HighlyKnown,True,23.749595642089844,True,sample
+ale_01_3_c,control,sample6,Quick question: Name the first colour of the rainbow.,red,Red.,True,False,HighlyKnown,True,23.749568939208984,True,sample
+ale_11_2_c,control,greedy,Please answer briefly. Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,22.749643325805664,True,greedy
+ale_18_3_c,control,sample5,Quick question: Name the number that comes after 6.,7 | seven,7.,True,False,HighlyKnown,True,21.624568939208984,True,sample
+ale_11_5_c,control,sample9,I'm curious: Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.499643325805664,True,sample
+ale_09_2_c,control,sample8,Please answer briefly. Name the largest ocean on Earth.,Pacific | Pacific Ocean,the Pacific Ocean.,True,False,HighlyKnown,True,22.37441062927246,True,sample
+ale_09_5_c,control,sample4,I'm curious: Name the largest ocean on Earth.,Pacific | Pacific Ocean,the Pacific Ocean. It's the largest of the world's,True,False,HighlyKnown,True,7.249996185302734,True,sample
+ale_19_2_c,control,sample2,Please answer briefly. Name the largest mammal on Earth.,blue whale | whale,the Blue Whale.,True,False,HighlyKnown,True,22.374753952026367,True,sample
+ale_06_3_c,control,sample1,Quick question: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,22.999704360961914,True,sample
+ale_11_0_c,control,sample7,Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,23.124542236328125,True,sample
+ale_01_3_c,control,sample1,Quick question: Name the first colour of the rainbow.,red,Red.,True,False,HighlyKnown,True,23.749568939208984,True,sample
+ale_18_1_c,control,sample3,In one word: Name the number that comes after 6.,7 | seven,: 7.,True,False,HighlyKnown,True,16.49979591369629,True,sample
+ale_14_5_c,control,sample9,I'm curious: Name the longest bone in the human body.,femur,the femur (thigh bone). It is the longest,True,False,HighlyKnown,True,14.874859809875488,True,sample
+ale_09_5_c,control,sample2,I'm curious: Name the largest ocean on Earth.,Pacific | Pacific Ocean,the Pacific Ocean. It is the largest of the five oceans,True,False,HighlyKnown,True,11.874968528747559,True,sample
+ale_17_1_c,control,sample8,In one word: Name the colour of a ripe banana.,yellow,: Yellow.,True,False,HighlyKnown,True,18.499685287475586,True,sample
+ale_06_3_c,control,sample8,Quick question: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,22.999685287475586,True,sample
+ale_09_0_c,control,sample6,Name the largest ocean on Earth.,Pacific | Pacific Ocean,the Pacific Ocean. It is the largest of the world's,True,False,HighlyKnown,True,6.499996662139893,True,sample
+ale_08_3_c,control,greedy,Quick question: Name the continent that contains Brazil.,South America,South America.,True,False,HighlyKnown,True,22.374753952026367,True,greedy
+ale_08_0_c,control,sample8,Name the continent that contains Brazil.,South America,South America.,True,False,HighlyKnown,True,22.874704360961914,True,sample
+ale_09_0_c,control,sample7,Name the largest ocean on Earth.,Pacific | Pacific Ocean,the Pacific Ocean. It covers an area of approximately 155,True,False,HighlyKnown,True,7.999996662139893,True,sample
+ale_11_2_c,control,sample3,Please answer briefly. Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,22.74962043762207,True,sample
+ale_17_1_c,control,sample9,In one word: Name the colour of a ripe banana.,yellow,: Yellow,True,False,HighlyKnown,True,14.249859809875488,True,sample
+ale_08_5_c,control,sample8,I'm curious: Name the continent that contains Brazil.,South America,South America.,True,False,HighlyKnown,True,22.874704360961914,True,sample
+ale_14_0_c,control,sample9,Name the longest bone in the human body.,femur,"the femur, also known as the thigh bone. It",True,False,HighlyKnown,True,11.749954223632812,True,sample
+ale_14_3_c,control,sample0,Quick question: Name the longest bone in the human body.,femur,"the femur, also known as the thigh bone. It",True,False,HighlyKnown,True,11.999948501586914,True,sample
+ale_11_1_c,control,sample4,In one word: Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,22.249643325805664,True,sample
+ale_06_0_c,control,sample3,Name the first month of the year.,January,January.,True,False,HighlyKnown,True,22.749664306640625,True,sample
+ale_19_2_c,control,sample4,Please answer briefly. Name the largest mammal on Earth.,blue whale | whale,the blue whale.,True,False,HighlyKnown,True,20.12479591369629,True,sample
+ale_19_3_c,control,greedy,Quick question: Name the largest mammal on Earth.,blue whale | whale,the Blue whale.,True,False,HighlyKnown,True,21.624753952026367,True,greedy

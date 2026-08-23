@@ -1,0 +1,18 @@
+Entropy-adjusted interaction (alpha 0.01 BH within run; candidates only)
+
+## results/ablation_bf16_familiarity_dir: 20 candidates x 1 categories
+   FDR survivors: raw 4 | ANCOVA-adjusted 0 | stratified 0   (uncorrected p<.01: raw 5, ANCOVA 0, stratified 0)
+   L31_N5833   fami raw -0.0036 (p 0.073) | ANCOVA arm +0.0105 (p 0.025; H slope -0.0051) | matched +nan (p nan, n 0/0) | strat +0.0081 (p 0.1, 1 bins) | rho(shift,H|unc) -0.36
+   L31_N9371   fami raw -0.0005 (p 0.89) | ANCOVA arm +0.0186 (p 0.025; H slope -0.0069) | matched +nan (p nan, n 0/0) | strat +0.0190 (p 0.04, 1 bins) | rho(shift,H|unc) -0.28
+   L31_N556    fami raw -0.0011 (p 0.54) | ANCOVA arm +0.0077 (p 0.037; H slope -0.0032) | matched +nan (p nan, n 0/0) | strat +0.0085 (p 0.086, 1 bins) | rho(shift,H|unc) -0.18
+   L31_N11401  fami raw +0.0169 (p 2e-06) | ANCOVA arm -0.0097 (p 0.094; H slope +0.0097) | matched +nan (p nan, n 0/0) | strat +0.0007 (p 0.9, 1 bins) | rho(shift,H|unc) +0.31
+   L31_N1679   fami raw +0.0012 (p 0.59) | ANCOVA arm +0.0062 (p 0.16; H slope -0.0018) | matched +nan (p nan, n 0/0) | strat +0.0068 (p 0.13, 1 bins) | rho(shift,H|unc) -0.10
+
+## results/ablation_bf16_familiarity_key: 6 candidates x 1 categories
+   FDR survivors: raw 1 | ANCOVA-adjusted 0 | stratified 0   (uncorrected p<.01: raw 2, ANCOVA 0, stratified 0)
+   L29_N13925  fami raw +0.0005 (p 0.81) | ANCOVA arm +0.0093 (p 0.039; H slope -0.0032) | matched +nan (p nan, n 0/0) | strat +0.0092 (p 0.14, 1 bins) | rho(shift,H|unc) -0.16
+   L31_N11541  fami raw +0.0057 (p 0.07) | ANCOVA arm +0.0128 (p 0.062; H slope -0.0025) | matched +nan (p nan, n 0/0) | strat +0.0099 (p 0.24, 1 bins) | rho(shift,H|unc) -0.09
+   L31_N6772   fami raw -0.0075 (p 1.6e-05) | ANCOVA arm -0.0045 (p 0.27; H slope -0.0011) | matched +nan (p nan, n 0/0) | strat -0.0045 (p 0.33, 1 bins) | rho(shift,H|unc) -0.08
+   L30_N13098  fami raw -0.0004 (p 0.79) | ANCOVA arm +0.0020 (p 0.59; H slope -0.0009) | matched +nan (p nan, n 0/0) | strat +0.0055 (p 0.25, 1 bins) | rho(shift,H|unc) -0.06
+   L20_N5595   fami raw -0.0004 (p 0.92) | ANCOVA arm +0.0038 (p 0.66; H slope -0.0015) | matched +nan (p nan, n 0/0) | strat +0.0079 (p 0.35, 1 bins) | rho(shift,H|unc) -0.13
+

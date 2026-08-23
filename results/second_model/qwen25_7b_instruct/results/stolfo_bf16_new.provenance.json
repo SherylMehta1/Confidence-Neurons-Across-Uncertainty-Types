@@ -1,0 +1,64 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "precision": "bf16",
+  "quant_config": null,
+  "dtype": "torch.bfloat16",
+  "transformers_version": "5.14.1",
+  "torch_version": "2.11.0+cu130",
+  "candidate_file_sha256": "1d0765a884b7fdb9d4629a262821b21019b16a688f87ba47e3bd1e1400a623ff",
+  "data_file_sha256s": null,
+  "baseline_prompt_sha256": null,
+  "n_baseline_prompts": null,
+  "seed": 42,
+  "layer_range": [
+    16,
+    17,
+    18,
+    19,
+    24
+  ],
+  "top_k_per_half": null,
+  "top_k_final": null,
+  "min_abs_corr": null,
+  "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+  "timestamp": "2026-08-22T20:45:09.131752+00:00",
+  "n_random": 1000,
+  "n_matched": 50,
+  "match_tolerance": 0.1,
+  "null_ks": [
+    16,
+    64,
+    256
+  ],
+  "n_bottom10pct_dirs": 358,
+  "candidate_neurons": [
+    "L17_N6267",
+    "L18_N11446",
+    "L18_N14080",
+    "L19_N12887",
+    "L17_N9633",
+    "L16_N11414",
+    "L16_N5504",
+    "L24_N2230",
+    "L17_N9538",
+    "L19_N18841",
+    "L19_N2836"
+  ],
+  "n_eligible_matched": {
+    "L17_N6267": 2958,
+    "L18_N11446": 14528,
+    "L18_N14080": 9243,
+    "L19_N12887": 12553,
+    "L17_N9633": 12095,
+    "L16_N11414": 9522,
+    "L16_N5504": 15107,
+    "L24_N2230": 10699,
+    "L17_N9538": 14307,
+    "L19_N18841": 8527,
+    "L19_N2836": 10933
+  },
+  "outputs": [
+    "results/stolfo_bf16_new.csv",
+    "results/stolfo_bf16_new_summary.txt"
+  ]
+}

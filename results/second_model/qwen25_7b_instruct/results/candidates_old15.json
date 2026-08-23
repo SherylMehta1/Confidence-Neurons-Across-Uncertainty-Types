@@ -1,0 +1,99 @@
+{
+  "provenance": {
+    "note": "Superseded Phase-2 candidate set (15 neurons) selected by top-|r| activation-entropy correlation on an undocumented baseline with the NF4 model; kept ONLY for the comparison ablation run. L31_N2477 (held-out replicated on lack_of_knowledge in Phase-2 bf16 runs) is in this set.",
+    "method": "top_k_abs_corr_legacy",
+    "precision": "nf4"
+  },
+  "candidates": [
+    {
+      "neuron_id": "L30_N5509",
+      "layer": 30,
+      "neuron_idx": 5509,
+      "detection_correlation": 0.7592602810412554
+    },
+    {
+      "neuron_id": "L29_N9228",
+      "layer": 29,
+      "neuron_idx": 9228,
+      "detection_correlation": -0.7426407250217302
+    },
+    {
+      "neuron_id": "L26_N11322",
+      "layer": 26,
+      "neuron_idx": 11322,
+      "detection_correlation": -0.7377600657205929
+    },
+    {
+      "neuron_id": "L29_N10092",
+      "layer": 29,
+      "neuron_idx": 10092,
+      "detection_correlation": 0.7279649143840679
+    },
+    {
+      "neuron_id": "L30_N7102",
+      "layer": 30,
+      "neuron_idx": 7102,
+      "detection_correlation": 0.7004382104103741
+    },
+    {
+      "neuron_id": "L24_N7891",
+      "layer": 24,
+      "neuron_idx": 7891,
+      "detection_correlation": -0.6961124891995691
+    },
+    {
+      "neuron_id": "L30_N13513",
+      "layer": 30,
+      "neuron_idx": 13513,
+      "detection_correlation": 0.6879616304201386
+    },
+    {
+      "neuron_id": "L30_N6621",
+      "layer": 30,
+      "neuron_idx": 6621,
+      "detection_correlation": 0.6810092614875697
+    },
+    {
+      "neuron_id": "L30_N3533",
+      "layer": 30,
+      "neuron_idx": 3533,
+      "detection_correlation": -0.6791951205132096
+    },
+    {
+      "neuron_id": "L29_N11308",
+      "layer": 29,
+      "neuron_idx": 11308,
+      "detection_correlation": -0.6769081384649906
+    },
+    {
+      "neuron_id": "L29_N10191",
+      "layer": 29,
+      "neuron_idx": 10191,
+      "detection_correlation": -0.6762202239140168
+    },
+    {
+      "neuron_id": "L31_N2477",
+      "layer": 31,
+      "neuron_idx": 2477,
+      "detection_correlation": 0.6713440943533378
+    },
+    {
+      "neuron_id": "L29_N8568",
+      "layer": 29,
+      "neuron_idx": 8568,
+      "detection_correlation": 0.6582289503193778
+    },
+    {
+      "neuron_id": "L26_N2788",
+      "layer": 26,
+      "neuron_idx": 2788,
+      "detection_correlation": -0.6535181827400979
+    },
+    {
+      "neuron_id": "L23_N12156",
+      "layer": 23,
+      "neuron_idx": 12156,
+      "detection_correlation": -0.6533317160684013
+    }
+  ]
+}

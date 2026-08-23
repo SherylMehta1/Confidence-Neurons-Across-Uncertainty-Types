@@ -1,0 +1,90 @@
+{
+  "model_id": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "precision": "bf16",
+  "quant_config": null,
+  "dtype": "torch.bfloat16",
+  "transformers_version": "5.14.1",
+  "torch_version": "2.11.0+cu130",
+  "candidate_file_sha256": null,
+  "data_file_sha256s": {
+    "/marimo/repo/data/ambiguity/prompts.jsonl": "dfae18637da1443bca057bd73ba669d1720f5a65f4d74b5a044861f45c6b78e2",
+    "/marimo/repo/data/ambiguity/controls.jsonl": "06e2713ba40d70b5dd71ba9b14593e40cf68fc209e1ae82940657c45bcd996a7",
+    "/marimo/repo/data/lack_of_knowledge/prompts.jsonl": "4fb40d6d8dbc941d7fe63fe7c15816400238ae4916964c3542208a720596bf4a",
+    "/marimo/repo/data/lack_of_knowledge/controls.jsonl": "38604c8b8796cd1d21857fa582531d3f80239aa775aedaf61df7c55a402f0790",
+    "/marimo/repo/data/contradictory_context/prompts.jsonl": "3906437b2f1a6f54ed86c4a8469e37c3137b499c811a1d45b16209dd032958e6",
+    "/marimo/repo/data/contradictory_context/controls.jsonl": "fb83bf90fdb24fcdfd4ec4a890207a0c266633d5c89d208ac0b349760f9eee03"
+  },
+  "baseline_prompt_sha256": "f0abf115c6567bec36277218988850646c154a318043158259637ff0363dcceb",
+  "n_baseline_prompts": 504,
+  "seed": 4,
+  "layer_range": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "top_k_per_half": 60,
+  "top_k_final": null,
+  "min_abs_corr": null,
+  "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+  "timestamp": "2026-08-22T20:10:44.428181+00:00",
+  "method": "split_half_validated",
+  "n_half_a": 252,
+  "n_half_b": 252,
+  "stratified": true,
+  "stratum_counts": {
+    "half_a": {
+      "contradictory_context": 84,
+      "lack_of_knowledge": 84,
+      "ambiguity": 84
+    },
+    "half_b": {
+      "contradictory_context": 84,
+      "lack_of_knowledge": 84,
+      "ambiguity": 84
+    }
+  },
+  "dropped_zero_variance": {
+    "half_a": {
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0
+    },
+    "half_b": {
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0
+    }
+  },
+  "n_stable": 25,
+  "n_candidates": 25,
+  "baseline_prompt_hash": "f0abf115c6567bec",
+  "categories": "all",
+  "include_controls": true
+}

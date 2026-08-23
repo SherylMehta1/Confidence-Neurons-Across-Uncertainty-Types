@@ -1,0 +1,27 @@
+Judge audit -- conflict; judge Qwen/Qwen2.5-32B-Instruct; 65 graded items (stratified by grader verdict x side x hedged)
+overall agreement 0.954  kappa 0.702
+
+by side:
+  control            n=  65  agreement 0.954  grader-says-correct 0.92  judge-says-correct 0.91
+
+by grader verdict:
+  False              n=   5  agreement 0.800  grader-says-correct 0.00  judge-says-correct 0.20
+  True               n=  60  agreement 0.967  grader-says-correct 1.00  judge-says-correct 0.97
+
+by hedged answer:
+  False              n=  65  agreement 0.954  grader-says-correct 0.92  judge-says-correct 0.91
+
+by answer kind:
+  greedy             n=   1  agreement 1.000  grader-says-correct 1.00  judge-says-correct 1.00
+  sample             n=  64  agreement 0.953  grader-says-correct 0.92  judge-says-correct 0.91
+
+grader false negatives (judge CORRECT, grader INCORRECT): 1 / 5 grader-negatives
+grader false positives (judge INCORRECT, grader CORRECT): 2 / 60 grader-positives
+
+examples of grader false negatives:
+  Q: What genre is The Wedding? | gold: romance novel | answer: Romance.
+examples of grader false positives:
+  Q: Who was the producer of The Cure? | gold: Eric Eisner | Eloise Breckenridge Eisner | Scarlet Haven Eis | answer: not explicitly stated in the source as Eric Eisner is only
+  Q: Who was the screenwriter for Bullet? | gold: Mickey Rourke | answer: : Bruce Rubenstein and Mickey Rourke (under a pseud
+
+population sizes per stratum (grader, side, hedged): {"(True, 'control', False)": 2569, "(False, 'control', False)": 5}

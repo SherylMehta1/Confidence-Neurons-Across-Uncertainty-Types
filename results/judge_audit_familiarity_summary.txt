@@ -1,0 +1,38 @@
+Judge audit -- familiarity; judge Qwen/Qwen2.5-32B-Instruct; 269 graded items (stratified by grader verdict x side x hedged)
+overall agreement 0.963  kappa 0.910
+
+by side:
+  consistently_wrong n=  55  agreement 1.000  grader-says-correct 0.00  judge-says-correct 0.00
+  control            n=  94  agreement 0.904  grader-says-correct 0.86  judge-says-correct 0.81
+  uncertain          n= 120  agreement 0.992  grader-says-correct 0.00  judge-says-correct 0.01
+
+by grader verdict:
+  False              n= 188  agreement 0.984  grader-says-correct 0.00  judge-says-correct 0.02
+  True               n=  81  agreement 0.914  grader-says-correct 1.00  judge-says-correct 0.91
+
+by hedged answer:
+  False              n= 132  agreement 0.939  grader-says-correct 0.45  judge-says-correct 0.42
+  True               n= 137  agreement 0.985  grader-says-correct 0.15  judge-says-correct 0.15
+
+by answer kind:
+  greedy             n=  27  agreement 0.963  grader-says-correct 0.48  judge-says-correct 0.44
+  sample             n= 242  agreement 0.963  grader-says-correct 0.28  judge-says-correct 0.27
+
+grader false negatives (judge CORRECT, grader INCORRECT): 3 / 188 grader-negatives
+grader false positives (judge INCORRECT, grader CORRECT): 7 / 81 grader-positives
+disagreement rate hedged 0.015 vs not hedged 0.061  <- if hedged is higher, grader error correlates with the behavioral readout
+
+examples of grader false negatives:
+  Q: Who is the father of Mark Twain? | gold: John Marshall Clemens | answer: John Marshall.
+  Q: What is the religion of Elizabeth II? | gold: Anglicanism | Anglicanism, Anglican Church | answer: the Church of England, which is the official state church of
+  Q: What is the religion of Joseph-Médard Émard? | gold: Catholic Church | Roman Catholic Church | Church | Roman Apo | answer: Roman Catholic.
+examples of grader false positives:
+  Q: Who was the producer of Clue? | gold: Debra Hill | John Landis | answer: Debra Hill, however, the movie Clue (198
+  Q: Who is the author of Gospel of Matthew? | gold: Matthew the Apostle | Saint Matthew | Matthew | Matthew the  | answer: not straightforward. The author of the Gospel of Matthew is 
+  Q: What is London the capital of? | gold: Kingdom of Essex | kingdom of the East Saxons | Essex | Unit | answer: England. London is the capital city of England, which is
+  Q: In what city was Julius Erving born? | gold: New York City | NYC | New York | the five boroughs | Big App | answer: Roosevelt, New York.
+  Q: What genre is RED 2? | gold: action film | action movie | film action | movie action | ac | answer: action-comedy. RED 2 is an action-comedy
+  Q: Who was the screenwriter for The Internship? | gold: Vince Vaughn | Vincent Anthony Vaughn | Vincent Vaughn | answer: Vince Vaughn and Jared Stern, however, the screenplay was
+  Q: Who was the director of Mother? | gold: Bong Joon-ho | Bong Jun-ho | Bong Joon Ho | Joon-ho Bong | answer: Bong Joon-ho. However, he did not
+
+population sizes per stratum (grader, side, hedged): {"(False, 'uncertain', True)": 2013, "(False, 'uncertain', False)": 132, "(True, 'control', False)": 2111, "(False, 'control', False)": 12, "(True, 'control', True)": 21, "(False, 'control', True)": 1, "(False, 'consistently_wrong', True)": 55}

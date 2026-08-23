@@ -1,0 +1,18 @@
+Entropy-adjusted interaction (alpha 0.01 BH within run; candidates only)
+
+## results/ablation_bf16_conflict_new: 27 candidates x 1 categories
+   FDR survivors: raw 2 | ANCOVA-adjusted 2 | stratified 0   (uncorrected p<.01: raw 2, ANCOVA 2, stratified 2)
+   L31_N11541  conf raw +0.0304 (p 1.6e-27) | ANCOVA arm +0.0450 (p 1.7e-15; H slope -0.0108) | matched +nan (p nan, n 0/0) | strat +0.0380 (p 0.002, 1 bins) | rho(shift,H|unc) -0.24
+   L30_N1457   conf raw +0.0158 (p 5.6e-11) | ANCOVA arm +0.0218 (p 3.5e-05; H slope -0.0044) | matched +nan (p nan, n 0/0) | strat +0.0214 (p 0.002, 1 bins) | rho(shift,H|unc) -0.13
+   L29_N13925  conf raw +0.0032 (p 0.027) | ANCOVA arm +0.0062 (p 0.095; H slope -0.0022) | matched +nan (p nan, n 0/0) | strat +0.0071 (p 0.16, 1 bins) | rho(shift,H|unc) -0.05
+   L29_N4718   conf raw +0.0019 (p 0.17) | ANCOVA arm +0.0045 (p 0.11; H slope -0.0019) | matched +nan (p nan, n 0/0) | strat +0.0014 (p 0.71, 1 bins) | rho(shift,H|unc) -0.13
+   L31_N4425   conf raw +0.0004 (p 0.54) | ANCOVA arm +0.0020 (p 0.14; H slope -0.0012) | matched +nan (p nan, n 0/0) | strat +0.0028 (p 0.046, 1 bins) | rho(shift,H|unc) +0.02
+
+## results/ablation_bf16_conflict_key: 6 candidates x 1 categories
+   FDR survivors: raw 1 | ANCOVA-adjusted 1 | stratified 0   (uncorrected p<.01: raw 2, ANCOVA 2, stratified 1)
+   L31_N11541  conf raw +0.0304 (p 1.6e-27) | ANCOVA arm +0.0450 (p 1.7e-15; H slope -0.0108) | matched +nan (p nan, n 0/0) | strat +0.0380 (p 0.002, 1 bins) | rho(shift,H|unc) -0.24
+   L31_N2477   conf raw +0.0054 (p 0.0042) | ANCOVA arm +0.0105 (p 0.0096; H slope -0.0038) | matched +nan (p nan, n 0/0) | strat +0.0089 (p 0.07, 1 bins) | rho(shift,H|unc) -0.09
+   L29_N13925  conf raw +0.0032 (p 0.027) | ANCOVA arm +0.0062 (p 0.095; H slope -0.0022) | matched +nan (p nan, n 0/0) | strat +0.0071 (p 0.17, 1 bins) | rho(shift,H|unc) -0.05
+   L31_N6772   conf raw +0.0004 (p 0.61) | ANCOVA arm -0.0012 (p 0.2; H slope +0.0012) | matched +nan (p nan, n 0/0) | strat -0.0021 (p 0.042, 1 bins) | rho(shift,H|unc) -0.04
+   L30_N13098  conf raw +0.0004 (p 0.72) | ANCOVA arm +0.0011 (p 0.62; H slope -0.0005) | matched +nan (p nan, n 0/0) | strat -0.0006 (p 0.86, 1 bins) | rho(shift,H|unc) +0.02
+

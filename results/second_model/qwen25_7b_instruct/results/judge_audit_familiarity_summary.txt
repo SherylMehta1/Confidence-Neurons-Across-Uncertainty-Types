@@ -1,0 +1,40 @@
+Judge audit -- familiarity; judge Qwen/Qwen2.5-32B-Instruct; 241 graded items (stratified by grader verdict x side x hedged)
+overall agreement 0.946  kappa 0.852
+
+by side:
+  consistently_wrong n=  60  agreement 0.933  grader-says-correct 0.00  judge-says-correct 0.07
+  control            n=  61  agreement 0.852  grader-says-correct 0.98  judge-says-correct 0.84
+  uncertain          n= 120  agreement 1.000  grader-says-correct 0.00  judge-says-correct 0.00
+
+by grader verdict:
+  False              n= 181  agreement 0.978  grader-says-correct 0.00  judge-says-correct 0.02
+  True               n=  60  agreement 0.850  grader-says-correct 1.00  judge-says-correct 0.85
+
+by hedged answer:
+  False              n= 181  agreement 0.928  grader-says-correct 0.33  judge-says-correct 0.30
+  True               n=  60  agreement 1.000  grader-says-correct 0.00  judge-says-correct 0.00
+
+by answer kind:
+  greedy             n=  20  agreement 1.000  grader-says-correct 0.15  judge-says-correct 0.15
+  sample             n= 221  agreement 0.941  grader-says-correct 0.26  judge-says-correct 0.24
+
+grader false negatives (judge CORRECT, grader INCORRECT): 4 / 181 grader-negatives
+grader false positives (judge INCORRECT, grader CORRECT): 9 / 60 grader-positives
+disagreement rate hedged 0.000 vs not hedged 0.072  <- if hedged is higher, grader error correlates with the behavioral readout
+
+examples of grader false negatives:
+  Q: Who is the author of Come On Over? | gold: Conor McPherson | answer: Shania Twain. "Come On Over" is her
+  Q: Who is the author of Come On Over? | gold: Conor McPherson | answer: Shania Twain. "Come On Over" is her
+  Q: Who is the author of Come On Over? | gold: Conor McPherson | answer: Shania Twain. "Come On Over" is her
+  Q: Who is the author of Come On Over? | gold: Conor McPherson | answer: Shania Twain. "Come On Over" is her
+examples of grader false positives:
+  Q: What genre is RED 2? | gold: action film | action movie | film action | movie action | ac | answer: that "RED 2" falls under the action comedy genre
+  Q: Who was the screenwriter for Halloween? | gold: Rob Zombie | Robert Bartleh Cummings | Rob Straker | John Ca | answer: John Carpenter and Debra Hill co-wrote the screenplay for
+  Q: Who is the father of Michael Jackson? | gold: Joe Jackson | Joseph Walter Jackson | answer: Joseph Walter "Joe" Jackson and Katherine Esther "Katherine
+  Q: Who was the screenwriter for Halloween? | gold: Rob Zombie | Robert Bartleh Cummings | Rob Straker | John Ca | answer: John Carpenter and Debra Hill co-wrote the screenplay for
+  Q: What is Toronto the capital of? | gold: Ontario | ONT | ON | answer: that Toronto is not the capital of any country. Toronto is
+  Q: What genre is RED 2? | gold: action film | action movie | film action | movie action | ac | answer: that "RED 2" falls into the action comedy genre
+  Q: What is Toronto the capital of? | gold: Ontario | ONT | ON | answer: that Toronto is not the capital of any country or province.
+  Q: Who is the father of Michael Jackson? | gold: Joe Jackson | Joseph Walter Jackson | answer: Joseph Walter "Joe" Jackson and Katherine Esther "Kathy
+
+population sizes per stratum (grader, side, hedged): {"(False, 'uncertain', True)": 121, "(False, 'uncertain', False)": 143, "(True, 'control', False)": 263, "(False, 'control', False)": 1, "(False, 'consistently_wrong', False)": 132}

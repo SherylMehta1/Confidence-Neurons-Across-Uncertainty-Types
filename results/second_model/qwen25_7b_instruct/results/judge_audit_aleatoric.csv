@@ -1,0 +1,61 @@
+prompt_id,side,kind,question,gold,answer,grader,hedged,slick,judge,judge_margin,agree,kind_group
+ale_05_1_c,control,sample7,In one word: Name the largest planet in the solar system.,Jupiter,Jupiter.,True,False,HighlyKnown,True,24.124597549438477,True,sample
+ale_08_2_c,control,sample0,Please answer briefly. Name the continent that contains Brazil.,South America,South America.,True,False,HighlyKnown,True,22.624685287475586,True,sample
+ale_17_1_c,control,greedy,In one word: Name the colour of a ripe banana.,yellow,yellow.,True,False,HighlyKnown,True,17.124860763549805,True,greedy
+ale_11_0_c,control,sample5,Name the capital city of France.,Paris,Paris. Paris is the capital and most populous city of France,True,False,HighlyKnown,True,10.249979019165039,True,sample
+ale_08_3_c,control,sample7,Quick question: Name the continent that contains Brazil.,South America,South America. Brazil is located in the eastern part of South,True,False,HighlyKnown,True,7.249997138977051,True,sample
+ale_11_5_c,control,sample5,I'm curious: Name the capital city of France.,Paris,Paris. Paris is the capital and most populous city of France,True,False,HighlyKnown,True,11.249972343444824,True,sample
+ale_14_0_c,control,greedy,Name the longest bone in the human body.,femur,"the femur, which is the longest bone in the human",True,False,HighlyKnown,True,12.8749418258667,True,greedy
+ale_19_5_c,control,sample9,I'm curious: Name the largest mammal on Earth.,blue whale | whale,the blue whale (Balaenoptera musculus).,True,False,HighlyKnown,True,20.24978256225586,True,sample
+ale_14_5_c,control,sample9,I'm curious: Name the longest bone in the human body.,femur,"the femur, which is the longest bone in the human",True,False,HighlyKnown,True,13.12494945526123,True,sample
+ale_08_5_c,control,sample9,I'm curious: Name the continent that contains Brazil.,South America,South America. Brazil is the largest country in South America and,True,False,HighlyKnown,True,9.249994277954102,True,sample
+ale_05_2_c,control,sample1,Please answer briefly. Name the largest planet in the solar system.,Jupiter,Jupiter.,True,False,HighlyKnown,True,24.24962043762207,True,sample
+ale_18_1_c,control,greedy,In one word: Name the number that comes after 6.,7 | seven,7.,True,False,HighlyKnown,True,19.249723434448242,True,greedy
+ale_17_1_c,control,sample8,In one word: Name the colour of a ripe banana.,yellow,yellow.,True,False,HighlyKnown,True,16.999841690063477,True,sample
+ale_06_5_c,control,sample6,I'm curious: Name the first month of the year.,January,January! It's the first month of the year in the,True,False,HighlyKnown,True,9.749992370605469,True,sample
+ale_11_0_c,control,sample9,Name the capital city of France.,Paris,Paris. Paris is the capital and most populous city of France,True,False,HighlyKnown,True,10.249979972839355,True,sample
+ale_19_0_c,control,sample6,Name the largest mammal on Earth.,blue whale | whale,the blue whale (Balaenoptera musculus).,True,False,HighlyKnown,True,20.749704360961914,True,sample
+ale_05_0_c,control,sample9,Name the largest planet in the solar system.,Jupiter,Jupiter. It is the largest planet in our solar system.,True,False,HighlyKnown,True,14.249842643737793,True,sample
+ale_19_2_c,control,sample1,Please answer briefly. Name the largest mammal on Earth.,blue whale | whale,the blue whale.,True,False,HighlyKnown,True,20.74976921081543,True,sample
+ale_08_0_c,control,sample5,Name the continent that contains Brazil.,South America,South America. Brazil is located in the eastern part of South,True,False,HighlyKnown,True,7.499997138977051,True,sample
+ale_11_2_c,control,greedy,Please answer briefly. Name the capital city of France.,Paris,Paris.,True,False,HighlyKnown,True,22.999595642089844,True,greedy
+ale_01_3_c,control,sample1,Quick question: Name the first colour of the rainbow.,red,red! Red is often considered the first color of the rainbow,True,False,HighlyKnown,True,7.499997138977051,True,sample
+ale_05_4_c,control,sample3,Give one example. Name the largest planet in the solar system.,Jupiter,Jupiter. It is the largest planet in our solar system.,True,False,HighlyKnown,True,15.249859809875488,True,sample
+ale_05_1_c,control,sample9,In one word: Name the largest planet in the solar system.,Jupiter,Jupiter.,True,False,HighlyKnown,True,24.499568939208984,True,sample
+ale_11_0_c,control,sample3,Name the capital city of France.,Paris,Paris. Paris is the capital and most populous city of France,True,False,HighlyKnown,True,10.249979019165039,True,sample
+ale_08_4_c,control,sample7,Give one example. Name the continent that contains Brazil.,South America,South America. Brazil is located in South America and is the,True,False,HighlyKnown,True,6.999998092651367,True,sample
+ale_19_5_c,control,sample7,I'm curious: Name the largest mammal on Earth.,blue whale | whale,the blue whale (Balaenoptera musculus).,True,False,HighlyKnown,True,20.374753952026367,True,sample
+ale_06_1_c,control,sample0,In one word: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,21.624755859375,True,sample
+ale_19_4_c,control,sample4,Give one example. Name the largest mammal on Earth.,blue whale | whale,the blue whale (Balaenoptera musculus).,True,False,HighlyKnown,True,20.24976921081543,True,sample
+ale_11_0_c,control,sample4,Name the capital city of France.,Paris,Paris. Paris is the capital and most populous city of France,True,False,HighlyKnown,True,9.999980926513672,True,sample
+ale_11_4_c,control,sample9,Give one example. Name the capital city of France.,Paris,Paris. Paris is the capital city of France.,True,False,HighlyKnown,True,11.499972343444824,True,sample
+ale_06_4_c,control,sample1,Give one example. Name the first month of the year.,January,January. It is the first month of the year in the,True,False,HighlyKnown,True,9.749992370605469,True,sample
+ale_11_5_c,control,sample3,I'm curious: Name the capital city of France.,Paris,Paris. Paris is the capital and most populous city of France,True,False,HighlyKnown,True,11.37497329711914,True,sample
+ale_01_5_c,control,sample8,I'm curious: Name the first colour of the rainbow.,red,red! Red is considered the first color of the rainbow according,True,False,HighlyKnown,True,7.249996662139893,True,sample
+ale_08_1_c,control,sample8,In one word: Name the continent that contains Brazil.,South America,South America.,True,False,HighlyKnown,True,20.999784469604492,True,sample
+ale_08_2_c,control,sample7,Please answer briefly. Name the continent that contains Brazil.,South America,South America.,True,False,HighlyKnown,True,22.499704360961914,True,sample
+ale_11_0_c,control,greedy,Name the capital city of France.,Paris,Paris. Paris is the capital and most populous city of France,True,False,HighlyKnown,True,9.999980926513672,True,greedy
+ale_06_1_c,control,sample1,In one word: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,21.74976921081543,True,sample
+ale_18_1_c,control,sample3,In one word: Name the number that comes after 6.,7 | seven,7.,True,False,HighlyKnown,True,19.374723434448242,True,sample
+ale_06_2_c,control,sample4,Please answer briefly. Name the first month of the year.,January,January.,True,False,HighlyKnown,True,22.124685287475586,True,sample
+ale_01_1_c,control,sample6,In one word: Name the first colour of the rainbow.,red,Red.,True,False,HighlyKnown,True,23.374643325805664,True,sample
+ale_01_5_c,control,sample7,I'm curious: Name the first colour of the rainbow.,red,red! Red is considered the first color of the rainbow according,True,False,HighlyKnown,True,7.499995708465576,True,sample
+ale_11_0_c,control,sample1,Name the capital city of France.,Paris,Paris. Paris is the capital city of France.,True,False,HighlyKnown,True,11.749968528747559,True,sample
+ale_06_1_c,control,sample7,In one word: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,21.749740600585938,True,sample
+ale_06_4_c,control,sample5,Give one example. Name the first month of the year.,January,January. It is the first month of the year in the,True,False,HighlyKnown,True,9.749993324279785,True,sample
+ale_18_5_c,control,sample9,I'm curious: Name the number that comes after 6.,7 | seven,7.,True,False,HighlyKnown,True,21.499622344970703,True,sample
+ale_05_0_c,control,sample7,Name the largest planet in the solar system.,Jupiter,Jupiter. It is the largest planet in our solar system.,True,False,HighlyKnown,True,13.874859809875488,True,sample
+ale_05_0_c,control,sample5,Name the largest planet in the solar system.,Jupiter,Jupiter. It is the largest planet in our solar system.,True,False,HighlyKnown,True,13.999860763549805,True,sample
+ale_06_1_c,control,sample2,In one word: Name the first month of the year.,January,January.,True,False,HighlyKnown,True,21.624771118164062,True,sample
+ale_14_3_c,control,sample0,Quick question: Name the longest bone in the human body.,femur,"the femur, which is the longest bone in the human",True,False,HighlyKnown,True,12.624959945678711,True,sample
+ale_06_3_c,control,sample4,Quick question: Name the first month of the year.,January,January!,True,False,HighlyKnown,True,18.749876022338867,True,sample
+ale_18_5_c,control,sample6,I'm curious: Name the number that comes after 6.,7 | seven,7.,True,False,HighlyKnown,True,21.62462043762207,True,sample
+ale_08_5_c,control,sample3,I'm curious: Name the continent that contains Brazil.,South America,South America. Brazil is located in the eastern part of South,True,False,HighlyKnown,True,7.499996662139893,True,sample
+ale_01_0_c,control,sample5,Name the first colour of the rainbow.,red,red. Red is considered the first color of the rainbow according,True,False,HighlyKnown,True,9.24998950958252,True,sample
+ale_06_5_c,control,sample0,I'm curious: Name the first month of the year.,January,January! It's the first month of the year in the,True,False,HighlyKnown,True,9.499992370605469,True,sample
+ale_06_3_c,control,sample7,Quick question: Name the first month of the year.,January,January!,True,False,HighlyKnown,True,18.499876022338867,True,sample
+ale_01_3_c,control,sample3,Quick question: Name the first colour of the rainbow.,red,red! Red is considered the first color of the rainbow according,True,False,HighlyKnown,True,7.999995231628418,True,sample
+ale_09_5_c,control,sample4,I'm curious: Name the largest ocean on Earth.,Pacific | Pacific Ocean,the Pacific Ocean. It is the largest and deepest of the,True,False,HighlyKnown,True,9.749991416931152,True,sample
+ale_01_5_c,control,sample0,I'm curious: Name the first colour of the rainbow.,red,red! Red is often considered the first color of the rainbow,True,False,HighlyKnown,True,7.499997138977051,True,sample
+ale_08_0_c,control,sample4,Name the continent that contains Brazil.,South America,South America. Brazil is located in the eastern part of South,True,False,HighlyKnown,True,7.249997138977051,True,sample
+ale_08_5_c,control,sample4,I'm curious: Name the continent that contains Brazil.,South America,South America. Brazil is located in the eastern part of South,True,False,HighlyKnown,True,7.749996185302734,True,sample

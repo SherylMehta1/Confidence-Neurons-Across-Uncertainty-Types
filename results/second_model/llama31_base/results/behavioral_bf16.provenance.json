@@ -1,0 +1,61 @@
+{
+  "model_id": "unsloth/Meta-Llama-3.1-8B",
+  "precision": "bf16",
+  "quant_config": null,
+  "dtype": "torch.bfloat16",
+  "transformers_version": "5.14.1",
+  "torch_version": "2.11.0+cu130",
+  "candidate_file_sha256": null,
+  "data_file_sha256s": null,
+  "baseline_prompt_sha256": null,
+  "n_baseline_prompts": null,
+  "seed": 42,
+  "layer_range": null,
+  "top_k_per_half": null,
+  "top_k_final": null,
+  "min_abs_corr": null,
+  "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+  "timestamp": "2026-08-22T20:32:07.259356+00:00",
+  "script": "scripts/behavioral_test.py",
+  "neurons": [
+    "L31_N11541",
+    "L31_N6772",
+    "L31_N2477"
+  ],
+  "control_neurons": [
+    "L31_N409",
+    "L31_N4012"
+  ],
+  "conditions": [
+    "clean",
+    "mean",
+    "plus2",
+    "minus2"
+  ],
+  "max_new_tokens": 24,
+  "hedge_regex": "\\b(i(?:'m| am)? not (?:sure|certain|aware|familiar)|i (?:do not|don't) (?:know|have)|not (?:known|clear|available|possible|provided|specified|listed|documented|recognized|found)|unknown|no (?:information|record|records|data|evidence|such)|unable to|(?:cannot|can't|could not|couldn't) (?:determine|find|verify|provide|identify|locate|confirm)|there is no|does not (?:exist|appear|seem)|doesn't exist|fictional|not a real|made[- ]up|unclear|uncertain|not familiar|i have no|no widely|hypothetical|unverified)\\b",
+  "activation_stats": {
+    "L31_N11541": [
+      -0.18215215773809523,
+      1.423499429688367
+    ],
+    "L31_N6772": [
+      -0.020565566562470935,
+      0.03264425495822726
+    ],
+    "L31_N2477": [
+      -0.5890146891276041,
+      1.0679555956278828
+    ],
+    "L31_N409": [
+      -0.5068708147321429,
+      0.1383183353746961
+    ],
+    "L31_N4012": [
+      0.03326279776436942,
+      0.03079321772856859
+    ]
+  },
+  "categories": "lack_of_knowledge",
+  "limit": null
+}
