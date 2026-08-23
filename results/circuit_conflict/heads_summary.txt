@@ -1,0 +1,21 @@
+Heads -- conflict; 80 working pairs; attribution over 32 layers x 32 heads; top 30 verified
+
+Rank by verified recovery (control -> uncertain) of the hedge log-odds:
+  L29H0  rec c->u +0.180  u->c +0.523 | attr -0.425 | attn->entity U 0.00 C 0.00 | proj on familiarity dir U +0.27 C -0.14
+  L15H10 rec c->u +0.164  u->c -0.326 | attr -0.381 | attn->entity U 0.13 C 0.06 | proj on familiarity dir U -0.15 C +0.11
+  L14H22 rec c->u +0.123  u->c -0.180 | attr -0.289 | attn->entity U 0.68 C 0.57 | proj on familiarity dir U -0.05 C -0.02
+  L13H17 rec c->u +0.080  u->c +0.085 | attr -0.289 | attn->entity U 0.55 C 0.33 | proj on familiarity dir U +0.03 C +0.05
+  L12H28 rec c->u +0.060  u->c +0.246 | attr -0.212 | attn->entity U 0.08 C 0.04 | proj on familiarity dir U -0.03 C -0.06
+  L11H13 rec c->u +0.056  u->c -0.137 | attr -0.131 | attn->entity U 0.29 C 0.18 | proj on familiarity dir U +0.04 C +0.02
+  L 8H9  rec c->u +0.045  u->c +0.121 | attr -0.110 | attn->entity U 0.15 C 0.09 | proj on familiarity dir U -0.00 C -0.01
+  L10H0  rec c->u +0.044  u->c +0.036 | attr -0.035 | attn->entity U 0.03 C 0.02 | proj on familiarity dir U -0.01 C +0.02
+  L11H11 rec c->u +0.018  u->c -0.043 | attr +0.004 | attn->entity U 0.15 C 0.09 | proj on familiarity dir U +0.00 C -0.00
+  L15H4  rec c->u +0.015  u->c +0.433 | attr -0.021 | attn->entity U 0.07 C 0.02 | proj on familiarity dir U +0.17 C -0.01
+  L12H12 rec c->u -0.002  u->c -0.089 | attr -0.034 | attn->entity U 0.01 C 0.00 | proj on familiarity dir U -0.08 C +0.01
+  L 7H6  rec c->u -0.011  u->c -0.007 | attr -0.023 | attn->entity U 0.13 C 0.09 | proj on familiarity dir U +0.01 C +0.01
+  L15H7  rec c->u -0.022  u->c +0.449 | attr +0.096 | attn->entity U 0.01 C 0.00 | proj on familiarity dir U +0.06 C -0.13
+  L15H6  rec c->u -0.031  u->c -0.434 | attr +0.151 | attn->entity U 0.02 C 0.01 | proj on familiarity dir U +0.10 C +0.35
+  L12H11 rec c->u -0.037  u->c +0.179 | attr -0.022 | attn->entity U 0.30 C 0.15 | proj on familiarity dir U +0.10 C -0.00
+
+attribution mass by position group: entity: 18.936, last: 21.410, prefix: 0.451, suffix: 38.120
+sum of verified recoveries over top 30 heads (c->u): 0.79
