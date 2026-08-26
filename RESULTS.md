@@ -57,6 +57,8 @@ al. (ICML 2026), Singha Roy et al., Basu et al. Independent novelty assessment: 
 combinatorial/methodological novelty, near-ideal fit for InterpScience ("rigor as the contribution").
 Deadline: extended to **Sept 1, 2026 AoE** (short ≤ 5 pp, long ≤ 9 pp).
 
+**Final evidence round (25 Aug, night):** the random-neuron-null test (100/50 controls on the same prompts) replaced the ANCOVA: four familiarity candidates exceed all controls at ≤ 0.013 nats (~0.3% of the gap; largest L29_N5866, z = −6.2), and the contested pair reaches z = +29.4 / +14.8 — single neurons register, two orders below the circuit's transfer (`results/gated_specificity_summary.txt`). Qwen rank-1 replicates direction-as-spread (0.46 vs set 0.86; entropy 0.84). A prefitted Jacobian lens (neuronpedia/jacobian-lens) reproduces the routing windows observationally — familiarity log-odds gap flat to L12, 50% by L16, while the entropy gap reaches 50% only at L28 — and the decoded direction's top tokens become ' unknown' / ' I' at L15–16 (`results/circuit_*/jlens_*`, Figure 4: `figures/fig4.svg`).
+
 **Decider follow-ups (25 Aug, evening):** rank-1 direction patching and LOO pruning resolved the sparse-vs-distributed question (claim 5 above), and dissected claim 7 mechanistically: the mean-difference direction is primarily a *spread* channel (injecting it on contested moves entropy 0.57, log-odds −0.10), while the component set carries the *decision* (log-odds 0.89, entropy 0.33). 30-random-set nulls match the 10-set ones (0.018 ± 0.022, 0.040 ± 0.044). Files: `results/circuit_*/direction_patch*`, `prune_*`, `faithfulness*`.
 
 ## Provenance

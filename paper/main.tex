@@ -36,9 +36,12 @@ and joint patching of 20 heads $+$ 100 MLP neurons transfers 78--107\% of the he
 between twins (random sets: 2--6\%) in three of four model$\times$arm cells, with partial cross-type
 overlap (Jaccard 0.11, head-recovery $\rho{=}0.61$). We report what our own criteria could not decide:
 confidence intervals graze or cross the sparsity-faithfulness bar in two of three cells, and the
-entropy-adjustment used to retire single-neuron claims is unidentified on gated arms; a follow-up decided
-the minimality question --- LOO-ranked pruning saturates at 20--40 components, while a rank-1 direction
-patch falls short of the component set (and fails outright for injecting the contested verdict). One finding survives on the full table: in
+entropy-adjustment used to retire single-neuron claims is unidentified on gated arms; follow-ups decided
+the open questions: LOO-ranked pruning saturates at 20--40 components; a rank-1 direction patch falls short
+of the component set in both models (the direction carries the spread, the components the decision); a
+random-neuron null replaces the adjustment with the same qualitative outcome; and a prefitted Jacobian lens
+reproduces the causal routing window observationally, with the direction becoming verbalizable
+(`` unknown'', `` I'') exactly there. One finding survives on the full table: in
 \lm{}, injecting the unknown signal transfers the hedge decision with little of the entropy, while removing
 it transfers both. All data, gates, audits, and per-claim evidence
 ship with the repository.
@@ -114,6 +117,12 @@ passes the specificity test. The two neurons that do survive all specifications-
 contested arm only---pattern as answer-competition effects: both are null on the familiarity arm where the
 model actually hedges. No neuron set moves hedging (77\% vs.\ 0.8\% clean gap; clamps change it by $\leq 2$
 points) or verbalized confidence. In \qw{}: zero frequency neurons, zero specific neurons.
+A follow-up replaced the adjustment with an \emph{identified} null: every statistic recomputed for 100
+(familiarity) / 50 (contested) random neurons ablated on the same prompts, which inherit the entropy
+sensitivity by construction. Result: four familiarity candidates exceed every random control (largest
+L29\_N5866, $z{=}{-}6.2$) but at $\leq 0.013$ nats---about $0.3\%$ of the 3.7-nat twin gap---while the
+contested pair reaches $z{=}{+}29.4$ (L31\_N11541, $d_z{=}0.78$) and $z{=}{+}14.8$ (L30\_N1457). Single
+neurons register; what registers is two orders of magnitude below what the circuit transfers.
 
 \begin{figure}[t]
   \centering
@@ -168,7 +177,27 @@ direction alone moves \emph{entropy} substantially ($0.57$) while moving the hed
 ($-0.10$); the full component set does the opposite ($0.89$ log-odds, $0.33$ entropy). On familiarity the
 same split is graded (rank-1: $0.46$ log-odds / $0.36$ entropy; set: $0.80$ / $-0.13$). The mean-difference
 direction is thus primarily a \emph{spread} channel, and the decision travels through component-specific
-structure the direction does not capture.
+structure the direction does not capture. This replicates cross-model: in \qw{}'s contested arm, rank-1
+injection recovers $0.46\,[0.34,0.59]$ of the log-odds (set: $0.86$) while carrying the entropy ($0.84$).
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.95\linewidth]{figures/fig4.pdf}
+  \caption{\textbf{Observational corroboration: Jacobian-lens decision emergence.} Per-layer lens-decoded
+  hedge log-odds gap (left) and entropy gap (right) between twin arms, as fractions of their final values
+  (prefitted lenses of \citealp{anthropic2026workspace}; shaded: the causally-derived L13--19 window). The
+  decision becomes linearly transportable exactly where patching places the routing (familiarity: flat to
+  L12, 50\% by L16; \qw{} contested: L18--25), and on familiarity the entropy gap reaches 50\% only at
+  L28---in depth, the decision is readable $\sim$12 layers before the spread exists.}
+  \label{fig:lens}
+\end{figure}
+
+\paragraph{An independent lens reproduces the window---and the direction becomes verbalizable there.}
+Decoding every layer's residual through a prefitted Jacobian lens \citep{anthropic2026workspace}---an
+observational method sharing nothing with patching---reproduces the causal picture
+(Figure~\ref{fig:lens}). Decoding the per-layer uncertainty direction itself, its top promoted tokens
+become `` unknown'' and `` I'' (hedge-initial) at L15--16, exactly where the routing window opens: the
+direction becomes \emph{disposed to say} the hedge at the moment the movers pick it up.
 
 \section{What our own criteria could not decide}
 \label{sec:undecided}
@@ -190,9 +219,10 @@ the components carry more than the direction, most visibly on the inject side.
 transfer depends on intervention direction) is a \lm{} phenomenon: in \qw{}'s contested cell the two
 directions transfer entropy alike ($+0.83$ / $+0.73$). One model, two arms; whether the asymmetry tracks
 the model family or the presence of a behavioral hedging repertoire is undecided.
-\textbf{(c) The entropy adjustment.} It retired the single-neuron claims, but on gated arms it is
-unidentified (disjoint supports), and the signed-shift correlation with baseline entropy is zero---so on
-gated arms the null rests on the temperature-matched design and the behavioral nulls, not on the ANCOVA.
+\textbf{(c) The entropy adjustment --- raised, then replaced.} The ANCOVA is unidentified on gated arms
+(disjoint supports; signed-shift correlation with baseline entropy $\approx 0$). The random-neuron-null
+re-test (Results) replaces it: gated-arm single-neuron conclusions now rest on an identified design, with
+the same qualitative outcome and honest effect sizes.
 
 \section{Related work}
 \citet{teplica2025sciurus} is the closest work: shared uncertainty/factuality circuits across eight models
