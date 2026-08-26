@@ -1,4 +1,4 @@
-# No confidence neurons — a verified two-model uncertainty circuit
+# No confidence neurons on the behavioral arm — and a faithfulness-tested uncertainty circuit
 
 *Results summary for the `emotional-atyachar` line of work. Full lab record and interactive report: the "Uncertainty Neurons Rebuilt" artifact; definitions and dataset standard: [UNCERTAINTY_DEFINITION.md](UNCERTAINTY_DEFINITION.md).*
 
@@ -19,12 +19,12 @@ Neurons whose activation correlates with next-token entropy are routinely read a
 | # | Claim | Evidence | Status |
 |---|---|---|---|
 | 1 | Correlation-selected "confidence neurons" are mostly token-frequency neurons plus a general temperature neuron; the taxonomy is causally verified with a temperature-matched baseline. | `results/frequency_causal_*`, `results/stolfo_*` | **Established** |
-| 2 | No single neuron is uncertainty-specific once baseline entropy is adjusted for — on original stimuli and on the gated arms; the one robust single-neuron effect (L31_N11541, contested arm) is answer-competition, not ignorance. | `results/*/entropy_adjusted.csv` | **Established** (the adjustment extrapolates on gated arms — stated) |
+| 2 | No single neuron is uncertainty-specific on the original stimuli (overlapping entropy supports; three adjustment schemes agree) or on the behavioral (familiarity) arm; the two neurons that survive all specifications (L31_N11541, L30_N1457, contested arm only) pattern as answer-competition, not ignorance. Caveat: ρ(H, signed shift) ≈ 0 while ρ(H, abs shift) = 0.25, so the ANCOVA is unidentified on gated arms — the gated-arm nulls rest on the temperature-matched design and the behavioral nulls, not on the adjustment. | `results/*/entropy_adjusted.csv` | **Established with the identification caveat** |
 | 3 | Uncertainty is model-relative: identical candidates give Llama 195 behavioral pairs and Qwen 24; contested and aleatoric arms dissociate distributional from behavioral uncertainty in both models. | `data/*/gate_report.json` | **Established** |
 | 4 | The hedge decision is computed early (entity, L0–7), routed mid-stack (L13–19 / L17–21) by ~10 verified heads, and read out by mid-layer MLP neurons into the late-layer machinery of claim 1. | `results/circuit_*` (Figures 1–2) | **Established** in 3 of 3 runnable model × arm cells |
-| 5 | This is a circuit in the faithfulness sense: ≈2% of heads + 0.02% of neurons transfer 78–107% of the held-out hedging readout; random sets 2–6%. | `results/circuit_*/faithfulness*` (Figure 3) | **Established** |
+| 5 | ≈2% of heads + 0.02% of neurons transfer 78–107% of the held-out hedging readout; random sets 2–6%. 95% CIs: familiarity 0.80 [0.70, 0.90], Llama contested 0.89 [0.69, 1.09], Qwen 0.86 [0.77, 0.95] — the CI crosses the 0.7 criterion in Llama-contested and grazes it in familiarity, and neuron-set recovery does not saturate (0.23/0.43/0.52/0.65 at N=10/30/100/300). | `results/circuit_*/faithfulness*` (Figure 3) | **Established as a faithfulness-tested set; minimality (sparse circuit vs distributed direction) undecided** |
 | 6 | Types share machinery only partially: cross-arm Jaccard 0.11 (heads and neurons), head-recovery ρ = 0.61 — one variable, two readouts. | `results/circuit_conflict/faithfulness_summary.txt` | Supported (one model; two arms) |
-| 7 | The circuit carries the decision, not the spread: hedge log-odds recover 0.80 while entropy recovers ≈ 0 (familiarity, control→uncertain). | `results/circuit_familiarity/faithfulness.csv` | **New — replicate before headlining** |
+| 7 | **Reframed (all cells reported):** in Llama the decision and the spread transfer *asymmetrically by intervention direction* — injecting the unknown signal (c→u) transfers the hedge log-odds with little entropy (−0.13 familiarity, +0.33 contested), removing it (u→c) transfers both (+0.45, +0.55). Not a general dissociation: steering moves both together, and Qwen shows no asymmetry (+0.83/+0.73). | `results/circuit_*/faithfulness.csv`, all six cells | **Supported as a directional asymmetry (one model, two arms)** |
 
 ## Results in three figures
 
@@ -39,6 +39,23 @@ Neurons whose activation correlates with next-token entropy are routinely read a
 **Figure 3 — faithfulness: circuit vs random, held-out pairs.** 20 heads + 100 neurons recover 0.80 / 0.89 / 0.86 (Llama familiarity / Llama contested / Qwen contested; reverse direction 1.07 / 0.78 / 0.98) vs 0.02–0.06 for size-matched random sets. The pre-registered CIRCUIT verdict passes in both Llama runs; Qwen misses only the sparsity clause (20 heads = 2.55% of its 784 heads).
 
 ![Figure 3](figures/fig3.svg)
+
+## Post-audit corrections (25 Aug 2026)
+
+An external audit of this branch was verified against the result files and acted on: 95% CIs added to
+every faithfulness cell; the "pre-registered" wording for the circuit criterion struck (thresholds for the
+*gate* predate the gating; the circuit criterion was fixed in code before the held-out runs but not
+independently registered); claim 7 reframed from a general dissociation to the direction-dependent
+asymmetry the full table supports; the abstract's "no single neuron survives" scoped to the behavioral
+arm; the bibliography rebuilt with verified author lists; and the closest prior work added — **SCIURus**
+(Teplica, Liu, Cohan & Rudner, NAACL 2025 Long: shared uncertainty/factuality circuits across eight
+models via causal tracing and zero-ablation). Relative to SCIURus this work adds the gated-twin data
+standard, twin-based patching, random-set faithfulness controls, neuron granularity, and cross-type
+overlap — and drops any claim of being the first uncertainty circuit. Also cited now: Du et al. (COLM
+2025), Arora et al. (ICML 2026, MLP-only neuron-basis circuits), Zhao et al. (COLM 2026), Vazhentsev et
+al. (ICML 2026), Singha Roy et al., Basu et al. Independent novelty assessment: 7/10 — high
+combinatorial/methodological novelty, near-ideal fit for InterpScience ("rigor as the contribution").
+Deadline: extended to **Sept 1, 2026 AoE** (short ≤ 5 pp, long ≤ 9 pp).
 
 ## Provenance
 
