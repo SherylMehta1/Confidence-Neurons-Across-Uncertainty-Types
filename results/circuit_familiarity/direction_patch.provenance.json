@@ -15,11 +15,18 @@
   "top_k_final": null,
   "min_abs_corr": null,
   "git_head_sha": "f2bb126d9d24f9160490e214fb2ff80fe3003196",
-  "timestamp": "2026-08-26T10:39:42.489968+00:00",
-  "script": "scripts/circuit_faithfulness.py",
-  "category": "conflict",
-  "n_heads": 20,
-  "n_neurons": 100,
-  "n_pairs": 60,
-  "compare": null
+  "timestamp": "2026-08-26T10:19:37.799623+00:00",
+  "script": "scripts/circuit_direction_patch.py",
+  "category": "familiarity",
+  "layers": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "n_pairs": 59,
+  "n_random": 10
 }

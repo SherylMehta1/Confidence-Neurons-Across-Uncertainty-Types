@@ -1,0 +1,4 @@
+Greedy pruning -- familiarity; 120 components ranked by LOO marginal on 25 pairs; curve on 59 held-out pairs
+  k=5:+0.49 k=10:+0.66 k=20:+0.71 k=40:+0.81 k=60:+0.85 k=80:+0.88 k=100:+0.89 k=120:+0.80
+  smallest subset with recovery > 0.7: 20 components
+  top-10 by marginal: NL19_14030(+0.033), HL21_9(+0.031), HL13_30(+0.020), HL15_4(+0.018), HL13_11(+0.018), NL16_2874(+0.016), HL10_27(+0.016), HL15_7(+0.012), HL8_19(+0.012), NL14_4914(+0.009)

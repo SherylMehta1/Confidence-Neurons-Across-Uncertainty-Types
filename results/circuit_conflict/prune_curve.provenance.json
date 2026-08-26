@@ -15,11 +15,10 @@
   "top_k_final": null,
   "min_abs_corr": null,
   "git_head_sha": "f2bb126d9d24f9160490e214fb2ff80fe3003196",
-  "timestamp": "2026-08-26T10:39:42.489968+00:00",
-  "script": "scripts/circuit_faithfulness.py",
+  "timestamp": "2026-08-26T10:53:21.870808+00:00",
+  "script": "scripts/circuit_prune.py",
   "category": "conflict",
-  "n_heads": 20,
-  "n_neurons": 100,
-  "n_pairs": 60,
-  "compare": null
+  "n_components": 120,
+  "loo_pairs": 25,
+  "eval_pairs": 60
 }
