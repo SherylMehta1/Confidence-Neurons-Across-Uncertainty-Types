@@ -35,9 +35,10 @@ in the first eight layers, a verdict is routed mid-stack (L13--19 / L17--21) by 
 and joint patching of 20 heads $+$ 100 MLP neurons transfers 78--107\% of the held-out hedge readout
 between twins (random sets: 2--6\%) in three of four model$\times$arm cells, with partial cross-type
 overlap (Jaccard 0.11, head-recovery $\rho{=}0.61$). We report what our own criteria could not decide:
-confidence intervals graze or cross the sparsity-faithfulness bar in two of three cells, recovery does not
-saturate with component count (a distributed-direction signature), and the entropy-adjustment used to
-retire single-neuron claims is unidentified on gated arms. One finding survives on the full table: in
+confidence intervals graze or cross the sparsity-faithfulness bar in two of three cells, and the
+entropy-adjustment used to retire single-neuron claims is unidentified on gated arms; a follow-up decided
+the minimality question --- LOO-ranked pruning saturates at 20--40 components, while a rank-1 direction
+patch falls short of the component set (and fails outright for injecting the contested verdict). One finding survives on the full table: in
 \lm{}, injecting the unknown signal transfers the hedge decision with little of the entropy, while removing
 it transfers both. All data, gates, audits, and per-claim evidence
 ship with the repository.
@@ -161,17 +162,30 @@ asymmetry, not a general behavioral/distributional dissociation (steering the fa
 log-odds and entropy together, and \qw{} shows no asymmetry: $+0.83$/$+0.73$); we state it as such, on the
 full table rather than a selected cell.
 
+\paragraph{The direction carries the spread; the components carry the decision.}
+Rank-1 direction patching dissects the asymmetry further: injecting the contested verdict through the
+direction alone moves \emph{entropy} substantially ($0.57$) while moving the hedge log-odds not at all
+($-0.10$); the full component set does the opposite ($0.89$ log-odds, $0.33$ entropy). On familiarity the
+same split is graded (rank-1: $0.46$ log-odds / $0.36$ entropy; set: $0.80$ / $-0.13$). The mean-difference
+direction is thus primarily a \emph{spread} channel, and the decision travels through component-specific
+structure the direction does not capture.
+
 \section{What our own criteria could not decide}
 \label{sec:undecided}
 This venue asks what it would take for interpretability claims to fail. Three of ours are undecided by our
 own tests, and we say so rather than round up.
-\textbf{(a) Sparse circuit vs.\ distributed direction.} The faithfulness criterion (recovery $>0.7$,
-$<2\%$ of components) is met at the point estimate in the two \lm{} cells, but the 95\% CI includes values
-below 0.7 in \lm{}-contested and touches it in familiarity; the one comfortable CI (\qw{}) fails the
-sparsity clause (20 heads $=2.55$\% of 784). Moreover, neuron-set recovery does not saturate
-(0.23/0.43/0.52/0.65 at $N{=}10/30/100/300$)---the signature of a distributed direction sampled ever more
-densely, not of a small discrete set. Our results localize \emph{where} and \emph{through what kind of
-components} the hedge readout travels; they do not establish minimality.
+\textbf{(a) Sparse circuit vs.\ distributed direction --- raised, then decided by follow-up.} The
+faithfulness criterion (recovery $>0.7$, $<2\%$ of components) is met at the point estimate in the two
+\lm{} cells, but the 95\% CI includes values below 0.7 in \lm{}-contested and touches it in familiarity,
+and attribution-rank-nested neuron sets did not saturate (0.23--0.65 at $N{=}10$--$300$). Two follow-up
+experiments decided the question. \emph{Rank-1 direction patching} (swapping only the per-layer
+uncertainty-direction projection, all positions) recovers $0.46\,[0.35,0.58]$ on familiarity
+(component set: $0.80\,[0.70,0.90]$; disjoint CIs) and $-0.10\,[-0.32,0.12]$ for injecting the contested
+verdict (set: $0.89$), while \emph{removing} the verdict rank-1 recovers $0.81$--$0.97$. \emph{LOO-ranked
+greedy pruning} saturates: 20 components reach $0.71$ on familiarity (plateau $0.85$--$0.89$ by
+$k{=}60$--$100$), 40 reach $0.91$ on contested---the earlier non-saturation was an artifact of
+attribution-rank nesting. Verdict: a sparse circuit (20--40 components) with a directional sub-channel;
+the components carry more than the direction, most visibly on the inject side.
 \textbf{(b) Scope of the direction-dependent asymmetry.} The asymmetry reported in the Results (entropy
 transfer depends on intervention direction) is a \lm{} phenomenon: in \qw{}'s contested cell the two
 directions transfer entropy alike ($+0.83$ / $+0.73$). One model, two arms; whether the asymmetry tracks
