@@ -1,0 +1,20 @@
+Gated-arm specificity vs random-neuron null (alpha 0.01, BH within run)
+
+## results/ablation_fam_ctrl100: 27 candidates vs 100 random neurons (null inter -0.0011 +- 0.0018)
+   FDR survivors: 0 | min empirical p attainable: 0.010
+   L22_N2446    inter -0.0074 dz -0.19 | z vs null -3.42 | p_emp 0.010
+   L29_N5866    inter -0.0125 dz -0.39 | z vs null -6.20 | p_emp 0.010
+   L31_N11541   inter +0.0057 dz +0.13 | z vs null +3.71 | p_emp 0.010
+   L30_N1457    inter +0.0064 dz +0.16 | z vs null +4.09 | p_emp 0.010
+   L29_N12400   inter +0.0047 dz +0.16 | z vs null +3.17 | p_emp 0.050
+   L29_N11791   inter -0.0032 dz -0.11 | z vs null -1.13 | p_emp 0.129
+
+## results/ablation_conf_ctrl50: 27 candidates vs 50 random neurons (null inter -0.0001 +- 0.0011)
+   FDR survivors: 0 | min empirical p attainable: 0.020
+   L31_N11541   inter +0.0312 dz +0.78 | z vs null +29.37 | p_emp 0.020
+   L30_N1457    inter +0.0156 dz +0.43 | z vs null +14.81 | p_emp 0.020
+   L29_N13925   inter +0.0022 dz +0.11 | z vs null +2.22 | p_emp 0.059
+   L22_N2446    inter +0.0019 dz +0.06 | z vs null +1.89 | p_emp 0.118
+   L29_N10877   inter -0.0019 dz -0.08 | z vs null -1.65 | p_emp 0.118
+   L28_N14222   inter -0.0019 dz -0.07 | z vs null -1.66 | p_emp 0.118
+

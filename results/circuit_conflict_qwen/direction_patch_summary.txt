@@ -1,0 +1,5 @@
+Rank-1 direction patching -- conflict_qwen; layers 15-21; ONE dimension per layer swapped; 55 held-out pairs
+  control -> uncertain: log-odds +0.461 [+0.337,+0.585], entropy +0.844
+  uncertain -> control: log-odds +0.829 [+0.749,+0.909], entropy +0.767
+  random unit directions (c->u): -0.017 +- 0.015 over 10
+  compare with results/circuit_<arm>/faithfulness_summary.txt (the 20-head + 100-neuron set)
