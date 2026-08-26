@@ -1,0 +1,6 @@
+Jacobian-lens trajectory -- aleatoric_qwen; 39 pairs; readout position
+lens hedge log-odds gap (uncertain - control) by layer:
+  L0:+0.04 L1:+0.02 L2:+0.06 L3:+0.03 L4:+0.05 L5:+0.03 L6:+0.06 L7:+0.09 L8:+0.15 L9:+0.50 L10:+0.18 L11:+0.12 L12:+0.06 L13:+0.06 L14:+0.71 L15:+0.68 L16:+0.74 L17:+0.53 L18:+0.82 L19:-0.40 L20:+0.09 L21:+0.77 L22:+0.34 L23:+0.37 L24:+0.72 L25:+2.42 L26:+3.67
+lens entropy gap by layer:
+  L0:-0.02 L1:+0.04 L2:+0.02 L3:+0.19 L4:+0.01 L5:-0.34 L6:-0.14 L7:+0.10 L8:+0.21 L9:-0.02 L10:-0.00 L11:+0.04 L12:+0.05 L13:+0.61 L14:+2.58 L15:+0.56 L16:+2.65 L17:+0.53 L18:+0.10 L19:-0.11 L20:+0.02 L21:-0.05 L22:-0.51 L23:+1.36 L24:+0.44 L25:+1.27 L26:+2.04
+first layer reaching 50% of the final gap: log-odds L25, entropy L14 (final gaps +3.67, +2.04)
