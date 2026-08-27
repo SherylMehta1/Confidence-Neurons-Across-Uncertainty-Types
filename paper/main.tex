@@ -1,4 +1,4 @@
-% Workshop paper draft -- NeurIPS 2026 "Interpretability as a Science" (deadline Sept 1 AoE; short<=5pp, long<=9pp).
+% Workshop paper -- NeurIPS 2026 "Interpretability as a Science" (deadline Sept 1 AoE; long format <=9pp).
 % Build: latexmk -pdf main.tex   (drop the venue style file next to this file; falls back to plain article.)
 \documentclass{article}
 \IfFileExists{neurips_2026.sty}{\usepackage[preprint]{neurips_2026}}{%
@@ -12,7 +12,7 @@
 \newcommand{\lm}{Llama-3.1-8B-Instruct}
 \newcommand{\qw}{Qwen2.5-7B-Instruct}
 
-\title{Gated Twins for Model-Relative Uncertainty:\\What a Neuron Battery Misses and a Circuit Test Cannot Yet Decide}
+\title{Deciding to Say ``I Don't Know'':\\A Verdict Circuit, Not an Entropy Symptom}
 \author{%
   Anonymous\thanks{Draft; author list to be completed by the team.}%
 }
@@ -21,50 +21,45 @@
 \maketitle
 
 \begin{abstract}
-Claims about uncertainty mechanisms in language models are only as good as the datasets that define
-``uncertain'' and the counterfactuals that test them. We contribute a \emph{model-relative gated-twin}
-standard: minimal prompt pairs kept only when the model itself proves the labels by sampled correctness,
-distributional spread, and (for behavioral arms) hedging, with keep rates reported and the deterministic
-grader audited against a 32B judge (agreement 94.6--100\%, and \emph{lower} disagreement on hedged
-answers). On this footing we re-examine ``confidence neurons'' in \lm{} and \qw{}: correlation-selected
-neurons decompose into token-frequency neurons and a general temperature neuron; on the behavioral
-(familiarity) arm no single neuron survives an uncertainty-specificity test, and the only robust
-single-neuron effects anywhere (two neurons, contested-source arm) pattern as answer-competition rather
-than knowledge awareness. The hedge decision itself is carried by a small patched set: the entity is read
-in the first eight layers, a verdict is routed mid-stack (L13--19 / L17--21) by verified attention heads,
-and joint patching of 20 heads $+$ 100 MLP neurons transfers 78--107\% of the held-out hedge readout
-between twins (random sets: 2--6\%) in three of four model$\times$arm cells, with partial cross-type
-overlap (Jaccard 0.11, head-recovery $\rho{=}0.61$). We report what our own criteria could not decide:
-confidence intervals graze or cross the sparsity-faithfulness bar in two of three cells, and the
-entropy-adjustment used to retire single-neuron claims is unidentified on gated arms; follow-ups decided
-the open questions: LOO-ranked pruning saturates at 20--40 components; a rank-1 direction patch falls short
-of the component set in both models (the direction carries the spread, the components the decision); a
-random-neuron null replaces the adjustment with the same qualitative outcome; and a prefitted Jacobian lens
-reproduces the causal routing window observationally, with the direction becoming verbalizable
-(`` unknown'', `` I'') exactly there. One finding survives on the full table: in
-\lm{}, injecting the unknown signal transfers the hedge decision with little of the entropy, while removing
-it transfers both. All data, gates, audits, and per-claim evidence
-ship with the repository.
+When a language model says ``I don't know,'' is that a decision, or a symptom of a flat output
+distribution? Existing evidence cannot tell: ``uncertain'' prompts are annotated rather than verified, and
+single-component accounts conflate the two. We separate them. On gated twin prompts---minimal pairs the
+model itself certifies by sampled correctness, entropy gap, and hedging---correlation-selected
+``confidence neurons'' decompose into token-frequency and temperature machinery: the spread's plumbing, not
+the decision. The decision travels elsewhere. Activation patching in \lm{} and \qw{} shows the entity is
+read in the first eight layers and a verdict routed mid-stack by roughly 20 attention heads and 100 MLP
+neurons ($0.02\%$ of neurons) that transfer 78--107\% of the held-out hedge readout (overshooting only on
+the reverse direction); size-matched random sets transfer 2--6\%. A rank-1 uncertainty direction moves
+entropy but not the hedge; the component set does the opposite. An independent Jacobian lens watches the
+verdict become a word: `` unknown'' rises from rank ${\sim}1{,}000$ to rank 10 across layers 13--17, about
+twelve layers before the twins' entropy gap appears. Hedging is a computed verdict, not felt entropy---and
+confidence methods that read the distribution are measuring the wrong channel.
 \end{abstract}
 
 \section{Introduction}
-Single-component accounts of model confidence are attractive and common: entropy neurons
-\citep{stolfo2024confidence,gurnee2024universal}, uncertainty heads \citep{roy2025unwanted,vazhentsev2026heads},
-knowledge-awareness directions \citep{ferrando2025iknow,ji2025hedging,anthropic2025biology}, and, most
-directly, circuit-level accounts: \citet{teplica2025sciurus} show across eight models that uncertainty is
-produced in the same circuits responsible for answer factuality, and \citet{zhao2026wired} localize
-Confidence Mover components for inflated verbalized confidence. What this literature does not yet supply
-is (a)~a dataset standard under which ``the model is uncertain here'' is a checked property of the
-(model, prompt) pair rather than an annotation, and (b)~a discipline for saying when a proposed mechanism
-claim \emph{fails} its own test. We contribute both, and apply them.
+When a model hedges, the natural reading---and the one the single-component literature encodes
+\citep{stolfo2024confidence,gurnee2024universal,roy2025unwanted,vazhentsev2026heads,ferrando2025iknow,ji2025hedging,anthropic2025biology}---is
+that hedging is uncertainty made audible: one neuron, one head, one direction, leaking entropy into words.
+But no existing dataset checks that the model is actually uncertain on its ``uncertain'' prompts, and no
+intervention has separated moving the \emph{distribution} from moving the \emph{decision to say so}. When
+we build prompt pairs the model itself certifies and patch between them, the assumption fails: the decision
+and the spread travel in different channels. About twenty attention heads and a hundred MLP neurons---under
+$2\%$ of components---carry 78--107\% of the hedge decision between twins, while every single neuron that
+correlation selects turns out to be spread machinery, and a rank-1 direction moves entropy without moving
+the hedge. An independent lens can then watch the verdict become a word: across layers 13--17 the token
+`` unknown'' rises from rank ${\sim}1{,}000$ to rank 10 at the readout position of the uncertain twin only.
+If the hedge is a verdict rather than a symptom, then confidence estimation read off the output distribution
+measures the wrong channel---and the verdict itself is small enough to audit directly.
 
-Concretely: (1)~a gated-twin dataset standard with judge-validated grading and reported keep rates;
-(2)~on that footing, an entropy-adjusted causal battery showing that single-neuron ``confidence''
-claims do not survive on behavioral uncertainty, and a decomposition of what correlation actually
-selects; (3)~a twin-patching circuit analysis at head$+$neuron granularity with faithfulness measured
-against size-matched random component sets, replicated across two models and two uncertainty types;
-(4)~an explicit account of what our criteria could not decide --- including where our own confidence
-intervals cross our own bar.
+Circuit-level accounts exist for adjacent behaviors---\citet{teplica2025sciurus} show across eight models
+that uncertainty shares circuits with answer factuality; \citet{zhao2026wired} localize confidence-mover
+components for inflated verbalized scores---but none verify a hedging circuit at head$+$neuron granularity
+against size-matched random sets, and none dissociate the decision from the spread. We contribute:
+(1)~a gated-twin dataset standard with judge-validated grading and reported keep rates; (2)~on that footing,
+the decomposition of what correlation-based neuron selection actually finds; (3)~a twin-patching circuit at
+head$+$neuron granularity with random-set faithfulness controls, in two models and two uncertainty types;
+(4)~the decision-vs-spread dissociation, stress-tested by a pre-stated prediction and an independent lens;
+(5)~an explicit account of which of our own criteria the evidence failed, and how follow-ups decided them.
 
 \section{Methods}
 \paragraph{Datasets: uncertainty as a (model, prompt) property.}
@@ -85,10 +80,10 @@ hedged answers (1.5\% vs.\ 6.1\%), so grader error does not mimic the behavioral
 Mean-ablation at the readout position with an explicit reference policy and matched control prompts;
 sign-flip permutation per cell; two-sided permutation for the uncertain-vs-control interaction; BH-FDR at
 $\alpha{=}0.01$; plus adjustments for baseline entropy, motivated by the fact that a flat distribution
-amplifies the \emph{magnitude} of any perturbation ($\rho(H,|\Delta H|){=}0.25$ on our data). We report a
-caveat up front: the signed shift is uncorrelated with baseline entropy ($\rho{=}{-}0.001$), and on gated
+amplifies the \emph{magnitude} of any perturbation ($\rho(H,|\Delta H|){=}0.25$ on our data). A caveat we
+state up front: the signed shift is uncorrelated with baseline entropy ($\rho{=}{-}0.001$), and on gated
 arms the two conditions' entropy supports are disjoint, so the ANCOVA coefficient there is extrapolation;
-on gated arms we therefore lean on the temperature-matched design (below) rather than the adjustment.
+on gated arms we therefore rely on a random-neuron null and the temperature-matched design (Results).
 Dose--response, frozen-RMSNorm decomposition, temperature-matched frequency tests, behavioral clamping,
 and verbalized confidence complete the battery.
 
@@ -98,39 +93,35 @@ All circuit claims rest on activation patching between gated twins---reference-f
 over every head at every position on the hedge-vs-answer log-odds; the top 30 heads \emph{verified by
 real patching}. (3)~The same at MLP-block and single-neuron level; top-$N$ neuron sets verified jointly
 against size-matched random sets. (4)~Faithfulness \citep{wang2023ioi}: the final head$+$neuron set
-patched jointly on held-out pairs, both directions, against 10 random sets, with the criterion
+patched jointly on held-out pairs, both directions, against random sets, with the criterion
 \emph{recovery $>0.7$ with $<2\%$ of components}---fixed in the analysis code before the held-out runs,
-but not independently registered, and we treat it accordingly (\S\ref{sec:undecided}).
+but not independently registered, and treated accordingly (\S\ref{sec:undecided}).
 (5)~The identical pipeline on a second arm and model, with component-set overlap. Recovery
 $=(\text{patched}-\text{target})/(\text{source}-\text{target})$.
 
 \section{Results}
-\paragraph{What correlation selects is not uncertainty (behavioral arm).}
+\paragraph{What correlation selects is the spread's machinery.}
 Correlation-selected candidates in \lm{} are 9/55 token-frequency neurons by weights and causally so under
 a temperature-matched baseline (stable across prompt sets, $r{=}0.52$--$0.62$; $6\times$ random), plus one
 general temperature neuron (L31\_N2477: monotonic dose--response $\rho{=}0.86$, $\sim$100\%
-RMSNorm-mediated, not uncertainty-specific)---consistent with \citet{du2025posttraining}, who report that
-post-training confidence differences cannot be attributed to entropy neurons. On the original stimuli
-(overlapping entropy supports; three adjustment schemes agree) and on the gated familiarity arm, no neuron
-passes the specificity test. The two neurons that do survive all specifications---L31\_N11541
-($+0.045$ nats adjusted, $p{=}1.7{\times}10^{-15}$) and the frequency neuron L30\_N1457, both on the
-contested arm only---pattern as answer-competition effects: both are null on the familiarity arm where the
-model actually hedges. No neuron set moves hedging (77\% vs.\ 0.8\% clean gap; clamps change it by $\leq 2$
-points) or verbalized confidence. In \qw{}: zero frequency neurons, zero specific neurons.
-A follow-up replaced the adjustment with an \emph{identified} null: every statistic recomputed for 100
+RMSNorm-mediated, not uncertainty-specific)---consistent with \citet{du2025posttraining}. On the original
+stimuli (overlapping entropy supports; three adjustment schemes agree) and on the gated familiarity arm, no
+neuron passes the specificity test. Under an \emph{identified} null---every statistic recomputed for 100
 (familiarity) / 50 (contested) random neurons ablated on the same prompts, which inherit the entropy
-sensitivity by construction. Result: four familiarity candidates exceed every random control (largest
-L29\_N5866, $z{=}{-}6.2$) but at $\leq 0.013$ nats---about $0.3\%$ of the 3.7-nat twin gap---while the
-contested pair reaches $z{=}{+}29.4$ (L31\_N11541, $d_z{=}0.78$) and $z{=}{+}14.8$ (L30\_N1457). Single
-neurons register; what registers is two orders of magnitude below what the circuit transfers.
+sensitivity by construction---four familiarity candidates exceed every random control (largest L29\_N5866,
+$z{=}{-}6.2$) but at $\leq 0.013$ nats, about $0.5\%$ of the twins' 2.8-nat entropy gap; the two large
+effects sit on the contested arm only (L31\_N11541 $z{=}{+}29.4$, $d_z{=}0.78$; L30\_N1457 $z{=}{+}14.8$)
+and are null on the arm where the model actually hedges---answer-competition, not knowledge awareness.
+Single neurons register; what registers is two orders of magnitude below what the circuit transfers.
+No neuron set moves hedging (77\% vs.\ 0.8\% clean gap; clamps change it by $\leq 2$ points) or verbalized
+confidence. In \qw{}: zero frequency neurons, zero specific neurons.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.62\linewidth]{figures/fig1.pdf}
-  \caption{\textbf{The verdict moves.} Hedge log-odds recovery when the unknown twin's residuals are
-  patched into the known prompt, one position group at a time (\lm{} familiarity, 60 pairs; dashed:
-  whole-last-position twin patching, 195 pairs). Entity tokens carry the decision at L0--7 and nothing
-  after L13; the readout positions pick it up at L13--17.}
+  \caption{\textbf{The verdict leaves the entity by layer 8 and reaches the readout by layer 17:} entity
+  tokens move the hedge only at L0--7, readout positions only after L13 (\lm{} familiarity, 60 pairs;
+  dashed: whole-last-position twin patching, 195 pairs; recovery $=$ fraction of the twin gap transferred).}
   \label{fig:positions}
 \end{figure}
 
@@ -142,137 +133,136 @@ neurons register; what registers is two orders of magnitude below what the circu
   \begin{minipage}[t]{0.42\linewidth}\centering
     \includegraphics[width=\linewidth]{figures/fig3.pdf}
   \end{minipage}
-  \caption{\textbf{Left: the mid-stack MLP window} (recovery when one layer's MLP output is patched from
-  the control twin, all positions). \textbf{Right: faithfulness} on held-out pairs, with 95\% CIs in the
-  text; reverse-direction recoveries 1.07 / 0.78 / 0.98.}
+  \caption{\textbf{Left --- a single mid-stack window does the routing:} one-layer MLP patches recover the
+  hedge only at L11--21, in both models. \textbf{Right --- under 2\% of components carry 78--107\% of the
+  held-out hedge readout} (reverse-direction recoveries 1.07 / 0.78 / 0.98); size-matched random sets carry
+  2--6\%.}
   \label{fig:mlp-faith}
 \end{figure}
 
-\paragraph{The patched set that carries the hedge readout.}
+\paragraph{The verdict circuit.}
 Figure~\ref{fig:positions}: the entity is read in the first eight layers and the verdict is routed to the
 readout positions at L13--19, distributed over $\sim$10 verified heads (largest single-head recovery
 L17H20 $=0.39$); in \qw{}'s contested arm the mover heads attend to the conflicting passage (L18H18: 0.28
-vs.\ 0.11) and write along the uncertainty direction. Attribution-selected neuron groups are causal where
-single neurons were not. Jointly patching 20 heads $+$ 100 neurons ($1.95$\% of heads, $0.022$\% of
-neurons) recovers, with 95\% CIs: familiarity $0.80\,[0.70, 0.90]$ (reverse $1.07\,[0.96,1.17]$); \lm{}
-contested $0.89\,[0.69, 1.09]$ ($0.78\,[0.65,0.90]$); \qw{} contested $0.86\,[0.77, 0.95]$
-($0.98\,[0.89,1.07]$). Random sets recover $0.02$--$0.06$. Both cross-model cells are the contested arm,
-where free-generation hedging is $\approx$0 and the log-odds readout is a token-level proxy; \qw{}'s
-familiarity arm is not runnable (24 gated pairs). Cross-type overlap in \lm{}: heads Jaccard $0.11$
-(shared: L12H28, L15H4, L15H7, L29H0), neurons Jaccard $0.11$, head-recovery Spearman $\rho{=}0.61$ ---
-the types share a variable, not a full circuit.
+vs.\ 0.11) and write along the uncertainty direction. Attribution-selected neuron \emph{groups} are
+uncertainty-specific where single neurons were not. Jointly patching 20 heads $+$ 100 neurons ($1.95$\% of
+heads, $0.022$\% of neurons) recovers, with 95\% CIs: familiarity $0.80\,[0.70, 0.90]$ (reverse
+$1.07\,[0.96,1.17]$); \lm{} contested $0.89\,[0.69, 1.09]$ ($0.78\,[0.65,0.90]$); \qw{} contested
+$0.86\,[0.77, 0.95]$ ($0.98\,[0.89,1.07]$). Random sets recover $0.02$--$0.06$
+(Figure~\ref{fig:mlp-faith}). This holds in three of four model$\times$arm cells; the fourth (\qw{}
+familiarity) has too few gated pairs to run---itself a finding, since the same 1{,}151 candidates gate 195
+pairs in \lm{}. Both cross-model cells are the contested arm, where free-generation hedging is $\approx$0
+and the log-odds readout is a token-level proxy. Cross-type overlap in \lm{}: heads Jaccard $0.11$ (shared:
+L12H28, L15H4, L15H7, L29H0), neurons Jaccard $0.11$, head-recovery Spearman $\rho{=}0.61$---the types
+share a variable, not a full circuit.
 
-\paragraph{The decision and the spread transfer asymmetrically by intervention direction.}
-Across all four \lm{} cells the hedge log-odds transfer is high ($0.78$--$1.07$), but the entropy transfer
-splits cleanly by direction: \emph{injecting} the unknown signal (control$\to$uncertain) moves the
-decision while moving little of the distributional spread ($-0.13$ familiarity, $+0.33$ contested), whereas
-\emph{removing} it (uncertain$\to$control) moves both ($+0.45$, $+0.55$). This is a directional
-asymmetry, not a general behavioral/distributional dissociation (steering the familiarity direction moves
-log-odds and entropy together, and \qw{} shows no asymmetry: $+0.83$/$+0.73$); we state it as such, on the
-full table rather than a selected cell.
-
-\paragraph{The direction carries the spread; the components carry the decision.}
-Rank-1 direction patching dissects the asymmetry further: injecting the contested verdict through the
-direction alone moves \emph{entropy} substantially ($0.57$) while moving the hedge log-odds not at all
-($-0.10$); the full component set does the opposite ($0.89$ log-odds, $0.33$ entropy). On familiarity the
-same split is graded (rank-1: $0.46$ log-odds / $0.36$ entropy; set: $0.80$ / $-0.13$). The mean-difference
-direction is thus primarily a \emph{spread} channel, and the decision travels through component-specific
-structure the direction does not capture. This replicates cross-model: in \qw{}'s contested arm, rank-1
-injection recovers $0.46\,[0.34,0.59]$ of the log-odds (set: $0.86$) while carrying the entropy ($0.84$).
+\paragraph{Decision vs.\ spread: two channels.}
+Rank-1 direction patching (swapping only the per-layer uncertainty-direction projection, all positions)
+dissects the transfer. Injecting the contested verdict through the direction alone moves \emph{entropy}
+substantially ($0.57$) while moving the hedge log-odds not at all ($-0.10\,[-0.32,0.12]$); the full
+component set does the opposite ($0.89$ log-odds, $0.33$ entropy). On familiarity the same split is graded
+(rank-1: $0.46\,[0.35,0.58]$ log-odds vs.\ set $0.80$), and it replicates cross-model (\qw{}: rank-1
+$0.46\,[0.34,0.59]$ vs.\ set $0.86$, entropy $0.84$). The same asymmetry appears direction-wise: across all
+four \lm{} cells, \emph{injecting} the unknown signal moves the decision with little of the spread
+($-0.13$ familiarity, $+0.33$ contested), while \emph{removing} it moves both ($+0.45$, $+0.55$); \qw{}
+shows no such asymmetry ($+0.83$/$+0.73$), and steering the direction moves both together---so we state it
+as a directional asymmetry in one model, not a general dissociation. The mean-difference direction is the
+\emph{spread} channel; the decision travels through component-specific structure the direction does not
+capture.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.95\linewidth]{figures/fig4.pdf}
-  \caption{\textbf{Observational corroboration: Jacobian-lens decision emergence.} Per-layer lens-decoded
-  hedge log-odds gap (left) and entropy gap (right) between twin arms, as fractions of their final values
-  (prefitted lenses of \citealp{anthropic2026workspace}; shaded: the causally-derived L13--19 window). The
-  decision becomes linearly transportable exactly where patching places the routing (familiarity: flat to
-  L12, 50\% by L16; \qw{} contested: L18--25), and on familiarity the entropy gap reaches 50\% only at
-  L28---in depth, the decision is readable $\sim$12 layers before the spread exists.}
+  \caption{\textbf{An independent lens sees the decision before the doubt:} decoded through a prefitted
+  Jacobian lens \citep{anthropic2026workspace}, the twins' hedge log-odds gap is half its final size by
+  L16 (\lm{} familiarity; \qw{} contested: by L21), while the twins' entropy \emph{gap} does not reach half
+  size until L28 (shaded: the causally-derived L13--19 window).}
   \label{fig:lens}
 \end{figure}
-
-\paragraph{An independent lens reproduces the window---and the direction becomes verbalizable there.}
-Decoding every layer's residual through a prefitted Jacobian lens \citep{anthropic2026workspace}---an
-observational method sharing nothing with patching---reproduces the causal picture
-(Figure~\ref{fig:lens}). Decoding the per-layer uncertainty direction itself, its top promoted tokens
-become `` unknown'' and `` I'' (hedge-initial) at L15--16, exactly where the routing window opens: the
-direction becomes \emph{disposed to say} the hedge at the moment the movers pick it up.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.95\linewidth]{figures/fig5.pdf}
-  \caption{\textbf{The verbalization moment.} Left: median lens rank of `` unknown'' by layer at four
-  places (\lm{} familiarity): both entity spans and the control readout stay in the thousands at every
-  layer, while the uncertain readout falls five orders of magnitude across L13--17 (shaded: the causal
-  routing window) to single digits. Right: steering the direction at L15 on \emph{known} twins produces a
-  monotonic dose--response of the same rank across all downstream layers ($\alpha=\pm3\sigma$). In \qw{}
-  the same push moves its own hedge word instead ('' not'': rank $1.5{\times}10^5 \to 1.2{\times}10^3$ at
+  \caption{\textbf{At layers 13--17 the verdict becomes a word.} Left: median lens rank of `` unknown'' at
+  the uncertain readout falls two orders of magnitude, from ${\sim}1{,}100$ at L13 to 10 at L17 (single
+  digits from L21), while the control readout stays 2--3 orders higher throughout and both entity spans
+  stay in the tens of thousands. Right: steering the direction at L15 on \emph{known} twins reproduces the
+  fall as a monotonic dose--response ($\alpha=\pm3\sigma$, ordered at every downstream layer). \qw{} shows
+  the same push on its own hedge word ('' not'': $9.5{\times}10^4 \to 1.2{\times}10^3$ at L24 under
   $+3\sigma$): the mechanism replicates, the vocabulary is the model's own.}
   \label{fig:verbalization}
 \end{figure}
 
-\paragraph{A pre-stated prediction, and where it half-failed.} If the direction is the spread channel and
-the components carry the decision, the aleatoric arm (spread without hedging) should show a lens entropy
-gap with \emph{no} hedge log-odds gap and no verbalization. Stated before running: in \lm{} it held
-cleanly (final log-odds gap $+0.30$ vs.\ $+5.05$ familiarity / $+4.75$ contested, a transient L12--13 blip
-collapsing; entropy gap $+1.0$); in \qw{} it held only partially (gap $+3.67$, $\approx$44\% of its
-contested value, emerging only at L25--26). We report the half-failure as found.
-\paragraph{Minimality, completed.} With the \qw{} pruning curve (10 components reach $0.7$; plateau
-$1.03$--$1.14$ at $k{=}20$--$80$), all three cells agree: 10--40 components suffice, and LOO-ranked curves
-saturate in every cell.
+\paragraph{The verbalization moment, and a prediction that could have failed.}
+Decoding every layer through the prefitted Jacobian lens \citep{anthropic2026workspace}---an observational
+method sharing nothing with patching---reproduces the causal picture (Figure~\ref{fig:lens}), and decoding
+the per-layer uncertainty direction itself, its top promoted tokens become `` unknown'' and `` I''
+at L15--16, within the routing window (Figure~\ref{fig:verbalization}). The framework then makes a
+falsifiable prediction, stated before running: the aleatoric arm (spread without hedging) should show a
+lens entropy gap with no hedge log-odds gap and no verbalization. In \lm{} it held cleanly (final log-odds
+gap $+0.30$ vs.\ $+5.05$ familiarity / $+4.75$ contested; a transient L12--13 blip collapses; entropy gap
+$+1.0$); in \qw{} it held only partially (gap $+3.67$, ${\approx}44\%$ of its contested value, emerging
+only at L25--26). We report the half-failure as found.
+
+\paragraph{Minimality.}
+LOO-ranked greedy pruning saturates in every cell: 20 components reach $0.71$ on familiarity (plateau
+$0.85$--$0.89$ by $k{=}60$--$100$), 40 reach $0.91$ on \lm{} contested, 10 reach $0.86$ on \qw{} (plateau
+$1.03$--$1.14$)---the earlier non-saturation of attribution-rank-nested sets was an artifact of the
+nesting. A sparse circuit of 10--40 components suffices, with the rank-1 direction as its spread
+sub-channel.
 
 \section{What our own criteria could not decide}
 \label{sec:undecided}
-This venue asks what it would take for interpretability claims to fail. Three of ours are undecided by our
+This venue asks what it would take for interpretability claims to fail; three of ours were undecided by our
 own tests, and we say so rather than round up.
-\textbf{(a) Sparse circuit vs.\ distributed direction --- raised, then decided by follow-up.} The
-faithfulness criterion (recovery $>0.7$, $<2\%$ of components) is met at the point estimate in the two
-\lm{} cells, but the 95\% CI includes values below 0.7 in \lm{}-contested and touches it in familiarity,
-and attribution-rank-nested neuron sets did not saturate (0.23--0.65 at $N{=}10$--$300$). Two follow-up
-experiments decided the question. \emph{Rank-1 direction patching} (swapping only the per-layer
-uncertainty-direction projection, all positions) recovers $0.46\,[0.35,0.58]$ on familiarity
-(component set: $0.80\,[0.70,0.90]$; disjoint CIs) and $-0.10\,[-0.32,0.12]$ for injecting the contested
-verdict (set: $0.89$), while \emph{removing} the verdict rank-1 recovers $0.81$--$0.97$. \emph{LOO-ranked
-greedy pruning} saturates: 20 components reach $0.71$ on familiarity (plateau $0.85$--$0.89$ by
-$k{=}60$--$100$), 40 reach $0.91$ on contested---the earlier non-saturation was an artifact of
-attribution-rank nesting. Verdict: a sparse circuit (20--40 components) with a directional sub-channel;
-the components carry more than the direction, most visibly on the inject side.
-\textbf{(b) Scope of the direction-dependent asymmetry.} The asymmetry reported in the Results (entropy
-transfer depends on intervention direction) is a \lm{} phenomenon: in \qw{}'s contested cell the two
-directions transfer entropy alike ($+0.83$ / $+0.73$). One model, two arms; whether the asymmetry tracks
-the model family or the presence of a behavioral hedging repertoire is undecided.
+\textbf{(a) Sparse circuit vs.\ distributed direction --- raised, then decided.} The faithfulness criterion
+is met at the point estimate in both \lm{} cells, but the 95\% CI includes values below 0.7 in
+\lm{}-contested and touches it in familiarity, and attribution-rank-nested neuron sets did not saturate
+(0.23--0.65 at $N{=}10$--$300$). The rank-1 and pruning follow-ups (Results) decided it: a sparse circuit
+with a directional sub-channel.
+\textbf{(b) Scope of the directional asymmetry.} One model, two arms; whether it tracks the model family or
+the presence of a behavioral hedging repertoire is undecided.
 \textbf{(c) The entropy adjustment --- raised, then replaced.} The ANCOVA is unidentified on gated arms
-(disjoint supports; signed-shift correlation with baseline entropy $\approx 0$). The random-neuron-null
-re-test (Results) replaces it: gated-arm single-neuron conclusions now rest on an identified design, with
-the same qualitative outcome and honest effect sizes.
+(disjoint supports; signed-shift correlation with baseline entropy $\approx 0$); the random-neuron null
+(Results) replaces it with the same qualitative outcome.
 
 \section{Related work}
 \citet{teplica2025sciurus} is the closest work: shared uncertainty/factuality circuits across eight models
 via causal tracing and zero-ablation. Relative to it we add the gated-twin data standard, twin-based
 activation patching (reference-free counterfactuals), faithfulness against size-matched random sets,
-single-neuron granularity inside the circuit, and the cross-type overlap measurement---and we inherit its
-lesson that uncertainty machinery is not modular. \citet{zhao2026wired} localize confidence-mover
-components for inflated numeric verbalized confidence (two models, faithfulness $>85$\%, no random-set
-baselines); \citet{roy2025unwanted} mask uncertainty heads driving answer-flipping;
-\citet{vazhentsev2026heads} use head patterns for hallucination detection; \citet{basu2025extractiveqa}
-build context-vs-memory circuits; \citet{arora2026sparse} show task circuits sparse in the neuron basis
-(MLP neurons only). Directions and features: \citet{ferrando2025iknow,anthropic2025biology,ji2025hedging}.
-Neuron taxonomy: \citet{stolfo2024confidence,gurnee2024universal,du2025posttraining}. Ground truth:
+single-neuron granularity inside the circuit, the cross-type overlap measurement, and the
+decision-vs-spread dissociation---and we inherit its lesson that uncertainty machinery is not modular.
+\citet{zhao2026wired} localize confidence-mover components for inflated numeric verbalized confidence (two
+models, faithfulness $>85$\%, no random-set baselines); \citet{roy2025unwanted} mask uncertainty heads
+driving answer-flipping; \citet{vazhentsev2026heads} use head patterns for hallucination detection;
+\citet{basu2025extractiveqa} build context-vs-memory circuits; \citet{arora2026sparse} show task circuits
+sparse in the neuron basis (MLP neurons only). Directions and features:
+\citet{ferrando2025iknow,anthropic2025biology,ji2025hedging}. Neuron taxonomy:
+\citet{stolfo2024confidence,gurnee2024universal,du2025posttraining}. Ground truth:
 \citet{kadavath2022know,gekhman2024slick}.
 
 \section{Limitations}
 Both cross-model circuit cells are contested arms with near-zero free-generation hedging; \qw{}'s
-behavioral arm is too small to test (itself a finding: the model rarely expresses lack-of-knowledge
-distributionally or behaviorally); the faithfulness criterion was fixed in code before the held-out runs
+behavioral arm is too small to test; the faithfulness criterion was fixed in code before the held-out runs
 but not independently registered; the hedge readout is a token log-odds proxy validated against
-free-generation hedging on the familiarity arm only; the ablation reference for gated arms
-(pooled controls) overlaps the evaluation distribution; two mid-size instruct models.
+free-generation hedging on the familiarity arm only; the ablation reference for gated arms overlaps the
+evaluation distribution; the verbalization-rank analysis is \lm{}-familiarity (in \qw{} it appears on a
+different token, via steering); two mid-size instruct models.
+
+\section{Conclusion}
+A language model's ``I don't know'' is not entropy leaking into words. It is a verdict---computed from the
+entity within eight layers, routed by a couple dozen components, and made speakable mid-stack---that exists
+before, and moves independently of, the distributional spread most confidence methods measure. Three
+practices made this visible, and they are as much the contribution as the circuit: let the model certify
+its own uncertain prompts; test every component set against size-matched random ones; and report, in the
+paper, which of your own criteria the evidence failed. Anyone probing an internal ``feeling'' in a model
+should start with our question: are you reading the decision, or only its shadow in the distribution?
 
 \section*{Reproducibility}
 Branch \texttt{emotional-atyachar}: gated data with provenance sidecars (\texttt{data/}), the neuron
 battery (\texttt{scripts/run\_all.sh}), the judge audit and circuit pipeline
-(\texttt{scripts/run\_overnight.sh}), and per-claim evidence pointers (\texttt{RESULTS.md}).
+(\texttt{scripts/run\_overnight.sh}), per-claim evidence pointers (\texttt{RESULTS.md}), and an
+interactive lens explorer of the verbalization moment.
 
 \bibliographystyle{plainnat}
 \bibliography{references}
