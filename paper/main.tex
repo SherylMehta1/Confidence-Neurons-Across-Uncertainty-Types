@@ -29,8 +29,8 @@ model itself certifies by sampled correctness, entropy gap, and hedging---correl
 the decision. The decision travels elsewhere. Activation patching in \lm{} and \qw{} shows the entity is
 read in the first eight layers and a verdict routed mid-stack by roughly 20 attention heads and 100 MLP
 neurons ($0.02\%$ of neurons) that transfer 78--107\% of the held-out hedge readout (overshooting only on
-the reverse direction); size-matched random sets transfer 2--6\%. A rank-1 uncertainty direction moves
-entropy but not the hedge; the component set does the opposite. An independent Jacobian lens watches the
+the reverse direction); size-matched random sets transfer 2--4\%. A rank-1 uncertainty direction suffices to switch the hedge on, but cannot switch it off;
+un-hedging requires the component set, which carries the decision with little of the spread. An independent Jacobian lens watches the
 verdict become a word: `` unknown'' rises from rank ${\sim}1{,}000$ to rank 10 across layers 13--17, about
 twelve layers before the twins' entropy gap appears. Hedging is a computed verdict, not felt entropy---and
 confidence methods that read the distribution are measuring the wrong channel.
@@ -136,7 +136,7 @@ confidence. In \qw{}: zero frequency neurons, zero specific neurons.
   \caption{\textbf{Left --- a single mid-stack window does the routing:} one-layer MLP patches recover the
   hedge only at L11--21, in both models. \textbf{Right --- under 2\% of components carry 78--107\% of the
   held-out hedge readout} (reverse-direction recoveries 1.07 / 0.78 / 0.98); size-matched random sets carry
-  2--6\%.}
+  2--4\%.}
   \label{fig:mlp-faith}
 \end{figure}
 
@@ -146,9 +146,9 @@ readout positions at L13--19, distributed over $\sim$10 verified heads (largest 
 L17H20 $=0.39$); in \qw{}'s contested arm the mover heads attend to the conflicting passage (L18H18: 0.28
 vs.\ 0.11) and write along the uncertainty direction. Attribution-selected neuron \emph{groups} are
 uncertainty-specific where single neurons were not. Jointly patching 20 heads $+$ 100 neurons ($1.95$\% of
-heads, $0.022$\% of neurons) recovers, with 95\% CIs: familiarity $0.80\,[0.70, 0.90]$ (reverse
+heads, $0.022$\% of neurons) recovers, with 95\% CIs: familiarity $0.80\,[0.70, 0.89]$ (reverse
 $1.07\,[0.96,1.17]$); \lm{} contested $0.89\,[0.69, 1.09]$ ($0.78\,[0.65,0.90]$); \qw{} contested
-$0.86\,[0.77, 0.95]$ ($0.98\,[0.89,1.07]$). Random sets recover $0.02$--$0.06$
+$0.86\,[0.77, 0.95]$ ($0.98\,[0.89,1.07]$). Random sets recover $0.02$--$0.04$
 (Figure~\ref{fig:mlp-faith}). This holds in three of four model$\times$arm cells; the fourth (\qw{}
 familiarity) has too few gated pairs to run---itself a finding, since the same 1{,}151 candidates gate 195
 pairs in \lm{}. Both cross-model cells are the contested arm, where free-generation hedging is $\approx$0
@@ -158,17 +158,20 @@ share a variable, not a full circuit.
 
 \paragraph{Decision vs.\ spread: two channels.}
 Rank-1 direction patching (swapping only the per-layer uncertainty-direction projection, all positions)
-dissects the transfer. Injecting the contested verdict through the direction alone moves \emph{entropy}
-substantially ($0.57$) while moving the hedge log-odds not at all ($-0.10\,[-0.32,0.12]$); the full
-component set does the opposite ($0.89$ log-odds, $0.33$ entropy). On familiarity the same split is graded
+dissects the transfer. \emph{Removing} the contested verdict through the direction alone---swapping the
+control twin's projection into the contested prompt---moves \emph{entropy} substantially ($0.57$) while
+moving the hedge log-odds not at all ($-0.10\,[-0.32,0.12]$); the full component set removes both ($0.89$
+log-odds, $0.33$ entropy), and the direction does suffice for the opposite move: injecting the unknown
+projection into the known prompt switches the hedge on at $0.97$. On familiarity the same split is graded
 (rank-1: $0.46\,[0.35,0.58]$ log-odds vs.\ set $0.80$), and it replicates cross-model (\qw{}: rank-1
 $0.46\,[0.34,0.59]$ vs.\ set $0.86$, entropy $0.84$). The same asymmetry appears direction-wise: across all
-four \lm{} cells, \emph{injecting} the unknown signal moves the decision with little of the spread
-($-0.13$ familiarity, $+0.33$ contested), while \emph{removing} it moves both ($+0.45$, $+0.55$); \qw{}
+four \lm{} cells, \emph{removing} the unknown signal (patching the known state into the uncertain prompt)
+moves the decision with little of the spread (entropy recovery $-0.13$ familiarity, $+0.33$ contested),
+while \emph{injecting} it moves both ($+0.45$, $+0.55$); \qw{}
 shows no such asymmetry ($+0.83$/$+0.73$), and steering the direction moves both together---so we state it
-as a directional asymmetry in one model, not a general dissociation. The mean-difference direction is the
-\emph{spread} channel; the decision travels through component-specific structure the direction does not
-capture.
+as a directional asymmetry in one model, not a general dissociation. In the removal direction the mean-difference direction carries only the \emph{spread}; switching the hedge
+\emph{off} requires component-specific structure the direction does not capture, even though the direction
+alone can switch it \emph{on}.
 
 \begin{figure}[t]
   \centering
@@ -185,9 +188,10 @@ capture.
   \includegraphics[width=0.95\linewidth]{figures/fig5.pdf}
   \caption{\textbf{At layers 13--17 the verdict becomes a word.} Left: median lens rank of `` unknown'' at
   the uncertain readout falls two orders of magnitude, from ${\sim}1{,}100$ at L13 to 10 at L17 (single
-  digits from L21), while the control readout stays 2--3 orders higher throughout and both entity spans
-  stay in the tens of thousands. Right: steering the direction at L15 on \emph{known} twins reproduces the
-  fall as a monotonic dose--response ($\alpha=\pm3\sigma$, ordered at every downstream layer). \qw{} shows
+  digits from L21), while the control readout never falls below ${\sim}300$ (medians ${\sim}300$--$6{,}400$ across L13--30)
+  and both entity spans stay in the tens of thousands across the same window. Right: steering the direction at L15 on \emph{known} twins reproduces the
+  fall as a monotonic dose--response ($\alpha=\pm3\sigma$, ordered at every downstream layer, with margins
+  narrowing above L26). \qw{} shows
   the same push on its own hedge word ('' not'': $9.5{\times}10^4 \to 1.2{\times}10^3$ at L24 under
   $+3\sigma$): the mechanism replicates, the vocabulary is the model's own.}
   \label{fig:verbalization}
@@ -196,8 +200,15 @@ capture.
 \paragraph{The verbalization moment, and a prediction that could have failed.}
 Decoding every layer through the prefitted Jacobian lens \citep{anthropic2026workspace}---an observational
 method sharing nothing with patching---reproduces the causal picture (Figure~\ref{fig:lens}), and decoding
-the per-layer uncertainty direction itself, its top promoted tokens become `` unknown'' and `` I''
-at L15--16, within the routing window (Figure~\ref{fig:verbalization}). The framework then makes a
+the per-layer uncertainty direction itself, `` unknown'' enters its top-10 at L15 and is its top token
+from L17 (`` I'' is present from L13), within the routing window (Figure~\ref{fig:verbalization}); from
+L17 the direction's entire top-10 is a hedge lexicon (`` unknown'', `` cannot'', `` unable'',
+`` unsure''). Each arm's direction speaks its own vocabulary: the contested direction verbalizes the
+\emph{conflict}---`` both''/`` either'' (L11--15) $\to$ `` conflicting''/`` contradictory'' (L16--20)
+$\to$ `` ambiguous''/`` inconsistent'' (L21--25), with `` unknown''/`` I'' never appearing---and the
+aleatoric direction verbalizes the answer type itself, `` example'' (L14--20) giving way to `` any''
+(L21--25). Both vocabularies replicate in \qw{} at L20--24, partly in Chinese; \qw{}'s mid-stack
+decodings are noise, so its signal is late-stack only.
 falsifiable prediction, stated before running: the aleatoric arm (spread without hedging) should show a
 lens entropy gap with no hedge log-odds gap and no verbalization. In \lm{} it held cleanly (final log-odds
 gap $+0.30$ vs.\ $+5.05$ familiarity / $+4.75$ contested; a transient L12--13 blip collapses; entropy gap
