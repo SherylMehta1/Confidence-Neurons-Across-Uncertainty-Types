@@ -6,6 +6,7 @@
     \usepackage[margin=1in]{geometry}\usepackage{authblk}}}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{microtype,graphicx,booktabs,amsmath,xcolor}
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage[colorlinks=true,linkcolor=blue!60!black,citecolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
@@ -142,8 +143,8 @@ confidence. In \qw{}: zero frequency neurons, zero specific neurons.
 
 \paragraph{The verdict circuit.}
 Figure~\ref{fig:positions}: the entity is read in the first eight layers and the verdict is routed to the
-readout positions at L13--19, distributed over $\sim$10 verified heads (largest single-head recovery
-L17H20 $=0.39$); in \qw{}'s contested arm the mover heads attend to the conflicting passage (L18H18: 0.28
+readout positions at L13--19, distributed over 15 verified heads (recovery $>0.05$; largest single-head
+recovery L17H20 $=0.39$); in \qw{}'s contested arm the mover heads attend to the conflicting passage (L18H18: 0.28
 vs.\ 0.11) and write along the uncertainty direction. Attribution-selected neuron \emph{groups} are
 uncertainty-specific where single neurons were not. Jointly patching 20 heads $+$ 100 neurons ($1.95$\% of
 heads, $0.022$\% of neurons) recovers, with 95\% CIs: familiarity $0.80\,[0.70, 0.89]$ (reverse
@@ -164,7 +165,7 @@ moving the hedge log-odds not at all ($-0.10\,[-0.32,0.12]$); the full component
 log-odds, $0.33$ entropy), and the direction does suffice for the opposite move: injecting the unknown
 projection into the known prompt switches the hedge on at $0.97$. On familiarity the same split is graded
 (rank-1: $0.46\,[0.35,0.58]$ log-odds vs.\ set $0.80$), and it replicates cross-model (\qw{}: rank-1
-$0.46\,[0.34,0.59]$ vs.\ set $0.86$, entropy $0.84$). The same asymmetry appears direction-wise: across all
+$0.46\,[0.34,0.59]$ vs.\ set $0.86$, entropy $0.84$). The full component set shows the same asymmetry: across all
 four \lm{} cells, \emph{removing} the unknown signal (patching the known state into the uncertain prompt)
 moves the decision with little of the spread (entropy recovery $-0.13$ familiarity, $+0.33$ contested),
 while \emph{injecting} it moves both ($+0.45$, $+0.55$); \qw{}
@@ -192,7 +193,7 @@ alone can switch it \emph{on}.
   and both entity spans stay in the tens of thousands across the same window. Right: steering the direction at L15 on \emph{known} twins reproduces the
   fall as a monotonic dose--response ($\alpha=\pm3\sigma$, ordered at every downstream layer, with margins
   narrowing above L26). \qw{} shows
-  the same push on its own hedge word ('' not'': $9.5{\times}10^4 \to 1.2{\times}10^3$ at L24 under
+  the same push on its own hedge word (`` not'': $9.5{\times}10^4 \to 1.2{\times}10^3$ at L24 under
   $+3\sigma$): the mechanism replicates, the vocabulary is the model's own.}
   \label{fig:verbalization}
 \end{figure}
@@ -208,7 +209,7 @@ L17 the direction's entire top-10 is a hedge lexicon (`` unknown'', `` cannot'',
 $\to$ `` ambiguous''/`` inconsistent'' (L21--25), with `` unknown''/`` I'' never appearing---and the
 aleatoric direction verbalizes the answer type itself, `` example'' (L14--20) giving way to `` any''
 (L21--25). Both vocabularies replicate in \qw{} at L20--24, partly in Chinese; \qw{}'s mid-stack
-decodings are noise, so its signal is late-stack only.
+decodings are noise, so its signal is late-stack only. The framework then makes a
 falsifiable prediction, stated before running: the aleatoric arm (spread without hedging) should show a
 lens entropy gap with no hedge log-odds gap and no verbalization. In \lm{} it held cleanly (final log-odds
 gap $+0.30$ vs.\ $+5.05$ familiarity / $+4.75$ contested; a transient L12--13 blip collapses; entropy gap
