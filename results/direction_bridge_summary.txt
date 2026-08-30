@@ -1,0 +1,20 @@
+Direction bridge -- lack_of_knowledge; directions at layer 31; neurons scanned in layers [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+cos(familiarity, hedging) per layer: L20:+0.68, L21:+0.63, L22:+0.61, L23:+0.57, L24:+0.55, L25:+0.53, L26:+0.55, L27:+0.54, L28:+0.53, L29:+0.53, L30:+0.50, L31:+0.54
+
+Key neurons (cosine of gamma*w_out with each direction; percentile of |cos| among all scanned neurons):
+  L30_N1457   familiarity -0.044 ( 99.0 pct)   hedging -0.014 ( 62.2 pct)
+  L31_N2477   familiarity +0.070 ( 99.8 pct)   hedging -0.041 ( 98.8 pct)
+  L31_N6772   familiarity -0.001 (  3.2 pct)   hedging +0.018 ( 73.7 pct)
+  L31_N11541  familiarity +0.087 ( 99.9 pct)   hedging +0.048 ( 99.5 pct)
+
+Top-10 |cos_familiarity| neurons: L31_N12923(-0.33), L31_N6867(-0.27), L31_N8526(-0.27), L31_N10788(-0.25), L31_N9371(+0.25), L31_N12073(-0.25), L31_N5833(-0.25), L31_N3023(-0.25), L31_N6386(-0.23), L31_N7590(-0.21)
+
+Top-10 |cos_hedging| neurons: L31_N6867(-0.19), L31_N9501(-0.18), L31_N5833(-0.17), L31_N12923(-0.15), L31_N4160(+0.15), L31_N8526(-0.15), L31_N9371(+0.13), L31_N1977(-0.13), L31_N8760(+0.13), L31_N3840(+0.13)
+
+Steering along familiarity at L31 (alpha in sigma units of the projection, held-out prompts):
+  uncertain a=-3: logodds -9.61 H 2.53  a=-1.5: logodds -7.57 H 1.57  a=+0: logodds +0.23 H 2.87  a=+1.5: logodds +7.62 H 4.55  a=+3: logodds +9.92 H 6.68
+  control   a=-3: logodds -10.14 H 2.41  a=-1.5: logodds -9.42 H 1.56  a=+0: logodds -4.85 H 1.25  a=+1.5: logodds +5.20 H 2.33  a=+3: logodds +9.19 H 5.49
+
+Steering along hedging at L31 (alpha in sigma units of the projection, held-out prompts):
+  uncertain a=-3: logodds -2.71 H 5.88  a=-1.5: logodds -1.32 H 3.33  a=+0: logodds +0.23 H 2.87  a=+1.5: logodds +1.61 H 3.89  a=+3: logodds +2.31 H 6.40
+  control   a=-3: logodds -5.69 H 4.09  a=-1.5: logodds -6.00 H 1.60  a=+0: logodds -4.85 H 1.25  a=+1.5: logodds -1.94 H 2.00  a=+3: logodds -0.15 H 4.41

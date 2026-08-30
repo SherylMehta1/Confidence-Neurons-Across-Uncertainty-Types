@@ -1,0 +1,32 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "precision": "bf16",
+  "quant_config": null,
+  "dtype": "torch.bfloat16",
+  "transformers_version": "5.14.1",
+  "torch_version": "2.11.0+cu130",
+  "candidate_file_sha256": null,
+  "data_file_sha256s": {
+    "/marimo/repo_qwen/data/ambiguity/prompts.jsonl": "e95d1abaf7336bac9dcc603d440c3e04883efb598b3c7339132619b257b4ac22",
+    "/marimo/repo_qwen/data/ambiguity/controls.jsonl": "5675ccb8a61f94da4e5736b02330347f952bfc305c94e923f50e087a39316826",
+    "/marimo/repo_qwen/data/lack_of_knowledge/prompts.jsonl": "0ca20432c1f9772f4f69a760b3bd89507efbfdee6734600697ccdb2334d28108",
+    "/marimo/repo_qwen/data/lack_of_knowledge/controls.jsonl": "57b0c90b1dd1b7fd0a75d0c5618094f96452647d0efe104114d8feb8e66a6f10",
+    "/marimo/repo_qwen/data/contradictory_context/prompts.jsonl": "1d5e9896d412b957535119df7de859d3c8e78892e374a752102dac99449b39b2",
+    "/marimo/repo_qwen/data/contradictory_context/controls.jsonl": "8ba9de4ff66d45e396546e12e2049ae77b7fffd02b6abd84fb7280bc93c1ff49"
+  },
+  "baseline_prompt_sha256": null,
+  "n_baseline_prompts": null,
+  "seed": null,
+  "layer_range": null,
+  "top_k_per_half": null,
+  "top_k_final": null,
+  "min_abs_corr": null,
+  "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+  "timestamp": "2026-08-22T20:37:52.948935+00:00",
+  "categories": [
+    "ambiguity",
+    "lack_of_knowledge",
+    "contradictory_context"
+  ],
+  "per_prompt_csv": "/marimo/repo_qwen/results/induction_check_per_prompt.csv"
+}

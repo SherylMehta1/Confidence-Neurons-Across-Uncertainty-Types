@@ -1,0 +1,28 @@
+{
+  "category": "aleatoric",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "precision": "bf16",
+  "n_candidates": 120,
+  "n_pairs": 39,
+  "n_working": 27,
+  "n_held_out": 12,
+  "n_consistently_wrong": 0,
+  "fails": {
+    "control_not_known": 0,
+    "uncertain_not_unknown": 0,
+    "len": 60,
+    "entropy": 21,
+    "hedge": 0
+  },
+  "gate": {
+    "entropy_gap": 0.5,
+    "hedge_gap": 0.3,
+    "require_hedge": false,
+    "max_len_diff": 3
+  },
+  "mean_entropy_uncertain": 1.070479692556919,
+  "mean_entropy_control": 0.06530709299990214,
+  "mean_hedge_uncertain": 0.0,
+  "mean_hedge_control": 0.0,
+  "entropy_gap_all_candidates": 0.6960476111634809
+}

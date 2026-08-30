@@ -1,0 +1,5 @@
+Rank-1 direction patching -- familiarity; layers 13-19; ONE dimension per layer swapped; 59 held-out pairs
+  control -> uncertain: log-odds +0.464 [+0.349,+0.579], entropy +0.363
+  uncertain -> control: log-odds +0.812 [+0.679,+0.944], entropy +0.752
+  random unit directions (c->u): -0.003 +- 0.004 over 10
+  compare with results/circuit_<arm>/faithfulness_summary.txt (the 20-head + 100-neuron set)

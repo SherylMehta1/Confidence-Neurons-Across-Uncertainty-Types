@@ -1,0 +1,37 @@
+{
+  "provenance": {
+    "note": "key-neuron robustness set for pooled_controls reference"
+  },
+  "candidates": [
+    {
+      "neuron_id": "L31_N11541",
+      "layer": 31,
+      "neuron_idx": 11541
+    },
+    {
+      "neuron_id": "L31_N6772",
+      "layer": 31,
+      "neuron_idx": 6772
+    },
+    {
+      "neuron_id": "L20_N5595",
+      "layer": 20,
+      "neuron_idx": 5595
+    },
+    {
+      "neuron_id": "L31_N2477",
+      "layer": 31,
+      "neuron_idx": 2477
+    },
+    {
+      "neuron_id": "L29_N13925",
+      "layer": 29,
+      "neuron_idx": 13925
+    },
+    {
+      "neuron_id": "L30_N13098",
+      "layer": 30,
+      "neuron_idx": 13098
+    }
+  ]
+}

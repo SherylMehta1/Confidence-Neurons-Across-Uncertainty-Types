@@ -1,0 +1,34 @@
+{
+  "category": "conflict",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "precision": "bf16",
+  "n_candidates": 600,
+  "n_pairs": 184,
+  "n_working": 128,
+  "n_held_out": 56,
+  "n_consistently_wrong": 0,
+  "fails": {
+    "control_not_known": 257,
+    "uncertain_not_unknown": 0,
+    "len": 0,
+    "entropy": 159,
+    "hedge": 0
+  },
+  "gate": {
+    "entropy_gap": 0.5,
+    "hedge_gap": 0.3,
+    "require_hedge": false,
+    "max_len_diff": 3
+  },
+  "mean_entropy_uncertain": 1.3034246359830317,
+  "mean_entropy_control": 0.041845221019348566,
+  "mean_hedge_uncertain": 0.0,
+  "mean_hedge_control": 0.0,
+  "entropy_gap_all_candidates": 0.5681830885956523,
+  "post_hoc_filter": {
+    "rule": "dropped pairs whose ChatGPT parametric answer already matched the gold",
+    "n_dropped": 6,
+    "n_pairs_after": 178,
+    "original_files": "results\\second_model\\qwen25_7b_instruct\\data\\conflict\\pre_memory_guard"
+  }
+}

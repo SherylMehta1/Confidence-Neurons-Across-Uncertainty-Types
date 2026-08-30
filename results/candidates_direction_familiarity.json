@@ -1,0 +1,148 @@
+{
+  "provenance": {
+    "note": "direction-nominated: top-20 |cos(gamma*w_out, L31 familiarity direction)| over layers 20-31, from results/direction_bridge_neurons.csv (Llama-3.1-8B-Instruct, lack_of_knowledge)",
+    "nomination": "direction_familiarity"
+  },
+  "candidates": [
+    {
+      "neuron_id": "L31_N12923",
+      "layer": 31,
+      "neuron_idx": 12923,
+      "cos_familiarity": -0.32765892,
+      "cos_hedging": -0.15343703
+    },
+    {
+      "neuron_id": "L31_N6867",
+      "layer": 31,
+      "neuron_idx": 6867,
+      "cos_familiarity": -0.274594,
+      "cos_hedging": -0.18559323
+    },
+    {
+      "neuron_id": "L31_N8526",
+      "layer": 31,
+      "neuron_idx": 8526,
+      "cos_familiarity": -0.26994208,
+      "cos_hedging": -0.1505359
+    },
+    {
+      "neuron_id": "L31_N10788",
+      "layer": 31,
+      "neuron_idx": 10788,
+      "cos_familiarity": -0.2532881,
+      "cos_hedging": -0.124786764
+    },
+    {
+      "neuron_id": "L31_N9371",
+      "layer": 31,
+      "neuron_idx": 9371,
+      "cos_familiarity": 0.25147086,
+      "cos_hedging": 0.13464715
+    },
+    {
+      "neuron_id": "L31_N12073",
+      "layer": 31,
+      "neuron_idx": 12073,
+      "cos_familiarity": -0.2473715,
+      "cos_hedging": -0.11724962
+    },
+    {
+      "neuron_id": "L31_N5833",
+      "layer": 31,
+      "neuron_idx": 5833,
+      "cos_familiarity": -0.24603549,
+      "cos_hedging": -0.1712687
+    },
+    {
+      "neuron_id": "L31_N3023",
+      "layer": 31,
+      "neuron_idx": 3023,
+      "cos_familiarity": -0.24547032,
+      "cos_hedging": -0.10071192
+    },
+    {
+      "neuron_id": "L31_N6386",
+      "layer": 31,
+      "neuron_idx": 6386,
+      "cos_familiarity": -0.22550032,
+      "cos_hedging": -0.076909065
+    },
+    {
+      "neuron_id": "L31_N7590",
+      "layer": 31,
+      "neuron_idx": 7590,
+      "cos_familiarity": -0.20810041,
+      "cos_hedging": -0.079605475
+    },
+    {
+      "neuron_id": "L31_N556",
+      "layer": 31,
+      "neuron_idx": 556,
+      "cos_familiarity": 0.2049155,
+      "cos_hedging": 0.04092587
+    },
+    {
+      "neuron_id": "L31_N5259",
+      "layer": 31,
+      "neuron_idx": 5259,
+      "cos_familiarity": 0.20155989,
+      "cos_hedging": 0.08442826
+    },
+    {
+      "neuron_id": "L31_N1977",
+      "layer": 31,
+      "neuron_idx": 1977,
+      "cos_familiarity": -0.19968781,
+      "cos_hedging": -0.13334587
+    },
+    {
+      "neuron_id": "L31_N9501",
+      "layer": 31,
+      "neuron_idx": 9501,
+      "cos_familiarity": -0.19637518,
+      "cos_hedging": -0.17513876
+    },
+    {
+      "neuron_id": "L31_N5161",
+      "layer": 31,
+      "neuron_idx": 5161,
+      "cos_familiarity": -0.1797549,
+      "cos_hedging": -0.10216557
+    },
+    {
+      "neuron_id": "L31_N7869",
+      "layer": 31,
+      "neuron_idx": 7869,
+      "cos_familiarity": -0.17896149,
+      "cos_hedging": -0.05970001
+    },
+    {
+      "neuron_id": "L31_N13219",
+      "layer": 31,
+      "neuron_idx": 13219,
+      "cos_familiarity": 0.17858712,
+      "cos_hedging": 0.10385985
+    },
+    {
+      "neuron_id": "L31_N1679",
+      "layer": 31,
+      "neuron_idx": 1679,
+      "cos_familiarity": 0.17834523,
+      "cos_hedging": 0.095033295
+    },
+    {
+      "neuron_id": "L31_N11401",
+      "layer": 31,
+      "neuron_idx": 11401,
+      "cos_familiarity": -0.17788586,
+      "cos_hedging": -0.057548057
+    },
+    {
+      "neuron_id": "L31_N12257",
+      "layer": 31,
+      "neuron_idx": 12257,
+      "cos_familiarity": -0.17625134,
+      "cos_hedging": -0.07424044
+    }
+  ]
+}

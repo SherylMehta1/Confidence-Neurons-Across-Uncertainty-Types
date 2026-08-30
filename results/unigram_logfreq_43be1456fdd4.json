@@ -1,0 +1,7 @@
+{
+  "source": "Salesforce/wikitext wikitext-103-raw-v1 train",
+  "n_docs": 20000,
+  "n_tokens": 2808799,
+  "vocab": 128256,
+  "tokenizer": "unsloth/Meta-Llama-3.1-8B-Instruct"
+}

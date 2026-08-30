@@ -1,0 +1,50 @@
+{
+  "model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "precision": "bf16",
+  "n_candidates": 1151,
+  "n_relations": 16,
+  "slick_counts": {
+    "HighlyKnown": 391,
+    "Maybe": 173,
+    "Unknown": 587
+  },
+  "n_pairs": 195,
+  "n_working": 136,
+  "n_held_out": 59,
+  "n_consistently_wrong": 5,
+  "fails": {
+    "no_unknown_or_known": 4,
+    "len": 125,
+    "entropy": 48,
+    "hedge": 102
+  },
+  "gate": {
+    "entropy_gap": 0.5,
+    "hedge_gap": 0.3,
+    "max_len_diff": 3,
+    "n_samples": 10,
+    "n_free": 3
+  },
+  "mean_entropy_uncertain": 3.690766302133218,
+  "mean_entropy_control": 0.9292152771105369,
+  "mean_hedge_uncertain": 0.9282051282051282,
+  "mean_hedge_control": 0.010256410256410256,
+  "pairs_per_relation": {
+    "author": 32,
+    "capital": 9,
+    "capital of": 15,
+    "color": 0,
+    "composer": 13,
+    "country": 6,
+    "director": 14,
+    "father": 27,
+    "genre": 6,
+    "mother": 11,
+    "occupation": 3,
+    "place of birth": 10,
+    "producer": 13,
+    "religion": 9,
+    "screenwriter": 21,
+    "sport": 6
+  }
+}

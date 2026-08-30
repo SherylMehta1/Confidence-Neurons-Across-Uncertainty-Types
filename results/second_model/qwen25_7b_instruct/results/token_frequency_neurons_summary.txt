@@ -1,0 +1,15 @@
+Token-frequency neuron score: candidates vs 1000 random neurons (layers [16, 17, 18, 19, 24], seed 42)
+random null |corr|: median 0.048, 95th pct 0.137, 99th 0.175
+
+neuron       freq_corr    pct     slope  verdict  sets
+L17_N9633       -0.133   94.1   -0.0046  -                candidate_neurons_bf16
+L24_N2230       +0.131   93.6   +0.0041  -                candidate_neurons_bf16
+L18_N11446      +0.079   73.8   +0.0027  -                candidate_neurons_bf16
+L16_N5504       +0.070   67.4   +0.0022  -                candidate_neurons_bf16
+L18_N14080      +0.043   45.6   +0.0013  -                candidate_neurons_bf16
+L19_N12887      +0.041   42.9   +0.0014  -                candidate_neurons_bf16
+L17_N6267       +0.033   35.2   +0.0009  -                candidate_neurons_bf16
+L17_N9538       +0.031   32.7   +0.0010  -                candidate_neurons_bf16
+L19_N18841      -0.014   13.7   -0.0004  -                candidate_neurons_bf16
+L19_N2836       -0.010   10.0   -0.0004  -                candidate_neurons_bf16
+L16_N11414      -0.001    0.9   -0.0000  -                candidate_neurons_bf16

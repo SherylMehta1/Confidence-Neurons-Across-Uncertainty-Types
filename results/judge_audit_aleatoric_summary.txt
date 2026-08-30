@@ -1,0 +1,23 @@
+Judge audit -- aleatoric; judge Qwen/Qwen2.5-32B-Instruct; 60 graded items (stratified by grader verdict x side x hedged)
+overall agreement 1.000  kappa nan
+
+by side:
+  control            n=  60  agreement 1.000  grader-says-correct 1.00  judge-says-correct 1.00
+
+by grader verdict:
+  True               n=  60  agreement 1.000  grader-says-correct 1.00  judge-says-correct 1.00
+
+by hedged answer:
+  False              n=  60  agreement 1.000  grader-says-correct 1.00  judge-says-correct 1.00
+
+by answer kind:
+  greedy             n=   9  agreement 1.000  grader-says-correct 1.00  judge-says-correct 1.00
+  sample             n=  51  agreement 1.000  grader-says-correct 1.00  judge-says-correct 1.00
+
+grader false negatives (judge CORRECT, grader INCORRECT): 0 / 0 grader-negatives
+grader false positives (judge INCORRECT, grader CORRECT): 0 / 60 grader-positives
+
+examples of grader false negatives:
+examples of grader false positives:
+
+population sizes per stratum (grader, side, hedged): {"(True, 'control', False)": 451}

@@ -1,0 +1,4 @@
+Greedy pruning -- conflict_qwen; 120 components ranked by LOO marginal on 25 pairs; curve on 55 held-out pairs
+  k=5:+0.59 k=10:+0.86 k=20:+1.03 k=40:+1.10 k=60:+1.14 k=80:+1.12 k=100:+1.08 k=120:+0.86
+  smallest subset with recovery > 0.7: 10 components
+  top-10 by marginal: HL18_18(+0.293), HL16_5(+0.175), HL17_1(+0.163), HL14_10(+0.129), HL14_3(+0.075), HL16_1(+0.068), HL14_9(+0.053), HL20_1(+0.048), NL22_18910(+0.027), NL22_5246(+0.024)

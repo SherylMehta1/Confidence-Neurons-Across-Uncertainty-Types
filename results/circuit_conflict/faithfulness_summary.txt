@@ -1,0 +1,5 @@
+Faithfulness -- conflict; 20 heads (1.95% of all heads) + 100 neurons (0.022% of all MLP neurons); 60 held-out pairs
+  control -> uncertain: log-odds recovery +0.888, entropy recovery +0.332
+  uncertain -> control: log-odds recovery +0.775, entropy recovery +0.554
+  random sets (same size, c->u): log-odds recovery +0.040 +- 0.044 over 30 sets
+  verdict: CIRCUIT (>0.7 recovery, <2% of heads and of neurons)

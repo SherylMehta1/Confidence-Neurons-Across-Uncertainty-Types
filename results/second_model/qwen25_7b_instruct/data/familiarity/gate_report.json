@@ -1,0 +1,50 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "precision": "bf16",
+  "n_candidates": 1151,
+  "n_relations": 16,
+  "slick_counts": {
+    "HighlyKnown": 249,
+    "Maybe": 136,
+    "Unknown": 766
+  },
+  "n_pairs": 24,
+  "n_working": 16,
+  "n_held_out": 8,
+  "n_consistently_wrong": 12,
+  "fails": {
+    "no_unknown_or_known": 3,
+    "len": 29,
+    "entropy": 237,
+    "hedge": 199
+  },
+  "gate": {
+    "entropy_gap": 0.5,
+    "hedge_gap": 0.3,
+    "max_len_diff": 3,
+    "n_samples": 10,
+    "n_free": 3
+  },
+  "mean_entropy_uncertain": 2.185767963528633,
+  "mean_entropy_control": 0.5469710984810566,
+  "mean_hedge_uncertain": 0.5555555555555555,
+  "mean_hedge_control": 0.0,
+  "pairs_per_relation": {
+    "author": 3,
+    "capital": 0,
+    "capital of": 1,
+    "color": 0,
+    "composer": 1,
+    "country": 0,
+    "director": 3,
+    "father": 4,
+    "genre": 4,
+    "mother": 3,
+    "occupation": 0,
+    "place of birth": 2,
+    "producer": 0,
+    "religion": 0,
+    "screenwriter": 3,
+    "sport": 0
+  }
+}

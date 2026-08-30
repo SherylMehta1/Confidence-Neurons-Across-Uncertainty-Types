@@ -1,0 +1,11 @@
+Entropy-adjusted interaction (alpha 0.01 BH within run; candidates only)
+
+## results/ablation_bf16_conflict_new: 11 candidates x 1 categories
+   FDR survivors: raw 0 | ANCOVA-adjusted 0 | stratified 0   (uncorrected p<.01: raw 0, ANCOVA 0, stratified 0)
+   L19_N2836   conf raw +0.0022 (p 0.27) | ANCOVA arm +0.0114 (p 0.034; H slope -0.0073) | matched +nan (p nan, n 0/0) | strat +0.0082 (p 0.15, 1 bins) | rho(shift,H|unc) -0.16
+   L19_N12887  conf raw +0.0049 (p 0.013) | ANCOVA arm +0.0089 (p 0.093; H slope -0.0032) | matched +nan (p nan, n 0/0) | strat +0.0111 (p 0.042, 1 bins) | rho(shift,H|unc) -0.05
+   L17_N9633   conf raw +0.0025 (p 0.19) | ANCOVA arm +0.0027 (p 0.6; H slope -0.0001) | matched +nan (p nan, n 0/0) | strat +0.0040 (p 0.42, 1 bins) | rho(shift,H|unc) -0.03
+   L17_N6267   conf raw +0.0028 (p 0.21) | ANCOVA arm +0.0027 (p 0.63; H slope +0.0001) | matched +nan (p nan, n 0/0) | strat +0.0053 (p 0.35, 1 bins) | rho(shift,H|unc) +0.00
+   L18_N11446  conf raw +0.0034 (p 0.11) | ANCOVA arm +0.0026 (p 0.64; H slope +0.0007) | matched +nan (p nan, n 0/0) | strat +0.0034 (p 0.53, 1 bins) | rho(shift,H|unc) -0.00
+
+## results/ablation_bf16_conflict_key: missing

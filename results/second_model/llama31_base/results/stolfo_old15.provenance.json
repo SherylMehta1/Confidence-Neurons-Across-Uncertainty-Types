@@ -1,0 +1,73 @@
+{
+  "model_id": "unsloth/Meta-Llama-3.1-8B",
+  "precision": "bf16",
+  "quant_config": null,
+  "dtype": "torch.bfloat16",
+  "transformers_version": "5.14.1",
+  "torch_version": "2.11.0+cu130",
+  "candidate_file_sha256": "6933c6d9a1c46351c5f4bb39da87bd91d45e42c70ff6f96d3a6f1ffed3bcdd6e",
+  "data_file_sha256s": null,
+  "baseline_prompt_sha256": null,
+  "n_baseline_prompts": null,
+  "seed": 42,
+  "layer_range": [
+    23,
+    24,
+    26,
+    29,
+    30,
+    31
+  ],
+  "top_k_per_half": null,
+  "top_k_final": null,
+  "min_abs_corr": null,
+  "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+  "timestamp": "2026-08-22T19:26:51.017107+00:00",
+  "n_random": 1000,
+  "n_matched": 50,
+  "match_tolerance": 0.1,
+  "null_ks": [
+    16,
+    64,
+    256
+  ],
+  "n_bottom10pct_dirs": 409,
+  "candidate_neurons": [
+    "L30_N5509",
+    "L29_N9228",
+    "L26_N11322",
+    "L29_N10092",
+    "L30_N7102",
+    "L24_N7891",
+    "L30_N13513",
+    "L30_N6621",
+    "L30_N3533",
+    "L29_N11308",
+    "L29_N10191",
+    "L31_N2477",
+    "L29_N8568",
+    "L26_N2788",
+    "L23_N12156"
+  ],
+  "n_eligible_matched": {
+    "L30_N5509": 448,
+    "L29_N9228": 1549,
+    "L26_N11322": 455,
+    "L29_N10092": 1419,
+    "L30_N7102": 10762,
+    "L24_N7891": 11693,
+    "L30_N13513": 770,
+    "L30_N6621": 1329,
+    "L30_N3533": 1182,
+    "L29_N11308": 12243,
+    "L29_N10191": 1288,
+    "L31_N2477": 96,
+    "L29_N8568": 1283,
+    "L26_N2788": 1091,
+    "L23_N12156": 70
+  },
+  "outputs": [
+    "results/stolfo_old15.csv",
+    "results/stolfo_old15_summary.txt"
+  ]
+}

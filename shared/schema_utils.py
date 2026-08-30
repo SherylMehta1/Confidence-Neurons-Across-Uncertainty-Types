@@ -1,17 +1,24 @@
 """
-schema_utils.py
-Shared helpers used by all three category preprocessing scripts, so the
-output schema is byte-for-byte identical across Person A / B / C.
+schema_utils.py -- shared helpers for the category preprocessing scripts so the
+data schema (DATA_SOURCES.md) is identical across Person A / B / C.
 
-Put this file in shared/ alongside model_utils.py etc.
+`build_records` is DEPRECATED: it formats prompts with the bare chat template
+(no assistant-turn prefill), i.e. the pre-position-fix format in which the
+measured token is a fresh assistant-turn opener. Use
+shared.prompt_format.build_records_with_formatter instead, which also adds the
+`is_control` field. `format_chat_prompt` is re-exported from
+shared.prompt_format (single implementation, pinned date_string).
 """
 
 import json
-import random
+import warnings
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict
 
-MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+from shared.prompt_format import format_chat_prompt, seeded_shuffle  # noqa: F401
+
+import os
+MODEL_NAME = os.environ.get("CN_MODEL_ID", "meta-llama/Llama-3.1-8B-Instruct")  # CN_MODEL_ID overrides
 
 
 def load_tokenizer():
@@ -22,18 +29,6 @@ def load_tokenizer():
     """
     from transformers import AutoTokenizer
     return AutoTokenizer.from_pretrained(MODEL_NAME)
-
-
-def format_chat_prompt(tokenizer, raw_prompt: str) -> str:
-    """
-    Wraps a raw prompt in the Llama-3.1 chat template, ending with the
-    generation prompt so the model's next tokens are the completion.
-    """
-    return tokenizer.apply_chat_template(
-        [{"role": "user", "content": raw_prompt}],
-        tokenize=False,
-        add_generation_prompt=True,
-    )
 
 
 def build_records(
@@ -47,14 +42,19 @@ def build_records(
     seed: int = 42,
 ) -> List[Dict]:
     """
-    Turns a list of raw prompt strings into the shared schema, subsamples,
-    splits 70/30 working/held-out, and returns the list of record dicts.
-    Does NOT write to disk -- call save_records() separately so you can
-    inspect/hand-check before committing to a file.
+    DEPRECATED -- produces the pre-fix format (no assistant-turn prefill, no
+    is_control field). Kept only so old preprocessing scripts still import.
+    Use shared.prompt_format.build_records_with_formatter.
+
+    Seeded subsample + 70/30 split. Uses a private random.Random(seed), which
+    gives exactly the same order as the legacy global random.seed(seed).
     """
-    random.seed(seed)
-    pool = list(raw_prompts)
-    random.shuffle(pool)
+    warnings.warn(
+        "schema_utils.build_records is deprecated: it produces the pre-position-fix "
+        "prompt format. Use shared.prompt_format.build_records_with_formatter.",
+        DeprecationWarning, stacklevel=2,
+    )
+    pool = seeded_shuffle(raw_prompts, seed)
 
     if len(pool) < n_working:
         raise ValueError(
@@ -93,3 +93,8 @@ def save_records(records: List[Dict], out_path: str, hand_check_n: int = 15):
     print(f"\nHand-check these {hand_check_n} items before trusting the label:")
     for r in records[:hand_check_n]:
         print(f"  [{r['prompt_id']}] {r['raw_prompt']}")
+
+
+def load_jsonl(path):
+    with open(path) as f:
+        return [json.loads(line) for line in f if line.strip()]

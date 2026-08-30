@@ -1,0 +1,310 @@
+{
+  "provenance": {
+    "model_id": "unsloth/Meta-Llama-3.1-8B-Instruct",
+    "precision": "bf16",
+    "quant_config": null,
+    "dtype": "torch.bfloat16",
+    "transformers_version": "5.14.1",
+    "torch_version": "2.11.0+cu130",
+    "candidate_file_sha256": null,
+    "data_file_sha256s": {
+      "/marimo/repo/data/ambiguity/prompts.jsonl": "dfae18637da1443bca057bd73ba669d1720f5a65f4d74b5a044861f45c6b78e2",
+      "/marimo/repo/data/ambiguity/controls.jsonl": "06e2713ba40d70b5dd71ba9b14593e40cf68fc209e1ae82940657c45bcd996a7",
+      "/marimo/repo/data/lack_of_knowledge/prompts.jsonl": "4fb40d6d8dbc941d7fe63fe7c15816400238ae4916964c3542208a720596bf4a",
+      "/marimo/repo/data/lack_of_knowledge/controls.jsonl": "38604c8b8796cd1d21857fa582531d3f80239aa775aedaf61df7c55a402f0790",
+      "/marimo/repo/data/contradictory_context/prompts.jsonl": "3906437b2f1a6f54ed86c4a8469e37c3137b499c811a1d45b16209dd032958e6",
+      "/marimo/repo/data/contradictory_context/controls.jsonl": "fb83bf90fdb24fcdfd4ec4a890207a0c266633d5c89d208ac0b349760f9eee03"
+    },
+    "baseline_prompt_sha256": "f0abf115c6567bec36277218988850646c154a318043158259637ff0363dcceb",
+    "n_baseline_prompts": 504,
+    "seed": 3,
+    "layer_range": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "top_k_per_half": 60,
+    "top_k_final": null,
+    "min_abs_corr": null,
+    "git_head_sha": "0202d4b475a3dbcdd39de4dda18d58af83530fbd",
+    "timestamp": "2026-08-22T20:10:07.902476+00:00",
+    "method": "split_half_validated",
+    "n_half_a": 252,
+    "n_half_b": 252,
+    "stratified": true,
+    "stratum_counts": {
+      "half_a": {
+        "contradictory_context": 84,
+        "ambiguity": 84,
+        "lack_of_knowledge": 84
+      },
+      "half_b": {
+        "contradictory_context": 84,
+        "ambiguity": 84,
+        "lack_of_knowledge": 84
+      }
+    },
+    "dropped_zero_variance": {
+      "half_a": {
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0
+      },
+      "half_b": {
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0
+      }
+    },
+    "n_stable": 27,
+    "n_candidates": 27,
+    "baseline_prompt_hash": "f0abf115c6567bec",
+    "categories": "all",
+    "include_controls": true
+  },
+  "candidates": [
+    {
+      "neuron_id": "L29_N11791",
+      "layer": 29,
+      "neuron_idx": 11791,
+      "detection_correlation_half_a": 0.6968641121727785,
+      "detection_correlation_half_b": 0.6938875197710943,
+      "detection_correlation_min_abs": 0.6938875197710943
+    },
+    {
+      "neuron_id": "L29_N13925",
+      "layer": 29,
+      "neuron_idx": 13925,
+      "detection_correlation_half_a": 0.6765977700193785,
+      "detection_correlation_half_b": 0.6782993465182773,
+      "detection_correlation_min_abs": 0.6765977700193785
+    },
+    {
+      "neuron_id": "L30_N13098",
+      "layer": 30,
+      "neuron_idx": 13098,
+      "detection_correlation_half_a": -0.6176045264810321,
+      "detection_correlation_half_b": -0.6955779076344143,
+      "detection_correlation_min_abs": 0.6176045264810321
+    },
+    {
+      "neuron_id": "L31_N14143",
+      "layer": 31,
+      "neuron_idx": 14143,
+      "detection_correlation_half_a": 0.5963437496083862,
+      "detection_correlation_half_b": 0.5829956364475233,
+      "detection_correlation_min_abs": 0.5829956364475233
+    },
+    {
+      "neuron_id": "L29_N5866",
+      "layer": 29,
+      "neuron_idx": 5866,
+      "detection_correlation_half_a": 0.5760059782633998,
+      "detection_correlation_half_b": 0.5871229773350529,
+      "detection_correlation_min_abs": 0.5760059782633998
+    },
+    {
+      "neuron_id": "L28_N11622",
+      "layer": 28,
+      "neuron_idx": 11622,
+      "detection_correlation_half_a": -0.572411667041829,
+      "detection_correlation_half_b": -0.6901175459005686,
+      "detection_correlation_min_abs": 0.572411667041829
+    },
+    {
+      "neuron_id": "L28_N14222",
+      "layer": 28,
+      "neuron_idx": 14222,
+      "detection_correlation_half_a": 0.5708785398971578,
+      "detection_correlation_half_b": 0.5738626621273066,
+      "detection_correlation_min_abs": 0.5708785398971578
+    },
+    {
+      "neuron_id": "L31_N11541",
+      "layer": 31,
+      "neuron_idx": 11541,
+      "detection_correlation_half_a": 0.6013314968538575,
+      "detection_correlation_half_b": 0.570244593909854,
+      "detection_correlation_min_abs": 0.570244593909854
+    },
+    {
+      "neuron_id": "L29_N12010",
+      "layer": 29,
+      "neuron_idx": 12010,
+      "detection_correlation_half_a": 0.5696940994715939,
+      "detection_correlation_half_b": 0.5766472643419643,
+      "detection_correlation_min_abs": 0.5696940994715939
+    },
+    {
+      "neuron_id": "L29_N578",
+      "layer": 29,
+      "neuron_idx": 578,
+      "detection_correlation_half_a": -0.563959648851027,
+      "detection_correlation_half_b": -0.5698281650364101,
+      "detection_correlation_min_abs": 0.563959648851027
+    },
+    {
+      "neuron_id": "L20_N4060",
+      "layer": 20,
+      "neuron_idx": 4060,
+      "detection_correlation_half_a": 0.5601516382928989,
+      "detection_correlation_half_b": 0.5633629605400478,
+      "detection_correlation_min_abs": 0.5601516382928989
+    },
+    {
+      "neuron_id": "L22_N2446",
+      "layer": 22,
+      "neuron_idx": 2446,
+      "detection_correlation_half_a": 0.5583811951244463,
+      "detection_correlation_half_b": 0.5936540841651817,
+      "detection_correlation_min_abs": 0.5583811951244463
+    },
+    {
+      "neuron_id": "L31_N7853",
+      "layer": 31,
+      "neuron_idx": 7853,
+      "detection_correlation_half_a": -0.5555866980147611,
+      "detection_correlation_half_b": -0.5811417278746818,
+      "detection_correlation_min_abs": 0.5555866980147611
+    },
+    {
+      "neuron_id": "L29_N3447",
+      "layer": 29,
+      "neuron_idx": 3447,
+      "detection_correlation_half_a": -0.5687095002624821,
+      "detection_correlation_half_b": -0.5554075297532832,
+      "detection_correlation_min_abs": 0.5554075297532832
+    },
+    {
+      "neuron_id": "L27_N45",
+      "layer": 27,
+      "neuron_idx": 45,
+      "detection_correlation_half_a": -0.5979292387402766,
+      "detection_correlation_half_b": -0.554427815976437,
+      "detection_correlation_min_abs": 0.554427815976437
+    },
+    {
+      "neuron_id": "L29_N2646",
+      "layer": 29,
+      "neuron_idx": 2646,
+      "detection_correlation_half_a": -0.5461462835638123,
+      "detection_correlation_half_b": -0.5751369746190578,
+      "detection_correlation_min_abs": 0.5461462835638123
+    },
+    {
+      "neuron_id": "L31_N377",
+      "layer": 31,
+      "neuron_idx": 377,
+      "detection_correlation_half_a": 0.5415378915255064,
+      "detection_correlation_half_b": 0.5655152299901635,
+      "detection_correlation_min_abs": 0.5415378915255064
+    },
+    {
+      "neuron_id": "L30_N11103",
+      "layer": 30,
+      "neuron_idx": 11103,
+      "detection_correlation_half_a": -0.5476885620171709,
+      "detection_correlation_half_b": -0.5395329385492615,
+      "detection_correlation_min_abs": 0.5395329385492615
+    },
+    {
+      "neuron_id": "L31_N4425",
+      "layer": 31,
+      "neuron_idx": 4425,
+      "detection_correlation_half_a": -0.5368412097466311,
+      "detection_correlation_half_b": -0.5611942040509643,
+      "detection_correlation_min_abs": 0.5368412097466311
+    },
+    {
+      "neuron_id": "L28_N5085",
+      "layer": 28,
+      "neuron_idx": 5085,
+      "detection_correlation_half_a": -0.5311645919824123,
+      "detection_correlation_half_b": -0.6131671440311143,
+      "detection_correlation_min_abs": 0.5311645919824123
+    },
+    {
+      "neuron_id": "L29_N4718",
+      "layer": 29,
+      "neuron_idx": 4718,
+      "detection_correlation_half_a": 0.5286855326924038,
+      "detection_correlation_half_b": 0.556187758539648,
+      "detection_correlation_min_abs": 0.5286855326924038
+    },
+    {
+      "neuron_id": "L29_N12400",
+      "layer": 29,
+      "neuron_idx": 12400,
+      "detection_correlation_half_a": 0.5247980541156142,
+      "detection_correlation_half_b": 0.6259582369662077,
+      "detection_correlation_min_abs": 0.5247980541156142
+    },
+    {
+      "neuron_id": "L31_N186",
+      "layer": 31,
+      "neuron_idx": 186,
+      "detection_correlation_half_a": -0.5238283936560748,
+      "detection_correlation_half_b": -0.5533183782351035,
+      "detection_correlation_min_abs": 0.5238283936560748
+    },
+    {
+      "neuron_id": "L26_N8053",
+      "layer": 26,
+      "neuron_idx": 8053,
+      "detection_correlation_half_a": 0.5145078872903953,
+      "detection_correlation_half_b": 0.5726946453039019,
+      "detection_correlation_min_abs": 0.5145078872903953
+    },
+    {
+      "neuron_id": "L29_N6481",
+      "layer": 29,
+      "neuron_idx": 6481,
+      "detection_correlation_half_a": -0.5133952988123628,
+      "detection_correlation_half_b": -0.5519995526909988,
+      "detection_correlation_min_abs": 0.5133952988123628
+    },
+    {
+      "neuron_id": "L31_N368",
+      "layer": 31,
+      "neuron_idx": 368,
+      "detection_correlation_half_a": 0.512351643193716,
+      "detection_correlation_half_b": 0.5717122981555977,
+      "detection_correlation_min_abs": 0.512351643193716
+    },
+    {
+      "neuron_id": "L30_N13387",
+      "layer": 30,
+      "neuron_idx": 13387,
+      "detection_correlation_half_a": -0.5116268362081369,
+      "detection_correlation_half_b": -0.5440365763305587,
+      "detection_correlation_min_abs": 0.5116268362081369
+    }
+  ]
+}
