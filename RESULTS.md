@@ -1,6 +1,6 @@
 # No confidence neurons on the behavioral arm — and a faithfulness-tested uncertainty circuit
 
-*Results summary for the `emotional-atyachar` line of work. Full lab record and interactive report: the "Uncertainty Neurons Rebuilt" artifact; definitions and dataset standard: [UNCERTAINTY_DEFINITION.md](UNCERTAINTY_DEFINITION.md).*
+*Results summary for the `uncertainty-circuit-experiments` line of work. Full lab record and interactive report: the "Uncertainty Neurons Rebuilt" artifact; definitions and dataset standard: [UNCERTAINTY_DEFINITION.md](UNCERTAINTY_DEFINITION.md).*
 
 ## Abstract
 

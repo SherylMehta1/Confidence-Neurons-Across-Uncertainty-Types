@@ -1,6 +1,6 @@
 # Memo: corrections + missing material for the draft doc
 
-*For the team's "Draft Paper" doc · deadline Sept 1, 2026 AoE (long format ≤ 9 pp) · everything below is verified against the committed CSVs/JSONs on `emotional-atyachar` (through `c070731`); the audited reference text is `paper/main.tex`.*
+*For the team's "Draft Paper" doc · deadline Sept 1, 2026 AoE (long format ≤ 9 pp) · everything below is verified against the committed CSVs/JSONs on `uncertainty-circuit-experiments` (through `c070731`); the audited reference text is `paper/main.tex`.*
 
 ---
 
