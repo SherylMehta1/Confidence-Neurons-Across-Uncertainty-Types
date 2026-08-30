@@ -1,0 +1,781 @@
+prompt_id,twin_id,arm,sample,text,hedge,qualifier
+ale_01_0_c,ale_01_0,control,0,"The first color of the rainbow, according to the sequence of colors, is red.",False,False
+ale_01_0_c,ale_01_0,control,1,"The first color of the rainbow, according to the sequence of colors typically remembered with the acronym ROYGBIV (Red, Orange, Yellow, Green, Blue, Indigo, Violet), is Red.",False,False
+ale_01_0_c,ale_01_0,control,2,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_0_c,ale_01_0,control,3,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_0_c,ale_01_0,control,4,"The first color of the rainbow, according to the sequence of colors typically remembered with the acronym ROYGBIV (Red, Orange, Yellow, Green, Blue, Indigo, Violet), is Red.",False,False
+ale_01_0_c,ale_01_0,control,5,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_0_c,ale_01_0,control,6,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_0_c,ale_01_0,control,7,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_0_c,ale_01_0,control,8,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_0_c,ale_01_0,control,9,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_0_u,ale_01_0,uncertain,0,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,1,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,2,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,3,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,4,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,5,Sure! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,6,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,7,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,8,Certainly! One color of the rainbow is red.,False,False
+ale_01_0_u,ale_01_0,uncertain,9,Certainly! One color of the rainbow is red.,False,False
+ale_01_1_c,ale_01_1,control,0,Red,False,False
+ale_01_1_c,ale_01_1,control,1,Red,False,False
+ale_01_1_c,ale_01_1,control,2,Red,False,False
+ale_01_1_c,ale_01_1,control,3,Red,False,False
+ale_01_1_c,ale_01_1,control,4,Red,False,False
+ale_01_1_c,ale_01_1,control,5,Red,False,False
+ale_01_1_c,ale_01_1,control,6,Red,False,False
+ale_01_1_c,ale_01_1,control,7,Red,False,False
+ale_01_1_c,ale_01_1,control,8,Red,False,False
+ale_01_1_c,ale_01_1,control,9,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,0,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,1,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,2,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,3,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,4,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,5,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,6,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,7,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,8,Red,False,False
+ale_01_1_u,ale_01_1,uncertain,9,Red,False,False
+ale_01_3_c,ale_01_3,control,0,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_3_c,ale_01_3,control,1,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_3_c,ale_01_3,control,2,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_3_c,ale_01_3,control,3,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_3_c,ale_01_3,control,4,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_3_c,ale_01_3,control,5,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_3_c,ale_01_3,control,6,"The first color of the rainbow, according to the sequence of colors, is red.",False,False
+ale_01_3_c,ale_01_3,control,7,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_3_c,ale_01_3,control,8,"The first color of the rainbow, according to the sequence of colors, is red.",False,False
+ale_01_3_c,ale_01_3,control,9,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_3_u,ale_01_3,uncertain,0,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,1,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,2,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,3,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,4,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,5,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,6,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,7,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,8,Sure! One color of the rainbow is red.,False,False
+ale_01_3_u,ale_01_3,uncertain,9,Sure! One color of the rainbow is red.,False,False
+ale_01_5_c,ale_01_5,control,0,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_5_c,ale_01_5,control,1,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_5_c,ale_01_5,control,2,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_5_c,ale_01_5,control,3,"The first color of the rainbow, according to the traditional seven-color sequence, is red.",False,False
+ale_01_5_c,ale_01_5,control,4,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_5_c,ale_01_5,control,5,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_5_c,ale_01_5,control,6,"The first color of the rainbow, when listed in the order of the visible spectrum, is red. However, if you're referring to the mnemonic device often used to remember the colors of the rainbow (ROYGBIV), the first color would",False,False
+ale_01_5_c,ale_01_5,control,7,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_5_c,ale_01_5,control,8,"The first color of the rainbow, according to the traditional seven-color spectrum, is red.",False,False
+ale_01_5_c,ale_01_5,control,9,"The first color of the rainbow, according to the sequence of colors in a rainbow, is red.",False,False
+ale_01_5_u,ale_01_5,uncertain,0,Sure! One color of the rainbow is red.,False,False
+ale_01_5_u,ale_01_5,uncertain,1,Certainly! One of the colors in the rainbow is red.,False,True
+ale_01_5_u,ale_01_5,uncertain,2,Sure! One of the colors of the rainbow is red.,False,True
+ale_01_5_u,ale_01_5,uncertain,3,"Certainly! One of the colors in the rainbow is blue. The rainbow typically consists of seven colors: red, orange, yellow, green, blue, indigo, and violet (often remembered with the acronym ROYGBIV).",False,True
+ale_01_5_u,ale_01_5,uncertain,4,"Certainly! One of the colors in the rainbow is blue. The spectrum of a rainbow typically includes red, orange, yellow, green, blue, indigo, and violet (often remembered with the acronym ROYGBIV).",False,True
+ale_01_5_u,ale_01_5,uncertain,5,Sure! One of the colors in the rainbow is red.,False,True
+ale_01_5_u,ale_01_5,uncertain,6,Sure! One color of the rainbow is red.,False,False
+ale_01_5_u,ale_01_5,uncertain,7,Certainly! One of the colors of the rainbow is red.,False,True
+ale_01_5_u,ale_01_5,uncertain,8,Certainly! One of the colors in the rainbow is red.,False,True
+ale_01_5_u,ale_01_5,uncertain,9,Certainly! One of the colors in the rainbow is red.,False,True
+ale_05_0_c,ale_05_0,control,0,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,1,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_0_c,ale_05_0,control,2,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,3,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,4,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,5,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,6,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,7,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,8,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_c,ale_05_0,control,9,The largest planet in the solar system is Jupiter.,False,False
+ale_05_0_u,ale_05_0,uncertain,0,Certainly! One planet in the solar system is Earth.,False,False
+ale_05_0_u,ale_05_0,uncertain,1,Certainly! One of the planets in our solar system is Mars.,False,True
+ale_05_0_u,ale_05_0,uncertain,2,Certainly! One of the planets in our solar system is Mars.,False,True
+ale_05_0_u,ale_05_0,uncertain,3,Sure! One planet in the solar system is Earth. It's the third planet from the Sun and the only known planet to harbor life.,False,False
+ale_05_0_u,ale_05_0,uncertain,4,Sure! One of the planets in our solar system is Mars.,False,True
+ale_05_0_u,ale_05_0,uncertain,5,Certainly! One of the planets in our solar system is Mars.,False,True
+ale_05_0_u,ale_05_0,uncertain,6,Certainly! One of the planets in our solar system is Mars.,False,True
+ale_05_0_u,ale_05_0,uncertain,7,Certainly! One planet in the solar system is Earth.,False,False
+ale_05_0_u,ale_05_0,uncertain,8,Certainly! One planet in the solar system is Earth.,False,False
+ale_05_0_u,ale_05_0,uncertain,9,Certainly! One of the planets in our solar system is Mars.,False,True
+ale_05_1_c,ale_05_1,control,0,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,1,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,2,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,3,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,4,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,5,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,6,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,7,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,8,Jupiter,False,False
+ale_05_1_c,ale_05_1,control,9,Jupiter,False,False
+ale_05_1_u,ale_05_1,uncertain,0,Mars,False,False
+ale_05_1_u,ale_05_1,uncertain,1,Mars,False,False
+ale_05_1_u,ale_05_1,uncertain,2,Mars,False,False
+ale_05_1_u,ale_05_1,uncertain,3,Mars,False,False
+ale_05_1_u,ale_05_1,uncertain,4,Mars,False,False
+ale_05_1_u,ale_05_1,uncertain,5,Earth,False,False
+ale_05_1_u,ale_05_1,uncertain,6,Mercury,False,False
+ale_05_1_u,ale_05_1,uncertain,7,Earth,False,False
+ale_05_1_u,ale_05_1,uncertain,8,Earth,False,False
+ale_05_1_u,ale_05_1,uncertain,9,Mars,False,False
+ale_05_2_c,ale_05_2,control,0,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,1,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,2,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,3,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,4,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,5,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,6,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,7,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,8,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_c,ale_05_2,control,9,The largest planet in the solar system is Jupiter.,False,False
+ale_05_2_u,ale_05_2,uncertain,0,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,1,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,2,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,3,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,4,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,5,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,6,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,7,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,8,Mars,False,False
+ale_05_2_u,ale_05_2,uncertain,9,Mars,False,False
+ale_05_3_c,ale_05_3,control,0,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,1,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,2,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,3,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,4,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,5,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,6,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,7,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,8,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_c,ale_05_3,control,9,The largest planet in the solar system is Jupiter.,False,False
+ale_05_3_u,ale_05_3,uncertain,0,Sure! One planet in the solar system is Earth.,False,False
+ale_05_3_u,ale_05_3,uncertain,1,Sure! One planet in the solar system is Earth.,False,False
+ale_05_3_u,ale_05_3,uncertain,2,Sure! One of the planets in our solar system is Mars.,False,True
+ale_05_3_u,ale_05_3,uncertain,3,Sure! One planet in the solar system is Earth.,False,False
+ale_05_3_u,ale_05_3,uncertain,4,Sure! One of the planets in our solar system is Mars.,False,True
+ale_05_3_u,ale_05_3,uncertain,5,Sure! One planet in the solar system is Earth.,False,False
+ale_05_3_u,ale_05_3,uncertain,6,Sure! One planet in the solar system is Earth.,False,False
+ale_05_3_u,ale_05_3,uncertain,7,Sure! One of the planets in our solar system is Mars.,False,True
+ale_05_3_u,ale_05_3,uncertain,8,Sure! One planet in the solar system is Earth.,False,False
+ale_05_3_u,ale_05_3,uncertain,9,Sure! One of the planets in the solar system is Mars.,False,True
+ale_05_4_c,ale_05_4,control,0,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,1,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,2,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,3,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,4,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,5,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,6,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,7,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,8,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_c,ale_05_4,control,9,The largest planet in the solar system is Jupiter.,False,False
+ale_05_4_u,ale_05_4,uncertain,0,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,1,Certainly! One example of a planet in our solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,2,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,3,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,4,Certainly! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,5,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,6,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,7,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,8,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_4_u,ale_05_4,uncertain,9,Sure! One example of a planet in the solar system is Earth.,False,False
+ale_05_5_c,ale_05_5,control,0,"The largest planet in the solar system is Jupiter. It's a gas giant with a diameter of about 86,881 miles (139,822 kilometers), which is significantly larger than the other planets in our",False,False
+ale_05_5_c,ale_05_5,control,1,"The largest planet in the solar system is Jupiter. It's a gas giant with a diameter of about 86,881 miles (139,822 kilometers), which is significantly larger than the other planets in our",False,False
+ale_05_5_c,ale_05_5,control,2,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_5_c,ale_05_5,control,3,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_5_c,ale_05_5,control,4,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_5_c,ale_05_5,control,5,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_5_c,ale_05_5,control,6,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_5_c,ale_05_5,control,7,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_5_c,ale_05_5,control,8,"The largest planet in the solar system is Jupiter. It has a diameter of about 86,881 miles (139,822 kilometers) at its equator and is known for its prominent Great Red Spot,",False,False
+ale_05_5_c,ale_05_5,control,9,"The largest planet in the solar system is Jupiter. It's a gas giant with a diameter of about 86,881 miles (139,822 kilometers), which is significantly larger than the other planets in our",False,False
+ale_05_5_u,ale_05_5,uncertain,0,"Sure! One of the planets in our solar system is Mars. It's often referred to as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide (rust) on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,1,"Sure! One of the planets in our solar system is Mars. It's known as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide, or rust, on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,2,"Certainly! One of the planets in our solar system is Mars. It's known as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide, or rust, on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,3,"Sure! One of the planets in our solar system is Mars. It's known as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide, or rust, on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,4,"Sure! One of the planets in our solar system is Mars. It's known for its reddish appearance due to iron oxide, or rust, on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,5,"Certainly! One of the planets in our solar system is Mars. It's often referred to as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide, or rust, on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,6,"Sure! One of the planets in our solar system is Mars. It's known as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide, or rust, on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,7,"Sure! One of the planets in our solar system is Mars. It's known as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide, or rust, on its surface.",False,True
+ale_05_5_u,ale_05_5,uncertain,8,Sure! One of the planets in our solar system is Earth. It's the third planet from the Sun and the only known planet to harbor life.,False,True
+ale_05_5_u,ale_05_5,uncertain,9,"Certainly! One of the planets in our solar system is Mars. It's known as the ""Red Planet"" due to its reddish appearance, which is caused by iron oxide, or rust, on its surface.",False,True
+ale_06_1_c,ale_06_1,control,0,January,False,False
+ale_06_1_c,ale_06_1,control,1,January,False,False
+ale_06_1_c,ale_06_1,control,2,January,False,False
+ale_06_1_c,ale_06_1,control,3,January,False,False
+ale_06_1_c,ale_06_1,control,4,January,False,False
+ale_06_1_c,ale_06_1,control,5,January,False,False
+ale_06_1_c,ale_06_1,control,6,January,False,False
+ale_06_1_c,ale_06_1,control,7,January,False,False
+ale_06_1_c,ale_06_1,control,8,January,False,False
+ale_06_1_c,ale_06_1,control,9,January,False,False
+ale_06_1_u,ale_06_1,uncertain,0,January,False,False
+ale_06_1_u,ale_06_1,uncertain,1,January,False,False
+ale_06_1_u,ale_06_1,uncertain,2,January,False,False
+ale_06_1_u,ale_06_1,uncertain,3,January,False,False
+ale_06_1_u,ale_06_1,uncertain,4,January,False,False
+ale_06_1_u,ale_06_1,uncertain,5,January,False,False
+ale_06_1_u,ale_06_1,uncertain,6,January,False,False
+ale_06_1_u,ale_06_1,uncertain,7,January,False,False
+ale_06_1_u,ale_06_1,uncertain,8,January,False,False
+ale_06_1_u,ale_06_1,uncertain,9,January,False,False
+ale_06_2_c,ale_06_2,control,0,The first month of the year is January.,False,False
+ale_06_2_c,ale_06_2,control,1,January,False,False
+ale_06_2_c,ale_06_2,control,2,January,False,False
+ale_06_2_c,ale_06_2,control,3,January,False,False
+ale_06_2_c,ale_06_2,control,4,January,False,False
+ale_06_2_c,ale_06_2,control,5,January,False,False
+ale_06_2_c,ale_06_2,control,6,The first month of the year is January.,False,False
+ale_06_2_c,ale_06_2,control,7,January,False,False
+ale_06_2_c,ale_06_2,control,8,January,False,False
+ale_06_2_c,ale_06_2,control,9,The first month of the year is January.,False,False
+ale_06_2_u,ale_06_2,uncertain,0,January,False,False
+ale_06_2_u,ale_06_2,uncertain,1,January,False,False
+ale_06_2_u,ale_06_2,uncertain,2,January,False,False
+ale_06_2_u,ale_06_2,uncertain,3,January,False,False
+ale_06_2_u,ale_06_2,uncertain,4,January,False,False
+ale_06_2_u,ale_06_2,uncertain,5,January,False,False
+ale_06_2_u,ale_06_2,uncertain,6,January,False,False
+ale_06_2_u,ale_06_2,uncertain,7,January,False,False
+ale_06_2_u,ale_06_2,uncertain,8,January,False,False
+ale_06_2_u,ale_06_2,uncertain,9,January,False,False
+ale_06_3_c,ale_06_3,control,0,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,1,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,2,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,3,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,4,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,5,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,6,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,7,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,8,The first month of the year is January.,False,False
+ale_06_3_c,ale_06_3,control,9,The first month of the year is January.,False,False
+ale_06_3_u,ale_06_3,uncertain,0,Sure! How about February?,False,False
+ale_06_3_u,ale_06_3,uncertain,1,Sure! How about February?,False,False
+ale_06_3_u,ale_06_3,uncertain,2,Sure! February is a month of the year.,False,False
+ale_06_3_u,ale_06_3,uncertain,3,Sure! February is a month of the year.,False,False
+ale_06_3_u,ale_06_3,uncertain,4,Sure! How about February?,False,False
+ale_06_3_u,ale_06_3,uncertain,5,Sure! How about February?,False,False
+ale_06_3_u,ale_06_3,uncertain,6,Sure! How about February?,False,False
+ale_06_3_u,ale_06_3,uncertain,7,Sure! How about February?,False,False
+ale_06_3_u,ale_06_3,uncertain,8,Sure! March is a month of the year.,False,False
+ale_06_3_u,ale_06_3,uncertain,9,Sure! How about February?,False,False
+ale_06_4_c,ale_06_4,control,0,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,1,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,2,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,3,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,4,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,5,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,6,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,7,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,8,The first month of the year is January.,False,False
+ale_06_4_c,ale_06_4,control,9,The first month of the year is January.,False,False
+ale_06_4_u,ale_06_4,uncertain,0,Sure! A month of the year is January.,False,False
+ale_06_4_u,ale_06_4,uncertain,1,Sure! One example of a month of the year is March.,False,False
+ale_06_4_u,ale_06_4,uncertain,2,Sure! One example of a month of the year is March.,False,False
+ale_06_4_u,ale_06_4,uncertain,3,Sure! One example of a month of the year is March.,False,False
+ale_06_4_u,ale_06_4,uncertain,4,Sure! A month of the year is January.,False,False
+ale_06_4_u,ale_06_4,uncertain,5,Sure! One example of a month of the year is March.,False,False
+ale_06_4_u,ale_06_4,uncertain,6,Sure! A month of the year is January.,False,False
+ale_06_4_u,ale_06_4,uncertain,7,Sure! A month of the year is January.,False,False
+ale_06_4_u,ale_06_4,uncertain,8,Sure! A month of the year is January.,False,False
+ale_06_4_u,ale_06_4,uncertain,9,Sure! A month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,0,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,1,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,2,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,3,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,4,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,5,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,6,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,7,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,8,The first month of the year is January.,False,False
+ale_06_5_c,ale_06_5,control,9,The first month of the year is January.,False,False
+ale_06_5_u,ale_06_5,uncertain,0,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,1,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,2,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,3,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,4,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,5,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,6,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,7,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,8,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_06_5_u,ale_06_5,uncertain,9,Sure! How about February? It's the second month of the year in the Gregorian calendar.,False,False
+ale_08_0_c,ale_08_0,control,0,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,1,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,2,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,3,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,4,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,5,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,6,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,7,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,8,Brazil is located in South America.,False,False
+ale_08_0_c,ale_08_0,control,9,Brazil is located in South America.,False,False
+ale_08_0_u,ale_08_0,uncertain,0,Africa is one of the continents.,False,True
+ale_08_0_u,ale_08_0,uncertain,1,Africa is a continent that comes to mind. It is the second-largest and second-most populous continent in the world.,False,False
+ale_08_0_u,ale_08_0,uncertain,2,Africa is a continent that comes to mind.,False,False
+ale_08_0_u,ale_08_0,uncertain,3,Africa is one of the seven continents.,False,True
+ale_08_0_u,ale_08_0,uncertain,4,Africa is one of the seven continents.,False,True
+ale_08_0_u,ale_08_0,uncertain,5,Africa is one of the continents.,False,True
+ale_08_0_u,ale_08_0,uncertain,6,Africa is one of the continents.,False,True
+ale_08_0_u,ale_08_0,uncertain,7,Certainly! Africa is one of the continents.,False,True
+ale_08_0_u,ale_08_0,uncertain,8,Africa is one of the continents.,False,True
+ale_08_0_u,ale_08_0,uncertain,9,Africa is one of the seven continents in the world.,False,True
+ale_08_1_c,ale_08_1,control,0,South America,False,False
+ale_08_1_c,ale_08_1,control,1,South America,False,False
+ale_08_1_c,ale_08_1,control,2,South America,False,False
+ale_08_1_c,ale_08_1,control,3,South America,False,False
+ale_08_1_c,ale_08_1,control,4,South America,False,False
+ale_08_1_c,ale_08_1,control,5,South America,False,False
+ale_08_1_c,ale_08_1,control,6,South America,False,False
+ale_08_1_c,ale_08_1,control,7,South America,False,False
+ale_08_1_c,ale_08_1,control,8,South America,False,False
+ale_08_1_c,ale_08_1,control,9,South America,False,False
+ale_08_1_u,ale_08_1,uncertain,0,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,1,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,2,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,3,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,4,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,5,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,6,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,7,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,8,Africa,False,False
+ale_08_1_u,ale_08_1,uncertain,9,Africa,False,False
+ale_08_2_c,ale_08_2,control,0,South America,False,False
+ale_08_2_c,ale_08_2,control,1,South America,False,False
+ale_08_2_c,ale_08_2,control,2,South America,False,False
+ale_08_2_c,ale_08_2,control,3,South America,False,False
+ale_08_2_c,ale_08_2,control,4,South America,False,False
+ale_08_2_c,ale_08_2,control,5,South America,False,False
+ale_08_2_c,ale_08_2,control,6,South America,False,False
+ale_08_2_c,ale_08_2,control,7,South America,False,False
+ale_08_2_c,ale_08_2,control,8,South America,False,False
+ale_08_2_c,ale_08_2,control,9,South America,False,False
+ale_08_2_u,ale_08_2,uncertain,0,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,1,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,2,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,3,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,4,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,5,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,6,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,7,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,8,Africa,False,False
+ale_08_2_u,ale_08_2,uncertain,9,Africa,False,False
+ale_08_3_c,ale_08_3,control,0,The continent that contains Brazil is South America.,False,False
+ale_08_3_c,ale_08_3,control,1,Brazil is located in South America.,False,False
+ale_08_3_c,ale_08_3,control,2,Brazil is located in South America.,False,False
+ale_08_3_c,ale_08_3,control,3,Brazil is located in South America.,False,False
+ale_08_3_c,ale_08_3,control,4,The continent that contains Brazil is South America.,False,False
+ale_08_3_c,ale_08_3,control,5,The continent that contains Brazil is South America.,False,False
+ale_08_3_c,ale_08_3,control,6,The continent that contains Brazil is South America.,False,False
+ale_08_3_c,ale_08_3,control,7,The continent that contains Brazil is South America.,False,False
+ale_08_3_c,ale_08_3,control,8,The continent that contains Brazil is South America.,False,False
+ale_08_3_c,ale_08_3,control,9,The continent that contains Brazil is South America.,False,False
+ale_08_3_u,ale_08_3,uncertain,0,Sure! Africa is one of the seven continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,1,Sure! Africa is one of the continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,2,Certainly! Africa is one of the seven continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,3,Sure! One of the continents is Africa.,False,True
+ale_08_3_u,ale_08_3,uncertain,4,Certainly! Africa is one of the continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,5,Sure! Africa is one of the continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,6,Sure! Africa is one of the continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,7,Certainly! Africa is one of the seven continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,8,Sure! Africa is one of the continents.,False,True
+ale_08_3_u,ale_08_3,uncertain,9,Sure! One of the continents is Asia.,False,True
+ale_08_4_c,ale_08_4,control,0,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,1,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,2,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,3,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,4,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,5,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,6,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,7,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,8,The continent that contains Brazil is South America.,False,False
+ale_08_4_c,ale_08_4,control,9,The continent that contains Brazil is South America.,False,False
+ale_08_4_u,ale_08_4,uncertain,0,Sure! One example of a continent is Africa.,False,False
+ale_08_4_u,ale_08_4,uncertain,1,Sure! One example of a continent is Europe.,False,False
+ale_08_4_u,ale_08_4,uncertain,2,Sure! One example of a continent is Africa.,False,False
+ale_08_4_u,ale_08_4,uncertain,3,Certainly! One example of a continent is Africa.,False,False
+ale_08_4_u,ale_08_4,uncertain,4,Sure! One example of a continent is Africa.,False,False
+ale_08_4_u,ale_08_4,uncertain,5,Sure! One example of a continent is Europe.,False,False
+ale_08_4_u,ale_08_4,uncertain,6,Certainly! One example of a continent is Africa.,False,False
+ale_08_4_u,ale_08_4,uncertain,7,Sure! One example of a continent is Africa.,False,False
+ale_08_4_u,ale_08_4,uncertain,8,Sure! One example of a continent is Europe.,False,False
+ale_08_4_u,ale_08_4,uncertain,9,Sure! One example of a continent is Europe.,False,False
+ale_08_5_c,ale_08_5,control,0,The continent that contains Brazil is South America. Brazil is the largest country in both South America and Latin America.,False,False
+ale_08_5_c,ale_08_5,control,1,"Brazil is located in South America, which is one of the seven continents.",False,True
+ale_08_5_c,ale_08_5,control,2,The continent that contains Brazil is South America. Brazil is the largest country in South America and occupies a significant portion of the southern part of the continent.,False,False
+ale_08_5_c,ale_08_5,control,3,The continent that contains Brazil is South America. Brazil is the largest country in both South America and Latin America.,False,False
+ale_08_5_c,ale_08_5,control,4,"Brazil is located in South America, which is one of the seven continents.",False,True
+ale_08_5_c,ale_08_5,control,5,Brazil is located in South America.,False,False
+ale_08_5_c,ale_08_5,control,6,The continent that contains Brazil is South America.,False,False
+ale_08_5_c,ale_08_5,control,7,The continent that contains Brazil is South America.,False,False
+ale_08_5_c,ale_08_5,control,8,The continent that contains Brazil is South America.,False,False
+ale_08_5_c,ale_08_5,control,9,Brazil is located in South America.,False,False
+ale_08_5_u,ale_08_5,uncertain,0,Certainly! Africa is one of the seven continents and is the second-largest continent in the world by both area and population.,False,True
+ale_08_5_u,ale_08_5,uncertain,1,"Certainly! One of the seven continents is Europe. Europe is known for its rich history, diverse cultures, and numerous countries including giants like Russia, the United Kingdom, and France, as well as smaller nations like Iceland and San Marino.",False,True
+ale_08_5_u,ale_08_5,uncertain,2,"Certainly! Africa is one of the seven continents. It's the second-largest continent in the world and is known for its diverse wildlife, rich cultural heritage, and vast landscapes.",False,True
+ale_08_5_u,ale_08_5,uncertain,3,"Certainly! One of the continents is Africa. Africa is the second-largest continent in the world and is known for its diverse landscapes, rich cultures, and vast wildlife.",False,True
+ale_08_5_u,ale_08_5,uncertain,4,"Certainly! Africa is one of the seven continents. It's the second-largest continent in the world and is known for its diverse wildlife, rich cultural heritage, and vast landscapes.",False,True
+ale_08_5_u,ale_08_5,uncertain,5,Sure! One of the seven continents is Europe.,False,True
+ale_08_5_u,ale_08_5,uncertain,6,"Certainly! Africa is one of the seven continents and is known for its diverse wildlife, rich cultural heritage, and vast landscapes.",False,True
+ale_08_5_u,ale_08_5,uncertain,7,Sure! One of the continents is Europe.,False,True
+ale_08_5_u,ale_08_5,uncertain,8,Sure! One of the continents is Europe.,False,True
+ale_08_5_u,ale_08_5,uncertain,9,Certainly! Africa is one of the seven continents and is the second-largest continent in the world by area.,False,True
+ale_09_3_c,ale_09_3,control,0,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,1,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,2,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,3,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,4,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,5,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,6,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,7,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,8,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_c,ale_09_3,control,9,The largest ocean on Earth is the Pacific Ocean.,False,False
+ale_09_3_u,ale_09_3,uncertain,0,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,1,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,2,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,3,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,4,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,5,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,6,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,7,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,8,Sure! One of the major oceans is the Pacific Ocean.,False,True
+ale_09_3_u,ale_09_3,uncertain,9,Sure! One of the oceans is the Pacific Ocean.,False,True
+ale_09_5_c,ale_09_5,control,0,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and covers about one-third of the Earth's surface.,False,False
+ale_09_5_c,ale_09_5,control,1,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and covers about one-third of the Earth's surface.,False,False
+ale_09_5_c,ale_09_5,control,2,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and makes up about one-third of the Earth's water surface and half of its total surface area,False,False
+ale_09_5_c,ale_09_5,control,3,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and covers about one-third of the Earth's surface and half of its water surface area.,False,False
+ale_09_5_c,ale_09_5,control,4,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and makes up about one-third of the Earth's surface and half of its water surface area.,False,False
+ale_09_5_c,ale_09_5,control,5,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and covers about one-third of the Earth's surface and more than half of the world's water,False,False
+ale_09_5_c,ale_09_5,control,6,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and makes up about one-third of the Earth's surface and half of its water surface area.,False,False
+ale_09_5_c,ale_09_5,control,7,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and covers about one-third of the Earth's surface.,False,False
+ale_09_5_c,ale_09_5,control,8,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and covers about one-third of the Earth's surface.,False,False
+ale_09_5_c,ale_09_5,control,9,The largest ocean on Earth is the Pacific Ocean. It covers approximately 63 million square miles (164.5 million square kilometers) and makes up about one-third of the Earth's surface and half of the world's ocean area,False,False
+ale_09_5_u,ale_09_5,uncertain,0,"Sure! One of the oceans is the Pacific Ocean. It is the largest and deepest of the world's oceanic divisions, covering approximately one-third of the Earth's water surface.",False,True
+ale_09_5_u,ale_09_5,uncertain,1,Sure! One of the largest oceans in the world is the Pacific Ocean.,False,True
+ale_09_5_u,ale_09_5,uncertain,2,"Sure! One of the oceans is the Pacific Ocean. It is the largest and deepest of the world's oceanic divisions, covering approximately one-third of the Earth's surface.",False,True
+ale_09_5_u,ale_09_5,uncertain,3,Sure! One of the largest and most well-known oceans is the Pacific Ocean. It's the biggest of the five major oceans on Earth.,False,True
+ale_09_5_u,ale_09_5,uncertain,4,Sure! One of the largest and most well-known oceans is the Pacific Ocean. It's the biggest of the five named oceans and covers approximately one-third of the Earth's surface.,False,True
+ale_09_5_u,ale_09_5,uncertain,5,"Sure! One of the major oceans is the Pacific Ocean. It is the largest and deepest ocean in the world, covering approximately one-third of the Earth's surface.",False,True
+ale_09_5_u,ale_09_5,uncertain,6,"Sure! One of the oceans is the Pacific Ocean. It is the largest and deepest of the world's oceanic divisions, covering approximately one-third of the Earth's surface.",False,True
+ale_09_5_u,ale_09_5,uncertain,7,Sure! One of the largest and most well-known oceans is the Pacific Ocean.,False,True
+ale_09_5_u,ale_09_5,uncertain,8,Sure! One of the largest and most well-known oceans is the Pacific Ocean.,False,True
+ale_09_5_u,ale_09_5,uncertain,9,Sure! One of the major oceans is the Pacific Ocean. It's the largest and deepest ocean in the world.,False,True
+ale_11_0_c,ale_11_0,control,0,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,1,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,2,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,3,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,4,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,5,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,6,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,7,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,8,The capital city of France is Paris.,False,False
+ale_11_0_c,ale_11_0,control,9,The capital city of France is Paris.,False,False
+ale_11_0_u,ale_11_0,uncertain,0,"Paris is a European capital city, located in France.",False,False
+ale_11_0_u,ale_11_0,uncertain,1,Paris is the capital city of France.,False,False
+ale_11_0_u,ale_11_0,uncertain,2,Certainly! Paris is the capital city of France.,False,False
+ale_11_0_u,ale_11_0,uncertain,3,Paris is the capital city of France.,False,False
+ale_11_0_u,ale_11_0,uncertain,4,"Paris is a European capital city, located in France.",False,False
+ale_11_0_u,ale_11_0,uncertain,5,Paris is the capital city of France.,False,False
+ale_11_0_u,ale_11_0,uncertain,6,Paris is the capital city of France.,False,False
+ale_11_0_u,ale_11_0,uncertain,7,Certainly! Paris is the capital city of France.,False,False
+ale_11_0_u,ale_11_0,uncertain,8,"Paris is a European capital city, located in France.",False,False
+ale_11_0_u,ale_11_0,uncertain,9,Paris is the capital city of France.,False,False
+ale_11_2_c,ale_11_2,control,0,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,1,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,2,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,3,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,4,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,5,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,6,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,7,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,8,The capital city of France is Paris.,False,False
+ale_11_2_c,ale_11_2,control,9,The capital city of France is Paris.,False,False
+ale_11_2_u,ale_11_2,uncertain,0,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,1,Berlin,False,False
+ale_11_2_u,ale_11_2,uncertain,2,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,3,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,4,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,5,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,6,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,7,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,8,Paris,False,False
+ale_11_2_u,ale_11_2,uncertain,9,Berlin,False,False
+ale_11_3_c,ale_11_3,control,0,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,1,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,2,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,3,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,4,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,5,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,6,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,7,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,8,The capital city of France is Paris.,False,False
+ale_11_3_c,ale_11_3,control,9,The capital city of France is Paris.,False,False
+ale_11_3_u,ale_11_3,uncertain,0,"Certainly! Paris is a well-known capital city in Europe. It is the capital of France and is famous for its art, architecture, and fashion.",False,False
+ale_11_3_u,ale_11_3,uncertain,1,"Certainly! Paris is a well-known European capital city, which is the capital of France.",False,False
+ale_11_3_u,ale_11_3,uncertain,2,"Certainly! Paris is a well-known capital city in Europe, located in France.",False,False
+ale_11_3_u,ale_11_3,uncertain,3,"Certainly! Paris is a well-known capital city in Europe, located in France.",False,False
+ale_11_3_u,ale_11_3,uncertain,4,Certainly! Paris is the capital city of France.,False,False
+ale_11_3_u,ale_11_3,uncertain,5,Certainly! Paris is the capital city of France.,False,False
+ale_11_3_u,ale_11_3,uncertain,6,Certainly! Paris is the capital city of France.,False,False
+ale_11_3_u,ale_11_3,uncertain,7,"Certainly! Paris is a well-known capital city in Europe, located in France.",False,False
+ale_11_3_u,ale_11_3,uncertain,8,Certainly! Paris is the capital city of France.,False,False
+ale_11_3_u,ale_11_3,uncertain,9,Certainly! Paris is the capital city of France.,False,False
+ale_11_4_c,ale_11_4,control,0,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,1,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,2,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,3,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,4,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,5,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,6,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,7,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,8,The capital city of France is Paris.,False,False
+ale_11_4_c,ale_11_4,control,9,The capital city of France is Paris.,False,False
+ale_11_4_u,ale_11_4,uncertain,0,Sure! Paris is the capital city of France.,False,False
+ale_11_4_u,ale_11_4,uncertain,1,"Certainly! Paris is a well-known European capital city, located in France.",False,False
+ale_11_4_u,ale_11_4,uncertain,2,"Sure! A European capital city is Paris, which is the capital of France.",False,False
+ale_11_4_u,ale_11_4,uncertain,3,"Certainly! A European capital city is Berlin, the capital of Germany.",False,True
+ale_11_4_u,ale_11_4,uncertain,4,Certainly! Paris is a European capital city located in France.,False,False
+ale_11_4_u,ale_11_4,uncertain,5,Sure! Paris is the capital city of France.,False,False
+ale_11_4_u,ale_11_4,uncertain,6,"Sure! A European capital city is Paris, the capital of France.",False,False
+ale_11_4_u,ale_11_4,uncertain,7,"Certainly! Paris is a well-known European capital city, serving as the capital of France.",False,False
+ale_11_4_u,ale_11_4,uncertain,8,"Certainly! Paris is a well-known European capital city, located in France.",False,False
+ale_11_4_u,ale_11_4,uncertain,9,"Certainly! Paris is a European capital city, known as the capital of France.",False,False
+ale_11_5_c,ale_11_5,control,0,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,1,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,2,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,3,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,4,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,5,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,6,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,7,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,8,The capital city of France is Paris.,False,False
+ale_11_5_c,ale_11_5,control,9,The capital city of France is Paris.,False,False
+ale_11_5_u,ale_11_5,uncertain,0,"Certainly! Paris is a well-known European capital city, located in France. It's famous for its art, fashion, food, and landmarks like the Eiffel Tower and the Louvre Museum.",False,False
+ale_11_5_u,ale_11_5,uncertain,1,"Certainly! Paris is a well-known European capital city, located in France. It's famous for its art, fashion, cuisine, and historical landmarks like the Eiffel Tower and the Louvre Museum.",False,False
+ale_11_5_u,ale_11_5,uncertain,2,"Certainly! Paris is a well-known European capital city, located in France. It is famous for its art, fashion, cuisine, and historical landmarks like the Eiffel Tower and the Louvre Museum.",False,False
+ale_11_5_u,ale_11_5,uncertain,3,"Certainly! One European capital city is Paris, which is the capital of France.",False,False
+ale_11_5_u,ale_11_5,uncertain,4,"Certainly! Paris is a well-known European capital city, located in France. It's famous for its art, fashion, cuisine, and historical landmarks like the Eiffel Tower and the Louvre Museum.",False,False
+ale_11_5_u,ale_11_5,uncertain,5,"Certainly! One European capital city is Paris, which is the capital of France.",False,False
+ale_11_5_u,ale_11_5,uncertain,6,"Certainly! One European capital city is Berlin, which is the capital of Germany.",False,True
+ale_11_5_u,ale_11_5,uncertain,7,"Certainly! Paris is a well-known European capital city, located in France. It's famous for its art, fashion, cuisine, and historical landmarks like the Eiffel Tower and Louvre Museum.",False,False
+ale_11_5_u,ale_11_5,uncertain,8,"Certainly! Paris is a well-known European capital city, located in France. It's famous for its art, fashion, food, and landmarks like the Eiffel Tower and Louvre Museum.",False,False
+ale_11_5_u,ale_11_5,uncertain,9,"Certainly! Paris is a well-known European capital city, located in France. It is famous for its art, fashion, cuisine, and architecture, including landmarks such as the Eiffel Tower and the Louvre Museum.",False,True
+ale_14_0_c,ale_14_0,control,0,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,1,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,2,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,3,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,4,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,5,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,6,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,7,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,8,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_c,ale_14_0,control,9,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_0_u,ale_14_0,uncertain,0,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body.",False,False
+ale_14_0_u,ale_14_0,uncertain,1,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body.",False,False
+ale_14_0_u,ale_14_0,uncertain,2,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body.",False,False
+ale_14_0_u,ale_14_0,uncertain,3,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body.",False,False
+ale_14_0_u,ale_14_0,uncertain,4,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_0_u,ale_14_0,uncertain,5,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_0_u,ale_14_0,uncertain,6,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_0_u,ale_14_0,uncertain,7,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_0_u,ale_14_0,uncertain,8,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_0_u,ale_14_0,uncertain,9,"A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_3_c,ale_14_3,control,0,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,1,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,2,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,3,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,4,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,5,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,6,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,7,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,8,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_c,ale_14_3,control,9,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_3_u,ale_14_3,uncertain,0,"Sure! A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_3_u,ale_14_3,uncertain,1,"Sure! A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_3_u,ale_14_3,uncertain,2,"Sure! A bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the body.",False,False
+ale_14_3_u,ale_14_3,uncertain,3,"Sure! A common bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the body.",False,False
+ale_14_3_u,ale_14_3,uncertain,4,"Sure! A common bone in the human body is the femur, which is the thigh bone and the longest bone in the body.",False,False
+ale_14_3_u,ale_14_3,uncertain,5,"Sure! One example of a bone in the human body is the femur, which is the thigh bone and the longest bone in the human skeleton.",False,False
+ale_14_3_u,ale_14_3,uncertain,6,"Sure! One common bone in the human body is the femur, which is the thigh bone and the longest bone in the body.",False,False
+ale_14_3_u,ale_14_3,uncertain,7,"Sure! A bone in the human body is the femur, which is the thigh bone and the longest bone in the body.",False,False
+ale_14_3_u,ale_14_3,uncertain,8,"Sure! One example of a bone in the human body is the femur, which is the thigh bone and the longest bone in the human skeleton.",False,False
+ale_14_3_u,ale_14_3,uncertain,9,"Sure! One common bone in the human body is the femur, which is the thigh bone and the longest bone in the body.",False,False
+ale_14_5_c,ale_14_5,control,0,"The longest bone in the human body is the femur, which is located in the thigh. It extends from the knee to the hip and plays a crucial role in supporting the weight of the upper body and facilitating movement.",False,False
+ale_14_5_c,ale_14_5,control,1,"The longest bone in the human body is the femur, which is located in the thigh. It extends from the knee to the hip and plays a crucial role in supporting the weight of the upper body and facilitating movement.",False,False
+ale_14_5_c,ale_14_5,control,2,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_5_c,ale_14_5,control,3,"The longest bone in the human body is the femur, which is located in the thigh. It extends from the knee to the hip and plays a crucial role in supporting the weight of the upper body and facilitating movement.",False,False
+ale_14_5_c,ale_14_5,control,4,"The longest bone in the human body is the femur, which is located in the thigh. It extends from the knee to the hip and plays a crucial role in supporting the body's weight and facilitating movement.",False,False
+ale_14_5_c,ale_14_5,control,5,"The longest bone in the human body is the femur, which is located in the thigh. It extends from the knee to the hip and plays a crucial role in supporting the body's weight and facilitating movement.",False,False
+ale_14_5_c,ale_14_5,control,6,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_5_c,ale_14_5,control,7,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_5_c,ale_14_5,control,8,"The longest bone in the human body is the femur, which is located in the thigh.",False,False
+ale_14_5_c,ale_14_5,control,9,"The longest bone in the human body is the femur, which is located in the thigh. It extends from the knee to the hip and plays a crucial role in supporting the body's weight and enabling movement.",False,False
+ale_14_5_u,ale_14_5,uncertain,0,"Sure! One of the bones in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,True
+ale_14_5_u,ale_14_5,uncertain,1,"Certainly! One common bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_5_u,ale_14_5,uncertain,2,"Sure! A common bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_5_u,ale_14_5,uncertain,3,"Certainly! One common bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_5_u,ale_14_5,uncertain,4,"Certainly! One example of a bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_5_u,ale_14_5,uncertain,5,"Sure! A common bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human skeleton.",False,False
+ale_14_5_u,ale_14_5,uncertain,6,"Certainly! One example of a bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body. It connects the pelvis to the knee.",False,False
+ale_14_5_u,ale_14_5,uncertain,7,"Certainly! One example of a bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body.",False,False
+ale_14_5_u,ale_14_5,uncertain,8,"Certainly! One example of a bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body.",False,False
+ale_14_5_u,ale_14_5,uncertain,9,"Certainly! One example of a bone in the human body is the femur, which is the thigh bone and the longest and strongest bone in the human body.",False,False
+ale_17_1_c,ale_17_1,control,0,Yellow,False,False
+ale_17_1_c,ale_17_1,control,1,Yellow,False,False
+ale_17_1_c,ale_17_1,control,2,Yellow,False,False
+ale_17_1_c,ale_17_1,control,3,Yellow,False,False
+ale_17_1_c,ale_17_1,control,4,Yellow,False,False
+ale_17_1_c,ale_17_1,control,5,Yellow,False,False
+ale_17_1_c,ale_17_1,control,6,Yellow,False,False
+ale_17_1_c,ale_17_1,control,7,Yellow,False,False
+ale_17_1_c,ale_17_1,control,8,Yellow,False,False
+ale_17_1_c,ale_17_1,control,9,Yellow,False,False
+ale_17_1_u,ale_17_1,uncertain,0,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,1,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,2,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,3,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,4,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,5,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,6,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,7,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,8,Red,False,False
+ale_17_1_u,ale_17_1,uncertain,9,Red,False,False
+ale_18_1_c,ale_18_1,control,0,7,False,False
+ale_18_1_c,ale_18_1,control,1,7,False,False
+ale_18_1_c,ale_18_1,control,2,7,False,False
+ale_18_1_c,ale_18_1,control,3,7,False,False
+ale_18_1_c,ale_18_1,control,4,7,False,False
+ale_18_1_c,ale_18_1,control,5,7,False,False
+ale_18_1_c,ale_18_1,control,6,7,False,False
+ale_18_1_c,ale_18_1,control,7,7,False,False
+ale_18_1_c,ale_18_1,control,8,7,False,False
+ale_18_1_c,ale_18_1,control,9,7,False,False
+ale_18_1_u,ale_18_1,uncertain,0,3,False,False
+ale_18_1_u,ale_18_1,uncertain,1,3,False,False
+ale_18_1_u,ale_18_1,uncertain,2,3,False,False
+ale_18_1_u,ale_18_1,uncertain,3,3,False,False
+ale_18_1_u,ale_18_1,uncertain,4,3,False,False
+ale_18_1_u,ale_18_1,uncertain,5,Seven,False,False
+ale_18_1_u,ale_18_1,uncertain,6,3,False,False
+ale_18_1_u,ale_18_1,uncertain,7,Seven,False,False
+ale_18_1_u,ale_18_1,uncertain,8,3,False,False
+ale_18_1_u,ale_18_1,uncertain,9,3,False,False
+ale_18_5_c,ale_18_5,control,0,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,1,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,2,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,3,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,4,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,5,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,6,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,7,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,8,The number that comes after 6 is 7.,False,False
+ale_18_5_c,ale_18_5,control,9,The number that comes after 6 is 7.,False,False
+ale_18_5_u,ale_18_5,uncertain,0,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,1,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,2,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,3,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,4,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,5,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,6,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,7,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,8,Sure! How about the number 7?,False,False
+ale_18_5_u,ale_18_5,uncertain,9,Sure! How about the number 7?,False,False
+ale_19_0_c,ale_19_0,control,0,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,1,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,2,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,3,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,4,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,5,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,6,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,7,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,8,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_c,ale_19_0,control,9,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_0_u,ale_19_0,uncertain,0,Certainly! One example of a mammal is the elephant.,False,False
+ale_19_0_u,ale_19_0,uncertain,1,Certainly! A common example of a mammal is the dog (Canis lupus familiaris).,False,False
+ale_19_0_u,ale_19_0,uncertain,2,A common example of a mammal is the dog.,False,False
+ale_19_0_u,ale_19_0,uncertain,3,Certainly! One example of a mammal is the elephant.,False,False
+ale_19_0_u,ale_19_0,uncertain,4,Certainly! One example of a mammal is the domestic dog (Canis lupus familiaris).,False,False
+ale_19_0_u,ale_19_0,uncertain,5,A common example of a mammal is the domestic dog (Canis lupus familiaris).,False,False
+ale_19_0_u,ale_19_0,uncertain,6,Certainly! One example of a mammal is the elephant.,False,False
+ale_19_0_u,ale_19_0,uncertain,7,A common example of a mammal is the domestic dog (Canis lupus familiaris).,False,False
+ale_19_0_u,ale_19_0,uncertain,8,Certainly! A common example of a mammal is the dog.,False,False
+ale_19_0_u,ale_19_0,uncertain,9,A common example of a mammal is the dog.,False,False
+ale_19_2_c,ale_19_2,control,0,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,1,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,2,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,3,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,4,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,5,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,6,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,7,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,8,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_c,ale_19_2,control,9,The largest mammal on Earth is the blue whale.,False,False
+ale_19_2_u,ale_19_2,uncertain,0,Dog.,False,False
+ale_19_2_u,ale_19_2,uncertain,1,Dog,False,False
+ale_19_2_u,ale_19_2,uncertain,2,Dog,False,False
+ale_19_2_u,ale_19_2,uncertain,3,Dog,False,False
+ale_19_2_u,ale_19_2,uncertain,4,Dog.,False,False
+ale_19_2_u,ale_19_2,uncertain,5,Dog,False,False
+ale_19_2_u,ale_19_2,uncertain,6,Dog.,False,False
+ale_19_2_u,ale_19_2,uncertain,7,Dog,False,False
+ale_19_2_u,ale_19_2,uncertain,8,Dog,False,False
+ale_19_2_u,ale_19_2,uncertain,9,Dog,False,False
+ale_19_3_c,ale_19_3,control,0,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,1,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,2,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,3,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,4,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,5,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,6,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,7,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,8,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_c,ale_19_3,control,9,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_3_u,ale_19_3,uncertain,0,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,1,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,2,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,3,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,4,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,5,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,6,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,7,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,8,Sure! A common example of a mammal is the dog.,False,False
+ale_19_3_u,ale_19_3,uncertain,9,Sure! A common example of a mammal is the dog.,False,False
+ale_19_4_c,ale_19_4,control,0,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,1,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,2,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,3,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,4,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,5,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,6,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,7,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,8,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_c,ale_19_4,control,9,The largest mammal on Earth is the blue whale (Balaenoptera musculus).,False,False
+ale_19_4_u,ale_19_4,uncertain,0,Sure! One example of a mammal is the domestic dog (Canis lupus familiaris).,False,False
+ale_19_4_u,ale_19_4,uncertain,1,Sure! One example of a mammal is the elephant.,False,False
+ale_19_4_u,ale_19_4,uncertain,2,Sure! One example of a mammal is the domestic cat.,False,False
+ale_19_4_u,ale_19_4,uncertain,3,Sure! One example of a mammal is the domestic dog (Canis lupus familiaris).,False,False
+ale_19_4_u,ale_19_4,uncertain,4,Sure! One example of a mammal is the elephant.,False,False
+ale_19_4_u,ale_19_4,uncertain,5,Sure! One example of a mammal is the domestic cat.,False,False
+ale_19_4_u,ale_19_4,uncertain,6,Sure! One example of a mammal is the elephant.,False,False
+ale_19_4_u,ale_19_4,uncertain,7,Sure! One example of a mammal is the elephant.,False,False
+ale_19_4_u,ale_19_4,uncertain,8,Sure! One example of a mammal is the domestic dog (Canis lupus familiaris).,False,False
+ale_19_4_u,ale_19_4,uncertain,9,Sure! One example of a mammal is the domestic dog (Canis lupus familiaris).,False,False
+ale_19_5_c,ale_19_5,control,0,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet in length and weigh as much as 200 tons.,False,False
+ale_19_5_c,ale_19_5,control,1,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet (30 meters) in length and weigh as much as 200 tons,False,False
+ale_19_5_c,ale_19_5,control,2,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet in length and weigh as much as 200 tons.,False,False
+ale_19_5_c,ale_19_5,control,3,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet in length and weigh as much as 200 tons.,False,False
+ale_19_5_c,ale_19_5,control,4,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet in length and weigh as much as 200 tons.,False,False
+ale_19_5_c,ale_19_5,control,5,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet (30 meters) in length and weigh as much as 200 tons,False,False
+ale_19_5_c,ale_19_5,control,6,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet (30 meters) in length and weigh as much as 200 tons,False,False
+ale_19_5_c,ale_19_5,control,7,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet in length and weigh as much as 200 tons.,False,False
+ale_19_5_c,ale_19_5,control,8,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet in length and weigh as much as 200 tons.,False,False
+ale_19_5_c,ale_19_5,control,9,The largest mammal on Earth is the blue whale (Balaenoptera musculus). These magnificent creatures can grow up to 100 feet in length and weigh as much as 200 tons.,False,False
+ale_19_5_u,ale_19_5,uncertain,0,Sure! A common example of a mammal is the dog (Canis lupus familiaris).,False,False
+ale_19_5_u,ale_19_5,uncertain,1,Sure! A common example of a mammal is the dog (Canis lupus familiaris).,False,False
+ale_19_5_u,ale_19_5,uncertain,2,"Sure! A common example of a mammal is the dog. Dogs are warm-blooded, have hair or fur, and produce milk to feed their young, which are all characteristics of mammals.",False,False
+ale_19_5_u,ale_19_5,uncertain,3,Sure! A common example of a mammal is the dog. Dogs belong to the family Canidae and are known for their loyalty and companionship with humans.,False,False
+ale_19_5_u,ale_19_5,uncertain,4,Sure! A common example of a mammal is the dog (Canis lupus familiaris).,False,False
+ale_19_5_u,ale_19_5,uncertain,5,Sure! A common example of a mammal is the dog (Canis lupus familiaris).,False,False
+ale_19_5_u,ale_19_5,uncertain,6,"Sure! A common example of a mammal is the dog. Dogs are warm-blooded, give birth to live young (with the exception of some species like the platypus), and produce milk to feed their young.",False,False
+ale_19_5_u,ale_19_5,uncertain,7,Sure! A common example of a mammal is the dog. Dogs are warm-blooded vertebrates that are known for being loyal and intelligent companions. They produce milk to feed their young and have hair or fur covering their bodies.,False,False
+ale_19_5_u,ale_19_5,uncertain,8,Sure! A common example of a mammal is the dog (Canis lupus familiaris).,False,False
+ale_19_5_u,ale_19_5,uncertain,9,"Sure! A common example of a mammal is the dog. Dogs are warm-blooded, give birth to live young (with the exception of some species like the platypus), and produce milk to feed their offspring.",False,False

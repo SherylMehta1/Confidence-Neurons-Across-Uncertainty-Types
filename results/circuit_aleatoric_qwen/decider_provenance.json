@@ -1,0 +1,15 @@
+{
+  "purpose": "Decider for the Qwen aleatoric half-failure: is the late (L25-26) hedge log-odds gap entropy leakage into the readout, or a genuine half-verdict?",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "precision": "bf16",
+  "lens": "neuronpedia/jacobian-lens/qwen2.5-7b-it/jlens/Salesforce-wikitext/Qwen2.5-7B-Instruct_jacobian_lens.pt",
+  "prompts": "results/second_model/qwen25_7b_instruct/data/aleatoric/{prompts,controls}.jsonl, the 39 gated pairs matching jlens_trajectory.csv, chat_formatted_prompt used verbatim (md5-verified transfer)",
+  "sanity_check": "mean lens log-odds gap reproduced the committed run to 3 decimals: L25 +2.421, L26 +3.674, final +6.374",
+  "experiment_B": "lens decomposition of the uncertain-minus-control log-odds gap at L24-27 into hedge-side vs answer-side contributions, plus top-15 tokens by mean probability gain; files decider_expB_*.csv",
+  "experiment_C": "free generation without prefill, 10 samples per prompt per arm at T=0.7, max_new_tokens 48, seeds 10000+i; repo hedge regex plus broad qualifier detector; files decider_expC_*.csv",
+  "verdict": "Reading 1 (leakage). Hedge tokens hold ~1e-6 to 1e-5 probability in BOTH arms at L25-26 (no hedge decision exists to read out); the gap is produced by the generic answer channel (' the' 4.6e-3 -> 1.6e-5, ' that' 1.8e-4 -> 3.7e-6 at L26) deflating as mass spreads over concrete valid answers (top gained tokens ' February', ' Mars', ' Africa'); free-generation hedge rate 0/390 in both arms. A thin enumerative 'one of' phrasing appears on 20.5% of uncertain vs 0.5% of control completions, concentrated in 12/39 prompts and uncorrelated with the pair-level lens gap (r ~ 0.14-0.22).",
+  "environment": "molab sandbox, NVIDIA RTX PRO 6000 Blackwell, torch 2.11.0+cu130, transformers 5.14.1",
+  "related_local_test": "scripts/aleatoric_leakage_corr.py (per-pair corr of late log-odds gap vs entropy gap across arms, from committed jlens trajectories)",
+  "timestamp": "2026-08-30",
+  "git_baseline": "run against the working tree following 2448363 plus the 30 Aug mock-review fixes"
+}
