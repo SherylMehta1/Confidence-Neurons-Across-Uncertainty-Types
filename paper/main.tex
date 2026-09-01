@@ -103,7 +103,11 @@ against size-matched random sets. (4)~Faithfulness \citep{wang2023ioi}: the fina
 patched jointly on held-out pairs, both directions, against random sets, with the criterion
 \emph{recovery $>0.7$ with $<2\%$ of components}---fixed in the analysis code before the held-out runs,
 but not independently registered, and treated accordingly (\S\ref{sec:undecided}).
-(5)~The identical pipeline on a second arm and model, with component-set overlap. Recovery
+(5)~The identical pipeline on a second arm and model, with component-set overlap. (6)~Rank-1 direction
+patching: a per-layer unit direction (mean uncertain minus mean control residual at the last position)
+fit on the working pairs, its projection swapped between twins at all positions in the routed window,
+evaluated on the held-out pairs in both directions against ten random unit directions and ten random
+directions matched to the real one's projection onto the hedge-token unembeddings. Recovery
 $=(\text{patched}-\text{target})/(\text{source}-\text{target})$.
 
 \section{Results}
@@ -167,14 +171,21 @@ L12H28, L15H4, L15H7, L29H0), neurons Jaccard $0.11$, head-recovery Spearman $\r
 share a variable, not a full circuit.
 
 \paragraph{Decision vs.\ spread: two channels.}
-Rank-1 direction patching (swapping only the per-layer uncertainty-direction projection, all positions)
-dissects the transfer. \emph{Removing} the contested verdict through the direction alone---swapping the
-control twin's projection into the contested prompt---moves \emph{entropy} substantially ($0.57$) while
-moving the hedge log-odds not at all ($-0.10\,[-0.32,0.12]$); the full component set removes both ($0.89$
-log-odds, $0.33$ entropy), and the direction does suffice for the opposite move: injecting the unknown
-projection into the known prompt switches the hedge on at $0.97$. On familiarity the same split is graded
-(rank-1: $0.46\,[0.35,0.58]$ log-odds vs.\ set $0.80$), and it replicates cross-model (\qw{}: rank-1
-$0.46\,[0.34,0.59]$ vs.\ set $0.86$, entropy $0.84$). The full component set shows the same asymmetry: across all
+Rank-1 direction patching (swapping only the per-layer uncertainty-direction projection, all positions;
+directions fit on the working pairs, evaluated on the same held-out pairs as the circuit, recovery as
+above) dissects the transfer. \emph{Removing} the contested verdict through the direction alone (swapping
+the control twin's projection into the contested prompt) moves \emph{entropy} substantially ($0.57$)
+while moving the hedge log-odds not at all ($-0.10\,[-0.32,0.12]$; ten random unit directions:
+$0.00 \pm 0.01$); the full component set removes both ($0.89$ log-odds, $0.33$ entropy), and the
+direction does suffice for the opposite move: injecting the unknown projection into the known prompt
+switches the hedge on at $0.97\,[0.86,1.08]$, against $0.00 \pm 0.02$ for ten random unit directions
+(largest $0.03$) and $-0.01 \pm 0.02$ for ten random directions matched to the real one's projection
+onto the hedge-token unembeddings---the switch is direction-specific, not a generic perturbation. The
+direction's own on-minus-off difference is $+1.07\,[0.80,1.32]$ per pair (paired sign-flip permutation,
+$p<10^{-4}$). On familiarity the same split is graded (rank-1: $0.46\,[0.35,0.58]$ off vs.\ $0.81$ on,
+random directions $0.00$ either way, difference $+0.35\,[0.24,0.45]$, $p<10^{-4}$; set $0.80$), and it
+replicates cross-model (\qw{}: rank-1 $0.46\,[0.34,0.59]$ vs.\ set $0.86$, entropy
+$0.84$). The full component set shows the same asymmetry: across all
 four \lm{} cells, \emph{removing} the unknown signal (patching the known state into the uncertain prompt)
 moves the decision with little of the spread (entropy recovery $-0.13$ familiarity, $+0.33$ contested),
 while \emph{injecting} it moves both ($+0.45$, $+0.55$); a paired sign-flip permutation on per-pair
@@ -217,15 +228,16 @@ from L17 (`` I'' is present from L13), within the routing window (Figure~\ref{fi
 L17 the direction's entire top-10 is a hedge lexicon (`` unknown'', `` cannot'', `` unable'',
 `` unsure''). Each arm's direction speaks its own vocabulary: the contested direction verbalizes the
 \emph{conflict}---`` both''/`` either'' (L11--15) $\to$ `` conflicting''/`` contradictory'' (L16--20)
-$\to$ `` ambiguous''/`` inconsistent'' (L21--25), with `` unknown''/`` I'' never appearing---and the
+$\to$ `` ambiguous''/`` inconsistent'' (L21--25), with `` unknown''/`` I'' absent from the top-10 at every
+one of L10--25---and the
 aleatoric direction verbalizes the answer type itself, `` example'' (L14--20) giving way to `` any''
 (L21--25). Both vocabularies replicate in \qw{} at L20--24, partly in Chinese; \qw{}'s mid-stack
 decodings are noise, so its signal is late-stack only. The framework then makes a
 falsifiable prediction, stated before running: the aleatoric arm (spread without hedging) should show a
-lens entropy gap with no hedge log-odds gap and no verbalization. In \lm{} it held cleanly (final log-odds
-gap $+0.30$ vs.\ $+5.05$ familiarity / $+4.75$ contested; a transient L12--13 blip collapses; entropy gap
-$+1.0$); in \qw{} it held only partially (gap $+3.67$, ${\approx}44\%$ of its contested value, emerging
-only at L25--26). We report the half-failure as found; a follow-up decided what it is
+lens entropy gap with no hedge log-odds gap and no verbalization. In \lm{} it held cleanly (final-layer
+lens hedge log-odds gap, uncertain minus control: $+0.30$ vs.\ $+5.05$ familiarity / $+4.75$ contested; a
+transient L12--13 blip collapses; entropy gap $+1.0$ nats); in \qw{} it held only partially (log-odds gap
+$+3.67$, ${\approx}44\%$ of its contested value, emerging only at L25--26). We report the half-failure as found; a follow-up decided what it is
 (\S\ref{sec:undecided}b).
 
 \paragraph{Minimality.}

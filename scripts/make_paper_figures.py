@@ -164,20 +164,27 @@ axes[1].set_title("steering the direction on known twins")
 axes[1].legend(fontsize=7.5)
 fig.tight_layout(); save(fig, "fig5", svg=True)
 
-# ---- fig6: direction vs set, switch-on vs switch-off (Llama contested, held-out)
-dp = pd.read_csv("results/circuit_conflict/direction_patch.csv")
+# ---- fig6: direction vs random directions vs set, switch-on vs switch-off (Llama contested, held-out)
+# direction_patch_u2c_null.csv = the committed direction_patch.csv rows (bit-identical) + the random
+# unit directions run in BOTH patch directions.
+dp = pd.read_csv("results/circuit_conflict/direction_patch_u2c_null.csv")
 fa = pd.read_csv("results/circuit_conflict/faithfulness.csv")
 dir_on = dp[(dp["set"] == "direction") & (dp.direction == "uncertain_to_control")].logodds_rec.mean()
 dir_off = dp[(dp["set"] == "direction") & (dp.direction == "control_to_uncertain")].logodds_rec.mean()
+rnd = dp[dp["set"].str.startswith("random")]
+rnd_on = rnd[rnd.direction == "uncertain_to_control"].groupby("set").logodds_rec.mean().mean()
+rnd_off = rnd[rnd.direction == "control_to_uncertain"].groupby("set").logodds_rec.mean().mean()
 set_on = fa[(fa["set"] == "circuit") & (fa.direction == "uncertain_to_control")].logodds_rec.mean()
 set_off = fa[(fa["set"] == "circuit") & (fa.direction == "control_to_uncertain")].logodds_rec.mean()
-fig, ax = plt.subplots(figsize=(3.4, 2.5))
+fig, ax = plt.subplots(figsize=(3.6, 2.5))
 x = np.arange(2)
-ax.bar(x - 0.19, [dir_on, dir_off], width=0.36, color=AMBER, label="rank-1 direction")
-ax.bar(x + 0.19, [set_on, set_off], width=0.36, color=BLUE, label="full set (20 heads + 100 neurons)")
-for xi, v in zip([x[0] - 0.19, x[1] - 0.19, x[0] + 0.19, x[1] + 0.19],
-                 [dir_on, dir_off, set_on, set_off]):
-    ax.text(xi, v + 0.03 if v >= 0 else v - 0.09, f"{v:.2f}", ha="center", fontsize=8)
+w = 0.26
+ax.bar(x - w, [dir_on, dir_off], width=w, color=AMBER, label="rank-1 direction")
+ax.bar(x, [rnd_on, rnd_off], width=w, color=GREY, alpha=0.6, label="random unit directions (mean of 10)")
+ax.bar(x + w, [set_on, set_off], width=w, color=BLUE, label="full set (20 heads + 100 neurons)")
+for xi, v in zip([x[0] - w, x[1] - w, x[0], x[1], x[0] + w, x[1] + w],
+                 [dir_on, dir_off, rnd_on, rnd_off, set_on, set_off]):
+    ax.text(xi, v + 0.03 if v >= 0 else v - 0.09, f"{v:.2f}", ha="center", fontsize=7.5)
 ax.set_xticks(x); ax.set_xticklabels(["switch hedge ON\n(inject unknown)", "switch hedge OFF\n(remove unknown)"], fontsize=8)
 ax.set_ylabel("hedge log-odds recovery")
 ax.set_ylim(-0.3, 1.15); ax.axhline(0, color="0.85", lw=0.8, zorder=0)
