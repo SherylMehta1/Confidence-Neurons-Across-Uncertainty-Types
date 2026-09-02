@@ -19,6 +19,17 @@ __pycache__/
 # jupyter
 .ipynb_checkpoints
 
+# internal team docs, not for the public repo
+paper/EXPLAINER.md
+paper/dd.md
+
+# LaTeX build artifacts
+paper/main.aux
+paper/main.bbl
+paper/main.blg
+paper/main.out
+paper/main.pdf
+
 # run bookkeeping and transfer scratch
 runs/
 *.log

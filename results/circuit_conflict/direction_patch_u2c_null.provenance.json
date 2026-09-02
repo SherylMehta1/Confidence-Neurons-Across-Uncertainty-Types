@@ -1,0 +1,20 @@
+{
+  "purpose": "Random-unit-direction null for the rank-1 direction patch in BOTH patch directions (the committed direction_patch.csv has the null only for control_to_uncertain). Adds the missing baseline for the injection (uncertain_to_control) result.",
+  "script": "scripts/circuit_direction_patch_u2c_null.py (copy of scripts/circuit_direction_patch.py; the only functional change is running each random direction in the uncertain_to_control direction too)",
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct (pulled via ungated mirror unsloth/Meta-Llama-3.1-8B-Instruct)",
+  "precision": "bf16",
+  "invocation": {
+    "conflict": "--category conflict --layers 11-21 --limit 60 --n-random 10 --seed 42 (164 working pairs fit the directions; 60 held-out pairs evaluated)",
+    "familiarity": "--category familiarity --layers 13-19 --limit 60 --n-random 10 --seed 42 (59 held-out pairs evaluated)"
+  },
+  "sanity_check": "every row shared with the committed direction_patch.csv (direction both ways, random control_to_uncertain) reproduced bit-identically: max |diff| = 0.0 in log-odds and entropy recovery for both arms",
+  "results_logodds_recovery": {
+    "conflict": {"direction_c2u": -0.099, "direction_u2c": 0.970, "random_c2u_mean_of_10": 0.001, "random_u2c_mean_of_10": 0.002, "random_u2c_sd": 0.020, "random_u2c_max": 0.034},
+    "familiarity": {"direction_c2u": 0.464, "direction_u2c": 0.812, "random_c2u_mean_of_10": -0.003, "random_u2c_mean_of_10": -0.000, "random_u2c_sd": 0.005, "random_u2c_max": 0.007}
+  },
+  "stretch_control": "direction_patch_u2c_hedgematched.csv: 10 random unit directions whose projections onto the 5 hedge-token unembedding rows (lm_head rows for ' not', ' I', ' unknown', ' unclear', ' no') are set equal to the real direction's (QR basis; max |W r - W d| = 3e-8; cos(r, d_real) ~ 1e-4), orthogonal remainder rescaled to unit norm. Conflict arm, uncertain_to_control: log-odds recovery -0.005 +- 0.023 (max +0.041), entropy +0.005, vs the real direction's +0.970 reproduced in the same run. Caveat: the real direction holds only 0.26% of its squared norm inside the hedge-unembedding span, so this null is only slightly stronger than the plain random one.",
+  "verdict": "Injecting a random unit direction does not switch the hedge on (~30x below the real direction); the rank-1 injection result is direction-specific and survives matching the hedge-logit projection.",
+  "environment": "molab sandbox, NVIDIA RTX PRO 6000, torch 2.11.0+cu130, transformers 5.14.1",
+  "timestamp": "2026-08-30",
+  "companion_files": ["results/circuit_familiarity/direction_patch_u2c_null.csv", "results/circuit_conflict/direction_patch_u2c_hedgematched.csv", "results/circuit_conflict/direction_patch_u2c_hedgematched_diag.csv"]
+}
