@@ -99,6 +99,34 @@ def slick_class(greedy_ok, frac_ok):
     return "Maybe"
 
 
+def item_key(r):
+    """(relation, subject) is unique per candidate: a subject falls in exactly one
+    popularity arm per relation, so this is stable across resumed runs."""
+    return f"{r['prop']}::{r['subj']}"
+
+
+def _json_default(o):
+    if isinstance(o, np.floating):
+        return float(o)
+    if isinstance(o, np.integer):
+        return int(o)
+    if isinstance(o, np.ndarray):
+        return o.tolist()
+    raise TypeError(f"not JSON serializable: {type(o)}")
+
+
+def load_checkpoint(path):
+    """Every item already scored in a previous (possibly interrupted) run,
+    keyed by item_key. Empty dict if the file doesn't exist yet."""
+    done = {}
+    if path.exists():
+        for line in open(path, encoding="utf-8"):
+            if line.strip():
+                item = json.loads(line)
+                done[item_key(item)] = item
+    return done
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     add_model_args(ap)
@@ -107,7 +135,7 @@ def main():
     ap.add_argument("--lo-quantile", type=float, default=0.10)
     ap.add_argument("--hi-quantile", type=float, default=0.90)
     ap.add_argument("--n-samples", type=int, default=10)
-    ap.add_argument("--n-free", type=int, default=3)
+    ap.add_argument("--n-free", type=int, default=20)
     ap.add_argument("--entropy-gap", type=float, default=0.5)
     ap.add_argument("--hedge-gap", type=float, default=0.3)
     ap.add_argument("--max-len-diff", type=int, default=3)
@@ -147,27 +175,51 @@ def main():
     print(f"{len(cands)} candidates over {len(props)} relations; labeling with greedy + {args.n_samples} samples ...")
 
     # ---- label by sampled correctness; measure entropy and hedging ----
+    # Every scored item (not just the ones that end up as twins) is appended to
+    # all_measured.jsonl as it's produced. That file doubles as: (1) the full-pool
+    # retention output (MaybeKnown + off-diagonal items are preserved for later
+    # frequency/knowledge-matched twin construction), and (2) a checkpoint --
+    # items already present here on startup are skipped and reused rather than
+    # re-scored, so a crash/kill partway through only costs the items in flight.
+    measured_path = out_dir / "all_measured.jsonl"
+    if args.overwrite and measured_path.exists():
+        measured_path.unlink()
+    done = load_checkpoint(measured_path)
+    if done:
+        print(f"resuming: {len(done)} items already scored in {measured_path.name}")
+
     labeled = []
-    for i, r in enumerate(cands):
-        q = r["question"].strip()
-        aliases = json.loads(r["possible_answers"]) if isinstance(r["possible_answers"], str) else list(r["possible_answers"])
-        chat = build_completion_prompt(tokenizer, q, cloze_suffix=PREFILL, ensure_question_mark=True)["chat_formatted_prompt"]
-        g = greedy_answer(model, tokenizer, chat)
-        samples = sample_answers(model, tokenizer, chat, args.n_samples)
-        oks = [is_correct(s, aliases) for s in samples]
-        frac = float(np.mean(oks))
-        cls = slick_class(is_correct(g, aliases), frac)
-        probs = get_next_token_probs(model, tokenizer, chat)
-        H = compute_entropy(probs)
-        free_prompt = format_chat_prompt(tokenizer, q if q.endswith("?") else q + "?")
-        free = sample_answers(model, tokenizer, free_prompt, args.n_free, temperature=0.7, max_new_tokens=24)
-        hedge = float(np.mean([bool(HEDGE_RE.search(f)) for f in free]))
-        distinct = len({normalize(s) for s in samples if normalize(s)})
-        labeled.append(dict(r, q=q, aliases=aliases, chat=chat, greedy=g, samples=samples, frac_correct=frac,
-                            slick=cls, entropy=H, top1=float(probs.max()), hedge_rate=hedge, free=free,
-                            n_distinct=distinct, n_q_tokens=len(tokenizer(q, add_special_tokens=False)["input_ids"])))
-        if (i + 1) % 25 == 0:
-            print(f"  {i + 1}/{len(cands)} labeled")
+    n_resumed = 0
+    with open(measured_path, "a", encoding="utf-8") as measured_f:
+        for i, r in enumerate(cands):
+            key = item_key(r)
+            if key in done:
+                labeled.append(done[key])
+                n_resumed += 1
+                continue
+            q = r["question"].strip()
+            aliases = json.loads(r["possible_answers"]) if isinstance(r["possible_answers"], str) else list(r["possible_answers"])
+            chat = build_completion_prompt(tokenizer, q, cloze_suffix=PREFILL, ensure_question_mark=True)["chat_formatted_prompt"]
+            g = greedy_answer(model, tokenizer, chat)
+            samples = sample_answers(model, tokenizer, chat, args.n_samples)
+            oks = [is_correct(s, aliases) for s in samples]
+            frac = float(np.mean(oks))
+            cls = slick_class(is_correct(g, aliases), frac)
+            probs = get_next_token_probs(model, tokenizer, chat)
+            H = compute_entropy(probs)
+            free_prompt = format_chat_prompt(tokenizer, q if q.endswith("?") else q + "?")
+            free = sample_answers(model, tokenizer, free_prompt, args.n_free, temperature=0.7, max_new_tokens=24)
+            hedge = float(np.mean([bool(HEDGE_RE.search(f)) for f in free]))
+            distinct = len({normalize(s) for s in samples if normalize(s)})
+            item = dict(r, q=q, aliases=aliases, chat=chat, greedy=g, samples=samples, frac_correct=frac,
+                       slick=cls, entropy=H, top1=float(probs.max()), hedge_rate=hedge, free=free,
+                       n_distinct=distinct, n_q_tokens=len(tokenizer(q, add_special_tokens=False)["input_ids"]))
+            labeled.append(item)
+            measured_f.write(json.dumps(item, ensure_ascii=False, default=_json_default) + "\n")
+            measured_f.flush()
+            if (i + 1) % 25 == 0:
+                print(f"  {i + 1}/{len(cands)} labeled ({n_resumed} resumed)")
+    print(f"{len(labeled)} items scored total ({n_resumed} resumed from checkpoint, {len(labeled) - n_resumed} newly labeled)")
 
     # ---- pair within relation and gate ----
     pairs, cwrong, fails = [], [], {"no_unknown_or_known": 0, "len": 0, "entropy": 0, "hedge": 0}

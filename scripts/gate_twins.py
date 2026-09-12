@@ -60,10 +60,14 @@ def main():
     ap.add_argument("--candidates", required=True)
     ap.add_argument("--category", required=True)
     ap.add_argument("--n-samples", type=int, default=10)
-    ap.add_argument("--n-free", type=int, default=3)
+    ap.add_argument("--n-free", type=int, default=20)
     ap.add_argument("--entropy-gap", type=float, default=0.5)
     ap.add_argument("--hedge-gap", type=float, default=0.3)
     ap.add_argument("--max-len-diff", type=int, default=3)
+    ap.add_argument("--uncertain-class", default="Unknown",
+                    help="slick_class label the uncertain side must have to pass the gate (default: current behavior)")
+    ap.add_argument("--control-class", default="HighlyKnown",
+                    help="slick_class label the control side must have to pass the gate (default: current behavior)")
     ap.add_argument("--require-hedge", action="store_true", default=True)
     ap.add_argument("--no-require-hedge", dest="require_hedge", action="store_false", help="for dissociation controls (aleatoric)")
     ap.add_argument("--seed", type=int, default=42)
@@ -83,9 +87,9 @@ def main():
         u = measure_side(model, tokenizer, c["uncertain"]["question"], c["uncertain"].get("gold"), ctx.get("uncertain"), prefill, args.n_samples, args.n_free)
         k = measure_side(model, tokenizer, c["control"]["question"], c["control"].get("gold"), ctx.get("control"), prefill, args.n_samples, args.n_free)
         measured.append((c, u, k))
-        if k["slick"] != "HighlyKnown":
+        if k["slick"] != args.control_class:
             fails["control_not_known"] += 1; continue
-        if u["gold"] and u["slick"] != "Unknown":
+        if u["gold"] and u["slick"] != args.uncertain_class:
             fails["uncertain_not_unknown"] += 1; continue
         if u["gold"] and u["n_distinct"] <= 1 and u["frac_correct"] == 0.0:
             cwrong.append((c, u, k)); continue
@@ -124,7 +128,8 @@ def main():
             f.write(json.dumps(dict(twin_id=c["twin_id"], uncertain={x: u[x] for x in keep}, control={x: k[x] for x in keep}), ensure_ascii=False) + "\n")  # full record so failed candidates can be re-judged
     report = dict(category=args.category, model=args.model_id, precision=getattr(model, "cn_precision", None), n_candidates=len(cands),
                   n_pairs=len(pairs), n_working=n_work, n_held_out=len(pairs) - n_work, n_consistently_wrong=len(cwrong), fails=fails,
-                  gate=dict(entropy_gap=args.entropy_gap, hedge_gap=args.hedge_gap, require_hedge=args.require_hedge, max_len_diff=args.max_len_diff),
+                  gate=dict(entropy_gap=args.entropy_gap, hedge_gap=args.hedge_gap, require_hedge=args.require_hedge, max_len_diff=args.max_len_diff,
+                           uncertain_class=args.uncertain_class, control_class=args.control_class),
                   mean_entropy_uncertain=float(np.mean([u["entropy"] for _, u, _ in pairs])) if pairs else None,
                   mean_entropy_control=float(np.mean([k["entropy"] for _, _, k in pairs])) if pairs else None,
                   mean_hedge_uncertain=float(np.mean([u["hedge_rate"] for _, u, _ in pairs])) if pairs else None,
