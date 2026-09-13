@@ -1,22 +1,22 @@
 {
   "model": "unsloth/Meta-Llama-3.1-8B-Instruct",
   "precision": "bf16",
-  "n_candidates": 1151,
+  "n_candidates": 1124,
   "n_relations": 16,
   "slick_counts": {
-    "HighlyKnown": 362,
-    "Maybe": 164,
-    "Unknown": 625
+    "HighlyKnown": 345,
+    "Maybe": 158,
+    "Unknown": 621
   },
-  "n_pairs": 181,
-  "n_working": 126,
-  "n_held_out": 55,
-  "n_consistently_wrong": 6,
+  "n_pairs": 207,
+  "n_working": 144,
+  "n_held_out": 63,
+  "n_consistently_wrong": 4,
   "fails": {
     "no_unknown_or_known": 0,
-    "len": 130,
-    "entropy": 53,
-    "hedge": 113
+    "len": 147,
+    "entropy": 42,
+    "hedge": 68
   },
   "gate": {
     "entropy_gap": 0.5,
@@ -25,26 +25,26 @@
     "n_samples": 10,
     "n_free": 20
   },
-  "mean_entropy_uncertain": 3.728105224627816,
-  "mean_entropy_control": 0.883190783543399,
-  "mean_hedge_uncertain": 0.9447513812154696,
-  "mean_hedge_control": 0.014917127071823206,
+  "mean_entropy_uncertain": 3.7237945236445626,
+  "mean_entropy_control": 0.9119102112624956,
+  "mean_hedge_uncertain": 0.9475845410628019,
+  "mean_hedge_control": 0.016908212560386472,
   "pairs_per_relation": {
-    "author": 30,
+    "author": 26,
     "capital": 10,
-    "capital of": 12,
+    "capital of": 11,
     "color": 1,
-    "composer": 13,
+    "composer": 20,
     "country": 5,
-    "director": 13,
-    "father": 27,
-    "genre": 5,
-    "mother": 10,
-    "occupation": 3,
-    "place of birth": 8,
-    "producer": 8,
+    "director": 33,
+    "father": 25,
+    "genre": 4,
+    "mother": 11,
+    "occupation": 9,
+    "place of birth": 5,
+    "producer": 12,
     "religion": 8,
-    "screenwriter": 22,
-    "sport": 6
+    "screenwriter": 20,
+    "sport": 7
   }
 }
