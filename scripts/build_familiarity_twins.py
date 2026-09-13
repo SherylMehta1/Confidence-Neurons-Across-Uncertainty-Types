@@ -150,6 +150,19 @@ def main():
     from datasets import load_dataset
     ds = load_dataset(POPQA, split="test")
     rows = [dict(r) for r in ds]
+    n_raw = len(rows)
+    seen_keys = set()
+    deduped = []
+    for r in rows:
+        key = (r["prop"], r["subj"])
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        deduped.append(r)
+    rows = deduped
+    if len(rows) != n_raw:
+        print(f"deduped PopQA rows by (relation, subject): {n_raw} -> {len(rows)} "
+             f"({n_raw - len(rows)} duplicate rows dropped)")
     props = sorted({r["prop"] for r in rows})
     if args.relations:
         props = [p for p in props if p in set(args.relations.split(","))]
