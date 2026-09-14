@@ -1,0 +1,5 @@
+Faithfulness -- familiarity_v2; 20 heads (1.95% of all heads) + 100 neurons (0.022% of all MLP neurons); 60 held-out pairs
+  control -> uncertain: log-odds recovery +0.910, entropy recovery +0.144
+  uncertain -> control: log-odds recovery +1.114, entropy recovery +0.544
+  random sets (same size, c->u): log-odds recovery +0.029 +- 0.030 over 10 sets
+  verdict: CIRCUIT (>0.7 recovery, <2% of heads and of neurons)
