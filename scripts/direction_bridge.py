@@ -121,6 +121,10 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     add_model_args(ap)
     ap.add_argument("--category", default="lack_of_knowledge")
+    ap.add_argument("--hedging-category", default=None,
+                    help="source the hedging direction from this category instead of --category. Use when the "
+                         "twin set is gated on hedging (so it has no real non-hedgers): its prompts side supplies "
+                         "the hedgers and its controls side the non-hedgers.")
     ap.add_argument("--layer-range", default="20-31")
     ap.add_argument("--direction-layer", type=int, default=None, help="layer whose directions are used for neuron cosines (default: last scanned)")
     ap.add_argument("--behavioral", default="results/behavioral_bf16.csv")
@@ -152,13 +156,26 @@ def main():
         clean = beh[beh.condition == "clean"].set_index("prompt_id")
         hedged = np.array([bool(clean.hedged.get(r["prompt_id"], False)) for r in work])
     unc = ~is_ctrl
-    if hedged[unc].sum() < 5 or (~hedged[unc]).sum() < 5:
-        print("WARNING: too few hedged/non-hedged uncertain prompts for a hedging direction")
+
+    hedging_cat = args.hedging_category or args.category
+    if hedging_cat == args.category:
+        Xh, h_pos, h_neg = X, unc & hedged, unc & ~hedged
+    else:
+        h_prompts, h_ctrls = load_category(hedging_cat)
+        h_recs = [dict(r, is_control=False) for r in h_prompts] + [dict(r, is_control=True) for r in h_ctrls]
+        h_work = [r for r in h_recs if r["split"] == "working"]
+        Xh = last_token_residuals(model, tokenizer, [r["chat_formatted_prompt"] for r in h_work], layers)
+        h_is_ctrl = np.array([r["is_control"] for r in h_work])
+        h_pos, h_neg = ~h_is_ctrl, h_is_ctrl
+        print(f"[hedging] sourced from {hedging_cat}: {len(h_work)} working prompts")
+    if h_pos.sum() < 5 or h_neg.sum() < 5:
+        print(f"WARNING: too few hedged/non-hedged prompts for a hedging direction "
+              f"({int(h_pos.sum())} vs {int(h_neg.sum())}; source: {hedging_cat})")
 
     fam, hed, cos_fh = {}, {}, {}
     for l in layers:
         fam[l] = diff_of_means(X[l], unc, is_ctrl)
-        hed[l] = diff_of_means(X[l], unc & hedged, unc & ~hedged)
+        hed[l] = diff_of_means(Xh[l], h_pos, h_neg)
         cos_fh[l] = float(fam[l] @ hed[l])
     np.savez(out_dir / "direction_bridge_directions.npz", **{f"familiarity_L{l}": fam[l].numpy() for l in layers},
              **{f"hedging_L{l}": hed[l].numpy() for l in layers})
@@ -173,7 +190,8 @@ def main():
     df["is_key"] = df.neuron_id.isin(key)
     df.to_csv(out_csv, index=False)
 
-    lines = [f"Direction bridge -- {args.category}; directions at layer {dl}; neurons scanned in layers {layers}",
+    lines = [f"Direction bridge -- {args.category}; directions at layer {dl}; neurons scanned in layers {layers}"
+             + (f"; hedging direction sourced from {hedging_cat}" if hedging_cat != args.category else ""),
              "cos(familiarity, hedging) per layer: " + ", ".join(f"L{l}:{cos_fh[l]:+.2f}" for l in layers), "",
              "Key neurons (cosine of gamma*w_out with each direction; percentile of |cos| among all scanned neurons):"]
     for r in df[df.is_key].itertuples():
@@ -199,6 +217,7 @@ def main():
     print(summary)
     (out_dir / "direction_bridge_summary.txt").write_text(summary + "\n")
     write_provenance(out_csv, build_provenance(model, script="scripts/direction_bridge.py", category=args.category,
+                                               hedging_category=hedging_cat,
                                                layers=layers, direction_layer=dl, key_neurons=key, behavioral=args.behavioral,
                                                steer=args.steer, hedge_tokens=HEDGE_TOKENS, answer_tokens=ANSWER_TOKENS))
     print(f"wrote {out_csv}")

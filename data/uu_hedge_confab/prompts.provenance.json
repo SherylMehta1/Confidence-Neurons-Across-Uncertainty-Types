@@ -1,0 +1,13 @@
+{
+  "script": "scripts/build_uu_hedge_confab.py",
+  "source": "data/familiarity_v2/all_measured.jsonl",
+  "out_category": "uu_hedge_confab",
+  "hedger_min": 0.8,
+  "confab_max": 0.1,
+  "confab_max_distinct": 10,
+  "max_len_diff": 3,
+  "entropy_tol": 0.3,
+  "seed": 42,
+  "overwrite": true,
+  "dry_run": false
+}
