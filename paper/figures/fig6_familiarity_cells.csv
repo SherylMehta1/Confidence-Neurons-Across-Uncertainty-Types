@@ -1,0 +1,17 @@
+readout,direction,series,mean,ci_lo,ci_hi,n,ci_type
+logodds_rec,uncertain_to_control,rank-1 direction,0.9629087523752525,0.8905473379867027,1.0407621782072412,60,bootstrap_pairs
+logodds_rec,uncertain_to_control,random unit directions,0.0020153111241594302,-0.005007450054975831,0.009038072303294691,10,normal_across_sets
+logodds_rec,uncertain_to_control,projection-matched random directions,0.00246523108869199,-0.006018648086754912,0.010949110264138891,10,normal_across_sets
+logodds_rec,uncertain_to_control,full set (20h+100n),1.114340512862824,1.0436024399637784,1.1887901748483647,60,bootstrap_pairs
+logodds_rec,control_to_uncertain,rank-1 direction,0.5457074049562128,0.46882630468784675,0.6292877183942341,60,bootstrap_pairs
+logodds_rec,control_to_uncertain,random unit directions,-0.0016289530669287486,-0.014436608019275066,0.01117870188541757,10,normal_across_sets
+logodds_rec,control_to_uncertain,projection-matched random directions,,,,0,normal_across_sets
+logodds_rec,control_to_uncertain,full set (20h+100n),0.9096801067540807,0.8237296608762068,1.00169821247673,60,bootstrap_pairs
+entropy_rec,uncertain_to_control,rank-1 direction,0.6072837181684339,0.4976828179385207,0.7224171107245407,60,bootstrap_pairs
+entropy_rec,uncertain_to_control,random unit directions,0.0004903070061997211,-0.008826006712361403,0.009806620724760847,10,normal_across_sets
+entropy_rec,uncertain_to_control,projection-matched random directions,0.00042799859569670335,-0.0063572893021203785,0.007213286493513786,10,normal_across_sets
+entropy_rec,uncertain_to_control,full set (20h+100n),0.5436348396414016,0.4612543329085036,0.6352776456065397,60,bootstrap_pairs
+entropy_rec,control_to_uncertain,rank-1 direction,0.40439302157990725,0.32993984230772466,0.48469160159040825,60,bootstrap_pairs
+entropy_rec,control_to_uncertain,random unit directions,0.0013490363707041601,-0.014666946898130476,0.017365019639538796,10,normal_across_sets
+entropy_rec,control_to_uncertain,projection-matched random directions,,,,0,normal_across_sets
+entropy_rec,control_to_uncertain,full set (20h+100n),0.14412483570655024,0.052100650740979554,0.23800662078159193,60,bootstrap_pairs
