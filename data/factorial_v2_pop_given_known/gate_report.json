@@ -1,0 +1,36 @@
+{
+  "contrast": "pop_given_known",
+  "prompts_cell": "obscure_known",
+  "controls_cell": "popular_known",
+  "source": "data/familiarity_v2/all_measured.jsonl",
+  "n_available": {
+    "obscure_known": 69,
+    "popular_known": 430
+  },
+  "n_pairs": 46,
+  "n_working": 32,
+  "n_held_out": 14,
+  "unmatched": {
+    "no_partner_in_relation": 0,
+    "len": 23
+  },
+  "tiebreak": "length",
+  "pairs_per_relation": {
+    "capital": 12,
+    "color": 1,
+    "composer": 1,
+    "country": 26,
+    "father": 1,
+    "sport": 5
+  },
+  "mean_gap_prompts_minus_controls": {
+    "entropy": 0.29837310690756724,
+    "hedge_rate": 0.7619565217391304,
+    "log_pop": -6.5713238311685505
+  },
+  "balance_smd": {
+    "log_pop": -4.286631532250633,
+    "n_q_tokens": 0.8916905588592917
+  },
+  "note": "no entropy/hedge gate: those gaps are the factorial's outcomes, recorded here, not selection criteria"
+}

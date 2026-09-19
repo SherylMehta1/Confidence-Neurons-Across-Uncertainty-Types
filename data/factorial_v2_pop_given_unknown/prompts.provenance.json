@@ -1,0 +1,9 @@
+{
+  "script": "scripts/build_frequency_knowledge_factorial.py",
+  "contrast": "pop_given_unknown",
+  "source": "data/familiarity_v2/all_measured.jsonl",
+  "prefix": "factorial_v2",
+  "max_len_diff": 3,
+  "seed": 42,
+  "overwrite": false
+}
