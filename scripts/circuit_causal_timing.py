@@ -34,7 +34,7 @@ import numpy as np
 import pandas as pd
 
 from _common import REPO_ROOT, add_model_args, guard_output, load_model_from_args
-from circuit_common import Readout, encode_pair, load_pairs, recovery, reverse_map, run_capture, run_patched
+from circuit_common import Readout, encode_pair, load_pairs, position_map, recovery, reverse_map, run_capture, run_patched
 from circuit_faithfulness import all_position_pairs
 from shared.provenance import build_provenance, write_provenance
 
@@ -59,9 +59,14 @@ def main():
     ap.add_argument("--mode", choices=("up_to", "from"), default="up_to")
     ap.add_argument("--layers", default=None, help="comma list of layers to sweep (default: every layer)")
     ap.add_argument("--limit", type=int, default=60, help="held-out pairs")
+    ap.add_argument("--positions", choices=("all", "suffix", "entity", "last"), default="all",
+                    help="which aligned positions to patch. 'all' (prefix+entity+suffix) is nearly a token swap "
+                         "at the entity positions and saturates early; 'suffix' patches only the readout-side "
+                         "positions, so the transition is the layer the decision reaches the readout")
     args = ap.parse_args()
     out_dir = REPO_ROOT / args.out_dir
-    out_csv = out_dir / f"causal_timing_{args.mode}.csv"
+    tag = f"{args.mode}" + ("" if args.positions == "all" else f"_{args.positions}")
+    out_csv = out_dir / f"causal_timing_{tag}.csv"
     guard_output(out_csv, args.overwrite)
 
     model, tokenizer = load_model_from_args(args)
@@ -76,7 +81,7 @@ def main():
     rows = []
     for k, (u, c) in enumerate(pairs):
         enc_u, enc_c, al = encode_pair(model, tokenizer, u, c)
-        pm = all_position_pairs(al)
+        pm = all_position_pairs(al) if args.positions == "all" else position_map(al, args.positions)
         lg_u, src_u = run_capture(model, enc_u, list(range(L)), "resid")
         lg_c, src_c = run_capture(model, enc_c, list(range(L)), "resid")
         lo_u, H_u, lo_c, H_c = ro.logodds(lg_u).item(), ro.entropy(lg_u).item(), ro.logodds(lg_c).item(), ro.entropy(lg_c).item()
@@ -105,9 +110,9 @@ def main():
             summ.append(dict(layer=l, direction=direc, logodds_rec_mean=float(g.logodds_rec.mean()), ci_lo=float(lo), ci_hi=float(hi),
                              entropy_rec_mean=float(g.entropy_rec.mean()), entropy_ci_lo=float(elo), entropy_ci_hi=float(ehi), n_pairs=len(g)))
     sdf = pd.DataFrame(summ)
-    sdf.to_csv(out_dir / f"causal_timing_{args.mode}_summary.csv", index=False)
+    sdf.to_csv(out_dir / f"causal_timing_{tag}_summary.csv", index=False)
 
-    lines = [f"Causal timing -- {args.category}; mode={args.mode} ({'resid patched at layers 0..l' if args.mode == 'up_to' else 'resid patched at layers l..L-1'}); {len(pairs)} held-out pairs; all aligned positions"]
+    lines = [f"Causal timing -- {args.category}; mode={args.mode} ({'resid patched at layers 0..l' if args.mode == 'up_to' else 'resid patched at layers l..L-1'}); {len(pairs)} held-out pairs; positions={args.positions}"]
     for direc in ("control_to_uncertain", "uncertain_to_control"):
         s = sdf[sdf.direction == direc].set_index("layer")
         lines.append(f"  {direc}: log-odds recovery by layer: " + " ".join(f"L{l}:{s.loc[l].logodds_rec_mean:+.2f}" for l in sweep))
@@ -117,9 +122,9 @@ def main():
                      f"first with CI lower bound > 0.7: {('L%d' % above[0]) if above else 'none'}")
         lines.append(f"    entropy recovery by layer: " + " ".join(f"L{l}:{s.loc[l].entropy_rec_mean:+.2f}" for l in sweep))
     summary = "\n".join(lines); print(summary)
-    (out_dir / f"causal_timing_{args.mode}_summary.txt").write_text(summary + "\n", encoding="utf-8")
+    (out_dir / f"causal_timing_{tag}_summary.txt").write_text(summary + "\n", encoding="utf-8")
     write_provenance(out_csv, build_provenance(model, script="scripts/circuit_causal_timing.py", category=args.category,
-                                               mode=args.mode, layers=sweep, n_pairs=len(pairs)))
+                                               mode=args.mode, positions=args.positions, layers=sweep, n_pairs=len(pairs)))
     print(f"wrote {out_csv}")
 
 
