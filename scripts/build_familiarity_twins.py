@@ -154,6 +154,8 @@ def main():
     seen_keys = set()
     deduped = []
     for r in rows:
+        if r.get("subj") is None:  # PopQA has a few rows with no subject and a question like "What is the capital of ?"
+            continue
         key = (r["prop"], r["subj"])
         if key in seen_keys:
             continue
@@ -161,8 +163,7 @@ def main():
         deduped.append(r)
     rows = deduped
     if len(rows) != n_raw:
-        print(f"deduped PopQA rows by (relation, subject): {n_raw} -> {len(rows)} "
-             f"({n_raw - len(rows)} duplicate rows dropped)")
+        print(f"deduped PopQA rows by (relation, subject) and dropped null-subject rows: {n_raw} -> {len(rows)}")
     props = sorted({r["prop"] for r in rows})
     if args.relations:
         props = [p for p in props if p in set(args.relations.split(","))]

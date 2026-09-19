@@ -107,8 +107,10 @@ def main():
         guard_output(REPO_ROOT / "data" / f"{args.prefix}_{name}" / "prompts.jsonl", args.overwrite)
 
     rows = [json.loads(l) for l in open(REPO_ROOT / args.source, encoding="utf-8") if l.strip()]
+    n_null = sum(r.get("subj") is None for r in rows)
+    rows = [r for r in rows if r.get("subj") is not None]  # PopQA rows with no subject have no usable question
     cells = bucket(rows)
-    print(f"{args.source}: {len(rows)} rows -> cells " + ", ".join(f"{k}={len(v)}" for k, v in cells.items()))
+    print(f"{args.source}: {len(rows)} rows ({n_null} null-subject rows dropped) -> cells " + ", ".join(f"{k}={len(v)}" for k, v in cells.items()))
 
     summary = []
     for name, (a_cell, b_cell, tiebreak) in CONTRASTS.items():

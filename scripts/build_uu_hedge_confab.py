@@ -45,6 +45,7 @@ SOURCE = "data/familiarity_v2/all_measured.jsonl"
 def load_pool(path):
     """Genuinely-unknown items from the retained screen output."""
     rows = [json.loads(l) for l in open(path, encoding="utf-8") if l.strip()]
+    rows = [r for r in rows if r.get("subj") is not None]  # PopQA rows with no subject have no usable question
     return rows, [r for r in rows if r.get("arm") == "uncertain" and r.get("slick") == "Unknown"]
 
 

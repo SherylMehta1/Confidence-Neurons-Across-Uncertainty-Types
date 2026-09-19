@@ -1,0 +1,53 @@
+{
+  "source": "data/familiarity_v3/all_measured.jsonl",
+  "n_source_rows": 2673,
+  "n_pool": 1179,
+  "thresholds": {
+    "hedger_min": 0.8,
+    "confab_max": 0.1,
+    "confab_max_distinct": 10,
+    "max_len_diff": 3,
+    "entropy_tol": 0.3
+  },
+  "n_hedgers": 954,
+  "n_confabulators": 105,
+  "n_pairs": 76,
+  "n_working": 53,
+  "n_held_out": 23,
+  "unmatched": {
+    "no_hedger_in_relation": 0,
+    "len": 1,
+    "entropy": 28
+  },
+  "pairs_per_relation": {
+    "author": 13,
+    "capital of": 5,
+    "composer": 7,
+    "country": 2,
+    "director": 13,
+    "father": 2,
+    "genre": 23,
+    "occupation": 1,
+    "producer": 6,
+    "screenwriter": 4
+  },
+  "balance_smd": {
+    "s_pop": -0.195767492019197,
+    "n_q_tokens": 0.407027194616858,
+    "entropy": 0.028935734822850574
+  },
+  "means": {
+    "hedger": {
+      "hedge_rate": 0.9723684210526317,
+      "entropy": 2.979947279942663,
+      "n_distinct": 8.578947368421053,
+      "s_pop": 91.89473684210526
+    },
+    "confabulator": {
+      "hedge_rate": 0.022368421052631583,
+      "entropy": 2.955482028032604,
+      "n_distinct": 8.460526315789474,
+      "s_pop": 107.32894736842105
+    }
+  }
+}
