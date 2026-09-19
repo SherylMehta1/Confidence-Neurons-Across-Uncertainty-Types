@@ -1,0 +1,7 @@
+L3 Step 0 -- PopQA sizing for the full screen decision (dedupe by (prop,subj), 10/90 popularity tails per relation)
+PopQA test split: 14267 raw rows -> 13068 unique (prop,subj); 1646 already scored in data/familiarity_v2/all_measured.jsonl
+tails at 10/90: lo 1323 available / 802 drawn / 521 undrawn; hi 1314 / 805 / 509
+middle 80%, never sampled: 10431
+factorial cells already in the retained pool: popular&unknown (hi tail, Unknown) = 208; obscure&known (lo tail, HighlyKnown) = 69
+obscure&known per relation: capital 24, color 1, composer 2, country 34, father 1, sport 7; zero in the other 10
+observed scoring rate (L0 regeneration): ~77 items/min -> remaining tails ~1030 items ~13 min; full middle 80% ~135 min
