@@ -1,0 +1,33 @@
+Leave-one-token-out -- results/circuit_familiarity_v2; hedge tokens [' not', ' I', ' unknown', ' unclear', ' no']; answer set fixed
+full-set reproduction of the committed CSVs, max |diff| per pair: circuit/control->uncertain 7.73e-07, circuit/uncertain->control 4.12e-07, direction/control->uncertain 4.96e-07, direction/uncertain->control 1.51e-07
+
+[circuit]
+  control_to_uncertain:
+    full           +0.910 [+0.826, +1.002]   null +0.022 +- 0.025 (30 sets)
+    minusnot       +0.801 [+0.712, +0.889]   null +0.018 +- 0.030 (30 sets)
+    minusI         +0.919 [+0.808, +1.026]   null +0.019 +- 0.030 (30 sets)
+    minusunknown   +0.905 [+0.819, +1.000]   null +0.022 +- 0.024 (30 sets)
+    minusunclear   +0.910 [+0.824, +1.001]   null +0.022 +- 0.025 (30 sets)
+    minusno        +0.909 [+0.824, +0.998]   null +0.022 +- 0.025 (30 sets)
+  uncertain_to_control:
+    full           +1.114 [+1.044, +1.189]
+    minusnot       +1.058 [+0.975, +1.141]
+    minusI         +1.125 [+1.053, +1.200]
+    minusunknown   +1.108 [+1.042, +1.178]
+    minusunclear   +1.119 [+1.049, +1.195]
+    minusno        +1.110 [+1.040, +1.185]
+[direction]
+  control_to_uncertain:
+    full           +0.546 [+0.468, +0.627]   null -0.002 +- 0.007 (10 sets)
+    minusnot       +0.698 [+0.606, +0.800]   null -0.002 +- 0.004 (10 sets)
+    minusI         +0.537 [+0.452, +0.627]   null -0.004 +- 0.008 (10 sets)
+    minusunknown   +0.532 [+0.455, +0.614]   null -0.001 +- 0.007 (10 sets)
+    minusunclear   +0.545 [+0.465, +0.633]   null -0.002 +- 0.007 (10 sets)
+    minusno        +0.543 [+0.462, +0.629]   null -0.002 +- 0.006 (10 sets)
+  uncertain_to_control:
+    full           +0.963 [+0.890, +1.042]
+    minusnot       +0.937 [+0.835, +1.032]
+    minusI         +0.968 [+0.887, +1.051]
+    minusunknown   +0.954 [+0.880, +1.034]
+    minusunclear   +0.971 [+0.896, +1.052]
+    minusno        +0.963 [+0.890, +1.044]
