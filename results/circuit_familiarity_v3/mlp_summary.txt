@@ -1,0 +1,28 @@
+MLP / neurons -- familiarity_v3; 80 working pairs
+
+MLP-output patching, mean recovery of hedge log-odds (control -> uncertain):
+  all  : L0:+0.09 L1:-0.02 L2:+0.11 L3:+0.13 L4:+0.14 L5:+0.15 L6:+0.01 L7:-0.05 L8:+0.09 L9:+0.03 L10:-0.02 L11:+0.00 L12:-0.08 L13:+0.01 L14:+0.01 L15:+0.08 L16:-0.05 L17:+0.03 L18:+0.04 L19:+0.09 L20:-0.01 L21:+0.15 L22:-0.00 L23:+0.01 L24:+0.11 L25:-0.01 L26:-0.08 L27:-0.02 L28:+0.12 L29:+0.07 L30:+0.10 L31:+0.27
+  last : L0:+0.01 L1:+0.00 L2:+0.01 L3:-0.00 L4:-0.00 L5:+0.00 L6:+0.01 L7:+0.01 L8:+0.01 L9:+0.03 L10:+0.04 L11:-0.02 L12:-0.05 L13:+0.05 L14:-0.03 L15:+0.02 L16:-0.03 L17:-0.04 L18:+0.04 L19:+0.08 L20:-0.02 L21:+0.05 L22:+0.02 L23:+0.02 L24:+0.02 L25:+0.02 L26:-0.05 L27:+0.01 L28:+0.07 L29:+0.07 L30:+0.06 L31:+0.27
+
+Top neurons by |attribution| (all positions):
+  L17_N5607   attr -0.4585 | cos(w_out, familiarity dir) -0.17 | corr(act, prev-layer projection) +0.37
+  L14_N4109   attr +0.2884 | cos(w_out, familiarity dir) +0.20 | corr(act, prev-layer projection) +0.10
+  L18_N8429   attr -0.2877 | cos(w_out, familiarity dir) -0.12 | corr(act, prev-layer projection) +0.17
+  L18_N6394   attr -0.2599 | cos(w_out, familiarity dir) +0.06 | corr(act, prev-layer projection) -0.24
+  L16_N12347  attr +0.2597 | cos(w_out, familiarity dir) -0.00 | corr(act, prev-layer projection) +0.19
+  L17_N11316  attr -0.2368 | cos(w_out, familiarity dir) -0.07 | corr(act, prev-layer projection) +0.64
+  L24_N10925  attr -0.2331 | cos(w_out, familiarity dir) -0.05 | corr(act, prev-layer projection) -0.03
+  L17_N2810   attr +0.2269 | cos(w_out, familiarity dir) +0.02 | corr(act, prev-layer projection) +0.50
+  L14_N3405   attr +0.2107 | cos(w_out, familiarity dir) -0.26 | corr(act, prev-layer projection) -0.15
+  L16_N9086   attr -0.1947 | cos(w_out, familiarity dir) +0.05 | corr(act, prev-layer projection) +0.59
+  L20_N8953   attr +0.1812 | cos(w_out, familiarity dir) -0.03 | corr(act, prev-layer projection) -0.11
+  L16_N1227   attr +0.1702 | cos(w_out, familiarity dir) -0.03 | corr(act, prev-layer projection) -0.14
+  L13_N2212   attr -0.1672 | cos(w_out, familiarity dir) -0.08 | corr(act, prev-layer projection) -0.25
+  L17_N9172   attr -0.1664 | cos(w_out, familiarity dir) +0.13 | corr(act, prev-layer projection) -0.48
+  L14_N1518   attr -0.1645 | cos(w_out, familiarity dir) +0.09 | corr(act, prev-layer projection) +0.36
+
+Joint patching of top-N neurons vs random N-sets:
+  N=  10 (0.00% of window): top +0.008 | random -0.011 +- 0.011
+  N=  30 (0.01% of window): top +0.199 | random -0.007 +- 0.008
+  N= 100 (0.05% of window): top +0.164 | random -0.016 +- 0.014
+  N= 300 (0.14% of window): top +0.536 | random -0.004 +- 0.027
