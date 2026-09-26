@@ -156,6 +156,25 @@ if (p := need("results/bridge_familiarity_v3/cos_permutation.csv")):
     add("alignPermPMax", f"{perm.p_one_sided.max():.4f}", "results/bridge_familiarity_v3/cos_permutation.csv")
     add("alignPermNullSD", f"{perm.null_sd.mean():.2f}", "results/bridge_familiarity_v3/cos_permutation.csv")
 
+# v4 repeats the bridge with the doubled U/U arm (53 working pairs vs 25), familiarity side
+# unchanged, so these isolate the effect of the hedging pool's size.
+if (p := need("results/bridge_familiarity_v4/cos_bootstrap.csv")):
+    b4 = pd.read_csv(p)
+    src = "results/bridge_familiarity_v4/cos_bootstrap.csv"
+    r31 = b4[b4.layer == 31].iloc[0]
+    add("alignCosLThirtyOneWide", f"{r31.cos:.2f}", src)
+    add("alignCosLThirtyOneWideCI", f"[{r31.ci_lo:.2f}, {r31.ci_hi:.2f}]", src)
+    add("alignCosFloorWide", f"{b4.ci_lo.min():.2f}", src)
+    add("alignCosAttenuationWide", f"{(b4.cos - b4.boot_mean).mean():.3f}", src)
+if (p := need("results/bridge_familiarity_v4/cos_permutation.csv")):
+    p4 = pd.read_csv(p)
+    src = "results/bridge_familiarity_v4/cos_permutation.csv"
+    add("alignPermPMaxWide", f"{p4.p_one_sided.max():.3f}", src)
+    add("alignPermNullSDWide", f"{p4.null_sd.mean():.2f}", src)
+    add("alignPermNullEffDim", f"{1 / p4.null_sd.mean() ** 2:.0f}", src)
+if (p := need("data/uu_hedge_confab_v3/gate_report.json")):
+    add("uuWorkingWide", json.loads(p.read_text())["n_working"], "data/uu_hedge_confab_v3/gate_report.json")
+
 if (p := need("data/uu_hedge_confab/gate_report.json")):
     u = json.loads(p.read_text())
     add("uuPairs", u["n_pairs"], "data/uu_hedge_confab/gate_report.json")
