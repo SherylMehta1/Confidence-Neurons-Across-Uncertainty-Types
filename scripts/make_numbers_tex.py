@@ -223,11 +223,25 @@ for rel, suffix in (("data/factorial_v2_summary.csv", "New"), ("data/factorial_v
 # =====================================================================
 # L2e -- saturation sweep; emitted once the curve exists
 # =====================================================================
+# saturation_curve.csv is one row per (n, cell, direction, metric); pin all three or .iloc[-1]
+# picks an arbitrary series. `recovery` is the prefix mean, i.e. exactly what `--limit n` prints.
 sat_rel = "results/circuit_familiarity_v3/saturation_curve.csv"
 if (REPO_ROOT / sat_rel).exists():
-    sat = pd.read_csv(sat_rel)
+    sat = pd.read_csv(REPO_ROOT / sat_rel)
     add("saturationMaxN", int(sat.n.max()), sat_rel)
-    add("saturationRecoveryAtMaxN", f"{sat.sort_values('n').recovery.iloc[-1]:.2f}", sat_rel)
+    for cell, ctag in (("circuit", "Circuit"), ("direction", "Direction")):
+        for direction, dtag in DTAG.items():
+            g = sat[(sat.cell == cell) & (sat.direction == direction) & (sat.metric == "logodds_rec")].sort_values("n")
+            if not len(g):
+                continue
+            full = g.iloc[-1]
+            add(f"saturation{ctag}{dtag}AtMaxN", f"{full.recovery:.2f}", sat_rel)
+            settled = g[(g.n >= 40)]
+            if len(settled):
+                add(f"saturation{ctag}{dtag}DriftFromForty", f"{max(abs(settled.recovery - full.recovery)):.3f}", sat_rel)
+            narrow = g[g.n <= 60]
+            if len(narrow):
+                add(f"saturation{ctag}{dtag}BandAtSixty", f"{narrow.iloc[-1].ci_width:.2f}", sat_rel)
 
 
 def main():
