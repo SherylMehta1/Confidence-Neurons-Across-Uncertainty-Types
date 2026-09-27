@@ -64,6 +64,9 @@ def per_pair_recovery(cache, cell, setname, direc, hedge_ids, answer_ids):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--dir", default="results/circuit_familiarity_v2")
+    ap.add_argument("--reference-suffix", default="",
+                    help="inserted before .csv in the self-check references, e.g. _limit141. Must match the "
+                         "--limit the cache was built at, or the check compares against the wrong slice")
     ap.add_argument("--overwrite", action="store_true")
     args = ap.parse_args()
     d = REPO_ROOT / args.dir
@@ -84,7 +87,8 @@ def main():
         if not (cache.cell == cell).any():
             continue
         real_set = REFERENCE[cell][1]
-        ref = pd.read_csv(d / REFERENCE[cell][0])
+        ref_name = REFERENCE[cell][0].replace(".csv", f"{args.reference_suffix}.csv")
+        ref = pd.read_csv(d / ref_name)
         nulls = sorted(s for s in cache[cache.cell == cell].set.unique() if s.startswith("random"))
         for vname, dropped, hedge_ids in variants:
             for direc in ("control_to_uncertain", "uncertain_to_control"):
@@ -104,7 +108,8 @@ def main():
 
     out = pd.DataFrame(rows)
     out.to_csv(out_csv, index=False)
-    lines = [f"Leave-one-token-out -- {args.dir}; hedge tokens {list(hedge_map)}; answer set fixed",
+    lines = [f"Leave-one-token-out -- {args.dir}; hedge tokens {list(hedge_map)}; answer set fixed"
+             + (f"; self-check vs *{args.reference_suffix}.csv" if args.reference_suffix else ""),
              "full-set reproduction of the committed CSVs, max |diff| per pair: "
              + ", ".join(f"{c}/{dr.split('_')[0]}->{dr.split('_')[-1]} {v:.2e}" for (c, dr), v in checks.items()), ""]
     for cell in out.cell.unique():

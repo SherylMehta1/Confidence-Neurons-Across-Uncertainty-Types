@@ -56,10 +56,12 @@ def null_bar(df, prefix, direc, metric):
     return float(m.mean()), float(m.mean() - half), float(m.mean() + half), len(m)
 
 
-def build(circuit_dir, primary=BLUE):
-    dp = pd.read_csv(os.path.join(circuit_dir, "direction_patch_u2c_null.csv"))
-    hm = pd.read_csv(os.path.join(circuit_dir, "direction_patch_u2c_hedgematched.csv"))
-    fa = pd.read_csv(os.path.join(circuit_dir, "faithfulness.csv"))
+def build(circuit_dir, primary=BLUE, suffix=""):
+    # note: the rank-1 bar comes from direction_patch_u2c_null.csv, not direction_patch.csv --
+    # a full-scale figure needs the *null* files at that scale, not just faithfulness.
+    dp = pd.read_csv(os.path.join(circuit_dir, f"direction_patch_u2c_null{suffix}.csv"))
+    hm = pd.read_csv(os.path.join(circuit_dir, f"direction_patch_u2c_hedgematched{suffix}.csv"))
+    fa = pd.read_csv(os.path.join(circuit_dir, f"faithfulness{suffix}.csv"))
     rng = np.random.default_rng(SEED)
     series = [("rank-1 direction", AMBER, lambda d, m: real_bar(dp, "direction", d, m, rng)),
               ("random unit directions", GREY, lambda d, m: null_bar(dp, "random", d, m)),
@@ -114,6 +116,7 @@ def main():
     ap.add_argument("--circuit-dir", default="results/circuit_familiarity_v2")
     ap.add_argument("--name", default="fig6_familiarity")
     ap.add_argument("--primary-color", default=BLUE)
+    ap.add_argument("--suffix", default="", help="inserted before .csv in each input, e.g. _limit141")
     ap.add_argument("--out-dir", default="paper/figures")
     ap.add_argument("--overwrite", action="store_true")
     args = ap.parse_args()
@@ -121,7 +124,7 @@ def main():
     if os.path.exists(pdf) and not args.overwrite:
         raise SystemExit(f"{pdf} exists; pass --overwrite to replace it")
     os.makedirs(args.out_dir, exist_ok=True)
-    series, cells = build(args.circuit_dir, args.primary_color)
+    series, cells = build(args.circuit_dir, args.primary_color, args.suffix)
     fig = draw(series, cells)
     fig.savefig(pdf, bbox_inches="tight"); plt.close(fig)
     cells.to_csv(os.path.join(args.out_dir, f"{args.name}_cells.csv"), index=False)
