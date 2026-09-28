@@ -5,17 +5,22 @@
 
 \newcommand{\alignCosAttenuationWide}{0.062}  % results/bridge_familiarity_v4/cos_bootstrap.csv
 \newcommand{\alignCosFloor}{0.31}  % results/bridge_familiarity_v3/cos_bootstrap.csv
+\newcommand{\alignCosFloorVThree}{0.28}  % results/bridge_familiarity_v5/cos_bootstrap.csv
 \newcommand{\alignCosFloorWide}{0.26}  % results/bridge_familiarity_v4/cos_bootstrap.csv
 \newcommand{\alignCosLThirtyOne}{0.66}  % results/bridge_familiarity_v3/cos_bootstrap.csv
 \newcommand{\alignCosLThirtyOneCI}{[0.41, 0.67]}  % results/bridge_familiarity_v3/cos_bootstrap.csv
+\newcommand{\alignCosLThirtyOneVThree}{0.66}  % results/bridge_familiarity_v5/cos_bootstrap.csv
+\newcommand{\alignCosLThirtyOneVThreeCI}{[0.46, 0.70]}  % results/bridge_familiarity_v5/cos_bootstrap.csv
 \newcommand{\alignCosLThirtyOneWide}{0.66}  % results/bridge_familiarity_v4/cos_bootstrap.csv
 \newcommand{\alignCosLThirtyOneWideCI}{[0.46, 0.70]}  % results/bridge_familiarity_v4/cos_bootstrap.csv
 \newcommand{\alignCosRangeHi}{0.69}  % results/bridge_familiarity_v3/cos_bootstrap.csv
 \newcommand{\alignCosRangeLo}{0.66}  % results/bridge_familiarity_v3/cos_bootstrap.csv
 \newcommand{\alignPermNullEffDim}{12}  % results/bridge_familiarity_v4/cos_permutation.csv
 \newcommand{\alignPermNullSD}{0.28}  % results/bridge_familiarity_v3/cos_permutation.csv
+\newcommand{\alignPermNullSDVThree}{0.28}  % results/bridge_familiarity_v5/cos_permutation.csv
 \newcommand{\alignPermNullSDWide}{0.28}  % results/bridge_familiarity_v4/cos_permutation.csv
 \newcommand{\alignPermPMax}{0.0012}  % results/bridge_familiarity_v3/cos_permutation.csv
+\newcommand{\alignPermPMaxVThree}{0.019}  % results/bridge_familiarity_v5/cos_permutation.csv
 \newcommand{\alignPermPMaxWide}{0.018}  % results/bridge_familiarity_v4/cos_permutation.csv
 \newcommand{\candidateCountNew}{1124}  % data/familiarity_v2/gate_report.json
 \newcommand{\candidateCountOld}{1151}  % data/familiarity/gate_report.json
@@ -28,9 +33,9 @@
 \newcommand{\circuitEntropyCUOldN}{59}  % results/circuit_familiarity/faithfulness.csv (CI recomputed)
 \newcommand{\circuitEntropyCUVThree}{0.10}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\circuitEntropyCUVThreeCI}{[0.01, 0.19]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\circuitEntropyCUVThreeFull}{-0.06}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitEntropyCUVThreeFullCI}{[-0.14, 0.02]}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitEntropyCUVThreeFullN}{141}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
+\newcommand{\circuitEntropyCUVThreeFull}{-0.06}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitEntropyCUVThreeFullCI}{[-0.14, 0.02]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitEntropyCUVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\circuitEntropyCUVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\circuitEntropyUCNew}{0.54}  % paper/figures/fig6_familiarity_cells.csv
 \newcommand{\circuitEntropyUCNewCI}{[0.46, 0.64]}  % paper/figures/fig6_familiarity_cells.csv
@@ -40,9 +45,9 @@
 \newcommand{\circuitEntropyUCOldN}{59}  % results/circuit_familiarity/faithfulness.csv (CI recomputed)
 \newcommand{\circuitEntropyUCVThree}{0.41}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\circuitEntropyUCVThreeCI}{[0.34, 0.49]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\circuitEntropyUCVThreeFull}{0.46}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitEntropyUCVThreeFullCI}{[0.40, 0.52]}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitEntropyUCVThreeFullN}{141}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
+\newcommand{\circuitEntropyUCVThreeFull}{0.46}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitEntropyUCVThreeFullCI}{[0.40, 0.52]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitEntropyUCVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\circuitEntropyUCVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\circuitHedgeCUNew}{0.91}  % paper/figures/fig6_familiarity_cells.csv
 \newcommand{\circuitHedgeCUNewCI}{[0.82, 1.00]}  % paper/figures/fig6_familiarity_cells.csv
@@ -53,9 +58,9 @@
 \newcommand{\circuitHedgeCURange}{0.80--0.91}  % three discovery draws
 \newcommand{\circuitHedgeCUVThree}{0.82}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\circuitHedgeCUVThreeCI}{[0.74, 0.91]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\circuitHedgeCUVThreeFull}{0.83}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitHedgeCUVThreeFullCI}{[0.79, 0.87]}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitHedgeCUVThreeFullN}{141}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
+\newcommand{\circuitHedgeCUVThreeFull}{0.83}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitHedgeCUVThreeFullCI}{[0.78, 0.87]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitHedgeCUVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\circuitHedgeCUVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\circuitHedgeUCNew}{1.11}  % paper/figures/fig6_familiarity_cells.csv
 \newcommand{\circuitHedgeUCNewCI}{[1.04, 1.19]}  % paper/figures/fig6_familiarity_cells.csv
@@ -65,9 +70,9 @@
 \newcommand{\circuitHedgeUCOldN}{59}  % results/circuit_familiarity/faithfulness.csv (CI recomputed)
 \newcommand{\circuitHedgeUCVThree}{1.01}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\circuitHedgeUCVThreeCI}{[0.94, 1.08]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\circuitHedgeUCVThreeFull}{1.03}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitHedgeUCVThreeFullCI}{[0.99, 1.07]}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
-\newcommand{\circuitHedgeUCVThreeFullN}{141}  % results/circuit_familiarity_v3/faithfulness_limit141.csv (CI recomputed)
+\newcommand{\circuitHedgeUCVThreeFull}{1.03}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitHedgeUCVThreeFullCI}{[0.99, 1.07]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\circuitHedgeUCVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\circuitHedgeUCVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionEntropyCUNew}{0.40}  % paper/figures/fig6_familiarity_cells.csv
 \newcommand{\directionEntropyCUNewCI}{[0.33, 0.48]}  % paper/figures/fig6_familiarity_cells.csv
@@ -77,9 +82,9 @@
 \newcommand{\directionEntropyCUOldN}{59}  % results/circuit_familiarity/direction_patch.csv (CI recomputed)
 \newcommand{\directionEntropyCUVThree}{0.29}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionEntropyCUVThreeCI}{[0.21, 0.36]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\directionEntropyCUVThreeFull}{0.28}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionEntropyCUVThreeFullCI}{[0.22, 0.34]}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionEntropyCUVThreeFullN}{141}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
+\newcommand{\directionEntropyCUVThreeFull}{0.28}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionEntropyCUVThreeFullCI}{[0.22, 0.34]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionEntropyCUVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\directionEntropyCUVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionEntropyUCNew}{0.61}  % paper/figures/fig6_familiarity_cells.csv
 \newcommand{\directionEntropyUCNewCI}{[0.50, 0.72]}  % paper/figures/fig6_familiarity_cells.csv
@@ -89,9 +94,9 @@
 \newcommand{\directionEntropyUCOldN}{59}  % results/circuit_familiarity/direction_patch.csv (CI recomputed)
 \newcommand{\directionEntropyUCVThree}{0.38}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionEntropyUCVThreeCI}{[0.30, 0.46]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\directionEntropyUCVThreeFull}{0.68}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionEntropyUCVThreeFullCI}{[0.59, 0.77]}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionEntropyUCVThreeFullN}{141}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
+\newcommand{\directionEntropyUCVThreeFull}{0.68}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionEntropyUCVThreeFullCI}{[0.59, 0.77]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionEntropyUCVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\directionEntropyUCVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionHedgeCUNew}{0.55}  % paper/figures/fig6_familiarity_cells.csv
 \newcommand{\directionHedgeCUNewCI}{[0.47, 0.63]}  % paper/figures/fig6_familiarity_cells.csv
@@ -101,9 +106,9 @@
 \newcommand{\directionHedgeCUOldN}{59}  % results/circuit_familiarity/direction_patch.csv (CI recomputed)
 \newcommand{\directionHedgeCUVThree}{0.49}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionHedgeCUVThreeCI}{[0.40, 0.59]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\directionHedgeCUVThreeFull}{0.52}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionHedgeCUVThreeFullCI}{[0.46, 0.57]}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionHedgeCUVThreeFullN}{141}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
+\newcommand{\directionHedgeCUVThreeFull}{0.52}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionHedgeCUVThreeFullCI}{[0.46, 0.57]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionHedgeCUVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\directionHedgeCUVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionHedgeUCNew}{0.96}  % paper/figures/fig6_familiarity_cells.csv
 \newcommand{\directionHedgeUCNewCI}{[0.89, 1.04]}  % paper/figures/fig6_familiarity_cells.csv
@@ -113,9 +118,9 @@
 \newcommand{\directionHedgeUCOldN}{59}  % results/circuit_familiarity/direction_patch.csv (CI recomputed)
 \newcommand{\directionHedgeUCVThree}{0.84}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\directionHedgeUCVThreeCI}{[0.75, 0.93]}  % paper/figures/fig6_familiarity_v3_cells.csv
-\newcommand{\directionHedgeUCVThreeFull}{0.89}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionHedgeUCVThreeFullCI}{[0.83, 0.94]}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
-\newcommand{\directionHedgeUCVThreeFullN}{141}  % results/circuit_familiarity_v3/direction_patch_limit141.csv (CI recomputed)
+\newcommand{\directionHedgeUCVThreeFull}{0.89}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionHedgeUCVThreeFullCI}{[0.83, 0.94]}  % paper/figures/fig6_familiarity_v3_full_cells.csv
+\newcommand{\directionHedgeUCVThreeFullN}{141}  % paper/figures/fig6_familiarity_v3_full_cells.csv
 \newcommand{\directionHedgeUCVThreeN}{60}  % paper/figures/fig6_familiarity_v3_cells.csv
 \newcommand{\entropyRemovalFam}{near zero and sign-unstable across replications}  % circuitEntropyCU{Old,New,VThree,VThreeFull}
 \newcommand{\entropyRemovalFamSpan}{-0.13, +0.14, +0.10, -0.06}  % four estimates
@@ -148,12 +153,14 @@
 \newcommand{\heldOutCountVThree}{141}  % data/familiarity_v3/gate_report.json
 \newcommand{\lotoCircuitCUFull}{0.91}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUFullCI}{[0.83, 1.00]}  % results/circuit_familiarity_v2/loto.csv
+\newcommand{\lotoCircuitCUFullVThreeFull}{0.83}  % results/circuit_familiarity_v3/loto.csv
 \newcommand{\lotoCircuitCUMinusI}{0.92}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUMinusICI}{[0.81, 1.03]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUMinusNo}{0.91}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUMinusNoCI}{[0.82, 1.00]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUMinusNot}{0.80}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUMinusNotCI}{[0.71, 0.89]}  % results/circuit_familiarity_v2/loto.csv
+\newcommand{\lotoCircuitCUMinusNotVThreeFull}{0.72}  % results/circuit_familiarity_v3/loto.csv
 \newcommand{\lotoCircuitCUMinusUnclear}{0.91}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUMinusUnclearCI}{[0.82, 1.00]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoCircuitCUMinusUnknown}{0.91}  % results/circuit_familiarity_v2/loto.csv
@@ -172,12 +179,14 @@
 \newcommand{\lotoCircuitUCMinusUnknownCI}{[1.04, 1.18]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUFull}{0.55}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUFullCI}{[0.47, 0.63]}  % results/circuit_familiarity_v2/loto.csv
+\newcommand{\lotoDirectionCUFullVThreeFull}{0.52}  % results/circuit_familiarity_v3/loto.csv
 \newcommand{\lotoDirectionCUMinusI}{0.54}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUMinusICI}{[0.45, 0.63]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUMinusNo}{0.54}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUMinusNoCI}{[0.46, 0.63]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUMinusNot}{0.70}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUMinusNotCI}{[0.61, 0.80]}  % results/circuit_familiarity_v2/loto.csv
+\newcommand{\lotoDirectionCUMinusNotVThreeFull}{0.70}  % results/circuit_familiarity_v3/loto.csv
 \newcommand{\lotoDirectionCUMinusUnclear}{0.55}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUMinusUnclearCI}{[0.46, 0.63]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionCUMinusUnknown}{0.53}  % results/circuit_familiarity_v2/loto.csv
@@ -195,7 +204,9 @@
 \newcommand{\lotoDirectionUCMinusUnknown}{0.95}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoDirectionUCMinusUnknownCI}{[0.88, 1.03]}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\lotoHedgeMarginFull}{0.36}  % results/circuit_familiarity_v2/loto.csv
+\newcommand{\lotoHedgeMarginFullVThreeFull}{0.31}  % results/circuit_familiarity_v3/loto.csv
 \newcommand{\lotoHedgeMarginMinusNot}{0.10}  % results/circuit_familiarity_v2/loto.csv
+\newcommand{\lotoHedgeMarginMinusNotVThreeFull}{0.02}  % results/circuit_familiarity_v3/loto.csv
 \newcommand{\lotoMaxAbsShift}{0.35}  % results/circuit_familiarity_v2/loto.csv
 \newcommand{\minimalityK}{10}  % results/circuit_familiarity_v2/prune_curve.csv
 \newcommand{\minimalityKVThree}{10}  % results/circuit_familiarity_v3/prune_curve.csv
@@ -216,9 +227,13 @@
 \newcommand{\saturationDirectionUCDriftFromForty}{0.046}  % results/circuit_familiarity_v3/saturation_curve.csv
 \newcommand{\saturationMaxN}{141}  % results/circuit_familiarity_v3/saturation_curve.csv
 \newcommand{\timingEntropyCrossCU}{18}  % results/circuit_familiarity_v2/causal_timing_up_to_suffix_summary.csv
+\newcommand{\timingEntropyCrossCUVThreeFull}{18}  % results/circuit_familiarity_v3/causal_timing_up_to_suffix_summary.csv
 \newcommand{\timingEntropyCrossUC}{13}  % results/circuit_familiarity_v2/causal_timing_up_to_suffix_summary.csv
+\newcommand{\timingEntropyCrossUCVThreeFull}{13}  % results/circuit_familiarity_v3/causal_timing_up_to_suffix_summary.csv
 \newcommand{\timingHedgeCrossCU}{12}  % results/circuit_familiarity_v2/causal_timing_up_to_suffix_summary.csv
+\newcommand{\timingHedgeCrossCUVThreeFull}{12}  % results/circuit_familiarity_v3/causal_timing_up_to_suffix_summary.csv
 \newcommand{\timingHedgeCrossUC}{8}  % results/circuit_familiarity_v2/causal_timing_up_to_suffix_summary.csv
+\newcommand{\timingHedgeCrossUCVThreeFull}{9}  % results/circuit_familiarity_v3/causal_timing_up_to_suffix_summary.csv
 \newcommand{\uuPairs}{36}  % data/uu_hedge_confab/gate_report.json
 \newcommand{\uuPairsVThree}{76}  % data/uu_hedge_confab_v3/gate_report.json
 \newcommand{\uuWorking}{25}  % data/uu_hedge_confab/gate_report.json

@@ -74,9 +74,10 @@ for rel, suffix in (("data/familiarity/gate_report.json", "Old"),
 
 MTAG = {"logodds_rec": "Hedge", "entropy_rec": "Entropy"}
 DTAG = {"control_to_uncertain": "CU", "uncertain_to_control": "UC"}
-CELLS_FOR = {  # circuit dir -> the figure cells.csv that plots it, when one exists
-    "results/circuit_familiarity_v2": "paper/figures/fig6_familiarity_cells.csv",
-    "results/circuit_familiarity_v3": "paper/figures/fig6_familiarity_v3_cells.csv",
+CELLS_FOR = {  # (circuit dir, input suffix) -> the figure cells.csv that plots exactly that slice
+    ("results/circuit_familiarity_v2", ""): "paper/figures/fig6_familiarity_cells.csv",
+    ("results/circuit_familiarity_v3", ""): "paper/figures/fig6_familiarity_v3_cells.csv",
+    ("results/circuit_familiarity_v3", "_limit141"): "paper/figures/fig6_familiarity_v3_full_cells.csv",
 }
 
 
@@ -87,7 +88,8 @@ def recovery_macros(circuit_dir, suffix, csv_name="faithfulness.csv", setname="c
         return
     df = pd.read_csv(p)
     sub_all = df[df["set"] == setname]
-    cells_rel = CELLS_FOR.get(circuit_dir) if csv_name in ("faithfulness.csv", "direction_patch.csv") else None
+    slice_suffix = "_limit141" if "_limit141" in csv_name else ""
+    cells_rel = CELLS_FOR.get((circuit_dir, slice_suffix))
     cells = pd.read_csv(REPO_ROOT / cells_rel) if cells_rel and (REPO_ROOT / cells_rel).exists() else None
     series = "full set (20h+100n)" if setname == "circuit" else "rank-1 direction"
     for direction, dtag in DTAG.items():
@@ -222,6 +224,36 @@ if (p := need("results/circuit_familiarity_v2/causal_timing_up_to_suffix_summary
         for metric, mtag in (("logodds_rec_mean", "Hedge"), ("entropy_rec_mean", "Entropy")):
             cross = g[g[metric] > 0.7].layer
             add(f"timing{mtag}Cross{dtag}", int(cross.min()) if len(cross) else "n/a", src)
+
+if (p := need("results/circuit_familiarity_v3/loto.csv")):
+    lo3 = pd.read_csv(p); src = "results/circuit_familiarity_v3/loto.csv"
+    for variant, tag in (("full", "Full"), ("minusnot", "MinusNot")):
+        c = lo3[(lo3.cell == "circuit") & (lo3.direction == "control_to_uncertain") & (lo3.variant == variant)]
+        d = lo3[(lo3.cell == "direction") & (lo3.direction == "control_to_uncertain") & (lo3.variant == variant)]
+        if len(c) and len(d):
+            add(f"lotoHedgeMargin{tag}VThreeFull", f"{c.iloc[0].logodds_rec_mean - d.iloc[0].logodds_rec_mean:.2f}", src)
+            add(f"lotoCircuitCU{tag}VThreeFull", f"{c.iloc[0].logodds_rec_mean:.2f}", src)
+            add(f"lotoDirectionCU{tag}VThreeFull", f"{d.iloc[0].logodds_rec_mean:.2f}", src)
+
+if (p := need("results/circuit_familiarity_v3/causal_timing_up_to_suffix_summary.csv")):
+    t3 = pd.read_csv(p); src = "results/circuit_familiarity_v3/causal_timing_up_to_suffix_summary.csv"
+    for direction, dtag in DTAG.items():
+        g = t3[t3.direction == direction].sort_values("layer")
+        for metric, mtag in (("logodds_rec_mean", "Hedge"), ("entropy_rec_mean", "Entropy")):
+            cross = g[g[metric] > 0.7].layer
+            add(f"timing{mtag}Cross{dtag}VThreeFull", int(cross.min()) if len(cross) else "n/a", src)
+
+# bridge_familiarity_v5: familiarity direction rebuilt from the 470-pair pool (v4 used the 207-pair one)
+if (p := need("results/bridge_familiarity_v5/cos_bootstrap.csv")):
+    b5 = pd.read_csv(p); src = "results/bridge_familiarity_v5/cos_bootstrap.csv"
+    r31 = b5[b5.layer == 31].iloc[0]
+    add("alignCosLThirtyOneVThree", f"{r31.cos:.2f}", src)
+    add("alignCosLThirtyOneVThreeCI", f"[{r31.ci_lo:.2f}, {r31.ci_hi:.2f}]", src)
+    add("alignCosFloorVThree", f"{b5.ci_lo.min():.2f}", src)
+if (p := need("results/bridge_familiarity_v5/cos_permutation.csv")):
+    p5 = pd.read_csv(p); src = "results/bridge_familiarity_v5/cos_permutation.csv"
+    add("alignPermPMaxVThree", f"{p5.p_one_sided.max():.3f}", src)
+    add("alignPermNullSDVThree", f"{p5.null_sd.mean():.2f}", src)
 
 # =====================================================================
 # L3/L4a -- frequency x knowledge factorial
