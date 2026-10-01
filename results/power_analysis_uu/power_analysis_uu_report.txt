@@ -1,0 +1,95 @@
+Power analysis for the U/U falsification test -- independent verification
+generated 2026-10-01T11:49:24+00:00, branch l0-fixes
+N=23 (uu_hedge_confab_v3 held-out), bound=0.7, sd=0.262, se=0.05463, df=22; scipy present
+
+1. EVERY NUMBER THE TWO DOCUMENTS ASSERT, RECOMPUTED FROM SOURCE
+   sd, c->u, faithfulness_limit141  = 0.2616   doc: 0.262            OK
+   cross-direction correlation      = 0.5138   doc: ~0.51            OK
+   pool working/held-out            = 53/23      doc: 53/23            OK
+   hedger / confabulator hedge_rate = 0.972 / 0.022   doc: 0.972 / 0.022   OK
+   thresholds                       = {'hedger_min': 0.8, 'confab_max': 0.1, 'confab_max_distinct': 10, 'max_len_diff': 3, 'entropy_tol': 0.3}
+                                      matches section A           OK
+   Both the sd and the correlation come from the FAMILIARITY circuit; the U/U circuit has
+   never been evaluated, so both remain provisional, as the commit states.
+
+2. THE LOCKED RULE (--rule point, bare mean > bound, no alpha): MDE
+    power |  MDE above bound |  true recovery needed
+     0.70 |            0.029 |                 0.729
+     0.80 |            0.047 |                 0.747
+     0.90 |            0.072 |                 0.772
+   reproduces the committed table exactly.
+
+3. THE SUPERSEDED FORM (--rule ci), retained for comparison only
+    power |  MDE above bound |  true recovery needed
+     0.70 |            0.122 |                 0.822
+     0.80 |            0.140 |                 0.840
+     0.90 |            0.165 |                 0.865
+   This is the CI-lower-bound form section C argues against; it was the script's original
+   default and produced the document's first (withdrawn) table.
+
+4. JOINT (BOTH-DIRECTIONS) POWER, rho=0.51, like-for-like normal approximation
+    effect |   single |    joint |  penalty
+      0.05 |   0.8200 |   0.7159 |   0.1041
+      0.10 |   0.9664 |   0.9400 |   0.0264
+      0.15 |   0.9970 |   0.9942 |   0.0028
+      0.20 |   0.9999 |   0.9998 |   0.0001
+      0.30 |   1.0000 |   1.0000 |   0.0000
+   joint <= single at every effect size, as a conjunction requires.
+
+5. AS-SCRIPTED OUTPUT, verbatim
+   $ python scripts/power_analysis_uu.py mde --n 23 --bound 0.7 --power-targets 0.7 0.8 0.9
+     # MDE analysis -- mode=bound, rule=point, sd=0.262
+     # N=23, bound=0.7 (locked commit rule)
+     power target |  MDE (above bound) |  true mean needed
+             0.70 |              0.029 |             0.729
+             0.80 |              0.047 |             0.747
+             0.90 |              0.072 |             0.772
+
+   $ python scripts/power_analysis_uu.py mde --rule ci --n 23 --bound 0.7 --power-targets 0.7 0.8 0.9
+     # MDE analysis -- mode=bound, rule=ci, sd=0.262
+     # N=23, bound=0.7 (CI-lower-bound form -- NOT the locked rule)
+     power target |  MDE (above bound) |  true mean needed
+             0.70 |              0.122 |             0.822
+             0.80 |              0.140 |             0.840
+             0.90 |              0.165 |             0.865
+
+   $ python scripts/power_analysis_uu.py power --n 23 --bound 0.7 --effects 0.05 0.1 0.2 0.3 0.4 0.5
+     # Power analysis -- mode=bound, rule=point, sd=0.262
+     # N=23, bound=0.7 (locked commit rule: P(sample mean > bound | true mean), no alpha)
+       effect (above bound) |  true mean |    power
+                      0.050 |      0.750 |    0.815
+                      0.100 |      0.800 |    0.960
+                      0.200 |      0.900 |    0.999
+                      0.300 |      1.000 |    1.000
+                      0.400 |      1.100 |    1.000
+                      0.500 |      1.200 |    1.000
+
+   $ python scripts/power_analysis_uu.py power --n 23 --bound 0.7 --effects 0.05 0.1 0.15 0.2 0.3 --joint-rho 0.51
+     # Power analysis -- mode=bound, rule=point, sd=0.262
+     # N=23, bound=0.7 (locked commit rule: P(sample mean > bound | true mean), no alpha)
+     # NOTE: with --joint-rho set, the single-direction column below is also computed via the normal approximation (not the exact central-t used elsewhere), so it's directly comparable to the joint column. It will read slightly higher than the exact --rule point number elsewhere in this script -- that gap is the t-vs-normal approximation, not part of the joint penalty.
+       effect (above bound) |  true mean |    power |   joint power (rho=0.51)
+                      0.050 |      0.750 |    0.820 |                    0.716
+                      0.100 |      0.800 |    0.966 |                    0.940
+                      0.150 |      0.850 |    0.997 |                    0.994
+                      0.200 |      0.900 |    1.000 |                    1.000
+                      0.300 |      1.000 |    1.000 |                    1.000
+
+   $ python scripts/power_analysis_uu.py power --mode diff --n1 23 --n2 23 --effects 0.1 0.2 0.3 0.4 0.5
+     # Power analysis -- mode=diff, sd=0.262
+     # N1=23, N2=23 (testing: mean difference >= effect)
+       effect (mean diff) |    power
+                    0.100 |    0.356
+                    0.200 |    0.817
+                    0.300 |    0.985
+                    0.400 |    1.000
+                    0.500 |    1.000
+
+   $ python scripts/power_analysis_uu.py mde --mode diff --n1 23 --n2 23 --power-targets 0.7 0.8 0.9
+     # MDE analysis -- mode=diff, sd=0.262
+     # N1=23, N2=23
+     power target |  MDE (mean diff)
+             0.70 |            0.170
+             0.80 |            0.195
+             0.90 |            0.230
+
