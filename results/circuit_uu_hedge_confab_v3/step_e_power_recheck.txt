@@ -1,0 +1,57 @@
+STEP E -- power re-check with real U/U numbers (pre-registration c034557 go/no-go gate)
+generated 2026-10-02T07:38:10+00:00, branch l0-fixes
+source: faithfulness_working.csv -- the EXPLORATORY, IN-SAMPLE pass on the 53 working pairs.
+The 23 held-out pairs have NOT been evaluated at the time of writing.
+
+MEASURED (in-sample, so recovery is optimistic and SD may be optimistically small)
+  n pairs                  53
+  recovery c->u            +0.929   (switch hedging OFF: confabulator -> hedger prompt)
+  recovery u->c            +1.021   (switch hedging ON:  hedger -> confabulator prompt)
+  per-pair SD c->u         0.634
+  per-pair SD u->c         0.609
+  cross-direction rho      0.411
+
+VS THE PROVISIONAL VALUES LOCKED IN c034557 (borrowed from the familiarity circuit)
+  SD    0.262 -> 0.634   (2.4x larger)
+  rho   0.510 -> 0.411
+
+MDE AT THE REAL SD (0.634), locked rule (bare mean > 0.7, no alpha)
+   power |     MDE |  true recovery needed
+    0.70 |   0.070 |                 0.770
+    0.80 |   0.113 |                 0.813
+    0.90 |   0.175 |                 0.875
+  (provisional SD gave 0.047 / 0.747 at 80% power)
+
+GO/NO-GO, against c034557's own criterion
+  The commit asks for "80% power to detect an effect smaller than or comparable to what is
+  actually expected". The expected effect is the in-sample recovery minus the bar:
+    expected effect (c->u, the weaker direction): 0.229
+    MDE at 80% power:                            0.113
+  MDE < expected effect, so the gate is MET on the single-direction criterion.
+  Joint (both directions, rho=0.41) power at that effect: 0.924
+  CAVEAT: the expected effect comes from the in-sample pass and is optimistic. If the true
+  held-out recovery is nearer 0.80 than 0.93, single-direction power falls to ~0.78 and
+  joint power to ~0.64 -- i.e. underpowered. The honest reading is that the test is
+  adequately powered IF the held-out effect resembles the in-sample one, and not otherwise.
+  The ambiguous band widens from 0.70-0.75 (provisional) to roughly 0.70-0.81 (real SD).
+
+AS-SCRIPTED OUTPUT
+  $ python scripts/power_analysis_uu.py mde --n 23 --bound 0.7 --sd 0.634 --power-targets 0.7 0.8 0.9
+    # MDE analysis -- mode=bound, rule=point, sd=0.634
+    # N=23, bound=0.7 (locked commit rule)
+    power target |  MDE (above bound) |  true mean needed
+            0.70 |              0.070 |             0.770
+            0.80 |              0.113 |             0.813
+            0.90 |              0.175 |             0.875
+
+  $ python scripts/power_analysis_uu.py power --n 23 --bound 0.7 --sd 0.634 --joint-rho 0.411 --effects 0.1 0.15 0.2 0.23 0.3
+    # Power analysis -- mode=bound, rule=point, sd=0.634
+    # N=23, bound=0.7 (locked commit rule: P(sample mean > bound | true mean), no alpha)
+    # NOTE: with --joint-rho set, the single-direction column below is also computed via the normal approximation (not the exact central-t used elsewhere), so it's directly comparable to the joint column. It will read slightly higher than the exact --rule point number elsewhere in this script -- that gap is the t-vs-normal approximation, not part of the joint penalty.
+      effect (above bound) |  true mean |    power |   joint power (rho=0.41)
+                     0.100 |      0.800 |    0.775 |                    0.643
+                     0.150 |      0.850 |    0.872 |                    0.783
+                     0.200 |      0.900 |    0.935 |                    0.884
+                     0.230 |      0.930 |    0.959 |                    0.925
+                     0.300 |      1.000 |    0.988 |                    0.978
+

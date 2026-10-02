@@ -1,0 +1,5 @@
+Faithfulness -- uu_hedge_confab_v3 (eval split: working); 20 heads (1.95% of all heads) + 100 neurons (0.022% of all MLP neurons); 53 held-out pairs
+  control -> uncertain: log-odds recovery +0.929, entropy recovery +0.416
+  uncertain -> control: log-odds recovery +1.021, entropy recovery +0.349
+  random sets (same size, c->u): log-odds recovery +0.099 +- 0.071 over 30 sets
+  verdict: CIRCUIT (>0.7 recovery, <2% of heads and of neurons)
