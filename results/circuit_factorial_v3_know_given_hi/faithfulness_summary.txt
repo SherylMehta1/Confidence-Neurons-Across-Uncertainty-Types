@@ -1,0 +1,5 @@
+Faithfulness -- factorial_v3_know_given_hi (eval split: held_out); 20 heads (1.95% of all heads) + 100 neurons (0.022% of all MLP neurons); 75 held-out pairs
+  control -> uncertain: log-odds recovery +0.762, entropy recovery +0.349
+  uncertain -> control: log-odds recovery +0.821, entropy recovery +0.539
+  random sets (same size, c->u): log-odds recovery +0.041 +- 0.052 over 30 sets
+  verdict: CIRCUIT (>0.7 recovery, <2% of heads and of neurons)

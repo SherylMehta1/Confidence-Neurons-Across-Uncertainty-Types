@@ -1,0 +1,179 @@
+L4 STEP 5 -- CIRCUIT-LEVEL CONFIRMATION OF THE FREQUENCY x KNOWLEDGE FACTORIAL
+generated 2026-10-02, branch l0-fixes, git_head_sha 9666995
+model unsloth/Meta-Llama-3.1-8B-Instruct bf16; 20 heads + 100 neurons; --window 12-26;
+--verify 30; --n-random 30; evaluated on the held_out split only (circuit selected from
+the working split only). Per factorial_circuit_level_test.md: no pre-registration, no
+locked bar -- report what comes back, including each contrast's own random-set null.
+
+Scope as scoped in the doc: know_given_hi and pop_given_unknown only. pop_given_known
+(84% capital/country) and know_given_lo (75%) remain deferred as unusable.
+
+================================================================================
+1. HEADLINE NUMBERS (faithfulness.csv, set == "circuit")
+================================================================================
+
+know_given_hi   -- popular_unknown (uncertain) vs popular_known (control)
+                   Unknown vs HighlyKnown; 248 pairs / 173 working / 75 held-out; 11% cap-country
+  direction               mean    SD    95% CI (pair bootstrap, B=10000, seed 0)   >0.7
+  control_to_uncertain  +0.762  0.670  [+0.610, +0.914]                            yes
+  uncertain_to_control  +0.821  0.563  [+0.690, +0.944]                            yes
+  random size-matched null (c->u): set-mean +0.041 +- 0.052 over 30 sets
+
+pop_given_unknown -- obscure_unknown (uncertain) vs popular_unknown (control)
+                   Unknown on BOTH sides; 361 pairs / 252 working / 109 held-out; 8% cap-country
+  direction               mean    SD    95% CI                                     >0.7
+  control_to_uncertain  +0.921  0.543  [+0.819, +1.022]                            yes
+  uncertain_to_control  +1.014  0.531  [+0.913, +1.113]                            yes
+  random size-matched null (c->u): set-mean +0.050 +- 0.044 over 30 sets
+
+Both contrasts clear the project's 0.7 convention in both directions, and both nulls sit
+essentially at zero -- unlike the U/U arm's +0.182, so here 0.7 means what it meant for
+familiarity rather than something inflated by an easy-by-chance comparison.
+
+Note on the null's width: the +-0.052 / +-0.044 figures are the spread of the 30 SET
+MEANS, not of pair-level recoveries. At pair level the random sets scatter +-0.422 and
++-0.389, about as wide as the circuit's own. The null shows 20 arbitrary heads recover
+nothing ON AVERAGE -- the right comparison for a mean-vs-0.7 bar -- and is NOT evidence
+of low per-pair variance.
+
+================================================================================
+2. THE DOC'S EXPECTED DISCRIMINATING PATTERN DID NOT OCCUR
+================================================================================
+
+The doc framed the read as: "If the circuit tracks knowledge (transfers on know_given_hi,
+doesn't on pop_given_unknown) or the reverse, that's the mechanistic answer."
+
+Neither happened. BOTH contrasts transfer, and the ordering runs OPPOSITE to the
+knowledge hypothesis -- pop_given_unknown recovers MORE than know_given_hi:
+  c->u difference +0.159, 95% CI [-0.019, +0.338]  (does not exclude 0)
+  u->c difference +0.193, 95% CI [+0.033, +0.357]  (excludes 0)
+(unpaired bootstrap; the two contrasts SHARE the popular_unknown cell, so they are not
+independent samples and this comparison is approximate -- it is a descriptive contrast,
+not a test.)
+
+So step 5 does NOT deliver the knowledge-vs-popularity mechanistic answer it was meant to.
+Reason, diagnosed below: neither runnable cell is actually a clean knowledge-vs-popularity
+manipulation. Both collapse substantially into hedge-vs-no-hedge.
+
+================================================================================
+3. RULING OUT THE SMALL-DENOMINATOR ARTIFACT
+================================================================================
+
+recovery = clip((patched-target)/(source-target), -1, 2), NaN if |denominator| < 1e-6.
+pop_given_unknown is Unknown on both sides, so it was the a-priori risk for a collapsing
+denominator inflating recovery. It is not what happened -- the risk landed on the OTHER
+contrast instead.
+
+                      NaN   clip@-1  clip@+2   median   mean excl. clipped
+know_given_hi c->u    0.0%    4.0%     8.0%    +0.767   +0.730 (n=66)
+know_given_hi u->c    0.0%    1.3%     4.0%    +0.856   +0.797 (n=71)
+pop_given_u   c->u    0.0%    1.8%     7.3%    +0.918   +0.872 (n=99)
+pop_given_u   u->c    0.0%    0.9%     4.6%    +1.028   +0.986 (n=103)
+
+Nothing is NaN, clipping is <=8%, medians track the means, and dropping every clipped pair
+leaves all four estimates above 0.7 (know_given_hi c->u only barely, at +0.730). These
+means are not denominator artifacts.
+
+Behaviourally the denominator is LARGER for pop_given_unknown, not smaller (held-out
+pairs, sampled hedge_rate):
+  know_given_hi      uncertain 0.310  control 0.065  mean gap +0.245  median |gap| 0.000
+  pop_given_unknown  uncertain 0.840  control 0.218  mean gap +0.622  median |gap| 0.950
+
+================================================================================
+4. THE REAL QUALIFICATION: WHAT IS ACTUALLY IN EACH SLOT
+================================================================================
+
+Sampled hedge_rate composition of the held-out slots:
+                      uncertain slot            control slot
+know_given_hi         57.3% hedge==0            86.7% hedge==0
+                      26.7% hedge>=0.8           1.3% hedge>=0.8
+pop_given_unknown      5.5% hedge==0            67.0% hedge==0
+                      78.9% hedge>=0.8          17.4% hedge>=0.8
+
+(a) know_given_hi's "uncertain" slot is MAJORITY CONFABULATOR. 57.3% of popular_unknown
+    held-out prompts never hedge, and 61.3% of pairs have a hedge gap <= 0. So for most
+    pairs this contrast is "knows it" vs "doesn't know it and states a wrong answer
+    anyway" -- not a hedge contrast at all. Splitting on that:
+
+      direction             |hedge gap|>=0.1        |hedge gap|<0.1
+      control_to_uncertain  +0.883 (n=29)           +0.686 (n=46)
+      uncertain_to_control  +0.934 (n=29)           +0.750 (n=46)
+
+    know_given_hi's pass is CARRIED BY THE MINORITY (29/75) that has a real behavioural
+    hedge gap. On the 46 zero-gap pairs the c->u direction falls BELOW 0.7 (+0.686). Its
+    c->u bootstrap CI lower bound is also +0.610, i.e. below 0.7 -- it passes on the bare
+    sample mean, which is the convention used for familiarity and locked for U/U, but it
+    would not clear a CI-based bar. Treat know_given_hi as the weaker of the two results.
+
+(b) pop_given_unknown is, in substance, a HEDGER-vs-CONFABULATOR contrast: 78.9% of the
+    uncertain slot hedges >=0.8 while 67% of the control slot never hedges, with both
+    sides SliCK-Unknown. That is the U/U design -- reached by sorting on popularity
+    instead of by selecting on hedge rate directly. Its recovery holds in both the
+    gap>=0.1 (n=89) and gap<0.1 (n=20) subsets (+0.898/+1.011 and +1.022/+1.030), so it
+    is not carried by a subgroup.
+
+================================================================================
+5. THE MOST USEFUL THING THIS RUN PRODUCED (reframed, and exploratory)
+================================================================================
+
+Because of 4(b), pop_given_unknown functions as a much larger, independently constructed
+corroboration of the U/U falsification test, on 109 held-out pairs instead of 23:
+
+                        U/U (pre-registered, n=23)       pop_given_unknown (n=109)
+  c->u                  +1.020  CI [+0.735, +1.284]      +0.921  CI [+0.819, +1.022]
+  u->c                  +0.703  CI [+0.374, +0.998]      +1.014  CI [+0.913, +1.113]
+  random null (c->u)    +0.182 +- 0.071                  +0.050 +- 0.044
+
+The U/U confirmatory run passed its locked bar but, as recorded in
+step_f_confirmatory_result.txt, the injection direction cleared 0.7 by 0.003 -- inside the
+band c034557 pre-declared as underpowered. pop_given_unknown lands that same direction at
++1.014 with a CI whose lower bound (+0.913) is far clear of 0.7, against a near-zero null.
+
+IMPORTANT LIMIT ON THIS CLAIM: this reframing is POST HOC. pop_given_unknown was built and
+run as a popularity contrast, not as a U/U replication; nothing about it was
+pre-registered, and the hedger/confabulator composition in 4(b) was discovered after the
+result was in hand. It is corroborative exploratory evidence that strengthens confidence in
+the U/U finding. It is NOT a second confirmatory test and must not be reported as one, and
+it does not retroactively resolve U/U's underpowered direction. Also note the two share the
+popular_unknown cell with know_given_hi and draw from the same familiarity_v3 screen, so
+"independent" means independently constructed, not an independent sample.
+
+================================================================================
+6. WHAT TO CARRY INTO STEP 8
+================================================================================
+1. The hedging circuit transfers to BOTH runnable factorial cells on held-out pairs, 20
+   heads (1.95%) + 100 neurons (0.022%), against near-zero random nulls.
+2. The factorial does NOT answer whether the circuit tracks knowledge or popularity. The
+   two confounded cells were undiagnosable from the start; the two runnable cells both
+   reduce largely to hedge-vs-no-hedge. Do not claim a knowledge-vs-popularity mechanistic
+   dissociation from this.
+3. know_given_hi (+0.762/+0.821) passes on bare means but is carried by 29/75 pairs with a
+   real hedge gap and has a c->u CI lower bound of +0.610. Report with that qualification.
+4. pop_given_unknown (+0.921/+1.014) is the strong, robust result, and its value is as
+   post-hoc corroboration of U/U, not as a popularity finding.
+5. What would actually test knowledge-vs-popularity: a re-screen that holds hedge rate
+   matched across cells, so the manipulation is not confounded with the outcome. That is
+   new work, not a fix to this step.
+
+================================================================================
+APPENDIX -- EXACT COMMANDS AS RUN (all eight stages rc=0)
+================================================================================
+python scripts/circuit_position_map.py --category factorial_v3_know_given_hi --split working --limit 60 --out-dir results/circuit_factorial_v3_know_given_hi
+python scripts/circuit_heads.py        --category factorial_v3_know_given_hi --limit 173 --verify 30 --out-dir results/circuit_factorial_v3_know_given_hi
+python scripts/circuit_mlp.py          --category factorial_v3_know_given_hi --limit 173 --window 12-26 --out-dir results/circuit_factorial_v3_know_given_hi
+python scripts/circuit_faithfulness.py --category factorial_v3_know_given_hi --circuit-dir results/circuit_factorial_v3_know_given_hi --n-heads 20 --n-neurons 100 --n-random 30 --limit 75
+python scripts/circuit_position_map.py --category factorial_v3_pop_given_unknown --split working --limit 60 --out-dir results/circuit_factorial_v3_pop_given_unknown
+python scripts/circuit_heads.py        --category factorial_v3_pop_given_unknown --limit 252 --verify 30 --out-dir results/circuit_factorial_v3_pop_given_unknown
+python scripts/circuit_mlp.py          --category factorial_v3_pop_given_unknown --limit 252 --window 12-26 --out-dir results/circuit_factorial_v3_pop_given_unknown
+python scripts/circuit_faithfulness.py --category factorial_v3_pop_given_unknown --circuit-dir results/circuit_factorial_v3_pop_given_unknown --n-heads 20 --n-neurons 100 --n-random 30 --limit 109
+
+Three deliberate deviations from factorial_circuit_level_test.md's command blocks:
+  1. --overwrite DROPPED. Both output dirs were confirmed absent beforehand, so an
+     unexpected pre-existing file should error loudly rather than be silently replaced.
+  2. --n-random 30 ADDED. The doc omits it, which would have defaulted to 10 and made the
+     random-set null non-comparable with the familiarity, v3 and U/U builds.
+  3. Position map at --limit 60, NOT the doc's 173/252. run_circuit.sh hard-defaults
+     MAP_LIMIT=60; all five previously committed position_map.provenance.json show 60
+     (53 for U/U); and nothing in the circuit pipeline reads position_map.csv at all
+     (only make_paper_figures.py:62 reads the familiarity one). 60 keeps this build
+     comparable with every prior one and changes no downstream number.
