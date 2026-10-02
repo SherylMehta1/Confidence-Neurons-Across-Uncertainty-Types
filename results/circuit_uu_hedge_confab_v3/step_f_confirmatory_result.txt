@@ -1,0 +1,32 @@
+STEP F -- CONFIRMATORY U/U FALSIFICATION RESULT
+generated 2026-10-02T07:53:25+00:00, branch l0-fixes
+governed by pre-registration c034557; GO decision timestamped at d4f0abd, before this ran.
+One-shot evaluation on the 23 held-out pairs of uu_hedge_confab_v3. Circuit (20 heads +
+100 neurons) selected from the 53 working pairs only.
+
+LOCKED CRITERION (c034557 section C): recovery > 0.7, bare sample mean, no significance
+test, required in BOTH directions.
+
+  direction               meaning                               mean   > 0.7
+  control_to_uncertain    confabulator -> hedger (hedge OFF)  +1.020    PASS
+  uncertain_to_control    hedger -> confabulator (hedge ON)   +0.703    PASS
+
+  RESULT: PASSES the locked criterion (both directions above 0.7).
+
+HOW SOLID IS EACH SIDE
+  random size-matched null (c->u): +0.182 +- 0.071 over 30 sets
+  c->u: mean +1.020, per-pair SD 0.690, bootstrap 95% CI [+0.735, +1.284]
+  u->c: mean +0.703, per-pair SD 0.784, bootstrap 95% CI [+0.374, +0.998]
+
+READING IT HONESTLY, against the band pre-declared at step E (0.70-0.81 with the real SD)
+  c->u = 1.020  ABOVE the band -- a clear pass, margin +0.320
+  u->c = 0.703  INSIDE the band -- margin +0.003, i.e. it clears the bar by 0.003
+  c034557 pre-commits that a result inside 0.70-0.81 be treated as UNDERPOWERED rather than
+  as a clean verdict. That language was written for a near-miss below the bar, but it
+  applies symmetrically: the injection direction sits so close to 0.7 that this test cannot
+  distinguish 'genuinely above' from 'noise around the bar'. The conjunction therefore
+  passes as specified, but the pass rests on a direction the test is not powered to resolve.
+  Reporting it as an unqualified confirmation would overstate what 23 pairs can support.
+
+NOT TO BE DONE: re-running, re-splitting, or adjusting the bar now that the result is known.
+The pre-registration exists to foreclose exactly that. This is the result.
