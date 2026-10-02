@@ -25,6 +25,24 @@ This is deliberately a weaker intervention than behavioral_test.py's clamping, w
 every generated position -- but clamping to a fixed scalar is well defined at any position,
 whereas transplanting a specific twin's activation is not.
 
+THE ENTITY-LEAK CONFOUND, AND THE CONTROL FOR IT
+circuit_faithfulness.py patches all aligned positions: prefix + entity + suffix. For a
+next-token log-odds readout that is fine. For a GENERATION readout it is not automatically
+fine, because the entity positions carry the source twin's subject: the model can stop
+hedging simply because it is now answering the SOURCE's question, which is not the same
+claim as "the hedging decision was flipped." Observed directly in a 2-pair smoke test: an
+unknown-subject prompt patched from its known twin answered with the KNOWN twin's gold
+answer.
+
+Two things address it:
+  --positions all     prefix + entity + suffix (identical to circuit_faithfulness.py)
+  --positions suffix  the shared question tail and prefill ONLY -- no entity tokens, so no
+                      subject identity can transfer; a flip that survives here is a hedging
+                      effect rather than entity substitution
+and the leak_src_gold / leak_tgt_gold columns, which record whether the patched continuation
+contains any gold alias of the source / target twin. Read the flip rate and the leak rate
+together: a flip with a high source-gold leak rate is entity substitution, not a hedging flip.
+
 READOUT
 HEDGE_RE (imported from behavioral_test.py, unchanged) on the generated continuation, per pair,
 per direction, for: the clean continuation, the circuit-patched continuation, and each random
@@ -60,6 +78,18 @@ from shared.provenance import build_provenance, write_provenance
 
 DIRECTIONS = ("control_to_uncertain", "uncertain_to_control")
 EXPECTED_SIGN = {"control_to_uncertain": -1, "uncertain_to_control": +1}  # of (patched - clean) hedging
+
+
+def golds(rec):
+    """Gold answer aliases of a twin, as a list of lowercased strings."""
+    g = rec.get("gold")
+    g = [] if g is None else ([g] if isinstance(g, str) else list(g))
+    return [str(x).strip().lower() for x in g if str(x).strip()]
+
+
+def contains_gold(text, aliases):
+    t = (text or "").lower()
+    return any(a in t for a in aliases)
 
 
 @torch.no_grad()
@@ -111,6 +141,11 @@ def main():
     ap.add_argument("--n-random", type=int, default=10)
     ap.add_argument("--limit", type=int, default=141, help="held-out pairs")
     ap.add_argument("--max-new-tokens", type=int, default=24)
+    ap.add_argument("--positions", default="all", choices=["all", "suffix"],
+                    help="which aligned positions to patch. 'all' = prefix+entity+suffix, "
+                         "identical to circuit_faithfulness.py. 'suffix' = the shared question "
+                         "tail and prefill only, which carries no entity identity and so "
+                         "controls for the entity-leak confound (see the module docstring).")
     ap.add_argument("--eval-split", default="held_out", choices=["held_out", "working"],
                     help="split to evaluate on. held_out is the only confirmatory setting; "
                          "'working' is IN-SAMPLE and writes to behavioral_working.* so it can "
@@ -121,6 +156,7 @@ def main():
 
     circ = REPO_ROOT / (args.circuit_dir or f"results/circuit_{args.category}")
     tag = "" if args.eval_split == "held_out" else f"_{args.eval_split}"
+    tag += "" if args.positions == "all" else f"_{args.positions}"
     out_csv = _Path(args.out) if args.out else circ / f"behavioral{tag}.csv"
     out_csv = guard_output(out_csv, args.overwrite)
 
@@ -139,11 +175,13 @@ def main():
     rows = []
     for k, (u, c) in enumerate(pairs):
         enc_u, enc_c, al = encode_pair(model, tokenizer, u, c)
-        pm = all_position_pairs(al)
+        pm = all_position_pairs(al) if args.positions == "all" else position_map(al, args.positions)
         # target = the prompt we generate from; source = the twin we transplant from
         setup = {"control_to_uncertain": (enc_u, enc_c, pm),
                  "uncertain_to_control": (enc_c, enc_u, reverse_map(pm))}
         clean = {d: greedy_continue(model, tokenizer, setup[d][0], args.max_new_tokens) for d in DIRECTIONS}
+        # target/source gold aliases per direction, for the entity-leak diagnostic
+        gold = {"control_to_uncertain": (golds(u), golds(c)), "uncertain_to_control": (golds(c), golds(u))}
         for d in DIRECTIONS:
             enc_t, enc_s, pmap = setup[d]
             sets = [("circuit", heads, neurons)]
@@ -154,9 +192,13 @@ def main():
             for name, hh, nn in sets:
                 edits = build_edits(model, enc_s, pmap, hh, nn)
                 g = greedy_continue(model, tokenizer, enc_t, args.max_new_tokens, edits=edits)
+                g_t, g_s = gold[d]
                 rows.append(dict(pair=k, set=name, direction=d,
                                  hedged_clean=bool(HEDGE_RE.search(clean[d])),
                                  hedged_patched=bool(HEDGE_RE.search(g)),
+                                 leak_src_gold=contains_gold(g, g_s),
+                                 leak_tgt_gold=contains_gold(g, g_t),
+                                 leak_src_gold_clean=contains_gold(clean[d], g_s),
                                  gen_clean=clean[d], gen_patched=g))
         if (k + 1) % 10 == 0:
             print(f"  {k + 1}/{len(pairs)} pairs", flush=True)
@@ -193,9 +235,14 @@ def main():
             flip_c = np.mean([bool(wide.loc[p, "circuit"]) == bool(src_clean[p]) for p in disc])
             rcols = [c for c in wide.columns if c.startswith("random")]
             flip_r = np.mean([[bool(wide.loc[p, rc]) == bool(src_clean[p]) for p in disc] for rc in rcols])
+            leak_cols = sub.pivot_table(index="pair", columns="set", values="leak_src_gold", aggfunc="first")
+            leak_c = np.mean([bool(leak_cols.loc[p, "circuit"]) for p in disc])
+            leak_base = cir.set_index("pair").leak_src_gold_clean.reindex(disc).astype(bool).mean()
             lines += [f"    discordant pairs (twins differ in clean hedging): {len(disc)}/{len(cleanmap)}",
                       f"    flip-to-source-behaviour rate   circuit {flip_c:.3f}   random {flip_r:.3f}   "
-                      f"margin {flip_c - flip_r:+.3f}"]
+                      f"margin {flip_c - flip_r:+.3f}",
+                      f"    ENTITY LEAK: patched continuation contains a SOURCE gold alias   "
+                      f"circuit {leak_c:.3f}  (clean baseline {leak_base:.3f})"]
         else:
             lines += ["    discordant pairs: 0 -- flip analysis not defined"]
         lines += [""]
@@ -205,7 +252,8 @@ def main():
     write_provenance(out_csv, build_provenance(
         model, script="scripts/circuit_behavioral.py", category=args.category, eval_split=args.eval_split,
         n_heads=len(heads), n_neurons=len(neurons), n_pairs=len(pairs), n_random=args.n_random,
-        max_new_tokens=args.max_new_tokens, patch_scope="prompt positions, prefill pass only",
+        max_new_tokens=args.max_new_tokens, positions=args.positions,
+        patch_scope=f"{args.positions} prompt positions, prefill pass only",
         hedge_regex=HEDGE_RE.pattern, seed=args.seed))
 
 
