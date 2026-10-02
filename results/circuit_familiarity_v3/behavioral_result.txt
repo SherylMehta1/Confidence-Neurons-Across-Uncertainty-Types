@@ -1,0 +1,120 @@
+L5 / STEP 9 -- BEHAVIORAL VALIDATION OF THE FAMILIARITY CIRCUIT (the C3 fork)
+generated 2026-10-02, branch l0-fixes, script committed at 464007d, criterion at 59f5ec5
+model unsloth/Meta-Llama-3.1-8B-Instruct bf16; 20 heads + 100 neurons; 141 held-out pairs;
+24 greedy tokens; 10 random size-matched sets per direction; seed 42.
+Governed by l5_behavioral_criterion.md, committed BEFORE the script ran on any pairs.
+
+================================================================================
+VERDICT: EQUIVOCAL -- the behavioral claim DOES NOT SURVIVE the locked bar
+================================================================================
+Locked bar: flip-to-source-behaviour rate on discordant pairs >= 0.50 AND >= 0.20 above
+the random-set null, in BOTH directions.
+
+  direction             flip   95% CI          null   margin   >=0.50   margin>=0.20
+  control_to_uncertain  0.981  [0.951,1.000]  0.117   +0.863   PASS     PASS
+  uncertain_to_control  0.388  [0.291,0.485]  0.001   +0.387   FAIL     PASS
+  (suffix-only variant; all-positions variant is 0.981 / 0.398, same verdict)
+  n = 103 discordant pairs of 141.
+
+Per the criterion note: "A result that clears one condition but not the other, or clears
+one direction only, is reported as EQUIVOCAL and does not license the headline framing."
+This is NOT a borderline miss -- the injection direction's CI upper bound is 0.495, below
+the 0.50 floor, so the data are clear that the true flip rate is under the bar rather than
+indeterminate.
+
+The bar was not loosened, the directions were not pooled, and the discordant-pair
+restriction was not dropped, all of which the criterion note forbids after seeing results.
+
+================================================================================
+WHAT ACTUALLY HAPPENS -- A STRONG ASYMMETRY, NOT A NULL
+================================================================================
+This is emphatically not the old near-null from multi_neuron_behavioral.py. Switching
+hedging OFF works almost perfectly; switching it ON works about 40% of the time.
+
+                                      control_to_uncertain   uncertain_to_control
+  clean hedge rate                           0.730                  0.000
+  circuit-patched hedge rate                 0.014                  0.312
+  delta (expected sign)                     -0.716 (-, YES)        +0.312 (+, YES)
+  random-set patched rate                    0.686 +- 0.018         0.001 +- 0.002
+  continuation changed at all                0.965                  0.730
+
+Removal direction: 73% of uncertain prompts hedge in clean generation; after patching the
+circuit from their known twin, 1.4% do. Random sets leave it at 68.6%. That is a near-total
+behavioral abolition of hedging from 20 heads + 100 neurons.
+
+Injection direction: control prompts never hedge cleanly (0.000) and hedge 31% of the time
+after patching, versus 0.1% for random sets -- a real effect, far above its null, but not a
+reliable switch. Among the 97 patched outputs that did NOT hedge, 61% still changed, and the
+change is mostly TRUNCATION: the model keeps the same correct answer and drops its
+elaboration ("Jane Austen. She is a renowned English novelist known for..." -> "Jane
+Austen."). So the injected state perturbs the continuation in a hedging-ward direction
+without crossing into explicit hedge language. The effect is graded, not binary.
+
+This asymmetry matches the U/U confirmatory result, where uncertain_to_control was also the
+weak direction (+0.703, clearing its bar by 0.003). Two independent arms now agree that
+this circuit is much better at disabling hedging than at causing it.
+
+================================================================================
+THE ENTITY-LEAK CONFOUND AND ITS CONTROL (not anticipated by the plan doc)
+================================================================================
+Patching every aligned position transplants the source twin's SUBJECT, not just its
+hedging state, so a prompt can stop hedging merely because it is now answering the other
+twin's question. Caught in a 2-pair smoke test before the real run.
+
+CONTROL: --positions suffix patches ONLY the 9 shared question-tail/prefill positions, which
+contain no entity tokens (vs 46.4 positions on average for --positions all). The flag is
+verified to bite: 30% of individual generations differ between the two variants.
+
+RESULT: the effect is essentially unchanged by removing the entity positions.
+  control_to_uncertain flip   0.981 (all)  vs  0.981 (suffix)
+  uncertain_to_control flip   0.398 (all)  vs  0.388 (suffix)
+So the behavioral effect is NOT entity substitution -- 9 shared positions carry it, and the
+verdict is identical either way.
+
+RESIDUAL LEAK, worth stating: in 11 of 141 c->u pairs (8.7% of discordant pairs) the patched
+continuation contains a SOURCE gold alias, and this persists under suffix-only patching where
+no entity token is patched at all. Inspected individually; these are genuine content
+transfers, not substring false positives -- e.g. "Who is the author of The Voice?" (gold
+Thomas Hardy) patched from its Beloved twin answers " Toni Morrison."; "Who was the director
+of Valfangare?" answers " Lone Scherfig."; a religion question answers " Buddhism."
+So the 9 suffix/prefill positions carry some answer content, not only a hedge decision. This
+affects ~9% of pairs and so does not explain the 0.981 removal effect, but it means the
+removal direction is not a purely content-free manipulation. Clean baseline leak: 0.000.
+
+================================================================================
+CONSEQUENCE FOR THE C3 FORK (l5_behavioral_validation.md §7)
+================================================================================
+The criterion note pre-committed the mapping. EQUIVOCAL does not license keeping
+decision-vs-spread as the headline framing. What the evidence supports instead:
+
+  - The circuit has a large, real, randomly-unmatched behavioral effect on generation in the
+    REMOVAL direction, robust to the entity control. This is a genuine step beyond the
+    logit-only claims and should be reported.
+  - It does NOT behave as a bidirectional switch. Injection moves behaviour well above its
+    null but flips fewer than half the discordant pairs.
+  - So the honest framing is narrower than "decision vs spread": the circuit is necessary
+    for hedging behaviour in a strong sense (remove it and hedging essentially stops) but
+    not sufficient to produce it on demand.
+
+Recommended for step 8: report the removal result as the behavioral validation, state the
+injection asymmetry alongside it rather than burying it, and do not claim a bidirectional
+behavioral switch. The B5 (" not"-token selection) caveat still applies independently.
+
+================================================================================
+LIMITATION, acknowledged in the criterion note before the run
+================================================================================
+The patch applies to prompt positions during the prefill pass only; decoding then continues
+unpatched (there is no principled source position for a generated token). The patch does
+still propagate past prefill via the KV cache. A sustained-clamp intervention at every
+generated position is a different experiment and might well switch hedging ON more
+reliably; this result does not speak to it, and the equivocal verdict above should not be
+read as "the circuit is behaviorally inert under any intervention."
+
+================================================================================
+COMMANDS AS RUN
+================================================================================
+export CN_MODEL_ID=unsloth/Meta-Llama-3.1-8B-Instruct   # scripts default to the GATED repo id
+python scripts/circuit_behavioral.py --category familiarity_v3 \
+    --circuit-dir results/circuit_familiarity_v3 --n-heads 20 --n-neurons 100 \
+    --limit 141 --max-new-tokens 24 --n-random 10 --positions all
+python scripts/circuit_behavioral.py ... --positions suffix
