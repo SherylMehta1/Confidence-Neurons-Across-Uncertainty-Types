@@ -1,0 +1,983 @@
+pair,set,direction,hedged_clean,hedged_patched,leak_src_gold,leak_tgt_gold,leak_src_gold_clean,gen_clean,gen_patched
+0,circuit,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not clear without more information. There are multiple books titled ""Something More."" 
+
+One book titled ""Something More: Exc"
+0,random0,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not clear without more information. There are multiple books titled ""Something More."" 
+
+One book titled ""Something More: Exc"
+0,random1,control_to_uncertain,True,False,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More", Julie James.
+0,random2,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"
+0,random3,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"
+0,random4,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"
+0,random5,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"
+0,random6,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not clear without more information. There are multiple books titled ""Something More"". Could you please provide more context or details about"
+0,random7,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not available in the given data. However, I can suggest some possible authors of ""Something More"". 
+
+1. "
+0,random8,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not clear without more information. There are multiple books titled ""Something More"". 
+
+One book titled ""Something More: Exc"
+0,random9,control_to_uncertain,True,True,False,False,False," not available in the given data. However, I can suggest some possible authors who have written a book called ""Something More"," not clear without more information. There are multiple books titled ""Something More."" 
+
+One book titled ""Something More: Exc"
+0,circuit,uncertain_to_control,True,False,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1", William C. Dement.
+0,random0,uncertain_to_control,True,False,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," C.G. Jung. ""Dreams"" is a book written by Carl Gustav Jung, a Swiss psychiatrist and psycho"
+0,random1,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple works titled ""Dreams"". However, I can provide a few possibilities:
+
+1. ""Dream"
+0,random2,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple works titled ""Dreams"". However, I can provide a few possibilities:
+
+1. Sigm"
+0,random3,uncertain_to_control,True,False,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," not unique as there are multiple books titled ""Dreams"". However, some notable authors with books titled ""Dreams"""
+0,random4,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple works titled ""Dreams"". However, I can provide a few possibilities:
+
+1. ""Dream"
+0,random5,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple works titled ""Dreams"". However, I can provide a few possibilities:
+
+1. Sigm"
+0,random6,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple books titled ""Dreams"". However, some notable authors with books titled ""Dreams"" include"
+0,random7,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple works titled ""Dreams"". However, I can provide a few possibilities:
+
+1. ""Dream"
+0,random8,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"
+0,random9,uncertain_to_control,True,True,False,False,False," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"
+1,circuit,control_to_uncertain,False,False,False,False,False, Will McIntosh., Marieke Nijkamp.
+1,random0,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,random1,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,random2,control_to_uncertain,False,True,False,False,False, Will McIntosh.," not clear as there are multiple books with the title ""Incoming""."
+1,random3,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,random4,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,random5,control_to_uncertain,False,False,False,False,False, Will McIntosh., Nic Stone.
+1,random6,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,random7,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,random8,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,random9,control_to_uncertain,False,False,False,False,False, Will McIntosh., Will McIntosh.
+1,circuit,uncertain_to_control,False,True,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel."," not clear as there are multiple books with the title ""Find Me""."
+1,random0,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",":  Emily Gunderson, no, actually it is  Emily St. John Mandel."
+1,random1,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",":  Emily Gunderson, no, actually it is  Emily St. John Mandel, no, actually it is"
+1,random2,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",":  Emily Gunderson, no, actually it is  Emily St. John Mandel."
+1,random3,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",":  Emily Gunderson, no, actually it is  Emily St. John Mandel."
+1,random4,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",":  Emily Gunderson, no, actually it is  Emily St. John Mandel."
+1,random5,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.", Rebecca Makkai.
+1,random6,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",:  Rebecca Makkai.
+1,random7,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",":  Emily Gunderson, no, actually it is  Emily St. John Mandel."
+1,random8,uncertain_to_control,False,True,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel."," not clear as there are multiple books with the title ""Find Me"". However, I can provide a few possibilities:
+
+1"
+1,random9,uncertain_to_control,False,False,False,False,False,":  Emily Gunderson, no, actually it is  Emily St. John Mandel.",":  Emily Gunderson, no, actually it is  Emily St. John Mandel."
+2,circuit,control_to_uncertain,True,True,False,False,False, not available in the given data.," not clear without more information. There are multiple books titled ""Getting Free."" Could you please provide more context or details about"
+2,random0,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random1,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random2,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random3,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random4,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random5,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random6,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random7,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random8,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,random9,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+2,circuit,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include", not available in the given data.
+2,random0,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear without more information. There are several books titled ""Heaven"" written by different authors. 
+
+1. ""He"
+2,random1,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"
+2,random2,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"
+2,random3,uncertain_to_control,True,False,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," not unique as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"""
+2,random4,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven"". However, I can provide a few possibilities:
+
+1. ""He"
+2,random5,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven."" However, I can provide a few possibilities:
+
+1. ""He"
+2,random6,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven."" However, I can provide a few possibilities:
+
+1. ""He"
+2,random7,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven"". However, I can provide a few possibilities:
+
+1. ""He"
+2,random8,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven"". However, I can provide a few possibilities:
+
+1. ""He"
+2,random9,uncertain_to_control,True,True,False,False,False," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"," unclear as there are multiple books titled ""Heaven"". Could you please provide more context or information about the book you are"
+3,circuit,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple works titled ""Fruits."" However, one notable work is ""Fruits"" by Langston"
+3,random0,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits""."
+3,random1,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits"". However, one well-known book titled ""Fruits"" is written"
+3,random2,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"
+3,random3,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits""."
+3,random4,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits"". However, one well-known book titled ""Fruits"" is written"
+3,random5,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"
+3,random6,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"
+3,random7,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"
+3,random8,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"
+3,random9,control_to_uncertain,True,True,False,False,False," unclear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. ""F"," not clear as there are multiple books titled ""Fruits"". However, I can provide a few possibilities:
+
+1. """
+3,circuit,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is  ""Suicide:"
+3,random0,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+1. ""Suicide: A Study in"
+3,random1,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"
+3,random2,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+1. ""Suicide: A Study in"
+3,random3,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+1. ""Suicide: A Study in"
+3,random4,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+1. ""Suicide: A Study in"
+3,random5,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". However, I can provide a few possibilities:
+
+1"
+3,random6,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"
+3,random7,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is the novel ""Suicide"
+3,random8,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+1. ""Suicide: A Study in"
+3,random9,uncertain_to_control,True,True,False,False,False," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is the novel ""Suicide"
+4,circuit,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random0,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random1,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random2,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random3,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random4,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random5,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random6,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random7,control_to_uncertain,False,False,False,False,False, C.S. Lewis., Carl Elliott.
+4,random8,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,random9,control_to_uncertain,False,False,False,False,False, C.S. Lewis., C.S. Lewis.
+4,circuit,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and", Jonathan Rosen.
+4,random0,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random1,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random2,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random3,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random4,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random5,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random6,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random7,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random8,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+4,random9,uncertain_to_control,False,False,False,False,False," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+5,circuit,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random0,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random1,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random2,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random3,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random4,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random5,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random6,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random7,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random8,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,random9,control_to_uncertain,False,False,False,False,False, Denmark., Denmark.
+5,circuit,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," not a country, but rather a U.S. state. Buffalo is the second-largest city in the state of New York"
+5,random0,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+5,random1,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+5,random2,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States.", New York.
+5,random3,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+5,random4,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, USA."
+5,random5,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+5,random6,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+5,random7,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+5,random8,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+5,random9,uncertain_to_control,False,False,False,False,False," New York. Buffalo is a city located in the state of New York, in the United States."," New York. Buffalo is a city located in the state of New York, in the United States."
+6,circuit,control_to_uncertain,False,False,False,False,False, not immediately available to me., Bulgaria.
+6,random0,control_to_uncertain,False,False,False,False,False, not immediately available to me., not immediately available to me.
+6,random1,control_to_uncertain,False,False,False,False,False, not immediately available to me., not immediately available to me.
+6,random2,control_to_uncertain,False,False,False,False,False, not immediately available to me., not immediately available to me.
+6,random3,control_to_uncertain,False,False,False,False,False, not immediately available to me., Bulgaria.
+6,random4,control_to_uncertain,False,True,False,False,False, not immediately available to me., not available in my database.
+6,random5,control_to_uncertain,False,False,False,False,False, not immediately available to me., not immediately available to me.
+6,random6,control_to_uncertain,False,False,False,False,False, not immediately available to me., not immediately available to me.
+6,random7,control_to_uncertain,False,False,False,False,False, not immediately available to me., not immediately available to me.
+6,random8,control_to_uncertain,False,False,False,False,False, not immediately available to me., not immediately available to me.
+6,random9,control_to_uncertain,False,False,False,False,False, not immediately available to me., Bulgaria.
+6,circuit,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, Maryland, and Howard County, Indiana"
+6,random0,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"
+6,random1,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"
+6,random2,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, in several places. 
+
+1. Howard County, Arkansas 
+2. Howard County, Iowa 
+3."
+6,random3,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard is the capital of several places. 
+
+1. Howard is the capital of El Dorado County in California, USA"
+6,random4,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Maryland, USA 
+2"
+6,random5,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places with the name Howard. Some of them are:
+
+1. Howard County, Iowa"
+6,random6,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"
+6,random7,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places with the name Howard. Some of them are:
+
+1. Howard County, Iowa"
+6,random8,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"
+6,random9,uncertain_to_control,False,False,False,False,False," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"," Howard County, but there are several places named Howard. Some of them are:
+
+1. Howard County, Maryland, USA"
+7,circuit,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random0,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random1,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random2,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random3,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random4,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random5,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random6,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random7,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random8,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,random9,control_to_uncertain,False,False,False,False,False," Tatarstan, Russia."," Tatarstan, Russia."
+7,circuit,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", not immediately available to me.
+7,random0,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo."," Cuvette-Ouest, a department in the Republic of the Congo."
+7,random1,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", Republic of the Congo.
+7,random2,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", the Republic of the Congo.
+7,random3,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo."," Cuvette-Ouest, a department in the Republic of the Congo."
+7,random4,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", Republic of the Congo.
+7,random5,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", Republic of the Congo.
+7,random6,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", Republic of the Congo.
+7,random7,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo."," Cuvette-Ouest, a department in the Republic of the Congo."
+7,random8,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", Republic of the Congo.
+7,random9,uncertain_to_control,False,False,False,False,False," Cuvette-Ouest, a department in the Republic of the Congo.", Republic of the Congo.
+8,circuit,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Apted.
+8,random0,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random1,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random2,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random3,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random4,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random5,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random6,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random7,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random8,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,random9,control_to_uncertain,False,False,False,False,False, Michael Pearce., Michael Pearce.
+8,circuit,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random0,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random1,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random2,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random3,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random4,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random5,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random6,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random7,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random8,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+8,random9,uncertain_to_control,False,False,False,False,False, Joseph Losey., Joseph Losey.
+9,circuit,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney.", Mimi Leder.
+9,random0,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney.",  Morgan Saylor and  Alain Gomis
+9,random1,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."
+9,random2,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney.", Mina Shum.
+9,random3,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."," Maura Tierney's directorial debut, The Other Person, was released in 2016."
+9,random4,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney"
+9,random5,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."
+9,random6,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney.", William Brent Bell
+9,random7,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."
+9,random8,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."
+9,random9,control_to_uncertain,False,False,False,False,False," Maura Tierney's directorial debut film, The Other Person, was directed by Maura Tierney."," Maura Tierney's directorial debut, The Other Person, was released in 2016."
+9,circuit,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Cheryl Dunye.
+9,random0,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Cheryl Dunye.
+9,random1,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random2,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random3,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random4,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random5,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random6,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random7,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random8,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Rick Famuyiwa.
+9,random9,uncertain_to_control,False,False,False,False,False, Rick Famuyiwa., Bille Woodruff.
+10,circuit,control_to_uncertain,True,True,False,False,False, not available in my database.," not clear without more information. There are several films with the title ""Distant Trumpet."""
+10,random0,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,random1,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,random2,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,random3,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,random4,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,random5,control_to_uncertain,True,False,False,False,False, not available in my database., Joseph M. Newman.
+10,random6,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,random7,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,random8,control_to_uncertain,True,False,False,False,False, not available in my database., Raoul Walsh.
+10,random9,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+10,circuit,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a", not available in the given knowledge cut off date.
+10,random0,uncertain_to_control,True,False,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," a bit complex as there were multiple directors for the TV series Empire. However, the show's creator and primary showrunner"
+10,random1,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," not clear as there have been several TV shows and movies with the title ""Empire."" However, I can provide a"
+10,random2,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," not clear as there have been several TV shows and movies with the title ""Empire."" However, I can provide a"
+10,random3,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," not clear as there have been several TV shows and movies with the title ""Empire."" However, I can provide a"
+10,random4,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," not clear as there have been several TV shows and movies with the title ""Empire."" However, I can provide a"
+10,random5,uncertain_to_control,True,False,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," a bit complex as there have been multiple versions of the TV series ""Empire."" 
+
+1. The original ""Emp"
+10,random6,uncertain_to_control,True,False,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," a bit complex as there have been several directors of the TV series Empire. 
+
+The show was created by Lee Daniels and"
+10,random7,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," not clear as there have been several TV shows and movies with the title ""Empire."" However, I can provide a"
+10,random8,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," not clear as there have been several TV shows and movies with the title ""Empire."" However, I can provide a"
+10,random9,uncertain_to_control,True,True,False,False,False," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"," not clear as there are multiple TV shows and movies with the title ""Empire."" However, I can provide a few"
+11,circuit,control_to_uncertain,False,True,False,False,False,  Steno., not available in the given knowledge.
+11,random0,control_to_uncertain,False,False,False,False,False,  Steno.,  Steno.
+11,random1,control_to_uncertain,False,False,False,False,False,  Steno., Steno.
+11,random2,control_to_uncertain,False,False,False,False,False,  Steno., Mario Mattoli.
+11,random3,control_to_uncertain,False,False,False,False,False,  Steno.,  Steno.
+11,random4,control_to_uncertain,False,False,False,False,False,  Steno.,  Steno.
+11,random5,control_to_uncertain,False,False,False,False,False,  Steno., Mario Mattoli.
+11,random6,control_to_uncertain,False,False,False,False,False,  Steno.,  Steno.
+11,random7,control_to_uncertain,False,False,False,False,False,  Steno., Steno.
+11,random8,control_to_uncertain,False,False,False,False,False,  Steno., Mario Mattoli.
+11,random9,control_to_uncertain,False,False,False,False,False,  Steno., Mario Mattoli
+11,circuit,uncertain_to_control,False,True,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," not clear without more information. There have been several directors of foreign affairs in different countries and organizations. 
+
+However, I"
+11,random0,uncertain_to_control,False,True,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," unclear without more information. There have been several directors of foreign affairs throughout history and across different countries. 
+
+However, in"
+11,random1,uncertain_to_control,False,False,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+11,random2,uncertain_to_control,False,False,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+11,random3,uncertain_to_control,False,False,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+11,random4,uncertain_to_control,False,False,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+11,random5,uncertain_to_control,False,False,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+11,random6,uncertain_to_control,False,True,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," unclear as there are several countries with a Ministry of Foreign Affairs or a similar department. 
+
+However, some notable examples include"
+11,random7,uncertain_to_control,False,True,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," unclear as there are several countries with a Ministry of Foreign Affairs or a similar department. 
+
+However, some notable directors of"
+11,random8,uncertain_to_control,False,False,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+11,random9,uncertain_to_control,False,False,False,False,False," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+12,circuit,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Sollett.
+12,random0,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Patzak.
+12,random1,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Patzak.
+12,random2,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Paterson
+12,random3,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Patzak.
+12,random4,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Patzak.
+12,random5,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Markle.
+12,random6,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Patzak.
+12,random7,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Patzak.
+12,random8,control_to_uncertain,False,False,False,False,False, Peter Patzak., Peter Patzak.
+12,random9,control_to_uncertain,False,False,False,False,False, Peter Patzak., Woody Allen.
+12,circuit,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random0,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random1,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo Garcia.
+12,random2,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random3,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random4,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random5,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random6,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random7,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random8,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+12,random9,uncertain_to_control,False,False,False,False,False, Rodrigo García., Rodrigo García.
+13,circuit,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films and TV shows with the title ""The Key""."
+13,random0,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films with the title ""The Key""."
+13,random1,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films with the title ""The Key""."
+13,random2,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films with the title ""The Key""."
+13,random3,control_to_uncertain,True,False,False,False,False," not clear as there are multiple films with the title ""The Key"".", Yann Gozlan.
+13,random4,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films with the title ""The Key""."
+13,random5,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films and TV shows with the title ""The Key""."
+13,random6,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key"".", not available in my database.
+13,random7,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films with the title ""The Key""."
+13,random8,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key"".", not available in my database.
+13,random9,control_to_uncertain,True,True,False,False,False," not clear as there are multiple films with the title ""The Key""."," not clear as there are multiple films with the title ""The Key""."
+13,circuit,uncertain_to_control,False,True,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is", not available in the given knowledge cutoff date.
+13,random0,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random1,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random2,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random3,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random4,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random5,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random6,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random7,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random8,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+13,random9,uncertain_to_control,False,False,False,False,False," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+14,circuit,control_to_uncertain,False,False,False,False,False, Bungie.,"  the director of the 1997 film ""Destiny"" is  Paul Ziller"
+14,random0,control_to_uncertain,False,False,False,False,False, Bungie.," not straightforward as Destiny is a large-scale game with multiple directors involved in its development. However, some key directors associated with"
+14,random1,control_to_uncertain,False,False,False,False,False, Bungie.," not straightforward as Destiny is a large-scale game with multiple directors involved in its development. However, the main creative director of"
+14,random2,control_to_uncertain,False,False,False,False,False, Bungie.," Luke Smith and Ryan Ellis, but the main director of Destiny was Luke Smith"
+14,random3,control_to_uncertain,False,False,False,False,False, Bungie., Bungie.
+14,random4,control_to_uncertain,False,False,False,False,False, Bungie., Bungie.
+14,random5,control_to_uncertain,False,False,False,False,False, Bungie., Bungie.
+14,random6,control_to_uncertain,False,False,False,False,False, Bungie., Luke Smith.
+14,random7,control_to_uncertain,False,False,False,False,False, Bungie.," Luke Smith, but he was not the director of the game. Luke Smith is a game designer and the lead designer of"
+14,random8,control_to_uncertain,False,False,False,False,False, Bungie.," a bit complex as Destiny is a large-scale game with multiple directors involved in its development. 
+
+The original game, Destiny"
+14,random9,control_to_uncertain,False,False,False,False,False, Bungie.," not straightforward as Destiny is a first-person shooter video game with a large team of developers. However, the game's director"
+14,circuit,uncertain_to_control,False,True,False,False,False,  Ivan Passer.," not clear as there are multiple films with the title ""The Physician""."
+14,random0,uncertain_to_control,False,False,False,False,False,  Ivan Passer.,  Philipp Stölzl.
+14,random1,uncertain_to_control,False,False,False,False,False,  Ivan Passer.,  Philipp Stölzl.
+14,random2,uncertain_to_control,False,False,False,False,False,  Ivan Passer., Philipp Stölzl.
+14,random3,uncertain_to_control,False,False,False,False,False,  Ivan Passer., Philipp Stölzl.
+14,random4,uncertain_to_control,False,False,False,False,False,  Ivan Passer., Philipp Stölzl.
+14,random5,uncertain_to_control,False,False,False,False,False,  Ivan Passer.,"  Philipp Stölzl. He is a German film director, and he directed the 2013 film ""The Physician"
+14,random6,uncertain_to_control,False,False,False,False,False,  Ivan Passer.,  Ivan Passer.
+14,random7,uncertain_to_control,False,False,False,False,False,  Ivan Passer.,  Philip Stölzl.
+14,random8,uncertain_to_control,False,False,False,False,False,  Ivan Passer.,  Philipp Stölzl.
+14,random9,uncertain_to_control,False,False,False,False,False,  Ivan Passer.,  Ivan Passer.
+15,circuit,control_to_uncertain,True,False,False,False,False, not available in my database., dependent on the John Donkin you are referring to. There are several individuals with the name John Donkin.
+15,random0,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my current database.
+15,random1,control_to_uncertain,True,True,False,False,False, not available in my database., not available in the given knowledge cut off date.
+15,random2,control_to_uncertain,True,True,False,False,False, not available in my database., not available in the given data.
+15,random3,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+15,random4,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+15,random5,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+15,random6,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+15,random7,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+15,random8,control_to_uncertain,True,True,False,False,False, not available in my database., not available in the given data.
+15,random9,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+15,circuit,uncertain_to_control,False,True,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not clear without more context. There are several notable individuals named Morgan, so it would be helpful to know which one you"
+15,random0,uncertain_to_control,False,True,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not clear without more context. There are several notable individuals named Morgan, so it would be helpful to know which one you"
+15,random1,uncertain_to_control,False,True,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not clear without more context. There are several notable individuals named Morgan, so it would be helpful to know which one you"
+15,random2,uncertain_to_control,False,True,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not clear without more context. There are several notable individuals named Morgan, so it would be helpful to know which one you"
+15,random3,uncertain_to_control,False,False,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"
+15,random4,uncertain_to_control,False,False,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"
+15,random5,uncertain_to_control,False,False,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," dependent on which Morgan you are referring to. There are several notable individuals with the name Morgan. 
+
+1. Morgan Freeman"
+15,random6,uncertain_to_control,False,False,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not unique as there are several notable individuals named Morgan. However, I can provide a few possibilities:
+
+1. Morgan Freeman"
+15,random7,uncertain_to_control,False,True,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not clear without more context. There are several notable individuals named Morgan, so it would be helpful to know which one you"
+15,random8,uncertain_to_control,False,True,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not clear without more context. There are several notable individuals named Morgan, so it would be helpful to know which one you"
+15,random9,uncertain_to_control,False,True,False,False,False," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"," not clear without more context. There are several notable individuals named Morgan, so it would be helpful to know which one you"
+16,circuit,control_to_uncertain,True,False,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," not straightforward as there are multiple works with the title ""Seven Veils."" 
+
+1. ""Seven Veils"" is"
+16,random0,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear. However, I can provide some information about the term ""Seven Veils."" 
+
+The term ""Seven Veils"
+16,random1,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random2,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random3,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random4,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random5,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random6,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random7,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random8,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,random9,control_to_uncertain,True,True,False,False,False," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"," unclear without more information. There are multiple works with the title ""Seven Veils."" 
+
+1. Seven Veils is"
+16,circuit,uncertain_to_control,False,True,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," unclear as there are multiple things called ""Bridge"". 
+
+1. Bridge (card game): The genre of Bridge is a"
+16,random0,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"
+16,random1,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. **Bridge (card game)**: The genre"
+16,random2,uncertain_to_control,False,True,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," unclear as there are several types of bridges. However, I can provide some possible genres based on different types of bridges:
+
+"
+16,random3,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"
+16,random4,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. **Bridge (card game)**: Bridge is"
+16,random5,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"
+16,random6,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"
+16,random7,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. **Bridge (card game)**: The genre"
+16,random8,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"
+16,random9,uncertain_to_control,False,False,False,False,False," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"
+17,circuit,control_to_uncertain,True,False,False,False,False, unclear.," a bit ambiguous as there are multiple individuals with the name Ruth Berman Harris. However, I can provide information on a"
+17,random0,control_to_uncertain,True,True,False,False,False, unclear., unclear.
+17,random1,control_to_uncertain,True,True,False,False,False, unclear., unclear.
+17,random2,control_to_uncertain,True,True,False,False,False, unclear., unclear.
+17,random3,control_to_uncertain,True,True,False,False,False, unclear., unclear.
+17,random4,control_to_uncertain,True,True,False,False,False, unclear.," unclear. However, I can provide some information about Ruth Berman Harris."
+17,random5,control_to_uncertain,True,True,True,False,False, unclear.," unclear. However, I can provide some context. Ruth Berman Harris is often associated with the genre of science fiction."
+17,random6,control_to_uncertain,True,True,False,False,False, unclear., unclear.
+17,random7,control_to_uncertain,True,True,True,False,False, unclear.," unclear. However, I can provide some context. Ruth Berman Harris is often associated with the genre of science fiction,"
+17,random8,control_to_uncertain,True,True,False,False,False, unclear., unclear.
+17,random9,control_to_uncertain,True,True,False,False,False, unclear.," unclear. However, I can provide some information about Ruth Berman Harris."
+17,circuit,uncertain_to_control,False,True,False,False,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV", unclear.
+17,random0,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random1,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random2,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random3,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random4,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random5,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random6,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random7,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random8,uncertain_to_control,False,False,False,True,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+17,random9,uncertain_to_control,False,False,False,False,False," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"," a bit complex as 'Dark Matter' can refer to different things. 
+
+1.  Dark Matter (novel series"
+18,circuit,control_to_uncertain,True,True,False,False,False, not available in the given data.," unclear without more information. There are several movies and games with the title ""Operation Sabotage."" 
+
+However, I"
+18,random0,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random1,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random2,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random3,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random4,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random5,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random6,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random7,control_to_uncertain,True,True,False,False,False, not available in the given data.," not available in the given information. However, I can try to find the information for you. 
+
+Operation Sabotage"
+18,random8,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,random9,control_to_uncertain,True,True,False,False,False, not available in the given data., not available in the given data.
+18,circuit,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," not available in the given information. However, I can provide some information about the term ""My Way"". 
+
+""My Way"
+18,random0,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random1,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random2,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random3,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random4,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random5,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random6,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random7,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random8,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+18,random9,uncertain_to_control,True,True,False,False,False," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+19,circuit,control_to_uncertain,True,True,False,False,False, not available in my database.," a bit unclear as there are multiple movies and TV shows with the title ""The Supplement"". However, I can provide some"
+19,random0,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random1,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random2,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random3,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random4,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random5,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random6,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random7,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random8,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,random9,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+19,circuit,uncertain_to_control,False,True,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1", not available in my database.
+19,random0,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," Mike Fisher, but more notably, the band Heart was produced by several notable producers throughout their career. 
+
+Some of the"
+19,random1,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," Mike Fisher, but more notably, the band Heart was produced by several notable producers throughout their career. Some of the most"
+19,random2,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," not straightforward as there have been several bands and artists named ""Heart"" throughout history. However, I'm assuming you are"
+19,random3,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," a bit complex as there were multiple producers involved in the band Heart over the years. 
+
+Some notable producers of Heart include"
+19,random4,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"
+19,random5,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1", Mike Flicker.
+19,random6,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," not straightforward as there have been several bands and artists named ""Heart"" throughout history. However, I'm assuming you are"
+19,random7,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," a bit complex as there were multiple producers involved in the band Heart over the years. 
+
+Some notable producers of Heart include"
+19,random8,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," a bit complex as there were multiple producers involved in the band Heart over the years. 
+
+Some notable producers of Heart include"
+19,random9,uncertain_to_control,False,False,False,False,False," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"," not straightforward as there have been several bands and artists named ""Heart"" throughout history. However, I'm assuming you are"
+20,circuit,control_to_uncertain,True,True,False,False,False, not available in my database.," not clear as there are multiple works with the title ""Snake Fang""."
+20,random0,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random1,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random2,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random3,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random4,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random5,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random6,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random7,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random8,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,random9,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+20,circuit,uncertain_to_control,False,True,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En, not available in my database.
+20,random0,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En," Eric Kripke, Evan Goldberg, Seth Rogen, and also the show is based on the comic book series of"
+20,random1,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En," a bit complex, as The Boys is a television series based on a comic book series of the same name by Garth"
+20,random2,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En," a bit complex as The Boys is a series with multiple screenwriters. However, the main creators of the series are Eric"
+20,random3,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En," Eric Kripke, Evan Goldberg, Seth Rogen, and others."
+20,random4,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En
+20,random5,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En," Eric Kripke, Evan Goldberg, Seth Rogen, and the show is based on the comic book series of the"
+20,random6,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En
+20,random7,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En
+20,random8,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En, not a single person. The Boys is a television series based on the comic book series of the same name by Garth
+20,random9,uncertain_to_control,False,False,False,False,False, a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En," Eric Kripke, Evan Goldberg, Seth Rogen, and the show is based on the comic book series of the"
+21,circuit,control_to_uncertain,False,False,False,False,False, unavailable.,  Bertrand Tavernier and  Pascal Bonitzer
+21,random0,control_to_uncertain,False,False,False,False,False, unavailable., unavailable.
+21,random1,control_to_uncertain,False,False,False,False,False, unavailable., unavailable.
+21,random2,control_to_uncertain,False,False,False,False,False, unavailable., unavailable
+21,random3,control_to_uncertain,False,True,False,False,False, unavailable., not available in my database.
+21,random4,control_to_uncertain,False,True,False,False,False, unavailable., not available in my database.
+21,random5,control_to_uncertain,False,False,False,False,False, unavailable., unavailable.
+21,random6,control_to_uncertain,False,False,False,False,False, unavailable., unavailable.
+21,random7,control_to_uncertain,False,True,False,False,False, unavailable., not available in my database.
+21,random8,control_to_uncertain,False,False,False,False,False, unavailable., unavailable.
+21,random9,control_to_uncertain,False,True,False,False,False, unavailable., not available in my database.
+21,circuit,uncertain_to_control,False,True,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac", not available in my database.
+21,random0,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac","  Carlo Carlei and  Jean-Jacques Annaud, however, the film adaptation of Cormac McCarthy's novel"
+21,random1,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac","  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel of the same name"
+21,random2,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac",  Cormac McCarthy.
+21,random3,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac","  Carlo Carlei and  Jay Bonafield, but the screenplay was based on the novel by Cormac McCarthy."
+21,random4,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac",  Joe Penhall.
+21,random5,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac","  Carlo Carlei and  Jay Bonafield, but the screenplay was based on the novel by  Cormac McCarthy"
+21,random6,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac"," not straightforward. The Road is a novel by Cormac McCarthy, and it was adapted into a film in 2009"
+21,random7,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac",  Joe Penhall.
+21,random8,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac"," not readily available. However, I can tell you that the movie ""The Road"" is based on the novel of the"
+21,random9,uncertain_to_control,False,False,False,False,False,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac",  Joe Penhall.
+22,circuit,control_to_uncertain,True,False,False,False,False, not available in my database.,  Neil Simon
+22,random0,control_to_uncertain,True,False,False,False,False, not available in my database., not readily available.
+22,random1,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random2,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random3,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random4,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random5,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random6,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random7,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random8,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,random9,control_to_uncertain,True,True,False,False,False, not available in my database., not available in my database.
+22,circuit,uncertain_to_control,False,True,False,False,False,  Robert Benton and William Goldman., not available in my database.
+22,random0,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,  Neil Simon.
+22,random1,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman., Irving Ravetch and Harriet Frank Jr.
+22,random2,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,  Neil Simon.
+22,random3,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,  Robert Benton and William Goldman.
+22,random4,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,  Neil Simon.
+22,random5,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,"  Morris Engel, Joseph Strick, and Robert Mulligan, however the screenplay was written by  Morris Engel, Joseph"
+22,random6,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,  Robert Benton and William Goldman.
+22,random7,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,  Robert Benton and William Goldman.
+22,random8,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman.,"  Morris Pertwee,  Neil Simon,  and  William Goldman."
+22,random9,uncertain_to_control,False,False,False,False,False,  Robert Benton and William Goldman., George Lucas and William Goldman.

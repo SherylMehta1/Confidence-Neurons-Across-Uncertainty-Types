@@ -1,0 +1,22 @@
+Behavioral validation -- factorial_v3_pop_given_unknown (eval split: held_out)
+  20 heads + 100 neurons; 109 pairs; 24 greedy tokens; patch applied to prompt positions at prefill only
+  readout: HEDGE_RE on the generated continuation
+
+  control_to_uncertain  (expected sign of delta: -)
+    clean hedge rate            0.661
+    circuit-patched hedge rate  0.239   delta -0.422  (expected direction: YES)
+    random-set patched rate     0.694 +- 0.045 over 10 sets   delta +0.034
+    circuit delta minus random-set delta: -0.456
+    discordant pairs (twins differ in clean hedging): 72/109
+    flip-to-source-behaviour rate   circuit 0.806   random 0.064   margin +0.742
+    ENTITY LEAK: patched continuation contains a SOURCE gold alias   circuit 0.014  (clean baseline 0.000)
+
+  uncertain_to_control  (expected sign of delta: +)
+    clean hedge rate            0.183
+    circuit-patched hedge rate  0.624   delta +0.440  (expected direction: YES)
+    random-set patched rate     0.195 +- 0.016 over 10 sets   delta +0.012
+    circuit delta minus random-set delta: +0.428
+    discordant pairs (twins differ in clean hedging): 72/109
+    flip-to-source-behaviour rate   circuit 0.653   random 0.062   margin +0.590
+    ENTITY LEAK: patched continuation contains a SOURCE gold alias   circuit 0.000  (clean baseline 0.014)
+

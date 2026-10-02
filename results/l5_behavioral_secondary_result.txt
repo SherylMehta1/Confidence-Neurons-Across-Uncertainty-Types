@@ -1,0 +1,141 @@
+L5 / STEP 9 -- SECONDARY BEHAVIORAL ARMS, AND THE PATTERN ACROSS ALL FOUR
+generated 2026-10-02, branch l0-fixes. Script 464007d, criterion 59f5ec5 (locked before any
+run). Primary familiarity_v3 result committed separately at e1ef8dc.
+model unsloth/Meta-Llama-3.1-8B-Instruct bf16; 20 heads + 100 neurons; 24 greedy tokens;
+10 random size-matched sets per direction; seed 42; both --positions scopes.
+
+Re-run note: the first sandbox died (HTTP 410) after these arms had finished but before they
+were fetched, so all four secondary arms were re-run from scratch on a new box cloned at
+e1ef8dc with identical library versions (torch 2.11.0+cu130, transformers 5.14.1).
+
+================================================================================
+1. ALL FOUR ARMS AGAINST THE LOCKED BAR
+================================================================================
+Bar: flip-to-source-behaviour rate on discordant pairs >= 0.50 AND >= 0.20 above the
+random-set null, in BOTH directions.
+
+arm                  dir   clean->patched  flip   95% CI          null    n/total  verdict
+familiarity_v3       c->u  0.730->0.014    0.981  [0.951,1.000]  0.137   103/141
+  (PRIMARY)          u->c  0.000->0.319    0.398  [0.301,0.495]  0.009   103/141  NO
+uu_hedge_confab_v3   c->u  0.522->0.391    0.571  [0.143,0.857]  0.029     7/23
+                     u->c  0.217->0.652    1.000  [1.000,1.000]  0.100     7/23   (passes,
+                                                                                  but n=7)
+know_given_hi        c->u  0.187->0.027    0.929  [0.786,1.000]  0.214    14/75
+                     u->c  0.000->0.040    0.214  [0.000,0.429]  0.014    14/75   NO
+pop_given_unknown    c->u  0.661->0.239    0.806  [0.708,0.889]  0.064    72/109
+                     u->c  0.183->0.624    0.653  [0.542,0.764]  0.062    72/109  YES
+(--positions all shown; the suffix-only scope is given in section 4.)
+
+Only pop_given_unknown both passes and has the size to mean anything.
+
+U/U technically clears both thresholds in both directions, but it is NOT reported as a pass:
+n = 7 discordant pairs. Its c->u bootstrap CI spans [0.143, 0.857], straddling the 0.50 bar
+completely, and its u->c CI is degenerate because all 7 pairs flipped. Seven pairs cannot
+support a verdict. know_given_hi at n=14 is thin for the same reason.
+
+================================================================================
+2. WHY THE SECONDARY POOLS SHRANK -- A CONSTRUCT MISMATCH, NOT A BUG
+================================================================================
+The flip metric is restricted to DISCORDANT pairs: pairs whose twins differ in CLEAN
+GENERATED hedging. That pool is much smaller than pair selection implies, very unevenly:
+
+  arm                  pairs   sampled |hedge gap|>=0.5   greedy-discordant
+  familiarity_v3        141      134 (95.0%)               103 (73.0%)
+  uu_hedge_confab_v3     23       23 (100.0%)                7 (30.4%)
+  know_given_hi          75       21 (28.0%)                14 (18.7%)
+
+Cause, located directly: the dataset's hedge_rate (build_familiarity_twins.py:225) is
+measured on a NO-PREFILL plain chat prompt sampled at TEMPERATURE 0.7 over 20 draws. This
+script's readout uses chat_formatted_prompt -- WITH the prefill -- decoded GREEDILY. Different
+prompt and different decoding, therefore a different construct.
+
+Using the prefill prompt is the correct choice, not a compromise: it is the prompt the circuit
+was discovered on and the one circuit_faithfulness.py scores, so the behavioral test must use
+it. But it means U/U's selection-time 100% hedge separation collapses to 30% under greedy
+decoding, which is what makes that arm uninformative here. The primary arm keeps 103/141 and
+is unaffected.
+
+================================================================================
+3. THE PATTERN ACROSS ARMS -- WHAT PREDICTS INJECTION FAILURE
+================================================================================
+Removal (control_to_uncertain) works in ALL FOUR arms: 0.981, 0.571, 0.929, 0.806, every one
+far above its own null. Injection (uncertain_to_control) splits the arms perfectly, and the
+splitting variable is the SliCK class of the TARGET prompt -- which in that direction is the
+control slot:
+
+  arm                  injection flip   target (control slot) SliCK   verdict
+  familiarity_v3            0.398       HighlyKnown  (141/141)        FAIL
+  know_given_hi             0.214       HighlyKnown  (75/75)          FAIL
+  pop_given_unknown         0.653       Unknown      (109/109)        PASS
+  uu_hedge_confab_v3        1.000       Unknown      (23/23)          PASS
+
+Zero exceptions, no overlap, and the groups are pure (frac_correct == 0 for 100% of the
+Unknown-target arms, 0% of the HighlyKnown-target arms).
+
+Reading: patching the hedging circuit CANNOT make the model hedge about something it actually
+knows. Where both twins lack the knowledge, the circuit's state is the only thing differing
+between them and flipping it works in both directions. Where the target retains the
+knowledge, the circuit is not sufficient to override it -- the hedging decision is downstream
+of knowledge the model still has.
+
+This is POST HOC and rests on four arms, two per group, so it is a strong descriptive pattern
+rather than a tested claim. It was not pre-registered and nothing here should be reported as
+confirmatory. The obvious direct test -- hold the contrast fixed and vary only the target's
+SliCK class -- is new work.
+
+================================================================================
+4. ENTITY-POSITION CONTROL (--positions suffix) HOLDS IN EVERY ARM
+================================================================================
+Patching only the shared question-tail/prefill positions (no entity tokens) reproduces each
+arm's result:
+
+  arm                  c->u  all -> suffix     u->c  all -> suffix
+  familiarity_v3       0.981 -> 0.981          0.398 -> 0.388
+  uu_hedge_confab_v3   0.571 -> 0.571          1.000 -> 1.000
+  know_given_hi        0.929 -> 0.857          0.214 -> 0.214
+  pop_given_unknown    0.806 -> 0.847          0.653 -> 0.556
+
+No verdict changes in any arm. So none of these effects is entity substitution.
+
+CAVEAT on the one arm that matters: pop_given_unknown's injection direction under suffix-only
+is 0.556 with CI [0.444, 0.667] -- the point estimate clears the 0.50 floor, and the locked
+bar is written on the point estimate, so it passes as specified. But the CI includes values
+below the bar, so that direction should be described as clearing the bar, not as comfortably
+above it. Under --positions all it is 0.653, CI [0.542, 0.764], clear of 0.50.
+
+Source-gold leak rates are low everywhere (0.000-0.014 for pop_given_unknown and U/U; 0.143
+and 0.214 for know_given_hi on only 14 pairs, i.e. 2-3 pairs).
+
+================================================================================
+5. WHAT THIS DOES AND DOES NOT CHANGE FOR C3
+================================================================================
+It does NOT overturn the primary verdict. l5_behavioral_criterion.md governs C3 via the
+familiarity_v3 arm, which is EQUIVOCAL (e1ef8dc). A secondary arm passing does not
+retroactively license the headline framing, and treating it that way would be exactly the
+post-hoc substitution the criterion note forbids.
+
+What it does change is the CHARACTER of the limitation, and this is the useful contribution:
+  - The earlier reading was "the circuit is necessary for hedging but not sufficient to
+    produce it on demand."
+  - The four-arm pattern sharpens that: injection fails SPECIFICALLY when the target prompt
+    retains the knowledge, and succeeds when it does not. The circuit is a bidirectional
+    behavioral switch within the space of prompts the model does not know, and a one-way
+    switch when real knowledge is present.
+  - pop_given_unknown supplies that with n=72 and both directions passing, which also extends
+    the earlier post-hoc read of that contrast as a larger stand-in for U/U (see
+    factorial_circuit_result.txt section 5) from the logit level to the behavioral level.
+
+Recommended for step 8: report familiarity_v3 as the primary behavioral result with its
+equivocal verdict; report the knowledge-dependence pattern as the explanation for the
+injection asymmetry, flagged as post hoc; do not claim a bidirectional behavioral switch in
+general; do not cite U/U's behavioral arm as support for anything (n=7).
+
+================================================================================
+COMMANDS AS RUN (all six arms, rc=0)
+================================================================================
+export CN_MODEL_ID=unsloth/Meta-Llama-3.1-8B-Instruct   # scripts default to the GATED repo id
+for each of (uu_hedge_confab_v3, 23) (factorial_v3_know_given_hi, 75)
+             (factorial_v3_pop_given_unknown, 109), and each of --positions all|suffix:
+python scripts/circuit_behavioral.py --category <cat> --circuit-dir results/circuit_<cat> \
+    --n-heads 20 --n-neurons 100 --limit <n> --max-new-tokens 24 --n-random 10 \
+    --positions <scope>
