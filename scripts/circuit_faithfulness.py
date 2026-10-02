@@ -61,18 +61,29 @@ def main():
     ap.add_argument("--n-neurons", type=int, default=100)
     ap.add_argument("--n-random", type=int, default=10)
     ap.add_argument("--limit", type=int, default=60, help="held-out pairs")
+    ap.add_argument("--eval-split", default="held_out", choices=["held_out", "working"],
+                    help="split to evaluate faithfulness on. Default held_out is the only "
+                         "confirmatory setting. 'working' is IN-SAMPLE (the same pairs that "
+                         "selected the components) and is for exploratory variance estimates "
+                         "only; its outputs are written to faithfulness_working.* so an "
+                         "exploratory pass can never overwrite a held-out result.")
     ap.add_argument("--compare", default=None, help="another circuit dir for overlap")
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
     circ = REPO_ROOT / (args.circuit_dir or f"results/circuit_{args.category}")
-    guard_output(circ / "faithfulness.csv", args.overwrite)
+    tag = "" if args.eval_split == "held_out" else f"_{args.eval_split}"
+    out_csv = circ / f"faithfulness{tag}.csv"
+    guard_output(out_csv, args.overwrite)
 
     model, tokenizer = load_model_from_args(args)
     ro = Readout(tokenizer); rng = random.Random(args.seed)
     heads, neurons = component_set(circ, args.n_heads, args.n_neurons)
-    pairs, how = load_pairs(args.category, args.limit, "held_out")
+    pairs, how = load_pairs(args.category, args.limit, args.eval_split)
     if not pairs:
-        pairs, how = load_pairs(args.category, args.limit, None); print("WARNING: no held-out split; using all pairs")
+        pairs, how = load_pairs(args.category, args.limit, None); print(f"WARNING: no {args.eval_split} split; using all pairs")
+    if args.eval_split != "held_out":
+        print(f"NOTE: evaluating on the {args.eval_split} split -- IN-SAMPLE, exploratory only, "
+              f"not a confirmatory result; writing to {out_csv.name}")
     H, L, D = model.config.num_attention_heads, model.config.num_hidden_layers, model.config.intermediate_size
     n_comp, total = len(heads) + len(neurons), L * H + L * D
     frac_heads, frac_neurons = len(heads) / (L * H), len(neurons) / (L * D)  # sparsity per component type
@@ -95,10 +106,10 @@ def main():
             rows.append(dict(pair=k, set=f"random{r_i}", direction="control_to_uncertain", logodds_rec=recovery(lo, lo_u, lo_c), entropy_rec=recovery(Hh, H_u, H_c)))
         if (k + 1) % 10 == 0:
             print(f"  {k + 1}/{len(pairs)} pairs")
-    df = pd.DataFrame(rows); df.to_csv(circ / "faithfulness.csv", index=False)
+    df = pd.DataFrame(rows); df.to_csv(out_csv, index=False)
     circ_cu = df[(df.set == "circuit") & (df.direction == "control_to_uncertain")]; circ_uc = df[(df.set == "circuit") & (df.direction == "uncertain_to_control")]
     rnd = df[df.set.str.startswith("random")].groupby("set").logodds_rec.mean()
-    lines = [f"Faithfulness -- {args.category}; {len(heads)} heads ({100 * frac_heads:.2f}% of all heads) + {len(neurons)} neurons ({100 * frac_neurons:.3f}% of all MLP neurons); {len(pairs)} held-out pairs",
+    lines = [f"Faithfulness -- {args.category} (eval split: {args.eval_split}); {len(heads)} heads ({100 * frac_heads:.2f}% of all heads) + {len(neurons)} neurons ({100 * frac_neurons:.3f}% of all MLP neurons); {len(pairs)} held-out pairs",
              f"  control -> uncertain: log-odds recovery {circ_cu.logodds_rec.mean():+.3f}, entropy recovery {circ_cu.entropy_rec.mean():+.3f}",
              f"  uncertain -> control: log-odds recovery {circ_uc.logodds_rec.mean():+.3f}, entropy recovery {circ_uc.entropy_rec.mean():+.3f}",
              f"  random sets (same size, c->u): log-odds recovery {rnd.mean():+.3f} +- {rnd.std():.3f} over {len(rnd)} sets",
@@ -114,8 +125,8 @@ def main():
                   "  shared heads: " + ", ".join(f"L{l}H{h}" for l, h in sorted(set(heads) & set(oh))),
                   "  shared neuron layers: " + ", ".join(f"L{l}" for l in sorted({l for l, _ in set(neurons) & set(on)}))]
     summary = "\n".join(lines); print(summary)
-    (circ / "faithfulness_summary.txt").write_text(summary + "\n", encoding="utf-8")
-    write_provenance(circ / "faithfulness.csv", build_provenance(model, script="scripts/circuit_faithfulness.py", category=args.category, n_heads=len(heads), n_neurons=len(neurons), n_pairs=len(pairs), compare=args.compare))
+    (circ / f"faithfulness{tag}_summary.txt").write_text(summary + "\n", encoding="utf-8")
+    write_provenance(out_csv, build_provenance(model, script="scripts/circuit_faithfulness.py", category=args.category, eval_split=args.eval_split, n_heads=len(heads), n_neurons=len(neurons), n_pairs=len(pairs), compare=args.compare))
 
 
 if __name__ == "__main__":
