@@ -1,0 +1,45 @@
+{
+  "contrast": "know_given_hi",
+  "prompts_cell": "popular_unknown",
+  "controls_cell": "popular_known",
+  "source": "data/familiarity_v3_qwen/all_measured.jsonl",
+  "n_available": {
+    "popular_unknown": 741,
+    "popular_known": 388
+  },
+  "n_pairs": 289,
+  "n_working": 202,
+  "n_held_out": 87,
+  "unmatched": {
+    "no_partner_in_relation": 92,
+    "len": 7
+  },
+  "tiebreak": "logpop",
+  "pairs_per_relation": {
+    "author": 62,
+    "capital": 3,
+    "capital of": 12,
+    "composer": 14,
+    "country": 20,
+    "director": 42,
+    "father": 24,
+    "genre": 19,
+    "mother": 7,
+    "occupation": 10,
+    "place of birth": 11,
+    "producer": 14,
+    "religion": 2,
+    "screenwriter": 29,
+    "sport": 20
+  },
+  "mean_gap_prompts_minus_controls": {
+    "entropy": 1.0414042995395107,
+    "hedge_rate": 0.018339100346020765,
+    "log_pop": -0.3029032835808442
+  },
+  "balance_smd": {
+    "log_pop": -0.23357462882228802,
+    "n_q_tokens": -0.17777110093983084
+  },
+  "note": "no entropy/hedge gate: those gaps are the factorial's outcomes, recorded here, not selection criteria"
+}

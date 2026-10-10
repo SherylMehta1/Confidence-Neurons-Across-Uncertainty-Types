@@ -1,0 +1,39 @@
+{
+  "contrast": "pop_given_known",
+  "prompts_cell": "obscure_known",
+  "controls_cell": "popular_known",
+  "source": "data/familiarity_v3_gemma/all_measured.jsonl",
+  "n_available": {
+    "obscure_known": 122,
+    "popular_known": 621
+  },
+  "n_pairs": 84,
+  "n_working": 58,
+  "n_held_out": 26,
+  "unmatched": {
+    "no_partner_in_relation": 0,
+    "len": 38
+  },
+  "tiebreak": "length",
+  "pairs_per_relation": {
+    "capital": 31,
+    "capital of": 1,
+    "color": 1,
+    "composer": 2,
+    "country": 39,
+    "director": 1,
+    "father": 2,
+    "place of birth": 4,
+    "sport": 3
+  },
+  "mean_gap_prompts_minus_controls": {
+    "entropy": 0.032012736214147436,
+    "hedge_rate": 0.03154761904761905,
+    "log_pop": -6.910084805974898
+  },
+  "balance_smd": {
+    "log_pop": -4.641257667065564,
+    "n_q_tokens": 1.045765964645246
+  },
+  "note": "no entropy/hedge gate: those gaps are the factorial's outcomes, recorded here, not selection criteria"
+}
