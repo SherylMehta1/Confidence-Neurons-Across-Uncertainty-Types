@@ -1,0 +1,400 @@
+{"model": "llama_adj", "key": "producer::New", "q": "Who was the producer of New?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "religion::William Jerome McCormack", "q": "What is the religion of William Jerome McCormack?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Girl", "q": "Who is the author of Girl?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Silhouette", "q": "What genre is Silhouette?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "sport::Kwak Hee-ju", "q": "What sport does Kwak Hee-ju play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Thrilling", "q": "Who was the screenwriter for Thrilling?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Couch", "q": "Who was the producer of Couch?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "mother::Emperor An of Jin", "q": "Who is the mother of Emperor An of Jin?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::The Event", "q": "Who was the screenwriter for The Event?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Pas de deux", "q": "Who was the producer of Pas de deux?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "father::Merric Boyd", "q": "Who is the father of Merric Boyd?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Props", "q": "Who was the screenwriter for Props?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Fool", "q": "Who was the director of The Fool?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Corruption", "q": "What genre is Corruption?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Trojan Eddie", "q": "Who was the director of Trojan Eddie?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Toki o Kakeru Shōjo", "q": "Who was the composer of Toki o Kakeru Shōjo?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Empty Hands", "q": "What genre is Empty Hands?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Molon Labe", "q": "Who was the director of Molon Labe?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "occupation::Luís Marques Guedes", "q": "What is Luís Marques Guedes's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::The Card", "q": "Who was the composer of The Card?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "capital of::Pragjyotishpura", "q": "What is Pragjyotishpura the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Ivan Khomukha", "q": "In what city was Ivan Khomukha born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Lifetime Supply", "q": "Who was the screenwriter for Lifetime Supply?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::This Is the Sea", "q": "Who was the composer of This Is the Sea?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Pay Day", "q": "Who was the producer of Pay Day?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Resurrection", "q": "Who was the screenwriter for Resurrection?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "occupation::George Birnie Esslemont", "q": "What is George Birnie Esslemont's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Rebel", "q": "Who was the director of The Rebel?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::One Life", "q": "Who was the screenwriter for One Life?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::In the Park", "q": "Who was the screenwriter for In the Park?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Dag Stokke", "q": "What genre is Dag Stokke?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Where Dead Voices Gather", "q": "Who is the author of Where Dead Voices Gather?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Basketbolo žaidimas (krepšiasvydis) ir Lietuvos sporto lygos oficialės basketbolo taisyklės 1926-27 metams", "q": "Who is the author of Basketbolo žaidimas (krepšiasvydis) ir Lietuvos sporto lygos oficialės basketbolo taisyklės 1926-27 metams?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Candy", "q": "Who was the composer of Candy?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::I Dood It", "q": "Who was the producer of I Dood It?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Sorry", "q": "Who is the author of Sorry?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::A Woman", "q": "Who was the screenwriter for A Woman?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Christos Mitsis", "q": "In what city was Christos Mitsis born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Bert Kelly", "q": "What genre is Bert Kelly?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "occupation::Edward Norton", "q": "What is Edward Norton's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Falling", "q": "Who is the author of Falling?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Cross", "q": "Who was the director of The Cross?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "father::Yoko Yazawa", "q": "Who is the father of Yoko Yazawa?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Mountains", "q": "What genre is Mountains?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Politics", "q": "Who was the director of Politics?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::We Go Way Back", "q": "Who was the screenwriter for We Go Way Back?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Piano Trio", "q": "Who was the composer of Piano Trio?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "capital of::Tukums", "q": "What is Tukums the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "occupation::Jon Eikemo", "q": "What is Jon Eikemo's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "sport::Roberto Nani", "q": "What sport does Roberto Nani play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Oil", "q": "Who was the screenwriter for Oil?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Undo", "q": "Who was the composer of Undo?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "mother::Eleanor of England, Countess of Bar", "q": "Who is the mother of Eleanor of England, Countess of Bar?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::I'll Do It All Over Again", "q": "What genre is I'll Do It All Over Again?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::Idlorpait", "q": "In what country is Idlorpait?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Bruno Nöckler", "q": "In what city was Bruno Nöckler born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::North of Hudson Bay", "q": "Who was the director of North of Hudson Bay?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::All Over Me", "q": "What genre is All Over Me?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Die Jungfrau auf dem Dach", "q": "Who was the screenwriter for Die Jungfrau auf dem Dach?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Mitti", "q": "Who was the composer of Mitti?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Brothers", "q": "Who was the producer of Brothers?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "occupation::Giuseppe Demachi", "q": "What is Giuseppe Demachi's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Golden", "q": "What genre is Golden?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Maximiano de Sousa", "q": "What genre is Maximiano de Sousa?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Too Late", "q": "Who was the director of Too Late?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The End of Time", "q": "Who was the director of The End of Time?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Big City", "q": "Who was the director of The Big City?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Tough, Tough Toys for Tough, Tough Boys", "q": "Who is the author of Tough, Tough Toys for Tough, Tough Boys?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Thinking of You", "q": "What genre is Thinking of You?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Abouna", "q": "Who was the screenwriter for Abouna?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "capital::Ugocsa County", "q": "What is the capital of Ugocsa County?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Paris", "q": "Who was the composer of Paris?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Army", "q": "Who was the director of Army?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::By Design", "q": "Who was the director of By Design?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Legacy", "q": "Who is the author of Legacy?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "capital of::Kingisepp", "q": "What is Kingisepp the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Since", "q": "Who was the producer of Since?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Report", "q": "What genre is Report?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::The Battle", "q": "What genre is The Battle?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "father::George Washington", "q": "Who is the father of George Washington?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "religion::Ioan Duma", "q": "What is the religion of Ioan Duma?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::The Candidate", "q": "What genre is The Candidate?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::The Abandoned", "q": "Who was the screenwriter for The Abandoned?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Adam", "q": "Who was the screenwriter for Adam?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::The Best Day", "q": "Who was the producer of The Best Day?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::In Summer", "q": "Who was the composer of In Summer?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "occupation::Robert Lewis", "q": "What is Robert Lewis's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Tony", "q": "Who was the composer of Tony?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Superstar", "q": "Who was the screenwriter for Superstar?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::H. Hugh Bancroft", "q": "In what city was H. Hugh Bancroft born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Face", "q": "Who was the director of Face?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Interval", "q": "What genre is Interval?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::The Amazon", "q": "Who is the author of The Amazon?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Territory Cops", "q": "What genre is Territory Cops?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::Robinson", "q": "In what country is Robinson?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "father::Aonghus mac Somhairle", "q": "Who is the father of Aonghus mac Somhairle?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Two People", "q": "Who was the producer of Two People?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Cardinal", "q": "Who was the director of The Cardinal?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "religion::Father Jean Bernard", "q": "What is the religion of Father Jean Bernard?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::In Mexico", "q": "Who is the author of In Mexico?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "llama_adj", "key": "capital::Grand Casablanca", "q": "What is the capital of Grand Casablanca?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Turkish Seniors Open", "q": "What sport does Turkish Seniors Open play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Jamnagar district", "q": "What is the capital of Jamnagar district?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::1923 in Brazilian football", "q": "What sport does 1923 in Brazilian football play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Frederick Jagiellon", "q": "Who is the father of Frederick Jagiellon?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Heves County", "q": "What is the capital of Heves County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Kavala Regional Unit", "q": "What is the capital of Kavala Regional Unit?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::2008–09 National Indoor Soccer League season", "q": "What sport does 2008–09 National Indoor Soccer League season play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Brizambourg", "q": "In what country is Brizambourg?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Crow Harbour, New Brunswick", "q": "In what country is Crow Harbour, New Brunswick?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Łupiny, Masovian Voivodeship", "q": "In what country is Łupiny, Masovian Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::La Roche-Clermault", "q": "In what country is La Roche-Clermault?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Mishari bin Saud bin Abdulaziz Al Saud", "q": "Who is the father of Mishari bin Saud bin Abdulaziz Al Saud?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Zavkhan Province", "q": "What is the capital of Zavkhan Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Gunnedah Shire", "q": "What is the capital of Gunnedah Shire?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Dearborn County", "q": "What is the capital of Dearborn County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::2006–07 Primera B Nacional", "q": "What sport does 2006–07 Primera B Nacional play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Itasca County", "q": "What is the capital of Itasca County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Barice, Donji Vakuf", "q": "In what country is Barice, Donji Vakuf?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Záblatí", "q": "In what country is Záblatí?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Bundibugyo District", "q": "What is the capital of Bundibugyo District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Lewałd Wielki", "q": "In what country is Lewałd Wielki?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Amherst County", "q": "What is the capital of Amherst County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::La Couarde-sur-Mer", "q": "In what country is La Couarde-sur-Mer?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Basse-Kotto Prefecture", "q": "What is the capital of Basse-Kotto Prefecture?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Orangeburg County", "q": "What is the capital of Orangeburg County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::1949 France rugby union tour of Argentina", "q": "What sport does 1949 France rugby union tour of Argentina play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Larnaca District", "q": "What is the capital of Larnaca District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Province of Cremona", "q": "What is the capital of Province of Cremona?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Appenzell Ausserrhoden", "q": "What is the capital of Appenzell Ausserrhoden?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "genre::Howard University Jazz Ensemble", "q": "What genre is Howard University Jazz Ensemble?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::WTA South Orange", "q": "What sport does WTA South Orange play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Eshkevar-e Sofla Rural District", "q": "In what country is Eshkevar-e Sofla Rural District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Khouribga Province", "q": "What is the capital of Khouribga Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "mother::Todd McCaffrey", "q": "Who is the mother of Todd McCaffrey?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Yadkin County", "q": "What is the capital of Yadkin County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Henry Fairfield Osborn, Jr.", "q": "Who is the father of Henry Fairfield Osborn, Jr.?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Université Nationale du Bénin FC", "q": "What sport does Université Nationale du Bénin FC play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Panaitoliko", "q": "In what country is Panaitoliko?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Cześniki-Kolonia Górna", "q": "In what country is Cześniki-Kolonia Górna?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Sabiote", "q": "In what country is Sabiote?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Lobos BUAP Premier", "q": "What sport does Lobos BUAP Premier play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Manggarai", "q": "What is the capital of Manggarai?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Goondiwindi Region", "q": "What is the capital of Goondiwindi Region?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Kiribati men's national basketball team", "q": "What sport does Kiribati men's national basketball team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::1998–99 Slovenian Basketball League", "q": "What sport does 1998–99 Slovenian Basketball League play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Studzianka, Podlaskie Voivodeship", "q": "In what country is Studzianka, Podlaskie Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::The Desert Music", "q": "Who was the composer of The Desert Music?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Wilcza Jama, Sokółka County", "q": "In what country is Wilcza Jama, Sokółka County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Miętkie-Kolonia", "q": "In what country is Miętkie-Kolonia?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Bury", "q": "What is the capital of Bury?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "occupation::Elvin Penner", "q": "What is Elvin Penner's occupation?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Dragomirna River", "q": "In what country is Dragomirna River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Rafael Erich's cabinet", "q": "In what country is Rafael Erich's cabinet?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Bass Coast Shire", "q": "What is the capital of Bass Coast Shire?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Asahi Station", "q": "In what country is Asahi Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "religion::Enchin", "q": "What is the religion of Enchin?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::George Burley", "q": "What sport does George Burley play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Massac County", "q": "What is the capital of Massac County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "genre::Association for Public Art", "q": "What genre is Association for Public Art?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Obeakpu", "q": "In what country is Obeakpu?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Anaikudam", "q": "In what country is Anaikudam?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Tsutsui Station", "q": "In what country is Tsutsui Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Albertslund Municipality", "q": "What is the capital of Albertslund Municipality?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Loir-et-Cher", "q": "What is the capital of Loir-et-Cher?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Province of Turin", "q": "What is the capital of Province of Turin?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Lenawee County", "q": "What is the capital of Lenawee County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Meigs County", "q": "What is the capital of Meigs County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Ciepień", "q": "In what country is Ciepień?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Gare de Rosporden", "q": "In what country is Gare de Rosporden?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Akmola Region", "q": "What is the capital of Akmola Region?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Agustín Elduayen", "q": "What sport does Agustín Elduayen play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Island of Doomed Men", "q": "Who was the director of Island of Doomed Men?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Ježov", "q": "In what country is Ježov?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Gulf Province", "q": "What is the capital of Gulf Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Across Many Mountains", "q": "Who is the author of Across Many Mountains?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Gmina Lubsza", "q": "In what country is Gmina Lubsza?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Mrákotín", "q": "In what country is Mrákotín?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::2012 Uzbekistan First League", "q": "What sport does 2012 Uzbekistan First League play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Khishig-Öndör", "q": "In what country is Khishig-Öndör?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::Gleichwie der Regen und Schnee vom Himmel fällt, BWV 18", "q": "Who was the composer of Gleichwie der Regen und Schnee vom Himmel fällt, BWV 18?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Ormak, Isfahan", "q": "In what country is Ormak, Isfahan?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Seishi Ursula Gakuen Junior College", "q": "In what country is Seishi Ursula Gakuen Junior College?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Granada Lions", "q": "What sport does Granada Lions play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Natchitoches Parish", "q": "What is the capital of Natchitoches Parish?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Jauldes", "q": "In what country is Jauldes?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Asalem Rural District", "q": "In what country is Asalem Rural District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Shusha District", "q": "What is the capital of Shusha District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::Christen, ätzet diesen Tag, BWV 63", "q": "Who was the composer of Christen, ätzet diesen Tag, BWV 63?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::list of Azerbaijan football transfers winter 2012", "q": "What sport does list of Azerbaijan football transfers winter 2012 play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Tindouf Province", "q": "What is the capital of Tindouf Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Qashqadaryo Region", "q": "What is the capital of Qashqadaryo Region?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Beltrami County", "q": "What is the capital of Beltrami County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Sutlepa", "q": "In what country is Sutlepa?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Wiang Kao", "q": "In what country is Wiang Kao?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital of::Pishin", "q": "What is Pishin the capital of?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Ločenice", "q": "In what country is Ločenice?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Levice District", "q": "What is the capital of Levice District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Tora-san's Shattered Romance", "q": "Who was the director of Tora-san's Shattered Romance?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Poręba-Kocęby", "q": "In what country is Poręba-Kocęby?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "place of birth::Jakob Kaiser", "q": "In what city was Jakob Kaiser born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Drama", "q": "Who was the producer of Drama?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Good Times", "q": "Who was the composer of Good Times?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Worst", "q": "Who is the author of Worst?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "sport::ONCE", "q": "What sport does ONCE play?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Poison", "q": "Who was the director of Poison?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::The Myth", "q": "What genre is The Myth?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Ji", "q": "Who was the director of Ji?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::North", "q": "What genre is North?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Say My Name", "q": "Who was the director of Say My Name?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Them!", "q": "Who was the producer of Them!?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Joris Delle", "q": "In what city was Joris Delle born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Paul", "q": "Who was the screenwriter for Paul?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Tanya", "q": "Who is the author of Tanya?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Harvey", "q": "In what city was Harvey born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Empire", "q": "Who was the screenwriter for Empire?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::The Grapes of Wrath", "q": "Who was the producer of The Grapes of Wrath?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Doomsday Book", "q": "Who is the author of Doomsday Book?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Scooby-Doo", "q": "Who was the director of Scooby-Doo?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Recovery", "q": "Who was the producer of Recovery?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "capital of::Alexandria", "q": "What is Alexandria the capital of?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Reality", "q": "What genre is Reality?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Empath", "q": "Who was the director of The Empath?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::They", "q": "Who was the producer of They?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Survival Island", "q": "Who was the screenwriter for Survival Island?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Pan", "q": "Who was the producer of Pan?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Fifty-One", "q": "Who was the screenwriter for Fifty-One?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "sport::Cam Ward", "q": "What sport does Cam Ward play?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::The Shape of Water", "q": "Who is the author of The Shape of Water?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::The History of The Lord of the Rings", "q": "Who is the author of The History of The Lord of the Rings?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "religion::Maximilian I of Mexico", "q": "What is the religion of Maximilian I of Mexico?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Faster", "q": "What genre is Faster?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::David Byron", "q": "What genre is David Byron?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Disclosure", "q": "Who was the producer of Disclosure?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Female Serial Killers", "q": "Who is the author of Female Serial Killers?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::The Animal", "q": "Who was the producer of The Animal?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Alice", "q": "Who was the director of Alice?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::From Beyond", "q": "Who was the screenwriter for From Beyond?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Manmadhudu", "q": "Who was the composer of Manmadhudu?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::ZAP", "q": "In what country is ZAP?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::The Visitor", "q": "Who is the author of The Visitor?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Sam Storey", "q": "In what city was Sam Storey born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Ugly", "q": "Who was the producer of Ugly?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Demons", "q": "What genre is Demons?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Night", "q": "Who is the author of Night?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Firm", "q": "Who was the director of The Firm?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Saint Seiya: Next Dimension", "q": "Who is the author of Saint Seiya: Next Dimension?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Psalm 69", "q": "Who is the author of Psalm 69?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Yaare Koogadali", "q": "Who was the screenwriter for Yaare Koogadali?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Muni", "q": "Who was the composer of Muni?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Ninja Gaiden", "q": "Who was the director of Ninja Gaiden?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::Waterfall", "q": "In what country is Waterfall?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Martin", "q": "Who was the director of Martin?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Richie Hawtin", "q": "What genre is Richie Hawtin?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Suicide", "q": "What genre is Suicide?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Frank", "q": "Who was the director of Frank?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Gia", "q": "Who was the composer of Gia?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Hitch", "q": "Who was the producer of Hitch?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Alois Rašín", "q": "In what city was Alois Rašín born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::The Hand", "q": "Who was the composer of The Hand?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::The Post Office", "q": "Who is the author of The Post Office?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Ignite", "q": "What genre is Ignite?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::Baby", "q": "Who was the producer of Baby?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::Lim", "q": "In what country is Lim?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Wars", "q": "What genre is Wars?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::Rainbow Springs", "q": "In what country is Rainbow Springs?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Extract", "q": "Who was the screenwriter for Extract?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "occupation::David Joyce", "q": "What is David Joyce's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::Kno", "q": "In what country is Kno?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Another Toothpick", "q": "Who was the director of Another Toothpick?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Numb", "q": "What genre is Numb?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::He", "q": "Who is the author of He?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Halloween", "q": "Who is the author of Halloween?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::India", "q": "Who is the author of India?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Eternal", "q": "Who was the director of The Eternal?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::The Wood", "q": "What genre is The Wood?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Puli", "q": "Who was the screenwriter for Puli?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::In Hell", "q": "What genre is In Hell?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::William Collins", "q": "In what city was William Collins born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::The Way", "q": "Who was the producer of The Way?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "producer::The Jacket", "q": "Who was the producer of The Jacket?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Will Little", "q": "In what city was Will Little born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::Parker", "q": "Who was the screenwriter for Parker?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::Metro", "q": "Who was the director of Metro?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::March or Die", "q": "Who was the director of March or Die?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Archibald Willard", "q": "In what city was Archibald Willard born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "screenwriter::The Second Coming", "q": "Who was the screenwriter for The Second Coming?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Lunar", "q": "What genre is Lunar?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Bug", "q": "Who is the author of Bug?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "country::Davidson", "q": "In what country is Davidson?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "director::The Shadow", "q": "Who was the director of The Shadow?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::Tank", "q": "What genre is Tank?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::New Jersey", "q": "What genre is New Jersey?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "mother::Mary Cheney", "q": "Who is the mother of Mary Cheney?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "place of birth::Veselin Vujović", "q": "In what city was Veselin Vujović born?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "composer::Instant Crush", "q": "Who was the composer of Instant Crush?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "mother::Esau", "q": "Who is the mother of Esau?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Ente Katha", "q": "Who is the author of Ente Katha?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "author::Le Ton beau de Marot", "q": "Who is the author of Le Ton beau de Marot?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "genre::The Shadow", "q": "What genre is The Shadow?", "arm": "control", "slick": "Unknown"}
+{"model": "llama_adj", "key": "capital::Belize", "q": "What is the capital of Belize?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Vermont", "q": "What is the capital of Vermont?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "genre::Deep Blue Something", "q": "What genre is Deep Blue Something?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::Crying", "q": "Who was the composer of Crying?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Devgadh Bariya", "q": "In what country is Devgadh Bariya?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Iksan", "q": "In what country is Iksan?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::William III of the Netherlands", "q": "Who is the father of William III of the Netherlands?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Sudan", "q": "What is the capital of Sudan?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::The Great Race", "q": "Who was the composer of The Great Race?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Slovenia", "q": "What is the capital of Slovenia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Hoot", "q": "Who was the director of Hoot?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::The Singing Detective", "q": "Who was the screenwriter for The Singing Detective?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital of::Cardiff", "q": "What is Cardiff the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Lady Audley's Secret", "q": "Who is the author of Lady Audley's Secret?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::Kaththi", "q": "Who was the composer of Kaththi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Bosnia and Herzegovina", "q": "What is the capital of Bosnia and Herzegovina?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Griffin O'Neal", "q": "Who is the father of Griffin O'Neal?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::Little Children", "q": "Who was the screenwriter for Little Children?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::The Rest of the Robots", "q": "Who is the author of The Rest of the Robots?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::From Beyond", "q": "Who was the composer of From Beyond?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Attarintiki Daredi", "q": "Who was the director of Attarintiki Daredi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::The Tech Interactive", "q": "In what country is The Tech Interactive?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::Roar", "q": "Who was the composer of Roar?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Before and After", "q": "Who was the director of Before and After?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::The Gift of Rain", "q": "Who is the author of The Gift of Rain?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::On Writing", "q": "Who is the author of On Writing?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Koxinga", "q": "Who is the father of Koxinga?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Dave", "q": "Who was the director of Dave?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::The Walker", "q": "Who was the director of The Walker?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Uglich", "q": "In what country is Uglich?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::East New Britain Province", "q": "In what country is East New Britain Province?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Ecuador", "q": "What is the capital of Ecuador?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Haunted", "q": "Who was the director of Haunted?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Qatar", "q": "What is the capital of Qatar?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::The Normal Heart", "q": "Who was the screenwriter for The Normal Heart?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Trance", "q": "Who was the director of Trance?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Alphaville", "q": "Who was the director of Alphaville?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::How to Be Both", "q": "Who is the author of How to Be Both?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Izwan Mahbud", "q": "What sport does Izwan Mahbud play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::American Visionary Art Museum", "q": "In what country is American Visionary Art Museum?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::La Haine", "q": "Who was the screenwriter for La Haine?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::The Player", "q": "Who was the screenwriter for The Player?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Wales", "q": "What is the capital of Wales?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Mississippi", "q": "What is the capital of Mississippi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "occupation::John Scurti", "q": "What is John Scurti's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Benazir Bhutto", "q": "Who is the father of Benazir Bhutto?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Heinola", "q": "In what country is Heinola?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "place of birth::Athīr al-Dīn al-Abharī", "q": "In what city was Athīr al-Dīn al-Abharī born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Disclosure", "q": "Who is the author of Disclosure?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Our Lady of the Flowers", "q": "Who is the author of Our Lady of the Flowers?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Lysis", "q": "Who is the author of Lysis?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Kentucky", "q": "What is the capital of Kentucky?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::The Tenant", "q": "Who was the screenwriter for The Tenant?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Indiana", "q": "What is the capital of Indiana?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::After Dark", "q": "Who is the author of After Dark?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Abdul Malek Ukil Medical College, Noakhali", "q": "In what country is Abdul Malek Ukil Medical College, Noakhali?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Hana-Kimi", "q": "Who is the author of Hana-Kimi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Free to Choose", "q": "Who is the author of Free to Choose?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Haw River", "q": "In what country is Haw River?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Linus Torvalds", "q": "Who is the father of Linus Torvalds?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Damian Marley", "q": "Who is the father of Damian Marley?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Rugby Africa", "q": "What sport does Rugby Africa play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Smashed", "q": "Who was the director of Smashed?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::ABCD: Any Body Can Dance 2", "q": "Who was the director of ABCD: Any Body Can Dance 2?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "genre::Secret of Mana", "q": "What genre is Secret of Mana?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::The Getaway", "q": "Who was the screenwriter for The Getaway?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "religion::Dinesh D'Souza", "q": "What is the religion of Dinesh D'Souza?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Oman", "q": "What is the capital of Oman?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::The Addiction", "q": "Who was the director of The Addiction?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Bel Canto", "q": "Who is the author of Bel Canto?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Ramon Magsaysay Technological University", "q": "In what country is Ramon Magsaysay Technological University?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Kenya", "q": "What is the capital of Kenya?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "composer::Black or White", "q": "Who was the composer of Black or White?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "genre::Shaft", "q": "What genre is Shaft?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::1973 Alabama Crimson Tide football team", "q": "What sport does 1973 Alabama Crimson Tide football team play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::The Boxtrolls", "q": "Who was the director of The Boxtrolls?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::North Macedonia", "q": "What is the capital of North Macedonia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::KV Svalbard", "q": "In what country is KV Svalbard?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Grantham Town F.C.", "q": "What sport does Grantham Town F.C. play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::A Report to an Academy", "q": "Who is the author of A Report to an Academy?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "screenwriter::Brick", "q": "Who was the screenwriter for Brick?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::Behind the Beautiful Forevers", "q": "Who is the author of Behind the Beautiful Forevers?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "father::Sean Flynn", "q": "Who is the father of Sean Flynn?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Night Train to Lisbon", "q": "Who was the director of Night Train to Lisbon?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "religion::Muslim", "q": "What is the religion of Muslim?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Montana", "q": "What is the capital of Montana?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Dominican Republic", "q": "What is the capital of Dominican Republic?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::1991 CONCACAF Gold Cup", "q": "What sport does 1991 CONCACAF Gold Cup play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Thorvaldsen Museum", "q": "In what country is Thorvaldsen Museum?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital of::Florence", "q": "What is Florence the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Barbados", "q": "What is the capital of Barbados?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "place of birth::Karim Abdel Aziz", "q": "In what city was Karim Abdel Aziz born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::The Temple of the Golden Pavilion", "q": "Who is the author of The Temple of the Golden Pavilion?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Rhode Island", "q": "What is the capital of Rhode Island?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "occupation::Tobias Lindholm", "q": "What is Tobias Lindholm's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "capital::Brunei", "q": "What is the capital of Brunei?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "author::The Big Book", "q": "Who is the author of The Big Book?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "sport::Rotherham County F.C.", "q": "What sport does Rotherham County F.C. play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "director::Last Days", "q": "Who was the director of Last Days?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "llama_adj", "key": "country::Giant Food", "q": "In what country is Giant Food?", "arm": "control", "slick": "HighlyKnown"}

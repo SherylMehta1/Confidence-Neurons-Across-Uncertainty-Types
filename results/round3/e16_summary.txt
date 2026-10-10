@@ -1,0 +1,7 @@
+E16: steering with a popular-arm abstention direction (PREREG e15_e16_olmo_and_steering.md, sha 2b3e665d); majority of 3 judges; 20 random directions; 10,000 question bootstraps
+layer 17 k* 1.0; abst_pop fit on 63 vs 548 popular items; cos(fam, abst_pop) +0.887
+rates: none 0.018  fam 0.184  abst_pop 0.160  fam_perp_p 0.027  random mean 0.019 (2.5-97.5 pct over 20 directions 0.010-0.032)
+  G1 abst_pop - random +0.141 [+0.099,+0.186]
+  fam - random +0.165 [+0.120,+0.214]
+  D2p fam_perp_p - random +0.007 [-0.003,+0.019]
+  E16 verdict: GENERIC ABSTENTION; degenerate share 0.000

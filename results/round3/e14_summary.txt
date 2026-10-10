@@ -1,0 +1,10 @@
+E14: new questions from the 10-30th and 70-90th page-view percentiles (PREREG e13_e14_replications.md, sha fbbc8c25); two judges, both DONT_KNOW
+two-judge kappa 0.604; n {'unc/Unkn': 100, 'unc/High': 100, 'con/Unkn': 100, 'con/High': 100}
+  pop +0.253 [+0.193, +0.313]  know +0.150 [+0.090, +0.212]  diff +0.103 [+0.010, +0.197]
+  cells {"unc/Unkn": 0.45, "unc/High": 0.32, "con/Unkn": 0.217, "con/High": 0.047}
+  relation-clustered bootstrap for the preference [-0.118, +0.274]
+  relation mix unc/Unkn: {"genre": 16, "screenwriter": 15, "director": 14, "composer": 10, "producer": 9, "author": 9, "occupation": 6, "place of birth": 4, "father": 4, "religion": 3, "capital of": 3, "mother": 2, "sport": 2, "country": 2, "capital": 1}
+  relation mix unc/High: {"capital": 35, "country": 35, "sport": 15, "father": 3, "composer": 3, "genre": 2, "director": 2, "mother": 1, "occupation": 1, "religion": 1, "author": 1, "capital of": 1}
+  relation mix con/Unkn: {"author": 17, "genre": 17, "director": 15, "producer": 13, "screenwriter": 10, "place of birth": 9, "composer": 6, "country": 6, "sport": 2, "mother": 2, "capital of": 1, "religion": 1, "occupation": 1}
+  relation mix con/High: {"capital": 19, "author": 16, "director": 14, "country": 13, "screenwriter": 8, "father": 7, "composer": 6, "sport": 6, "genre": 3, "capital of": 2, "occupation": 2, "place of birth": 2, "religion": 2}
+  E14 verdict: REPLICATES IN NEW QUESTIONS (obscure-adjacent known n = 100)

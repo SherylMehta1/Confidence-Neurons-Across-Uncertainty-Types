@@ -1,0 +1,33 @@
+[llama] geometry {"model": "llama", "layer": 17, "n_layers": 32, "kstar": 1.0, "nat_norm_fam": 4.838130950927734, "nat_norm_abst_pop": 5.913679599761963, "n_abst_hi": 63, "n_abst_lo": 548, "cos_fam_abst_pop": 0.8874934911727905}
+  [llama] eval none        dose 0: regex 0.022
+  [llama] eval random0     dose 1: regex 0.029
+  [llama] eval random1     dose 1: regex 0.031
+  [llama] eval random2     dose 1: regex 0.018
+  [llama] eval random3     dose 1: regex 0.013
+  [llama] eval random4     dose 1: regex 0.022
+  [llama] eval random5     dose 1: regex 0.020
+  [llama] eval random6     dose 1: regex 0.016
+  [llama] eval random7     dose 1: regex 0.027
+  [llama] eval random8     dose 1: regex 0.018
+  [llama] eval random9     dose 1: regex 0.040
+  [llama] eval random10    dose 1: regex 0.016
+  [llama] eval random11    dose 1: regex 0.022
+  [llama] eval random12    dose 1: regex 0.016
+  [llama] eval random13    dose 1: regex 0.022
+  [llama] eval random14    dose 1: regex 0.013
+  [llama] eval random15    dose 1: regex 0.018
+  [llama] eval random16    dose 1: regex 0.024
+  [llama] eval random17    dose 1: regex 0.036
+  [llama] eval random18    dose 1: regex 0.022
+  [llama] eval random19    dose 1: regex 0.013
+  [llama] eval fam         dose 1: regex 0.220
+  [llama] eval abst_pop    dose 1: regex 0.220
+  [llama] eval fam_perp_p  dose 1: regex 0.022
+E16_GEN_DONE llama
+[judge qwen32b llama] 10800 replies to label
+JUDGED qwen32b llama
+[judge gemma27b llama] 10800 replies to label
+JUDGED gemma27b llama
+[judge llama70b llama] 10800 replies to label
+JUDGED llama70b llama
+E16_JUDGE_DONE llama
