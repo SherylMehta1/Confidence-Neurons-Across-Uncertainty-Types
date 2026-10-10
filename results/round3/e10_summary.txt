@@ -1,0 +1,19 @@
+E10: instruct lens split vs base (PREREG e10_instruct_lens.md, sha 6af179ce); popularity - knowledge, 2,000 within-cell item bootstraps
+  llama3.1-8b      logodds     pop +0.671 [+0.593, +0.750]  know +0.362 [+0.282, +0.442]  diff +0.309 [+0.158, +0.457]  n 2050
+  llama3.1-8b-it   logodds     pop +1.580 [+1.390, +1.762]  know +1.928 [+1.745, +2.115]  diff -0.348 [-0.712, +0.008]  n 2303
+  llama3.1-8b logodds: pop-know base +0.309 [+0.158,+0.457] vs instruct -0.348 [-0.712,+0.008] -> NO CHANGE SHOWN
+  llama3.1-8b      hedge_term  pop +0.548 [+0.458, +0.635]  know +0.561 [+0.470, +0.647]  diff -0.013 [-0.172, +0.150]  n 2050
+  llama3.1-8b-it   hedge_term  pop +1.259 [+0.990, +1.523]  know +2.722 [+2.452, +3.008]  diff -1.463 [-1.992, -0.971]  n 2303
+  llama3.1-8b hedge_term: pop-know base -0.013 [-0.172,+0.150] vs instruct -1.463 [-1.992,-0.971] -> NO CHANGE SHOWN
+  gemma-2-9b       logodds     pop +0.387 [+0.343, +0.429]  know +0.375 [+0.332, +0.419]  diff +0.012 [-0.062, +0.081]  n 1938
+  gemma-2-9b-it    logodds     pop +0.711 [+0.610, +0.825]  know +1.688 [+1.577, +1.799]  diff -0.977 [-1.167, -0.781]  n 2330
+  gemma-2-9b logodds: pop-know base +0.012 [-0.062,+0.081] vs instruct -0.977 [-1.167,-0.781] -> NO CHANGE SHOWN
+  gemma-2-9b       hedge_term  pop +0.281 [+0.212, +0.348]  know +0.299 [+0.229, +0.370]  diff -0.018 [-0.147, +0.105]  n 1938
+  gemma-2-9b-it    hedge_term  pop +0.925 [+0.776, +1.090]  know +2.206 [+2.053, +2.369]  diff -1.281 [-1.555, -0.998]  n 2330
+  gemma-2-9b hedge_term: pop-know base -0.018 [-0.147,+0.105] vs instruct -1.281 [-1.555,-0.998] -> NO CHANGE SHOWN
+  gemma-2-2b       logodds     pop +0.401 [+0.330, +0.471]  know +0.110 [+0.040, +0.180]  diff +0.291 [+0.163, +0.416]  n 1909
+  gemma-2-2b-it    logodds     pop +0.403 [+0.357, +0.447]  know +0.255 [+0.212, +0.301]  diff +0.149 [+0.068, +0.225]  n 2216
+  gemma-2-2b logodds: pop-know base +0.291 [+0.163,+0.416] vs instruct +0.149 [+0.068,+0.225] -> NO CHANGE SHOWN
+  gemma-2-2b       hedge_term  pop +0.098 [+0.031, +0.168]  know +0.369 [+0.299, +0.432]  diff -0.271 [-0.377, -0.151]  n 1909
+  gemma-2-2b-it    hedge_term  pop +0.156 [+0.084, +0.230]  know +1.045 [+0.972, +1.123]  diff -0.889 [-1.017, -0.763]  n 2216
+  gemma-2-2b hedge_term: pop-know base -0.271 [-0.377,-0.151] vs instruct -0.889 [-1.017,-0.763] -> NO CHANGE SHOWN

@@ -1,0 +1,121 @@
+[llama] FIT 1336, popular-known outside FIT 341, SELECT 150, EVAL 150
+[llama] geometry {"model": "llama", "layer": 17, "n_layers": 32, "nat_norm_fam": 4.838130950927734, "nat_norm_know": 3.149479627609253, "nat_norm_abst": 7.033553123474121, "n_abst_hi": 650, "n_abst_lo": 603, "cos_fam_abst": 0.9484803676605225, "cos_fam_know": 0.459299236536026}
+  [llama] select fam       dose 0.5: regex 0.093
+  [llama] select know      dose 0.5: regex 0.064
+  [llama] select abst      dose 0.5: regex 0.100
+  [llama] select fam_perp  dose 0.5: regex 0.022
+  [llama] select random0   dose 0.5: regex 0.027
+  [llama] select random1   dose 0.5: regex 0.029
+  [llama] select random2   dose 0.5: regex 0.027
+  [llama] select random3   dose 0.5: regex 0.020
+  [llama] select random4   dose 0.5: regex 0.029
+  [llama] select fam       dose 1: regex 0.324
+  [llama] select know      dose 1: regex 0.144
+  [llama] select abst      dose 1: regex 0.347
+  [llama] select fam_perp  dose 1: regex 0.022
+  [llama] select random0   dose 1: regex 0.024
+  [llama] select random1   dose 1: regex 0.020
+  [llama] select random2   dose 1: regex 0.027
+  [llama] select random3   dose 1: regex 0.013
+  [llama] select random4   dose 1: regex 0.022
+  [llama] select fam       dose 2: regex 0.982
+  [llama] select know      dose 2: regex 0.580
+  [llama] select abst      dose 2: regex 0.960
+  [llama] select fam_perp  dose 2: regex 0.013
+  [llama] select random0   dose 2: regex 0.031
+  [llama] select random1   dose 2: regex 0.020
+  [llama] select random2   dose 2: regex 0.024
+  [llama] select random3   dose 2: regex 0.009
+  [llama] select random4   dose 2: regex 0.022
+  [llama] select fam       dose 4: regex 0.796
+  [llama] select know      dose 4: regex 0.749
+  [llama] select abst      dose 4: regex 0.760
+  [llama] select fam_perp  dose 4: regex 0.000
+  [llama] select random0   dose 4: regex 0.011
+  [llama] select random1   dose 4: regex 0.000
+  [llama] select random2   dose 4: regex 0.016
+  [llama] select random3   dose 4: regex 0.000
+  [llama] select random4   dose 4: regex 0.049
+  [llama] select fam       dose 8: regex 0.927
+  [llama] select know      dose 8: regex 0.564
+  [llama] select abst      dose 8: regex 0.713
+  [llama] select fam_perp  dose 8: regex 0.000
+  [llama] select random0   dose 8: regex 0.000
+  [llama] select random1   dose 8: regex 0.000
+  [llama] select random2   dose 8: regex 0.000
+  [llama] select random3   dose 8: regex 0.000
+  [llama] select random4   dose 8: regex 0.000
+[llama] k* = 1
+  [llama] eval none      dose 0: regex 0.031
+  [llama] eval fam       dose 1: regex 0.233
+  [llama] eval know      dose 1: regex 0.102
+  [llama] eval abst      dose 1: regex 0.253
+  [llama] eval fam_perp  dose 1: regex 0.024
+  [llama] eval random0   dose 1: regex 0.020
+  [llama] eval random1   dose 1: regex 0.013
+  [llama] eval random2   dose 1: regex 0.018
+  [llama] eval random3   dose 1: regex 0.009
+  [llama] eval random4   dose 1: regex 0.027
+E4_GEN_DONE llama
+[gemma9b] FIT 1336, popular-known outside FIT 313, SELECT 150, EVAL 150
+[gemma9b] geometry {"model": "gemma9b", "layer": 23, "n_layers": 42, "nat_norm_fam": 62.42299270629883, "nat_norm_know": 66.46630096435547, "nat_norm_abst": 105.26683807373047, "n_abst_hi": 39, "n_abst_lo": 1160, "cos_fam_abst": 0.6313964128494263, "cos_fam_know": -0.2295275330543518}
+  [gemma9b] select fam       dose 0.5: regex 0.002
+  [gemma9b] select know      dose 0.5: regex 0.002
+  [gemma9b] select abst      dose 0.5: regex 0.000
+  [gemma9b] select fam_perp  dose 0.5: regex 0.000
+  [gemma9b] select random0   dose 0.5: regex 0.000
+  [gemma9b] select random1   dose 0.5: regex 0.000
+  [gemma9b] select random2   dose 0.5: regex 0.000
+  [gemma9b] select random3   dose 0.5: regex 0.000
+  [gemma9b] select random4   dose 0.5: regex 0.000
+  [gemma9b] select fam       dose 1: regex 0.002
+  [gemma9b] select know      dose 1: regex 0.000
+  [gemma9b] select abst      dose 1: regex 0.004
+  [gemma9b] select fam_perp  dose 1: regex 0.002
+  [gemma9b] select random0   dose 1: regex 0.000
+  [gemma9b] select random1   dose 1: regex 0.000
+  [gemma9b] select random2   dose 1: regex 0.000
+  [gemma9b] select random3   dose 1: regex 0.000
+  [gemma9b] select random4   dose 1: regex 0.000
+  [gemma9b] select fam       dose 2: regex 0.020
+  [gemma9b] select know      dose 2: regex 0.011
+  [gemma9b] select abst      dose 2: regex 0.053
+  [gemma9b] select fam_perp  dose 2: regex 0.000
+  [gemma9b] select random0   dose 2: regex 0.000
+  [gemma9b] select random1   dose 2: regex 0.000
+  [gemma9b] select random2   dose 2: regex 0.000
+  [gemma9b] select random3   dose 2: regex 0.002
+  [gemma9b] select random4   dose 2: regex 0.002
+  [gemma9b] select fam       dose 4: regex 0.222
+  [gemma9b] select know      dose 4: regex 0.022
+  [gemma9b] select abst      dose 4: regex 0.707
+  [gemma9b] select fam_perp  dose 4: regex 0.060
+  [gemma9b] select random0   dose 4: regex 0.004
+  [gemma9b] select random1   dose 4: regex 0.002
+  [gemma9b] select random2   dose 4: regex 0.002
+  [gemma9b] select random3   dose 4: regex 0.000
+  [gemma9b] select random4   dose 4: regex 0.002
+  [gemma9b] select fam       dose 8: regex 0.538
+  [gemma9b] select know      dose 8: regex 0.056
+  [gemma9b] select abst      dose 8: regex 0.969
+  [gemma9b] select fam_perp  dose 8: regex 0.431
+  [gemma9b] select random0   dose 8: regex 0.000
+  [gemma9b] select random1   dose 8: regex 0.002
+  [gemma9b] select random2   dose 8: regex 0.049
+  [gemma9b] select random3   dose 8: regex 0.000
+  [gemma9b] select random4   dose 8: regex 0.000
+[gemma9b] k* = 4
+  [gemma9b] eval none      dose 0: regex 0.002
+  [gemma9b] eval fam       dose 4: regex 0.271
+  [gemma9b] eval know      dose 4: regex 0.033
+  [gemma9b] eval abst      dose 4: regex 0.736
+  [gemma9b] eval fam_perp  dose 4: regex 0.073
+  [gemma9b] eval random0   dose 4: regex 0.000
+  [gemma9b] eval random1   dose 4: regex 0.007
+  [gemma9b] eval random2   dose 4: regex 0.004
+  [gemma9b] eval random3   dose 4: regex 0.002
+  [gemma9b] eval random4   dose 4: regex 0.004
+E4_GEN_DONE gemma9b
+[judge qwen32b] 4500 replies to label
+[judge gemma27b] 4500 replies to label
+E4_JUDGE_DONE

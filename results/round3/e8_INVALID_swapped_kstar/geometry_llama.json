@@ -1,0 +1,11 @@
+{
+ "model": "llama",
+ "layer": 17,
+ "n_layers": 32,
+ "kstar": 4.0,
+ "nat_norm_fam": 4.838130950927734,
+ "nat_norm_abst_within": 5.716323375701904,
+ "n_abst_hi": 587,
+ "n_abst_lo": 55,
+ "cos_fam_abst_within": 0.9128868579864502
+}

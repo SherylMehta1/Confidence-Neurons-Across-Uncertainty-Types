@@ -1,0 +1,1161 @@
+{"key": "author::From Hell letter", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::From Hell letter", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::From Hell letter", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "author::Great Expectations", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Great Expectations", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Great Expectations", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Road", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Road", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Road", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Adventures of Tom Sawyer", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Adventures of Tom Sawyer", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Adventures of Tom Sawyer", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::How to Stop Worrying and Start Living", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::How to Stop Worrying and Start Living", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::How to Stop Worrying and Start Living", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Birds", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Birds", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Birds", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Holes", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Holes", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Holes", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Cell", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Cell", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Cell", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::India", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::India", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::India", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Sri Lanka", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Sri Lanka", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Sri Lanka", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Virginia", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Virginia", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Virginia", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::New Zealand", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::New Zealand", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::New Zealand", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::New York", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::New York", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::New York", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Papua New Guinea", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Papua New Guinea", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Papua New Guinea", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "color::A.C. Milan", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "color::A.C. Milan", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "color::A.C. Milan", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Yesterday", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Yesterday", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Yesterday", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Katmai National Park and Preserve", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Katmai National Park and Preserve", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Katmai National Park and Preserve", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Valparaiso University", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Valparaiso University", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Valparaiso University", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Elf", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Elf", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Elf", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Mark Twain", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Mark Twain", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Mark Twain", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Lily Allen", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Lily Allen", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Lily Allen", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Wayne Gretzky", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Wayne Gretzky", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Wayne Gretzky", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Rama", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Rama", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Rama", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Al Gore", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Al Gore", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Al Gore", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Dwayne Johnson", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Dwayne Johnson", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Dwayne Johnson", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Martin Garrix", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Martin Garrix", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Martin Garrix", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Benazir Bhutto", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Benazir Bhutto", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Benazir Bhutto", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Chris Brown", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Chris Brown", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Chris Brown", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Juan Luis Guerra", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Juan Luis Guerra", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Juan Luis Guerra", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Holiday", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Holiday", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Holiday", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "religion::Aung San Suu Kyi", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "religion::Aung San Suu Kyi", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "religion::Aung San Suu Kyi", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::After Hours", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::After Hours", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::After Hours", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Faculty", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Faculty", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Faculty", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Silence", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Silence", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Silence", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Coach Carter", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Coach Carter", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Coach Carter", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Omen", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Omen", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Omen", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Joey Harrington", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Joey Harrington", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Joey Harrington", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Welling United F.C.", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Welling United F.C.", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Welling United F.C.", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Leyton Orient F.C.", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Leyton Orient F.C.", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Leyton Orient F.C.", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Symposium", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Symposium", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Symposium", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::On the Road", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::On the Road", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::On the Road", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Bangladesh", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Bangladesh", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Bangladesh", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Afghanistan", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Afghanistan", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Afghanistan", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Company", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Company", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Company", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Mission", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Mission", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Mission", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Social Network", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Social Network", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Social Network", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Miami Vice", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Miami Vice", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Miami Vice", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Eastern United States", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Eastern United States", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Eastern United States", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Bouvet Island", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Bouvet Island", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Bouvet Island", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Judge", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Judge", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Judge", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::E.T. the Extra-Terrestrial", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::E.T. the Extra-Terrestrial", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::E.T. the Extra-Terrestrial", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Pride", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Pride", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Pride", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Matrix", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Matrix", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Matrix", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Next", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Next", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Next", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Rand Paul", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Rand Paul", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Rand Paul", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Krishna", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Krishna", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Krishna", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Beth Hart", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Beth Hart", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Beth Hart", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Precious", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Precious", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Precious", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Rocky", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Rocky", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Rocky", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The King and I", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The King and I", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The King and I", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Her", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Her", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Her", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Office Space", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Office Space", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Office Space", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::White Noise", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::White Noise", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::White Noise", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Timeline", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Timeline", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Timeline", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Midnight's Children", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Midnight's Children", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Midnight's Children", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Politics", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Politics", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Politics", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Moneyball", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Moneyball", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Moneyball", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Celebrated Jumping Frog of Calaveras County", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Celebrated Jumping Frog of Calaveras County", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Celebrated Jumping Frog of Calaveras County", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Our Town", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Our Town", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Our Town", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Treasure Island", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Treasure Island", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Treasure Island", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Fallen", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Fallen", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Fallen", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Camp of the Saints", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Camp of the Saints", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::The Camp of the Saints", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Passing", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Passing", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Passing", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Saudi Arabia", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Saudi Arabia", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Saudi Arabia", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Halloween", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Halloween", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Halloween", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Inside Out", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Inside Out", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Inside Out", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::British American Tobacco", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::British American Tobacco", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::British American Tobacco", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::USS Constitution", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::USS Constitution", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::USS Constitution", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Cell", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Cell", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Cell", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Beloved", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Beloved", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Beloved", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Changeling", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::The Changeling", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Changeling", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Powder", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Powder", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Powder", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Invitation", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Invitation", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Invitation", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Thirteen", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Thirteen", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Thirteen", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Day After", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Day After", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Day After", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Tum Bin", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Tum Bin", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Tum Bin", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::2012", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::2012", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::2012", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cars", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cars", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cars", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Iron Man", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Iron Man", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Iron Man", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Super Mario World", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Super Mario World", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Super Mario World", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Kamya Panjabi", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Kamya Panjabi", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Kamya Panjabi", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Graduate", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Graduate", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Graduate", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Vertigo", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Vertigo", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Vertigo", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Hot Fuzz", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Hot Fuzz", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Hot Fuzz", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Jurassic Park", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Jurassic Park", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Jurassic Park", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Labyrinth", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Labyrinth", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Labyrinth", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Back to the Future", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Back to the Future", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Back to the Future", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Episodes", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Episodes", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Episodes", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Birds", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Birds", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Birds", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Rocky", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Rocky", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Rocky", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Delhi", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Delhi", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Delhi", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Los Angeles", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Los Angeles", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Los Angeles", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Gran Torino", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Gran Torino", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Gran Torino", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Metroid", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Metroid", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Metroid", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Back to School", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Back to School", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Back to School", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Arrested Development", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Arrested Development", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Arrested Development", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Room", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Room", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Room", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Chrysler", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Chrysler", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Chrysler", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Lost", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Lost", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Lost", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Can", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Can", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Can", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Little Prince", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Little Prince", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::The Little Prince", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Interview", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Interview", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Interview", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Oasis", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Oasis", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Oasis", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Species", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Species", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Species", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Glory", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::Glory", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Glory", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::GG Allin", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::GG Allin", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::GG Allin", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Revenge", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Revenge", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Revenge", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "mother::Rekha", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "mother::Rekha", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "mother::Rekha", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Ayumi Hamasaki", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Ayumi Hamasaki", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Ayumi Hamasaki", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Donald Trump", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Donald Trump", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Donald Trump", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Seungri", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Seungri", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Seungri", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Carl Linnaeus", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Carl Linnaeus", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Carl Linnaeus", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Bala", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Bala", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Bala", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "occupation::Tyler, the Creator", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Tyler, the Creator", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Tyler, the Creator", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::C. N. Annadurai", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::C. N. Annadurai", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::C. N. Annadurai", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Julius Erving", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Julius Erving", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Julius Erving", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Rahi Masoom Raza", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Rahi Masoom Raza", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Rahi Masoom Raza", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Jeanne de Casalis", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Jeanne de Casalis", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Jeanne de Casalis", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::William Osler", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::William Osler", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::William Osler", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Julee Cruise", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "place of birth::Julee Cruise", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Julee Cruise", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Petar Stamboli\u0107", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Petar Stamboli\u0107", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Petar Stamboli\u0107", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Glory", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Glory", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Glory", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "religion::Marilyn Monroe", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "religion::Marilyn Monroe", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "religion::Marilyn Monroe", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Snow White and the Seven Dwarfs", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Snow White and the Seven Dwarfs", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Snow White and the Seven Dwarfs", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Rent", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Rent", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Rent", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Indianapolis 500", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Indianapolis 500", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Indianapolis 500", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Phoenix", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Phoenix", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Phoenix", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "capital of::Seattle", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Seattle", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Seattle", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital of::Jerusalem", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital of::Jerusalem", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "capital of::Jerusalem", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Village", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Village", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Village", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::WarGames", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::WarGames", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::WarGames", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::The Other Woman", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Other Woman", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Other Woman", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Alien", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Alien", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Alien", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Back to the Future", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Back to the Future", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Back to the Future", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Alex Reid", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Alex Reid", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Alex Reid", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Burna Boy", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Burna Boy", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "occupation::Burna Boy", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Eduardo Hurtado", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Eduardo Hurtado", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Eduardo Hurtado", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Fighter", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Fighter", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Fighter", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Blade", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Blade", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Blade", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Her", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Her", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Her", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Career Opportunities", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Career Opportunities", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Career Opportunities", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Easy A", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Easy A", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Easy A", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Tourist", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Tourist", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Tourist", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Anderson", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "sport::Anderson", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "sport::Anderson", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::King James Version", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::King James Version", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::King James Version", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Real", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "author::Real", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Real", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Aida", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Aida", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Aida", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Legion", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Legion", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Legion", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "composer::31", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::31", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::31", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Crash", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Crash", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Crash", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Laika", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Laika", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Laika", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Fog", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Fog", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::The Fog", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Vacation", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Vacation", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Vacation", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cure", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cure", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cure", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Carrie", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Carrie", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Carrie", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cocktail", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cocktail", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Cocktail", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Love Don't Cost a Thing", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Love Don't Cost a Thing", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Love Don't Cost a Thing", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "father::Melora Hardin", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Melora Hardin", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Melora Hardin", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::MUD", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::MUD", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::MUD", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Police", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::The Police", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Police", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Too Short", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Too Short", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Too Short", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::MASH", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::MASH", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::MASH", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Peter Paul Rubens", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Peter Paul Rubens", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Peter Paul Rubens", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Dangerous", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Dangerous", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Dangerous", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::All Good Things", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::All Good Things", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::All Good Things", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::The Good Life", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Good Life", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::The Good Life", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::The Invasion", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Invasion", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Invasion", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Chris Jericho", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Chris Jericho", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Chris Jericho", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Rev", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::The Rev", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::The Rev", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::Up in the Air", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Up in the Air", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Up in the Air", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Guess Who", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Guess Who", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Guess Who", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Paris", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Paris", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Paris", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Parnelli Jones", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Parnelli Jones", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Parnelli Jones", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "place of birth::Halloween", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "place of birth::Halloween", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Halloween", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Gladiator", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Gladiator", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Gladiator", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Internship", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Internship", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Internship", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Holes", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Holes", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Holes", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Game of Thrones", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Game of Thrones", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Game of Thrones", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::PK", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::PK", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::PK", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Boy", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Boy", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "producer::Boy", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Prestige", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Prestige", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Prestige", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::After Hours", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::After Hours", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::After Hours", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::House on Haunted Hill", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::House on Haunted Hill", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::House on Haunted Hill", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Paid in Full", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Paid in Full", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Paid in Full", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Mission: Impossible \u2013 Rogue Nation", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Mission: Impossible \u2013 Rogue Nation", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Mission: Impossible \u2013 Rogue Nation", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::City of God", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::City of God", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::City of God", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Powder", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Powder", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Powder", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Mist", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Mist", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Mist", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Notebook", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Notebook", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::The Notebook", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::PK", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::PK", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::PK", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Orotina Canton", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Orotina Canton", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Orotina Canton", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::canton of Antibes-Biot", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::canton of Antibes-Biot", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::canton of Antibes-Biot", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Gmina Brzeszcze", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Gmina Brzeszcze", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Gmina Brzeszcze", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Limoges", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::arrondissement of Limoges", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::arrondissement of Limoges", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Vimmerby Municipality", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Vimmerby Municipality", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Vimmerby Municipality", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Gmina Radomsko", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Gmina Radomsko", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Gmina Radomsko", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Ungheni County", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Ungheni County", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Ungheni County", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Florac", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Florac", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Florac", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Lyuberetsky District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Lyuberetsky District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Lyuberetsky District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Vozhegodsky District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Vozhegodsky District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Vozhegodsky District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::canton of Mirambeau", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::canton of Mirambeau", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::canton of Mirambeau", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Muyinga Province", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Muyinga Province", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Muyinga Province", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Zofingen District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Zofingen District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Zofingen District", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Medzilaborce District", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Medzilaborce District", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Medzilaborce District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Verbandsgemeinde Loreley", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Verbandsgemeinde Loreley", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Verbandsgemeinde Loreley", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Verbandsgemeinde Bad Ems", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Verbandsgemeinde Bad Ems", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Verbandsgemeinde Bad Ems", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Niort", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::arrondissement of Niort", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Niort", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "color::Arsenal F\u00fatbol Club", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "color::Arsenal F\u00fatbol Club", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "color::Arsenal F\u00fatbol Club", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Symphony, K. 19b", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Symphony, K. 19b", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Symphony, K. 19b", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Rei\u00dft euch los, bedr\u00e4ngte Sinnen, BWV 224", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Rei\u00dft euch los, bedr\u00e4ngte Sinnen, BWV 224", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Rei\u00dft euch los, bedr\u00e4ngte Sinnen, BWV 224", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::canton of Baugy", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::canton of Baugy", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::canton of Baugy", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Kuczynka", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "country::Kuczynka", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Kuczynka", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Anaran Rural District", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::Anaran Rural District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Anaran Rural District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::U\u00f1\u00f3n District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::U\u00f1\u00f3n District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::U\u00f1\u00f3n District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Bitch\u016b-Kawamo Station", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Bitch\u016b-Kawamo Station", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::Bitch\u016b-Kawamo Station", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Gawarzec Dolny", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Gawarzec Dolny", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Gawarzec Dolny", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tangal-e Behdan", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tangal-e Behdan", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tangal-e Behdan", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Valdearcos de la Vega", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Valdearcos de la Vega", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::Valdearcos de la Vega", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Dubicze Osoczne", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Dubicze Osoczne", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Dubicze Osoczne", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tholuvankadu", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tholuvankadu", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tholuvankadu", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Riechheimer Berg", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Riechheimer Berg", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Riechheimer Berg", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Rubim do Norte River", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Rubim do Norte River", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Rubim do Norte River", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::112th United States Colored Infantry", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::112th United States Colored Infantry", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::112th United States Colored Infantry", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Kawahigashi Station", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Kawahigashi Station", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Kawahigashi Station", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Rizuiyeh", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Rizuiyeh", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Rizuiyeh", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::\u0141azy, Sierpc County", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::\u0141azy, Sierpc County", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::\u0141azy, Sierpc County", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Muratdere", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Muratdere", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Muratdere", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Gornji Davidovi\u0107i", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::Gornji Davidovi\u0107i", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Gornji Davidovi\u0107i", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tervola Radio and TV-Mast", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tervola Radio and TV-Mast", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Tervola Radio and TV-Mast", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Nowa Wie\u015b Reszelska", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Nowa Wie\u015b Reszelska", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Nowa Wie\u015b Reszelska", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Ciucurul Orbului River", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Ciucurul Orbului River", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Ciucurul Orbului River", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Giacomo Guardi", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Giacomo Guardi", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Giacomo Guardi", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::1989\u201390 1. Slovensk\u00e1 n\u00e1rodn\u00e1 hokejov\u00e1 liga season", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::1989\u201390 1. Slovensk\u00e1 n\u00e1rodn\u00e1 hokejov\u00e1 liga season", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::1989\u201390 1. Slovensk\u00e1 n\u00e1rodn\u00e1 hokejov\u00e1 liga season", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::1995 Cook Islands Round Cup", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::1995 Cook Islands Round Cup", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::1995 Cook Islands Round Cup", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::2011\u201312 Elon Phoenix men's basketball team", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::2011\u201312 Elon Phoenix men's basketball team", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::2011\u201312 Elon Phoenix men's basketball team", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::All-Ireland Senior Club Camogie Championship 1970", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::All-Ireland Senior Club Camogie Championship 1970", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::All-Ireland Senior Club Camogie Championship 1970", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::2012 Georgetown Hoyas men's soccer team", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::2012 Georgetown Hoyas men's soccer team", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::2012 Georgetown Hoyas men's soccer team", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Poprad District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Poprad District", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Poprad District", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::arrondissement of Nogent-le-Rotrou", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::arrondissement of Nogent-le-Rotrou", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::arrondissement of Nogent-le-Rotrou", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Belorechensky District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Belorechensky District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Belorechensky District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Plesetsky District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Plesetsky District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Plesetsky District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Tarussky District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Tarussky District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Tarussky District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Qasr-e Shirin County", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Qasr-e Shirin County", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Qasr-e Shirin County", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Lannion", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Lannion", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Lannion", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Khvajeh Soheyl", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Khvajeh Soheyl", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Khvajeh Soheyl", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Eslamabad-e Mashayekh", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Eslamabad-e Mashayekh", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Eslamabad-e Mashayekh", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::K\u0131l\u0131\u00e7l\u0131 Kavlakl\u0131", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::K\u0131l\u0131\u00e7l\u0131 Kavlakl\u0131", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::K\u0131l\u0131\u00e7l\u0131 Kavlakl\u0131", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tartaczek", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tartaczek", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Tartaczek", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Valea Seac\u0103 River", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Valea Seac\u0103 River", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::Valea Seac\u0103 River", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Mohammadabad-e Razzaqzadeh", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Mohammadabad-e Razzaqzadeh", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Mohammadabad-e Razzaqzadeh", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Puzdrowizna", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Puzdrowizna", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Puzdrowizna", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Izvorul Morarului River", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Izvorul Morarului River", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Izvorul Morarului River", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::D\u0105bkowice, \u0141\u00f3d\u017a Voivodeship", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::D\u0105bkowice, \u0141\u00f3d\u017a Voivodeship", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::D\u0105bkowice, \u0141\u00f3d\u017a Voivodeship", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Wiesau", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Wiesau", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Wiesau", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Dell", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Dell", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Dell", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Wir, Masovian Voivodeship", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Wir, Masovian Voivodeship", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Wir, Masovian Voivodeship", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Hatnagoda", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Hatnagoda", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Hatnagoda", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::Zanzibar national under-20 football team", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Zanzibar national under-20 football team", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::Zanzibar national under-20 football team", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::1973 Virginia Slims of Fort Lauderdale", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::1973 Virginia Slims of Fort Lauderdale", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "sport::1973 Virginia Slims of Fort Lauderdale", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::arrondissement of Castellane", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Castellane", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::arrondissement of Castellane", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Tikhvinsky District", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Tikhvinsky District", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Tikhvinsky District", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::Chiprovtsi Municipality", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Chiprovtsi Municipality", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "capital::Chiprovtsi Municipality", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Erfreute Zeit im neuen Bunde, BWV 83", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Erfreute Zeit im neuen Bunde, BWV 83", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Erfreute Zeit im neuen Bunde, BWV 83", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Das neugeborne Kindelein, BWV 122", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Das neugeborne Kindelein, BWV 122", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::Das neugeborne Kindelein, BWV 122", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Szczecin Scientific Society", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Szczecin Scientific Society", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Szczecin Scientific Society", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Chal Siah Manchatun Jowkar", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Chal Siah Manchatun Jowkar", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Chal Siah Manchatun Jowkar", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Kowale, Lower Silesian Voivodeship", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Kowale, Lower Silesian Voivodeship", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Kowale, Lower Silesian Voivodeship", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Sarnowo, Che\u0142mno County", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Sarnowo, Che\u0142mno County", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Sarnowo, Che\u0142mno County", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::C\u1ed5 Linh", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::C\u1ed5 Linh", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::C\u1ed5 Linh", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Chalhuacocha", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Chalhuacocha", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Chalhuacocha", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::D\u0259hn\u0259x\u0259lil", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::D\u0259hn\u0259x\u0259lil", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::D\u0259hn\u0259x\u0259lil", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Dr\u0103g\u0103neasa River", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Dr\u0103g\u0103neasa River", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Dr\u0103g\u0103neasa River", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::\u0141odygowo, Pisz County", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::\u0141odygowo, Pisz County", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::\u0141odygowo, Pisz County", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "country::Union State Bank, Wisconsin", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Union State Bank, Wisconsin", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Union State Bank, Wisconsin", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Stare Brz\u00f3ski", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Stare Brz\u00f3ski", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Stare Brz\u00f3ski", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Jeqjeq-e Pain", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::Jeqjeq-e Pain", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Jeqjeq-e Pain", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Alice Walker: Beauty in Truth", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Alice Walker: Beauty in Truth", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Alice Walker: Beauty in Truth", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Partner", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Partner", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "author::Partner", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Therapy", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Therapy", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Therapy", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "capital::S\u00e1nchez Carri\u00f3n Province", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::S\u00e1nchez Carri\u00f3n Province", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital::S\u00e1nchez Carri\u00f3n Province", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital of::Leningradskaya", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital of::Leningradskaya", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "capital of::Leningradskaya", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Cue Ball Cat", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Cue Ball Cat", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Cue Ball Cat", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Light", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Light", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::The Light", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Mary", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "country::Mary", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "country::Mary", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Pilot", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Pilot", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Pilot", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Thank You, Madame", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Thank You, Madame", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Thank You, Madame", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Distant Trumpet", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Distant Trumpet", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Distant Trumpet", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Sacrifice", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Sacrifice", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Sacrifice", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Georg Adolf Erman", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Georg Adolf Erman", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Georg Adolf Erman", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Princess Yamanobe", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Princess Yamanobe", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Princess Yamanobe", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Mira Burt-Wintonick", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Mira Burt-Wintonick", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "father::Mira Burt-Wintonick", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Nightdreamers", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::Nightdreamers", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Nightdreamers", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Pieter Jacobsz Duyfhuysen", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Pieter Jacobsz Duyfhuysen", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Pieter Jacobsz Duyfhuysen", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::William Michael Rooke", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::William Michael Rooke", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::William Michael Rooke", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Me and My Friend", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Me and My Friend", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::Me and My Friend", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::The Song of the Suburbs", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::The Song of the Suburbs", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::The Song of the Suburbs", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Voyage", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::Voyage", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::Voyage", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::J\u00f6rg A. Eggers", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::J\u00f6rg A. Eggers", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::J\u00f6rg A. Eggers", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Thomas Gifford", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Thomas Gifford", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Thomas Gifford", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Domingo Eyzaguirre", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Domingo Eyzaguirre", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::Domingo Eyzaguirre", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Karl Bartholomaeus Heller", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Karl Bartholomaeus Heller", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Karl Bartholomaeus Heller", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Aarno Maliniemi", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Aarno Maliniemi", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Aarno Maliniemi", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Wellington Santos da Silva", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Wellington Santos da Silva", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Wellington Santos da Silva", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Masaru Inada", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Masaru Inada", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Masaru Inada", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Anders Orvin", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Anders Orvin", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Anders Orvin", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Gary Freear", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Gary Freear", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Gary Freear", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Deal", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Deal", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Deal", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::In the Family", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::In the Family", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::In the Family", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Let America Laugh", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Let America Laugh", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Let America Laugh", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Just Around the Corner", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Just Around the Corner", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Just Around the Corner", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "producer::Early Man", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Early Man", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Early Man", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "religion::Arturo Tabera Araoz", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Arturo Tabera Araoz", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Arturo Tabera Araoz", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Cosmo Francesco Ruppi", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Cosmo Francesco Ruppi", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Cosmo Francesco Ruppi", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Pedro Lis\u00edmaco de Jes\u00fas V\u00edlchez V\u00edlchez", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Pedro Lis\u00edmaco de Jes\u00fas V\u00edlchez V\u00edlchez", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Pedro Lis\u00edmaco de Jes\u00fas V\u00edlchez V\u00edlchez", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Bellino Giusto Ghirard", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Bellino Giusto Ghirard", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "religion::Bellino Giusto Ghirard", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::The Secret Call", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::The Secret Call", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::The Secret Call", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Democracy", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Democracy", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Democracy", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Small Town", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Small Town", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Small Town", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Jackson: My Life... Your Fault", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Jackson: My Life... Your Fault", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Jackson: My Life... Your Fault", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::Wojciech Jarmu\u017c", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::Wojciech Jarmu\u017c", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::Wojciech Jarmu\u017c", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::Luk\u00e1\u0161 Bode\u010dek", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::Luk\u00e1\u0161 Bode\u010dek", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "sport::Luk\u00e1\u0161 Bode\u010dek", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::J\u00e4\u00e4peili", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::J\u00e4\u00e4peili", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::J\u00e4\u00e4peili", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Follow The Music", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Follow The Music", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Follow The Music", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Schlager", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "composer::Schlager", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Schlager", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "director::Hakeem's New Flame", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Hakeem's New Flame", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Hakeem's New Flame", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::The Other Person", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::The Other Person", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::The Other Person", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Drill", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Drill", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Drill", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Anyone Else", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Anyone Else", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Anyone Else", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "occupation::John Finlay", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::John Finlay", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "occupation::John Finlay", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Matt Moralee", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Matt Moralee", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "place of birth::Matt Moralee", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Accused", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Accused", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::The Accused", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "producer::The Lucky Stiff", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Lucky Stiff", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Lucky Stiff", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The List", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The List", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The List", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Pioneers", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Pioneers", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Pioneers", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::(One Glance Is) Holy", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::(One Glance Is) Holy", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::(One Glance Is) Holy", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Ecco fatto", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Ecco fatto", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Ecco fatto", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Ghost", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Ghost", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "screenwriter::Ghost", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "author::Shame", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Shame", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Shame", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Death in Five Boxes", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Death in Five Boxes", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Death in Five Boxes", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::What You Make It", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::What You Make It", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::What You Make It", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Corridor", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Corridor", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Corridor", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Challenge", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Challenge", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Challenge", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Louis", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Louis", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Louis", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "author::Dancing on Coral", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Dancing on Coral", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::Dancing on Coral", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::The Techniques of Democracy", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::The Techniques of Democracy", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "author::The Techniques of Democracy", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "composer::Nelson", "i": 0, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "composer::Nelson", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "composer::Nelson", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "composer::String Quartet No. 3", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "composer::String Quartet No. 3", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "composer::String Quartet No. 3", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "country::Sar Giz", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Sar Giz", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "country::Sar Giz", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::One of Those", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::One of Those", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::One of Those", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Me First", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Me First", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Me First", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Friends", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Friends", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "director::Friends", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "director::Vanity", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Vanity", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Vanity", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Day by Day", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Day by Day", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Day by Day", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Hilde Warren und der Tod", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Hilde Warren und der Tod", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Hilde Warren und der Tod", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Turn to the Right", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Turn to the Right", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Turn to the Right", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Boots", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Boots", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Boots", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::The Call of the North", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::The Call of the North", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::The Call of the North", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Bingo", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "director::Bingo", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "director::Bingo", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::Mother", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Mother", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::Mother", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::I Will Be There", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::I Will Be There", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::I Will Be There", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::The New World", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The New World", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The New World", "i": 2, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::The Angel", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::The Angel", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::The Angel", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "genre::Options", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Options", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "genre::Options", "i": 2, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::Scorpio", "i": 0, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "genre::Scorpio", "i": 1, "label": "HEDGED_ANSWER", "raw": "HEDGED_ANSWER"}
+{"key": "genre::Scorpio", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Brat", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Brat", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::The Brat", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Cinema", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "producer::Cinema", "i": 1, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "producer::Cinema", "i": 2, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "producer::Menu", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "producer::Menu", "i": 1, "label": "ANSWER", "raw": "ANSWER"}
+{"key": "producer::Menu", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Watch Out", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Watch Out", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Watch Out", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Ars", "i": 0, "label": "CLARIFY", "raw": "CLARIFY"}
+{"key": "screenwriter::Ars", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Ars", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Album", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Album", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Album", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Guilty", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Guilty", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Guilty", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Excited", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Excited", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Excited", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Second Best Bed", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Second Best Bed", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Second Best Bed", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Bingo", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Bingo", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Bingo", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::The Woods", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::The Woods", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::The Woods", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Because", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Because", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Because", "i": 2, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Le Journal d'une femme en blanc", "i": 0, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Le Journal d'une femme en blanc", "i": 1, "label": "DECLINE", "raw": "DECLINE"}
+{"key": "screenwriter::Le Journal d'une femme en blanc", "i": 2, "label": "DECLINE", "raw": "DECLINE"}

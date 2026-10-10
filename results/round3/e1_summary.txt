@@ -1,0 +1,28 @@
+E1: independent knowledge labels (PREREG e1_independent_labels.md, sha af50f53f)
+items relabelled: 2673; paraphrase labels {'Unknown': 1612, 'HighlyKnown': 413, 'Maybe': 648}
+T3 agreement (rows original label, cols paraphrase label), by arm:
+  obscure:
+    slick_para   HighlyKnown  Maybe  Unknown
+    slick                                   
+    HighlyKnown           27     49       11
+    Maybe                  5     31       49
+    Unknown                2     19     1158
+  popular:
+    slick_para   HighlyKnown  Maybe  Unknown
+    slick                                   
+    HighlyKnown          313    312       51
+    Maybe                 41    157       87
+    Unknown               25     80      256
+T1 two-judge abstention with paraphrase knowledge labels, cells n {'unc/Unkn': 110, 'unc/High': 27, 'con/Unkn': 74, 'con/High': 42}
+  pop +0.383 [+0.294, +0.472]  know +0.061 [-0.030, +0.150]  diff +0.322 [+0.157, +0.490]
+  cell means {"unc/Unkn": 0.452, "unc/High": 0.457, "con/Unkn": 0.135, "con/High": 0.008}
+  T1 verdict: SURVIVES
+T2 original-prompt entropy x paraphrase knowledge, n {'unc/Unkn': 1169, 'unc/High': 29, 'con/Unkn': 307, 'con/High': 338}
+  pop +0.656 [+0.486, +0.852]  know +2.059 [+1.861, +2.233]  diff -1.402 [-1.730, -1.020]
+  know - pop +1.402 [+1.020, +1.730]  -> NOT CIRCULAR
+T4 entropy_free (original labels), n {'unc/Unkn': 1179, 'unc/High': 87, 'con/Unkn': 361, 'con/High': 676}
+  pop +0.053 [+0.011, +0.095]  know +0.160 [+0.117, +0.201]  diff -0.106 [-0.182, -0.029]
+  cell means {"unc/Unkn": 0.682, "unc/High": 0.597, "con/Unkn": 0.704, "con/High": 0.47}
+T4 logodds_I_free (original labels), n {'unc/Unkn': 1179, 'unc/High': 87, 'con/Unkn': 361, 'con/High': 676}
+  pop +8.365 [+7.910, +8.804]  know +3.111 [+2.675, +3.571]  diff +5.254 [+4.424, +6.045]
+  cell means {"unc/Unkn": 1.291, "unc/High": 0.188, "con/Unkn": -5.067, "con/High": -10.185}

@@ -1,0 +1,9 @@
+E6: entity-level knowledge covariate (PREREG e6_entity_knowledge.md, sha 937b46e3)
+items graded on all 6 completions: 2662; label counts {'WRONG': 8821, 'CORRECT': 6875, 'VAGUE': 276}
+K3 Spearman(entity_known, log page views) = +0.516 (n=2662)
+K3 mean entity_known by cell: unc/Unkn 0.113  unc/High 0.831  con/Unkn 0.561  con/High 0.750
+(a) two judges n=384 without: obscure +0.355 [+0.286,+0.426]  unknown +0.136 [+0.070,+0.199]
+(a) two judges n=384 with:    obscure +0.337 [+0.266,+0.411]  unknown +0.121 [+0.054,+0.185]  entity_known_z -0.027 [-0.057,+0.004]  | obscure coefficient shrinks by 5%
+(b) regex n=2293 without: obscure +0.617 [+0.577,+0.654]  unknown +0.218 [+0.179,+0.258]
+(b) regex n=2293 with:    obscure +0.597 [+0.555,+0.638]  unknown +0.204 [+0.166,+0.243]  entity_known_z -0.026 [-0.041,-0.010]  | obscure coefficient shrinks by 3%
+K1 verdict: SURVIVES ENTITY KNOWLEDGE

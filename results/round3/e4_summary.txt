@@ -1,0 +1,65 @@
+E4: steering v3 (PREREG e4_steering_v3.md, sha 18c74883); scorer = both judges DONT_KNOW; 10,000 item bootstraps
+
+[llama] layer 17 natural norms fam 4.84 know 3.15 abst 7.03; abst fit on 650 vs 603 items; cos(fam,abst) +0.948; k* = 1
+  SELECT dose-response (regex abstention rate):
+    dose        0.5    1.0    2.0    4.0    8.0
+    cond                                       
+    abst      0.100  0.347  0.960  0.760  0.713
+    fam       0.093  0.324  0.982  0.796  0.927
+    fam_perp  0.022  0.022  0.013  0.000  0.000
+    know      0.064  0.144  0.580  0.749  0.564
+    random0   0.027  0.024  0.031  0.011  0.000
+    random1   0.029  0.020  0.020  0.000  0.000
+    random2   0.027  0.027  0.024  0.016  0.000
+    random3   0.020  0.013  0.009  0.000  0.000
+    random4   0.029  0.022  0.022  0.049  0.000
+  EVAL none      judges 0.007  regex 0.031  degenerate 0.000  entropy 0.857
+  EVAL fam       judges 0.100  regex 0.233  degenerate 0.000  entropy 1.271
+  EVAL know      judges 0.044  regex 0.102  degenerate 0.000  entropy 1.274
+  EVAL abst      judges 0.089  regex 0.253  degenerate 0.000  entropy 1.258
+  EVAL fam_perp  judges 0.018  regex 0.024  degenerate 0.000  entropy 1.048
+  EVAL random0   judges 0.009  regex 0.020  degenerate 0.000  entropy 0.984
+  EVAL random1   judges 0.007  regex 0.013  degenerate 0.000  entropy 0.915
+  EVAL random2   judges 0.007  regex 0.018  degenerate 0.000  entropy 0.913
+  EVAL random3   judges 0.007  regex 0.009  degenerate 0.000  entropy 0.974
+  EVAL random4   judges 0.011  regex 0.027  degenerate 0.000  entropy 0.880
+  D1 fam - random      +0.092 [+0.062,+0.125] -> NOT MET
+  D2 fam_perp - random +0.010 [-0.001,+0.024] -> CARRIED BY THE ABSTENTION COMPONENT
+  D3 fam - know        +0.056 [+0.024,+0.089]
+  D4 entropy know - fam +0.003 [-0.087,+0.092]
+  (secondary, majority of 3) D1 maj fam - random +0.173 [+0.128,+0.221]
+  (secondary, majority of 3) D2 maj fam_perp - random +0.017 [+0.002,+0.036]
+  (secondary, majority of 3) D3 maj fam - know +0.118 [+0.080,+0.158]
+  (secondary) majority-rule rates: abst 0.207  fam 0.189  fam_perp 0.033  know 0.071  none 0.018  random0 0.020  random1 0.013  random2 0.016  random3 0.007  random4 0.024
+
+[gemma9b] layer 23 natural norms fam 62.42 know 66.47 abst 105.27; abst fit on 39 vs 1160 items; cos(fam,abst) +0.631; k* = 4
+  SELECT dose-response (regex abstention rate):
+    dose        0.5    1.0    2.0    4.0    8.0
+    cond                                       
+    abst      0.000  0.004  0.053  0.707  0.969
+    fam       0.002  0.002  0.020  0.222  0.538
+    fam_perp  0.000  0.002  0.000  0.060  0.431
+    know      0.002  0.000  0.011  0.022  0.056
+    random0   0.000  0.000  0.000  0.004  0.000
+    random1   0.000  0.000  0.000  0.002  0.002
+    random2   0.000  0.000  0.000  0.002  0.049
+    random3   0.000  0.000  0.002  0.000  0.000
+    random4   0.000  0.000  0.002  0.002  0.000
+  EVAL none      judges 0.000  regex 0.002  degenerate 0.000  entropy 0.246
+  EVAL fam       judges 0.044  regex 0.271  degenerate 0.000  entropy 0.850
+  EVAL know      judges 0.042  regex 0.033  degenerate 0.000  entropy 1.509
+  EVAL abst      judges 0.196  regex 0.736  degenerate 0.000  entropy 1.177
+  EVAL fam_perp  judges 0.020  regex 0.073  degenerate 0.000  entropy 0.700
+  EVAL random0   judges 0.009  regex 0.000  degenerate 0.000  entropy 0.384
+  EVAL random1   judges 0.000  regex 0.007  degenerate 0.000  entropy 0.476
+  EVAL random2   judges 0.000  regex 0.004  degenerate 0.000  entropy 0.296
+  EVAL random3   judges 0.002  regex 0.002  degenerate 0.000  entropy 0.271
+  EVAL random4   judges 0.002  regex 0.004  degenerate 0.000  entropy 0.536
+  D1 fam - random      +0.042 [+0.022,+0.063] -> NOT MET
+  D2 fam_perp - random +0.017 [+0.005,+0.032] -> CARRIED BY THE ABSTENTION COMPONENT
+  D3 fam - know        +0.002 [-0.027,+0.031]
+  D4 entropy know - fam +0.659 [+0.577,+0.741]
+  (secondary, majority of 3) D1 maj fam - random +0.114 [+0.078,+0.152]
+  (secondary, majority of 3) D2 maj fam_perp - random +0.049 [+0.028,+0.072]
+  (secondary, majority of 3) D3 maj fam - know -0.058 [-0.116,-0.000]
+  (secondary) majority-rule rates: abst 0.500  fam 0.120  fam_perp 0.056  know 0.178  none 0.000  random0 0.024  random1 0.002  random2 0.000  random3 0.002  random4 0.002

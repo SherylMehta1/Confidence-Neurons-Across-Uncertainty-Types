@@ -1,0 +1,18 @@
+[gemma9b] geometry {"model": "gemma9b", "layer": 23, "n_layers": 42, "kstar": 1.0, "nat_norm_fam": 62.42299270629883, "nat_norm_abst_within": 97.63224792480469, "n_abst_hi": 36, "n_abst_lo": 520, "cos_fam_abst_within": 0.4720468521118164}
+  [gemma9b] eval none        dose 0: regex 0.000
+  [gemma9b] eval random0     dose 1: regex 0.002
+  [gemma9b] eval random1     dose 1: regex 0.002
+  [gemma9b] eval random2     dose 1: regex 0.002
+  [gemma9b] eval random3     dose 1: regex 0.000
+  [gemma9b] eval random4     dose 1: regex 0.000
+  [gemma9b] eval fam         dose 1: regex 0.000
+  [gemma9b] eval abst_within dose 1: regex 0.002
+  [gemma9b] eval fam_perp_w  dose 1: regex 0.000
+E8_GEN_DONE gemma9b
+[judge qwen32b gemma9b] 4050 replies to label
+JUDGED qwen32b gemma9b
+[judge gemma27b gemma9b] 4050 replies to label
+JUDGED gemma27b gemma9b
+[judge llama70b gemma9b] 4050 replies to label
+JUDGED llama70b gemma9b
+E8_JUDGE_DONE gemma9b

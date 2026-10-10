@@ -1,0 +1,23 @@
+E8: steering with a within-obscure abstention direction (PREREG e8_steering_within_level.md, sha 05474954); primary scorer majority of 3 judges; 10,000 question bootstraps
+
+[llama] layer 17 k* 4.0 nat norm fam 4.84; abst_within fit on 587 vs 55 obscure items; cos(fam, abst_within) +0.913
+  [primary, majority of 3] rates: abst_within 0.996  fam 1.000  fam_perp_w 0.907  none 0.018  random0 0.511  random1 0.878  random2 0.662  random3 0.740  random4 0.531  (n questions 150)
+    D1w fam - random         +0.336 [+0.300,+0.372]
+    D2w fam_perp_w - random  +0.242 [+0.197,+0.285] -> BEYOND WITHIN-LEVEL ABSTENTION
+    abst_within - random     +0.331 [+0.295,+0.368]
+  [secondary, both of two] rates: abst_within 0.340  fam 0.282  fam_perp_w 0.167  none 0.013  random0 0.102  random1 0.120  random2 0.144  random3 0.098  random4 0.087  (n questions 150)
+    D1w fam - random         +0.172 [+0.129,+0.215]
+    D2w fam_perp_w - random  +0.056 [+0.021,+0.092]
+    abst_within - random     +0.230 [+0.182,+0.276]
+  degenerate share by cond: abst_within 0.042  fam 0.040  fam_perp_w 0.027  none 0.000  random0 0.011  random1 0.076  random2 0.082  random3 0.011  random4 0.033
+
+[gemma9b] layer 23 k* 1.0 nat norm fam 62.42; abst_within fit on 36 vs 520 obscure items; cos(fam, abst_within) +0.472
+  [primary, majority of 3] rates: abst_within 0.000  fam 0.000  fam_perp_w 0.000  none 0.000  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000  (n questions 150)
+    D1w fam - random         +0.000 [+0.000,+0.000]
+    D2w fam_perp_w - random  +0.000 [+0.000,+0.000]
+    abst_within - random     +0.000 [+0.000,+0.000]
+  [secondary, both of two] rates: abst_within 0.000  fam 0.000  fam_perp_w 0.000  none 0.000  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000  (n questions 150)
+    D1w fam - random         +0.000 [+0.000,+0.000]
+    D2w fam_perp_w - random  +0.000 [+0.000,+0.000]
+    abst_within - random     +0.000 [+0.000,+0.000]
+  degenerate share by cond: abst_within 0.000  fam 0.000  fam_perp_w 0.000  none 0.000  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000

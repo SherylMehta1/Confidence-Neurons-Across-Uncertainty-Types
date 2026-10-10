@@ -1,0 +1,18 @@
+[llama] geometry {"model": "llama", "layer": 17, "n_layers": 32, "kstar": 1.0, "nat_norm_fam": 4.838130950927734, "nat_norm_abst_within": 5.716323375701904, "n_abst_hi": 587, "n_abst_lo": 55, "cos_fam_abst_within": 0.9128868579864502}
+  [llama] eval none        dose 0: regex 0.022
+  [llama] eval random0     dose 1: regex 0.029
+  [llama] eval random1     dose 1: regex 0.031
+  [llama] eval random2     dose 1: regex 0.018
+  [llama] eval random3     dose 1: regex 0.013
+  [llama] eval random4     dose 1: regex 0.022
+  [llama] eval fam         dose 1: regex 0.231
+  [llama] eval abst_within dose 1: regex 0.258
+  [llama] eval fam_perp_w  dose 1: regex 0.040
+E8_GEN_DONE llama
+[judge qwen32b llama] 4050 replies to label
+JUDGED qwen32b llama
+[judge gemma27b llama] 4050 replies to label
+JUDGED gemma27b llama
+[judge llama70b llama] 4050 replies to label
+JUDGED llama70b llama
+E8_JUDGE_DONE llama

@@ -1,0 +1,12 @@
+{
+ "model": "gemma9b",
+ "layer": 23,
+ "n_layers": 42,
+ "nat_norm_fam": 62.42299270629883,
+ "nat_norm_know": 66.46630096435547,
+ "nat_norm_abst": 105.26683807373047,
+ "n_abst_hi": 39,
+ "n_abst_lo": 1160,
+ "cos_fam_abst": 0.6313964128494263,
+ "cos_fam_know": -0.2295275330543518
+}

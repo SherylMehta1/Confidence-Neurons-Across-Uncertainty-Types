@@ -1,0 +1,21 @@
+E7: semantic relabelling and strict declines (PREREG e7_label_and_decline_audit.md, sha 1498be91); judge Llama-3.3-70B
+pool Unknown items with forced answers 1540, fully graded 1540 (incomplete 0); semantic labels {'Unknown': 1193, 'intermediate': 306, 'HighlyKnown': 41}
+  by arm: obscure {'Unknown': 990, 'intermediate': 184, 'HighlyKnown': 5}  popular {'Unknown': 203, 'intermediate': 122, 'HighlyKnown': 36}
+T7a movement of the 2x2's Unknown items (arm, semantic label -> count):
+    arm        know        
+    control    HighlyKnown      9
+               Unknown         60
+               intermediate    31
+    uncertain  HighlyKnown      2
+               Unknown         86
+               intermediate    12
+T7a two-judge abstention with semantic labels, n {'unc/Unkn': 86, 'unc/High': 89, 'con/Unkn': 60, 'con/High': 109}
+  pop +0.359 [+0.292, +0.427]  know +0.125 [+0.059, +0.193]  diff +0.234 [+0.119, +0.348]
+  cell means {"unc/Unkn": 0.484, "unc/High": 0.434, "con/Unkn": 0.2, "con/High": 0.0}
+  T7a verdict: SURVIVES SEMANTIC RELABELLING
+T7c strict labels: 1161 replies, {'ANSWER': 605, 'HEDGED_ANSWER': 31, 'CLARIFY': 54, 'DECLINE': 471}
+T7c DECLINE rate, n {'unc/Unkn': 100, 'unc/High': 87, 'con/Unkn': 100, 'con/High': 100}
+  pop +0.598 [+0.528, +0.665]  know +0.169 [+0.102, +0.238]  diff +0.429 [+0.312, +0.542]
+  cell means {"unc/Unkn": 0.767, "unc/High": 0.659, "con/Unkn": 0.23, "con/High": 0.0}
+  T7c verdict: STRICT-SURVIVES
+  share of both-judges-DONT_KNOW replies labelled HEDGED_ANSWER, by cell: unc/Unkn 0.007 (of 143)  unc/High 0.000 (of 113)  con/Unkn 0.025 (of 40)  con/High nan (of 0)
