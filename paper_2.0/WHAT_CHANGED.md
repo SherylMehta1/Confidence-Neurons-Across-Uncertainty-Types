@@ -17,6 +17,7 @@ The paper is no longer about an uncertainty circuit. Its claim is that **in Llam
 | 10 Oct, round 2 | ACCEPT with required changes | review/round2/chair_decision.md |
 | 10 Oct, round 3 | E1-E6 run; review: three minor revisions, chair ACCEPT with camera-ready items 1-8 and encouraged analyses 9a-h | review/round3/chair_decision.md |
 | 10 Oct, lock-in | E7-E10 run on six GPU boxes; camera-ready written, humanized and verified | results/round3/README.md, this file |
+| 10 Oct, round 4 | External readability review: "reads like pipeline output"; one factual error (OLMo). Revised for readability; no claim changed | revision/round4/RESPONSE_LETTER.md |
 
 ## 3. What the reviewers asked, and what we did
 
@@ -42,6 +43,18 @@ The chair found four new overstatements and three disclosure gaps. Each is liste
 | 7 | Abstract scope; "five other measurements"; readable abstract | Done | Abstract, 3.1 |
 | 8 | Housekeeping: UniReps link, citations (Brzezinka 2026b, Kang), figures, footer, hashes, counts, kappa interval | All done, including corrected hedge-token and answer-token definitions and a corrected criterion hash | throughout |
 | 9a-h | Encouraged analyses | (a) E7, (b) consensus labels, (c) strict declines, (d) namesakes, (e) E10, (f) E8, (h) E9 run. (g) human audit not run, by decision | App. A-D |
+
+### Round 4 (external readability review)
+Verdict: not readable on a first pass. Lexical slop was low, but provenance tags, verdict codes and lab-notebook narration had leaked into the prose. It found one factual error: OLMo's hedge-term popularity effect slightly exceeds its knowledge effect, so "knowledge at least as much in each" was wrong.
+**Response** (21 comments; full table in [`revision/round4/RESPONSE_LETTER.md`](revision/round4/RESPONSE_LETTER.md)):
+- One provenance rule in Setup ("pre-specified" unless marked post hoc), replacing about a dozen tags; a Plan column in Table 2.
+- Defined terms: *popularity preference*, *misfire*, hedge tokens.
+- A 2x2 table with all four cells and their n in the main text.
+- The abstract's key sentence rewritten in plain percentages; the entropy result presented as a control.
+- The six-check paragraph split into question-headed paragraphs.
+- Lab narration cut. App. G (circuit) cut. The hash appendix turned into a short table that says the hashes are self-recorded.
+- The Llama 3 author list truncated (15 to 12 pages).
+- To stay at four pages, the steering figure moved to App. C.
 
 ## 4. New experiments and checks
 

@@ -409,7 +409,9 @@ mac("hashHedgeJudge", hashlib.sha256((REPO / "hedge_judge_criterion.md").read_by
 # four-family confirmatory verdicts (results/factorial_4models/summary.txt)
 tv = (R / "factorial_4models/summary.txt").read_text(encoding="utf-8")
 for fam in ("Qwen", "Gemma", "Mistral"):
-    mac(f"ff{fam}Verdict", grab(tv, r"VERDICT \(" + fam + r", per [^)]*\): (\w+)", "results/factorial_4models/summary.txt").group(1), f"results/factorial_4models/summary.txt VERDICT {fam}")
+    v = grab(tv, r"VERDICT \(" + fam + r", per [^)]*\): (\w+)", "results/factorial_4models/summary.txt").group(1)
+    mac(f"ff{fam}Verdict", v, f"results/factorial_4models/summary.txt VERDICT {fam}")
+    mac(f"ff{fam}Words", {"REPLICATES": "both hold", "PARTIAL": "one holds", "FAILS": "neither holds"}[v], f"results/factorial_4models/summary.txt VERDICT {fam}, in words")
 # E7 (results/round3/e7_summary.txt)
 t7 = (R / "round3/e7_summary.txt").read_text(encoding="utf-8")
 for arm, a in (("control", "PU"), ("uncertain", "OU")):
@@ -471,6 +473,15 @@ for arm, nm in (("obscure", "Obs"), ("popular", "Pop")):
     mac(f"lk{nm}KnownEnt", f"{float(m.group(1)):.2f}", f"lockin_checks.txt {arm} known entropy"); mac(f"lk{nm}KnownEntCI", ciu(m.group(2), m.group(3)), "lockin_checks.txt CI")
     m = grab(tk, arm + r" known two-judge abstention ([\d.]+) \[([\d.]+), ([\d.]+)\]", "lockin_checks.txt (1)")
     mac(f"lk{nm}KnownAbsCI", ciu(m.group(2), m.group(3)), f"lockin_checks.txt {arm} known abstention CI")
+for arm, a in (("obscure", "Obs"), ("popular", "Pop")):
+    for lab, l in (("HighlyKnown", "Known"), ("Unknown", "Unk")):
+        m = grab(tk, f"cell {arm} {lab}: abstention " + r"([\d.]+) \[([\d.]+), ([\d.]+)\] n=(\d+); entropy ([\d.]+) \[([\d.]+), ([\d.]+)\] n=(\d+)", "lockin_checks.txt (1b)")
+        g = m.groups()
+        mac(f"tc{a}{l}Abs", f"{float(g[0]):.2f}", f"lockin_checks.txt {arm} {lab} abstention"); mac(f"tc{a}{l}AbsCI", ciu(g[1], g[2]), "CI")
+        mac(f"tc{a}{l}AbsN", g[3], "n questions (two-judge sample)")
+        mac(f"tc{a}{l}Ent", f"{float(g[4]):.2f}", f"lockin_checks.txt {arm} {lab} entropy"); mac(f"tc{a}{l}EntCI", ciu(g[5], g[6]), "CI")
+        mac(f"tc{a}{l}EntN", f"{int(g[7]):,}".replace(",", "{,}"), "n questions (pool)")
+        mac(f"tc{a}{l}AbsPct", f"{round(100 * float(g[0]))}" + "\\%", f"lockin_checks.txt {arm} {lab} abstention, percent")
 m = grab(tk, r"two-judge kappa\(DONT_KNOW\) [\d.]+ \[([\d.]+), ([\d.]+)\]", "lockin_checks.txt (2)"); mac("lkKappaCI", ciu(m.group(1), m.group(2)), "lockin_checks.txt kappa CI")
 m = grab(tk, r"qwen32b ([\d.]+)  gemma27b ([\d.]+)  llama70b ([\d.]+)", "lockin_checks.txt (2) majority")
 for nm, v in zip(("lkMajQwen", "lkMajGemma", "lkMajLlama"), m.groups()):

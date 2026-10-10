@@ -55,6 +55,14 @@ for arm, nm in (("uncertain", "obscure"), ("control", "popular")):
     e = boot([np.mean(per[k]) for k, r in items.items() if r["arm"] == arm and r["slick"] == "HighlyKnown" and k in per])
     say(f"  {nm} known two-judge abstention {e[0]:.3f} [{e[1]:.3f}, {e[2]:.3f}]")
 
+say("(1b) all four cells, Llama: two-judge abstention (387-question sample) and forced-answer entropy (pool)")
+for arm, nm in (("uncertain", "obscure"), ("control", "popular")):
+    for lab in ("HighlyKnown", "Unknown"):
+        a = [np.mean(per[k]) for k, r in items.items() if r["arm"] == arm and r["slick"] == lab and k in per]
+        e = [r["entropy"] for r in pool.values() if r["arm"] == arm and r["slick"] == lab]
+        ea, ee = boot(a), boot(e)
+        say(f"  cell {nm} {lab}: abstention {ea[0]:.3f} [{ea[1]:.3f}, {ea[2]:.3f}] n={len(a)}; entropy {ee[0]:.3f} [{ee[1]:.3f}, {ee[2]:.3f}] n={len(e)}")
+
 say("(2) judges on Llama")
 keys = sorted({k for k, _ in J})
 by = {k: [v for (kk, _), v in J.items() if kk == k and len(v) == 3] for k in keys}

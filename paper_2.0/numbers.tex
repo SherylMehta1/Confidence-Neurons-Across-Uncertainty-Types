@@ -387,8 +387,11 @@
 \newcommand{\hashETen}{6af179ce}  % paper/PREREG/e10_instruct_lens.md sha256 prefix
 \newcommand{\hashHedgeJudge}{ae0bb807}  % hedge_judge_criterion.md sha256 prefix
 \newcommand{\ffQwenVerdict}{PARTIAL}  % results/factorial_4models/summary.txt VERDICT Qwen
+\newcommand{\ffQwenWords}{one holds}  % results/factorial_4models/summary.txt VERDICT Qwen, in words
 \newcommand{\ffGemmaVerdict}{REPLICATES}  % results/factorial_4models/summary.txt VERDICT Gemma
+\newcommand{\ffGemmaWords}{both hold}  % results/factorial_4models/summary.txt VERDICT Gemma, in words
 \newcommand{\ffMistralVerdict}{PARTIAL}  % results/factorial_4models/summary.txt VERDICT Mistral
+\newcommand{\ffMistralWords}{one holds}  % results/factorial_4models/summary.txt VERDICT Mistral, in words
 \newcommand{\sePUKnown}{9}  % results/round3/e7_summary.txt T7a movement control HighlyKnown
 \newcommand{\sePUStay}{60}  % results/round3/e7_summary.txt T7a movement control Unknown
 \newcommand{\sePUInter}{31}  % results/round3/e7_summary.txt T7a movement control intermediate
@@ -448,6 +451,34 @@
 \newcommand{\lkPopKnownEnt}{0.86}  % lockin_checks.txt popular known entropy
 \newcommand{\lkPopKnownEntCI}{[0.80, 0.92]}  % lockin_checks.txt CI
 \newcommand{\lkPopKnownAbsCI}{[0.00, 0.00]}  % lockin_checks.txt popular known abstention CI
+\newcommand{\tcObsKnownAbs}{0.43}  % lockin_checks.txt obscure HighlyKnown abstention
+\newcommand{\tcObsKnownAbsCI}{[0.35, 0.51]}  % CI
+\newcommand{\tcObsKnownAbsN}{87}  % n questions (two-judge sample)
+\newcommand{\tcObsKnownEnt}{0.95}  % lockin_checks.txt obscure HighlyKnown entropy
+\newcommand{\tcObsKnownEntCI}{[0.83, 1.08]}  % CI
+\newcommand{\tcObsKnownEntN}{87}  % n questions (pool)
+\newcommand{\tcObsKnownAbsPct}{43\%}  % lockin_checks.txt obscure HighlyKnown abstention, percent
+\newcommand{\tcObsUnkAbs}{0.48}  % lockin_checks.txt obscure Unknown abstention
+\newcommand{\tcObsUnkAbsCI}{[0.41, 0.55]}  % CI
+\newcommand{\tcObsUnkAbsN}{100}  % n questions (two-judge sample)
+\newcommand{\tcObsUnkEnt}{3.51}  % lockin_checks.txt obscure Unknown entropy
+\newcommand{\tcObsUnkEntCI}{[3.46, 3.56]}  % CI
+\newcommand{\tcObsUnkEntN}{1{,}179}  % n questions (pool)
+\newcommand{\tcObsUnkAbsPct}{48\%}  % lockin_checks.txt obscure Unknown abstention, percent
+\newcommand{\tcPopKnownAbs}{0.00}  % lockin_checks.txt popular HighlyKnown abstention
+\newcommand{\tcPopKnownAbsCI}{[0.00, 0.00]}  % CI
+\newcommand{\tcPopKnownAbsN}{100}  % n questions (two-judge sample)
+\newcommand{\tcPopKnownEnt}{0.86}  % lockin_checks.txt popular HighlyKnown entropy
+\newcommand{\tcPopKnownEntCI}{[0.80, 0.92]}  % CI
+\newcommand{\tcPopKnownEntN}{676}  % n questions (pool)
+\newcommand{\tcPopKnownAbsPct}{0\%}  % lockin_checks.txt popular HighlyKnown abstention, percent
+\newcommand{\tcPopUnkAbs}{0.13}  % lockin_checks.txt popular Unknown abstention
+\newcommand{\tcPopUnkAbsCI}{[0.08, 0.19]}  % CI
+\newcommand{\tcPopUnkAbsN}{100}  % n questions (two-judge sample)
+\newcommand{\tcPopUnkEnt}{2.58}  % lockin_checks.txt popular Unknown entropy
+\newcommand{\tcPopUnkEntCI}{[2.47, 2.69]}  % CI
+\newcommand{\tcPopUnkEntN}{361}  % n questions (pool)
+\newcommand{\tcPopUnkAbsPct}{13\%}  % lockin_checks.txt popular Unknown abstention, percent
 \newcommand{\lkKappaCI}{[0.57, 0.67]}  % lockin_checks.txt kappa CI
 \newcommand{\lkMajQwen}{0.98}  % lockin_checks.txt agreement with the three-judge majority lkMajQwen
 \newcommand{\lkMajGemma}{0.84}  % lockin_checks.txt agreement with the three-judge majority lkMajGemma

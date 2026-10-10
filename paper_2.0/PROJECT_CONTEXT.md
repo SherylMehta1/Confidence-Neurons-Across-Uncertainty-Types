@@ -4,7 +4,7 @@
      [unverified] = not opened; [user] = the user said so. Paths: repo = C:/Users/starb/Desktop/Sher/Confidence-Neurons-Across-Uncertainty-Types ;
      paper dir = C:/Users/starb/Desktop/Sher/paper (this folder, outside the repo by the user's choice, 7 Oct 2026). -->
 
-**Status line:** 2026-10-10 | camera-ready after round-3 ACCEPT; E1-E10 folded in, humanize verified (PASS) | main.pdf: 4 pages, checks clean; C1 strengthened, C12 (Gemma, permissive prompt) and C14 (E8) added, R6-R10 retired (CLAIMS.md); collaborator guide WHAT_CHANGED.md; shared as paper_2.0/ on branch emo_attyachar_2.0 | open: author list, title scope, LLM disclosure, supplement upload; next `submit` (deadline 11 Oct 12:00 UTC)
+**Status line:** 2026-10-10 | revise round 4 done (external readability review: 21 comments, OLMo wording error fixed, provenance unified as pre-specified, 2x2 table, App. G cut) | main.pdf: 4 pages main text, 12 pages total, checks clean | open: author list, title scope, LLM disclosure, supplement upload; next `submit` (deadline 11 Oct 12:00 UTC)
 
 ## Identity
 
