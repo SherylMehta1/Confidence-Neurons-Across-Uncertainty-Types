@@ -1,2 +1,4 @@
 *.sh text eol=lf
 *.py text eol=lf
+# criterion notes are hashed byte-for-byte; never convert their line endings
+*_criterion.md -text
