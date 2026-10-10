@@ -1,0 +1,153 @@
+pool: familiarity_v3; tokenizer: C:/Users/starb/AppData/Local/Temp/claude/c--Users-starb-Desktop-Sher/75d3ad4c-0f04-45c2-a37d-acccf84853d3/scratchpad/llama_tokenizer.json
+========================================================================================
+CHECK 1 -- entity popularity vs surface form of the name (familiarity_v3 pool, Llama-3.1-8B-Instruct)
+========================================================================================
+items: 2303 (HighlyKnown 763, Unknown 1540); relations 16; free generations per item: [np.int64(20)]
+name-inferable answers: 4.3% of items (known 7.7%, unknown 2.5%)
+
+Spearman correlations among predictors:
+           logpop  known  zipf_mean  zipf_min  n_tok  tok_logid  inferable
+logpop       1.00   0.51       0.16      0.20  -0.27       0.14       0.03
+known        0.51   1.00      -0.02     -0.04   0.00       0.02       0.12
+zipf_mean    0.16  -0.02       1.00      0.84  -0.17      -0.14      -0.13
+zipf_min     0.20  -0.04       0.84      1.00  -0.49       0.13      -0.15
+n_tok       -0.27   0.00      -0.17     -0.49   1.00      -0.65       0.13
+tok_logid    0.14   0.02      -0.14      0.13  -0.65       1.00      -0.05
+inferable    0.03   0.12      -0.13     -0.15   0.13      -0.05       1.00
+
+--- outcome: hedge rate (binomial GLM on free-generation hedge counts); relation fixed effects; SE clustered by relation
+  M1 popularity + knowledge  (deviance 21946.3)
+     logpop_z     -1.871  [-2.355, -1.388]  p=3.2e-14
+     known        -2.119  [-3.118, -1.120]  p=3.2e-05
+  M2 + surface form of the name  (deviance 21175.3)
+     logpop_z     -1.791  [-2.217, -1.365]  p=1.8e-16
+     known        -2.337  [-3.180, -1.495]  p=5.5e-08
+     zipf_mean_z  +0.261  [-0.282, +0.805]  p=0.35
+     zipf_min_z   -0.723  [-1.300, -0.146]  p=0.014
+     n_tok_z      -0.175  [-0.555, +0.205]  p=0.37
+     tok_logid_z  -0.195  [-0.328, -0.061]  p=0.0042
+  M3 + name-inferable answer  (deviance 21162.4)
+     logpop_z     -1.794  [-2.223, -1.365]  p=2.4e-16
+     known        -2.325  [-3.167, -1.484]  p=6.2e-08
+     zipf_mean_z  +0.264  [-0.283, +0.812]  p=0.34
+     zipf_min_z   -0.726  [-1.308, -0.144]  p=0.014
+     n_tok_z      -0.169  [-0.539, +0.202]  p=0.37
+     tok_logid_z  -0.195  [-0.330, -0.061]  p=0.0043
+     inferable    -0.326  [-1.246, +0.595]  p=0.49
+  M0 surface only (no popularity)  (deviance 32330.4)
+     known        -4.089  [-5.165, -3.013]  p=9.6e-14
+     zipf_mean_z  +0.297  [-0.132, +0.726]  p=0.17
+     zipf_min_z   -0.936  [-1.609, -0.263]  p=0.0064
+     n_tok_z      +0.233  [-0.080, +0.546]  p=0.14
+     tok_logid_z  -0.116  [-0.223, -0.009]  p=0.034
+     inferable    +0.128  [-1.329, +1.586]  p=0.86
+
+--- outcome: first-token entropy (OLS); relation fixed effects; SE clustered by relation
+  M1 popularity + knowledge  (R2 0.675)
+     logpop_z     -0.390  [-0.494, -0.287]  p=1.7e-13
+     known        -1.863  [-2.205, -1.520]  p=1.4e-26
+  M2 + surface form of the name  (R2 0.678)
+     logpop_z     -0.413  [-0.518, -0.308]  p=1.7e-14
+     known        -1.834  [-2.159, -1.508]  p=2.7e-28
+     zipf_mean_z  -0.068  [-0.196, +0.059]  p=0.29
+     zipf_min_z   +0.086  [-0.030, +0.203]  p=0.15
+     n_tok_z      -0.061  [-0.138, +0.016]  p=0.12
+     tok_logid_z  -0.076  [-0.122, -0.030]  p=0.0011
+  M3 + name-inferable answer  (R2 0.678)
+     logpop_z     -0.416  [-0.524, -0.308]  p=4e-14
+     known        -1.826  [-2.154, -1.497]  p=1.4e-27
+     zipf_mean_z  -0.065  [-0.194, +0.064]  p=0.32
+     zipf_min_z   +0.083  [-0.036, +0.201]  p=0.17
+     n_tok_z      -0.057  [-0.132, +0.018]  p=0.14
+     tok_logid_z  -0.075  [-0.120, -0.030]  p=0.001
+     inferable    -0.185  [-0.451, +0.081]  p=0.17
+  M0 surface only (no popularity)  (R2 0.638)
+     known        -2.397  [-2.799, -1.996]  p=1.2e-31
+     zipf_mean_z  -0.045  [-0.163, +0.072]  p=0.45
+     zipf_min_z   -0.008  [-0.136, +0.121]  p=0.91
+     n_tok_z      +0.011  [-0.056, +0.078]  p=0.75
+     tok_logid_z  -0.072  [-0.125, -0.019]  p=0.008
+     inferable    -0.065  [-0.431, +0.300]  p=0.73
+
+Natural decoupling among KNOWN items: hedge rate by entity popularity x name word frequency (median splits)
+                            n  hedge  entropy
+pop     name                                 
+obscure common-word name  178  0.048    0.792
+        rare-word name    203  0.319    0.967
+popular common-word name  204  0.006    0.853
+        rare-word name    178  0.007    0.853
+
+Pair-level, factorial_v3 popularity contrasts (obscure twin minus popular twin):
+
+  pop_given_known: 55 pairs; relations: {'country': 32, 'capital': 14, 'sport': 5, 'composer': 1}
+    raw hedge gap +0.758; entropy gap +0.288; obscure twin name-inferable 35%, popular twin 7%
+    hedge gap at EQUAL surface form (intercept of d_hedge ~ d_zipf + d_ntok + d_logid): +0.434 [+0.182, +0.686]
+    excluding name-inferable obscure twins: n=36, hedge gap +0.788 [+0.662, +0.900], entropy gap +0.089
+
+  pop_given_unknown: 361 pairs; relations: {'genre': 85, 'producer': 47, 'screenwriter': 35, 'composer': 33}
+    raw hedge gap +0.578; entropy gap +0.808; obscure twin name-inferable 1%, popular twin 4%
+    hedge gap at EQUAL surface form (intercept of d_hedge ~ d_zipf + d_ntok + d_logid): +0.572 [+0.522, +0.622]
+    excluding name-inferable obscure twins: n=359, hedge gap +0.578 [+0.530, +0.628], entropy gap +0.801
+
+========================================================================================
+CHECK 2 -- T1: why does injecting the circuit state fail on known targets? (uncertain_to_control)
+========================================================================================
+Discordant injection pairs (target twin does not hedge, source twin does):
+                                  n   flip  target_known  tgt_top1  tgt_entropy  first_token_recovery
+arm                                                                                                  
+factorial_v3_know_given_hi       14  0.214           1.0     0.747        0.986                 0.926
+factorial_v3_pop_given_unknown   72  0.653           0.0     0.390        2.622                 1.026
+familiarity_v3                  103  0.398           1.0     0.774        0.991                 1.004
+uu_hedge_confab_v3                7  1.000           0.0     0.301        3.124                 0.965
+
+(a) Does the target's distance from the tipping point predict failure WITHIN the all-known familiarity arm?
+    flip ~ tgt_top1     n=103  coef -3.605  p=0.0006   mean tgt_top1: flipped 0.678 vs not 0.837
+    flip ~ tgt_entropy  n=103  coef +1.002  p=0.00036   mean tgt_entropy: flipped 1.365 vs not 0.744
+    flip ~ logodds_rec  n=103  coef +1.662  p=0.11   mean logodds_rec: flipped 1.089 vs not 1.019
+
+(b) Across arms: does target knowledge survive controlling for the target's top-1 probability and entropy?
+    flip ~ tgt_known                              tgt_known -1.28 (p=3.4e-05)   pseudo-R2 0.067
+    flip ~ tgt_top1 + tgt_entropy                 tgt_top1 -1.31 (p=0.48)  tgt_entropy +0.39 (p=0.42)   pseudo-R2 0.103
+    flip ~ tgt_known + tgt_top1 + tgt_entropy     tgt_known -0.35 (p=0.42)  tgt_top1 -1.13 (p=0.55)  tgt_entropy +0.33 (p=0.5)   pseudo-R2 0.106
+    caveat: knowledge is constant within each arm, so (b) leans on 4 arms; read it with (a).
+    target top-1 probability by knowledge: known 0.771 vs unknown 0.382
+
+(c) Was the decision point moved even when generation did not flip? first-token log-odds recovery (median, IQR):
+    factorial_v3_know_given_hi       flipped=False n= 11  median +0.90  IQR [+0.70, +1.02]
+    factorial_v3_know_given_hi       flipped=True  n=  3  median +1.32  IQR [+1.14, +1.66]
+    factorial_v3_pop_given_unknown   flipped=False n= 25  median +0.93  IQR [+0.83, +1.29]
+    factorial_v3_pop_given_unknown   flipped=True  n= 47  median +1.03  IQR [+0.93, +1.11]
+    familiarity_v3                   flipped=False n= 62  median +0.99  IQR [+0.92, +1.13]
+    familiarity_v3                   flipped=True  n= 41  median +1.04  IQR [+0.98, +1.16]
+    uu_hedge_confab_v3               flipped=True  n=  7  median +0.97  IQR [+0.91, +1.04]
+
+(d) How do failed injections on known targets start? (first 60 chars of patched generation)
+    73 failures; share whose patched text OPENS with hedge-like words: 23.3%
+      | ' Carl Sagan. He is an American astronomer and science commun'
+      | ' Agatha Christie.'
+      | ' Stephen King.'
+      | ' not immediately available to me.'
+      | ' Dale Carnegie.'
+      | ' Franz Kafka.'
+      | ' not George Orwell, as you might expect.  Nineteen Eighty-Fo'
+      | ' Robert Kiyosaki.'
+      | ' Stephen King.'
+      | ' Michael Ende.'
+      | ' Lauren Kate.'
+      | ' Henry Wadsworth Longfellow.'
+
+========================================================================================
+CHECK 3 -- behavioral flip rates under the original vs amended hedge detector (sensitivity only)
+========================================================================================
+familiarity_v3  (original detector reproduces stored labels: 1.000)
+    original  removal 0.981 [0.951, 1.000] n=103 ; injection 0.398 [0.301, 0.495] n=103
+    amended   removal 0.972 [0.935, 1.000] n=108 ; injection 0.481 [0.380, 0.574] n=108
+factorial_v3_know_given_hi  (original detector reproduces stored labels: 1.000)
+    original  removal 0.929 [0.786, 1.000] n=14 ; injection 0.214 [0.000, 0.429] n=14
+    amended   removal 0.929 [0.786, 1.000] n=14 ; injection 0.286 [0.071, 0.571] n=14
+factorial_v3_pop_given_unknown  (original detector reproduces stored labels: 1.000)
+    original  removal 0.806 [0.708, 0.889] n=72 ; injection 0.653 [0.542, 0.764] n=72
+    amended   removal 0.797 [0.703, 0.878] n=74 ; injection 0.689 [0.581, 0.797] n=74
+uu_hedge_confab_v3  (original detector reproduces stored labels: 1.000)
+    original  removal 0.571 [0.286, 0.857] n=7 ; injection 1.000 [1.000, 1.000] n=7
+    amended   removal 0.625 [0.250, 0.875] n=8 ; injection 0.875 [0.625, 1.000] n=8

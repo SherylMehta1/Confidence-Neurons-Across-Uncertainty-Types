@@ -1,0 +1,30 @@
+[base] labels: 2673 loaded, labelling 0 here
+[base] caching residuals at the free-generation prompt for 2673 items
+[inst] labels: 2673 loaded, labelling 0 here
+[inst] caching residuals at the free-generation prompt for 2673 items
+geometry at l*=17: cos = 0.213; null 99th pct 0.326 (mean 0.119)
+  dose 0  none       hedge 0.020
+  dose 1  own_fam    hedge 0.287
+  dose 1  random0    hedge 0.027
+  dose 1  random1    hedge 0.020
+  dose 1  random2    hedge 0.040
+  dose 1  random3    hedge 0.013
+  dose 1  random4    hedge 0.027
+dose 1: own - random = +0.261
+  dose 1  own_fam@k* hedge 0.287
+  dose 1  base_fam@k* hedge 0.020
+  dose 1  inst_know@k* hedge 0.087
+  dose 1  random0@k* hedge 0.027
+  dose 1  random1@k* hedge 0.020
+  dose 1  random2@k* hedge 0.040
+  dose 1  random3@k* hedge 0.013
+  dose 1  random4@k* hedge 0.027
+PAIR llama (v2): l* = 17 of 32; k* = 1 x natural norm; n = 150
+G  cos(d_fam base, inst) = +0.213; null 99th pct +0.326 -> condition 1 no
+S  hedge at k*: base_fam 0.020  inst_know 0.087  none 0.020  own_fam 0.287  random0 0.027  random1 0.020  random2 0.040  random3 0.013  random4 0.027
+   random mean 0.025; own effect +0.267; base effect +0.000; condition 2 no; condition 3 no
+   degenerate outputs at k*: base_fam 0.00  inst_know 0.00  none 0.00  own_fam 0.00  random0 0.00  random1 0.00  random2 0.00  random3 0.00  random4 0.00
+E  entropy at k*: base_fam 1.352  inst_know 1.225  none 0.824  own_fam 1.256  random0 0.916  random1 0.886  random2 0.892  random3 0.922  random4 0.861
+DD hedge(fam)-hedge(know) +0.200 [+0.140,+0.267]; entropy(know)-entropy(fam) -0.031 [-0.110,+0.047] -> no
+VERDICT llama (v2): NOT REUSED
+DIRECTION_REUSE_V2_DONE

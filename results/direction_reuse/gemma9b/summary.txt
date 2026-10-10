@@ -1,0 +1,9 @@
+PAIR gemma9b: base unsloth/gemma-2-9b | instruct unsloth/gemma-2-9b-it | l* = 23 of 42 layers | n steer prompts = 150
+G  cos(d_fam base, inst) at l* = +0.399; permutation 99th pct +0.517 -> condition 1 no
+   cos at all layers: L0:+0.80 L1:+0.81 L2:+0.77 L3:+0.75 L4:+0.68 L5:+0.62 L6:+0.61 L7:+0.55 L8:+0.54 L9:+0.53 L10:+0.52 L11:+0.45 L12:+0.38 L13:+0.35 L14:+0.41 L15:+0.38 L16:+0.35 L17:+0.35 L18:+0.34 L19:+0.22 L20:+0.24 L21:+0.28 L22:+0.35 L23:+0.40 L24:+0.42 L25:+0.54 L26:+0.59 L27:+0.65 L28:+0.62 L29:+0.65 L30:+0.65 L31:+0.62 L32:+0.61 L33:+0.61 L34:+0.60 L35:+0.61 L36:+0.63 L37:+0.62 L38:+0.58 L39:+0.56 L40:+0.46 L41:+0.53
+S  hedge rate by condition: base_fam 0.000  base_fam_x2 0.000  inst_know 0.000  none 0.000  own_fam 0.000  own_fam_x2 0.000  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000
+   random mean 0.000; own effect +0.000; base effect +0.000; testable False; condition 2 no; condition 3 no
+   amended detector: base_fam 0.000  base_fam_x2 0.000  inst_know 0.000  none 0.000  own_fam 0.000  own_fam_x2 0.000  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000
+E  first-token entropy by condition: base_fam 0.239  base_fam_x2 0.239  inst_know 0.328  none 0.254  own_fam 0.244  own_fam_x2 0.248  random0 0.255  random1 0.290  random2 0.265  random3 0.276  random4 0.262
+DD hedge(own_fam) - hedge(inst_know) = +0.000 [+0.000, +0.000]; entropy(inst_know) - entropy(own_fam) = +0.084 [+0.057, +0.113] -> double dissociation no
+VERDICT gemma9b: NOT TESTABLE

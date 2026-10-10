@@ -1,0 +1,31 @@
+====================================================================================================
+J-LENS FAMILIARITY-vs-KNOWLEDGE ONSET (jlens_cascade_criterion.md); readout: lens hedge-vs-answer log-odds
+====================================================================================================
+llama3.1-8b-it   layers 32  cells {('uncertain', 'Unknown'): 1179, ('uncertain', 'HighlyKnown'): 87, ('control', 'Unknown'): 361, ('control', 'HighlyKnown'): 676}  bos-check 0.062500
+                 familiarity onset L17 (rel 0.55)   knowledge onset L17 (rel 0.55)   D = K - F = 0 layers, 95% CI [+0.0, +0.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +1.580 [+1.390, +1.762]   -> UNDECIDED
+llama3.1-8b      layers 32  cells {('uncertain', 'Unknown'): 1148, ('uncertain', 'HighlyKnown'): 76, ('control', 'Unknown'): 391, ('control', 'HighlyKnown'): 435}  bos-check 0.062500
+                 familiarity onset L16 (rel 0.52)   knowledge onset L16 (rel 0.52)   D = K - F = 0 layers, 95% CI [+0.0, +1.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +0.671 [+0.587, +0.749]   -> UNDECIDED
+qwen2.5-7b-it    layers 28  cells {('uncertain', 'Unknown'): 1237, ('uncertain', 'HighlyKnown'): 54, ('control', 'Unknown'): 746, ('control', 'HighlyKnown'): 390}  bos-check 0.062500
+                 familiarity onset L20 (rel 0.74)   knowledge onset L20 (rel 0.74)   D = K - F = 0 layers, 95% CI [-1.0, +1.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +0.213 [+0.171, +0.257]   -> UNDECIDED
+gemma-2-9b-it    layers 42  cells {('uncertain', 'Unknown'): 1158, ('uncertain', 'HighlyKnown'): 118, ('control', 'Unknown'): 428, ('control', 'HighlyKnown'): 626}  bos-check 0.125000
+                 familiarity onset L24 (rel 0.59)   knowledge onset L24 (rel 0.59)   D = K - F = 0 layers, 95% CI [-2.0, +1.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +0.711 [+0.601, +0.819]   -> UNDECIDED
+gemma-2-9b       layers 42  cells {('uncertain', 'Unknown'): 1126, ('uncertain', 'HighlyKnown'): 50, ('control', 'Unknown'): 297, ('control', 'HighlyKnown'): 465}  bos-check 0.125000
+                 familiarity onset L24 (rel 0.59)   knowledge onset L25 (rel 0.61)   D = K - F = 1 layers, 95% CI [+1.0, +2.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +0.387 [+0.345, +0.430]   -> SUPPORTS
+gemma-2-2b-it    layers 26  cells {('uncertain', 'Unknown'): 1166, ('uncertain', 'HighlyKnown'): 93, ('control', 'Unknown'): 563, ('control', 'HighlyKnown'): 394}  bos-check 0.125000
+                 familiarity onset L17 (rel 0.68)   knowledge onset L15 (rel 0.6)   D = K - F = -2 layers, 95% CI [-2.0, +0.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +0.403 [+0.359, +0.449]   -> UNDECIDED
+gemma-2-2b       layers 26  cells {('uncertain', 'Unknown'): 1154, ('uncertain', 'HighlyKnown'): 33, ('control', 'Unknown'): 481, ('control', 'HighlyKnown'): 241}  bos-check 0.125000
+                 familiarity onset L16 (rel 0.64)   knowledge onset L16 (rel 0.64)   D = K - F = 0 layers, 95% CI [+0.0, +1.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +0.401 [+0.328, +0.473]   -> UNDECIDED
+olmo-3-1025-7b   layers 32  cells {('uncertain', 'Unknown'): 1152, ('uncertain', 'HighlyKnown'): 15, ('control', 'Unknown'): 547, ('control', 'HighlyKnown'): 85}  bos-check 0.062500
+                 familiarity onset L19 (rel 0.61)   knowledge onset L14 (rel 0.45)   D = K - F = -5 layers, 95% CI [-5.0, -5.0] (defined in 100% of replicates)
+                 mid-depth familiarity F [1/3,2/3] = +0.293 [+0.191, +0.384]   -> CONTRADICTS
+
+Models analysed: 8 of 8 planned; SUPPORTS 1, CONTRADICTS 1, UNDECIDED 6
+CROSS-MODEL CLAIM: mixed
+PREDATES INSTRUCTION TUNING (all 4 base models mid-depth F > 0, CI excl. 0): yes  llama3.1-8b +0.67 [+0.59,+0.75]; gemma-2-9b +0.39 [+0.34,+0.43]; gemma-2-2b +0.40 [+0.33,+0.47]; olmo-3-1025-7b +0.29 [+0.19,+0.38]

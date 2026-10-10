@@ -1,0 +1,121 @@
+id,key,s,cell,qwen32b,gemma27b
+H000,place of birth::Juan Luis Guerra,0,control/HighlyKnown,ANSWER,ANSWER
+H001,capital::arrondissement of Niort,1,uncertain/HighlyKnown,ANSWER,ANSWER
+H002,screenwriter::PK,2,control/Unknown,ANSWER,ANSWER
+H003,capital::Verbandsgemeinde Bad Ems,2,uncertain/HighlyKnown,DONT_KNOW,ANSWER
+H004,"composer::Das neugeborne Kindelein, BWV 122",0,uncertain/HighlyKnown,ANSWER,ANSWER
+H005,capital::arrondissement of Florac,0,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H006,"country::Dąbkowice, Łódź Voivodeship",2,uncertain/HighlyKnown,ANSWER,ANSWER
+H007,director::Beloved,1,control/HighlyKnown,ANSWER,ANSWER
+H008,country::Eastern United States,1,control/HighlyKnown,ANSWER,ANSWER
+H009,director::Next,2,control/HighlyKnown,ANSWER,ANSWER
+H010,genre::Oasis,1,control/Unknown,ANSWER,ANSWER
+H011,country::Katmai National Park and Preserve,0,control/HighlyKnown,ANSWER,ANSWER
+H012,screenwriter::Guilty,1,uncertain/Unknown,DONT_KNOW,ANSWER
+H013,author::Holes,2,control/HighlyKnown,ANSWER,ANSWER
+H014,director::Boots,0,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H015,screenwriter::Watch Out,2,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H016,country::Cổ Linh,1,uncertain/HighlyKnown,DONT_KNOW,CLARIFY
+H017,occupation::Benazir Bhutto,2,control/HighlyKnown,ANSWER,ANSWER
+H018,director::Bingo,0,uncertain/Unknown,DONT_KNOW,ANSWER
+H019,capital::Vimmerby Municipality,0,uncertain/HighlyKnown,ANSWER,ANSWER
+H020,"country::Wir, Masovian Voivodeship",0,uncertain/HighlyKnown,ANSWER,ANSWER
+H021,father::Princess Yamanobe,0,uncertain/Unknown,DONT_KNOW,ANSWER
+H022,capital::Belorechensky District,2,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H023,screenwriter::Snow White and the Seven Dwarfs,2,control/Unknown,ANSWER,ANSWER
+H024,composer::31,2,control/Unknown,DONT_KNOW,DONT_KNOW
+H025,sport::Indianapolis 500,0,control/Unknown,ANSWER,ANSWER
+H026,director::Vacation,1,control/Unknown,ANSWER,ANSWER
+H027,author::Passing,2,control/HighlyKnown,ANSWER,ANSWER
+H028,religion::Cosmo Francesco Ruppi,1,uncertain/Unknown,DONT_KNOW,ANSWER
+H029,producer::Career Opportunities,0,control/Unknown,DONT_KNOW,DONT_KNOW
+H030,director::Hakeem's New Flame,0,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H031,place of birth::C. N. Annadurai,2,control/Unknown,ANSWER,ANSWER
+H032,father::Georg Adolf Erman,0,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H033,sport::Indianapolis 500,1,control/Unknown,ANSWER,ANSWER
+H034,country::Rubim do Norte River,2,uncertain/HighlyKnown,DONT_KNOW,ANSWER
+H035,country::Chal Siah Manchatun Jowkar,0,uncertain/HighlyKnown,DONT_KNOW,ANSWER
+H036,author::Treasure Island,1,control/HighlyKnown,ANSWER,ANSWER
+H037,sport::2011–12 Elon Phoenix men's basketball team,1,uncertain/HighlyKnown,ANSWER,ANSWER
+H038,country::Khvajeh Soheyl,2,uncertain/HighlyKnown,DONT_KNOW,ANSWER
+H039,composer::Miami Vice,1,control/HighlyKnown,ANSWER,ANSWER
+H040,"country::Union State Bank, Wisconsin",0,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H041,author::Real,2,control/Unknown,CLARIFY,ANSWER
+H042,director::Tum Bin,2,control/HighlyKnown,ANSWER,ANSWER
+H043,country::Stare Brzóski,2,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H044,father::Mira Burt-Wintonick,2,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H045,author::Politics,1,control/HighlyKnown,ANSWER,ANSWER
+H046,place of birth::Karl Bartholomaeus Heller,0,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H047,country::Riechheimer Berg,1,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H048,"composer::Erfreute Zeit im neuen Bunde, BWV 83",1,uncertain/HighlyKnown,ANSWER,ANSWER
+H049,author::Therapy,1,uncertain/Unknown,CLARIFY,ANSWER
+H050,place of birth::Eduardo Hurtado,0,control/Unknown,DONT_KNOW,DONT_KNOW
+H051,country::British American Tobacco,2,control/HighlyKnown,ANSWER,ANSWER
+H052,sport::Anderson,1,control/Unknown,CLARIFY,DONT_KNOW
+H053,author::The Adventures of Tom Sawyer,1,control/HighlyKnown,ANSWER,ANSWER
+H054,composer::Inside Out,2,control/HighlyKnown,ANSWER,ANSWER
+H055,occupation::Kamya Panjabi,1,control/HighlyKnown,ANSWER,ANSWER
+H056,director::Cocktail,1,control/Unknown,ANSWER,ANSWER
+H057,director::The Day After,1,control/HighlyKnown,ANSWER,ANSWER
+H058,screenwriter::Easy A,1,control/Unknown,ANSWER,ANSWER
+H059,place of birth::Julee Cruise,0,control/Unknown,DONT_KNOW,ANSWER
+H060,religion::Arturo Tabera Araoz,1,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H061,genre::MUD,1,control/Unknown,ANSWER,ANSWER
+H062,genre::The Rev,2,control/Unknown,DONT_KNOW,DONT_KNOW
+H063,producer::Vertigo,0,control/HighlyKnown,ANSWER,DONT_KNOW
+H064,country::Chrysler,0,control/Unknown,ANSWER,ANSWER
+H065,country::Mohammadabad-e Razzaqzadeh,0,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H066,author::From Hell letter,0,control/HighlyKnown,ANSWER,ANSWER
+H067,sport::2012 Georgetown Hoyas men's soccer team,1,uncertain/HighlyKnown,ANSWER,ANSWER
+H068,religion::Bellino Giusto Ghirard,1,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H069,producer::Just Around the Corner,0,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H070,producer::Cinema,2,uncertain/Unknown,CLARIFY,CLARIFY
+H071,director::Alice Walker: Beauty in Truth,2,uncertain/HighlyKnown,ANSWER,ANSWER
+H072,father::Dwayne Johnson,1,control/HighlyKnown,ANSWER,ANSWER
+H073,producer::Menu,1,uncertain/Unknown,DONT_KNOW,ANSWER
+H074,author::Great Expectations,1,control/HighlyKnown,ANSWER,ANSWER
+H075,director::The Call of the North,2,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H076,author::Death in Five Boxes,1,uncertain/Unknown,DONT_KNOW,ANSWER
+H077,sport::1995 Cook Islands Round Cup,0,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H078,genre::Nightdreamers,0,uncertain/Unknown,DONT_KNOW,CLARIFY
+H079,producer::Her,0,control/Unknown,ANSWER,ANSWER
+H080,director::Carrie,0,control/Unknown,ANSWER,ANSWER
+H081,producer::Precious,1,control/HighlyKnown,ANSWER,ANSWER
+H082,producer::Cinema,1,uncertain/Unknown,CLARIFY,CLARIFY
+H083,screenwriter::Her,1,control/HighlyKnown,ANSWER,ANSWER
+H084,country::Bitchū-Kawamo Station,0,uncertain/HighlyKnown,DONT_KNOW,ANSWER
+H085,country::Cổ Linh,0,uncertain/HighlyKnown,CLARIFY,DONT_KNOW
+H086,genre::Scorpio,0,uncertain/Unknown,CLARIFY,ANSWER
+H087,father::Melora Hardin,0,control/Unknown,DONT_KNOW,ANSWER
+H088,"composer::Das neugeborne Kindelein, BWV 122",1,uncertain/HighlyKnown,ANSWER,ANSWER
+H089,father::Rand Paul,2,control/HighlyKnown,ANSWER,ANSWER
+H090,composer::WarGames,0,control/Unknown,ANSWER,ANSWER
+H091,author::The Adventures of Tom Sawyer,2,control/HighlyKnown,ANSWER,ANSWER
+H092,genre::Options,0,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H093,screenwriter::Her,2,control/HighlyKnown,ANSWER,ANSWER
+H094,country::Chalhuacocha,1,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H095,sport::Leyton Orient F.C.,2,control/HighlyKnown,ANSWER,ANSWER
+H096,occupation::Domingo Eyzaguirre,1,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H097,capital::Lyuberetsky District,2,uncertain/HighlyKnown,DONT_KNOW,CLARIFY
+H098,genre::Drill,1,uncertain/Unknown,ANSWER,ANSWER
+H099,country::British American Tobacco,0,control/HighlyKnown,ANSWER,ANSWER
+H100,genre::The Invasion,0,control/Unknown,ANSWER,ANSWER
+H101,screenwriter::Rent,2,control/Unknown,ANSWER,ANSWER
+H102,director::Pilot,2,uncertain/Unknown,CLARIFY,UNPARSED
+H103,director::Bingo,2,uncertain/Unknown,CLARIFY,ANSWER
+H104,author::Dancing on Coral,1,uncertain/Unknown,DONT_KNOW,ANSWER
+H105,producer::Boy,2,control/Unknown,DONT_KNOW,ANSWER
+H106,producer::The Internship,0,control/Unknown,ANSWER,ANSWER
+H107,country::Tervola Radio and TV-Mast,0,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H108,director::The Matrix,0,control/HighlyKnown,ANSWER,ANSWER
+H109,producer::Precious,2,control/HighlyKnown,ANSWER,ANSWER
+H110,screenwriter::The Notebook,2,control/Unknown,ANSWER,ANSWER
+H111,father::Giacomo Guardi,0,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H112,capital::arrondissement of Lannion,1,uncertain/HighlyKnown,DONT_KNOW,DONT_KNOW
+H113,director::Sacrifice,1,uncertain/Unknown,DONT_KNOW,ANSWER
+H114,screenwriter::Guilty,2,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H115,"country::Łazy, Sierpc County",0,uncertain/HighlyKnown,ANSWER,ANSWER
+H116,genre::Too Short,2,control/Unknown,ANSWER,ANSWER
+H117,screenwriter::Album,1,uncertain/Unknown,DONT_KNOW,DONT_KNOW
+H118,producer::Glory,1,control/Unknown,ANSWER,ANSWER
+H119,genre::The Guess Who,1,control/Unknown,ANSWER,CLARIFY

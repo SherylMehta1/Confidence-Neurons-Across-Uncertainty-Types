@@ -1,0 +1,505 @@
+arm,pair,discordant,flip,tgt_known,tgt_frac_correct,tgt_top1,tgt_entropy,src_top1,src_entropy,logodds_rec,gen_patched,gen_clean
+familiarity_v3,0,True,True,1,1.0,0.874086856842041,0.6312519311904907,0.33451607823371887,3.7850494384765625,0.9830957731102806," not clear-cut as there are multiple works titled ""Symposium"". However, I can provide a few possibilities:
+
+1.", Plato.
+familiarity_v3,1,True,True,1,1.0,0.6382927894592285,1.195320725440979,0.4425105154514313,2.085954189300537,0.9180353005986596," unclear as there are multiple books titled ""Beloved"". However, I can provide a few possibilities:
+
+1. Toni Morrison", Toni Morrison.
+familiarity_v3,2,False,True,1,1.0,0.9396764039993286,0.32720547914505005,0.09440595656633377,5.428749084472656,0.9227689695130789," Louis Sachar. He is an American author known for his children's and young adult books, including the award-winning novel"," Louis Sachar. He is an American author known for his children's and young adult books, and 'Holes'"
+familiarity_v3,3,True,False,1,1.0,0.9412733316421509,0.3520330488681793,0.2679765224456787,3.695444107055664,0.9186734390689086," Carl Sagan. He is an American astronomer and science communicator who wrote the science fiction novel ""Contact"" in "," Carl Sagan. ""Contact"" is a science fiction novel written by Carl Sagan, published in 1985."
+familiarity_v3,4,True,True,1,1.0,0.7321863770484924,1.3737163543701172,0.30926764011383057,4.292944431304932,1.1254219573771906," not clear as there are multiple comics and books titled ""Bone"". However, I can provide a few possibilities:
+
+1."," Jeff Smith. Jeff Smith is an American cartoonist, best known for creating the popular comic book series ""Bone,"" which"
+familiarity_v3,5,False,True,1,1.0,0.8512884974479675,0.8958926200866699,0.24616117775440216,2.9865598678588867,0.900580909590042, Daphne du Maurier.," Daphne du Maurier. She is a British author known for her gothic and suspenseful novels, and """
+familiarity_v3,6,False,True,1,1.0,0.9416406750679016,0.3060228228569031,0.25872063636779785,4.515069007873535,1.274512371812235, Jane Austen.," Jane Austen. She is a renowned English novelist known for her works of romantic fiction, particularly during the Regency era"
+familiarity_v3,7,True,False,1,1.0,0.8589413166046143,0.9976357221603394,0.14102023839950562,4.458426475524902,0.663223658322914, Agatha Christie.," Agatha Christie. Curtain is a novel by Agatha Christie, published in 1975, and it is the last"
+familiarity_v3,8,False,True,1,1.0,0.9152959585189819,0.4163438677787781,0.22155866026878357,4.160956382751465,0.8603402416880324, Chimamanda Ngozi Adichie.," Chimamanda Ngozi Adichie. She is a Nigerian novelist, essayist, and short story writer."
+familiarity_v3,9,True,False,1,1.0,0.909069836139679,0.46258705854415894,0.2695396840572357,4.440526008605957,0.9223083256059674, Stephen King., Stephen King.
+familiarity_v3,10,True,False,1,1.0,0.9705862402915955,0.24322223663330078,0.27647823095321655,4.230942249298096,0.9471080263146482, not immediately available to me., William Blake.
+familiarity_v3,11,True,False,1,1.0,0.9873583316802979,0.09190262854099274,0.2907502353191376,4.026109218597412,1.150101548634101, Dale Carnegie., Dale Carnegie.
+familiarity_v3,12,False,True,1,1.0,0.9158139228820801,0.4472878575325012,0.25113409757614136,3.6835360527038574,1.147273247732678, Che Guevara., Che Guevara.
+familiarity_v3,13,True,False,1,1.0,0.9420216083526611,0.3377973437309265,0.14728054404258728,5.0401201248168945,1.1770166029246751, Franz Kafka., Franz Kafka.
+familiarity_v3,14,True,False,1,1.0,0.983048677444458,0.1152479350566864,0.2287895381450653,4.91220235824585,1.0933701158926206," not George Orwell, as you might expect.  Nineteen Eighty-Four is indeed a famous dystopian novel", George Orwell.
+familiarity_v3,15,True,False,1,1.0,0.9947881698608398,0.042636334896087646,0.23586511611938477,3.4355921745300293,1.121577459291831, Robert Kiyosaki.," Robert Kiyosaki. He is a well-known American businessman, investor, and author. ""Rich Dad Poor Dad"
+familiarity_v3,16,False,True,1,1.0,0.9157014489173889,0.46060049533843994,0.7076948285102844,1.9366896152496338,1.4965177030333372," Aristotle. ""Politics"" is a famous philosophical work by the ancient Greek philosopher Aristotle, in which he discusses the nature of"," Aristotle. ""Politics"" is a famous philosophical work written by the ancient Greek philosopher Aristotle. It is one of his most"
+familiarity_v3,17,True,False,1,1.0,0.9446782469749451,0.3373252749443054,0.14922215044498444,4.892040729522705,0.9840931563355012, Stephen King., Stephen King.
+familiarity_v3,18,False,True,1,1.0,0.9665060043334961,0.21994106471538544,0.7079325914382935,1.545937180519104,0.7109675880185042, John Wyndham., John Wyndham.
+familiarity_v3,19,True,True,1,1.0,0.5296712517738342,1.4047532081604004,0.33206960558891296,3.182380199432373,1.2204359462880383," not clear without more information. There are several books titled ""The Wave."" 
+
+One possibility is Morton Rhue's """," Morton Rhue. However, the book ""The Wave"" is actually based on a German novel called ""Die Welle"
+familiarity_v3,20,True,True,1,1.0,0.9401001930236816,0.3326491117477417,0.2731822431087494,4.436808109283447,0.9383559814184536," not clear as there are multiple works with the title ""Our Town"". 
+
+1. ""Our Town"" is a play"," Thornton Wilder. He is an American playwright and novelist, best known for his play ""Our Town,"" which was first"
+familiarity_v3,21,True,False,1,1.0,0.9705597162246704,0.19093725085258484,0.5695569515228271,2.920164108276367,0.955615007167861, Michael Ende.," Michael Ende. He is a German author, best known for his fantasy novel 'The Neverending Story' (German title"
+familiarity_v3,22,False,False,1,1.0,0.9325100779533386,0.5608798265457153,0.3255387842655182,3.7967629432678223,0.7680690912959266," not clear. There are several letters known as the ""From Hell"" letters, and they are associated with the Jack the"," Jack the Ripper. The From Hell letter is one of the most famous letters attributed to Jack the Ripper, a"
+familiarity_v3,23,True,False,1,1.0,0.9351112246513367,0.47287100553512573,0.2339148372411728,4.567177772521973,1.0468571874065091, Lauren Kate.," Lauren Kate. ""Fallen"" is a young adult paranormal romance novel written by Lauren Kate. It was published in "
+familiarity_v3,24,True,False,1,1.0,0.9697892069816589,0.19988811016082764,0.5764095187187195,2.9086809158325195,0.7747834581501012, Henry Wadsworth Longfellow.," Henry Wadsworth Longfellow. He is an American poet and educator, and 'The Song of Hiawatha"
+familiarity_v3,25,True,False,1,1.0,0.7777206897735596,0.9377024173736572,0.36481478810310364,3.96193528175354,1.0016288351018383, Samuel Shem., Samuel Shem.
+familiarity_v3,26,False,True,1,1.0,0.9373606443405151,0.2727605402469635,0.195176899433136,3.405454158782959,0.91621049848071, Harrisburg., Harrisburg.
+familiarity_v3,27,True,False,1,1.0,0.9925166964530945,0.048320379108190536,0.20352470874786377,3.635422945022583,0.8817375358098775, Madrid., Madrid.
+familiarity_v3,28,True,False,1,1.0,0.9548410177230835,0.23706631362438202,0.27598708868026733,2.901780605316162,0.838888231876891," that Michigan has two major cities that could be considered as capitals, Lansing and Detroit. 
+
+Lansing is the capital", Lansing.
+familiarity_v3,29,True,False,1,1.0,0.9949146509170532,0.03419393673539162,0.13527321815490723,4.87214469909668,0.9862250207576106, Paris., Paris.
+familiarity_v3,30,True,False,1,1.0,0.9598987698554993,0.22024554014205933,0.2422885149717331,3.7995858192443848,0.8369481536429669, Ottawa., Ottawa.
+familiarity_v3,31,False,True,1,1.0,0.9818726181983948,0.11469484865665436,0.2891857922077179,2.353402614593506,-0.0398467879287021, Japan. Tokyo is the capital city of Japan., Japan. Tokyo is the capital city of Japan.
+familiarity_v3,32,False,True,1,1.0,0.9846013784408569,0.10956107079982758,0.43407490849494934,2.976153612136841,1.0703637767914935, Mexico. Mexico City is the capital of Mexico., Mexico. Mexico City is the capital of Mexico.
+familiarity_v3,33,False,True,1,1.0,0.9454554915428162,0.2887345850467682,0.2015562206506729,3.7073006629943848,1.0334575048066204," Hungary. Budapest is the capital and largest city of Hungary, a landlocked country located in Central Europe."," Hungary. Budapest is the capital and largest city of Hungary, a landlocked country located in Central Europe."
+familiarity_v3,34,False,True,1,1.0,0.944349467754364,0.30614709854125977,0.8621810674667358,0.8407740592956543,2.0, Germany. Berlin is the capital and the largest city of Germany., Germany. Berlin is the capital and largest city of Germany.
+familiarity_v3,35,True,False,1,1.0,0.9796611070632935,0.12377776950597763,0.34939244389533997,3.23923397064209,0.9778909344353492," not unique as there are several cities named Paris. However, the most well-known Paris is the capital of France.", France. Paris is the capital city of France.
+familiarity_v3,36,False,True,1,1.0,0.9728355407714844,0.166230708360672,0.4399462342262268,2.5602283477783203,1.0442540830289826, Sweden., Sweden.
+familiarity_v3,37,True,False,1,1.0,0.84175044298172,0.8234430551528931,0.27830663323402405,4.433052062988281,0.9775568477542166," not straightforward as Into the Woods is a musical with music and lyrics by Stephen Sondheim, but the book is by James"," Stephen Sondheim. He is a renowned American composer and lyricist, and 'Into the Woods' is one of his"
+familiarity_v3,38,True,False,1,1.0,0.9066174030303955,0.5515429377555847,0.2618691325187683,4.564469337463379,1.0844930113572189," John Kander. He composed the music for the musical ""Cabaret"" along with the lyrics by Fred Ebb."," John Kander. He composed the music for the musical ""Cabaret,"" which was written in collaboration with the lyricist"
+familiarity_v3,39,True,True,1,1.0,0.6132041215896606,2.1828994750976562,0.2700630724430084,4.412199974060059,1.1951627754314826," not clear. There are multiple movies with the title ""Saw"".", Charlie Clouser.
+familiarity_v3,40,False,True,1,1.0,0.9552247524261475,0.30349287390708923,0.27847975492477417,3.629704713821411,1.2760314437851124," Trent Reznor and Atticus Ross. They composed the score for the 2010 film ""The Social Network""."," Trent Reznor and Atticus Ross. They composed the score for the 2010 film ""The Social Network""."
+familiarity_v3,41,False,True,1,1.0,0.9427019953727722,0.3868485987186432,0.2345183789730072,4.028012275695801,1.2611281935776693, Jan Hammer.," Jan Hammer. He was a Czech-American composer, musician, and record producer. He is best known for composing the iconic"
+familiarity_v3,42,True,False,1,1.0,0.9819747805595398,0.15007111430168152,0.2934642732143402,4.48848819732666,0.8445532881284816, Paul McCartney., Paul McCartney.
+familiarity_v3,43,False,False,1,1.0,0.8665295839309692,0.8658897876739502,0.26763078570365906,4.6011962890625,1.1268648553388796," not clear as there are multiple TV shows and movies with the title ""Lost"". However, I can provide a few possibilities"," Michael Giacchino. He composed the music for the popular American television series ""Lost""."
+familiarity_v3,44,True,False,1,1.0,0.4246775805950165,2.0402209758758545,0.18139223754405975,5.002337455749512,1.3306601541684848, Wendy Carlos.," Wendy Carlos and her collaborator,  Walter Carlos (Walter Carlos was her birth name, and she later changed it"
+familiarity_v3,45,True,False,1,1.0,0.967965841293335,0.22018089890480042,0.24907687306404114,4.864727973937988,0.8240115297524662," Lin-Manuel Miranda. He is a composer, playwright, and actor who wrote the music, lyrics, and book for"," Lin-Manuel Miranda. He is a renowned American composer, playwright, and actor. Miranda is best known for creating the"
+familiarity_v3,46,True,True,1,1.0,0.8610022664070129,0.6091548204421997,0.23403091728687286,3.613797903060913,1.0587337556740883, not clear from the information provided. There are several institutions named Illinois State University.," the United States of America. Specifically, Illinois State University is located in Normal, Illinois."
+familiarity_v3,47,False,True,1,1.0,0.9282379746437073,0.3552117347717285,0.19582757353782654,3.659684419631958,0.8616431442766381, the United Kingdom., the United Kingdom.
+familiarity_v3,48,True,False,1,1.0,0.9818975329399109,0.12431038916110992,0.32276153564453125,3.641964912414551,0.754410845693616, Lone Scherfig., Lone Scherfig.
+familiarity_v3,49,False,True,1,0.9,0.4358554482460022,1.862387776374817,0.32449859380722046,3.687283754348755,0.973439095153934, Stephen Daldry., Stephen Daldry.
+familiarity_v3,50,True,False,1,1.0,0.9742257595062256,0.21081283688545227,0.2203465700149536,3.950366973876953,0.9330491988350552, Peter Weir.," Peter Weir. He directed the 2020 film ""The Way Back"" which is a sports drama film."
+familiarity_v3,51,True,True,1,1.0,0.9181889295578003,0.5110670924186707,0.2569427788257599,4.363640308380127,1.1042399514117576," not clear as there are multiple movies with the title ""The Omen"". 
+
+1. The Omen (1976", Richard Donner.
+familiarity_v3,52,True,False,1,1.0,0.8698149919509888,0.6656720638275146,0.16999422013759613,4.35311222076416,0.8953828133612791, Marcin Wrona., John Erick Dowdle.
+familiarity_v3,53,True,True,1,1.0,0.8886566758155823,0.5375475287437439,0.2656479775905609,3.5917491912841797,0.8824088458267225, not available in my database., Ben Affleck. He not only directed the film but also starred in it.
+familiarity_v3,54,True,True,1,1.0,0.6733728647232056,1.7091820240020752,0.14321598410606384,4.892363548278809,2.0," not available in the given data. However, I can tell you that there are multiple movies titled ""42"". 
+
+1", Brian Helgeland.
+familiarity_v3,55,True,True,1,1.0,0.9857200980186462,0.1241120994091034,0.28292176127433777,3.9622373580932617,1.1750691289342503," not clear as there are multiple movies with the title PK. 
+
+1. PK (2014) - Directed by Raj"," Rajkumar Hirani. He is an Indian film director, screenwriter, and film editor. PK is a "
+familiarity_v3,56,False,True,1,1.0,0.6958924531936646,1.1183977127075195,0.08518844097852707,5.444604396820068,0.5374372529744201," the Wachowskis, a duo of directors. The Wachowskis are Lilly and Lana Wach"," the Wachowskis, a duo of film directors, writers, and producers. The Wachowskis"
+familiarity_v3,57,True,False,1,1.0,0.9178062677383423,0.4962034821510315,0.4026865065097809,3.4815077781677246,0.937751314125931, Martin Scorsese.," Martin Scorsese. He directed the 2016 film ""Silence,"" which is an adaptation of the 196"
+familiarity_v3,58,False,True,1,1.0,0.7020390033721924,1.1308611631393433,0.1738862246274948,4.455964088439941,0.97936274503634, Antoine Fuqua., Antoine Fuqua.
+familiarity_v3,59,True,False,1,1.0,0.9609684944152832,0.2982597053050995,0.1742544174194336,4.036105155944824,0.972850145156864, Christophe Gans., Christophe Gans.
+familiarity_v3,60,False,True,1,1.0,0.926028311252594,0.45934152603149414,0.333079069852829,3.8740997314453125,1.016124147316051, William Wyler., Rob Marshall.
+familiarity_v3,61,True,True,1,1.0,0.9044305682182312,0.6931349039077759,0.33421120047569275,3.8574745655059814,1.1706717538753664, not available in my database., Robert Luketic.
+familiarity_v3,62,True,False,1,1.0,0.8492531776428223,0.44702816009521484,0.2772153913974762,4.28891658782959,0.9392478235871, Christopher B. Landon, Chris Columbus.
+familiarity_v3,63,True,False,1,1.0,0.9507662653923035,0.267510324716568,0.3500927686691284,3.9202804565429688,1.1607222730754536, Jonathan Frakes., Jonathan Frakes.
+familiarity_v3,64,True,True,1,1.0,0.6624671816825867,2.0565061569213867,0.20993390679359436,4.244952201843262,0.9809820501265832, not available in my database., Peter Medak.
+familiarity_v3,65,True,True,1,1.0,0.8432963490486145,1.0049731731414795,0.41905516386032104,3.6242103576660156,1.296020459408873, not available in my database., Edward Zwick.
+familiarity_v3,66,True,True,1,1.0,0.9973328113555908,0.02283087559044361,0.21592532098293304,3.772707939147949,2.0," not clear as there are multiple films and series with the title ""A Teacher"". However, I can provide a few possibilities", Hannah Fidell.
+familiarity_v3,67,True,False,1,1.0,0.7447344064712524,0.9394171237945557,0.25428032875061035,4.866235256195068,1.237989126401446, Steven Spielberg., Steven Spielberg.
+familiarity_v3,68,True,False,1,1.0,0.8897721171379089,0.5279450416564941,0.30442872643470764,3.9004411697387695,1.057352747304561, Yorgos Lanthimos.," Yorgos Lanthimos. He is a Greek film director, screenwriter, and producer. The Lobster is"
+familiarity_v3,69,True,False,1,1.0,0.9506934285163879,0.32827872037887573,0.31193846464157104,3.8925836086273193,1.0417719546134474, Lasse Hallström., Leonard Nimoy.
+familiarity_v3,70,True,True,1,1.0,0.8306784629821777,0.7248608469963074,0.2338910698890686,4.4431986808776855,0.9952951590726524," not clear as there are multiple films with the title ""The Beach"".", Danny Boyle.
+familiarity_v3,71,True,True,1,1.0,0.8396334052085876,0.6699140667915344,0.2803422808647156,3.4928736686706543,1.0937728824151798, not available in the knowledge base., Aung San. Aung San was a Burmese politician and general who played a key role in the country's
+familiarity_v3,72,True,False,1,1.0,0.9871944785118103,0.0921483188867569,0.35212957859039307,2.588726282119751,0.531477047101971, Thomas Lincoln., Thomas Lincoln.
+familiarity_v3,73,True,False,1,1.0,0.5910475850105286,2.247325897216797,0.3206380307674408,3.0716729164123535,1.1678459498608478, not readily available in my database., Billy Ray Cyrus.
+familiarity_v3,74,False,True,1,0.9,0.6960728764533997,1.1665146350860596,0.24025672674179077,3.0119051933288574,0.6606700543891657, Albert Arnold Gore Sr., Albert Gore Sr. He was an American politician who served as a U.S. Senator from Tennessee from 1953 to
+familiarity_v3,75,False,True,1,1.0,0.550923764705658,0.8286056518554688,0.5111344456672668,2.4587433338165283,1.1201211735842669, Philip II of Macedon., King Philip II of Macedon. He was a king of the ancient Greek kingdom of Macedon and the father of Alexander
+familiarity_v3,76,True,True,1,0.9,0.31812188029289246,1.9920154809951782,0.30711811780929565,4.612839698791504,1.156812823714552, not available in the given knowledge cut off date., Dick Cheney. Dick Cheney is an American politician who served as the 46th Vice President of the United States from 
+familiarity_v3,77,True,True,1,1.0,0.8608020544052124,0.534661054611206,0.37065738439559937,3.386451244354248,0.7458506340924828," not clear without more information. There are several notable individuals named Beau Biden. 
+
+1. Beau Biden (1969-"," Joe Biden, the 46th Vice President of the United States."
+familiarity_v3,78,True,False,1,1.0,0.9869351387023926,0.09595990180969238,0.17783820629119873,5.826043605804443,1.3573847925650622, Zeus.," Zeus. In Greek mythology, Zeus is the king of the gods and the ruler of Mount Olympus. He is the father"
+familiarity_v3,79,True,False,1,1.0,0.6512836813926697,1.2075297832489014,0.28161904215812683,3.8808019161224365,1.1793988914182747," Shiva. In Hindu mythology, Ganesha is the son of Lord Shiva and his wife Parvati."," Shiva. In Hindu mythology, Ganesha is the son of Lord Shiva and his wife Parvati."
+familiarity_v3,80,True,False,1,1.0,0.7620744705200195,0.8697350025177002,0.1648305356502533,5.687569618225098,1.5079258099068078, Dasharatha.," Dasharatha. He is the king of Ayodhya and the father of Rama, Lakshmana, and"
+familiarity_v3,81,True,False,1,1.0,0.6707375645637512,1.3408827781677246,0.2330925166606903,4.532469272613525,1.3549911146250433, not straightforward as Barack Obama's father was a polygamist. Barack Obama's father was Barack Obama Sr., Barack Obama Sr. He was a Kenyan economist and a government minister.
+familiarity_v3,82,True,False,1,0.9,0.2757910490036011,2.721843719482422,0.23699305951595306,3.5328598022460938,0.7764620864587812," not straightforward as Martin Garrix is a versatile DJ and producer who has explored multiple genres throughout his career. However, his"," Electronic Dance Music (EDM). More specifically, Martin Garrix is known for his work in the following sub-genres"
+familiarity_v3,83,True,True,1,1.0,0.5278344750404358,1.9638326168060303,0.3443915545940399,2.7071073055267334,0.9989443957827032," unclear as there are multiple shows called ""The Challenge."" However, I can provide information on a few popular shows with that", Reality TV.
+familiarity_v3,84,False,True,1,1.0,0.45659077167510986,2.0997824668884277,0.1335768699645996,3.6406517028808594,0.9610147959739608, Real-time strategy (RTS), Real-time strategy (RTS)
+familiarity_v3,85,True,False,1,1.0,0.7957777976989746,0.9662102460861206,0.20039285719394684,3.7641408443450928,1.2970396689260064, K-pop. 2NE1 is a South Korean girl group formed by YG Entertainment in 2009., K-pop. 2NE1 is a South Korean girl group formed by YG Entertainment in 2009. They
+familiarity_v3,86,True,True,1,1.0,0.4865364134311676,1.9976236820220947,0.2838081419467926,3.101985454559326,0.8920221127858244," not clear-cut as Lady A is a band that has explored multiple genres in their music. However, they are primarily known", Country.
+familiarity_v3,87,True,True,1,1.0,0.18351128697395325,2.8474817276000977,0.25403955578804016,3.4650425910949707,0.9736647988442508," not clear as there are multiple albums with the title ""Is This It"". 
+
+1. Is This It is the debut",: Punk Rock and Indie Rock.
+familiarity_v3,88,True,False,1,1.0,0.36299148201942444,2.1766414642333984,0.3436921536922455,2.8348886966705322,0.8710317902359149," not straightforward as Max Payne 3 is a game that combines elements from multiple genres. However, it is primarily classified as", third-person shooter.
+familiarity_v3,89,True,False,1,1.0,0.9425473213195801,0.4709806442260742,0.3996936082839966,3.054971218109131,0.9668555349311844," Georgia Holt. Georgia Holt is an American actress and model, and she is the mother of the famous American singer and actress", Georgia Holt. Georgia Holt is the mother of the American singer and actress Cher.
+familiarity_v3,90,True,True,1,1.0,0.7383764982223511,1.0666871070861816,0.38590362668037415,3.4660239219665527,1.116571709955541, not available in the given knowledge cut off date., Mary of Teck.
+familiarity_v3,91,True,True,1,1.0,0.3570995330810547,2.3131442070007324,0.2852053940296173,3.0489253997802734,0.9905360888306864, not available in the given data.," that Leigh Whannell is an Australian actor, screenwriter, and film director."
+familiarity_v3,92,True,True,1,0.9,0.27036499977111816,2.183220863342285,0.34322699904441833,2.722996950149536,1.0423414592529532, not available in my database.," that Jason Reitman is a film director, screenwriter, and producer."
+familiarity_v3,93,True,True,1,1.0,0.3189517855644226,1.9820114374160767,0.32640084624290466,2.6865973472595215,1.02996508264293, not available in my database.," Actor, Director, and Screenwriter."
+familiarity_v3,94,False,True,1,1.0,0.4193626642227173,1.9177474975585938,0.17017117142677307,2.965420722961426,1.0071451219366805, a pianist., a pianist.
+familiarity_v3,95,True,True,1,0.9,0.2838901877403259,2.1035962104797363,0.3637172281742096,2.6285338401794434,0.9988104636478308, not available in the given data., a singer-songwriter.
+familiarity_v3,96,True,False,1,1.0,0.8710767030715942,0.6689592599868774,0.5320942401885986,2.515209913253784,0.958323186203228, not readily available in the knowledge base.," Beirut, Lebanon."
+familiarity_v3,97,True,False,1,1.0,0.6257225275039673,2.0965819358825684,0.2391306608915329,3.3102521896362305,1.1304991908457869, Rio de Janeiro.," Rio de Janeiro, Brazil."
+familiarity_v3,98,True,True,1,1.0,0.8144494891166687,1.0146803855895996,0.2968819737434387,3.6854844093322754,1.0242491915479297, not available in the given data., Alfred Hitchcock.
+familiarity_v3,99,True,True,1,1.0,0.6558310389518738,1.9983450174331665,0.2245297133922577,4.404636383056641,1.3095557804990574," not clear without more information. There are several movies titled ""Precious"". 
+
+1. Precious: Based on the", Lee Daniels and Sarah Siegel-Magness.
+familiarity_v3,100,True,True,1,0.9,0.42750170826911926,2.1070659160614014,0.3068295419216156,3.69046950340271,0.8519547988575416, not available in the given knowledge cut off date., Steven Spielberg.
+familiarity_v3,101,True,True,1,0.9,0.3769102096557617,2.7371280193328857,0.2850534915924072,3.447157382965088,1.1995350152646125, not available in the given data.," Sandra Bullock and Nancy Meyers were executive producers, but the main producer of The Proposal was  Brian Grazer"
+familiarity_v3,102,False,True,1,1.0,0.7889219522476196,0.9491590261459351,0.4089585244655609,2.5689475536346436,1.099929946161532, Jerry Seinfeld and Chris Meledandri., Jerry Seinfeld and Chris Meledandri.
+familiarity_v3,103,True,True,1,1.0,0.9445013999938965,0.41655921936035156,0.2906933128833771,3.7133069038391113,1.0585664309492555, not available in the given knowledge cut off date., Nancy Meyers.
+familiarity_v3,104,True,False,1,0.9,0.4086860418319702,1.9323272705078125,0.43114450573921204,3.356658458709717,0.9725581360138748, not readily available., Lawrence Turman.
+familiarity_v3,105,True,True,1,1.0,0.7902523279190063,0.9363229274749756,0.30235424637794495,4.231967926025391,0.9936410912309904," not clear as there are multiple films in the Back to the Future trilogy. However, I can provide information on the producers", Bob Gale and Neil Canton.
+familiarity_v3,106,True,True,1,1.0,0.6086392998695374,2.356959819793701,0.2946252226829529,4.176794052124023,0.841114701318644," not available in the given data. However, I can tell you that there have been several films and TV shows with the"," Jon Favreau. He is an American actor, writer, director, and producer. He not only produced the film """
+familiarity_v3,107,True,False,1,1.0,0.6143537759780884,1.99580717086792,0.2064056098461151,4.37913703918457,1.0583755022351389, Graham King., Graham King.
+familiarity_v3,108,True,True,1,1.0,0.37427014112472534,3.615130662918091,0.2652672231197357,4.704115390777588,0.8007771942409742, not available in the given knowledge cut off date., Michael Bay.
+familiarity_v3,109,True,False,1,1.0,0.7260754108428955,1.394778847694397,0.2987523376941681,2.9152519702911377,1.037808058076168, Buddhism. Aung San Suu Kyi is a Burmese politician and Nobel laureate who is known for her," Buddhism. Aung San Suu Kyi, the Burmese politician and Nobel laureate, was a practicing Buddhist"
+familiarity_v3,110,True,False,1,1.0,0.4669620990753174,1.921919822692871,0.3702792525291443,2.6510536670684814,0.8689379896254955," not straightforward, as Gautama Buddha is the founder of Buddhism, which is a distinct religion. However, Buddhism is often"," Buddhism. Gautama Buddha, also known as Siddhartha Gautama, was the founder of Buddhism. He was born"
+familiarity_v3,111,True,True,1,1.0,0.4980961084365845,2.2305679321289062,0.21440061926841736,4.307387351989746,1.1640062176484565, not available., Luc Besson.
+familiarity_v3,112,True,True,1,1.0,0.9337282180786133,0.5206048488616943,0.2880917191505432,3.5648880004882812,1.0426030194154836, not available in my database.," Jay Cocks, along with Martin Scorsese and Rodrigo Lira."
+familiarity_v3,113,True,False,1,1.0,0.8311757445335388,1.060744047164917,0.21038587391376495,3.8425116539001465,0.8828190528372647, Stanley Kubrick and Diane Johnson., Stanley Kubrick and Diane Johnson.
+familiarity_v3,114,True,False,1,1.0,0.9174482226371765,0.40600717067718506,0.13504914939403534,4.976673126220703,1.1246252080726826, Paddy Chayefsky.," Paddy Chayefsky. He was an American screenwriter and playwright, and 'Network' is one of his"
+familiarity_v3,115,True,True,1,1.0,0.868998110294342,0.8023940324783325,0.24630747735500336,3.8743813037872314,0.9205060348414412, not available in my database., Jason Fuchs.
+familiarity_v3,116,False,True,1,0.9,0.38683536648750305,2.2355289459228516,0.46389561891555786,3.1316022872924805,0.7649779847116805, Mike Judge and Greg Daniels., Mike Judge and Greg Daniels.
+familiarity_v3,117,True,False,1,1.0,0.7615081667900085,1.0280152559280396,0.2544611990451813,3.6200551986694336,1.1461325337528998, not readily available., Christopher Nolan and his brother Jonathan Nolan.
+familiarity_v3,118,True,True,1,1.0,0.6280564069747925,1.501058578491211,0.3414965867996216,3.417670965194702,1.0617571380448465, not available in my database., David McKenna.
+familiarity_v3,119,True,False,1,1.0,0.9581106901168823,0.29689061641693115,0.3281254768371582,4.164807319641113,1.0691180653189651, Christopher Nolan and his brother Jonathan Nolan., Christopher Nolan and his brother Jonathan Nolan.
+familiarity_v3,120,True,False,1,1.0,0.8845239281654358,0.6864862442016602,0.21978403627872467,4.1211700439453125,1.3001281261699142, not readily available.," Vince Vaughn and Jared Stern, however, the screenplay was written by Vince Vaughn and Jared Stern, with the story"
+familiarity_v3,121,True,False,1,1.0,0.9397822022438049,0.38467299938201904,0.24859553575515747,3.9975104331970215,0.93720752864677," Terry Jones and Terry Gilliam, however, Terry Jones is the one who is credited with the screenplay for Labyrinth."," Terry Jones and Terry Gilliam were initially brought in to work on the script, but they left the project.  The"
+familiarity_v3,122,False,True,1,1.0,0.9215131402015686,0.40452438592910767,0.26236727833747864,3.7322936058044434,1.0472467282662448, unavailable., Spike Lee.
+familiarity_v3,123,False,True,1,1.0,0.7316300868988037,1.5018014907836914,0.2540344297885895,3.9904730319976807,0.8641172755376791, David Benioff., David Benioff.
+familiarity_v3,124,False,True,1,1.0,0.3872891068458557,2.6663968563079834,0.2198636680841446,3.986520290374756,1.0989343844525945, not readily available.," Sacha Gervasi, but the screenplay was written by Sacha Gervasi and Jeff Nathanson."
+familiarity_v3,125,True,False,1,1.0,0.7909973859786987,1.369879126548767,0.3806881606578827,3.7797789573669434,1.067664168244816, Vincenzo Natali.," Vincenzo Natali,  along with Graeme Manson and André Bijelic."
+familiarity_v3,126,True,False,1,1.0,0.8365994691848755,0.5626978874206543,0.18916325271129608,3.8857803344726562,1.2417995803682602, Harold Ramis and Danny Rubin., Harold Ramis and Danny Rubin.
+familiarity_v3,127,False,True,1,1.0,0.5409958958625793,2.1355719566345215,0.1941957324743271,4.299248695373535,1.3077151204204225, not straightforward as there were multiple screenwriters involved in the 2006 film '300'. The screenplay was written by Zack," Zack Snyder and Kurt Johnstad, but primarily Zack Snyder, and also Frank Miller, who is the author of the graphic"
+familiarity_v3,128,True,False,1,1.0,0.740911602973938,1.321000576019287,0.21689094603061676,4.041426658630371,1.004041839533622, Terry Nation., Terry Gilliam and Charles McKeown.
+familiarity_v3,129,True,False,1,1.0,0.4730639159679413,2.180516481399536,0.3699808418750763,3.7430548667907715,0.8655750632705186, not readily available., Gary Ross.
+familiarity_v3,130,False,True,1,1.0,0.7756435871124268,1.2131133079528809,0.531225860118866,2.7831475734710693,1.0156734910540146," not readily available. However, I can tell you that the film 'Seven' was written by Andrew Kevin Walker.", Andrew Kevin Walker.
+familiarity_v3,131,False,True,1,1.0,0.8039928078651428,1.1662349700927734,0.35258951783180237,3.0946478843688965,0.5048315816269215, Armando Iannucci.," Armando Iannucci. He is a Scottish satirist, writer, and television producer. He is the creator"
+familiarity_v3,132,False,False,1,1.0,0.47774526476860046,2.9728455543518066,0.27091363072395325,3.5046751499176025,1.2202500745307, not available in my database., Gregory Nava.
+familiarity_v3,133,False,False,1,1.0,0.584051251411438,1.8102753162384033,0.34107524156570435,3.2627573013305664,0.9515099113833988, not available in the given knowledge cut off date., Daphne du Maurier.
+familiarity_v3,134,True,True,1,1.0,0.8852546215057373,0.5185732841491699,0.19519880414009094,4.903960227966309,1.2843974129806413, not available in the given knowledge cutoff date., Nancy Meyers.
+familiarity_v3,135,True,False,1,1.0,0.9630195498466492,0.2648155391216278,0.341611385345459,3.332226514816284,0.997935370566844, Sylvester Stallone., Sylvester Stallone. He not only wrote the screenplay for the movie Rocky but also starred in it.
+familiarity_v3,136,True,True,1,1.0,0.9324183464050293,0.4453626275062561,0.34633976221084595,3.6958601474761963,1.006535377072007, not available in my database.," Emma Donoghue. She is an Irish novelist, playwright, and screenwriter. She wrote the novel ""Room"""
+familiarity_v3,137,True,False,1,1.0,0.9677469730377197,0.2701027989387512,0.2180575579404831,4.301121711730957,1.2384826892029348, not readily available., Kevin Williamson.
+familiarity_v3,138,False,True,1,1.0,0.6409695744514465,0.9346778392791748,0.20860758423805237,3.917473554611206,1.2343083514216853," bodybuilding. Mr. Olympia is the title given to the winner of the Mr. Olympia bodybuilding competition, which is"," bodybuilding. Mr. Olympia is the title given to the winner of the annual Mr. Olympia bodybuilding competition, which"
+familiarity_v3,139,False,True,1,1.0,0.9202045798301697,0.344882071018219,0.10691777616739273,4.283134937286377,0.9907531449109622, American Football., American Football.
+familiarity_v3,140,True,False,1,1.0,0.8390520811080933,0.5320301651954651,0.23283980786800385,3.5747289657592773,0.9684578996284716, Rugby., Rugby. James Haskell is a former English professional rugby union player.
+factorial_v3_know_given_hi,0,False,True,1,1.0,0.9605229496955872,0.25088533759117126,0.331271767616272,2.6158359050750732,1.133400996162957," a bit complex. ""The Reader"" is a novel by Bernhard Schlink, a German author. However, there"," Bernhard Schlink. He is a German novelist and former judge. His novel ""The Reader"" (German title:"
+factorial_v3_know_given_hi,1,False,True,1,1.0,0.825646162033081,1.1822731494903564,0.806871235370636,1.089271068572998,1.1557639827793091, Gilbert Shelton., Gilbert Shelton.
+factorial_v3_know_given_hi,2,True,True,1,1.0,0.5296712517738342,1.4047532081604004,0.29298457503318787,4.47342586517334,2.0," not clear as there are multiple books titled ""The Wave"". However, one of the most well-known books titled ""The"," Morton Rhue. However, the book ""The Wave"" is actually based on a German novel called ""Die Welle"
+factorial_v3_know_given_hi,3,False,True,1,1.0,0.9697892069816589,0.19988811016082764,0.8846328258514404,0.6006135940551758,0.9083046975950336," Henry Wadsworth Longfellow. He is the American poet who wrote the epic poem ""The Song of Hiaw"," Henry Wadsworth Longfellow. He is an American poet and educator, and 'The Song of Hiawatha"
+factorial_v3_know_given_hi,4,True,False,1,1.0,0.7030584216117859,1.432328462600708,0.3657764792442322,2.894711494445801,-0.995694687729682," not unique as there are multiple books with the title ""A Marriage Proposal"". 
+
+However, I can provide a few examples", Anton Chekhov.
+factorial_v3_know_given_hi,5,True,False,1,1.0,0.8703036308288574,0.7172032594680786,0.48255741596221924,3.3574864864349365,0.6300133621373333, Anton Chekhov.," Anton Chekhov. ""The Bet"" is a short story by the Russian author Anton Chekhov, first published"
+factorial_v3_know_given_hi,6,True,False,1,1.0,0.9683120250701904,0.21298986673355103,0.14770306646823883,4.346938133239746,1.1112520516506994," Michael Lewis. He is an American author and financial expert. His book ""Moneyball: The Art of Winning an Un"," Michael Lewis. He is an American author and financial expert, best known for his non-fiction books. ""Moneyball:"
+factorial_v3_know_given_hi,7,False,True,1,1.0,0.9849905371665955,0.08718402683734894,0.6832181215286255,0.9484156966209412,1.1573117703151805," a bit complex. North Korea, officially known as the Democratic People's Republic of Korea (DPRK), has its", Pyongyang.
+factorial_v3_know_given_hi,8,False,True,1,1.0,0.9846013784408569,0.10956107079982758,0.624895453453064,1.2885937690734863,0.2250755068074892, Mexico. Mexico City is the capital of Mexico., Mexico. Mexico City is the capital of Mexico.
+factorial_v3_know_given_hi,9,False,True,1,1.0,0.7885177731513977,0.9869958758354187,0.5824494957923889,1.9860799312591553,0.751402497448776, Tamil Nadu. Chennai is the capital city of the Indian state of Tamil Nadu., Tamil Nadu. Chennai is the capital city of the Indian state of Tamil Nadu.
+factorial_v3_know_given_hi,10,False,True,1,0.9,0.6139007210731506,1.4772891998291016,0.41090697050094604,1.8607237339019775,0.204846818438649, Maharashtra. Mumbai is the capital city of the Indian state of Maharashtra., Maharashtra. Mumbai is the capital city of the Indian state of Maharashtra.
+factorial_v3_know_given_hi,11,False,True,1,1.0,0.7694825530052185,0.9564600586891174,0.7011423707008362,1.287816047668457,0.6569396001127837," the United States of America. Washington, D.C. (short for District of Columbia) is the capital district of the", the United States of America.
+factorial_v3_know_given_hi,12,False,True,1,1.0,0.6377376914024353,1.101480484008789,0.8404086828231812,0.7696230411529541,0.4251163721170631," England. London is the capital city of England, a country that is part of the United Kingdom (UK)."," England. London is the capital city of England, a country that is part of the United Kingdom (UK)."
+factorial_v3_know_given_hi,13,False,True,1,1.0,0.9427019953727722,0.3868485987186432,0.12468883395195007,4.701546669006348,1.6534486225487006," Jan Hammer. He was a Czech-American composer, musician, and record producer. He is best known for composing the iconic"," Jan Hammer. He was a Czech-American composer, musician, and record producer. He is best known for composing the iconic"
+factorial_v3_know_given_hi,14,False,True,1,1.0,0.8871680498123169,0.6323801875114441,0.1967024803161621,3.525937557220459,0.7602374045866733," Charles Strouse. He composed the music for the musical ""Annie."""," Charles Strouse. He composed the music for the musical ""Annie,"" which was written by Thomas Meehan ("
+factorial_v3_know_given_hi,15,False,True,1,1.0,0.9008793830871582,0.47336411476135254,0.5204399228096008,1.6335549354553223,0.1139846514477168, a bit complex. The Prestige is a 2006 mystery drama film directed by Christopher Nolan. The film's score," David Julyan. He composed the music for the 2006 film ""The Prestige"" directed by Christopher Nolan."
+factorial_v3_know_given_hi,16,False,True,1,1.0,0.4246775805950165,2.0402209758758545,0.4442424178123474,3.1512718200683594,1.3637179591322388," Wendy Carlos and her collaborator,  Walter Carlos (Walter was her birth name, and she later changed it to"," Wendy Carlos and her collaborator,  Walter Carlos (Walter Carlos was her birth name, and she later changed it"
+factorial_v3_know_given_hi,17,True,False,1,1.0,0.9943806529045105,0.050790056586265564,0.274279922246933,3.8109772205352783,1.0966610682066922," Jerry Goldsmith. He composed the iconic score for the 1976 film ""The Omen""."," Jerry Goldsmith. He composed the iconic score for the 1976 film ""The Omen,"" which is widely regarded"
+factorial_v3_know_given_hi,18,True,False,1,1.0,0.9074548482894897,0.6546304225921631,0.31167271733283997,3.02978515625,0.7666882053139022, Michael Giacchino. He is an American composer of film scores. He composed the music for the Disney-Pix, Michael Giacchino. He is an American composer of film scores. He composed the music for the Disney-Pix
+factorial_v3_know_given_hi,19,True,True,1,1.0,0.9271296858787537,0.5214415788650513,0.39369598031044006,3.944908380508423,1.3227171908982214," not clear as there are multiple works called ""The Mission"". However, I can provide a few possibilities:
+
+1. """," Ennio Morricone. He was an Italian composer, and his score for the 1986 film ""The Mission"
+factorial_v3_know_given_hi,20,False,True,1,1.0,0.7897409200668335,0.9989901781082153,0.2708561420440674,3.286682605743408,1.4929917364947232, Richard Rodgers., Richard Rodgers. He was an American composer of musical theater. Oklahoma! was his first collaboration with the lyricist Oscar Hammer
+factorial_v3_know_given_hi,21,False,True,1,0.9,0.6832448840141296,0.8157461881637573,0.249259352684021,3.359349250793457,0.7954297075285318, Dave Grusin., Dave Grusin.
+factorial_v3_know_given_hi,22,False,True,1,1.0,0.39223137497901917,2.769071102142334,0.39732053875923157,2.751987934112549,1.1870670092915048," not a single composer, but rather a collaboration between several composers. The score for the 2007 film ""There Will"," Radiohead's Jonny Greenwood. He composed the score for the 2007 film ""There Will Be Blood,"" which"
+factorial_v3_know_given_hi,23,False,True,1,1.0,0.9552247524261475,0.30349287390708923,0.07451871782541275,5.371015548706055,0.8282027299008456," Trent Reznor and Atticus Ross. They composed the score for the 2010 film ""The Social Network""."," Trent Reznor and Atticus Ross. They composed the score for the 2010 film ""The Social Network""."
+factorial_v3_know_given_hi,24,False,True,1,1.0,0.36169737577438354,2.4456958770751953,0.26260805130004883,2.519907236099243,1.456684423955846," not straightforward as there are multiple Civic Democratic Parties in different countries. 
+
+1.  Civic Democratic Party (Romania):", the Czech Republic.
+factorial_v3_know_given_hi,25,False,True,1,1.0,0.9458006620407104,0.3026745319366455,0.29430148005485535,2.7679758071899414,0.974804921219252, Australia.," Australia. Curtin University is a public research university located in Perth, Western Australia."
+factorial_v3_know_given_hi,26,False,True,1,1.0,0.9749621152877808,0.15956977009773254,0.20189227163791656,2.7790791988372803,0.9817927833430838, Lebanon. Middle East Airlines (MEA) is the flag carrier airline of Lebanon., Lebanon. Middle East Airlines (MEA) is the flag carrier airline of Lebanon.
+factorial_v3_know_given_hi,27,False,True,1,1.0,0.7852136492729187,0.9895354509353638,0.385136216878891,2.5195631980895996,0.6717229676135882," the United States. Chicago Fire FC is a professional soccer team based in Chicago, Illinois, and they compete in Major League"," the United States. Chicago Fire FC is a professional soccer team based in Chicago, Illinois, and they compete in Major League"
+factorial_v3_know_given_hi,28,False,True,1,1.0,0.928396999835968,0.3852631449699402,0.2833601236343384,3.590754508972168,0.7607510667221367, Warren Beatty.," Warren Beatty. He not only directed the film ""Reds"" but also starred in it."
+factorial_v3_know_given_hi,29,False,True,1,1.0,0.6890205144882202,1.3984286785125732,0.2233002781867981,3.702876329421997,0.5339345521898317," Aneurin Barnard was not the director, but the director of the 2013 film ""Laura"" is"," Otto Preminger. He was an Austrian-American film director, producer, and actor. He directed the 1944 film"
+factorial_v3_know_given_hi,30,False,True,1,1.0,0.5250367522239685,1.8351774215698242,0.1335315853357315,4.407023906707764,0.6096891873173492, Andy Tennant., Andy Tennant.
+factorial_v3_know_given_hi,31,True,False,1,1.0,0.9742257595062256,0.21081283688545227,0.24422940611839294,4.378530502319336,0.9009923373937672, Peter Weir.," Peter Weir. He directed the 2020 film ""The Way Back"" which is a sports drama film."
+factorial_v3_know_given_hi,32,False,True,1,1.0,0.6958924531936646,1.1183977127075195,0.5363609194755554,2.176487445831299,0.5344697728991771," the Wachowskis, a duo of film directors, writers, and producers. The Wachowskis"," the Wachowskis, a duo of film directors, writers, and producers. The Wachowskis"
+factorial_v3_know_given_hi,33,False,True,1,1.0,0.9129438400268555,0.4434240460395813,0.5310992002487183,1.6265355348587036,1.0009032839768977," a bit complex. The Terminal is a 2004 film, and it was directed by Steven Spielberg.", Steven Spielberg.
+factorial_v3_know_given_hi,34,False,True,1,1.0,0.8836554288864136,0.5804364681243896,0.5215674638748169,2.3583147525787354,0.1846913908130665, Mansoor Khan., Mansoor Khan.
+factorial_v3_know_given_hi,35,False,True,1,1.0,0.9215748310089111,0.46172279119491577,0.19055506587028503,3.2793169021606445,1.118293489430263," a bit complex. There are multiple movies titled ""One Day."" 
+
+1. ""One Day"" (2011)", Lone Scherfig.
+factorial_v3_know_given_hi,36,False,True,1,1.0,0.8432963490486145,1.0049731731414795,0.2248404622077942,3.7817723751068115,0.5183855681380756, Edward Zwick., Edward Zwick.
+factorial_v3_know_given_hi,37,True,False,1,0.9,0.31812188029289246,1.9920154809951782,0.15693597495555878,4.184167385101318,0.8973052383986893," Richard Cheney. He is the 46th Vice President of the United States, serving under President George W. Bush from", Dick Cheney. Dick Cheney is an American politician who served as the 46th Vice President of the United States from 
+factorial_v3_know_given_hi,38,False,True,1,1.0,0.43129315972328186,1.560082197189331,0.5157278776168823,0.85923171043396,1.0973465690638449, James V of Scotland., King James V of Scotland.
+factorial_v3_know_given_hi,39,False,True,1,1.0,0.5170375108718872,1.9059598445892334,0.5384299159049988,1.4805960655212402,0.8539739261841656," not straightforward as S Club 7's music genre is a blend of several styles. However, their primary genre is often", Pop. S Club 7 is a British pop group that was formed in 1998 and rose to fame in the
+factorial_v3_know_given_hi,40,False,True,1,0.9,0.2757910490036011,2.721843719482422,0.47155702114105225,1.8686854839324951,0.9267756417618748," a bit complex, as Martin Garrix's music style has evolved over time. However, he is primarily associated with the"," Electronic Dance Music (EDM). More specifically, Martin Garrix is known for his work in the following sub-genres"
+factorial_v3_know_given_hi,41,False,True,1,1.0,0.9389835596084595,0.37066948413848877,0.2030336707830429,2.7569761276245117,0.4881986672955998," not straightforward as Thomas Jefferson had two mothers in a sense. 
+
+His mother was Jane Randolph Jefferson (née Randolph)."," Jane Randolph Jefferson. She was the mother of Thomas Jefferson, the third President of the United States."
+factorial_v3_know_given_hi,42,False,True,1,1.0,0.3287588059902191,2.1878206729888916,0.21313859522342682,3.1244468688964844,0.8761880311441882, a journalist., that Josh Mankiewicz is an American television journalist.
+factorial_v3_know_given_hi,43,True,False,1,1.0,0.4193626642227173,1.9177474975585938,0.37021151185035706,2.5908823013305664,0.967326299421444," not entirely clear as Glenn Gould was a multifaceted individual. However, he is most famously known for being a Canadian", a pianist.
+factorial_v3_know_given_hi,44,False,True,1,1.0,0.44640016555786133,2.006232738494873,0.2657802999019623,2.523493766784668,1.2119794480127146, Actress and former model., Actress and former fashion model.
+factorial_v3_know_given_hi,45,False,True,1,1.0,0.5337566137313843,1.6911892890930176,0.4178307056427002,1.9943406581878662,0.8171493886761028," multifaceted. Amitabh Bachchan is a renowned Indian actor, film producer, television host, and former politician.", Actor.
+factorial_v3_know_given_hi,46,False,True,1,1.0,0.2703857123851776,1.9177806377410889,0.47313597798347473,1.8390538692474365,0.9726458553871776, a composer., Composer.
+factorial_v3_know_given_hi,47,False,True,1,0.9,0.3374607264995575,2.369840145111084,0.4031122922897339,1.9900641441345215,0.7014171976927871, a politician. Salvador Allende was a Chilean politician who served as the President of Chile from 1970 until his, a politician. Salvador Allende was a Chilean politician who served as the President of Chile from 1970 until his
+factorial_v3_know_given_hi,48,False,True,1,1.0,0.7977014780044556,1.1796855926513672,0.8099902272224426,0.9932610392570496,-1.0," Port Chester, New York."," New York City. Ed Sullivan was born Edward Vincent Sullivan on September 28, 1901, in Harlem, New"
+factorial_v3_know_given_hi,49,False,True,1,1.0,0.8658502101898193,0.862684965133667,0.4638734757900238,1.7536242008209229,1.1186958750532248, London., London.
+factorial_v3_know_given_hi,50,False,True,1,1.0,0.715853750705719,1.9006648063659668,0.2799863815307617,3.0672030448913574,-0.4955207619102321," Detroit, Michigan."," Detroit, Michigan."
+factorial_v3_know_given_hi,51,True,False,1,0.9,0.5237730741500854,2.3338232040405273,0.24503721296787262,3.374084949493408,0.0966879238754913, Jodhpur., Jodhpur.
+factorial_v3_know_given_hi,52,False,True,1,1.0,0.9827510714530945,0.1460379660129547,0.27594953775405884,3.369194984436035,0.703081135270008," New Orleans, Louisiana."," New Orleans. Malcolm John Rebennack Jr., better known as Dr. John, was an American musician and singer-song"
+factorial_v3_know_given_hi,53,False,True,1,1.0,0.37427014112472534,3.615130662918091,0.45259907841682434,2.6784677505493164,0.3790655921116905, Michael Bay., Michael Bay.
+factorial_v3_know_given_hi,54,False,True,1,0.9,0.6038717031478882,2.373440980911255,0.2945769131183624,3.9167397022247314,0.7405552440773058, Jonathan Lynn., Debra Hill.
+factorial_v3_know_given_hi,55,True,False,1,1.0,0.909873902797699,0.4799964427947998,0.31212902069091797,4.6951751708984375,1.0780880857256347," Quincy Jones. Quincy Jones was the producer of Michael Jackson's 1979 album ""Off the Wall""."," Quincy Jones. He was the producer of Michael Jackson's 1979 album ""Off the Wall""."
+factorial_v3_know_given_hi,56,False,True,1,1.0,0.3532579243183136,2.327399253845215,0.4034433960914612,3.1156554222106934,1.2888314155970897," Grant Heslov, Ben Affleck, and George Clooney."," Grant Heslov, Ben Affleck, and George Clooney."
+factorial_v3_know_given_hi,57,False,True,1,1.0,0.7889219522476196,0.9491590261459351,0.20657849311828613,3.335235118865967,0.7806781384570237, Jerry Bruckheimer and Chris Meledandri, Jerry Seinfeld and Chris Meledandri.
+factorial_v3_know_given_hi,58,False,True,1,1.0,0.7902523279190063,0.9363229274749756,0.6936129927635193,1.5891436338424683,1.048601935031881, Bob Gale and Robert Zemeckis., Bob Gale and Neil Canton.
+factorial_v3_know_given_hi,59,False,True,1,1.0,0.7911941409111023,1.1827747821807861,0.3221932649612427,3.183933973312378,0.9985951163503434, Martin Scorsese., Martin Scorsese.
+factorial_v3_know_given_hi,60,False,True,1,1.0,0.6143537759780884,1.99580717086792,0.6839014291763306,1.4935245513916016,0.855812573233127, Graham King., Graham King.
+factorial_v3_know_given_hi,61,True,True,1,1.0,0.8716251850128174,0.9034470319747925,0.3688788115978241,3.5815491676330566,0.951610390994273," not clear as there are multiple films with the title ""Into the Wild"". However, I can provide information on a few", Sean Penn.
+factorial_v3_know_given_hi,62,False,True,1,0.9,0.42750170826911926,2.1070659160614014,0.3960857391357422,1.698541522026062,2.0, Steven Spielberg., Steven Spielberg.
+factorial_v3_know_given_hi,63,False,True,1,1.0,0.7260754108428955,1.394778847694397,0.7844147086143494,1.0721611976623535,0.2281398497789394," Buddhism. Aung San Suu Kyi, the Burmese politician and Nobel laureate, was a practicing Buddhist"," Buddhism. Aung San Suu Kyi, the Burmese politician and Nobel laureate, was a practicing Buddhist"
+factorial_v3_know_given_hi,64,False,True,1,0.9,0.5734015703201294,1.4873886108398438,0.3297656178474426,2.847273349761963,0.8498658605257698, Steven Soderbergh., Steven Soderbergh.
+factorial_v3_know_given_hi,65,False,True,1,1.0,0.7997485399246216,1.2982547283172607,0.26251593232154846,3.5447750091552734,-0.7068462061089669," not straightforward as there were multiple screenwriters for the TV series ""Episodes"". However, the show was created by David", David Crane and Jeffrey Klarik.
+factorial_v3_know_given_hi,66,False,True,1,1.0,0.740911602973938,1.321000576019287,0.22295942902565002,3.211326837539673,0.7862956427894361, Terry Gilliam and Charles McKeown., Terry Gilliam and Charles McKeown.
+factorial_v3_know_given_hi,67,False,True,1,0.9,0.6705795526504517,1.639628529548645,0.7296314239501953,1.7800729274749756,2.0, David Franzoni., David Franzoni.
+factorial_v3_know_given_hi,68,False,True,1,1.0,0.9630195498466492,0.2648155391216278,0.5862367749214172,1.9540908336639404,1.9170717411828293, Sylvester Stallone. He not only wrote the screenplay for the movie Rocky but also starred in it., Sylvester Stallone. He not only wrote the screenplay for the movie Rocky but also starred in it.
+factorial_v3_know_given_hi,69,False,True,1,1.0,0.5900912880897522,1.787266492843628,0.5276604294776917,1.906415581703186,0.537312133023173, Calder Willingham and Buck Henry., Calder Willingham and Buck Henry.
+factorial_v3_know_given_hi,70,False,True,1,1.0,0.43545567989349365,3.225489854812622,0.30277180671691895,3.0913610458374023,0.7606743023205147, John Carpenter and Debra Hill., John Carpenter and Debra Hill.
+factorial_v3_know_given_hi,71,False,True,1,1.0,0.9174482226371765,0.40600717067718506,0.6739465594291687,1.9777758121490479,1.193876137604258, Paddy Chayefsky.," Paddy Chayefsky. He was an American screenwriter and playwright, and 'Network' is one of his"
+factorial_v3_know_given_hi,72,False,True,1,1.0,0.8360481858253479,0.8674542307853699,0.7594265937805176,1.4575175046920776,0.742662969319466," Jane Campion and her co-writer,  Fiona Campbell Ross.", Jane Campion.
+factorial_v3_know_given_hi,73,True,False,1,1.0,0.5358269810676575,0.9697802066802979,0.22126242518424988,3.2485084533691406,0.8943229826487915, basketball. Eric Snow is a former American professional basketball player who played in the NBA., basketball.
+factorial_v3_know_given_hi,74,False,True,1,1.0,0.4651312232017517,1.2950458526611328,0.14663885533809662,3.868499279022217,1.0446525834170637, football.," football. Exeter City F.C. is an English professional football club based in Exeter, Devon."
+factorial_v3_pop_given_unknown,0,False,True,0,0.0,0.4312327206134796,3.773458242416382,0.6849179863929749,1.8860071897506714,0.5742352048020513," various, as ""Cool"" can refer to different books. However, I'll provide a few possibilities:
+
+1. """, Gretchen McCulloch.
+factorial_v3_pop_given_unknown,1,True,False,0,0.0,0.21670985221862793,3.13936185836792,0.37537944316864014,2.9233808517456055,0.928793535382134," unclear as there are multiple works titled ""Nature"". However, I can provide a few possibilities:
+
+1. ""Nature"""," unclear as there are multiple works titled ""Nature"". However, I can provide a few possibilities:
+
+1. ""Nature"""
+factorial_v3_pop_given_unknown,2,True,False,0,0.0,0.6161563396453857,0.8710263967514038,0.24994148313999176,4.262140274047852,0.7603373003719265," not a single author, but rather a collection of authors. The New Testament is a compilation of 27 books written by", a bit more complex than a single author. The New Testament is a collection of 27 books written by multiple authors in
+factorial_v3_pop_given_unknown,3,True,False,0,0.0,0.17159423232078552,3.7765984535217285,0.1930493861436844,4.879533767700195,-0.2626742243268676, Kate McGahan and Anna Carey, Kate McGahan
+factorial_v3_pop_given_unknown,4,False,True,0,0.0,0.2618088722229004,3.6624269485473633,0.3348439931869507,3.623626232147217,1.3018397763071454," not clear as there are multiple books with the title ""Sex"". However, I can provide a few possibilities:
+
+1."," not clear-cut, as there are multiple books titled ""Sex"" written by different authors. However, one of the most"
+factorial_v3_pop_given_unknown,5,True,False,0,0.0,0.6832181215286255,0.9484156966209412,0.38034164905548096,3.105915069580078,0.8801978390367623," not straightforward as the European Union (EU) is a political and economic union of 27 member states, and it does", a bit more complex than a single city. The European Union (EU) is a political and economic union of 27
+factorial_v3_pop_given_unknown,6,False,True,0,0.0,0.624895453453064,1.2885937690734863,0.18430489301681519,4.0566534996032715,0.9159852376183713, Georgia. Atlanta is the capital city of the U.S. state of Georgia., Georgia. Atlanta is the capital city of the U.S. state of Georgia.
+factorial_v3_pop_given_unknown,7,False,True,0,0.0,0.7011423707008362,1.287816047668457,0.2015562206506729,3.7073006629943848,0.9352321875667992," Los Angeles is not the capital of any state in the United States. However, it is the largest city in the state"," California. Los Angeles is the second-most populous city in California and the largest city in the state by population. However,"
+factorial_v3_pop_given_unknown,8,True,False,0,0.0,0.13675571978092194,5.023900985717773,0.18659523129463196,4.886174201965332,1.7990010214995231, not readily available., Henry Mancini.
+factorial_v3_pop_given_unknown,9,False,True,0,0.0,0.12468883395195007,4.701546669006348,0.5655539035797119,2.8397750854492188,-0.2265767701235378," David Hirschfelder. He composed the music for the 1996 film ""Crash"" directed by David Cron"," David Hirschfelder. He composed the music for the 1996 film ""Crash"" directed by David Cron"
+factorial_v3_pop_given_unknown,10,False,True,0,0.0,0.38324618339538574,2.379506826400757,0.311759352684021,3.31449556350708,0.2055186457413881," Delia Derbyshire and Brian Hodgson, however, the most well-known composer associated with the original Doctor Who theme is"," a bit complex, as the music for Doctor Who has been composed by several individuals over the years. Here are some of"
+factorial_v3_pop_given_unknown,11,True,False,0,0.0,0.5204399228096008,1.6335549354553223,0.17917239665985107,4.4257097244262695,1.6008620527806017," not a single composer, but rather a pair of sisters, Patty Hill and Mildred J. Hill. They created the"," a bit complex. The melody of ""Happy Birthday to You"" is often attributed to two American sisters, Patty Hill and"
+factorial_v3_pop_given_unknown,12,False,False,0,0.0,0.7765910029411316,1.413748025894165,0.26763078570365906,4.6011962890625,0.8464519517045318, not clear.," Minako Hamano, but also Minako Hamano worked with a team of composers, including  Minako Hamano"
+factorial_v3_pop_given_unknown,13,False,True,0,0.0,0.23417240381240845,4.684922218322754,0.2503819167613983,5.07411527633667,1.9889461583105372, not available in my database.," not clear as there are multiple songs and works called ""Power"". However, I can provide a few possibilities:
+
+1."
+factorial_v3_pop_given_unknown,14,True,True,0,0.0,0.4442424178123474,3.1512718200683594,0.33688750863075256,4.238824367523193,1.0866826091237105, not available in my database., Elmer Bernstein.
+factorial_v3_pop_given_unknown,15,True,False,0,0.0,0.33291560411453247,4.500344276428223,0.04813709482550621,4.9100446701049805,0.3034426630845207," not clear.  There are multiple works with the title ""The Host"" or ""The Hosts"" or ""The"," not clear. There are multiple works called ""The Host"" and it could be referring to a different piece of music."
+factorial_v3_pop_given_unknown,16,False,True,0,0.0,0.2875036597251892,4.180184841156006,0.18473796546459198,4.874901294708252,1.2933293104339063, not available in my database.," not clear.  There are multiple movies and TV shows with the title ""The Interview""."
+factorial_v3_pop_given_unknown,17,True,True,0,0.0,0.2708561420440674,3.286682605743408,0.35437485575675964,4.202988147735596,1.2365567416515584, not available in my database., Aria Prayogi and Fajar Yuskemal.
+factorial_v3_pop_given_unknown,18,True,False,0,0.0,0.35648438334465027,3.864978313446045,0.29278483986854553,4.346166610717773,1.3531786712804117," not clear as there are multiple songs with the title ""Unbreakable"". However, I can provide a few possibilities:
+
+", not available in the given knowledge cutoff date.
+factorial_v3_pop_given_unknown,19,False,False,0,0.0,0.29430148005485535,2.7679758071899414,0.8959614038467407,0.5432080030441284,2.0, not available in my database., Israel.
+factorial_v3_pop_given_unknown,20,False,True,0,0.0,0.20189227163791656,2.7790791988372803,0.6059640049934387,1.555698275566101,-0.9162515606055536, South Korea. Japan–South Korea relations refer to the diplomatic and economic relationship between Japan and South Korea., South Korea. Japan–South Korea relations refer to the diplomatic and economic relationship between Japan and South Korea.
+factorial_v3_pop_given_unknown,21,False,True,0,0.0,0.2968901991844177,2.173844337463379,0.2679344117641449,2.663444995880127,1.7006616362964877," Malaysia. However, Malay is also spoken in other countries, such as Indonesia (as Indonesian), Brunei, and Singapore"," a bit complex, as Malay is spoken in several countries. 
+
+Malay is an official language in several countries in Southeast"
+factorial_v3_pop_given_unknown,22,True,True,0,0.0,0.24485771358013153,3.387538433074951,0.23722489178180695,3.2473206520080566,1.254307182265918, Indonesia.," not clear as there are multiple places named Rong. However, I can provide a few possibilities:
+
+1. Rong"
+factorial_v3_pop_given_unknown,23,False,True,0,0.0,0.4637024998664856,2.971512794494629,0.1793694794178009,3.7720789909362793,0.6137259191784332, not available in the given data.," not clear as there are several places named T-33. However, I can provide a few possibilities:
+
+1. T"
+factorial_v3_pop_given_unknown,24,True,True,0,0.0,0.3431435823440552,3.2488174438476562,0.24203668534755707,4.768091201782227,2.0," not clear without more information. There are several films titled ""10"" and also a 1979 film titled ""10", David Koepp.
+factorial_v3_pop_given_unknown,25,True,True,0,0.0,0.2233002781867981,3.702876329421997,0.2722192704677582,4.1409759521484375,1.6580438572717595," not clear as there are multiple movies and TV shows with the title ""Compliance"". However, I can provide a few",  Mary McGuckian.
+factorial_v3_pop_given_unknown,26,True,True,0,0.0,0.40829744935035706,2.1140475273132324,0.269359290599823,4.381354331970215,0.9264210386594244, not available in my database., Sooraj R. Barjatya.
+factorial_v3_pop_given_unknown,27,False,True,0,0.0,0.5267231464385986,1.6902496814727783,0.423277348279953,3.4154207706451416,0.3008019485093859," Lorne Michaels. He is a Canadian-American television producer, writer, and comedian who is best known as the creator and"," a bit complex, as the director of Saturday Night Live (SNL) has changed over the years. However, I"
+factorial_v3_pop_given_unknown,28,False,False,0,0.0,0.19055506587028503,3.2793169021606445,0.11091180890798569,5.274164199829102,1.1404269969553038, not available in the given knowledge cut off date.," a bit complex as there have been multiple film adaptations of ""The King and I"". 
+
+1. The 1956"
+factorial_v3_pop_given_unknown,29,False,True,0,0.0,0.2248404622077942,3.7817723751068115,0.43570008873939514,2.6206161975860596,0.8144325737646878, Ron Howard., Ron Howard.
+factorial_v3_pop_given_unknown,30,True,True,0,0.0,0.45319080352783203,2.2889058589935303,0.46023744344711304,3.33459210395813,1.1000002228332757," not clear as there have been multiple adaptations of The Stand. 
+
+1. The Stand (1994) - The min"," a bit complex as there are two different TV series based on Stephen King's novel ""The Stand"". 
+
+1. The"
+factorial_v3_pop_given_unknown,31,True,False,0,0.0,0.31070080399513245,2.8869786262512207,0.2656479775905609,3.5917491912841797,0.9281945252159542, George Pal., George Pal.
+factorial_v3_pop_given_unknown,32,False,True,0,0.0,0.1390993744134903,3.6780471801757812,0.08518844097852707,5.444604396820068,1.087904109074857, Stephen Kessler," Harold Ramis. He directed the 1983 film ""National Lampoon's Vacation"" starring Chevy Chase as Clark Gr"
+factorial_v3_pop_given_unknown,33,True,False,0,0.0,0.15693597495555878,4.184167385101318,0.3416707515716553,2.676003932952881,0.8784470165679977, not available in my database.," not available in the given data. However, I can tell you that Arjun Sarja is a well-known Indian actor"
+factorial_v3_pop_given_unknown,34,True,False,0,0.0,0.8150120973587036,1.048396348953247,0.3682686984539032,2.5357086658477783,1.2643802398005382," Jesse.  In the Bible, Jesse is the father of King David."," Jesse.  In the Bible, Jesse is the father of King David."
+factorial_v3_pop_given_unknown,35,False,True,0,0.0,0.5157278776168823,0.85923171043396,0.24025672674179077,3.0119051933288574,1.2555743362577734, Prescott Bush. He was an American politician who served as a United States Senator from Connecticut from 1952 to 196, George H.W. Bush. He was the 41st President of the United States and the father of George W.
+factorial_v3_pop_given_unknown,36,False,False,0,0.0,0.16726256906986237,4.226016998291016,0.4817411005496979,2.6815123558044434,0.7919580513770959, not available in my current database.,  Stephen Hardin.
+factorial_v3_pop_given_unknown,37,True,True,0,0.0,0.2930859327316284,2.9013020992279053,0.4561179280281067,2.5514891147613525,1.023921801714235," unclear as there are multiple versions of Annie. However, the original 1977 Broadway musical and the 1982 film"," a bit complex as 'Annie' can refer to different adaptations of the classic story. However, the original 'An"
+factorial_v3_pop_given_unknown,38,True,True,0,0.0,0.4370066225528717,2.149303436279297,0.3360751271247864,2.702486276626587,1.1360643507714236," unclear as there are multiple movies and TV shows with the title ""Avatar"". 
+
+1. James Cameron's 2009"," a bit complex as the term ""Avatar"" can refer to different things. 
+
+1. **Avatar (2009 film"
+factorial_v3_pop_given_unknown,39,True,True,0,0.0,0.5009910464286804,1.5656404495239258,0.33746930956840515,2.7406740188598633,1.0838589351741088," unclear as Billy Joel has explored many genres throughout his career. Some of his notable genres include:
+
+1. Rock: Billy"," a bit complex, as Billy Joel's music spans multiple genres. However, some of the primary genres associated with Billy Joel"
+factorial_v3_pop_given_unknown,40,True,True,0,0.0,0.20053023099899292,3.7043113708496094,0.2873404026031494,3.1616172790527344,1.0638204360826522," unclear. There are multiple individuals named Chris Jericho. 
+
+1. Chris Jericho (musician) - Chris Jer"," a bit complex. Chris Jericho is a professional wrestler, musician, and author. 
+
+In professional wrestling, Chris Jer"
+factorial_v3_pop_given_unknown,41,True,True,0,0.0,0.3694899082183838,2.5754337310791016,0.39908578991889954,2.180708885192871,1.03039187522548," unclear without more information. There are several works titled ""Christine."" 
+
+1. Christine (1983 novel) -", Horror.
+factorial_v3_pop_given_unknown,42,False,True,0,0.0,0.33580005168914795,2.702080726623535,0.3443915545940399,2.7071073055267334,1.0576666201540572," not clear without more information. There are multiple songs and albums titled ""Dangerous."" 
+
+1. ""Dangerous"""," unclear without more information. There are multiple songs and albums titled ""Dangerous."" 
+
+1. ""Dangerous"" is"
+factorial_v3_pop_given_unknown,43,True,False,0,0.0,0.47155702114105225,1.8686854839324951,0.30191555619239807,3.358919143676758,1.0611953773880498," not straightforward as the genre of Doctor Who can be classified in multiple ways. However, it is primarily classified as a science"," a bit complex, as Doctor Who is a show that blends multiple genres. However, it is primarily classified as a:
+
+"
+factorial_v3_pop_given_unknown,44,True,True,0,0.0,0.15253371000289917,3.50075626373291,0.45525220036506653,2.29060959815979,1.0912546914754098," unclear as there are multiple works with the name ""Elizabeth"". However, I can provide a few possibilities:
+
+1. Elizabeth", a historical drama.
+factorial_v3_pop_given_unknown,45,False,True,0,0.0,0.3800324499607086,2.4370479583740234,0.580700159072876,1.9042823314666748,0.6608026106428005," unclear without more information. There are several movies and songs titled ""Focus."" 
+
+One movie titled ""Focus"" is a"," unclear without more information. There are several movies and books titled ""Focus."" 
+
+One movie titled ""Focus"" is a"
+factorial_v3_pop_given_unknown,46,True,True,0,0.0,0.2614136040210724,2.928567886352539,0.3728496730327606,2.8429720401763916,0.885660803408071," unclear without more information. There are several artists with the name GG Allin. 
+
+1. GG Allin was an"," a bit complex. GG Allin was an American musician known for his transgressive and provocative style, which blended elements from"
+factorial_v3_pop_given_unknown,47,True,True,0,0.0,0.1412716805934906,3.453050136566162,0.3959692120552063,2.496119260787964,0.989863020902922, Drama.," unclear. There are multiple movies and documentaries with the title ""Jobs"". 
+
+1. ""Jobs"" (2013)"
+factorial_v3_pop_given_unknown,48,True,True,0,0.0,0.2969895303249359,2.097308874130249,0.37399521470069885,2.725651741027832,1.0431863903510132," unclear as there are multiple bands named King Crimson. However, the most well-known band is a British progressive rock band formed"," a bit complex, as King Crimson has explored various genres throughout their career. However, they are often associated with the following"
+factorial_v3_pop_given_unknown,49,True,True,0,0.0,0.5409876704216003,2.150479555130005,0.4868957996368408,2.3619916439056396,0.8743344001728823," unclear as Oasis is a band that has been associated with multiple genres. However, Oasis is primarily known for their work in"," a bit complex, as Oasis is often associated with multiple genres. However, their primary genre is:
+
+1. **Brit"
+factorial_v3_pop_given_unknown,50,False,True,0,0.0,0.4588680565357208,2.09710431098938,0.1689368188381195,3.3714957237243652,1.0011005790825187," not a single genre, but rather a blend of several. Pink Floyd's ""The Wall"" is a rock opera that"," Progressive Rock, but it also incorporates elements of other genres such as:
+
+1. Psychedelic Rock
+2. Art"
+factorial_v3_pop_given_unknown,51,True,True,0,0.0,0.4356083869934082,1.7137449979782104,0.424739807844162,2.3172409534454346,0.8397340900839081," unclear as there are multiple bands named Rush. However, I'll provide information on a few of them:
+
+1. Rush"," a bit complex, as Rush's music evolved over the years and incorporated various styles. However, Rush is generally classified as"
+factorial_v3_pop_given_unknown,52,True,False,0,0.0,0.454416960477829,1.8914144039154053,0.362936794757843,2.7233548164367676,1.0362165370815897," not straightforward as Sonic Youth is a band known for their eclectic and experimental style, which has evolved over the years. However"," a bit complex, as Sonic Youth is often associated with multiple genres. They are primarily known for their contributions to the following"
+factorial_v3_pop_given_unknown,53,True,True,0,0.0,0.2757740914821625,3.0017898082733154,0.3348565101623535,2.8152153491973877,1.9735199351592545," not straightforward as there are multiple movies and TV shows titled ""Spy."" However, I'll provide a few possibilities:
+
+1"," not clear-cut as there are multiple movies with the title ""Spy"". However, I'll provide a few possibilities:
+
+1"
+factorial_v3_pop_given_unknown,54,True,True,0,0.0,0.28144213557243347,2.868410348892212,0.4202667772769928,2.4268198013305664,0.963122058765757," unclear as there are multiple bands and artists named ""The Association"". However, the most well-known band ""The Association"""," a bit complex as The Association was a band that experimented with various genres. They are often associated with the following genres:
+
+"
+factorial_v3_pop_given_unknown,55,True,False,0,0.0,0.4922378957271576,2.158299684524536,0.28349560499191284,2.9571151733398438,0.929459439339711," not straightforward as The Band was a diverse group with multiple influences. However, their primary genre is often classified as:
+
+1"," a bit complex, as The Band's music genre is a blend of several styles. They are often associated with the following"
+factorial_v3_pop_given_unknown,56,False,False,0,0.0,0.17263071238994598,3.23099684715271,0.18664251267910004,3.435576915740967,0.4910874845054814, Life Simulation.," not clear-cut as there are multiple games with the title ""The Good Life"". However, I'll provide information on a"
+factorial_v3_pop_given_unknown,57,True,True,0,0.0,0.3827055096626282,2.7877705097198486,0.23699305951595306,3.5328598022460938,0.9096069990309178," not clear as there are multiple bands with the name ""The Guess Who"". However, the most well-known band ""The"," a bit complex, as The Guess Who's music spans multiple genres. They are primarily known for their work in the following"
+factorial_v3_pop_given_unknown,58,True,True,0,0.0,0.24570241570472717,3.0414235591888428,0.284576416015625,2.859767436981201,0.9293472660147174," not clear as there are multiple movies and TV shows with the title ""The Interview"". However, I can provide a few"," a bit complex. ""The Interview"" (2014) is a comedy film, but it also has elements of action"
+factorial_v3_pop_given_unknown,59,True,True,0,0.0,0.5077242851257324,2.013650417327881,0.3057917356491089,2.9673008918762207,1.081110578126015," not clear-cut as The Police is a band that blended multiple genres. Their music is often classified under the following genres:
+
+"," a bit complex, as The Police's music genre is a blend of several styles. They are often classified under the following"
+factorial_v3_pop_given_unknown,60,True,True,0,0.0,0.207131028175354,2.7735142707824707,0.19936083257198334,3.828662157058716,0.9235801208278388," not clear as there are multiple TV shows with the title ""The Practice"". 
+
+1. The Practice (1997-", a drama television series.
+factorial_v3_pop_given_unknown,61,False,True,0,0.0,0.47287341952323914,1.7311456203460693,0.19664181768894196,2.851806163787842,0.994587033058152, Science Fiction.," Science Fiction, specifically a Dystopian/Post-Apocalyptic one."
+factorial_v3_pop_given_unknown,62,True,True,0,0.0,0.3183693289756775,2.513712167739868,0.4194208085536957,2.8969035148620605,0.8183621550756646," unclear. However, I can provide some information about the title. ""Wish You Were Here"" is a song by"," a bit ambiguous as ""Wish You Were Here"" can refer to different works. 
+
+1. ""Wish You"
+factorial_v3_pop_given_unknown,63,True,True,0,0.0,0.3106728792190552,2.2559103965759277,0.30206066370010376,3.1315793991088867,0.6589764180329646, not clear to me. Can you provide more context or information about Yoko Ono?," a bit complex, as Yoko Ono's work spans multiple genres and styles. However, some of the genres associated"
+factorial_v3_pop_given_unknown,64,True,True,0,0.0,0.4493797719478607,1.8306636810302734,0.4121319055557251,2.6512274742126465,0.930609782423694, not available in the given data.," a botanist, taxonomist, and physician."
+factorial_v3_pop_given_unknown,65,True,False,0,0.0,0.2399020791053772,3.111860752105713,0.24653726816177368,2.451206684112549,0.8903376491814586," a bit unclear as there are multiple characters named Dash. However, I can provide a few possibilities:
+
+1. Dash Parr"," not clear as there are multiple characters named Dash. However, I can provide a few possibilities:
+
+1. Dash Parr:"
+factorial_v3_pop_given_unknown,66,True,True,0,0.0,0.47313597798347473,1.8390538692474365,0.4777507781982422,1.9321504831314087,0.9657377307729564, not available in my database., a singer. G.E.M. is a Chinese singer-songwriter.
+factorial_v3_pop_given_unknown,67,False,False,0,0.0,0.35429510474205017,3.728273391723633,0.26405689120292664,2.95981764793396,1.5781534542439972, not available in my database.," Toronto, Canada."
+factorial_v3_pop_given_unknown,68,True,True,0,0.0,0.5288417339324951,2.385340452194214,0.2340591847896576,4.456047058105469,1.7691645289654734, not available in my database.," Quito, Ecuador."
+factorial_v3_pop_given_unknown,69,False,True,0,0.0,0.43551674485206604,2.8755862712860107,0.39442887902259827,3.704157829284668,2.0," not clear without more information about which Isaac you are referring to. There are many notable individuals named Isaac throughout history. 
+
+", not clear without more information about who Isaac is. There are several notable individuals named Isaac throughout history and across different fields.
+factorial_v3_pop_given_unknown,70,False,True,0,0.0,0.14049100875854492,3.988490581512451,0.24785880744457245,3.862034320831299,1.7241123467732071, not available in the knowledge base., not available in my database.
+factorial_v3_pop_given_unknown,71,True,False,0,0.0,0.24503721296787262,3.374084949493408,0.3150089383125305,2.774846076965332,-0.277332186574926, not available in my database., not available in my current database.
+factorial_v3_pop_given_unknown,72,False,True,0,0.0,0.21526022255420685,3.8703808784484863,0.1583436131477356,4.029318332672119,-0.444484731651036, not available in my database., not available in my database.
+factorial_v3_pop_given_unknown,73,False,True,0,0.0,0.31060177087783813,2.2765707969665527,0.7276694774627686,1.3875524997711182,2.0, John Landis., Jon Peters and John Landis.
+factorial_v3_pop_given_unknown,74,True,True,0,0.0,0.2945769131183624,3.9167397022247314,0.26750195026397705,3.639599323272705,1.112382118599843," not clear as there are multiple movies in the Blade franchise. However, I can provide information on the main movies in the",  Avi Arad.
+factorial_v3_pop_given_unknown,75,True,False,0,0.0,0.563832700252533,1.530005693435669,0.30235424637794495,4.231967926025391,1.2859034727883865," not straightforward as Game of Thrones had multiple producers throughout its run. However, some of the key producers include:
+
+1."," a bit complex, as Game of Thrones had multiple producers throughout its run. However, the main producers were:
+
+1."
+factorial_v3_pop_given_unknown,76,True,True,0,0.0,0.6839014291763306,1.4935245513916016,0.3122353255748749,3.5692126750946045,0.9629121337958167, not available in the given knowledge cut off date., Moustapha Akkad.
+factorial_v3_pop_given_unknown,77,False,True,0,0.0,0.1981949657201767,4.533810138702393,0.8082972764968872,1.2897295951843262,1.7096773097638889, Ira Partridge,"  Megan Ellison,  Dan Halsted,  and  Spike Jonze."
+factorial_v3_pop_given_unknown,78,True,True,0,0.0,0.8589735627174377,0.6869308352470398,0.2856152653694153,3.932966470718384,1.2957605966195775," not available in the given data. However, I can tell you that PK is a 2014 Indian satirical science", Vidhu Vinod Chopra.
+factorial_v3_pop_given_unknown,79,True,True,0,0.0,0.23029130697250366,3.192331314086914,0.2996518909931183,3.6320769786834717,0.9612786983659266," not clear as there were multiple producers of the musical Rent. However, the main producers of the original Broadway production of Rent", a bit complex. The original Broadway production of Rent was produced by Jeffrey Seller and Allan S. Gordon.
+factorial_v3_pop_given_unknown,80,True,True,0,0.0,0.5574840307235718,2.6247758865356445,0.3362293541431427,3.5449349880218506,1.0456608374674228, not available in my database.," Gigi Pritzker, Mark Gordon, and Brad Fischer."
+factorial_v3_pop_given_unknown,81,False,True,0,0.0,0.8684415817260742,0.9107547998428345,0.1931091696023941,3.8332958221435547,2.0, Barry Josephson, M. Night Shyamalan.
+factorial_v3_pop_given_unknown,82,True,True,0,0.0,0.22620826959609985,4.097914695739746,0.43114450573921204,3.356658458709717,0.9037185691310072, not available in my database.,  Michael Finley and  Jon Peters
+factorial_v3_pop_given_unknown,83,True,True,0,0.0,0.9718295335769653,0.21711602807044983,0.2906933128833771,3.7133069038391113,0.9874048977150176, not available in my database., Dr. Dre.
+factorial_v3_pop_given_unknown,84,True,True,0,0.0,0.19981344044208527,3.635772228240967,0.42708635330200195,3.180478096008301,0.5370118389221894, not available in the given data., Stephen Katz.
+factorial_v3_pop_given_unknown,85,True,True,0,0.0,0.15389713644981384,4.0208282470703125,0.2994977831840515,3.672959804534912,1.04717285133601, not available in the given knowledge cut off date., Paul McCartney.
+factorial_v3_pop_given_unknown,86,True,False,0,0.0,0.36915385723114014,1.842826247215271,0.3702792525291443,2.6510536670684814,1.2958639832943135," not as simple as it might seem. The Catholic Church is a Christian denomination, and its primary religion is Christianity. More"," a bit complex, as the Catholic Church is a Christian denomination with its own distinct theology and practices. However, at its"
+factorial_v3_pop_given_unknown,87,True,True,0,0.0,0.522256076335907,1.7863333225250244,0.4099987745285034,2.6137351989746094,-1.0," not clear as there are several historical figures named Francis. 
+
+1. Saint Francis of Assisi (1181-122"," not unique as there are several historical figures named Francis. However, the most well-known ones are:
+
+1. Saint Francis"
+factorial_v3_pop_given_unknown,88,True,False,0,0.0,0.3549036383628845,1.8911998271942139,0.3638048470020294,2.8561208248138428,1.2305469256615458," not straightforward. George Washington was a member of the Episcopal Church, but his views on religion were complex and nuanced. He"," not straightforward, as George Washington's personal views on religion are somewhat complex and open to interpretation. 
+
+George Washington was born"
+factorial_v3_pop_given_unknown,89,False,True,0,0.0,0.3150247633457184,2.052687406539917,0.2361818253993988,2.9427733421325684,1.1747164459287107," Judaism. Marilyn Monroe's mother, Gladys Pearl Baker, was Jewish."," a bit complex. Marilyn Monroe was born to a Christian family, her mother Gladys Pearl Baker was a Christian. However"
+factorial_v3_pop_given_unknown,90,True,False,0,0.0,0.38716915249824524,2.307666778564453,0.2721923291683197,3.050534725189209,1.6457725184365826," not straightforward as there are several notable individuals named Peter. However, I'll provide a few possibilities:
+
+1. Saint Peter"," not straightforward as there are several notable individuals named Peter. Here are a few possibilities:
+
+1. Saint Peter: Saint Peter"
+factorial_v3_pop_given_unknown,91,True,False,0,0.0,0.38237786293029785,2.014603614807129,0.328107088804245,2.860084056854248,1.1594805770370562," not straightforward, as the Roman Republic was a polytheistic society. The primary religion of the Roman Republic was Roman pag"," complex, as the Roman Republic had a polytheistic system of beliefs, with multiple deities and a complex pantheon"
+factorial_v3_pop_given_unknown,92,True,True,0,0.0,0.3297656178474426,2.847273349761963,0.2438814789056778,4.455629348754883,1.145618459998643, not available in my database.,"  Kim Gottfrieds and  Ronald M. Cohen, however, the screenplay was based on the novel ""2010"
+factorial_v3_pop_given_unknown,93,False,True,0,0.0,0.6158732175827026,2.395134210586548,0.43746206164360046,3.1918509006500244,0.6398266707920646,"  ""Easy A"" screenwriter is  Bert V. Royal.",  'Tamara Jenkins' was not the screenwriter for Easy A. The actual screenwriter for Easy A is 
+factorial_v3_pop_given_unknown,94,True,False,0,0.0,0.6030430197715759,1.997909426689148,0.3202159106731415,3.424225091934204,0.8275495744161401," not immediately available. However, I can tell you that the screenplay for Gravity was written by Alfonso Cuarón", Alfonso Cuarón and his son Jonás Cuarón.
+factorial_v3_pop_given_unknown,95,True,False,0,0.0,0.44786328077316284,2.0508742332458496,0.31745457649230957,3.369251012802124,0.8157168973390632," not a single person, as Lost had a large team of writers and screenwriters throughout its six-season run. However,"," a bit complex, as Lost had a large team of writers and showrunners throughout its six-season run. However,"
+factorial_v3_pop_given_unknown,96,True,False,0,0.0,0.38019004464149475,3.1858372688293457,0.5068594813346863,3.0554072856903076,0.5691449900631779, not available in the given knowledge cut off date.," not clear as there are multiple movies with the title ""Love""."
+factorial_v3_pop_given_unknown,97,True,True,0,0.0,0.40027686953544617,2.5849270820617676,0.2915027439594269,3.8328304290771484,1.0849382614508534, not available in my database.," J.J. Abrams, Christopher McQuarrie, and Drew Pearce, however, Christopher McQuarrie is credited"
+factorial_v3_pop_given_unknown,98,True,False,0,0.0,0.3321113884449005,2.8188185691833496,0.1332218050956726,4.025696754455566,1.3517099754453918, not readily available., Nancy Boyer and John Paxton.
+factorial_v3_pop_given_unknown,99,False,False,0,0.0,0.1359577476978302,3.691927909851074,0.2803944945335388,3.4981956481933594,1.0178992448124249, not available., two people:  Erich Wolfgang Korngold and  Brothers Grimm.
+factorial_v3_pop_given_unknown,100,False,False,0,0.0,0.6054220199584961,2.1961405277252197,0.2498888224363327,3.581277847290039,1.197977562367001, not available in my database., Mitchell Altieri and Phil Flores
+factorial_v3_pop_given_unknown,101,True,True,0,0.0,0.2514348030090332,3.4296631813049316,0.35198166966438293,3.0336289405822754,0.8833247008488726, not available.," not a single person, as The Daily Show with Trevor Noah had a team of writers. However, some notable writers and"
+factorial_v3_pop_given_unknown,102,True,True,0,0.0,0.30277180671691895,3.0913610458374023,0.23085246980190277,4.404104709625244,1.028308232156245, not available in my database., Michael Bryans and David Lean.
+factorial_v3_pop_given_unknown,103,True,True,0,0.0,0.6739465594291687,1.9777758121490479,0.31277164816856384,3.5340001583099365,0.9939549830457668, not available in my database.," Michael Mitnick and Robert B. Weide, however, the screenplay was based on the novel by Lois Lowry."
+factorial_v3_pop_given_unknown,104,True,True,0,0.0,0.3590736985206604,3.007239818572998,0.34633976221084595,3.6958601474761963,1.235268370475928, not available in my database., Frank Darabont.
+factorial_v3_pop_given_unknown,105,True,True,0,0.0,0.7594265937805176,1.4575175046920776,0.34697720408439636,2.876898765563965,0.9750839296509674, not available in my database., Bruce C. McKenna.
+factorial_v3_pop_given_unknown,106,True,True,0,0.0,0.2691635489463806,3.57177996635437,0.18498148024082184,4.060913562774658,1.2184408505307338, not available in my database.," Charles Lederer, but the story was based on a 1938 novella called ""Who Goes There?"" by"
+factorial_v3_pop_given_unknown,107,False,False,0,0.0,0.20385414361953735,3.7351338863372803,0.3917742073535919,3.0297017097473145,1.0586050288190894, not available in my database.,"  Jon Amiel and Julian Fellowes, however, the screenplay was based on the French film Anthony Zimmer, which was"
+factorial_v3_pop_given_unknown,108,False,True,0,0.0,0.3104248642921448,2.5093421936035156,0.39606183767318726,2.0645642280578613,1.1713491655025363," not entirely clear as there are multiple Indianapolis 500s. However, I'm assuming you are referring to the Indianapolis "," not ""play"" but rather ""race."" The Indianapolis 500 is a famous automobile racing event. It is a "
+uu_hedge_confab_v3,0,False,False,0,0.0,0.3001158535480499,2.97432279586792,0.4630028009414673,3.033766269683838,-1.0, William C. Bryant," unclear as there are multiple works titled ""Dreams"". However, some notable works titled ""Dreams"" include:
+
+1"
+uu_hedge_confab_v3,1,False,False,0,0.0,0.19113925099372864,4.280280113220215,0.22155866026878357,4.160956382751465,0.6577894431712585," not clear as there are multiple books with the title ""Find Me"".",":  Emily Gunderson, no, actually it is  Emily St. John Mandel."
+uu_hedge_confab_v3,2,False,True,0,0.0,0.4097246527671814,2.565347194671631,0.6469904780387878,2.381679058074951,0.1261553063515597," not clear without more information. There are several books titled ""Heaven"" written by different authors. 
+
+One book titled"," unclear as there are multiple books titled ""Heaven."" However, some popular books with the title ""Heaven"" include"
+uu_hedge_confab_v3,3,False,True,0,0.0,0.232443705201149,4.294389724731445,0.284856379032135,4.1111555099487305,0.2246077438685152," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is  ""Suicide:"," not clear as there are multiple works with the title ""Suicide"". 
+
+One possible answer is Albert Camus, a"
+uu_hedge_confab_v3,4,False,True,0,0.0,0.7504605650901794,1.476170539855957,0.7421256303787231,1.4601296186447144,0.0429338578207309, Jonathan Rosen.," Joseph Campbell. Joseph Campbell was an American mythologist, writer, and lecturer best known for his work in comparative mythology and"
+uu_hedge_confab_v3,5,False,True,0,0.0,0.5069311261177063,2.556722402572632,0.4139658808708191,2.683842182159424,0.6339780168913918," not a country, but rather a U.S. state. Buffalo is the second-largest city in the state of New York"," New York. Buffalo is a city located in the state of New York, in the United States."
+uu_hedge_confab_v3,6,False,True,0,0.0,0.5613765120506287,2.486689567565918,0.34589266777038574,2.623305320739746,0.2152748888047206," Howard County, Maryland, and Howard County, Indiana"," Howard County, but there are several places with the name Howard. 
+
+1. Howard County, Iowa 
+2. Howard"
+uu_hedge_confab_v3,7,False,True,0,0.0,0.359028697013855,1.9303009510040283,0.564734160900116,1.841205358505249,0.8049398033607074, not immediately available to me.," Cuvette-Ouest, a department in the Republic of the Congo."
+uu_hedge_confab_v3,8,False,True,0,0.0,0.7389092445373535,1.2898902893066406,0.8374225497245789,1.1375257968902588,1.0389562376826915, Joseph Losey., Joseph Losey.
+uu_hedge_confab_v3,9,False,True,0,0.0,0.8760850429534912,0.6938079595565796,0.8796572089195251,0.9144775867462158,-0.2873153463767527, Cheryl Dunye., Rick Famuyiwa.
+uu_hedge_confab_v3,10,False,True,0,0.0,0.27504903078079224,3.0956969261169434,0.21250952780246735,3.252673625946045,0.8869164701851813, not available in the given knowledge cut off date.," not clear as there have been several TV series and films with the title ""Empire."" However, I can provide a"
+uu_hedge_confab_v3,11,False,False,0,0.0,0.2743939459323883,2.9161620140075684,0.22619827091693878,2.914673089981079,-1.0, unclear without more information. There have been many directors of foreign affairs throughout history. Could you please provide more context or specify," dependent on the country you are referring to. However, I can provide some information on the directors of foreign affairs for a"
+uu_hedge_confab_v3,12,False,True,0,0.0,0.8894810676574707,0.682134747505188,0.9125639200210571,0.5166914463043213,2.0, Rodrigo García., Rodrigo García.
+uu_hedge_confab_v3,13,True,True,0,0.0,0.423277348279953,3.4154207706451416,0.4262095093727112,3.186689853668213,0.748939816602743, not available in the given knowledge cutoff date.," not a single person, as the show ""Impractical Jokers"" (not ""Practical Jokers"") is"
+uu_hedge_confab_v3,14,False,False,0,0.0,0.43570008873939514,2.6206161975860596,0.2578127086162567,2.8552684783935547,2.0," not clear as there are multiple films with the title ""The Physician"".",  Ivan Passer.
+uu_hedge_confab_v3,15,True,True,0,0.0,0.2562617063522339,3.4550554752349854,0.3136136829853058,3.3349289894104004,0.9654908474135409," not clear without more context. There are several notable individuals named Morgan throughout history and in popular culture. 
+
+One notable figure"," not unique as there are several notable individuals named Morgan. However, I'll provide a few possibilities:
+
+1. Morgan Freeman"
+uu_hedge_confab_v3,16,True,True,0,0.0,0.3348565101623535,2.8152153491973877,0.29697540402412415,2.918787956237793,1.6717210666108848," unclear as there are multiple things called ""Bridge"". 
+
+1. Bridge (card game): The genre of Bridge is a"," not straightforward as ""Bridge"" can refer to different things. 
+
+1. Bridge (card game): The genre of Bridge"
+uu_hedge_confab_v3,17,True,True,0,0.0,0.36299797892570496,2.783154010772705,0.4194208085536957,2.8969035148620605,1.0086641183661031, unclear.," a bit complex as 'Dark Matter' can refer to different things. 
+
+1. **Science Fiction Series**: The TV"
+uu_hedge_confab_v3,18,False,True,0,0.0,0.3351016640663147,3.0238640308380127,0.25822705030441284,3.1860198974609375,1.3448966990968856," not available in the given information. However, I can try to find the information for you. 
+
+'My Way'"," unclear without more information. There are several songs and movies with the title ""My Way."" 
+
+1. ""My Way"
+uu_hedge_confab_v3,19,True,True,0,0.0,0.16328485310077667,3.515381336212158,0.34420958161354065,3.574108600616455,0.9478103903341112, not available in my database.," a bit complex as the band Heart has had multiple producers throughout their career. 
+
+Some notable producers of Heart include:
+
+1"
+uu_hedge_confab_v3,20,True,True,0,0.0,0.28746968507766724,2.6759541034698486,0.34697720408439636,2.876898765563965,0.8812275371481776, not available in my database., a bit complex. The Boys is a television series based on the comic book series of the same name by Garth En
+uu_hedge_confab_v3,21,False,False,0,0.0,0.33597347140312195,3.3231353759765625,0.2929701805114746,3.280301809310913,1.1976730674718796, not available in my database.,"  Carlo Carlei and  Jay Bonafield, however, the screenplay was based on the novel by  Cormac"
+uu_hedge_confab_v3,22,True,True,0,0.0,0.2817651033401489,3.2101128101348877,0.3783259689807892,3.2330033779144287,1.0684951527160471, not available in my database.,  Robert Benton and William Goldman.

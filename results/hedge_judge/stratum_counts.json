@@ -1,0 +1,226 @@
+[
+ {
+  "model": "llama",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 13187
+ },
+ {
+  "model": "llama",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 333
+ },
+ {
+  "model": "llama",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 5517
+ },
+ {
+  "model": "llama",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 1703
+ },
+ {
+  "model": "llama",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 560
+ },
+ {
+  "model": "llama",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 1180
+ },
+ {
+  "model": "llama",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 3562
+ },
+ {
+  "model": "llama",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 20018
+ },
+ {
+  "model": "qwen",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 7736
+ },
+ {
+  "model": "qwen",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 24
+ },
+ {
+  "model": "qwen",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 14578
+ },
+ {
+  "model": "qwen",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 242
+ },
+ {
+  "model": "qwen",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 1059
+ },
+ {
+  "model": "qwen",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 21
+ },
+ {
+  "model": "qwen",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 21928
+ },
+ {
+  "model": "qwen",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 2252
+ },
+ {
+  "model": "gemma",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 12396
+ },
+ {
+  "model": "gemma",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 24
+ },
+ {
+  "model": "gemma",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 8103
+ },
+ {
+  "model": "gemma",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 97
+ },
+ {
+  "model": "gemma",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 2384
+ },
+ {
+  "model": "gemma",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 56
+ },
+ {
+  "model": "gemma",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 20951
+ },
+ {
+  "model": "gemma",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 1629
+ },
+ {
+  "model": "mistral",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 14169
+ },
+ {
+  "model": "mistral",
+  "arm": "control",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 71
+ },
+ {
+  "model": "mistral",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 8143
+ },
+ {
+  "model": "mistral",
+  "arm": "control",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 197
+ },
+ {
+  "model": "mistral",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": false,
+  "n_total": 1374
+ },
+ {
+  "model": "mistral",
+  "arm": "uncertain",
+  "slick": "HighlyKnown",
+  "regex": true,
+  "n_total": 46
+ },
+ {
+  "model": "mistral",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": false,
+  "n_total": 20512
+ },
+ {
+  "model": "mistral",
+  "arm": "uncertain",
+  "slick": "Unknown",
+  "regex": true,
+  "n_total": 3048
+ }
+]

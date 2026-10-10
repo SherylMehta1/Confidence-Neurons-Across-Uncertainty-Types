@@ -1,0 +1,400 @@
+{"model": "gemma", "key": "author::The Birds", "q": "Who is the author of The Birds?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::Utopia", "q": "Who is the author of Utopia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::Bone", "q": "Who is the author of Bone?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::One Piece", "q": "Who is the author of One Piece?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::Nineteen Eighty-Four", "q": "Who is the author of Nineteen Eighty-Four?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::The Kraken Wakes", "q": "Who is the author of The Kraken Wakes?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::Histories", "q": "Who is the author of Histories?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::The Book Thief", "q": "Who is the author of The Book Thief?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::The Song of Hiawatha", "q": "Who is the author of The Song of Hiawatha?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::On War", "q": "Who is the author of On War?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::The Ritual", "q": "Who is the author of The Ritual?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::United Kingdom", "q": "What is the capital of United Kingdom?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::New York", "q": "What is the capital of New York?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Iran", "q": "What is the capital of Iran?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Malaysia", "q": "What is the capital of Malaysia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::South Korea", "q": "What is the capital of South Korea?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Uttar Pradesh", "q": "What is the capital of Uttar Pradesh?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Ukraine", "q": "What is the capital of Ukraine?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Sweden", "q": "What is the capital of Sweden?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Norway", "q": "What is the capital of Norway?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Afghanistan", "q": "What is the capital of Afghanistan?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Romania", "q": "What is the capital of Romania?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Ohio", "q": "What is the capital of Ohio?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Soviet Union", "q": "What is the capital of Soviet Union?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital of::London", "q": "What is London the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital of::Paris", "q": "What is Paris the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital of::Austin", "q": "What is Austin the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::Company", "q": "Who was the composer of Company?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::The Sting", "q": "Who was the composer of The Sting?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::The Planets", "q": "Who was the composer of The Planets?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::Up", "q": "Who was the composer of Up?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::Happy Feet", "q": "Who was the composer of Happy Feet?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::The Last of Us", "q": "Who was the composer of The Last of Us?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::True Blood", "q": "Who was the composer of True Blood?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::BT Group", "q": "In what country is BT Group?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Epic Records", "q": "In what country is Epic Records?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Royal Navy", "q": "In what country is Royal Navy?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Indian Child Welfare Act", "q": "In what country is Indian Child Welfare Act?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Katmai National Park and Preserve", "q": "In what country is Katmai National Park and Preserve?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Belavia", "q": "In what country is Belavia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Millennium Biltmore Hotel", "q": "In what country is Millennium Biltmore Hotel?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Vale", "q": "In what country is Vale?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Crash", "q": "Who was the director of Crash?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::The Omen", "q": "Who was the director of The Omen?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Jobs", "q": "Who was the director of Jobs?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Cabaret", "q": "Who was the director of Cabaret?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::The Fountain", "q": "Who was the director of The Fountain?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Brave", "q": "Who was the director of Brave?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::The Room", "q": "Who was the director of The Room?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::The Wrestler", "q": "Who was the director of The Wrestler?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Best in Show", "q": "Who was the director of Best in Show?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::In Time", "q": "Who was the director of In Time?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Spaced", "q": "Who was the director of Spaced?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::The Beach", "q": "Who was the director of The Beach?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::The Artist", "q": "Who was the director of The Artist?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Qayamat Se Qayamat Tak", "q": "Who was the director of Qayamat Se Qayamat Tak?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Pi", "q": "Who was the director of Pi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Mud", "q": "Who was the director of Mud?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Blow", "q": "Who was the director of Blow?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Into the Wild", "q": "Who was the director of Into the Wild?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Old School", "q": "Who was the director of Old School?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Donald Trump", "q": "Who is the father of Donald Trump?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::James VI and I", "q": "Who is the father of James VI and I?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Johann Sebastian Bach", "q": "Who is the father of Johann Sebastian Bach?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::David Cassidy", "q": "Who is the father of David Cassidy?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Moses", "q": "Who is the father of Moses?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Mark Twain", "q": "Who is the father of Mark Twain?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Thor", "q": "Who is the father of Thor?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Charles II of England", "q": "Who is the father of Charles II of England?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Rama", "q": "Who is the father of Rama?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Alexander Graham Bell", "q": "Who is the father of Alexander Graham Bell?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Kim Kardashian", "q": "Who is the father of Kim Kardashian?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "genre::John Entwistle", "q": "What genre is John Entwistle?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "mother::Cher", "q": "Who is the mother of Cher?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "mother::Sean Penn", "q": "Who is the mother of Sean Penn?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "mother::Michael Jackson", "q": "Who is the mother of Michael Jackson?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "occupation::Kamya Panjabi", "q": "What is Kamya Panjabi's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "place of birth::Juan Luis Guerra", "q": "In what city was Juan Luis Guerra born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "place of birth::Edward Drinker Cope", "q": "In what city was Edward Drinker Cope born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "religion::Paul", "q": "What is the religion of Paul?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Léon: The Professional", "q": "Who was the screenwriter for Léon: The Professional?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::The Boondock Saints", "q": "Who was the screenwriter for The Boondock Saints?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::The Intern", "q": "Who was the screenwriter for The Intern?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::The Conversation", "q": "Who was the screenwriter for The Conversation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Coach Carter", "q": "Who was the screenwriter for Coach Carter?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::The Piano", "q": "Who was the screenwriter for The Piano?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Carol", "q": "Who was the screenwriter for Carol?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Groundhog Day", "q": "Who was the screenwriter for Groundhog Day?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::My Neighbor Totoro", "q": "Who was the screenwriter for My Neighbor Totoro?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Rocky", "q": "Who was the screenwriter for Rocky?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Brooklyn", "q": "Who was the screenwriter for Brooklyn?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Room", "q": "Who was the screenwriter for Room?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "screenwriter::Casino", "q": "Who was the screenwriter for Casino?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Coventry City F.C.", "q": "What sport does Coventry City F.C. play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Eric Snow", "q": "What sport does Eric Snow play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Toni Kukoč", "q": "What sport does Toni Kukoč play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Chuck Bednarik", "q": "What sport does Chuck Bednarik play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Boston United F.C.", "q": "What sport does Boston United F.C. play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::run batted in", "q": "What sport does run batted in play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Pittsburgh Penguins", "q": "What sport does Pittsburgh Penguins play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::Today", "q": "Who is the author of Today?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Stack Overflow", "q": "Who is the author of Stack Overflow?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Help Wanted", "q": "Who is the author of Help Wanted?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Reflex", "q": "Who is the author of Reflex?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "author::GNU Affero General Public License", "q": "Who is the author of GNU Affero General Public License?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "author::The Boys", "q": "Who is the author of The Boys?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Freezing", "q": "Who is the author of Freezing?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Real", "q": "Who is the author of Real?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::Let It Be", "q": "Who was the composer of Let It Be?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::The Master", "q": "Who was the composer of The Master?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "country::Abkhaz", "q": "In what country is Abkhaz?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "country::Devon", "q": "In what country is Devon?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "country::Laika", "q": "In what country is Laika?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "country::Cambridge", "q": "In what country is Cambridge?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Breaking Bad", "q": "Who was the director of Breaking Bad?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Carrie", "q": "Who was the director of Carrie?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Maine Pyar Kiya", "q": "Who was the director of Maine Pyar Kiya?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "director::MASH", "q": "Who was the director of MASH?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Annie", "q": "Who was the director of Annie?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Mask", "q": "Who was the director of Mask?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "father::David", "q": "Who is the father of David?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Prince", "q": "What genre is Prince?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Viva la vida or Death and All His Friends", "q": "What genre is Viva la vida or Death and All His Friends?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Paris Hilton", "q": "What genre is Paris Hilton?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Red Velvet", "q": "What genre is Red Velvet?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Epic", "q": "What genre is Epic?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Gorillaz", "q": "What genre is Gorillaz?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::The Fly", "q": "What genre is The Fly?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::MUD", "q": "What genre is MUD?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Too Short", "q": "What genre is Too Short?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Avatar: The Last Airbender", "q": "What genre is Avatar: The Last Airbender?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::The Others", "q": "What genre is The Others?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Holes", "q": "What genre is Holes?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Peter Paul Rubens", "q": "What genre is Peter Paul Rubens?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Glory", "q": "What genre is Glory?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Waveform Audio File Format", "q": "What genre is Waveform Audio File Format?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Troy", "q": "What genre is Troy?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::The Good Life", "q": "What genre is The Good Life?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Dinosaur", "q": "What genre is Dinosaur?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Star Trek: First Contact", "q": "What genre is Star Trek: First Contact?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Focus", "q": "What genre is Focus?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Sonic Youth", "q": "What genre is Sonic Youth?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::They Live", "q": "What genre is They Live?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Tool", "q": "What genre is Tool?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Network", "q": "What genre is Network?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::10", "q": "What genre is 10?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "mother::Edgar Allan Poe", "q": "Who is the mother of Edgar Allan Poe?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Bala", "q": "What is Bala's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Rumi", "q": "What is Rumi's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Kanye West", "q": "What is Kanye West's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Tyler, the Creator", "q": "What is Tyler, the Creator's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Tiffany Pollard", "q": "What is Tiffany Pollard's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::James Cook", "q": "What is James Cook's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Paul", "q": "What is Paul's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Seungri", "q": "What is Seungri's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Joanna Elisabeth of Holstein-Gottorp", "q": "In what city was Joanna Elisabeth of Holstein-Gottorp born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Marnus Labuschagne", "q": "In what city was Marnus Labuschagne born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Rahi Masoom Raza", "q": "In what city was Rahi Masoom Raza born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Kensho Ono", "q": "In what city was Kensho Ono born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Tony Clark", "q": "In what city was Tony Clark born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::John Spencer-Churchill, 11th Duke of Marlborough", "q": "In what city was John Spencer-Churchill, 11th Duke of Marlborough born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Paris", "q": "In what city was Paris born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Michelle Renaudddd", "q": "In what city was Michelle Renaudddd born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::Diotima of Mantinea", "q": "In what city was Diotima of Mantinea born?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Resident Evil 2", "q": "Who was the producer of Resident Evil 2?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Rent", "q": "Who was the producer of Rent?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Friends", "q": "Who was the producer of Friends?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Marvel Cinematic Universe", "q": "Who was the producer of Marvel Cinematic Universe?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Waterworld", "q": "Who was the producer of Waterworld?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Toy Story", "q": "Who was the producer of Toy Story?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Vacation", "q": "Who was the producer of Vacation?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Wild Things", "q": "Who was the producer of Wild Things?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Fast & Furious 6", "q": "Who was the producer of Fast & Furious 6?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Rock", "q": "Who was the producer of The Rock?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Fly", "q": "Who was the producer of The Fly?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Tourist", "q": "Who was the producer of The Tourist?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Philadelphia", "q": "Who was the producer of Philadelphia?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Up in the Air", "q": "Who was the producer of Up in the Air?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Warrior", "q": "Who was the producer of Warrior?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Possession", "q": "Who was the producer of The Possession?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Skins", "q": "Who was the producer of Skins?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::After Hours", "q": "Who was the producer of After Hours?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Office Space", "q": "Who was the producer of Office Space?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Flight", "q": "Who was the producer of Flight?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Paid in Full", "q": "Who was the producer of Paid in Full?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Fear", "q": "Who was the producer of Fear?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Reader", "q": "Who was the producer of The Reader?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Happy Gilmore", "q": "Who was the producer of Happy Gilmore?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "religion::Marilyn Monroe", "q": "What is the religion of Marilyn Monroe?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "religion::Thomas Jefferson", "q": "What is the religion of Thomas Jefferson?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "religion::Mark Twain", "q": "What is the religion of Mark Twain?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "religion::Francis", "q": "What is the religion of Francis?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Soylent Green", "q": "Who was the screenwriter for Soylent Green?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Identity", "q": "Who was the screenwriter for Identity?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::The Night Of", "q": "Who was the screenwriter for The Night Of?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Annie", "q": "Who was the screenwriter for Annie?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Pixels", "q": "Who was the screenwriter for Pixels?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Rent", "q": "Who was the screenwriter for Rent?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "sport::Indianapolis 500", "q": "What sport does Indianapolis 500 play?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "sport::Margarita Louis-Dreyfus", "q": "What sport does Margarita Louis-Dreyfus play?", "arm": "control", "slick": "Unknown"}
+{"model": "gemma", "key": "capital::Anivsky District", "q": "What is the capital of Anivsky District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Vimmerby Municipality", "q": "What is the capital of Vimmerby Municipality?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::arrondissement of Limoges", "q": "What is the capital of arrondissement of Limoges?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::canton of Saint-Doulchard", "q": "What is the capital of canton of Saint-Doulchard?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Yunguyo Province", "q": "What is the capital of Yunguyo Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Sesia", "q": "What is the capital of Sesia?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Gmina Radomsko", "q": "What is the capital of Gmina Radomsko?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Qasr-e Shirin County", "q": "What is the capital of Qasr-e Shirin County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Sal", "q": "What is the capital of Sal?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Bastak County", "q": "What is the capital of Bastak County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Kareličy District", "q": "What is the capital of Kareličy District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Gmina Brzeszcze", "q": "What is the capital of Gmina Brzeszcze?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Zofingen District", "q": "What is the capital of Zofingen District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Gmina Secemin", "q": "What is the capital of Gmina Secemin?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Molokovsky District", "q": "What is the capital of Molokovsky District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Sucha County", "q": "What is the capital of Sucha County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Saanen District", "q": "What is the capital of Saanen District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::arrondissement of Lannion", "q": "What is the capital of arrondissement of Lannion?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Muyinga Province", "q": "What is the capital of Muyinga Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Verbandsgemeinde Bad Ems", "q": "What is the capital of Verbandsgemeinde Bad Ems?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Gmina Andrespol", "q": "What is the capital of Gmina Andrespol?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::canton of Mirambeau", "q": "What is the capital of canton of Mirambeau?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Chiprovtsi Municipality", "q": "What is the capital of Chiprovtsi Municipality?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::arrondissement of Castellane", "q": "What is the capital of arrondissement of Castellane?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Medzilaborce District", "q": "What is the capital of Medzilaborce District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Biaroza District", "q": "What is the capital of Biaroza District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Orotina Canton", "q": "What is the capital of Orotina Canton?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::canton of Harnes", "q": "What is the capital of canton of Harnes?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::canton of Antibes-Biot", "q": "What is the capital of canton of Antibes-Biot?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Yalutorovsky District", "q": "What is the capital of Yalutorovsky District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Ungheni County", "q": "What is the capital of Ungheni County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::arrondissement of Niort", "q": "What is the capital of arrondissement of Niort?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Poprad District", "q": "What is the capital of Poprad District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital::Kambarsky District", "q": "What is the capital of Kambarsky District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "capital of::Kaberamaido", "q": "What is Kaberamaido the capital of?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "color::Arsenal Fútbol Club", "q": "What color is Arsenal Fútbol Club?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::Images", "q": "Who was the composer of Images?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::Reißt euch los, bedrängte Sinnen, BWV 224", "q": "Who was the composer of Reißt euch los, bedrängte Sinnen, BWV 224?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::Das neugeborne Kindelein, BWV 122", "q": "Who was the composer of Das neugeborne Kindelein, BWV 122?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "composer::Symphony, K. 19b", "q": "Who was the composer of Symphony, K. 19b?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Khvajeh Soheyl", "q": "In what country is Khvajeh Soheyl?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Tervola Radio and TV-Mast", "q": "In what country is Tervola Radio and TV-Mast?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Eslamabad-e Mashayekh", "q": "In what country is Eslamabad-e Mashayekh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Kılıçlı Kavlaklı", "q": "In what country is Kılıçlı Kavlaklı?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Abra, Ivory Coast", "q": "In what country is Abra, Ivory Coast?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Tholuvankadu", "q": "In what country is Tholuvankadu?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Gornji Davidovići", "q": "In what country is Gornji Davidovići?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Korean Magazine Museum", "q": "In what country is Korean Magazine Museum?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Mount Shinten", "q": "In what country is Mount Shinten?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Muratdere", "q": "In what country is Muratdere?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Valea Seacă River", "q": "In what country is Valea Seacă River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Uñón District", "q": "In what country is Uñón District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Puzdrowizna", "q": "In what country is Puzdrowizna?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Alexeni River", "q": "In what country is Alexeni River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Dubicze Osoczne", "q": "In what country is Dubicze Osoczne?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Zec Petawaga", "q": "In what country is Zec Petawaga?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Izvorul Morarului River", "q": "In what country is Izvorul Morarului River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Dąbkowice, Łódź Voivodeship", "q": "In what country is Dąbkowice, Łódź Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Wiesau", "q": "In what country is Wiesau?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Pârâul Bogat", "q": "In what country is Pârâul Bogat?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Kuczynka", "q": "In what country is Kuczynka?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Dell", "q": "In what country is Dell?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Ciucurul Orbului River", "q": "In what country is Ciucurul Orbului River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Wir, Masovian Voivodeship", "q": "In what country is Wir, Masovian Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Riechheimer Berg", "q": "In what country is Riechheimer Berg?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Bitchū-Kawamo Station", "q": "In what country is Bitchū-Kawamo Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Gawarzec Dolny", "q": "In what country is Gawarzec Dolny?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Szczecin Scientific Society", "q": "In what country is Szczecin Scientific Society?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Chal Siah Manchatun Jowkar", "q": "In what country is Chal Siah Manchatun Jowkar?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Rizuiyeh", "q": "In what country is Rizuiyeh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Cổ Linh", "q": "In what country is Cổ Linh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Fântâneaua Rece River", "q": "In what country is Fântâneaua Rece River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::canton of Baugy", "q": "In what country is canton of Baugy?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Chalhuacocha", "q": "In what country is Chalhuacocha?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Dəhnəxəlil", "q": "In what country is Dəhnəxəlil?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Drăgăneasa River", "q": "In what country is Drăgăneasa River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Nowa Wieś Reszelska", "q": "In what country is Nowa Wieś Reszelska?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::KMEI-LP", "q": "In what country is KMEI-LP?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Rubim do Norte River", "q": "In what country is Rubim do Norte River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Stare Brzóski", "q": "In what country is Stare Brzóski?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Tangal-e Behdan", "q": "In what country is Tangal-e Behdan?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Jelow Girangeh", "q": "In what country is Jelow Girangeh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Jeqjeq-e Pain", "q": "In what country is Jeqjeq-e Pain?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::112th United States Colored Infantry", "q": "In what country is 112th United States Colored Infantry?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "country::Anaran Rural District", "q": "In what country is Anaran Rural District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "director::Alice Walker: Beauty in Truth", "q": "Who was the director of Alice Walker: Beauty in Truth?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Pieter Gerardus van Os", "q": "Who is the father of Pieter Gerardus van Os?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Anselm Marshal, 6th Earl of Pembroke", "q": "Who is the father of Anselm Marshal, 6th Earl of Pembroke?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "father::Giacomo Guardi", "q": "Who is the father of Giacomo Guardi?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "genre::The Remarkable Exploits of Lancelot Biggs, Spaceman", "q": "What genre is The Remarkable Exploits of Lancelot Biggs, Spaceman?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "genre::Tempting The Gods: The Selected Stories of Tanith Lee, Volume 1", "q": "What genre is Tempting The Gods: The Selected Stories of Tanith Lee, Volume 1?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "place of birth::Gyula Czimra", "q": "In what city was Gyula Czimra born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "place of birth::Jiří Vyčichlo", "q": "In what city was Jiří Vyčichlo born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "place of birth::Gustavo Grondona", "q": "In what city was Gustavo Grondona born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "place of birth::Gregorio Selser", "q": "In what city was Gregorio Selser born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Ricardo Gónzalez Reinoso", "q": "What sport does Ricardo Gónzalez Reinoso play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::Zanzibar national under-20 football team", "q": "What sport does Zanzibar national under-20 football team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::1989–90 1. Slovenská národná hokejová liga season", "q": "What sport does 1989–90 1. Slovenská národná hokejová liga season play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::2012 Georgetown Hoyas men's soccer team", "q": "What sport does 2012 Georgetown Hoyas men's soccer team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "sport::All-Ireland Senior Club Camogie Championship 1970", "q": "What sport does All-Ireland Senior Club Camogie Championship 1970 play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "gemma", "key": "author::Black", "q": "Who is the author of Black?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::The Lie", "q": "Who is the author of The Lie?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Out of This World", "q": "Who is the author of Out of This World?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Saints of Big Harbour", "q": "Who is the author of Saints of Big Harbour?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::The Hero", "q": "Who is the author of The Hero?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Homecoming", "q": "Who is the author of Homecoming?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Non", "q": "Who is the author of Non?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::West", "q": "Who is the author of West?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Skin", "q": "Who is the author of Skin?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "author::Looking Forward", "q": "Who is the author of Looking Forward?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "capital::Plaza", "q": "What is the capital of Plaza?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "capital::Atenas, Alajuela, Costa Rica", "q": "What is the capital of Atenas, Alajuela, Costa Rica?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "capital::Verbandsgemeinde Loreley", "q": "What is the capital of Verbandsgemeinde Loreley?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "capital of::Totskoye", "q": "What is Totskoye the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "capital of::Busia", "q": "What is Busia the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::One More Time", "q": "Who was the composer of One More Time?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::To Live", "q": "Who was the composer of To Live?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::Say When", "q": "Who was the composer of Say When?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::One", "q": "Who was the composer of One?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::College", "q": "Who was the composer of College?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::Estate", "q": "Who was the composer of Estate?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::Pole", "q": "Who was the composer of Pole?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::String Quartet No. 3", "q": "Who was the composer of String Quartet No. 3?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::Tea for One", "q": "Who was the composer of Tea for One?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "composer::La nave", "q": "Who was the composer of La nave?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "country::Sholoktu", "q": "In what country is Sholoktu?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "country::Karahasanlı", "q": "In what country is Karahasanlı?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "country::Sar Giz", "q": "In what country is Sar Giz?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::The Dog", "q": "Who was the director of The Dog?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Destiny", "q": "Who was the director of Destiny?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Competition", "q": "Who was the director of Competition?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::The Betrayed", "q": "Who was the director of The Betrayed?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Echo", "q": "Who was the director of Echo?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::The Happy Family", "q": "Who was the director of The Happy Family?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Boys", "q": "Who was the director of Boys?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Nice People", "q": "Who was the director of Nice People?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Cuadrilátero", "q": "Who was the director of Cuadrilátero?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Help Wanted", "q": "Who was the director of Help Wanted?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::All the Way Up", "q": "Who was the director of All the Way Up?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Delivering", "q": "Who was the director of Delivering?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Washed Out", "q": "Who was the director of Washed Out?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Revenge", "q": "Who was the director of Revenge?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Wherever You Are", "q": "Who was the director of Wherever You Are?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "director::Sam", "q": "Who was the director of Sam?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "father::John Donkin", "q": "Who is the father of John Donkin?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "father::Theobald Butler, 1st Viscount Butler of Tulleophelim", "q": "Who is the father of Theobald Butler, 1st Viscount Butler of Tulleophelim?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "father::Ki", "q": "Who is the father of Ki?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "father::Morgan", "q": "Who is the father of Morgan?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "father::Folke Zettervall", "q": "Who is the father of Folke Zettervall?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Our Time", "q": "What genre is Our Time?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Drama", "q": "What genre is Drama?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Thin Ice", "q": "What genre is Thin Ice?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Target", "q": "What genre is Target?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::The Gap", "q": "What genre is The Gap?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::VS", "q": "What genre is VS?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Heaven", "q": "What genre is Heaven?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Elizabeth Davis", "q": "What genre is Elizabeth Davis?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Betrayal", "q": "What genre is Betrayal?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::El honorable Señor Valdez", "q": "What genre is El honorable Señor Valdez?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Until I Met You", "q": "What genre is Until I Met You?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Shade", "q": "What genre is Shade?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Conversations", "q": "What genre is Conversations?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::More Love", "q": "What genre is More Love?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Unknown", "q": "What genre is Unknown?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "genre::Scorpio", "q": "What genre is Scorpio?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "mother::Constantine I, King of Armenia", "q": "Who is the mother of Constantine I, King of Armenia?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::John Finlay", "q": "What is John Finlay's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Frits Castricum", "q": "What is Frits Castricum's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Michael Hutchings", "q": "What is Michael Hutchings's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::T. P. Poonatchi", "q": "What is T. P. Poonatchi's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "occupation::Robert Jonckheere", "q": "What is Robert Jonckheere's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "place of birth::I.P. Paul", "q": "In what city was I.P. Paul born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Revelations", "q": "Who was the producer of Revelations?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Professor", "q": "Who was the producer of The Professor?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Dual", "q": "Who was the producer of Dual?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Three Hours", "q": "Who was the producer of Three Hours?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Hayseeds' Back-blocks Show", "q": "Who was the producer of The Hayseeds' Back-blocks Show?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::The Stand Up", "q": "Who was the producer of The Stand Up?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Home", "q": "Who was the producer of Home?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Rice", "q": "Who was the producer of Rice?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Best Of", "q": "Who was the producer of Best Of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::One of the Best", "q": "Who was the producer of One of the Best?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "producer::Dog", "q": "Who was the producer of Dog?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "religion::Benedito Domingos Vito Coscia", "q": "What is the religion of Benedito Domingos Vito Coscia?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Donsol", "q": "Who was the screenwriter for Donsol?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::The Supplement", "q": "Who was the screenwriter for The Supplement?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Ergens in Nederland", "q": "Who was the screenwriter for Ergens in Nederland?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::The Boys", "q": "Who was the screenwriter for The Boys?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Boquitas pintadas", "q": "Who was the screenwriter for Boquitas pintadas?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::The Teaser", "q": "Who was the screenwriter for The Teaser?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Dumbbells in Ermine", "q": "Who was the screenwriter for Dumbbells in Ermine?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Chain", "q": "Who was the screenwriter for Chain?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Hoppa högst", "q": "Who was the screenwriter for Hoppa högst?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Revelations", "q": "Who was the screenwriter for Revelations?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Las Meninas", "q": "Who was the screenwriter for Las Meninas?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Pearl in the Crown", "q": "Who was the screenwriter for Pearl in the Crown?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Fear No More", "q": "Who was the screenwriter for Fear No More?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "screenwriter::Second Best Bed", "q": "Who was the screenwriter for Second Best Bed?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "sport::José Luis Contaja", "q": "What sport does José Luis Contaja play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "gemma", "key": "sport::Radek Opršal", "q": "What sport does Radek Opršal play?", "arm": "uncertain", "slick": "Unknown"}

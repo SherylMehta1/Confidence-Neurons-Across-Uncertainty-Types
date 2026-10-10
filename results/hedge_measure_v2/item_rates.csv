@@ -1,0 +1,1513 @@
+key,arm,slick,prim,sec,regex,model
+author::Aida,control,Unknown,0.0,0.0,0.0,llama
+author::Cell,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Challenge,uncertain,Unknown,0.0,0.6666666666666666,0.6666666666666666,llama
+author::Corridor,uncertain,Unknown,1.0,1.0,1.0,llama
+author::Dancing on Coral,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+author::Death in Five Boxes,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+author::Fallen,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Follow The Music,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+author::From Hell letter,control,HighlyKnown,0.0,0.0,0.3333333333333333,llama
+author::Great Expectations,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Holes,control,HighlyKnown,0.0,0.0,0.0,llama
+author::How to Stop Worrying and Start Living,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Jääpeili,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+author::King James Version,control,Unknown,0.0,0.0,0.0,llama
+author::Legion,control,Unknown,0.0,0.6666666666666666,1.0,llama
+author::Louis,uncertain,Unknown,0.0,0.3333333333333333,1.0,llama
+author::Midnight's Children,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Moneyball,control,HighlyKnown,0.0,0.0,0.0,llama
+author::On the Road,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Our Town,control,HighlyKnown,0.0,0.0,0.3333333333333333,llama
+author::Partner,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+author::Passing,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Phoenix,control,Unknown,0.3333333333333333,0.6666666666666666,0.3333333333333333,llama
+author::Politics,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Real,control,Unknown,0.0,0.3333333333333333,1.0,llama
+author::Shame,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,llama
+author::Symposium,control,HighlyKnown,0.0,0.0,0.0,llama
+author::The Adventures of Tom Sawyer,control,HighlyKnown,0.0,0.0,0.0,llama
+author::The Birds,control,HighlyKnown,0.0,0.0,0.0,llama
+author::The Camp of the Saints,control,HighlyKnown,0.0,0.0,0.0,llama
+author::The Celebrated Jumping Frog of Calaveras County,control,HighlyKnown,0.0,0.0,0.0,llama
+author::The Road,control,HighlyKnown,0.0,0.0,0.0,llama
+author::The Techniques of Democracy,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+author::Therapy,uncertain,Unknown,0.0,0.6666666666666666,1.0,llama
+author::Timeline,control,HighlyKnown,0.0,0.0,0.0,llama
+author::Treasure Island,control,HighlyKnown,0.0,0.0,0.0,llama
+author::What You Make It,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+author::White Noise,control,HighlyKnown,0.0,0.0,0.0,llama
+capital of::Delhi,control,Unknown,0.0,0.0,0.0,llama
+capital of::Jerusalem,control,Unknown,0.0,0.0,0.0,llama
+capital of::Leningradskaya,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+capital of::Los Angeles,control,Unknown,0.0,0.0,0.0,llama
+capital of::Seattle,control,Unknown,0.0,0.0,0.0,llama
+capital::Afghanistan,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Bangladesh,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Belorechensky District,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::Chiprovtsi Municipality,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,0.3333333333333333,llama
+capital::Gmina Brzeszcze,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::Gmina Radomsko,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::India,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Lyuberetsky District,uncertain,HighlyKnown,0.6666666666666666,1.0,1.0,llama
+capital::Medzilaborce District,uncertain,HighlyKnown,0.0,0.3333333333333333,0.3333333333333333,llama
+capital::Muyinga Province,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::New York,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::New Zealand,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Orotina Canton,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+capital::Papua New Guinea,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Plesetsky District,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+capital::Poprad District,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,0.3333333333333333,llama
+capital::Qasr-e Shirin County,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+capital::Saudi Arabia,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Sri Lanka,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Sánchez Carrión Province,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+capital::Tarussky District,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::Tikhvinsky District,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::Ungheni County,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::Verbandsgemeinde Bad Ems,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+capital::Verbandsgemeinde Loreley,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+capital::Vimmerby Municipality,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+capital::Virginia,control,HighlyKnown,0.0,0.0,0.0,llama
+capital::Vozhegodsky District,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+capital::Zofingen District,uncertain,HighlyKnown,0.0,0.0,0.6666666666666666,llama
+capital::arrondissement of Castellane,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::arrondissement of Florac,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+capital::arrondissement of Lannion,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+capital::arrondissement of Limoges,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+capital::arrondissement of Niort,uncertain,HighlyKnown,0.0,0.0,0.3333333333333333,llama
+capital::arrondissement of Nogent-le-Rotrou,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,0.0,llama
+capital::canton of Antibes-Biot,uncertain,HighlyKnown,0.0,0.6666666666666666,1.0,llama
+capital::canton of Mirambeau,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+color::A.C. Milan,control,HighlyKnown,0.0,0.0,0.0,llama
+color::Arsenal Fútbol Club,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+composer::31,control,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+composer::Arrested Development,control,Unknown,0.6666666666666666,0.6666666666666666,0.3333333333333333,llama
+composer::Back to School,control,Unknown,0.3333333333333333,0.3333333333333333,0.6666666666666666,llama
+composer::Company,control,HighlyKnown,0.0,0.0,0.0,llama
+composer::Crash,control,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+composer::Cue Ball Cat,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+"composer::Das neugeborne Kindelein, BWV 122",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+"composer::Erfreute Zeit im neuen Bunde, BWV 83",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+composer::Gran Torino,control,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+composer::Halloween,control,HighlyKnown,0.0,0.0,0.0,llama
+composer::Inside Out,control,HighlyKnown,0.0,0.0,0.0,llama
+composer::Metroid,control,Unknown,0.0,0.0,0.0,llama
+composer::Miami Vice,control,HighlyKnown,0.0,0.0,0.0,llama
+composer::Nelson,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.6666666666666666,llama
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+composer::Schlager,uncertain,Unknown,0.0,0.0,0.0,llama
+composer::String Quartet No. 3,uncertain,Unknown,0.0,0.6666666666666666,0.0,llama
+"composer::Symphony, K. 19b",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+composer::The Light,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+composer::The Mission,control,HighlyKnown,0.0,0.0,0.0,llama
+composer::The Other Woman,control,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+composer::The Room,control,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+composer::The Social Network,control,HighlyKnown,0.0,0.0,0.0,llama
+composer::The Village,control,Unknown,0.3333333333333333,0.3333333333333333,0.6666666666666666,llama
+composer::WarGames,control,Unknown,0.0,0.0,0.0,llama
+composer::Yesterday,control,HighlyKnown,0.0,0.0,0.0,llama
+country::112th United States Colored Infantry,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,0.6666666666666666,llama
+country::Anaran Rural District,uncertain,HighlyKnown,0.3333333333333333,0.6666666666666666,1.0,llama
+country::Bitchū-Kawamo Station,uncertain,HighlyKnown,0.0,0.0,1.0,llama
+country::Bouvet Island,control,HighlyKnown,0.0,0.0,0.0,llama
+country::British American Tobacco,control,HighlyKnown,0.0,0.0,0.0,llama
+country::Chal Siah Manchatun Jowkar,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+country::Chalhuacocha,uncertain,HighlyKnown,0.6666666666666666,1.0,1.0,llama
+country::Chrysler,control,Unknown,0.0,0.0,0.0,llama
+country::Ciucurul Orbului River,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+country::Cổ Linh,uncertain,HighlyKnown,0.0,1.0,1.0,llama
+country::Dell,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+country::Drăgăneasa River,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,0.6666666666666666,llama
+country::Dubicze Osoczne,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+"country::Dąbkowice, Łódź Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+country::Dəhnəxəlil,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+country::Eastern United States,control,HighlyKnown,0.0,0.0,0.0,llama
+country::Eslamabad-e Mashayekh,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+country::Gawarzec Dolny,uncertain,HighlyKnown,0.3333333333333333,0.6666666666666666,1.0,llama
+country::Gornji Davidovići,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+country::Hatnagoda,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+country::Izvorul Morarului River,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+country::Jeqjeq-e Pain,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+country::Katmai National Park and Preserve,control,HighlyKnown,0.0,0.0,0.0,llama
+country::Kawahigashi Station,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+country::Khvajeh Soheyl,uncertain,HighlyKnown,0.0,0.0,1.0,llama
+"country::Kowale, Lower Silesian Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+country::Kuczynka,uncertain,HighlyKnown,0.0,0.0,1.0,llama
+country::Kılıçlı Kavlaklı,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+country::Laika,control,Unknown,0.0,0.3333333333333333,0.3333333333333333,llama
+country::Mary,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,llama
+country::Mohammadabad-e Razzaqzadeh,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+country::Muratdere,uncertain,HighlyKnown,0.6666666666666666,1.0,1.0,llama
+country::Nowa Wieś Reszelska,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+country::Puzdrowizna,uncertain,HighlyKnown,0.6666666666666666,1.0,1.0,llama
+country::Riechheimer Berg,uncertain,HighlyKnown,0.6666666666666666,1.0,1.0,llama
+country::Rizuiyeh,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+country::Rubim do Norte River,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+country::Sar Giz,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+"country::Sarnowo, Chełmno County",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+country::Stare Brzóski,uncertain,HighlyKnown,0.6666666666666666,1.0,1.0,llama
+country::Szczecin Scientific Society,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,0.3333333333333333,llama
+country::Tangal-e Behdan,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+country::Tartaczek,uncertain,HighlyKnown,0.3333333333333333,0.6666666666666666,1.0,llama
+country::Tervola Radio and TV-Mast,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,0.6666666666666666,llama
+country::Tholuvankadu,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+country::USS Constitution,control,HighlyKnown,0.0,0.0,0.0,llama
+"country::Union State Bank, Wisconsin",uncertain,HighlyKnown,1.0,1.0,1.0,llama
+country::Uñón District,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+country::Valdearcos de la Vega,uncertain,HighlyKnown,0.0,0.3333333333333333,1.0,llama
+country::Valea Seacă River,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+country::Valparaiso University,control,HighlyKnown,0.0,0.0,0.0,llama
+country::Wiesau,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+"country::Wir, Masovian Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+country::canton of Baugy,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,llama
+"country::Łazy, Sierpc County",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+"country::Łodygowo, Pisz County",uncertain,HighlyKnown,0.0,0.0,0.0,llama
+director::2012,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Alice Walker: Beauty in Truth,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+director::Beloved,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Bingo,uncertain,Unknown,0.0,0.0,0.3333333333333333,llama
+director::Boots,uncertain,Unknown,0.3333333333333333,1.0,1.0,llama
+director::Carrie,control,Unknown,0.0,0.0,0.0,llama
+director::Cars,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Cocktail,control,Unknown,0.0,0.0,0.0,llama
+director::Cure,control,Unknown,0.3333333333333333,0.3333333333333333,0.0,llama
+director::Day by Day,uncertain,Unknown,1.0,1.0,1.0,llama
+director::Distant Trumpet,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+director::E.T. the Extra-Terrestrial,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Elf,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Friends,uncertain,Unknown,0.0,0.0,0.0,llama
+director::Hakeem's New Flame,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+director::Hilde Warren und der Tod,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+director::Iron Man,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Lost,control,Unknown,0.0,0.0,0.0,llama
+director::Love Don't Cost a Thing,control,Unknown,0.0,0.0,0.0,llama
+director::Me First,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+director::Next,control,HighlyKnown,0.0,0.0,0.0,llama
+director::One of Those,uncertain,Unknown,0.0,0.6666666666666666,1.0,llama
+director::Pilot,uncertain,Unknown,0.0,0.3333333333333333,0.6666666666666666,llama
+director::Powder,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Pride,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Sacrifice,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+"director::Thank You, Madame",uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+director::The Call of the North,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+director::The Cell,control,HighlyKnown,0.0,0.0,0.0,llama
+director::The Changeling,control,HighlyKnown,0.0,0.6666666666666666,0.0,llama
+director::The Day After,control,HighlyKnown,0.0,0.0,0.0,llama
+director::The Fog,control,Unknown,0.0,0.0,0.0,llama
+director::The Invitation,control,HighlyKnown,0.0,0.0,0.0,llama
+director::The Judge,control,HighlyKnown,0.0,0.0,0.0,llama
+director::The Matrix,control,HighlyKnown,0.0,0.0,0.0,llama
+director::The Other Person,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+director::Thirteen,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Tum Bin,control,HighlyKnown,0.0,0.0,0.0,llama
+director::Turn to the Right,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+director::Vacation,control,Unknown,0.0,0.0,0.0,llama
+director::Vanity,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+father::Al Gore,control,HighlyKnown,0.0,0.0,0.0,llama
+father::Dwayne Johnson,control,HighlyKnown,0.0,0.0,0.0,llama
+father::Georg Adolf Erman,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+father::Giacomo Guardi,uncertain,HighlyKnown,1.0,1.0,1.0,llama
+father::Krishna,control,HighlyKnown,0.0,0.0,0.0,llama
+father::Lily Allen,control,HighlyKnown,0.0,0.0,0.0,llama
+father::Mark Twain,control,HighlyKnown,0.0,0.0,0.0,llama
+father::Melora Hardin,control,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+father::Mira Burt-Wintonick,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+father::Princess Yamanobe,uncertain,Unknown,0.0,0.0,1.0,llama
+father::Rama,control,HighlyKnown,0.0,0.0,0.0,llama
+father::Rand Paul,control,HighlyKnown,0.0,0.0,0.0,llama
+father::Wayne Gretzky,control,HighlyKnown,0.0,0.0,0.0,llama
+genre::Alien,control,Unknown,0.0,0.0,0.0,llama
+genre::All Good Things,control,Unknown,0.0,0.3333333333333333,0.6666666666666666,llama
+genre::Anyone Else,uncertain,Unknown,0.0,0.6666666666666666,1.0,llama
+genre::Back to the Future,control,Unknown,0.0,0.0,0.0,llama
+genre::Can,control,Unknown,0.0,0.0,0.0,llama
+genre::Chris Jericho,control,Unknown,0.0,0.0,0.0,llama
+genre::Dangerous,control,Unknown,0.0,0.0,0.0,llama
+genre::Drill,uncertain,Unknown,0.0,0.0,0.0,llama
+genre::GG Allin,control,Unknown,0.0,0.0,0.0,llama
+genre::Glory,control,Unknown,0.0,0.3333333333333333,1.0,llama
+genre::I Will Be There,uncertain,Unknown,0.0,1.0,0.0,llama
+genre::MASH,control,Unknown,0.0,0.0,0.0,llama
+genre::MUD,control,Unknown,0.0,0.0,0.0,llama
+genre::Martin Garrix,control,HighlyKnown,0.0,0.0,0.0,llama
+genre::Me and My Friend,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+genre::Mother,uncertain,Unknown,0.0,0.0,0.0,llama
+genre::Nightdreamers,uncertain,Unknown,0.0,0.3333333333333333,1.0,llama
+genre::Oasis,control,Unknown,0.0,0.0,0.0,llama
+genre::Options,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+genre::Peter Paul Rubens,control,Unknown,0.0,0.0,0.0,llama
+genre::Pieter Jacobsz Duyfhuysen,uncertain,Unknown,1.0,1.0,1.0,llama
+genre::Revenge,control,Unknown,0.0,0.0,0.0,llama
+genre::Scorpio,uncertain,Unknown,0.0,0.3333333333333333,0.0,llama
+genre::Species,control,Unknown,0.0,0.0,0.0,llama
+genre::Super Mario World,control,HighlyKnown,0.0,0.0,0.0,llama
+genre::The Angel,uncertain,Unknown,0.0,0.6666666666666666,0.0,llama
+genre::The Good Life,control,Unknown,0.0,0.3333333333333333,0.6666666666666666,llama
+genre::The Guess Who,control,Unknown,0.0,0.0,0.0,llama
+genre::The Interview,control,Unknown,0.0,0.0,0.0,llama
+genre::The Invasion,control,Unknown,0.0,0.0,0.0,llama
+genre::The Little Prince,control,Unknown,0.0,0.0,0.0,llama
+genre::The New World,uncertain,Unknown,0.0,0.0,0.0,llama
+genre::The Police,control,Unknown,0.0,0.0,0.0,llama
+genre::The Rev,control,Unknown,0.6666666666666666,1.0,1.0,llama
+genre::The Song of the Suburbs,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+genre::Too Short,control,Unknown,0.0,0.0,0.0,llama
+genre::Up in the Air,control,Unknown,0.0,0.0,0.0,llama
+genre::Voyage,uncertain,Unknown,0.0,0.6666666666666666,0.6666666666666666,llama
+genre::William Michael Rooke,uncertain,Unknown,0.0,0.3333333333333333,1.0,llama
+mother::Rekha,control,Unknown,1.0,1.0,1.0,llama
+occupation::Alex Reid,control,Unknown,0.0,0.6666666666666666,0.6666666666666666,llama
+occupation::Ayumi Hamasaki,control,Unknown,0.0,0.0,0.0,llama
+occupation::Bala,control,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+occupation::Benazir Bhutto,control,HighlyKnown,0.0,0.0,0.0,llama
+occupation::Beth Hart,control,HighlyKnown,0.0,0.0,0.0,llama
+occupation::Burna Boy,control,Unknown,0.0,0.0,0.0,llama
+occupation::Carl Linnaeus,control,Unknown,0.0,0.0,0.0,llama
+occupation::Domingo Eyzaguirre,uncertain,Unknown,1.0,1.0,1.0,llama
+occupation::Donald Trump,control,Unknown,0.0,0.0,0.0,llama
+occupation::John Finlay,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+occupation::Jörg A. Eggers,uncertain,Unknown,1.0,1.0,1.0,llama
+occupation::Kamya Panjabi,control,HighlyKnown,0.0,0.0,0.0,llama
+occupation::Seungri,control,Unknown,0.0,0.0,0.0,llama
+occupation::Thomas Gifford,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+"occupation::Tyler, the Creator",control,Unknown,0.0,0.0,0.0,llama
+place of birth::Aarno Maliniemi,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+place of birth::Anders Orvin,uncertain,Unknown,1.0,1.0,1.0,llama
+place of birth::C. N. Annadurai,control,Unknown,0.0,0.0,0.0,llama
+place of birth::Chris Brown,control,HighlyKnown,0.0,0.0,0.0,llama
+place of birth::Eduardo Hurtado,control,Unknown,1.0,1.0,1.0,llama
+place of birth::Gary Freear,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+place of birth::Halloween,control,Unknown,0.0,0.0,0.0,llama
+place of birth::Jeanne de Casalis,control,Unknown,1.0,1.0,1.0,llama
+place of birth::Juan Luis Guerra,control,HighlyKnown,0.0,0.0,0.0,llama
+place of birth::Julee Cruise,control,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+place of birth::Julius Erving,control,Unknown,0.0,0.0,0.0,llama
+place of birth::Karl Bartholomaeus Heller,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+place of birth::Masaru Inada,uncertain,Unknown,1.0,1.0,1.0,llama
+place of birth::Matt Moralee,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+place of birth::Paris,control,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+place of birth::Parnelli Jones,control,Unknown,0.0,0.0,0.0,llama
+place of birth::Petar Stambolić,control,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+place of birth::Rahi Masoom Raza,control,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+place of birth::Wellington Santos da Silva,uncertain,Unknown,1.0,1.0,1.0,llama
+place of birth::William Osler,control,Unknown,0.0,0.0,0.0,llama
+producer::(One Glance Is) Holy,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+producer::After Hours,control,Unknown,0.3333333333333333,0.3333333333333333,0.3333333333333333,llama
+producer::Blade,control,Unknown,0.0,0.0,0.0,llama
+producer::Boy,control,Unknown,0.0,0.3333333333333333,1.0,llama
+producer::Career Opportunities,control,Unknown,1.0,1.0,1.0,llama
+producer::Cinema,uncertain,Unknown,0.0,1.0,0.6666666666666666,llama
+producer::City of God,control,Unknown,0.0,0.0,0.0,llama
+producer::Early Man,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.3333333333333333,llama
+producer::Game of Thrones,control,Unknown,0.0,0.0,0.0,llama
+producer::Gladiator,control,Unknown,0.0,0.0,0.0,llama
+producer::Glory,control,Unknown,0.0,0.0,0.0,llama
+producer::Her,control,Unknown,0.0,0.0,0.0,llama
+producer::Holes,control,Unknown,0.6666666666666666,0.6666666666666666,0.6666666666666666,llama
+producer::House on Haunted Hill,control,Unknown,0.0,0.0,0.0,llama
+producer::In the Family,uncertain,Unknown,1.0,1.0,1.0,llama
+producer::Just Around the Corner,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+producer::Let America Laugh,uncertain,Unknown,1.0,1.0,1.0,llama
+producer::Menu,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+producer::Mission: Impossible – Rogue Nation,control,Unknown,0.0,0.0,0.0,llama
+producer::PK,control,Unknown,0.0,0.0,0.0,llama
+producer::Paid in Full,control,Unknown,0.0,0.0,0.0,llama
+producer::Precious,control,HighlyKnown,0.0,0.0,0.0,llama
+producer::Rocky,control,HighlyKnown,0.0,0.0,0.0,llama
+producer::The Accused,uncertain,Unknown,0.0,0.0,0.0,llama
+producer::The Brat,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+producer::The Deal,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+producer::The Fighter,control,Unknown,0.0,0.0,0.0,llama
+producer::The Graduate,control,HighlyKnown,0.0,0.0,0.0,llama
+producer::The Holiday,control,HighlyKnown,0.0,0.0,0.0,llama
+producer::The Internship,control,Unknown,0.0,0.0,0.0,llama
+producer::The List,uncertain,Unknown,1.0,1.0,1.0,llama
+producer::The Lucky Stiff,uncertain,Unknown,0.0,0.0,1.0,llama
+producer::The Pioneers,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+producer::The Prestige,control,Unknown,0.0,0.0,0.0,llama
+producer::Vertigo,control,HighlyKnown,0.0,0.0,0.0,llama
+religion::Arturo Tabera Araoz,uncertain,Unknown,1.0,1.0,1.0,llama
+religion::Aung San Suu Kyi,control,HighlyKnown,0.0,0.0,0.0,llama
+religion::Bellino Giusto Ghirard,uncertain,Unknown,1.0,1.0,1.0,llama
+religion::Cosmo Francesco Ruppi,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+religion::Marilyn Monroe,control,Unknown,0.0,0.0,0.0,llama
+religion::Pedro Lisímaco de Jesús Vílchez Vílchez,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+screenwriter::After Hours,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Album,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+screenwriter::Ars,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+screenwriter::Back to the Future,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Because,uncertain,Unknown,1.0,1.0,1.0,llama
+screenwriter::Bingo,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,llama
+screenwriter::Coach Carter,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Democracy,uncertain,Unknown,1.0,1.0,1.0,llama
+screenwriter::Easy A,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::Ecco fatto,uncertain,Unknown,0.0,0.3333333333333333,1.0,llama
+screenwriter::Episodes,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Excited,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+screenwriter::Ghost,uncertain,Unknown,0.0,0.0,0.0,llama
+screenwriter::Guilty,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+screenwriter::Her,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Hot Fuzz,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Jackson: My Life... Your Fault,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+screenwriter::Jurassic Park,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Labyrinth,control,HighlyKnown,0.0,0.3333333333333333,0.0,llama
+screenwriter::Le Journal d'une femme en blanc,uncertain,Unknown,1.0,1.0,1.0,llama
+screenwriter::Office Space,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::PK,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::Powder,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::Rent,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::Rocky,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Second Best Bed,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+screenwriter::Silence,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::Small Town,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+screenwriter::Snow White and the Seven Dwarfs,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::The Birds,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::The Faculty,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::The King and I,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::The Mist,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::The Notebook,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::The Omen,control,HighlyKnown,0.0,0.0,0.0,llama
+screenwriter::The Secret Call,uncertain,Unknown,0.6666666666666666,1.0,1.0,llama
+screenwriter::The Tourist,control,Unknown,0.0,0.0,0.0,llama
+screenwriter::The Woods,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,llama
+screenwriter::Watch Out,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+sport::1973 Virginia Slims of Fort Lauderdale,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+sport::1989–90 1. Slovenská národná hokejová liga season,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+sport::1995 Cook Islands Round Cup,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,1.0,llama
+sport::2011–12 Elon Phoenix men's basketball team,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+sport::2012 Georgetown Hoyas men's soccer team,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+sport::All-Ireland Senior Club Camogie Championship 1970,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+sport::Anderson,control,Unknown,0.0,0.6666666666666666,0.0,llama
+sport::Indianapolis 500,control,Unknown,0.0,0.0,0.0,llama
+sport::Joey Harrington,control,HighlyKnown,0.0,0.0,0.0,llama
+sport::Leyton Orient F.C.,control,HighlyKnown,0.0,0.0,0.0,llama
+sport::Lukáš Bodeček,uncertain,Unknown,1.0,1.0,1.0,llama
+sport::Welling United F.C.,control,HighlyKnown,0.0,0.0,0.0,llama
+sport::Wojciech Jarmuż,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,llama
+sport::Zanzibar national under-20 football team,uncertain,HighlyKnown,0.0,0.0,0.0,llama
+author::A Positive,uncertain,Unknown,0.0,0.3333333333333333,0.6666666666666666,qwen
+author::Abel,uncertain,Unknown,0.0,1.0,0.0,qwen
+author::Annals,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+author::Beast,uncertain,Unknown,0.0,0.6666666666666666,0.0,qwen
+author::Confessions,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Darkvision,uncertain,Unknown,0.0,0.0,0.0,qwen
+author::Everyday Use,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Gospel of Luke,control,HighlyKnown,0.0,0.0,0.3333333333333333,qwen
+author::Help Wanted,control,Unknown,0.0,0.6666666666666666,0.0,qwen
+author::Incoming,uncertain,Unknown,0.0,0.0,0.0,qwen
+author::Into the Woods,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Jumper,control,Unknown,0.0,0.0,0.0,qwen
+author::Martin,uncertain,Unknown,0.0,1.0,0.0,qwen
+author::Nevis Mountain Dew,uncertain,Unknown,0.0,0.6666666666666666,1.0,qwen
+author::Nineteen Eighty-Four,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::On the Road,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Our Town,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Partner,uncertain,Unknown,0.0,0.6666666666666666,0.0,qwen
+author::Persuasion,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Politics,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Rage,uncertain,Unknown,0.0,0.0,0.0,qwen
+author::Son,control,Unknown,0.0,1.0,0.0,qwen
+author::Stand By Your Screen,uncertain,Unknown,0.0,0.6666666666666666,0.6666666666666666,qwen
+author::The Bicentennial Man,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::The Book of Mormon,control,Unknown,0.0,0.0,0.0,qwen
+author::The Camp of the Saints,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::The Celebrated Jumping Frog of Calaveras County,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::The Clouds,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::The Crow,control,Unknown,0.0,0.0,0.0,qwen
+author::The Lottery,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::The Man from Snowy River,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::The Reader,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+author::The Wizard in Wonderland,uncertain,Unknown,0.0,0.6666666666666666,0.6666666666666666,qwen
+author::Treasure Island,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital of::Austin,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital of::Bolsheustyikinskoye,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.0,qwen
+capital of::Budapest,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital of::London,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital of::Prochowice,uncertain,HighlyKnown,0.0,0.3333333333333333,0.0,qwen
+capital of::Rome,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital of::Tokyo,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Artern,uncertain,HighlyKnown,0.0,1.0,1.0,qwen
+"capital::Atenas, Alajuela, Costa Rica",uncertain,HighlyKnown,0.0,0.6666666666666666,0.0,qwen
+capital::Cyprus,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Florida,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Gmina Andrespol,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Gmina Brzeszcze,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Gmina Radomsko,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Gmina Secemin,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::India,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Malaysia,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Medzilaborce District,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Mexico,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Muyinga Province,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::New Jersey,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Pakistan,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Pennsylvania,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Poprad District,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Qasr-e Shirin County,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Romania,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Russia,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Saanen District,uncertain,HighlyKnown,0.0,0.6666666666666666,0.0,qwen
+capital::Saudi Arabia,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Sri Lanka,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Taylor,uncertain,Unknown,0.0,1.0,0.6666666666666666,qwen
+capital::Ungheni County,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::United Arab Emirates,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::United States of America,control,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Vimmerby Municipality,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::Zofingen District,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+capital::arrondissement of Limoges,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+color::Arsenal Fútbol Club,uncertain,Unknown,0.0,0.0,0.0,qwen
+composer::Alone,uncertain,Unknown,0.0,0.0,0.0,qwen
+composer::Asli and Kerem,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+composer::Cabaret,control,HighlyKnown,0.0,0.0,0.0,qwen
+"composer::Das neugeborne Kindelein, BWV 122",uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+"composer::Erfreute Zeit im neuen Bunde, BWV 83",uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+composer::Everything but You,uncertain,Unknown,0.0,0.0,0.0,qwen
+composer::Halloween,control,Unknown,0.0,0.0,0.0,qwen
+composer::Holes,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+composer::Inside Out,control,Unknown,0.0,0.0,0.0,qwen
+composer::Metroid,control,Unknown,0.0,0.0,0.0,qwen
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+composer::Sandhya,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+composer::Say When,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+composer::Star Trek: The Next Generation,control,Unknown,0.0,0.0,0.0,qwen
+"composer::Symphony, K. 19b",uncertain,HighlyKnown,0.0,0.0,0.3333333333333333,qwen
+composer::The Host,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+composer::The Last Starfighter,control,Unknown,0.0,0.0,0.0,qwen
+composer::The Last of Us,control,Unknown,0.0,0.0,0.0,qwen
+composer::The Moment's Energy,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,qwen
+composer::The Village,control,Unknown,0.0,1.0,0.0,qwen
+composer::There Will Be Blood,control,Unknown,0.0,0.0,0.0,qwen
+country::112th United States Colored Infantry,uncertain,HighlyKnown,0.0,0.0,0.3333333333333333,qwen
+country::Aristotle University of Thessaloniki,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::Australian Labor Party,control,Unknown,0.0,0.0,0.0,qwen
+country::Bitchū-Kawamo Station,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Chalhuacocha,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Colorado College,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::Călmuș River,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Dubicze Osoczne,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+"country::Dąbkowice, Łódź Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::KLM,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::Kawahigashi Station,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Kozići,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Kılıçlı Kavlaklı,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Millennium Biltmore Hotel,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::Mount Shinten,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Muratdere,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Pârâul Bogat,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Rong,control,Unknown,0.0,0.6666666666666666,0.3333333333333333,qwen
+"country::Sarnowo, Chełmno County",uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Space Shuttle program,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::Stare Brzóski,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Szczecin Scientific Society,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Tangal-e Behdan,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Tartaczek,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+country::Tervola Radio and TV-Mast,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::The Players Championship,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::University of Central Missouri,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::Valdearcos de la Vega,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Valea Pleșii River,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Valea Seacă River,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+country::Williamson County,control,HighlyKnown,0.0,0.0,0.0,qwen
+country::Xaga,uncertain,Unknown,0.0,0.3333333333333333,0.6666666666666666,qwen
+"country::Łazy, Sierpc County",uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+"country::Łodygowo, Pisz County",uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+director::10,control,Unknown,0.0,0.0,0.0,qwen
+director::A.I. Artificial Intelligence,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::An Event,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,qwen
+director::Back to the Future,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Boys,uncertain,Unknown,0.0,0.3333333333333333,0.6666666666666666,qwen
+director::Brave,control,Unknown,0.0,0.0,0.0,qwen
+director::Citizen Kane,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Compliance,control,Unknown,0.0,1.0,0.6666666666666666,qwen
+director::Fantastic Four,control,Unknown,0.0,0.0,0.0,qwen
+director::Independence Day,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Inside Out,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Into the Wild,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Into the Woods,control,Unknown,0.0,0.0,0.0,qwen
+director::Iron Man,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::LOL,control,Unknown,0.0,0.6666666666666666,0.0,qwen
+director::La Haine,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::La cruz,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::Laura,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Lost,control,Unknown,0.0,0.0,0.0,qwen
+director::Marriages,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,qwen
+director::Moon,control,Unknown,0.0,0.0,0.3333333333333333,qwen
+director::My House,uncertain,Unknown,0.0,0.6666666666666666,0.0,qwen
+director::Nice People,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,qwen
+director::Nine,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::Not So Long Ago,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::PK,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::Paprika,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Per amare Ofelia,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::Rebecca,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Run for Money,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::Sam,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::Scary Movie 3,control,Unknown,0.0,0.0,0.0,qwen
+director::September,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::Sold,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::The Accused,control,Unknown,0.0,0.0,0.0,qwen
+director::The Birds,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::The Black Book,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::The Day After,control,Unknown,0.0,0.0,0.0,qwen
+director::The Fog,control,Unknown,0.0,0.0,0.0,qwen
+director::The Girl in Mourning,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::The Holiday,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::The Mighty,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::The Only Woman,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::The Pigskin Palooka,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::The Sting,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::The Trap,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::The Wrestler,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::This Is the End,control,HighlyKnown,0.0,0.0,0.0,qwen
+director::Those Who Love,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::Turn to the Right,uncertain,Unknown,0.0,0.0,0.0,qwen
+director::Vanity,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+director::What Every Woman Learns,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.0,qwen
+father::Al Gore,control,HighlyKnown,0.0,0.0,0.0,qwen
+father::Alexander the Great,control,HighlyKnown,0.0,0.0,0.0,qwen
+father::Apollo,control,HighlyKnown,0.0,0.0,0.0,qwen
+father::Aung San Suu Kyi,control,HighlyKnown,0.0,0.0,0.0,qwen
+father::Bert Bertrand,uncertain,Unknown,0.0,1.0,1.0,qwen
+father::Brandon Lee,control,HighlyKnown,0.0,0.0,0.0,qwen
+father::Chelsea Clinton,control,HighlyKnown,0.0,0.0,0.0,qwen
+father::Court Martial,uncertain,Unknown,0.0,0.0,0.0,qwen
+father::Dance in the Dark,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,qwen
+father::Folke Zettervall,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,qwen
+father::Francesco Maria Farnese,uncertain,Unknown,0.0,0.0,0.0,qwen
+father::Giacomo Guardi,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+father::Leif Claesson,uncertain,Unknown,0.0,1.0,1.0,qwen
+father::Mark Twain,control,HighlyKnown,0.0,0.0,0.0,qwen
+"father::Mary, Queen of Scots",control,HighlyKnown,0.0,0.0,0.0,qwen
+father::Melora Hardin,control,Unknown,1.0,1.0,1.0,qwen
+father::Moses,control,Unknown,0.0,0.3333333333333333,0.3333333333333333,qwen
+father::Rand Paul,control,Unknown,0.0,0.0,0.0,qwen
+father::Wang Yuankui,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.6666666666666666,qwen
+genre::2001,control,Unknown,0.0,0.0,0.0,qwen
+genre::All Good Things,control,Unknown,0.0,0.0,0.0,qwen
+genre::Brad Delp,control,Unknown,0.0,0.0,0.0,qwen
+genre::CSI,control,Unknown,0.0,0.0,0.0,qwen
+genre::Dark Matter,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+genre::Doctor Who,control,HighlyKnown,0.0,0.0,0.0,qwen
+genre::Dune 2000,control,Unknown,0.0,0.0,0.0,qwen
+genre::Focus,control,Unknown,0.0,0.0,0.0,qwen
+genre::Fuel,control,Unknown,0.0,0.0,0.0,qwen
+genre::Gorillaz,control,Unknown,0.0,0.0,0.0,qwen
+genre::In Silence,uncertain,Unknown,0.0,0.0,0.0,qwen
+genre::Info,uncertain,Unknown,0.0,0.0,0.0,qwen
+genre::Inside Out,control,HighlyKnown,0.0,0.0,0.0,qwen
+genre::King Crimson,control,HighlyKnown,0.0,0.0,0.0,qwen
+genre::Magic,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+genre::Magic Music,uncertain,Unknown,0.0,0.6666666666666666,0.0,qwen
+genre::Megan Is Missing,control,Unknown,0.0,0.0,0.0,qwen
+genre::Milk,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+genre::Mobile Home,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+genre::My Family,control,Unknown,0.0,0.0,0.0,qwen
+genre::Nightdreamers,uncertain,Unknown,0.0,0.0,0.0,qwen
+genre::Nine Inch Nails,control,HighlyKnown,0.0,0.0,0.0,qwen
+genre::RCA Records,control,Unknown,0.0,0.0,0.0,qwen
+genre::Reach,uncertain,Unknown,0.0,0.0,0.0,qwen
+genre::Rome,control,Unknown,0.0,1.0,0.0,qwen
+genre::S Club 7,control,HighlyKnown,0.0,0.0,0.0,qwen
+genre::Say It Again,uncertain,Unknown,0.0,0.0,0.0,qwen
+genre::Shark Monroe,uncertain,Unknown,0.0,0.0,0.0,qwen
+genre::Something Near,uncertain,Unknown,0.0,1.0,0.0,qwen
+genre::Steps,control,Unknown,0.0,0.0,0.0,qwen
+genre::Tales,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+genre::The Hare Census,uncertain,Unknown,0.0,0.0,0.0,qwen
+genre::The Rolling Stones,control,HighlyKnown,0.0,0.0,0.0,qwen
+genre::Troy,control,Unknown,0.0,0.0,0.0,qwen
+genre::Up in the Air,control,Unknown,0.0,0.0,0.0,qwen
+genre::Viva la vida or Death and All His Friends,control,Unknown,0.0,0.0,0.0,qwen
+genre::Wake Up,uncertain,Unknown,0.0,0.0,0.0,qwen
+mother::Abraham Lincoln,control,HighlyKnown,0.0,0.0,0.0,qwen
+mother::Amitabh Bachchan,control,Unknown,0.0,0.0,0.0,qwen
+mother::Cher,control,Unknown,0.0,0.0,0.0,qwen
+mother::Edgar Allan Poe,control,Unknown,0.0,0.0,0.0,qwen
+mother::George VI,control,Unknown,0.0,0.0,0.0,qwen
+mother::George Washington,control,HighlyKnown,0.0,0.0,0.0,qwen
+mother::Princess Marie Gabriele of Luxembourg,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+occupation::Alex Reid,control,Unknown,0.0,1.0,0.6666666666666666,qwen
+occupation::Brigitte Bardot,control,HighlyKnown,0.0,0.0,0.0,qwen
+occupation::Charles Martin Smith,control,HighlyKnown,0.0,0.0,0.0,qwen
+occupation::G.E.M.,control,Unknown,0.0,0.0,0.0,qwen
+occupation::James Cook,control,Unknown,0.0,0.0,0.0,qwen
+occupation::Jason Reitman,control,HighlyKnown,0.0,0.0,0.0,qwen
+occupation::Josh Mankiewicz,control,Unknown,0.0,0.0,0.0,qwen
+occupation::Kiko Mizuhara,control,HighlyKnown,0.0,0.0,0.0,qwen
+occupation::Modou Dia,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+occupation::Will Smith,control,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Domenico Bologna,uncertain,Unknown,0.0,0.0,0.0,qwen
+place of birth::Dr. John,control,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Eduardo Hurtado,control,Unknown,0.0,0.0,0.0,qwen
+place of birth::Edward Drinker Cope,control,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Florian Reichstädter,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Gustavo Grondona,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Gyula Czimra,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Jiří Vyčichlo,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Juan Luis Guerra,control,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Lloyd Ultan,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Paris,control,Unknown,0.0,0.0,0.0,qwen
+place of birth::Peter Philpott,control,Unknown,0.0,0.0,0.0,qwen
+place of birth::Piotr Balcerzak,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+place of birth::Ray Strauss,uncertain,Unknown,0.0,0.0,0.0,qwen
+place of birth::Robert Zawada,uncertain,Unknown,0.0,0.0,0.0,qwen
+place of birth::Steve Kerr,control,Unknown,0.0,0.0,0.0,qwen
+place of birth::Ted Williams,control,Unknown,0.0,0.0,0.0,qwen
+place of birth::Trae tha Truth,control,Unknown,0.0,0.0,0.0,qwen
+producer::After Hours,control,Unknown,0.0,0.0,0.0,qwen
+producer::Airport,uncertain,Unknown,0.0,0.0,0.0,qwen
+producer::Avatar,control,HighlyKnown,0.0,0.0,0.0,qwen
+producer::Awakening,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+producer::Competition,uncertain,Unknown,0.0,0.0,0.0,qwen
+producer::From Now On,uncertain,Unknown,0.0,0.0,0.0,qwen
+producer::Glory,control,Unknown,0.0,0.0,0.0,qwen
+producer::Halloween,control,HighlyKnown,0.0,0.0,0.0,qwen
+producer::Here Is Always Somewhere Else,uncertain,Unknown,0.0,0.0,0.0,qwen
+producer::Hoffmeyer's Legacy,uncertain,Unknown,0.0,0.6666666666666666,1.0,qwen
+producer::Holes,control,Unknown,0.0,0.0,0.0,qwen
+producer::Images,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+producer::It's Not Enough,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,qwen
+producer::Just Around the Corner,uncertain,Unknown,0.0,0.0,0.0,qwen
+producer::Off the Wall,control,HighlyKnown,0.0,0.0,0.0,qwen
+producer::PK,control,Unknown,0.0,0.0,0.0,qwen
+producer::Paid in Full,control,Unknown,0.0,0.0,0.0,qwen
+producer::She,uncertain,Unknown,0.0,0.0,0.0,qwen
+producer::The Birds,control,HighlyKnown,0.0,0.0,0.0,qwen
+producer::The Fly,control,Unknown,0.0,0.0,0.0,qwen
+producer::The Harvest Shall Come,uncertain,Unknown,0.0,0.0,0.3333333333333333,qwen
+producer::The Hayseeds' Back-blocks Show,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,qwen
+producer::Titanic,control,HighlyKnown,0.0,0.0,0.0,qwen
+producer::Vertigo,control,HighlyKnown,0.0,0.0,0.0,qwen
+producer::Waterworld,control,HighlyKnown,0.0,0.0,0.0,qwen
+religion::James Uno,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.6666666666666666,qwen
+religion::James VI and I,control,Unknown,0.0,0.0,0.0,qwen
+religion::Joseph Schubert,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.6666666666666666,qwen
+religion::Kumail Nanjiani,control,Unknown,0.0,0.0,0.0,qwen
+religion::Queen Victoria,control,Unknown,0.0,0.0,0.0,qwen
+religion::William Preston,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.3333333333333333,qwen
+screenwriter::Alexander,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Angels & Demons,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Annie,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Ars,uncertain,Unknown,0.0,0.6666666666666666,0.0,qwen
+screenwriter::Assassinio sul Tevere,uncertain,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Big,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Brooklyn,control,HighlyKnown,0.0,0.0,0.0,qwen
+screenwriter::Closer,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Come and See,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Cube,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Death of a Batman,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,qwen
+screenwriter::Dennis the Menace,control,Unknown,0.0,0.3333333333333333,0.0,qwen
+screenwriter::Disorder,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,qwen
+screenwriter::Exit the Vamp,uncertain,Unknown,0.0,0.3333333333333333,0.0,qwen
+screenwriter::Gravity,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Hot Fuzz,control,HighlyKnown,0.0,0.0,0.0,qwen
+screenwriter::Iron Man 3,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Love,control,Unknown,0.0,0.6666666666666666,0.0,qwen
+screenwriter::Manzil,uncertain,Unknown,0.6666666666666666,0.6666666666666666,0.0,qwen
+screenwriter::Mary's Ankle,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,qwen
+screenwriter::Men and Women,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.0,qwen
+screenwriter::Noah,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::On Tour,uncertain,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Rails,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,qwen
+screenwriter::Rent,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Small Town,uncertain,Unknown,0.0,0.6666666666666666,0.0,qwen
+screenwriter::Soylent Green,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Sunshine,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::The Birds,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::The Daily Show with Trevor Noah,control,Unknown,0.3333333333333333,0.3333333333333333,0.0,qwen
+screenwriter::The Game,uncertain,Unknown,0.0,0.0,0.0,qwen
+screenwriter::The Internship,control,HighlyKnown,0.0,0.0,0.0,qwen
+screenwriter::The Pacific,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::The Parents,uncertain,Unknown,0.0,1.0,0.0,qwen
+screenwriter::The Prestige,control,HighlyKnown,0.0,0.0,0.0,qwen
+screenwriter::The Supplement,uncertain,Unknown,0.0,0.0,0.0,qwen
+screenwriter::The Terminal,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::The Thing from Another World,control,Unknown,0.0,0.0,0.0,qwen
+screenwriter::Up in the Air,control,HighlyKnown,0.0,0.0,0.0,qwen
+sport::1989–90 1. Slovenská národná hokejová liga season,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+sport::2012 Georgetown Hoyas men's soccer team,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+sport::All-Ireland Senior Club Camogie Championship 1970,uncertain,HighlyKnown,0.0,0.0,0.0,qwen
+sport::Anderson,control,Unknown,0.0,0.6666666666666666,0.0,qwen
+sport::Birmingham City F.C.,control,Unknown,0.0,0.0,0.0,qwen
+sport::Eric Snow,control,Unknown,0.0,0.0,0.0,qwen
+sport::Frank Cornan,uncertain,Unknown,0.6666666666666666,1.0,1.0,qwen
+sport::Koumiba Djossouvi,uncertain,Unknown,0.0,0.0,0.0,qwen
+sport::Los Angeles Galaxy,control,HighlyKnown,0.0,0.0,0.0,qwen
+sport::Oyanaisis Gelis,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,qwen
+sport::Port Adelaide Football Club,control,HighlyKnown,0.0,0.0,0.0,qwen
+sport::Toni Kukoč,control,HighlyKnown,0.0,0.0,0.0,qwen
+sport::Vyacheslav Chadov,uncertain,Unknown,0.0,0.0,0.0,qwen
+sport::linebacker,control,HighlyKnown,0.0,0.0,0.0,qwen
+author::Black,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+author::Bone,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::Freezing,control,Unknown,0.0,0.0,0.0,gemma
+author::GNU Affero General Public License,control,Unknown,0.0,0.0,0.0,gemma
+author::Help Wanted,control,Unknown,0.0,0.0,0.0,gemma
+author::Histories,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::Homecoming,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+author::Looking Forward,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+author::Nineteen Eighty-Four,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::Non,uncertain,Unknown,0.0,0.0,0.0,gemma
+author::On War,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::One Piece,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::Out of This World,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+author::Real,control,Unknown,0.0,0.0,0.0,gemma
+author::Reflex,control,Unknown,0.0,0.0,0.0,gemma
+author::Saints of Big Harbour,uncertain,Unknown,0.0,0.0,0.0,gemma
+author::Skin,uncertain,Unknown,0.0,0.0,0.0,gemma
+author::Stack Overflow,control,Unknown,0.0,0.0,0.0,gemma
+author::The Birds,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::The Book Thief,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::The Boys,control,Unknown,0.0,0.0,0.0,gemma
+author::The Hero,uncertain,Unknown,0.0,0.0,0.0,gemma
+author::The Kraken Wakes,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::The Lie,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+author::The Ritual,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::The Song of Hiawatha,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::Today,control,Unknown,0.0,0.0,0.0,gemma
+author::Utopia,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::West,uncertain,Unknown,0.0,0.0,0.0,gemma
+capital of::Austin,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital of::Busia,uncertain,Unknown,0.0,0.0,0.0,gemma
+capital of::Kaberamaido,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital of::London,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital of::Paris,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital of::Totskoye,uncertain,Unknown,0.0,0.0,0.3333333333333333,gemma
+capital::Afghanistan,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Anivsky District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+"capital::Atenas, Alajuela, Costa Rica",uncertain,Unknown,0.0,0.0,0.0,gemma
+capital::Bastak County,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Biaroza District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Chiprovtsi Municipality,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Gmina Andrespol,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Gmina Brzeszcze,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Gmina Radomsko,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Gmina Secemin,uncertain,HighlyKnown,0.3333333333333333,0.3333333333333333,1.0,gemma
+capital::Iran,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Kambarsky District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Kareličy District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Malaysia,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Medzilaborce District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Molokovsky District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Muyinga Province,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::New York,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Norway,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Ohio,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Orotina Canton,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Plaza,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,gemma
+capital::Poprad District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Qasr-e Shirin County,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Romania,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Saanen District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Sal,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Sesia,uncertain,HighlyKnown,0.0,0.3333333333333333,0.3333333333333333,gemma
+capital::South Korea,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Soviet Union,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Sucha County,uncertain,HighlyKnown,0.0,0.6666666666666666,0.3333333333333333,gemma
+capital::Sweden,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Ukraine,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Ungheni County,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::United Kingdom,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Uttar Pradesh,control,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Verbandsgemeinde Bad Ems,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Verbandsgemeinde Loreley,uncertain,Unknown,0.0,0.0,0.0,gemma
+capital::Vimmerby Municipality,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Yalutorovsky District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Yunguyo Province,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::Zofingen District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::arrondissement of Castellane,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::arrondissement of Lannion,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::arrondissement of Limoges,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::arrondissement of Niort,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::canton of Antibes-Biot,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+capital::canton of Harnes,uncertain,HighlyKnown,0.0,0.3333333333333333,0.0,gemma
+capital::canton of Mirambeau,uncertain,HighlyKnown,0.0,0.3333333333333333,0.0,gemma
+capital::canton of Saint-Doulchard,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+color::Arsenal Fútbol Club,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+composer::College,uncertain,Unknown,0.0,0.0,0.0,gemma
+composer::Company,control,HighlyKnown,0.0,0.0,0.0,gemma
+"composer::Das neugeborne Kindelein, BWV 122",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+composer::Estate,uncertain,Unknown,0.0,0.0,0.0,gemma
+composer::Happy Feet,control,HighlyKnown,0.0,0.0,0.0,gemma
+composer::Images,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+composer::La nave,uncertain,Unknown,0.0,0.0,0.3333333333333333,gemma
+composer::Let It Be,control,Unknown,0.0,0.0,0.0,gemma
+composer::One,uncertain,Unknown,0.0,0.0,0.0,gemma
+composer::One More Time,uncertain,Unknown,0.0,0.0,0.0,gemma
+composer::Pole,uncertain,Unknown,0.0,0.0,0.0,gemma
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+composer::Say When,uncertain,Unknown,0.0,0.0,0.0,gemma
+composer::String Quartet No. 3,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+"composer::Symphony, K. 19b",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+composer::Tea for One,uncertain,Unknown,0.0,0.0,0.0,gemma
+composer::The Last of Us,control,HighlyKnown,0.0,0.0,0.0,gemma
+composer::The Master,control,Unknown,0.0,0.0,0.0,gemma
+composer::The Planets,control,HighlyKnown,0.0,0.0,0.0,gemma
+composer::The Sting,control,HighlyKnown,0.0,0.0,0.0,gemma
+composer::To Live,uncertain,Unknown,0.0,0.0,0.0,gemma
+composer::True Blood,control,HighlyKnown,0.0,0.0,0.0,gemma
+composer::Up,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::112th United States Colored Infantry,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Abkhaz,control,Unknown,0.0,0.0,0.0,gemma
+"country::Abra, Ivory Coast",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Alexeni River,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Anaran Rural District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::BT Group,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Belavia,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Bitchū-Kawamo Station,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Cambridge,control,Unknown,0.0,0.0,0.0,gemma
+country::Chal Siah Manchatun Jowkar,uncertain,HighlyKnown,0.6666666666666666,1.0,0.6666666666666666,gemma
+country::Chalhuacocha,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Ciucurul Orbului River,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Cổ Linh,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Dell,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Devon,control,Unknown,0.0,0.0,0.0,gemma
+country::Drăgăneasa River,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Dubicze Osoczne,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+"country::Dąbkowice, Łódź Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Dəhnəxəlil,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Epic Records,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Eslamabad-e Mashayekh,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Fântâneaua Rece River,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Gawarzec Dolny,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Gornji Davidovići,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Indian Child Welfare Act,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Izvorul Morarului River,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Jelow Girangeh,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Jeqjeq-e Pain,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::KMEI-LP,uncertain,HighlyKnown,0.0,0.3333333333333333,0.3333333333333333,gemma
+country::Karahasanlı,uncertain,Unknown,0.0,0.0,0.0,gemma
+country::Katmai National Park and Preserve,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Khvajeh Soheyl,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Korean Magazine Museum,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Kuczynka,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Kılıçlı Kavlaklı,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Laika,control,Unknown,0.0,0.0,0.0,gemma
+country::Millennium Biltmore Hotel,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Mount Shinten,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Muratdere,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Nowa Wieś Reszelska,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Puzdrowizna,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Pârâul Bogat,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Riechheimer Berg,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Rizuiyeh,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Royal Navy,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Rubim do Norte River,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Sar Giz,uncertain,Unknown,0.0,0.0,0.3333333333333333,gemma
+country::Sholoktu,uncertain,Unknown,0.0,0.0,0.0,gemma
+country::Stare Brzóski,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Szczecin Scientific Society,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Tangal-e Behdan,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Tervola Radio and TV-Mast,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Tholuvankadu,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Uñón District,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Vale,control,HighlyKnown,0.0,0.0,0.0,gemma
+country::Valea Seacă River,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Wiesau,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+"country::Wir, Masovian Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::Zec Petawaga,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+country::canton of Baugy,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+director::Alice Walker: Beauty in Truth,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+director::All the Way Up,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Annie,control,Unknown,0.0,0.0,0.0,gemma
+director::Best in Show,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Blow,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Boys,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Brave,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Breaking Bad,control,Unknown,0.0,0.0,0.0,gemma
+director::Cabaret,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Carrie,control,Unknown,0.0,0.0,0.0,gemma
+director::Competition,uncertain,Unknown,0.0,1.0,0.0,gemma
+director::Crash,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Cuadrilátero,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Delivering,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Destiny,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Echo,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Help Wanted,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::In Time,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Into the Wild,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Jobs,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::MASH,control,Unknown,0.0,0.0,0.0,gemma
+director::Maine Pyar Kiya,control,Unknown,0.0,0.0,0.0,gemma
+director::Mask,control,Unknown,0.0,0.0,0.0,gemma
+director::Mud,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Nice People,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Old School,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Pi,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Qayamat Se Qayamat Tak,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Revenge,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Sam,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Spaced,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::The Artist,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::The Beach,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::The Betrayed,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::The Dog,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::The Fountain,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::The Happy Family,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::The Omen,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::The Room,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::The Wrestler,control,HighlyKnown,0.0,0.0,0.0,gemma
+director::Washed Out,uncertain,Unknown,0.0,0.0,0.0,gemma
+director::Wherever You Are,uncertain,Unknown,0.0,0.0,0.0,gemma
+father::Alexander Graham Bell,control,HighlyKnown,0.0,0.0,0.0,gemma
+"father::Anselm Marshal, 6th Earl of Pembroke",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+father::Charles II of England,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::David,control,Unknown,0.0,0.0,0.0,gemma
+father::David Cassidy,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::Donald Trump,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::Folke Zettervall,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.0,gemma
+father::Giacomo Guardi,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+father::James VI and I,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::Johann Sebastian Bach,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::John Donkin,uncertain,Unknown,0.6666666666666666,1.0,0.0,gemma
+father::Ki,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+father::Kim Kardashian,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::Mark Twain,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::Morgan,uncertain,Unknown,0.0,1.0,0.6666666666666666,gemma
+father::Moses,control,HighlyKnown,0.0,0.0,0.0,gemma
+father::Pieter Gerardus van Os,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+father::Rama,control,HighlyKnown,0.0,0.0,0.0,gemma
+"father::Theobald Butler, 1st Viscount Butler of Tulleophelim",uncertain,Unknown,0.0,0.0,0.0,gemma
+father::Thor,control,HighlyKnown,0.0,0.0,0.0,gemma
+genre::10,control,Unknown,0.0,0.6666666666666666,0.0,gemma
+genre::Avatar: The Last Airbender,control,Unknown,0.0,0.0,0.0,gemma
+genre::Betrayal,uncertain,Unknown,0.0,0.0,0.0,gemma
+genre::Conversations,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+genre::Dinosaur,control,Unknown,0.0,0.3333333333333333,0.0,gemma
+genre::Drama,uncertain,Unknown,0.0,0.0,0.0,gemma
+genre::El honorable Señor Valdez,uncertain,Unknown,0.0,0.0,0.0,gemma
+genre::Elizabeth Davis,uncertain,Unknown,0.0,0.0,0.0,gemma
+genre::Epic,control,Unknown,0.0,0.3333333333333333,0.0,gemma
+genre::Focus,control,Unknown,0.0,0.0,0.0,gemma
+genre::Glory,control,Unknown,0.0,0.3333333333333333,0.0,gemma
+genre::Gorillaz,control,Unknown,0.0,0.0,0.3333333333333333,gemma
+genre::Heaven,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+genre::Holes,control,Unknown,0.0,0.0,0.0,gemma
+genre::John Entwistle,control,HighlyKnown,0.0,0.0,0.0,gemma
+genre::MUD,control,Unknown,0.0,0.0,0.3333333333333333,gemma
+genre::More Love,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+genre::Network,control,Unknown,0.0,0.0,0.0,gemma
+genre::Our Time,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+genre::Paris Hilton,control,Unknown,0.0,0.0,0.0,gemma
+genre::Peter Paul Rubens,control,Unknown,0.0,0.0,0.0,gemma
+genre::Prince,control,Unknown,0.0,0.0,0.0,gemma
+genre::Red Velvet,control,Unknown,0.0,0.0,0.0,gemma
+genre::Scorpio,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+genre::Shade,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+genre::Sonic Youth,control,Unknown,0.0,0.0,0.0,gemma
+genre::Star Trek: First Contact,control,Unknown,0.0,0.0,0.0,gemma
+genre::Target,uncertain,Unknown,0.0,0.0,0.0,gemma
+"genre::Tempting The Gods: The Selected Stories of Tanith Lee, Volume 1",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+genre::The Fly,control,Unknown,0.0,0.0,0.3333333333333333,gemma
+genre::The Gap,uncertain,Unknown,0.0,0.0,0.0,gemma
+genre::The Good Life,control,Unknown,0.0,0.0,0.0,gemma
+genre::The Others,control,Unknown,0.0,0.0,0.0,gemma
+"genre::The Remarkable Exploits of Lancelot Biggs, Spaceman",uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+genre::They Live,control,Unknown,0.0,0.0,0.0,gemma
+genre::Thin Ice,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+genre::Too Short,control,Unknown,0.0,0.0,0.0,gemma
+genre::Tool,control,Unknown,0.0,0.0,0.0,gemma
+genre::Troy,control,Unknown,0.0,0.3333333333333333,0.0,gemma
+genre::Unknown,uncertain,Unknown,0.0,1.0,1.0,gemma
+genre::Until I Met You,uncertain,Unknown,0.0,0.0,0.0,gemma
+genre::VS,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+genre::Viva la vida or Death and All His Friends,control,Unknown,0.0,0.0,0.0,gemma
+genre::Waveform Audio File Format,control,Unknown,0.0,0.0,0.0,gemma
+mother::Cher,control,HighlyKnown,0.0,0.0,0.0,gemma
+"mother::Constantine I, King of Armenia",uncertain,Unknown,0.0,0.0,0.0,gemma
+mother::Edgar Allan Poe,control,Unknown,0.0,0.0,0.0,gemma
+mother::Michael Jackson,control,HighlyKnown,0.0,0.0,0.0,gemma
+mother::Sean Penn,control,HighlyKnown,0.0,0.0,0.0,gemma
+occupation::Bala,control,Unknown,0.0,0.6666666666666666,0.0,gemma
+occupation::Frits Castricum,uncertain,Unknown,1.0,1.0,0.6666666666666666,gemma
+occupation::James Cook,control,Unknown,0.0,0.0,0.3333333333333333,gemma
+occupation::John Finlay,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+occupation::Kamya Panjabi,control,HighlyKnown,0.0,0.0,0.0,gemma
+occupation::Kanye West,control,Unknown,0.0,0.0,0.0,gemma
+occupation::Michael Hutchings,uncertain,Unknown,0.0,0.0,0.0,gemma
+occupation::Paul,control,Unknown,0.0,0.3333333333333333,0.0,gemma
+occupation::Robert Jonckheere,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.0,gemma
+occupation::Rumi,control,Unknown,0.0,0.0,0.0,gemma
+occupation::Seungri,control,Unknown,0.0,0.0,0.0,gemma
+occupation::T. P. Poonatchi,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,gemma
+occupation::Tiffany Pollard,control,Unknown,0.0,0.0,0.0,gemma
+"occupation::Tyler, the Creator",control,Unknown,0.0,0.0,0.0,gemma
+place of birth::Diotima of Mantinea,control,Unknown,0.0,0.0,0.0,gemma
+place of birth::Edward Drinker Cope,control,HighlyKnown,0.0,0.0,0.0,gemma
+place of birth::Gregorio Selser,uncertain,HighlyKnown,0.6666666666666666,0.6666666666666666,0.3333333333333333,gemma
+place of birth::Gustavo Grondona,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+place of birth::Gyula Czimra,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+place of birth::I.P. Paul,uncertain,Unknown,0.3333333333333333,1.0,0.3333333333333333,gemma
+place of birth::Jiří Vyčichlo,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+place of birth::Joanna Elisabeth of Holstein-Gottorp,control,Unknown,0.0,0.0,0.0,gemma
+"place of birth::John Spencer-Churchill, 11th Duke of Marlborough",control,Unknown,0.0,0.0,0.0,gemma
+place of birth::Juan Luis Guerra,control,HighlyKnown,0.0,0.0,0.0,gemma
+place of birth::Kensho Ono,control,Unknown,0.3333333333333333,0.3333333333333333,0.0,gemma
+place of birth::Marnus Labuschagne,control,Unknown,0.0,0.0,0.0,gemma
+place of birth::Michelle Renaudddd,control,Unknown,0.6666666666666666,1.0,1.0,gemma
+place of birth::Paris,control,Unknown,0.0,0.0,0.3333333333333333,gemma
+place of birth::Rahi Masoom Raza,control,Unknown,0.0,0.0,0.0,gemma
+place of birth::Tony Clark,control,Unknown,0.0,0.0,0.0,gemma
+producer::After Hours,control,Unknown,0.0,0.0,0.0,gemma
+producer::Best Of,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+producer::Dog,uncertain,Unknown,0.0,0.0,0.0,gemma
+producer::Dual,uncertain,Unknown,0.0,0.0,0.0,gemma
+producer::Fast & Furious 6,control,Unknown,0.0,0.0,0.0,gemma
+producer::Fear,control,Unknown,0.0,0.0,0.0,gemma
+producer::Flight,control,Unknown,0.0,0.0,0.0,gemma
+producer::Friends,control,Unknown,0.0,0.0,0.0,gemma
+producer::Happy Gilmore,control,Unknown,0.0,0.0,0.0,gemma
+producer::Home,uncertain,Unknown,0.0,0.0,0.0,gemma
+producer::Marvel Cinematic Universe,control,Unknown,0.0,0.0,0.0,gemma
+producer::Office Space,control,Unknown,0.0,0.0,0.0,gemma
+producer::One of the Best,uncertain,Unknown,0.0,0.0,0.0,gemma
+producer::Paid in Full,control,Unknown,0.0,0.0,0.0,gemma
+producer::Philadelphia,control,Unknown,0.0,0.0,0.0,gemma
+producer::Rent,control,Unknown,0.0,0.0,0.0,gemma
+producer::Resident Evil 2,control,Unknown,0.0,0.0,0.0,gemma
+producer::Revelations,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+producer::Rice,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,gemma
+producer::Skins,control,Unknown,0.0,0.0,0.0,gemma
+producer::The Fly,control,Unknown,0.0,0.3333333333333333,0.0,gemma
+producer::The Hayseeds' Back-blocks Show,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,gemma
+producer::The Possession,control,Unknown,0.0,0.0,0.0,gemma
+producer::The Professor,uncertain,Unknown,0.0,0.0,0.0,gemma
+producer::The Reader,control,Unknown,0.0,0.0,0.0,gemma
+producer::The Rock,control,Unknown,0.0,0.0,0.0,gemma
+producer::The Stand Up,uncertain,Unknown,0.0,0.0,0.0,gemma
+producer::The Tourist,control,Unknown,0.0,0.0,0.0,gemma
+producer::Three Hours,uncertain,Unknown,0.0,0.6666666666666666,0.0,gemma
+producer::Toy Story,control,Unknown,0.0,0.0,0.0,gemma
+producer::Up in the Air,control,Unknown,0.0,0.0,0.0,gemma
+producer::Vacation,control,Unknown,0.0,0.0,0.0,gemma
+producer::Warrior,control,Unknown,0.0,0.6666666666666666,0.0,gemma
+producer::Waterworld,control,Unknown,0.0,0.0,0.0,gemma
+producer::Wild Things,control,Unknown,0.0,0.0,0.0,gemma
+religion::Benedito Domingos Vito Coscia,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,gemma
+religion::Francis,control,Unknown,0.0,0.3333333333333333,0.0,gemma
+religion::Marilyn Monroe,control,Unknown,0.3333333333333333,1.0,1.0,gemma
+religion::Mark Twain,control,Unknown,0.0,0.0,0.0,gemma
+religion::Paul,control,HighlyKnown,0.0,0.0,0.0,gemma
+religion::Thomas Jefferson,control,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Annie,control,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Boquitas pintadas,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Brooklyn,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Carol,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Casino,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Chain,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Coach Carter,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Donsol,uncertain,Unknown,0.6666666666666666,1.0,0.0,gemma
+screenwriter::Dumbbells in Ermine,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Ergens in Nederland,uncertain,Unknown,0.6666666666666666,0.6666666666666666,0.0,gemma
+screenwriter::Fear No More,uncertain,Unknown,0.0,0.3333333333333333,0.0,gemma
+screenwriter::Groundhog Day,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Hoppa högst,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Identity,control,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Las Meninas,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Léon: The Professional,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::My Neighbor Totoro,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Pearl in the Crown,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Pixels,control,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Rent,control,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Revelations,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Rocky,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Room,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::Second Best Bed,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::Soylent Green,control,Unknown,0.0,0.0,0.0,gemma
+screenwriter::The Boondock Saints,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::The Boys,uncertain,Unknown,0.0,0.0,0.0,gemma
+screenwriter::The Conversation,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::The Intern,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::The Night Of,control,Unknown,0.0,0.0,0.0,gemma
+screenwriter::The Piano,control,HighlyKnown,0.0,0.0,0.0,gemma
+screenwriter::The Supplement,uncertain,Unknown,0.0,1.0,0.3333333333333333,gemma
+screenwriter::The Teaser,uncertain,Unknown,0.0,0.0,0.3333333333333333,gemma
+sport::1989–90 1. Slovenská národná hokejová liga season,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+sport::2012 Georgetown Hoyas men's soccer team,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+sport::All-Ireland Senior Club Camogie Championship 1970,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Boston United F.C.,control,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Chuck Bednarik,control,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Coventry City F.C.,control,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Eric Snow,control,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Indianapolis 500,control,Unknown,0.0,0.0,0.0,gemma
+sport::José Luis Contaja,uncertain,Unknown,0.0,0.0,0.0,gemma
+sport::Margarita Louis-Dreyfus,control,Unknown,0.0,0.0,1.0,gemma
+sport::Pittsburgh Penguins,control,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Radek Opršal,uncertain,Unknown,0.0,0.0,0.0,gemma
+sport::Ricardo Gónzalez Reinoso,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Toni Kukoč,control,HighlyKnown,0.0,0.0,0.0,gemma
+sport::Zanzibar national under-20 football team,uncertain,HighlyKnown,0.0,0.0,0.0,gemma
+sport::run batted in,control,HighlyKnown,0.0,0.0,0.0,gemma
+author::Against the Odds,uncertain,Unknown,0.0,1.0,0.0,mistral
+author::Aida,control,Unknown,0.0,0.0,0.0,mistral
+author::Betrayal,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Cool,control,Unknown,0.0,0.6666666666666666,0.0,mistral
+author::Crash,control,Unknown,0.0,0.0,0.0,mistral
+author::Elite,control,Unknown,0.0,0.3333333333333333,0.0,mistral
+author::Emma,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Everyday Use,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Follow The Music,uncertain,Unknown,0.0,0.0,0.0,mistral
+author::Hacker News,control,Unknown,0.0,0.0,0.0,mistral
+author::Jumper,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Kim,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Left Behind,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Legion,control,Unknown,0.0,0.0,0.0,mistral
+"author::Memory, Sorrow, and Thorn",control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Moneyball,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Nature,control,Unknown,0.0,0.3333333333333333,0.0,mistral
+author::New York,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+author::Only Human,uncertain,Unknown,0.0,0.0,0.0,mistral
+author::Patience,uncertain,Unknown,0.0,0.0,0.0,mistral
+author::Pen,uncertain,Unknown,0.0,0.0,0.0,mistral
+author::Rage,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+author::Rave Master,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::Saint Young Men,control,Unknown,0.0,0.0,0.3333333333333333,mistral
+author::School for Coquettes,uncertain,Unknown,0.0,0.0,0.0,mistral
+author::Science-Fantasy Quintette,uncertain,Unknown,0.0,0.0,0.0,mistral
+author::Spice and Wolf,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::The Adventures of Tom Sawyer,control,HighlyKnown,0.0,0.0,1.0,mistral
+author::The Book Thief,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::The Book of Mormon,control,Unknown,0.0,0.0,0.0,mistral
+author::The Every Boy,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.0,mistral
+author::The Host,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::The Little Prince,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::The Road,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::The Techniques of Democracy,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+author::The Trial,control,HighlyKnown,0.0,0.0,0.0,mistral
+author::The Warriors of Spider,uncertain,Unknown,0.0,0.0,0.0,mistral
+author::Today,control,Unknown,0.0,0.6666666666666666,0.0,mistral
+author::Turning On,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+author::representational state transfer,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital of::Atlanta,control,Unknown,0.0,0.0,0.0,mistral
+capital of::Boulsa,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.0,mistral
+capital of::Chennai,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital of::Dmitriyev,uncertain,Unknown,0.0,0.0,0.0,mistral
+capital of::Hyderabad,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital of::Laishevo,uncertain,Unknown,0.0,0.0,0.0,mistral
+capital of::Mexico City,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital::Alaska,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital::Cyprus,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital::France,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital::Gmina Radomsko,uncertain,HighlyKnown,0.0,0.3333333333333333,0.0,mistral
+capital::Iran,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital::Poprad District,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+capital::Saanen District,uncertain,Unknown,0.0,0.0,0.0,mistral
+capital::Sal,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+capital::Texas,control,HighlyKnown,0.0,0.0,0.0,mistral
+capital::Ungheni County,uncertain,HighlyKnown,0.0,0.0,0.6666666666666666,mistral
+capital::Verbandsgemeinde Loreley,uncertain,HighlyKnown,0.0,0.0,0.3333333333333333,mistral
+capital::Yunguyo Province,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+color::Arsenal Fútbol Club,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+composer::8½,control,Unknown,0.0,0.3333333333333333,0.0,mistral
+composer::Arrested Development,control,Unknown,0.0,0.3333333333333333,0.0,mistral
+composer::Chariots of Fire,control,HighlyKnown,0.0,0.0,0.0,mistral
+composer::Crash,control,Unknown,0.0,0.0,0.0,mistral
+"composer::Das neugeborne Kindelein, BWV 122",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+composer::Doctor Who,control,Unknown,0.0,0.0,0.6666666666666666,mistral
+composer::Dragon Age: Inquisition,control,Unknown,0.0,0.0,0.0,mistral
+"composer::Erfreute Zeit im neuen Bunde, BWV 83",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+composer::King Kong,control,HighlyKnown,0.0,0.0,0.0,mistral
+composer::Let Me Know,uncertain,Unknown,0.0,0.0,0.0,mistral
+composer::Leverage,control,Unknown,0.0,0.0,0.0,mistral
+composer::Miami Vice,control,Unknown,0.0,0.0,0.0,mistral
+composer::New Year,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+composer::Porch,uncertain,Unknown,0.0,0.0,0.0,mistral
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+composer::Rocky,control,Unknown,0.0,0.0,0.0,mistral
+composer::Star Trek: First Contact,control,HighlyKnown,0.0,0.0,0.0,mistral
+"composer::Symphony, K. 19b",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+composer::Tailor Wibbel,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.0,mistral
+composer::The Giants,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+composer::The Hope,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+composer::The Island,control,Unknown,0.0,0.3333333333333333,0.0,mistral
+composer::The Moment's Energy,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+composer::The Planets,control,HighlyKnown,0.0,0.0,0.0,mistral
+composer::The Room,control,Unknown,0.0,0.0,0.0,mistral
+composer::The Village,control,Unknown,0.0,0.3333333333333333,0.3333333333333333,mistral
+composer::The Witch,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+composer::Tron,control,Unknown,0.0,0.0,0.0,mistral
+composer::Up,control,HighlyKnown,0.0,0.0,0.0,mistral
+country::Anaran Rural District,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Aristotle University of Thessaloniki,control,HighlyKnown,0.0,0.0,0.0,mistral
+country::Bank of Korea,control,HighlyKnown,0.0,0.0,0.0,mistral
+country::Bethel,control,Unknown,0.0,0.3333333333333333,0.0,mistral
+country::Bitchū-Kawamo Station,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::British American Tobacco,control,Unknown,0.0,0.0,0.0,mistral
+country::Chalhuacocha,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Călmuș River,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Cổ Linh,uncertain,HighlyKnown,0.0,0.0,1.0,mistral
+country::Dell,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Directorate of Military Intelligence,control,Unknown,0.0,0.0,0.0,mistral
+country::Drăgăneasa River,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Dubicze Osoczne,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+"country::Dąbkowice, Łódź Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Dəhnəxəlil,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Epic Records,control,HighlyKnown,0.0,0.0,0.0,mistral
+country::Eslamabad-e Mashayekh,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Fântâneaua Rece River,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Gawarzec Dolny,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Gori Balmak,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.3333333333333333,mistral
+country::Gornji Davidovići,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Izvorul Morarului River,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Jeqjeq-e Pain,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::KMEI-LP,uncertain,HighlyKnown,0.0,0.0,0.3333333333333333,mistral
+country::Kawahigashi Station,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Khvajeh Soheyl,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Korean Magazine Museum,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+"country::Kowale, Lower Silesian Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Kozići,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Kılıçlı Kavlaklı,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Mohammadabad-e Razzaqzadeh,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Muratdere,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::New School,control,HighlyKnown,0.0,0.0,0.0,mistral
+country::Nowa Wieś Reszelska,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Port Authority Trans-Hudson,control,HighlyKnown,0.0,0.0,0.0,mistral
+country::Pârâul Bogat,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Riechheimer Berg,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Rizuiyeh,uncertain,HighlyKnown,0.0,0.0,0.3333333333333333,mistral
+country::Rubim do Norte River,uncertain,HighlyKnown,0.0,0.3333333333333333,0.6666666666666666,mistral
+"country::Sarnowo, Chełmno County",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Sholoktu,uncertain,Unknown,0.0,0.0,0.0,mistral
+country::Space Shuttle program,control,HighlyKnown,0.0,0.0,0.0,mistral
+country::Stare Brzóski,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Szczecin Scientific Society,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Tangal-e Behdan,uncertain,HighlyKnown,0.0,0.0,0.3333333333333333,mistral
+country::Tervola Radio and TV-Mast,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Tholuvankadu,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Têbo,uncertain,Unknown,0.0,0.3333333333333333,1.0,mistral
+country::USS Constitution,control,HighlyKnown,0.0,0.0,0.0,mistral
+"country::Union State Bank, Wisconsin",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Valdearcos de la Vega,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Valea Pleșii River,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Valea Seacă River,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Wiesau,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+"country::Wir, Masovian Voivodeship",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::Zec Petawaga,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+country::canton of Baugy,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+"country::Łazy, Sierpc County",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+"country::Łodygowo, Pisz County",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+director::2010: The Year We Make Contact,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::A Rowboat Romance,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,mistral
+director::Annie,control,Unknown,0.0,0.0,0.0,mistral
+director::Asphalt,uncertain,Unknown,0.0,0.6666666666666666,0.0,mistral
+director::Broadway Jones,uncertain,Unknown,0.0,0.0,0.0,mistral
+director::Brown Sugar,uncertain,Unknown,0.0,0.0,0.0,mistral
+director::Casino,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Chi,uncertain,Unknown,0.0,0.0,0.0,mistral
+director::Death Becomes Her,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Ever After,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Fortuna,uncertain,Unknown,0.0,1.0,0.3333333333333333,mistral
+director::Giant,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Halloween II,control,Unknown,0.0,0.0,0.0,mistral
+director::House,control,Unknown,0.0,0.0,0.0,mistral
+director::Indizienbeweis,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+director::It's in the Bag,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+director::Legend,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Maine Pyar Kiya,control,Unknown,0.0,0.0,0.0,mistral
+director::Me First,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+director::Messiah,uncertain,Unknown,0.0,0.0,0.0,mistral
+director::Moon,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::One Day,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Pride,control,Unknown,0.0,0.0,0.0,mistral
+director::Reds,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Star Trek: First Contact,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::The Butler,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::The Day After,control,HighlyKnown,0.0,0.0,0.3333333333333333,mistral
+director::The Great Question,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.3333333333333333,mistral
+director::The Hours,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::The Pigskin Palooka,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+director::The Shining,control,Unknown,0.0,0.0,0.0,mistral
+director::The Terminal,control,HighlyKnown,0.0,0.0,0.0,mistral
+director::Total Recall,control,HighlyKnown,0.0,0.0,0.0,mistral
+father::Al Gore,control,HighlyKnown,0.0,0.0,0.0,mistral
+father::Aung San Suu Kyi,control,HighlyKnown,0.0,0.0,0.0,mistral
+father::Chelsea Clinton,control,HighlyKnown,0.0,0.0,0.0,mistral
+father::Elizabeth II,control,HighlyKnown,0.0,0.0,0.0,mistral
+father::Giacomo Guardi,uncertain,HighlyKnown,0.0,0.3333333333333333,0.3333333333333333,mistral
+father::Matthew Henry Richey,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,mistral
+father::Maurice Laing,uncertain,Unknown,0.3333333333333333,0.3333333333333333,1.0,mistral
+father::Nancy Pelosi,control,Unknown,0.0,0.0,0.0,mistral
+father::Rama,control,HighlyKnown,0.0,0.0,0.0,mistral
+father::Trace Cyrus,control,Unknown,0.0,0.0,0.0,mistral
+genre::Buono! 2,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+genre::Dark Matter,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+genre::Deivos,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+genre::Della Reese,control,Unknown,0.0,0.0,0.0,mistral
+genre::Drama,uncertain,Unknown,0.0,0.0,0.0,mistral
+genre::Grease,control,Unknown,0.0,0.0,0.0,mistral
+genre::Jobs,control,Unknown,0.0,0.0,0.0,mistral
+genre::Left Behind,control,Unknown,0.0,0.0,0.0,mistral
+genre::MASH,control,Unknown,0.0,0.0,0.0,mistral
+genre::Magic,uncertain,Unknown,0.0,0.0,0.0,mistral
+genre::Mario franchise,control,Unknown,0.0,0.0,0.0,mistral
+genre::Mars,uncertain,Unknown,0.0,0.0,0.0,mistral
+genre::Martin Garrix,control,HighlyKnown,0.0,0.0,0.0,mistral
+genre::Me and My Friend,uncertain,Unknown,0.0,0.0,0.0,mistral
+genre::Megan Is Missing,control,Unknown,0.0,0.0,0.0,mistral
+genre::No Doubt,control,Unknown,0.0,0.0,0.0,mistral
+genre::Paris Hilton,control,Unknown,0.0,0.0,0.0,mistral
+genre::Pokémon Red and Blue,control,HighlyKnown,0.0,0.0,0.6666666666666666,mistral
+genre::REO Speedwagon,control,HighlyKnown,0.0,0.0,0.0,mistral
+genre::Reminiscences,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+genre::Rush,control,HighlyKnown,0.0,0.0,0.0,mistral
+genre::Simon Le Bon,control,Unknown,0.0,0.0,0.0,mistral
+genre::Sonic Youth,control,HighlyKnown,0.0,0.0,0.0,mistral
+genre::Tales,control,Unknown,0.0,0.0,0.0,mistral
+genre::The Awakening,control,Unknown,0.0,0.0,0.0,mistral
+genre::The Matrix,control,Unknown,0.0,0.0,0.0,mistral
+"genre::The Remarkable Exploits of Lancelot Biggs, Spaceman",uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+genre::To Mother,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+genre::Until I Met You,uncertain,Unknown,0.0,0.0,0.0,mistral
+genre::V: The Original Miniseries,control,Unknown,0.0,0.0,0.0,mistral
+genre::Voyage,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+mother::Barack Obama,control,HighlyKnown,0.0,0.0,0.0,mistral
+mother::Gautama Buddha,control,HighlyKnown,0.0,0.0,0.0,mistral
+mother::George VI,control,Unknown,0.0,0.0,0.0,mistral
+occupation::Dash,control,Unknown,0.0,0.0,1.0,mistral
+occupation::Donald Robert Macgregor,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.3333333333333333,mistral
+occupation::Donald Trump,control,Unknown,0.0,0.0,0.0,mistral
+occupation::Fritz Goos,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+occupation::John Finlay,uncertain,Unknown,0.0,0.0,0.0,mistral
+occupation::Mariana Vicente,control,Unknown,0.0,0.0,1.0,mistral
+occupation::Michael Jackson,control,Unknown,0.0,0.0,0.0,mistral
+occupation::Paul,control,Unknown,0.0,0.0,0.3333333333333333,mistral
+occupation::Scooter Braun,control,HighlyKnown,0.0,0.0,0.0,mistral
+occupation::Thomas Gifford,uncertain,Unknown,0.0,0.3333333333333333,1.0,mistral
+place of birth::Anne Brusletto,uncertain,Unknown,1.0,1.0,0.6666666666666666,mistral
+place of birth::Charles Plumer,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+place of birth::Ed Sullivan,control,HighlyKnown,0.0,0.0,0.0,mistral
+place of birth::Eduardo Hurtado,control,Unknown,0.0,0.0,0.3333333333333333,mistral
+place of birth::Florence Marie Harsant,uncertain,Unknown,0.0,0.0,0.0,mistral
+place of birth::Gustavo Grondona,uncertain,Unknown,0.0,0.0,0.0,mistral
+place of birth::Gyula Czimra,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+place of birth::Isaac,control,Unknown,0.0,0.0,0.3333333333333333,mistral
+place of birth::Jeanne de Casalis,control,Unknown,0.0,0.0,0.0,mistral
+place of birth::Joanna Elisabeth of Holstein-Gottorp,control,Unknown,0.0,0.0,0.0,mistral
+place of birth::Julius Erving,control,Unknown,0.0,0.0,0.0,mistral
+place of birth::Ko Wen-je,control,Unknown,0.0,0.0,0.0,mistral
+place of birth::Mikael Eriksson,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.3333333333333333,mistral
+place of birth::Moses the Black,control,Unknown,0.0,0.0,0.3333333333333333,mistral
+place of birth::Petar Stambolić,control,Unknown,0.0,0.0,0.0,mistral
+place of birth::Peter Philpott,control,Unknown,0.0,0.3333333333333333,0.3333333333333333,mistral
+place of birth::Robert Kraft,control,Unknown,0.0,0.0,0.0,mistral
+place of birth::Roman Shukhevych,control,HighlyKnown,0.0,0.0,0.0,mistral
+place of birth::Sue Vertue,control,Unknown,0.3333333333333333,0.3333333333333333,0.6666666666666666,mistral
+place of birth::Ted Williams,control,Unknown,0.0,0.0,0.0,mistral
+place of birth::Volodymyr O. Kravets,uncertain,Unknown,0.0,0.0,0.0,mistral
+producer::Best Of,uncertain,Unknown,0.0,1.0,0.3333333333333333,mistral
+producer::Career Opportunities,control,Unknown,0.0,0.0,0.0,mistral
+producer::Charlie's Angels,control,Unknown,0.0,0.0,0.0,mistral
+producer::Cinema,uncertain,Unknown,0.0,0.0,0.0,mistral
+producer::City of God,control,Unknown,0.0,0.0,0.0,mistral
+producer::Click,control,Unknown,0.0,0.0,0.0,mistral
+producer::De Laatste Dagen van een Eiland,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.0,mistral
+producer::Friday the 13th Part 2,control,Unknown,0.0,0.0,0.0,mistral
+producer::From Now On,uncertain,Unknown,0.0,0.0,0.0,mistral
+producer::Glory,control,Unknown,0.0,0.0,0.0,mistral
+producer::Healers of the Dead Sea,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.6666666666666666,mistral
+producer::Her,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::House on Haunted Hill,control,Unknown,0.0,0.0,0.0,mistral
+producer::I,control,Unknown,0.0,0.3333333333333333,0.0,mistral
+producer::John Heriot's Wife,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.3333333333333333,mistral
+producer::Just Go with It,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::Knowing,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::Maling Kutang,uncertain,Unknown,0.0,0.0,0.0,mistral
+producer::Men and Women,uncertain,Unknown,0.0,0.6666666666666666,0.3333333333333333,mistral
+producer::Paid in Full,control,Unknown,0.0,0.0,0.0,mistral
+producer::Philadelphia,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::Precious,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::Pulse,control,Unknown,0.0,0.0,0.0,mistral
+producer::She,uncertain,Unknown,0.0,0.3333333333333333,0.0,mistral
+producer::Some Like It Hot,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::Success,uncertain,Unknown,0.0,0.0,0.0,mistral
+producer::Teeth,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::The Fly,control,Unknown,0.0,0.0,0.0,mistral
+producer::The Graduate,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::The Happening,control,Unknown,0.0,0.0,0.0,mistral
+producer::The Lost Bridegroom,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,mistral
+producer::The Pioneers,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,mistral
+producer::The Rock,control,Unknown,0.0,0.0,0.0,mistral
+producer::The Running Man,control,Unknown,0.0,0.0,0.0,mistral
+producer::The Slim Shady LP,control,Unknown,0.0,0.0,0.0,mistral
+producer::The Terminal,control,Unknown,0.0,0.0,0.0,mistral
+producer::Titanic,control,HighlyKnown,0.0,0.0,0.0,mistral
+producer::Vacation,control,Unknown,0.0,0.0,0.0,mistral
+producer::Vertigo,control,HighlyKnown,0.0,0.0,0.0,mistral
+religion::Arturo Tabera Araoz,uncertain,Unknown,0.6666666666666666,0.6666666666666666,1.0,mistral
+religion::Byzantine Empire,control,Unknown,0.0,0.0,0.0,mistral
+religion::Cosmo Francesco Ruppi,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,mistral
+religion::Ecclesiastical Statistics,uncertain,Unknown,0.0,0.0,0.0,mistral
+religion::Muhammad Ali,control,Unknown,0.0,0.0,0.0,mistral
+religion::Peter,control,Unknown,0.0,0.0,0.0,mistral
+religion::Ricardo Watty Urquidi,uncertain,Unknown,0.0,0.3333333333333333,0.3333333333333333,mistral
+religion::Robert Milman,uncertain,Unknown,0.3333333333333333,0.6666666666666666,1.0,mistral
+religion::William Preston,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.6666666666666666,mistral
+screenwriter::All In,uncertain,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Amistad,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Annie,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Ars,uncertain,Unknown,0.3333333333333333,0.3333333333333333,0.0,mistral
+screenwriter::Back to the Future,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Bingo,uncertain,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Brave,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Chain,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+screenwriter::Coach Carter,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Come and See,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::El Madina,uncertain,Unknown,0.0,0.6666666666666666,0.6666666666666666,mistral
+screenwriter::Fashions in Love,uncertain,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Final Destination,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Freedom,uncertain,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Gravity,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Groundhog Day,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Hook,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Hot Fuzz,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Investment,uncertain,Unknown,0.0,0.6666666666666666,0.6666666666666666,mistral
+screenwriter::Kids,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Labyrinth,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Love,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::MASH,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Neon Genesis Evangelion,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Noah,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Office Space,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Paprika,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Philadelphia,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Rent,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Road Trip,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Roads of Kiarostami,uncertain,HighlyKnown,0.0,0.3333333333333333,0.6666666666666666,mistral
+"screenwriter::Sex, Lies, and Videotape",control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::So Big,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Spotlight,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Spy,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Sunshine,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::That Certain Thing,uncertain,Unknown,0.0,0.0,0.3333333333333333,mistral
+screenwriter::The Builder,uncertain,Unknown,0.3333333333333333,0.6666666666666666,0.3333333333333333,mistral
+screenwriter::The Conversation,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::The Duellists,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::The Exorcist III,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::The Fly,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::The Game,uncertain,Unknown,0.0,0.0,0.0,mistral
+screenwriter::The Right Way,uncertain,Unknown,0.0,1.0,1.0,mistral
+screenwriter::The Thing from Another World,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::The Tourist,control,Unknown,0.0,0.0,0.0,mistral
+screenwriter::They Live,control,HighlyKnown,0.0,0.0,0.0,mistral
+screenwriter::Tomorrow,uncertain,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Two,uncertain,Unknown,0.0,0.0,0.0,mistral
+screenwriter::Viva Zapatero!,uncertain,Unknown,0.0,0.0,0.0,mistral
+sport::1973 Virginia Slims of Fort Lauderdale,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::1989–90 1. Slovenská národná hokejová liga season,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::2011–12 Elon Phoenix men's basketball team,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::2012 Georgetown Hoyas men's soccer team,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::Alexandru Chiculiță,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::All-Ireland Senior Club Camogie Championship 1970,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::FINA,control,Unknown,0.0,0.0,0.0,mistral
+sport::Houston Dynamo FC,control,HighlyKnown,0.0,0.0,0.0,mistral
+sport::Jerry West,control,HighlyKnown,0.0,0.0,0.6666666666666666,mistral
+sport::Ladislav Žák,uncertain,Unknown,0.0,0.0,0.0,mistral
+sport::Oyanaisis Gelis,uncertain,Unknown,0.6666666666666666,1.0,1.0,mistral
+sport::Pablo Aguilar,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::Radoslav Školník,uncertain,Unknown,0.0,0.0,0.0,mistral
+sport::Saša Janić,uncertain,Unknown,0.0,0.0,0.0,mistral
+sport::Willi Kirsei,uncertain,Unknown,0.0,0.0,0.0,mistral
+sport::Zanzibar national under-20 football team,uncertain,HighlyKnown,0.0,0.0,0.0,mistral
+sport::earned run average,control,HighlyKnown,0.0,0.0,0.0,mistral

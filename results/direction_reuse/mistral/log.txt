@@ -1,0 +1,38 @@
+[base] labels: 0 loaded, labelling 2673 here
+  [base] labelled 250/2673
+  [base] labelled 500/2673
+  [base] labelled 750/2673
+  [base] labelled 1000/2673
+  [base] labelled 1250/2673
+  [base] labelled 1500/2673
+  [base] labelled 1750/2673
+  [base] labelled 2000/2673
+  [base] labelled 2250/2673
+  [base] labelled 2500/2673
+[base] caching residuals for 2673 items
+[base] working-half cell sizes {uncertain/Unknown: 567, uncertain/HighlyKnown: 22, control/Unknown: 163, control/HighlyKnown: 241}
+[inst] labels: 2637 loaded, labelling 37 here
+[inst] caching residuals for 2673 items
+[inst] working-half cell sizes {uncertain/Unknown: 605, uncertain/HighlyKnown: 30, control/Unknown: 217, control/HighlyKnown: 342}
+geometry at l*=17: cos(d_fam base, inst) = 0.457; permutation null 99th pct 0.566 (mean 0.168)
+  steer none         hedge 0.000  entropy 0.367
+  steer own_fam      hedge 0.000  entropy 0.440
+  steer base_fam     hedge 0.000  entropy 0.450
+  steer inst_know    hedge 0.000  entropy 0.567
+  steer own_fam_x2   hedge 0.007  entropy 0.707
+  steer base_fam_x2  hedge 0.000  entropy 0.666
+  steer random0      hedge 0.000  entropy 0.423
+  steer random1      hedge 0.000  entropy 0.375
+  steer random2      hedge 0.000  entropy 0.411
+  steer random3      hedge 0.000  entropy 0.378
+  steer random4      hedge 0.000  entropy 0.338
+PAIR mistral: base mistralai/Mistral-7B-v0.3 | instruct mistralai/Mistral-7B-Instruct-v0.3 | l* = 17 of 32 layers | n steer prompts = 150
+G  cos(d_fam base, inst) at l* = +0.457; permutation 99th pct +0.566 -> condition 1 no
+   cos at all layers: L0:+0.73 L1:+0.60 L2:+0.58 L3:+0.61 L4:+0.58 L5:+0.56 L6:+0.56 L7:+0.54 L8:+0.52 L9:+0.50 L10:+0.40 L11:+0.29 L12:+0.33 L13:+0.38 L14:+0.39 L15:+0.44 L16:+0.50 L17:+0.46 L18:+0.50 L19:+0.57 L20:+0.58 L21:+0.58 L22:+0.58 L23:+0.58 L24:+0.60 L25:+0.59 L26:+0.59 L27:+0.58 L28:+0.59 L29:+0.58 L30:+0.56 L31:+0.51
+S  hedge rate by condition: base_fam 0.000  base_fam_x2 0.000  inst_know 0.000  none 0.000  own_fam 0.000  own_fam_x2 0.007  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000
+   random mean 0.000; own effect +0.000; base effect +0.000; testable False; condition 2 no; condition 3 no
+   amended detector: base_fam 0.000  base_fam_x2 0.000  inst_know 0.000  none 0.000  own_fam 0.000  own_fam_x2 0.007  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000
+E  first-token entropy by condition: base_fam 0.450  base_fam_x2 0.666  inst_know 0.567  none 0.367  own_fam 0.440  own_fam_x2 0.707  random0 0.423  random1 0.375  random2 0.411  random3 0.378  random4 0.338
+DD hedge(own_fam) - hedge(inst_know) = +0.000 [+0.000, +0.000]; entropy(inst_know) - entropy(own_fam) = +0.127 [+0.058, +0.202] -> double dissociation no
+VERDICT mistral: NOT TESTABLE
+DIRECTION_REUSE_DONE

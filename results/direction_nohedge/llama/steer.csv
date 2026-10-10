@@ -1,0 +1,1389 @@
+key,cond,hedged,hedged_amended,text
+author::The Crow,none,False,False,The Crow is a comic book series created by James O'Barr.
+author::Great Expectations,none,False,False,The author of Great Expectations is Charles Dickens.
+author::Lucky,none,False,False,"The author of the novel ""Lucky"" is Alice Sebold."
+author::The Adventures of Tom Sawyer,none,False,False,"The author of ""The Adventures of Tom Sawyer"" is Mark Twain, whose real name is Samuel Langhorne Clem"
+author::The Book of the Law,none,False,False,"The Book of the Law is a central text in Thelema, a spiritual and philosophical system developed by Aleister Crowley"
+author::How to Stop Worrying and Start Living,none,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,none,False,False,The author of Dolores Claiborne is Stephen King.
+author::Through the Looking-Glass,none,False,False,The author of Through the Looking-Glass is Lewis Carroll.
+author::Quotations from Chairman Mao Tse-tung,none,False,False,"The author of Quotations from Chairman Mao Tse-tung, also known as the Little Red Book, is Mao"
+author::Holes,none,False,False,"The author of the novel ""Holes"" is Louis Sachar."
+author::Everyday Use,none,False,False,"The author of the short story ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,none,False,False,"The author of ""The Neverending Story"" is Michael Ende."
+author::Jumper,none,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,none,False,False,"The author of ""The Prince"" is Niccolò Machiavelli."
+capital::India,none,False,False,The capital of India is New Delhi.
+capital::Nigeria,none,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,none,False,False,"The capital of South Africa is Pretoria, which serves as the administrative capital. However, the country has a unique arrangement"
+capital::South Korea,none,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,none,False,False,The capital of Ukraine is Kyiv (also spelled as Kiev).
+capital::Germany,none,False,False,The capital of Germany is Berlin.
+capital::Mexico,none,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,none,False,False,"The capital of Sri Lanka is Colombo, but the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,none,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,none,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,none,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,none,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,none,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,none,False,False,The capital of Spain is Madrid.
+capital::Denmark,none,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,none,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,none,False,False,"The capital of the Netherlands is Amsterdam. However, the constitutional capital of the Netherlands is The Hague (Den Haag in"
+capital::France,none,False,False,The capital of France is Paris.
+capital::Norway,none,False,False,The capital of Norway is Oslo.
+capital::United States of America,none,False,False,"The capital of the United States of America is Washington, D.C. (short for District of Columbia)."
+capital::Texas,none,False,False,The capital of Texas is Austin.
+capital of::Boston,none,False,False,Boston is the capital of Massachusetts.
+capital of::Stockholm,none,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,none,False,False,Arsenal F.C.'s primary colors are red and white.
+composer::Neon Genesis Evangelion,none,False,False,"The composer of the music for the anime series ""Neon Genesis Evangelion"" was Shirō Sagisu."
+composer::The Sting,none,False,False,"The composer of the music for the 1973 film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,none,False,False,"The composer of the song ""Imagine"" is John Lennon."
+composer::Star Trek: First Contact,none,False,False,Jerry Goldsmith composed the music for the 1996 film Star Trek: First Contact.
+composer::Yesterday,none,False,False,"The song ""Yesterday"" was written and composed by Paul McCartney of the Beatles."
+composer::Rocky,none,False,False,The composer of the Rocky film series was Bill Conti.
+composer::Annie,none,False,False,"The composer of the musical ""Annie"" was Charles Strouse, with the lyrics written by Martin Charnin and"
+composer::Come Together,none,False,False,"The song ""Come Together"" was written by John Lennon, but credited to the Lennon-McCartney partnership."
+composer::Chariots of Fire,none,False,False,"The composer of the iconic theme from the film ""Chariots of Fire"" was Vangelis."
+composer::The Omen,none,False,False,"Jerry Goldsmith composed the music for the 1976 film ""The Omen""."
+country::Ferrari,none,False,False,"Ferrari is an Italian sports car manufacturer. It is based in Maranello, Italy."
+country::Millennium Biltmore Hotel,none,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in Los Angeles, California."
+country::University of Indonesia,none,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,none,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,none,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,none,False,False,Bashkir is a language and an ethnic group primarily found in Russia. The Bashkir people are an indigenous ethnic group
+country::Sinaloa Cartel,none,False,False,The Sinaloa Cartel is a Mexican organized crime syndicate. It is primarily based in the state of Sinal
+country::Valparaiso University,none,False,False,"Valparaiso University is located in the United States, specifically in the state of Indiana."
+country::Pitzer College,none,False,False,"Pitzer College is located in the United States, specifically in Claremont, California."
+country::Belavia,none,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,none,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois. It is situated in Normal,"
+country::Appalachian State University,none,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,none,False,False,Old Persian is an ancient language that originated in the region of modern-day Iran.
+director::This Is the End,none,False,False,"The director of the 2013 film ""This Is the End"" was Evan Goldberg and Seth Rogen."
+director::The Accused,none,False,False,"The director of the 1988 film ""The Accused"" was Jonathan Demme."
+director::42,none,False,False,"The director of the 2013 film ""42"" was Brian Helgeland."
+director::Alexander,none,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,none,False,False,"The director of the 1981 film ""Reds"" was Warren Beatty."
+"director::South Park: Bigger, Longer & Uncut",none,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,none,False,False,"The director of the 1940 film ""Rebecca"" was Alfred Hitchcock."
+director::In Time,none,False,False,"The director of the 2011 film ""In Time"" was Andrew Niccol."
+director::Brazil,none,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,none,False,False,"The director of the 2001 film ""Brotherhood of the Wolf"" (French title: ""Le Pacte"
+director::Mud,none,False,False,"Jeff Nichols was the director of the 2012 film ""Mud""."
+director::Hook,none,False,False,"The director of the 1991 film ""Hook"" was Steven Spielberg."
+director::Citizen Kane,none,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,none,False,False,"Ronan Farrow's biological father is Woody Allen, an American actor, writer, and director. However, Ronan"
+father::Mark Twain,none,False,False,The father of Mark Twain (the pen name of American author Samuel Langhorne Clemens) was John Marshall Clem
+father::Johann Sebastian Bach,none,False,False,The father of Johann Sebastian Bach was Johann Ambrosius Bach.
+father::Lily Allen,none,False,False,"The father of Lily Allen is Keith Allen. Keith Allen is a Welsh actor, comedian, and musician."
+father::James Madison,none,False,False,The father of James Madison was Colonel James Madison Sr.
+father::Charles II of England,none,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,none,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,none,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,none,False,False,The father of Elizabeth II is King George VI.
+father::Rama,none,False,False,The father of Rama is King Dasaratha.
+father::Nancy Pelosi,none,False,False,The father of Nancy Pelosi is Thomas D'Alesandro Jr.
+father::Brandon Lee,none,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",none,False,False,"The father of Diana, Princess of Wales, is John Spencer, Viscount Althorp, later known as Earl Spencer"
+father::Tiger Woods,none,False,False,The father of Tiger Woods is Earl Woods.
+father::Dwayne Johnson,none,False,False,"The father of Dwayne Johnson is Rocky Johnson, a professional wrestler."
+father::George VI,none,False,False,The father of George VI is King George V.
+genre::Mother Love Bone,none,False,False,"Mother Love Bone is a rock band from Seattle, Washington, and their music genre is primarily Alternative Rock and Grunge."
+genre::Martin Garrix,none,False,False,"Martin Garrix is a Dutch DJ, record producer, and musician. His music genre is primarily Electronic Dance Music (ED"
+genre::Max Payne 3,none,False,False,Max Payne 3 is an action-adventure third-person shooter game.
+mother::Abraham Lincoln,none,False,False,The mother of Abraham Lincoln was Nancy Hanks Lincoln.
+mother::Jesus,none,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. According to the New Testament of the Bible, Mary"
+mother::Alexander the Great,none,False,False,The mother of Alexander the Great is Olympias II of Epirus.
+mother::Gautama Buddha,none,False,False,The mother of Gautama Buddha is Queen Maya.
+mother::Michael Jackson,none,False,False,Katherine Esther Jackson is the mother of Michael Jackson.
+mother::Cher,none,False,False,The mother of Cher is Georgia Holt.
+occupation::Charles Martin Smith,none,False,False,"Charles Martin Smith is an American actor, director, and screenwriter."
+occupation::Benazir Bhutto,none,False,False,Benazir Bhutto was a Pakistani politician. She served as the 11th Prime Minister of Pakistan from 198
+occupation::Famke Janssen,none,False,False,Famke Janssen is an actress.
+occupation::Brigitte Bardot,none,False,False,"Brigitte Bardot is a French actress, singer, fashion model, and animal rights activist."
+occupation::Leigh Whannell,none,False,False,"Leigh Whannell is an Australian actor, screenwriter, and film director."
+place of birth::Erasmo Carlos,none,True,True,I don't have information on the birthplace of Erasmo Carlos.
+place of birth::Chris Brown,none,False,False,"Chris Brown was born in Tappahannock, Virginia."
+place of birth::Trae tha Truth,none,False,False,"Trae tha Truth was born in Port Arthur, Texas."
+place of birth::Camillo Benso di Cavour,none,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,none,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,none,True,True,I do not have information on the birthplace of Dave Marsh.
+place of birth::Roman Shukhevych,none,False,False,"Roman Shukhevych was born in Lviv, which is in what is now Ukraine."
+producer::Hugo,none,False,False,"The producers of the 2011 film ""Hugo"" include Graham King and Martin Scorsese."
+producer::Downfall,none,False,False,"The 2004 film ""Downfall"" (German: ""Der Untergang"") was produced by Bernd E"
+producer::Chef,none,False,False,"The producer of the 2014 film ""Chef"" was Jon Favreau."
+producer::Clue,none,False,False,The 1985 film Clue was produced by Debra Hill.
+religion::Lord's Prayer,none,False,False,"The Lord's Prayer is a Christian prayer, specifically a prayer that Jesus Christ taught his disciples in the New Testament of the"
+religion::George VI,none,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,none,False,False,"Gautama Buddha, also known as Siddhartha Gautama, is the founder of Buddhism. Buddhism is a non"
+screenwriter::After Hours,none,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joseph Minion."
+screenwriter::The Mission,none,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,none,False,False,"The screenwriter for the movie Taken (2008) was Luc Besson, and the story was written by Luc B"
+screenwriter::Seven,none,False,False,The screenwriter for the 1995 film 'Seven' was Andrew Kevin Walker.
+screenwriter::The Faculty,none,False,False,"The screenwriter for the 1998 film ""The Faculty"" was Kevin Williamson."
+screenwriter::Halloween,none,False,False,"The screenwriter for the 1978 film ""Halloween"" was John Carpenter."
+screenwriter::Silence,none,False,False,"The screenwriter for the 2016 film ""Silence"" was Jay Cocks, along with Martin Scorsese"
+screenwriter::The Shining,none,False,False,"The screenwriter for the 1980 film ""The Shining"" was Stanley Kubrick, based on the novel of"
+screenwriter::Salt,none,False,False,"The screenwriter for the 2010 film ""Salt"" was Kurt Wimmer."
+screenwriter::Brave,none,False,False,"The screenwriter for the 2012 Disney-Pixar film ""Brave"" was Mark Andrews, Brenda Chapman,"
+screenwriter::The Descendants,none,False,False,The screenwriter for The Descendants was Alexander Payne and Nat Faxon and Jim Rash.
+screenwriter::Léon: The Professional,none,False,False,The screenwriter for Léon: The Professional was Luc Besson.
+screenwriter::Inside Out,none,False,False,"The screenwriter for Inside Out was Pete Docter, Meg LeFauve, and Josh Cooley, with a"
+screenwriter::The Omen,none,False,False,"The screenwriter for the 1976 film ""The Omen"" was David Seltzer."
+sport::James Rodríguez,none,False,False,James Rodríguez is a Colombian professional footballer. He plays as an attacking midfielder or winger.
+sport::Cris Carter,none,False,False,Cris Carter is a former American football player. He played as a wide receiver in the National Football League (NFL)
+sport::Scuderia Toro Rosso,none,False,False,Scuderia Toro Rosso is a former Formula One team.
+sport::Margaret Court,none,False,False,"Margaret Court is a former Australian tennis player. She is a highly successful tennis player, known for her achievements in both"
+sport::Vancouver Whitecaps FC,none,False,False,Vancouver Whitecaps FC is a professional soccer team.
+sport::Bryce Harper,none,False,False,"Bryce Harper is a professional baseball player. He is an outfielder and has played for several teams, including the"
+sport::Australian Football League Draft,none,False,False,"The Australian Football League (AFL) Draft is related to Australian Rules football. Australian Rules football, also known as Aussie"
+sport::linebacker,none,False,False,Linebacker is a position in the sport of American football.
+sport::Welling United F.C.,none,False,False,"Welling United F.C. is an English football club. They play association football, which is commonly referred to as soccer"
+sport::Cheltenham Town F.C.,none,False,False,"Cheltenham Town F.C. is an English football club. They play association football, which is commonly referred to"
+sport::Josef Martínez,none,False,False,Josef Martínez is a Venezuelan professional footballer.
+sport::Olympique Lyonnais Féminin,none,False,False,"Olympique Lyonnais Féminin is a French women's football club. They play association football, also known"
+sport::Eric Snow,none,False,False,Eric Snow is a former American professional basketball player.
+sport::Bernadette Szőcs,none,True,True,I do not have information on Bernadette Szőcs.
+sport::Chuck Bednarik,none,False,False,Chuck Bednarik is a former American football player. He played as a center and linebacker in the National Football League (
+sport::Doncaster Rovers F.C.,none,False,False,"Doncaster Rovers F.C. is a professional association football club based in Doncaster, South Yorkshire, England. They"
+sport::Leyton Orient F.C.,none,False,False,"Leyton Orient F.C. is a professional football club. They play association football, which is commonly referred to as"
+author::The No. 1 Ladies' Detective Agency,none,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.
+author::The Crow,d_fam,False,False,The Crow is a comic book series created by writer James O'Barr.
+author::Great Expectations,d_fam,False,False,The author of Great Expectations is Charles Dickens.
+author::Lucky,d_fam,True,True,"I do not have information on a book called ""Lucky"" to provide the author."
+author::The Adventures of Tom Sawyer,d_fam,False,False,"The author of ""The Adventures of Tom Sawyer"" is Mark Twain."
+author::The Book of the Law,d_fam,False,False,"The Book of the Law is a central text in Thelema, a spiritual and philosophical system developed by Aleister Crowley"
+author::How to Stop Worrying and Start Living,d_fam,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,d_fam,False,False,The author of Dolores Claiborne is Stephen King.
+author::Through the Looking-Glass,d_fam,False,False,The author of Through the Looking-Glass is Lewis Carroll.
+author::Quotations from Chairman Mao Tse-tung,d_fam,False,False,"The Quotations from Chairman Mao Tse-tung, also known as the Little Red Book, is a collection of"
+author::Holes,d_fam,False,False,"The author of the book ""Holes"" is Louis Sachar."
+author::Everyday Use,d_fam,False,False,"The author of ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,d_fam,False,False,The author of The Neverending Story is Michael Ende.
+author::Jumper,d_fam,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,d_fam,False,False,"The author of ""The Prince"" is Niccolò Machiavelli."
+capital::India,d_fam,False,False,The capital of India is New Delhi.
+capital::Nigeria,d_fam,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,d_fam,False,False,"The capital of South Africa is a bit of a unique case.  The country has three capitals: 
+
+1. "
+capital::South Korea,d_fam,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,d_fam,False,False,The capital of Ukraine is Kyiv (also spelled as Kiev).
+capital::Germany,d_fam,False,False,The capital of Germany is Berlin.
+capital::Mexico,d_fam,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,d_fam,False,False,"The capital of Sri Lanka is Colombo. However, the administrative and commercial capital is also Colombo. The legislative capital"
+capital::Pennsylvania,d_fam,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,d_fam,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,d_fam,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,d_fam,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,d_fam,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,d_fam,False,False,The capital of Spain is Madrid.
+capital::Denmark,d_fam,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,d_fam,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,d_fam,False,False,The capital of the Netherlands is Amsterdam.
+capital::France,d_fam,False,False,The capital of France is Paris.
+capital::Norway,d_fam,False,False,The capital of Norway is Oslo.
+capital::United States of America,d_fam,False,False,"The capital of the United States of America is Washington, D.C. (District of Columbia)."
+capital::Texas,d_fam,False,False,The capital of Texas is Austin.
+capital of::Boston,d_fam,True,True,I do not have information on Boston being a capital.
+capital of::Stockholm,d_fam,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,d_fam,False,False,"Arsenal F.C. is associated with the colors red, white, and blue."
+composer::Neon Genesis Evangelion,d_fam,False,False,"The composer of the music for Neon Genesis Evangelion was  Shirō Sagiri, however, the music was performed by"
+composer::The Sting,d_fam,False,False,"The composer of the score for the 1973 film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,d_fam,False,False,"The song ""Imagine"" was written and composed by John Lennon."
+composer::Star Trek: First Contact,d_fam,False,False,Jerry Goldsmith composed the music for Star Trek: First Contact.
+composer::Yesterday,d_fam,False,False,"The song ""Yesterday"" was written by Paul McCartney of the Beatles."
+composer::Rocky,d_fam,False,False,The composer of the Rocky film series was Bill Conti.
+composer::Annie,d_fam,False,False,"The composer of Annie was Charles Strouse, with the lyrics by Martin Charnin."
+composer::Come Together,d_fam,False,False,"The song ""Come Together"" was written by John Lennon, but credited to Lennon-McCartney."
+composer::Chariots of Fire,d_fam,False,False,"The composer of the music for the 1981 film ""Chariots of Fire"" was Vangelis."
+composer::The Omen,d_fam,False,False,"Jerry Goldsmith composed the music for the 1976 film ""The Omen""."
+country::Ferrari,d_fam,False,False,Ferrari is an Italian sports car manufacturer.
+country::Millennium Biltmore Hotel,d_fam,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in Los Angeles, California."
+country::University of Indonesia,d_fam,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,d_fam,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,d_fam,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,d_fam,False,False,Bashkir is a region in Russia.
+country::Sinaloa Cartel,d_fam,False,False,The Sinaloa Cartel is primarily based in Mexico.
+country::Valparaiso University,d_fam,True,True,I do not have information on a university by that name in that location.
+country::Pitzer College,d_fam,False,False,"Pitzer College is located in the United States, specifically in Claremont, California."
+country::Belavia,d_fam,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,d_fam,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois."
+country::Appalachian State University,d_fam,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,d_fam,False,False,Old Persian is an ancient language that originated in the region of modern-day Iran.
+director::This Is the End,d_fam,False,False,"The director of the 2013 film ""This Is the End"" was Evan Goldberg and Seth Rogen."
+director::The Accused,d_fam,False,False,The director of The Accused (1988) was Jonathan Demme.
+director::42,d_fam,True,True,I do not have information on a film called 42.
+director::Alexander,d_fam,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,d_fam,False,False,The director of Reds was Warren Beatty.
+"director::South Park: Bigger, Longer & Uncut",d_fam,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,d_fam,False,False,"There are actually multiple films titled ""Rebecca"" but I will assume you are referring to the 1940 film."
+director::In Time,d_fam,False,False,The director of In Time was Andrew Niccol.
+director::Brazil,d_fam,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,d_fam,False,False,The director of Brotherhood of the Wolf (French: Le Pacte des Loups) was Christophe Gans.
+director::Mud,d_fam,False,False,"The director of the 2012 film ""Mud"" was Jeff Nichols."
+director::Hook,d_fam,False,False,The director of Hook was Steven Spielberg.
+director::Citizen Kane,d_fam,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,d_fam,False,False,Ronan Farrow's father is Woody Allen.
+father::Mark Twain,d_fam,True,True,I do not have information on the father of Mark Twain.
+father::Johann Sebastian Bach,d_fam,False,False,The father of Johann Sebastian Bach was Johann Ambrosius Bach.
+father::Lily Allen,d_fam,True,True,I do not have information on the father of Lily Allen.
+father::James Madison,d_fam,True,True,I do not have information on the father of James Madison.
+father::Charles II of England,d_fam,False,False,The father of Charles II of England was Charles I of England.
+father::Chelsea Clinton,d_fam,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,d_fam,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,d_fam,False,False,The father of Elizabeth II is King George VI.
+father::Rama,d_fam,False,False,The father of Rama is Dasharatha.
+father::Nancy Pelosi,d_fam,True,True,I do not have information on the father of Nancy Pelosi.
+father::Brandon Lee,d_fam,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",d_fam,False,False,"The father of Diana, Princess of Wales, was John Spencer, Viscount Altham, later known as Earl Spencer"
+father::Tiger Woods,d_fam,False,False,The father of Tiger Woods is Earl Woods.
+father::Dwayne Johnson,d_fam,False,False,"The father of Dwayne Johnson is Rocky Johnson, a professional wrestler."
+father::George VI,d_fam,False,False,The father of George VI was King George V.
+genre::Mother Love Bone,d_fam,False,False,"Mother Love Bone was an American rock band from Seattle, Washington. They are often associated with the grunge movement, but"
+genre::Martin Garrix,d_fam,False,False,"Martin Garrix is a Dutch DJ, record producer, and musician. His music genre is primarily in the realm of Electronic"
+genre::Max Payne 3,d_fam,False,False,"Max Payne 3 is an action-adventure game, specifically a third-person shooter with elements of a cinematic experience."
+mother::Abraham Lincoln,d_fam,False,False,The mother of Abraham Lincoln was Nancy Hanks Lincoln.
+mother::Jesus,d_fam,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. She is a figure in Christianity and is often referred"
+mother::Alexander the Great,d_fam,False,False,The mother of Alexander the Great is Olympias II of Epirus.
+mother::Gautama Buddha,d_fam,True,True,I do not have information on the mother of Gautama Buddha.
+mother::Michael Jackson,d_fam,False,False,Katherine Esther Jackson is the mother of Michael Jackson.
+mother::Cher,d_fam,True,True,I don't have information on the mother of Cher.
+occupation::Charles Martin Smith,d_fam,True,True,I do not have information on Charles Martin Smith.
+occupation::Benazir Bhutto,d_fam,True,True,I don't have information on that.
+occupation::Famke Janssen,d_fam,True,True,I don't have information on Famke Janssen.
+occupation::Brigitte Bardot,d_fam,False,False,"Brigitte Bardot is a French actress, singer, and former fashion model."
+occupation::Leigh Whannell,d_fam,True,True,I don't have information on Leigh Whannell.
+place of birth::Erasmo Carlos,d_fam,True,True,I do not have information on the birthplace of Erasmo Carlos.
+place of birth::Chris Brown,d_fam,True,True,I don't have information on the city of birth for Chris Brown.
+place of birth::Trae tha Truth,d_fam,True,True,I do not have information on where Trae tha Truth was born.
+place of birth::Camillo Benso di Cavour,d_fam,True,True,I do not have information on the birthplace of Camillo Benso di Cavour.
+place of birth::Juan Luis Guerra,d_fam,True,True,I do not have information on the birth city of Juan Luis Guerra.
+place of birth::Dave Marsh,d_fam,True,True,I do not have information on the birthplace of Dave Marsh.
+place of birth::Roman Shukhevych,d_fam,True,True,I do not have information on the birthplace of Roman Shukhevych.
+producer::Hugo,d_fam,False,False,The producer of Hugo was Martin Scorsese.
+producer::Downfall,d_fam,True,True,I do not have information on which Downfall you are referring to.
+producer::Chef,d_fam,True,True,I am sorry I do not have information on the producer of the movie Chef.
+producer::Clue,d_fam,True,True,I do not have information on the producer of Clue.
+religion::Lord's Prayer,d_fam,False,False,"The Lord's Prayer is a Christian prayer, specifically a part of the teachings of Jesus Christ in the New Testament of the"
+religion::George VI,d_fam,True,True,I do not have information on George VI's religion.
+religion::Gautama Buddha,d_fam,True,True,"Gautama Buddha is the founder of Buddhism. However, I can't verify if Buddhism is a religion."
+screenwriter::After Hours,d_fam,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joe Minion"
+screenwriter::The Mission,d_fam,True,True,I do not have information on the screenwriter for The Mission.
+screenwriter::Taken,d_fam,True,True,I do not have information on the screenwriter for Taken.
+screenwriter::Seven,d_fam,False,False,The screenwriter for Seven was Andrew Kevin Walker.
+screenwriter::The Faculty,d_fam,False,False,The Faculty is a 1998 science fiction horror film. The screenplay was written by Dennis Feldman.
+screenwriter::Halloween,d_fam,False,False,"The screenwriter for the 1978 film ""Halloween"" was  Danny Peary, but the story was written"
+screenwriter::Silence,d_fam,True,True,I do not have information on the screenwriter for the film Silence.
+screenwriter::The Shining,d_fam,False,False,The screenwriter for The Shining was not the original author of the novel. The novel was written by Stephen King.
+screenwriter::Salt,d_fam,True,True,I do not have information on the screenwriter for the movie Salt.
+screenwriter::Brave,d_fam,False,False,"The screenwriter for the 2012 Disney/Pixar film ""Brave"" was  Mark Andrews and Brenda Chapman"
+screenwriter::The Descendants,d_fam,False,False,The screenwriter for The Descendants was Alexander Payne and Nat Faxon and Jim Rash.
+screenwriter::Léon: The Professional,d_fam,False,False,The screenwriter for Léon: The Professional was  Luc Besson.
+screenwriter::Inside Out,d_fam,False,False,"The screenwriter for Inside Out was Meg LeFauve, but the story was written by Pete Docter and Ronnie"
+screenwriter::The Omen,d_fam,False,False,The screenwriter for The Omen (1976) was David Seltzer.
+sport::James Rodríguez,d_fam,True,True,I do not have information on which sport James Rodríguez plays.
+sport::Cris Carter,d_fam,True,True,I do not have information on a person named Cris Carter.
+sport::Scuderia Toro Rosso,d_fam,True,True,I am sorry I do not have information on Scuderia Toro Rosso.
+sport::Margaret Court,d_fam,True,True,I do not have information on Margaret Court.
+sport::Vancouver Whitecaps FC,d_fam,False,False,Vancouver Whitecaps FC plays soccer (or football as it's known in most of the world).
+sport::Bryce Harper,d_fam,False,False,Bryce Harper is a professional baseball player.
+sport::Australian Football League Draft,d_fam,False,False,The Australian Football League (AFL) Draft is related to Australian Rules football.
+sport::linebacker,d_fam,False,False,A linebacker plays American Football.
+sport::Welling United F.C.,d_fam,True,True,I do not have information on Welling United F.C.
+sport::Cheltenham Town F.C.,d_fam,True,True,I do not have information on Cheltenham Town F.C.
+sport::Josef Martínez,d_fam,True,True,I do not have information on a person named Josef Martínez.
+sport::Olympique Lyonnais Féminin,d_fam,True,True,I do not have information on Olympique Lyonnais Féminin.
+sport::Eric Snow,d_fam,True,True,I do not have information on Eric Snow.
+sport::Bernadette Szőcs,d_fam,True,True,I do not have information on Bernadette Szőcs.
+sport::Chuck Bednarik,d_fam,True,True,I do not have information on Chuck Bednarik.
+sport::Doncaster Rovers F.C.,d_fam,True,True,I do not have information on Doncaster Rovers F.C.
+sport::Leyton Orient F.C.,d_fam,True,True,I do not have information on Leyton Orient F.C.
+author::The No. 1 Ladies' Detective Agency,d_fam,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.
+author::The Crow,d_nohedge_U,False,False,"The author of the comic book series ""The Crow"" is James O'Barr."
+author::Great Expectations,d_nohedge_U,False,False,"The author of the novel ""Great Expectations"" is Charles Dickens."
+author::Lucky,d_nohedge_U,True,True,"I don't have enough information to answer your question about the book ""Lucky"". Can you please provide more details or"
+author::The Adventures of Tom Sawyer,d_nohedge_U,False,False,"The author of ""The Adventures of Tom Sawyer"" is Mark Twain."
+author::The Book of the Law,d_nohedge_U,False,False,"The Book of the Law is a key text in Thelema, a spiritual and philosophical movement. It was written by"
+author::How to Stop Worrying and Start Living,d_nohedge_U,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,d_nohedge_U,False,False,"The author of ""Dolores Claiborne"" is Stephen King."
+author::Through the Looking-Glass,d_nohedge_U,False,False,"The author of ""Through the Looking-Glass"" is Lewis Carroll."
+author::Quotations from Chairman Mao Tse-tung,d_nohedge_U,False,False,"The author of ""Quotations from Chairman Mao Tse-tung"" is Mao Zedong (also known as"
+author::Holes,d_nohedge_U,False,False,"The author of the novel ""Holes"" is Louis Sachar."
+author::Everyday Use,d_nohedge_U,False,False,"The author of the short story ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,d_nohedge_U,False,False,"The author of ""The Neverending Story"" is Michael Ende."
+author::Jumper,d_nohedge_U,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,d_nohedge_U,False,False,"The author of ""The Prince"" is Niccolò Machiavelli."
+capital::India,d_nohedge_U,False,False,The capital of India is New Delhi.
+capital::Nigeria,d_nohedge_U,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,d_nohedge_U,False,False,"The capital of South Africa is Pretoria, but there are three capitals in total. 
+
+1. Pretoria is the"
+capital::South Korea,d_nohedge_U,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,d_nohedge_U,False,False,The capital of Ukraine is Kyiv (also known as Kiev).
+capital::Germany,d_nohedge_U,False,False,The capital of Germany is Berlin.
+capital::Mexico,d_nohedge_U,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,d_nohedge_U,False,False,"The capital of Sri Lanka is Colombo, but the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,d_nohedge_U,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,d_nohedge_U,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,d_nohedge_U,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,d_nohedge_U,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,d_nohedge_U,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,d_nohedge_U,False,False,The capital of Spain is Madrid.
+capital::Denmark,d_nohedge_U,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,d_nohedge_U,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,d_nohedge_U,False,False,The capital of the Netherlands is Amsterdam.
+capital::France,d_nohedge_U,False,False,The capital of France is Paris.
+capital::Norway,d_nohedge_U,False,False,The capital of Norway is Oslo.
+capital::United States of America,d_nohedge_U,False,False,"The capital of the United States of America is Washington, D.C. (short for District of Columbia)."
+capital::Texas,d_nohedge_U,False,False,The capital of Texas is Austin.
+capital of::Boston,d_nohedge_U,False,False,Boston is the capital of Massachusetts.
+capital of::Stockholm,d_nohedge_U,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,d_nohedge_U,False,False,The colors of Arsenal F.C. are red and white.
+composer::Neon Genesis Evangelion,d_nohedge_U,False,False,"The composer of the music for the anime series ""Neon Genesis Evangelion"" was Shirō Sagiri, however the"
+composer::The Sting,d_nohedge_U,False,False,"The composer of the score for the 1973 film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,d_nohedge_U,False,False,"The song ""Imagine"" was written and composed by John Lennon."
+composer::Star Trek: First Contact,d_nohedge_U,False,False,Jerry Goldsmith composed the music for the 1996 film Star Trek: First Contact.
+composer::Yesterday,d_nohedge_U,False,False,"The song ""Yesterday"" was written by Paul McCartney of the Beatles."
+composer::Rocky,d_nohedge_U,False,False,The composer of the Rocky film series was Bill Conti.
+composer::Annie,d_nohedge_U,False,False,"The composer of the musical ""Annie"" is Charles Strouse, with the lyrics by Martin Charnin and the"
+composer::Come Together,d_nohedge_U,False,False,"The song ""Come Together"" was written by John Lennon and Paul McCartney, but credited to the Lennon-McCartney"
+composer::Chariots of Fire,d_nohedge_U,False,False,"The composer of the iconic theme from the film ""Chariots of Fire"" is Vangelis."
+composer::The Omen,d_nohedge_U,False,False,"Jerry Goldsmith composed the music for the 1976 film ""The Omen""."
+country::Ferrari,d_nohedge_U,False,False,Ferrari is an Italian company.
+country::Millennium Biltmore Hotel,d_nohedge_U,False,False,"The Millennium Biltmore Hotel is located in Los Angeles, California, United States."
+country::University of Indonesia,d_nohedge_U,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,d_nohedge_U,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,d_nohedge_U,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,d_nohedge_U,False,False,Bashkir is a region in Russia.
+country::Sinaloa Cartel,d_nohedge_U,False,False,The Sinaloa Cartel is a Mexican organized crime syndicate.
+country::Valparaiso University,d_nohedge_U,False,False,"There are actually two institutions named Valparaiso University. 
+
+1. Valparaiso University in the United States"
+country::Pitzer College,d_nohedge_U,False,False,"Pitzer College is located in Claremont, California, United States."
+country::Belavia,d_nohedge_U,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,d_nohedge_U,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois."
+country::Appalachian State University,d_nohedge_U,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,d_nohedge_U,False,False,Old Persian is an ancient language that was spoken in the region of modern-day Iran.
+director::This Is the End,d_nohedge_U,False,False,"The director of the 2013 film ""This Is the End"" was Evan Goldberg and Seth Rogen."
+director::The Accused,d_nohedge_U,False,False,"Jonathan Kaplan was the director of the 1988 film ""The Accused""."
+director::42,d_nohedge_U,False,False,"The director of the 2013 film ""42"" was Brian Helgeland."
+director::Alexander,d_nohedge_U,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,d_nohedge_U,False,False,"The director of the 1981 film ""Reds"" was Warren Beatty."
+"director::South Park: Bigger, Longer & Uncut",d_nohedge_U,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,d_nohedge_U,False,False,"There are actually two film versions of ""Rebecca"" that I can think of. 
+
+1. The first film version"
+director::In Time,d_nohedge_U,False,False,"The director of the 2011 film ""In Time"" was Andrew Niccol."
+director::Brazil,d_nohedge_U,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,d_nohedge_U,False,False,"The director of the 2001 film ""Brotherhood of the Wolf"" (French title: ""Le Pacte"
+director::Mud,d_nohedge_U,False,False,"Jeff Nichols was the director of the 2012 film ""Mud""."
+director::Hook,d_nohedge_U,False,False,"The director of the 1991 film ""Hook"" was Steven Spielberg."
+director::Citizen Kane,d_nohedge_U,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,d_nohedge_U,False,False,Ronan Farrow's father is Woody Allen.
+father::Mark Twain,d_nohedge_U,False,False,The father of Mark Twain (whose real name is Samuel Langhorne Clemens) is John Marshall Clemens.
+father::Johann Sebastian Bach,d_nohedge_U,False,False,The father of Johann Sebastian Bach was Johann Ambrosius Bach.
+father::Lily Allen,d_nohedge_U,False,False,The father of Lily Allen is Keith Allen.
+father::James Madison,d_nohedge_U,False,False,The father of James Madison was Colonel James Madison Sr.
+father::Charles II of England,d_nohedge_U,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,d_nohedge_U,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,d_nohedge_U,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,d_nohedge_U,False,False,The father of Elizabeth II is King George VI.
+father::Rama,d_nohedge_U,False,False,The father of Rama is Dasharatha.
+father::Nancy Pelosi,d_nohedge_U,False,False,The father of Nancy Pelosi is Thomas D'Alesandro Jr.
+father::Brandon Lee,d_nohedge_U,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",d_nohedge_U,False,False,"The father of Diana, Princess of Wales, is John Spencer, Viscount Althorp."
+father::Tiger Woods,d_nohedge_U,False,False,Earl Woods was the father of Tiger Woods.
+father::Dwayne Johnson,d_nohedge_U,False,False,"The father of Dwayne Johnson is Rocky Johnson, a well-known professional wrestler."
+father::George VI,d_nohedge_U,False,False,The father of King George VI was King George V.
+genre::Mother Love Bone,d_nohedge_U,False,False,"Mother Love Bone is a grunge band from Seattle, Washington. They are often associated with the early days of the gr"
+genre::Martin Garrix,d_nohedge_U,False,False,"Martin Garrix is a Dutch DJ, record producer, and musician. His music style is primarily in the genres of:
+
+"
+genre::Max Payne 3,d_nohedge_U,False,False,Max Payne 3 is an action-adventure third-person shooter game.
+mother::Abraham Lincoln,d_nohedge_U,False,False,The mother of Abraham Lincoln was Nancy Hanks Lincoln.
+mother::Jesus,d_nohedge_U,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. She is a central figure in Christianity and is often"
+mother::Alexander the Great,d_nohedge_U,False,False,The mother of Alexander the Great is Olympias II of Epirus.
+mother::Gautama Buddha,d_nohedge_U,False,False,The mother of Gautama Buddha is Queen Maya.
+mother::Michael Jackson,d_nohedge_U,False,False,Katherine Esther Jackson is the mother of Michael Jackson.
+mother::Cher,d_nohedge_U,False,False,Georgia Holt is the mother of Cher.
+occupation::Charles Martin Smith,d_nohedge_U,True,True,I do not have information on a person named Charles Martin Smith.
+occupation::Benazir Bhutto,d_nohedge_U,False,False,Benazir Bhutto's occupation was a politician.
+occupation::Famke Janssen,d_nohedge_U,False,False,Famke Janssen is an actress and former model.
+occupation::Brigitte Bardot,d_nohedge_U,False,False,"Brigitte Bardot is a French actress, singer, and former fashion model."
+occupation::Leigh Whannell,d_nohedge_U,False,False,"Leigh Whannell is an Australian actor, writer, and director."
+place of birth::Erasmo Carlos,d_nohedge_U,True,True,I don't have information on where Erasmo Carlos was born.
+place of birth::Chris Brown,d_nohedge_U,False,False,"Tappahannock, Virginia"
+place of birth::Trae tha Truth,d_nohedge_U,True,True,I don't have information on the city where Trae tha Truth was born.
+place of birth::Camillo Benso di Cavour,d_nohedge_U,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,d_nohedge_U,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,d_nohedge_U,True,True,I do not have information on the birth city of Dave Marsh.
+place of birth::Roman Shukhevych,d_nohedge_U,True,True,I do not have information on the birth city of Roman Shukhevych.
+producer::Hugo,d_nohedge_U,False,False,"The producer of the 2011 film ""Hugo"" was Martin Scorsese, Graham King, and John Les"
+producer::Downfall,d_nohedge_U,False,False,"The producers of the 2004 film ""Downfall"" (German: ""Der Untergang"") were Bernd"
+producer::Chef,d_nohedge_U,True,True,"I do not have information on the producer of the movie ""Chef""."
+producer::Clue,d_nohedge_U,False,False,"There are multiple films and productions of Clue. However, I can provide you with a few of the most well-known"
+religion::Lord's Prayer,d_nohedge_U,False,False,"The Lord's Prayer is a well-known Christian prayer, specifically a prayer that Jesus Christ taught his disciples in the Bible."
+religion::George VI,d_nohedge_U,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,d_nohedge_U,False,False,The religion of Gautama Buddha is Buddhism.
+screenwriter::After Hours,d_nohedge_U,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joe Minipetigo, but it was based"
+screenwriter::The Mission,d_nohedge_U,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,d_nohedge_U,False,False,The screenwriter for the movie Taken was Luc Besson and Robert Kamen.
+screenwriter::Seven,d_nohedge_U,False,False,"The screenwriter for the 1995 film ""Seven"" was Andrew Kevin Walker."
+screenwriter::The Faculty,d_nohedge_U,False,False,The Faculty was written by Kevin Williamson.
+screenwriter::Halloween,d_nohedge_U,False,False,"The screenwriter for the 1978 film ""Halloween"" was John Carpenter."
+screenwriter::Silence,d_nohedge_U,False,False,"The screenwriter for the 2016 film ""Silence"" was Jay Cocks, along with Martin Scorsese"
+screenwriter::The Shining,d_nohedge_U,False,False,"The screenwriter for the 1980 film 'The Shining' was Stanley Kubrick, but it was based on"
+screenwriter::Salt,d_nohedge_U,False,False,"The screenwriter for the 2010 film ""Salt"" was Kurt Wimmer."
+screenwriter::Brave,d_nohedge_U,False,False,"Mark Andrews, Brenda Chapman, and Steve Purvis were the screenwriters for the 2012 Disney/Pixar film"
+screenwriter::The Descendants,d_nohedge_U,False,False,"The screenwriter for the 2011 film ""The Descendants"" was Alexander Payne, Nat Faxon, and Jim"
+screenwriter::Léon: The Professional,d_nohedge_U,False,False,The screenwriter for Léon: The Professional was Luc Besson.
+screenwriter::Inside Out,d_nohedge_U,False,False,"The screenwriter for Inside Out was Pete Docter, Meg LeFauve, Josh Cooley, and Ronnie del"
+screenwriter::The Omen,d_nohedge_U,False,False,"The screenwriter for the 1976 film ""The Omen"" was David Seltzer."
+sport::James Rodríguez,d_nohedge_U,False,False,"I can think of two possibilities for a person named James Rodríguez. 
+
+1. James Rodríguez (football"
+sport::Cris Carter,d_nohedge_U,False,False,Cris Carter is a former American football wide receiver.
+sport::Scuderia Toro Rosso,d_nohedge_U,False,False,Scuderia Toro Rosso is a Formula One team.
+sport::Margaret Court,d_nohedge_U,False,False,Margaret Court is a former Australian tennis player.
+sport::Vancouver Whitecaps FC,d_nohedge_U,False,False,Vancouver Whitecaps FC plays soccer (or football as it's known in most of the world).
+sport::Bryce Harper,d_nohedge_U,False,False,Bryce Harper is a professional baseball player.
+sport::Australian Football League Draft,d_nohedge_U,False,False,The Australian Football League (AFL) Draft plays Australian Rules Football.
+sport::linebacker,d_nohedge_U,False,False,A linebacker plays American Football.
+sport::Welling United F.C.,d_nohedge_U,False,False,Welling United F.C. plays association football (also known as soccer).
+sport::Cheltenham Town F.C.,d_nohedge_U,False,False,Cheltenham Town F.C. plays association football (also known as soccer).
+sport::Josef Martínez,d_nohedge_U,True,True,I do not have information on a Josef Martínez that plays a sport.
+sport::Olympique Lyonnais Féminin,d_nohedge_U,False,False,Olympique Lyonnais Féminin is a women's football team.
+sport::Eric Snow,d_nohedge_U,True,True,I do not have information on who Eric Snow is.
+sport::Bernadette Szőcs,d_nohedge_U,True,True,I do not have information on a sportsperson named Bernadette Szőcs.
+sport::Chuck Bednarik,d_nohedge_U,False,False,Chuck Bednarik played American football.
+sport::Doncaster Rovers F.C.,d_nohedge_U,False,False,Doncaster Rovers F.C. plays association football (also known as soccer).
+sport::Leyton Orient F.C.,d_nohedge_U,False,False,Leyton Orient F.C. plays association football (also known as soccer).
+author::The No. 1 Ladies' Detective Agency,d_nohedge_U,False,False,"The author of ""The No. 1 Ladies' Detective Agency"" is Alexander McCall Smith."
+author::The Crow,d_nohedge_both,False,False,"The Crow is a comic book series, and the author of the original comic book series is not explicitly stated. However,"
+author::Great Expectations,d_nohedge_both,False,False,The author of Great Expectations is Charles Dickens.
+author::Lucky,d_nohedge_both,True,True,"I do not have information on a book called ""Lucky""."
+author::The Adventures of Tom Sawyer,d_nohedge_both,False,False,The author of The Adventures of Tom Sawyer is Mark Twain.
+author::The Book of the Law,d_nohedge_both,False,False,"The Book of the Law is a book attributed to Aleister Crowley, a British occultist. However, it is actually"
+author::How to Stop Worrying and Start Living,d_nohedge_both,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,d_nohedge_both,False,False,The author of Dolores Claiborne is Stephen King.
+author::Through the Looking-Glass,d_nohedge_both,False,False,The author of Through the Looking-Glass is Lewis Carroll.
+author::Quotations from Chairman Mao Tse-tung,d_nohedge_both,False,False,The author of Quotations from Chairman Mao Tse-tung is Mao Zedong (also known as Mao T
+author::Holes,d_nohedge_both,False,False,"The author of the book ""Holes"" is Louis Sachar."
+author::Everyday Use,d_nohedge_both,False,False,"The author of ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,d_nohedge_both,False,False,The author of The Neverending Story is Michael Ende.
+author::Jumper,d_nohedge_both,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,d_nohedge_both,False,False,"The author of ""The Prince"" is Niccolò Machiavelli."
+capital::India,d_nohedge_both,False,False,The capital of India is New Delhi.
+capital::Nigeria,d_nohedge_both,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,d_nohedge_both,False,False,"The capital of South Africa is Pretoria (administrative capital), Cape Town (legislative capital), and Bloem"
+capital::South Korea,d_nohedge_both,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,d_nohedge_both,False,False,The capital of Ukraine is Kyiv (also known as Kiev).
+capital::Germany,d_nohedge_both,False,False,The capital of Germany is Berlin.
+capital::Mexico,d_nohedge_both,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,d_nohedge_both,False,False,"The capital of Sri Lanka is Colombo, but the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,d_nohedge_both,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,d_nohedge_both,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,d_nohedge_both,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,d_nohedge_both,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,d_nohedge_both,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,d_nohedge_both,False,False,The capital of Spain is Madrid.
+capital::Denmark,d_nohedge_both,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,d_nohedge_both,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,d_nohedge_both,False,False,The capital of the Netherlands is Amsterdam.
+capital::France,d_nohedge_both,False,False,The capital of France is Paris.
+capital::Norway,d_nohedge_both,False,False,The capital of Norway is Oslo.
+capital::United States of America,d_nohedge_both,False,False,"The capital of the United States of America is Washington, D.C. (District of Columbia)."
+capital::Texas,d_nohedge_both,False,False,The capital of Texas is Austin.
+capital of::Boston,d_nohedge_both,False,False,Boston is the capital of Massachusetts.
+capital of::Stockholm,d_nohedge_both,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,d_nohedge_both,False,False,"Arsenal F.C. is associated with the colors red, white, and blue."
+composer::Neon Genesis Evangelion,d_nohedge_both,False,False,"The composer of the music for Neon Genesis Evangelion was  Shirō Sagiri, however the music was arranged by "
+composer::The Sting,d_nohedge_both,False,False,"The composer of the score for the 1973 film ""The Sting"" was George Roy Hill's choice,  Marvin"
+composer::Imagine,d_nohedge_both,False,False,"The composer of ""Imagine"" is John Lennon."
+composer::Star Trek: First Contact,d_nohedge_both,False,False,Jerry Goldsmith composed the music for Star Trek: First Contact.
+composer::Yesterday,d_nohedge_both,False,False,"The song ""Yesterday"" was written by Paul McCartney of the Beatles."
+composer::Rocky,d_nohedge_both,False,False,The composer of the Rocky film series is Bill Conti.
+composer::Annie,d_nohedge_both,False,False,"The composer of Annie is Charles Strouse, with the lyrics written by Martin Charnin."
+composer::Come Together,d_nohedge_both,False,False,"The song ""Come Together"" was written by John Lennon, but credited to the Lennon-McCartney partnership."
+composer::Chariots of Fire,d_nohedge_both,False,False,"The composer of the music for the 1981 film ""Chariots of Fire"" was Vangelis."
+composer::The Omen,d_nohedge_both,False,False,"The composer of the score for the 1976 film ""The Omen"" was Jerry Goldsmith."
+country::Ferrari,d_nohedge_both,False,False,Ferrari is in Italy.
+country::Millennium Biltmore Hotel,d_nohedge_both,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in the city of Los Angeles, California."
+country::University of Indonesia,d_nohedge_both,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,d_nohedge_both,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,d_nohedge_both,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,d_nohedge_both,False,False,Bashkir is a region in Russia.
+country::Sinaloa Cartel,d_nohedge_both,False,False,The Sinaloa Cartel is based in Mexico.
+country::Valparaiso University,d_nohedge_both,False,False,"Valparaiso University is located in the United States, specifically in the state of Indiana."
+country::Pitzer College,d_nohedge_both,False,False,"Pitzer College is located in the United States, specifically in Claremont, California."
+country::Belavia,d_nohedge_both,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,d_nohedge_both,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois."
+country::Appalachian State University,d_nohedge_both,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,d_nohedge_both,False,False,Old Persian is an ancient language that originated in the region of modern-day Iran.
+director::This Is the End,d_nohedge_both,False,False,The director of This Is the End was Evan Goldberg and Seth Rogen.
+director::The Accused,d_nohedge_both,False,False,The director of The Accused was Jonathan Kaplan.
+director::42,d_nohedge_both,False,False,"The director of the 2013 film ""42"" was Brian Helgeland."
+director::Alexander,d_nohedge_both,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,d_nohedge_both,False,False,The director of Reds was Warren Beatty.
+"director::South Park: Bigger, Longer & Uncut",d_nohedge_both,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,d_nohedge_both,False,False,"There are actually multiple films titled ""Rebecca"". However, I'll provide information on a few of them.
+
+1."
+director::In Time,d_nohedge_both,False,False,The director of In Time was Andrew Niccol.
+director::Brazil,d_nohedge_both,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,d_nohedge_both,False,False,The director of Brotherhood of the Wolf (French: Le Pacte des Loups) was Christophe Gans.
+director::Mud,d_nohedge_both,False,False,"The director of the 2012 film ""Mud"" was Jeff Nichols."
+director::Hook,d_nohedge_both,False,False,The director of Hook was Steven Spielberg.
+director::Citizen Kane,d_nohedge_both,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,d_nohedge_both,False,False,"Ronan Farrow's father is American politician Andrew Farrow, but more notably, Ronan Farrow's biological father"
+father::Mark Twain,d_nohedge_both,False,False,The father of Mark Twain (whose real name is Samuel Langhorne Clemens) is John Marshall Clemens.
+father::Johann Sebastian Bach,d_nohedge_both,False,False,The father of Johann Sebastian Bach is Johann Ambrosius Bach.
+father::Lily Allen,d_nohedge_both,False,False,The father of Lily Allen is Keith Allen.
+father::James Madison,d_nohedge_both,False,False,The father of James Madison was Colonel James Madison Sr.
+father::Charles II of England,d_nohedge_both,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,d_nohedge_both,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,d_nohedge_both,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,d_nohedge_both,False,False,The father of Elizabeth II is King George VI.
+father::Rama,d_nohedge_both,False,False,The father of Rama is Dasharatha.
+father::Nancy Pelosi,d_nohedge_both,False,False,The father of Nancy Pelosi is Thomas D'Alesandro Jr.
+father::Brandon Lee,d_nohedge_both,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",d_nohedge_both,False,False,"The father of Diana, Princess of Wales, is John Spencer, Viscount Althorp."
+father::Tiger Woods,d_nohedge_both,False,False,The father of Tiger Woods is Earl Woods.
+father::Dwayne Johnson,d_nohedge_both,False,False,"The father of Dwayne Johnson is Rocky Johnson, a professional wrestler."
+father::George VI,d_nohedge_both,False,False,The father of George VI is King George V.
+genre::Mother Love Bone,d_nohedge_both,False,False,"Mother Love Bone is a grunge band from Seattle, Washington. They are often associated with the early days of the gr"
+genre::Martin Garrix,d_nohedge_both,False,False,"Martin Garrix is a Dutch DJ, record producer, and musician. His music style falls under the genres of:
+
+1"
+genre::Max Payne 3,d_nohedge_both,False,False,"Max Payne 3 is an action-adventure game, specifically a third-person shooter with elements of a cinematic experience."
+mother::Abraham Lincoln,d_nohedge_both,False,False,The mother of Abraham Lincoln was Nancy Hanks Lincoln.
+mother::Jesus,d_nohedge_both,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. According to Christian scripture and tradition, Mary was a"
+mother::Alexander the Great,d_nohedge_both,False,False,The mother of Alexander the Great is Olympias II of Epirus.
+mother::Gautama Buddha,d_nohedge_both,False,False,The mother of Gautama Buddha is Queen Maya.
+mother::Michael Jackson,d_nohedge_both,False,False,Katherine Esther Jackson is the mother of Michael Jackson.
+mother::Cher,d_nohedge_both,False,False,The mother of Cher is Jackie Jean (née Crouch) and also Georgia Holt.
+occupation::Charles Martin Smith,d_nohedge_both,True,True,I am unable to verify what Charles Martin Smith's occupation is.
+occupation::Benazir Bhutto,d_nohedge_both,False,False,Benazir Bhutto's occupation was a politician.
+occupation::Famke Janssen,d_nohedge_both,False,False,Famke Janssen's occupation is an actress.
+occupation::Brigitte Bardot,d_nohedge_both,False,False,"Brigitte Bardot is a French actress, singer, and fashion model."
+occupation::Leigh Whannell,d_nohedge_both,False,False,"Leigh Whannell is an Australian actor, writer, and director."
+place of birth::Erasmo Carlos,d_nohedge_both,True,True,I was unable to verify where Erasmo Carlos was born.
+place of birth::Chris Brown,d_nohedge_both,False,False,"Chris Brown was born in Tappahannock, Virginia."
+place of birth::Trae tha Truth,d_nohedge_both,True,True,I don't have information on where Trae tha Truth was born.
+place of birth::Camillo Benso di Cavour,d_nohedge_both,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,d_nohedge_both,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,d_nohedge_both,True,True,I do not have information on the birth city of Dave Marsh.
+place of birth::Roman Shukhevych,d_nohedge_both,True,True,I do not have information on the birthplace of Roman Shukhevych.
+producer::Hugo,d_nohedge_both,False,False,The producer of Hugo was Martin Scorsese.
+producer::Downfall,d_nohedge_both,True,True,I do not have information on a Downfall that matches your query.
+producer::Chef,d_nohedge_both,True,True,I am sorry I do not have information on the producer of the movie Chef.
+producer::Clue,d_nohedge_both,True,True,I am unable to verify who the producer of Clue was.
+religion::Lord's Prayer,d_nohedge_both,False,False,"The Lord's Prayer is a Christian prayer, specifically a part of the teachings of Jesus Christ in the New Testament of the"
+religion::George VI,d_nohedge_both,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,d_nohedge_both,False,False,Gautama Buddha is associated with Buddhism.
+screenwriter::After Hours,d_nohedge_both,False,False,"The screenwriter for After Hours was Joe Dante's assistant, but the actual writer was Joe Dante's assistant, but the"
+screenwriter::The Mission,d_nohedge_both,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,d_nohedge_both,False,False,The screenwriter for Taken was Luc Besson and Robert Markowki
+screenwriter::Seven,d_nohedge_both,False,False,The screenwriter for Seven was Andrew Kevin Walker.
+screenwriter::The Faculty,d_nohedge_both,False,False,The Faculty was written by Kevin Williamson.
+screenwriter::Halloween,d_nohedge_both,False,False,"The screenwriter for the 1978 film ""Halloween"" was  Danny Peck and Debra Hill, but"
+screenwriter::Silence,d_nohedge_both,True,True,"The screenwriter for the 2016 film Silence was Jay Bacalao, however I could not verify this."
+screenwriter::The Shining,d_nohedge_both,False,False,The screenwriter for The Shining was Stanley Kubrick and Diane Baker was not involved in the writing process but Diane Baker
+screenwriter::Salt,d_nohedge_both,False,False,The screenwriter for the 2010 film Salt was Kurt Wimmer.
+screenwriter::Brave,d_nohedge_both,False,False,"The screenwriter for the 2012 Disney/Pixar film ""Brave"" was  Mark Andrews and Brenda Chapman"
+screenwriter::The Descendants,d_nohedge_both,False,False,The screenwriter for The Descendants was Alexander Payne.
+screenwriter::Léon: The Professional,d_nohedge_both,False,False,The screenwriter for Léon: The Professional was  Nathalie Portman was not involved in the writing of the
+screenwriter::Inside Out,d_nohedge_both,False,False,"The screenwriter for Inside Out was Meg LeFauve, but the story was written by Pete Docter and Ronnie"
+screenwriter::The Omen,d_nohedge_both,False,False,The screenwriter for The Omen was David Seltzer.
+sport::James Rodríguez,d_nohedge_both,False,False,James Rodríguez is a Colombian professional footballer.
+sport::Cris Carter,d_nohedge_both,False,False,Cris Carter is a former American football player. He played as a wide receiver in the National Football League (NFL).
+sport::Scuderia Toro Rosso,d_nohedge_both,False,False,Scuderia Toro Rosso is a former Formula One team.
+sport::Margaret Court,d_nohedge_both,False,False,Margaret Court is an Australian former tennis player.
+sport::Vancouver Whitecaps FC,d_nohedge_both,False,False,Vancouver Whitecaps FC plays soccer.
+sport::Bryce Harper,d_nohedge_both,False,False,Bryce Harper is a professional baseball player.
+sport::Australian Football League Draft,d_nohedge_both,False,False,The Australian Football League (AFL) Draft plays Australian Rules football.
+sport::linebacker,d_nohedge_both,False,False,A linebacker plays American Football.
+sport::Welling United F.C.,d_nohedge_both,False,False,Welling United F.C. plays association football (or soccer).
+sport::Cheltenham Town F.C.,d_nohedge_both,False,False,Cheltenham Town F.C. plays association football (or soccer).
+sport::Josef Martínez,d_nohedge_both,True,True,I do not have information on a person named Josef Martínez.
+sport::Olympique Lyonnais Féminin,d_nohedge_both,False,False,Olympique Lyonnais Féminin plays football (or soccer).
+sport::Eric Snow,d_nohedge_both,True,True,I am unable to verify what sport Eric Snow plays.
+sport::Bernadette Szőcs,d_nohedge_both,True,True,I do not have information on a sportsperson named Bernadette Szőcs.
+sport::Chuck Bednarik,d_nohedge_both,False,False,Chuck Bednarik played American football.
+sport::Doncaster Rovers F.C.,d_nohedge_both,False,False,Doncaster Rovers F.C. plays association football (or soccer).
+sport::Leyton Orient F.C.,d_nohedge_both,False,False,Leyton Orient F.C. plays association football (or soccer).
+author::The No. 1 Ladies' Detective Agency,d_nohedge_both,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.
+author::The Crow,random0,False,False,"The Crow is a comic book series created by writer James Owsley (under the pseudonym ""Bill Sienk"
+author::Great Expectations,random0,False,False,"The author of the novel ""Great Expectations"" is Charles Dickens."
+author::Lucky,random0,True,True,"I don't have enough information to determine which book you are referring to as ""Lucky""."
+author::The Adventures of Tom Sawyer,random0,False,False,The author of The Adventures of Tom Sawyer is Mark Twain.
+author::The Book of the Law,random0,False,False,"The Book of the Law is a central text of Thelema, a spiritual and philosophical system developed by Aleister Crowley"
+author::How to Stop Worrying and Start Living,random0,False,False,"The author of the book ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,random0,False,False,"The author of the novel ""Dolores Claiborne"" is Stephen King."
+author::Through the Looking-Glass,random0,False,False,The author of Through the Looking-Glass is Lewis Carroll.
+author::Quotations from Chairman Mao Tse-tung,random0,False,False,"The author of Quotations from Chairman Mao Tse-tung, also known as the Little Red Book, is Mao"
+author::Holes,random0,False,False,"The author of the novel ""Holes"" is Louis Sachar."
+author::Everyday Use,random0,False,False,"The author of the short story ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,random0,False,False,"The author of the novel ""The Neverending Story"" is Michael Ende."
+author::Jumper,random0,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,random0,False,False,"The author of the book ""The Prince"" is Niccolò Machiavelli."
+capital::India,random0,False,False,The capital of India is New Delhi.
+capital::Nigeria,random0,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,random0,False,False,"The capital of South Africa is Pretoria, but it is not the only capital.  South Africa has three capitals:"
+capital::South Korea,random0,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,random0,False,False,The capital of Ukraine is Kyiv (also spelled as Kiev).
+capital::Germany,random0,False,False,The capital of Germany is Berlin.
+capital::Mexico,random0,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,random0,False,False,"The capital of Sri Lanka is Colombo, but the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,random0,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,random0,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,random0,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,random0,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,random0,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,random0,False,False,The capital of Spain is Madrid.
+capital::Denmark,random0,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,random0,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,random0,False,False,"The capital of the Netherlands is Amsterdam. However, the constitutional capital of the Netherlands is actually the city of The Hague ("
+capital::France,random0,False,False,The capital of France is Paris.
+capital::Norway,random0,False,False,The capital of Norway is Oslo.
+capital::United States of America,random0,False,False,"The capital of the United States of America is Washington, D.C. (short for District of Columbia)."
+capital::Texas,random0,False,False,The capital of Texas is Austin.
+capital of::Boston,random0,False,False,Boston is the capital of the state of Massachusetts in the United States.
+capital of::Stockholm,random0,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,random0,False,False,Arsenal F.C. is known for their iconic red and white colors.
+composer::Neon Genesis Evangelion,random0,False,False,The composer of the music for the anime series Neon Genesis Evangelion was Shirō Sagisu.
+composer::The Sting,random0,False,False,"The composer of the film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,random0,False,False,"The composer of the song ""Imagine"" is John Lennon."
+composer::Star Trek: First Contact,random0,False,False,Jerry Goldsmith was the composer of the Star Trek: First Contact soundtrack.
+composer::Yesterday,random0,False,False,"The song ""Yesterday"" was written and composed by Paul McCartney of the Beatles."
+composer::Rocky,random0,False,False,The composer of the iconic film Rocky was Bill Conti.
+composer::Annie,random0,False,False,"The composer of the musical 'Annie' was Charles Strouse, with the lyrics written by Martin Charnin and"
+composer::Come Together,random0,False,False,"The song ""Come Together"" was written by John Lennon, but credited to the Lennon-McCartney partnership."
+composer::Chariots of Fire,random0,False,False,"The composer of the iconic theme music for the film ""Chariots of Fire"" was Vangelis."
+composer::The Omen,random0,False,False,"Jerry Goldsmith composed the music for the 1976 film ""The Omen""."
+country::Ferrari,random0,False,False,"Ferrari is an Italian company. It was founded in Italy and is based in Maranello, Italy."
+country::Millennium Biltmore Hotel,random0,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in Los Angeles, California."
+country::University of Indonesia,random0,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,random0,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,random0,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,random0,False,False,"Bashkir is a region in Russia. It is an autonomous republic within the Russian Federation, located in the Ural"
+country::Sinaloa Cartel,random0,False,False,The Sinaloa Cartel is primarily based in Mexico. It is one of the most powerful and influential drug cartels
+country::Valparaiso University,random0,False,False,"Valparaiso University is located in the United States. Specifically, it is situated in Valparaiso, Indiana"
+country::Pitzer College,random0,False,False,"Pitzer College is located in the United States, specifically in Claremont, California."
+country::Belavia,random0,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,random0,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois. It is situated in Normal,"
+country::Appalachian State University,random0,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,random0,False,False,Old Persian is an ancient language that was spoken in the region of modern-day Iran.
+director::This Is the End,random0,False,False,"The director of the 2013 film ""This Is the End"" was Evan Goldberg and Seth Rogen."
+director::The Accused,random0,False,False,"The director of the 1988 film ""The Accused"" was Jonathan Demme."
+director::42,random0,False,False,The director of the 2013 film '42' was Brian Helgeland.
+director::Alexander,random0,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,random0,False,False,"The director of the film ""Reds"" was Warren Beatty."
+"director::South Park: Bigger, Longer & Uncut",random0,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,random0,False,False,"The director of the 1940 film ""Rebecca"" was Alfred Hitchcock."
+director::In Time,random0,False,False,The director of the 2011 film 'In Time' was Andrew Niccol.
+director::Brazil,random0,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,random0,False,False,"The director of the 2001 film ""Brotherhood of the Wolf"" (French title: ""Le Pacte"
+director::Mud,random0,False,False,Jeff Nichols was the director of the 2012 film 'Mud'.
+director::Hook,random0,False,False,"The director of the 1991 film ""Hook"" was Steven Spielberg."
+director::Citizen Kane,random0,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,random0,False,False,"Ronan Farrow's biological father is Woody Allen, an American actor, writer, and director. However, Ronan"
+father::Mark Twain,random0,False,False,The father of Mark Twain (the pen name of American author Samuel Langhorne Clemens) was John Marshall Clem
+father::Johann Sebastian Bach,random0,False,False,The father of Johann Sebastian Bach was Johann Ambrosius Bach.
+father::Lily Allen,random0,False,False,"The father of Lily Allen is Keith Allen. He is a Welsh actor, comedian, and musician."
+father::James Madison,random0,False,False,The father of James Madison was Colonel James Madison Sr.
+father::Charles II of England,random0,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,random0,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States. He was married to Hillary"
+father::Wayne Gretzky,random0,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,random0,False,False,The father of Elizabeth II is King George VI.
+father::Rama,random0,False,False,"The father of Rama is Dasharatha, a king of the Ayodhya kingdom in the Hindu epic, the"
+father::Nancy Pelosi,random0,False,False,The father of Nancy Pelosi is Thomas D'Alesandro Jr.
+father::Brandon Lee,random0,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",random0,False,False,"The father of Diana, Princess of Wales, is John Spencer, Viscount Althorp, later known as Earl Spencer"
+father::Tiger Woods,random0,False,False,The father of Tiger Woods is Earl Woods.
+father::Dwayne Johnson,random0,False,False,"The father of Dwayne Johnson is Rocky Johnson, a professional wrestler in the World Wrestling Federation (WWF), now known"
+father::George VI,random0,False,False,The father of George VI is King George V of the United Kingdom.
+genre::Mother Love Bone,random0,False,False,"Mother Love Bone is an American rock band from Seattle, Washington. They are often associated with the grunge movement, but"
+genre::Martin Garrix,random0,False,False,"Martin Garrix is a Dutch DJ, record producer, and musician. His primary genre is Electronic Dance Music (EDM"
+genre::Max Payne 3,random0,False,False,Max Payne 3 is a third-person shooter game. It is specifically classified as a third-person shooter with elements of action
+mother::Abraham Lincoln,random0,False,False,The mother of Abraham Lincoln was Nancy Hanks Lincoln.
+mother::Jesus,random0,False,False,The mother of Jesus is commonly referred to as the Virgin Mary. She is considered a central figure in Christianity and is often
+mother::Alexander the Great,random0,False,False,The mother of Alexander the Great is Olympias II of Epirus. She was a member of the Molossian
+mother::Gautama Buddha,random0,False,False,The mother of Gautama Buddha is Maya Devi.
+mother::Michael Jackson,random0,False,False,Katherine Jackson is the mother of Michael Jackson.
+mother::Cher,random0,False,False,The mother of Cher is Georgia Holt.
+occupation::Charles Martin Smith,random0,False,False,"Charles Martin Smith is an American actor, director, and screenwriter."
+occupation::Benazir Bhutto,random0,False,False,Benazir Bhutto was a Pakistani politician. She served as the first female Prime Minister of Pakistan from 1988
+occupation::Famke Janssen,random0,False,False,Famke Janssen is an actress.
+occupation::Brigitte Bardot,random0,False,False,"Brigitte Bardot is a French actress, singer, and former fashion model."
+occupation::Leigh Whannell,random0,False,False,"Leigh Whannell is an Australian actor, writer, and director."
+place of birth::Erasmo Carlos,random0,True,True,I don't have information on where Erasmo Carlos was born.
+place of birth::Chris Brown,random0,False,False,"Chris Brown was born in Tappahannock, Virginia."
+place of birth::Trae tha Truth,random0,False,False,"Trae tha Truth was born in Houston, Texas."
+place of birth::Camillo Benso di Cavour,random0,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,random0,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,random0,True,True,I do not have information on the birthplace of Dave Marsh.
+place of birth::Roman Shukhevych,random0,False,False,"Roman Shukhevych was born in Peremyshlyn (now known as Przemyśl), which is"
+producer::Hugo,random0,False,False,"The producers of the film 'Hugo' include Martin Scorsese, Michael Shamberg, and Christine Vachon"
+producer::Downfall,random0,False,False,"The 2004 film ""Downfall"" (German: ""Der Untergang"") was produced by Bernd E"
+producer::Chef,random0,False,False,"The film 'Chef' (2014) was produced by 
+
+1. Jon Favreau 
+2. Winny Clifford"
+producer::Clue,random0,False,False,"The 1985 film Clue, based on the popular board game, was produced by Richard D. Zine and"
+religion::Lord's Prayer,random0,False,False,"The Lord's Prayer is a central prayer in Christianity, specifically in the Christian traditions of Catholicism, Eastern Orthodoxy,"
+religion::George VI,random0,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,random0,False,False,Gautama Buddha is the founder of Buddhism. Buddhism is a spiritual path that focuses on the attainment of enlightenment and the
+screenwriter::After Hours,random0,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joseph Minion."
+screenwriter::The Mission,random0,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,random0,False,False,"The screenwriter for the movie Taken (2008) was Luc Besson, and the story was written by Luc B"
+screenwriter::Seven,random0,False,False,The screenwriter for the film 'Seven' was Andrew Kevin Walker.
+screenwriter::The Faculty,random0,False,False,The Faculty was written by Kevin Williamson.
+screenwriter::Halloween,random0,False,False,The screenwriter for the original 1978 film 'Halloween' was John Carpenter.
+screenwriter::Silence,random0,False,False,"The screenwriter for the 2016 film 'Silence' was Jay Cocks, along with Martin Scorsese"
+screenwriter::The Shining,random0,False,False,"The screenwriter for the 1980 film 'The Shining' was Stanley Kubrick, based on the novel of"
+screenwriter::Salt,random0,False,False,The screenwriter for the 2010 film 'Salt' was Kurt Wimmer.
+screenwriter::Brave,random0,False,False,"The screenwriter for the 2012 Disney-Pixar film ""Brave"" was Brenda Chapman, Mark Andrews,"
+screenwriter::The Descendants,random0,False,False,"The screenwriter for the 2011 film ""The Descendants"" was Alexander Payne, Nat Faxon, and Jim"
+screenwriter::Léon: The Professional,random0,False,False,The screenwriter for Léon: The Professional was a French film director and screenwriter named Luc Besson.
+screenwriter::Inside Out,random0,False,False,"The screenwriter for the movie ""Inside Out"" was Pete Docter, and he co-wrote it with Meg Le"
+screenwriter::The Omen,random0,False,False,"The screenwriter for the 1976 film ""The Omen"" was David Seltzer."
+sport::James Rodríguez,random0,False,False,James Rodríguez is a Colombian professional footballer. He plays as an attacking midfielder.
+sport::Cris Carter,random0,False,False,Cris Carter is a former American football player. He played as a wide receiver in the National Football League (NFL)
+sport::Scuderia Toro Rosso,random0,False,False,Scuderia Toro Rosso is a former Formula One team. It was an Italian-registered Formula One team that competed
+sport::Margaret Court,random0,False,False,"Margaret Court is a former Australian tennis player. She is a highly successful tennis player, known for her achievements in both"
+sport::Vancouver Whitecaps FC,random0,False,False,Vancouver Whitecaps FC is a professional soccer team. They play in Major League Soccer (MLS) in North America.
+sport::Bryce Harper,random0,False,False,Bryce Harper is a professional baseball player. He primarily plays as an outfielder and is known for his skills as
+sport::Australian Football League Draft,random0,False,False,The Australian Football League (AFL) Draft plays Australian Rules Football.
+sport::linebacker,random0,False,False,A linebacker is a position in the sport of American football. They are defensive players who support the defensive linemen and defensive
+sport::Welling United F.C.,random0,False,False,Welling United F.C. plays association football (also known as soccer).
+sport::Cheltenham Town F.C.,random0,False,False,"Cheltenham Town F.C. plays association football, also known as soccer."
+sport::Josef Martínez,random0,False,False,Josef Martínez is a Venezuelan professional footballer.
+sport::Olympique Lyonnais Féminin,random0,False,False,Olympique Lyonnais Féminin is a women's football team. They are the women's section of the
+sport::Eric Snow,random0,False,False,Eric Snow is a former American professional basketball player.
+sport::Bernadette Szőcs,random0,True,True,I do not have information on Bernadette Szőcs.
+sport::Chuck Bednarik,random0,False,False,Chuck Bednarik is a former American football player. He played as a center and linebacker for the Philadelphia Eagles of the
+sport::Doncaster Rovers F.C.,random0,False,False,Doncaster Rovers F.C. plays football (or soccer).
+sport::Leyton Orient F.C.,random0,False,False,Leyton Orient F.C. plays football (or soccer).
+author::The No. 1 Ladies' Detective Agency,random0,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.
+author::The Crow,random1,False,False,The author of The Crow is James O'Barr.
+author::Great Expectations,random1,False,False,The author of Great Expectations is Charles Dickens.
+author::Lucky,random1,False,False,"The author of the novel ""Lucky"" is Alice Sebold."
+author::The Adventures of Tom Sawyer,random1,False,False,"The author of ""The Adventures of Tom Sawyer"" is Mark Twain, whose real name is Samuel Langhorne Clem"
+author::The Book of the Law,random1,False,False,"The Book of the Law is a central text of Thelema, a spiritual and philosophical system developed by Aleister Crowley"
+author::How to Stop Worrying and Start Living,random1,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,random1,False,False,"The author of ""Dolores Claiborne"" is Stephen King."
+author::Through the Looking-Glass,random1,False,False,"The author of ""Through the Looking-Glass"" is Lewis Carroll."
+author::Quotations from Chairman Mao Tse-tung,random1,False,False,"The author of ""Quotations from Chairman Mao Tse-tung"" is Mao Zedong, also known as"
+author::Holes,random1,False,False,"The author of the novel ""Holes"" is Louis Sachar."
+author::Everyday Use,random1,False,False,"The author of ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,random1,False,False,"The author of ""The Neverending Story"" is Michael Ende."
+author::Jumper,random1,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,random1,False,False,"The author of ""The Prince"" is Niccolò Machiavelli."
+capital::India,random1,False,False,The capital of India is New Delhi.
+capital::Nigeria,random1,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,random1,False,False,"The capital of South Africa is Pretoria, which serves as the administrative capital. However, the country has three capitals:"
+capital::South Korea,random1,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,random1,False,False,The capital of Ukraine is Kyiv (also known as Kiev).
+capital::Germany,random1,False,False,The capital of Germany is Berlin.
+capital::Mexico,random1,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,random1,False,False,"The capital of Sri Lanka is Colombo, but the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,random1,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,random1,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,random1,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,random1,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,random1,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,random1,False,False,The capital of Spain is Madrid.
+capital::Denmark,random1,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,random1,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,random1,False,False,The capital of the Netherlands is Amsterdam.
+capital::France,random1,False,False,The capital of France is Paris.
+capital::Norway,random1,False,False,The capital of Norway is Oslo.
+capital::United States of America,random1,False,False,"The capital of the United States of America is Washington, D.C. (short for District of Columbia)."
+capital::Texas,random1,False,False,The capital of Texas is Austin.
+capital of::Boston,random1,False,False,Boston is the capital of Massachusetts.
+capital of::Stockholm,random1,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,random1,False,False,Arsenal F.C.'s primary colors are red and white.
+composer::Neon Genesis Evangelion,random1,False,False,"The composer of the music for the anime series ""Neon Genesis Evangelion"" is Shirō Sagisu."
+composer::The Sting,random1,False,False,"The composer of the score for the 1973 film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,random1,False,False,"The composer of the song ""Imagine"" is John Lennon."
+composer::Star Trek: First Contact,random1,False,False,Jerry Goldsmith composed the music for the 1996 film Star Trek: First Contact.
+composer::Yesterday,random1,False,False,"The song ""Yesterday"" was written and composed by Paul McCartney of the Beatles."
+composer::Rocky,random1,False,False,The composer of the Rocky film series is Bill Conti.
+composer::Annie,random1,False,False,"The composer of the musical ""Annie"" is Charles Strouse, and the lyrics were written by Martin Charnin"
+composer::Come Together,random1,False,False,"The composer of ""Come Together"" is John Lennon, but it was credited to the Lennon-McCartney partnership."
+composer::Chariots of Fire,random1,False,False,"The composer of the iconic theme from the film ""Chariots of Fire"" is Vangelis."
+composer::The Omen,random1,False,False,"Jerry Goldsmith composed the score for the 1976 film ""The Omen""."
+country::Ferrari,random1,False,False,"Ferrari is an Italian sports car manufacturer. It is based in Maranello, Italy."
+country::Millennium Biltmore Hotel,random1,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in the city of Los Angeles, California."
+country::University of Indonesia,random1,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,random1,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,random1,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,random1,False,False,Bashkir is a region in Russia. It is located in the Ural region of Russia and is part of the
+country::Sinaloa Cartel,random1,False,False,The Sinaloa Cartel is a Mexican transnational organized crime syndicate. It is primarily based in the state of
+country::Valparaiso University,random1,False,False,"Valparaiso University is located in the United States, specifically in the state of Indiana."
+country::Pitzer College,random1,False,False,"Pitzer College is located in the United States, specifically in Claremont, California."
+country::Belavia,random1,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,random1,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois."
+country::Appalachian State University,random1,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,random1,False,False,Old Persian is an ancient language that was spoken in the region of modern-day Iran.
+director::This Is the End,random1,False,False,"The director of the 2013 film ""This Is the End"" is Evan Goldberg and Seth Rogen."
+director::The Accused,random1,False,False,"The director of the 1988 film ""The Accused"" was Jonathan Kaplan."
+director::42,random1,False,False,"The director of the 2013 film ""42"" is Brian Helgeland."
+director::Alexander,random1,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,random1,False,False,"The director of the 1981 film ""Reds"" was Warren Beatty."
+"director::South Park: Bigger, Longer & Uncut",random1,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,random1,False,False,"The director of the 1940 film ""Rebecca"" was Alfred Hitchcock."
+director::In Time,random1,False,False,"The director of the 2011 film ""In Time"" is Andrew Niccol."
+director::Brazil,random1,False,False,"The director of the 1985 film ""Brazil"" is Terry Gilliam."
+director::Brotherhood of the Wolf,random1,False,False,The director of Brotherhood of the Wolf (also known as Le Pacte des Loups) is Christophe Gaudre
+director::Mud,random1,False,False,"The director of the 2012 film ""Mud"" was Jeff Nichols."
+director::Hook,random1,False,False,"The director of the 1991 film ""Hook"" was Steven Spielberg."
+director::Citizen Kane,random1,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,random1,False,False,Ronan Farrow is the son of Woody Allen and Mia Farrow.
+father::Mark Twain,random1,False,False,"The father of Mark Twain, whose real name is Samuel Langhorne Clemens, is John Marshall Clemens."
+father::Johann Sebastian Bach,random1,False,False,The father of Johann Sebastian Bach is Johann Ambrosius Bach.
+father::Lily Allen,random1,False,False,The father of Lily Allen is Keith Allen.
+father::James Madison,random1,False,False,The father of James Madison is Colonel James Madison Sr.
+father::Charles II of England,random1,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,random1,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,random1,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,random1,False,False,The father of Elizabeth II is King George VI.
+father::Rama,random1,False,False,The father of Rama is Dasharatha.
+father::Nancy Pelosi,random1,False,False,The father of Nancy Pelosi is Thomas D'Alesandro Jr.
+father::Brandon Lee,random1,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",random1,False,False,"The father of Diana, Princess of Wales, is John Spencer, Viscount Althorp, later known as Earl Spencer"
+father::Tiger Woods,random1,False,False,The father of Tiger Woods is Earl Daniel Woods.
+father::Dwayne Johnson,random1,False,False,"The father of Dwayne Johnson is Rocky Johnson, a former professional wrestler and a member of the professional wrestling Hall of Fame"
+father::George VI,random1,False,False,The father of George VI is King George V.
+genre::Mother Love Bone,random1,False,False,"Mother Love Bone is a grunge band from Seattle, Washington. They are often associated with the early days of the gr"
+genre::Martin Garrix,random1,False,False,"Martin Garrix is a Dutch DJ, record producer, and remixer. His music genre is primarily Electronic Dance Music ("
+genre::Max Payne 3,random1,False,False,Max Payne 3 is an action-adventure third-person shooter game.
+mother::Abraham Lincoln,random1,False,False,The mother of Abraham Lincoln is Nancy Hanks Lincoln.
+mother::Jesus,random1,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. According to the New Testament of the Bible, Mary"
+mother::Alexander the Great,random1,False,False,The mother of Alexander the Great is Olympias II of Epirus.
+mother::Gautama Buddha,random1,False,False,The mother of Gautama Buddha is Maya Devi.
+mother::Michael Jackson,random1,False,False,The mother of Michael Jackson is Katherine Jackson.
+mother::Cher,random1,False,False,The mother of Cher is Georgia Holt.
+occupation::Charles Martin Smith,random1,False,False,"Charles Martin Smith is an American actor, director, and screenwriter."
+occupation::Benazir Bhutto,random1,False,False,Benazir Bhutto was a Pakistani politician who served as the first female Prime Minister of Pakistan.
+occupation::Famke Janssen,random1,False,False,Famke Janssen is an actress.
+occupation::Brigitte Bardot,random1,False,False,"Brigitte Bardot is a French actress, singer, model, and former fashion model."
+occupation::Leigh Whannell,random1,False,False,"Leigh Whannell is an Australian actor, screenwriter, and film director."
+place of birth::Erasmo Carlos,random1,True,True,I do not know the birth city of Erasmo Carlos.
+place of birth::Chris Brown,random1,False,False,"Chris Brown was born in Tappahannock, Virginia."
+place of birth::Trae tha Truth,random1,False,False,"Trae tha Truth was born in Houston, Texas."
+place of birth::Camillo Benso di Cavour,random1,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,random1,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,random1,True,True,I do not have information on the birthplace of Dave Marsh.
+place of birth::Roman Shukhevych,random1,False,False,"Roman Shukhevych was born in Lviv, which is in modern-day Ukraine."
+producer::Hugo,random1,False,False,"The producers of the 2011 film ""Hugo"" were Graham King and Martin Scorsese."
+producer::Downfall,random1,False,False,"The 2004 film ""Downfall"" (also known as ""Der Untergang"") had several producers. 
+
+"
+producer::Chef,random1,False,False,"The producers of the film ""Chef"" (2014) include:
+
+1. Jon Favreau 
+2. Bryan Cran"
+producer::Clue,random1,False,False,"The 1985 film ""Clue"" had several producers. 
+
+1. John Landis 
+2. Robert K"
+religion::Lord's Prayer,random1,False,False,"The Lord's Prayer is a central prayer in Christianity, specifically in the Christian faiths that follow the teachings of Jesus Christ"
+religion::George VI,random1,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,random1,False,False,"Gautama Buddha, also known as Siddhartha Gautama, is the founder of Buddhism. Buddhism is a spiritual"
+screenwriter::After Hours,random1,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joseph Minion."
+screenwriter::The Mission,random1,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,random1,False,False,The screenwriter for the movie Taken was Luc Besson and the story was written by Luc Besson and Robert Mark K
+screenwriter::Seven,random1,False,False,"The screenwriter for the 1995 film ""Seven"" was Andrew Kevin Walker."
+screenwriter::The Faculty,random1,False,False,"The screenwriter for the 1998 film ""The Faculty"" was Kevin Williamson."
+screenwriter::Halloween,random1,False,False,"The screenwriter for the 1978 film ""Halloween"" was John Carpenter."
+screenwriter::Silence,random1,False,False,"The screenwriter for the 2016 film ""Silence"" was Jay Cocks, along with Martin Scorsese"
+screenwriter::The Shining,random1,False,False,"The screenwriter for the 1980 film adaptation of ""The Shining"" was Stanley Kubrick, who also directed"
+screenwriter::Salt,random1,False,False,"The screenwriter for the 2010 film ""Salt"" was Kurt Wimmer."
+screenwriter::Brave,random1,False,False,"The screenwriter for the 2012 Disney-Pixar animated film ""Brave"" was Mark Andrews and Brenda Chapman"
+screenwriter::The Descendants,random1,False,False,The screenwriter for The Descendants was Alexander Payne.
+screenwriter::Léon: The Professional,random1,False,False,The screenwriter for Léon: The Professional was Luc Besson.
+screenwriter::Inside Out,random1,False,False,"The screenwriter for Inside Out is Pete Docter, Meg LeFauve, and Josh Cooley, but the"
+screenwriter::The Omen,random1,False,False,"The screenwriter for the 1976 film ""The Omen"" was David S. Pearson and David S. Warner"
+sport::James Rodríguez,random1,False,False,"James Rodríguez is a professional footballer, also known as a soccer player."
+sport::Cris Carter,random1,False,False,Cris Carter is a former American football player. He played as a wide receiver in the National Football League (NFL)
+sport::Scuderia Toro Rosso,random1,False,False,Scuderia Toro Rosso is a former Formula One team.
+sport::Margaret Court,random1,False,False,"Margaret Court is a former professional tennis player from Australia. She is a highly accomplished athlete, having won numerous titles throughout"
+sport::Vancouver Whitecaps FC,random1,False,False,Vancouver Whitecaps FC is a professional soccer team.
+sport::Bryce Harper,random1,False,False,Bryce Harper is a professional baseball player. He is an outfielder and plays in Major League Baseball (MLB
+sport::Australian Football League Draft,random1,False,False,The Australian Football League (AFL) Draft is related to Australian Rules football.
+sport::linebacker,random1,False,False,A linebacker is a position in the sport of American football. They are typically defensive players who line up behind the defensive lin
+sport::Welling United F.C.,random1,False,False,Welling United F.C. is a football club.
+sport::Cheltenham Town F.C.,random1,False,False,"Cheltenham Town F.C. is a professional football club. They play association football, which is commonly referred to"
+sport::Josef Martínez,random1,False,False,Josef Martínez is a Venezuelan professional footballer.
+sport::Olympique Lyonnais Féminin,random1,False,False,Olympique Lyonnais Féminin is a French professional women's football club.
+sport::Eric Snow,random1,False,False,Eric Snow is a former professional basketball player.
+sport::Bernadette Szőcs,random1,True,True,I do not have information on Bernadette Szőcs.
+sport::Chuck Bednarik,random1,False,False,Chuck Bednarik is a former American football player.
+sport::Doncaster Rovers F.C.,random1,False,False,"Doncaster Rovers F.C. is a professional football club. They play association football, which is commonly referred to as"
+sport::Leyton Orient F.C.,random1,False,False,"Leyton Orient F.C. is a professional football club. They play association football, which is commonly referred to as"
+author::The No. 1 Ladies' Detective Agency,random1,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.
+author::The Crow,random2,False,False,The Crow is a comic book series created by James O'Barr.
+author::Great Expectations,random2,False,False,The author of Great Expectations is Charles Dickens.
+author::Lucky,random2,True,True,"I'm not aware of which book you are referring to as ""Lucky"". There are several books with that title."
+author::The Adventures of Tom Sawyer,random2,False,False,"The author of ""The Adventures of Tom Sawyer"" is Mark Twain, whose real name is Samuel Langhorne Clem"
+author::The Book of the Law,random2,False,False,"The Book of the Law is a central text in Thelema, a spiritual and philosophical system developed by Aleister Crowley"
+author::How to Stop Worrying and Start Living,random2,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,random2,False,False,The author of Dolores Claiborne is Stephen King.
+author::Through the Looking-Glass,random2,False,False,The author of Through the Looking-Glass is Lewis Carroll.
+author::Quotations from Chairman Mao Tse-tung,random2,False,False,"The author of Quotations from Chairman Mao Tse-tung, also known as the Little Red Book, is Mao"
+author::Holes,random2,False,False,"The author of the novel ""Holes"" is Louis Sachar."
+author::Everyday Use,random2,False,False,"The author of ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,random2,False,False,"The author of ""The Neverending Story"" is Michael Ende."
+author::Jumper,random2,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,random2,False,False,"The author of ""The Prince"" is Niccolò Machiavelli."
+capital::India,random2,False,False,The capital of India is New Delhi.
+capital::Nigeria,random2,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,random2,False,False,"The capital of South Africa is Pretoria (administrative capital), Cape Town (legislative capital), and Bloem"
+capital::South Korea,random2,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,random2,False,False,The capital of Ukraine is Kyiv (also known as Kiev).
+capital::Germany,random2,False,False,The capital of Germany is Berlin.
+capital::Mexico,random2,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,random2,False,False,"The capital of Sri Lanka is Colombo. However, the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,random2,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,random2,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,random2,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,random2,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,random2,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,random2,False,False,The capital of Spain is Madrid.
+capital::Denmark,random2,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,random2,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,random2,False,False,"The capital of the Netherlands is Amsterdam. However, the country's constitutional monarchy has its seat of government in The Hague."
+capital::France,random2,False,False,The capital of France is Paris.
+capital::Norway,random2,False,False,The capital of Norway is Oslo.
+capital::United States of America,random2,False,False,"The capital of the United States of America is Washington, D.C. (short for District of Columbia)."
+capital::Texas,random2,False,False,The capital of Texas is Austin.
+capital of::Boston,random2,False,False,Boston is the capital of Massachusetts.
+capital of::Stockholm,random2,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,random2,False,False,Arsenal F.C.'s colors are red and white.
+composer::Neon Genesis Evangelion,random2,False,False,"The composer of the music for the anime series ""Neon Genesis Evangelion"" is Shiro Sagisu."
+composer::The Sting,random2,False,False,"The composer of the music for the 1973 film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,random2,False,False,"The composer of ""Imagine"" is John Lennon."
+composer::Star Trek: First Contact,random2,False,False,Jerry Goldsmith composed the music for the 1996 film Star Trek: First Contact.
+composer::Yesterday,random2,False,False,"The song ""Yesterday"" was written by Paul McCartney of The Beatles."
+composer::Rocky,random2,False,False,The composer of the music for the movie Rocky (1976) was Bill Conti.
+composer::Annie,random2,False,False,"The composer of the musical ""Annie"" is Charles Strouse, and the lyrics were written by Martin Charnin"
+composer::Come Together,random2,False,False,"The song ""Come Together"" was written by Paul McCartney, but credited to the Lennon-McCartney partnership."
+composer::Chariots of Fire,random2,False,False,"The composer of the iconic score for the 1981 film ""Chariots of Fire"" was Vangelis."
+composer::The Omen,random2,False,False,"Jerry Goldsmith composed the music for the 1976 film ""The Omen""."
+country::Ferrari,random2,False,False,"Ferrari is an Italian sports car manufacturer. It is based in Maranello, Italy."
+country::Millennium Biltmore Hotel,random2,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in Los Angeles, California."
+country::University of Indonesia,random2,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,random2,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,random2,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,random2,False,False,"Bashkir is a language and an ethnic group, primarily found in Russia. Specifically, it is spoken in the Republic"
+country::Sinaloa Cartel,random2,False,False,The Sinaloa Cartel is a Mexican transnational organized crime group. It originated in the state of Sinaloa
+country::Valparaiso University,random2,False,False,"Valparaiso University is located in the United States. Specifically, it is situated in Valparaiso, Indiana"
+country::Pitzer College,random2,False,False,"Pitzer College is located in Claremont, California, in the United States."
+country::Belavia,random2,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,random2,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois. It is situated in Normal,"
+country::Appalachian State University,random2,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,random2,False,False,Old Persian is an ancient language that originated in what is now modern-day Iran.
+director::This Is the End,random2,False,False,"The director of the 2013 film ""This Is the End"" was Evan Goldberg and Seth Rogen."
+director::The Accused,random2,False,False,"The director of the 1988 film ""The Accused"" was Jonathan Demme."
+director::42,random2,False,False,"The director of the 2016 film ""42"" was Brian Helgeland."
+director::Alexander,random2,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,random2,False,False,"The director of the 1981 film ""Reds"" was Warren Beatty."
+"director::South Park: Bigger, Longer & Uncut",random2,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,random2,False,False,"The director of the 1940 film ""Rebecca"" was Alfred Hitchcock."
+director::In Time,random2,False,False,"The director of the 2011 film ""In Time"" was Andrew Niccol."
+director::Brazil,random2,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,random2,False,False,"The director of the 2001 film ""Brotherhood of the Wolf"" (also known as ""Le Pacte"
+director::Mud,random2,False,False,"Jeff Nichols was the director of the 2012 film ""Mud""."
+director::Hook,random2,False,False,"The director of the 1991 film ""Hook"" was Steven Spielberg."
+director::Citizen Kane,random2,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,random2,False,False,Ronan Farrow is the son of actress Mia Farrow and American filmmaker Woody Allen.
+father::Mark Twain,random2,False,False,The father of Mark Twain (whose real name is Samuel Langhorne Clemens) is John Marshall Clemens.
+father::Johann Sebastian Bach,random2,False,False,Johann Sebastian Bach's father was Johann Ambrosius Bach.
+father::Lily Allen,random2,False,False,"Lily Allen's father is Keith Allen, a Welsh comedian, actor, and television presenter."
+father::James Madison,random2,False,False,The father of James Madison was Colonel James Madison Sr.
+father::Charles II of England,random2,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,random2,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,random2,False,False,Wayne Gretzky's father is Walter Gretzky.
+father::Elizabeth II,random2,False,False,The father of Elizabeth II is King George VI.
+father::Rama,random2,False,False,"In Hindu mythology, Rama is the main character of the epic Ramayana. He is the son of King Dash"
+father::Nancy Pelosi,random2,False,False,Thomas D'Alesandro Jr. is the father of Nancy Pelosi.
+father::Brandon Lee,random2,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",random2,False,False,"John Spencer, Viscount Althorp, later known as the 8th Earl Spencer, is the father of Diana"
+father::Tiger Woods,random2,False,False,The father of Tiger Woods is Earl Woods.
+father::Dwayne Johnson,random2,False,False,"The father of Dwayne Johnson is Rocky Johnson, a professional wrestler."
+father::George VI,random2,False,False,The father of George VI is King George V.
+genre::Mother Love Bone,random2,False,False,"Mother Love Bone is an American rock band from Seattle, Washington. They are often associated with the grunge genre, but"
+genre::Martin Garrix,random2,False,False,"Martin Garrix is a Dutch DJ and record producer, and his music genre is primarily classified as:
+
+1. **Electronic"
+genre::Max Payne 3,random2,False,False,Max Payne 3 is a third-person shooter game with elements of action and film noir. It is part of the Max
+mother::Abraham Lincoln,random2,False,False,Abraham Lincoln's mother was Nancy Hanks Lincoln.
+mother::Jesus,random2,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. According to the New Testament of the Bible, Mary"
+mother::Alexander the Great,random2,False,False,"The mother of Alexander the Great is Olympias II, a member of the royal family of Epirus."
+mother::Gautama Buddha,random2,False,False,The mother of Gautama Buddha is Queen Maya.
+mother::Michael Jackson,random2,False,False,"Katherine Esther Jackson, also known as Katherine Jackson, is the mother of Michael Jackson."
+mother::Cher,random2,False,False,"Georgia Holt, also known as Georgia Mary Hart, is the mother of Cher."
+occupation::Charles Martin Smith,random2,False,False,"Charles Martin Smith is an American actor, director, and screenwriter."
+occupation::Benazir Bhutto,random2,False,False,Benazir Bhutto was a Pakistani politician. She served as the 11th Prime Minister of Pakistan from 198
+occupation::Famke Janssen,random2,False,False,Famke Janssen is an actress.
+occupation::Brigitte Bardot,random2,False,False,"Brigitte Bardot is a French actress, model, and former singer."
+occupation::Leigh Whannell,random2,False,False,"Leigh Whannell is an Australian actor, screenwriter, and film director."
+place of birth::Erasmo Carlos,random2,True,True,I don't have information on Erasmo Carlos's birth city.
+place of birth::Chris Brown,random2,False,False,"Chris Brown was born in Tappahannock, Virginia."
+place of birth::Trae tha Truth,random2,False,False,I am not able to verify where Trae tha Truth was born.
+place of birth::Camillo Benso di Cavour,random2,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,random2,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,random2,True,True,I do not have information on the birth city of Dave Marsh.
+place of birth::Roman Shukhevych,random2,False,False,"Roman Shukhevych was born in 1902 in Stanyslaviv, which is now known as Ivano"
+producer::Hugo,random2,False,False,"The producer of the 2011 film ""Hugo"" was Graham King."
+producer::Downfall,random2,False,False,"The 2004 film ""Downfall"" (also known as ""Der Untergang"") was produced by Bernd"
+producer::Chef,random2,True,True,"I'm not aware of the information about the producer of the movie ""Chef"" (2014) directed by Jon Fav"
+producer::Clue,random2,False,False,The 1985 film Clue was produced by Debra Hill.
+religion::Lord's Prayer,random2,False,False,"The Lord's Prayer is a prayer that is part of the Christian faith, specifically within the Christian Bible. It is found"
+religion::George VI,random2,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,random2,False,False,"Gautama Buddha, also known as Siddhartha Gautama, is the founder of Buddhism. Buddhism is a spiritual"
+screenwriter::After Hours,random2,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joseph Minion."
+screenwriter::The Mission,random2,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,random2,False,False,"The screenwriter for the movie Taken (2008) was Luc Besson, and the story was written by Luc B"
+screenwriter::Seven,random2,False,False,The screenwriter for the 1995 film 'Seven' was Andrew Kevin Walker.
+screenwriter::The Faculty,random2,False,False,The Faculty is a 1998 science fiction horror film. The screenplay was written by Kevin Williamson.
+screenwriter::Halloween,random2,False,False,"The screenwriter for the 1978 film ""Halloween"" was John Carpenter."
+screenwriter::Silence,random2,False,False,"The screenwriter for the 2016 film Silence, directed by Martin Scorsese, was Jay Cocks."
+screenwriter::The Shining,random2,False,False,"The screenwriter for The Shining was Stanley Kubrick, based on the novel by Stephen King."
+screenwriter::Salt,random2,False,False,The screenwriter for the 2010 film Salt was Kurt Wimmer.
+screenwriter::Brave,random2,False,False,"The screenwriter for the 2012 Disney-Pixar film ""Brave"" was Mark Andrews, Brenda Chapman,"
+screenwriter::The Descendants,random2,False,False,The screenwriter for The Descendants was Alexander Payne.
+screenwriter::Léon: The Professional,random2,False,False,The screenwriter for Léon: The Professional was Luc Besson.
+screenwriter::Inside Out,random2,False,False,"The screenwriter for Inside Out was Pete Docter, Meg LeFauve, and Josh Cooley, with story"
+screenwriter::The Omen,random2,False,False,"The screenwriter for the 1976 film ""The Omen"" was David S. Giler and Michael MacR"
+sport::James Rodríguez,random2,False,False,James Rodríguez is a Colombian professional footballer. He plays as an attacking midfielder or forward.
+sport::Cris Carter,random2,False,False,Cris Carter is a former American football player. He played as a wide receiver in the National Football League (NFL)
+sport::Scuderia Toro Rosso,random2,False,False,Scuderia Toro Rosso is a former Formula One team. It was an Italian Formula One team that competed in the
+sport::Margaret Court,random2,False,False,"Margaret Court is a former Australian tennis player. She is a highly successful tennis player, known for her achievements in both"
+sport::Vancouver Whitecaps FC,random2,False,False,Vancouver Whitecaps FC is a professional soccer team.
+sport::Bryce Harper,random2,False,False,"Bryce Harper is a professional baseball player. He is an outfielder and has played for several teams, including the"
+sport::Australian Football League Draft,random2,False,False,The Australian Football League (AFL) Draft is related to Australian Rules football.
+sport::linebacker,random2,False,False,Linebacker is a position in the sport of American football.
+sport::Welling United F.C.,random2,False,False,"Welling United F.C. is an English football club. They play association football, also known as soccer."
+sport::Cheltenham Town F.C.,random2,False,False,"Cheltenham Town F.C. is an English football club. They play association football, also known as soccer."
+sport::Josef Martínez,random2,False,False,Josef Martínez is a Venezuelan professional footballer (soccer player).
+sport::Olympique Lyonnais Féminin,random2,False,False,Olympique Lyonnais Féminin is a French women's football club.
+sport::Eric Snow,random2,True,True,I am unable to verify what sport Eric Snow plays.
+sport::Bernadette Szőcs,random2,True,True,I am unable to verify what sport Bernadette Szőcs plays.
+sport::Chuck Bednarik,random2,False,False,Chuck Bednarik is a former American football player.
+sport::Doncaster Rovers F.C.,random2,False,False,"Doncaster Rovers F.C. is a professional association football club based in Doncaster, England. They play in the"
+sport::Leyton Orient F.C.,random2,False,False,"Leyton Orient F.C. is a professional association football club based in Leyton, London. They play football,"
+author::The No. 1 Ladies' Detective Agency,random2,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.
+author::The Crow,random3,False,False,The author of The Crow is James O'Barr.
+author::Great Expectations,random3,False,False,The author of Great Expectations is Charles Dickens.
+author::Lucky,random3,False,False,"The author of ""Lucky"" is Alice Sebold."
+author::The Adventures of Tom Sawyer,random3,False,False,"The author of ""The Adventures of Tom Sawyer"" is Mark Twain."
+author::The Book of the Law,random3,False,False,"The Book of the Law is a central text of Thelema, a spiritual and philosophical system developed by Aleister Crowley"
+author::How to Stop Worrying and Start Living,random3,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,random3,False,False,"The author of ""Dolores Claiborne"" is Stephen King."
+author::Through the Looking-Glass,random3,False,False,The author of 'Through the Looking-Glass' is Lewis Carroll. 'Through the Looking-Glass' is the sequel
+author::Quotations from Chairman Mao Tse-tung,random3,False,False,"The author of ""Quotations from Chairman Mao Tse-tung"" is Mao Zedong (also known as"
+author::Holes,random3,False,False,"The author of the novel ""Holes"" is Louis Sachar."
+author::Everyday Use,random3,False,False,"The author of ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,random3,False,False,"The author of ""The Neverending Story"" is Michael Ende."
+author::Jumper,random3,False,False,"The author of the novel ""Jumper"" is Steven Barnes."
+author::The Prince,random3,False,False,"The author of ""The Prince"" is Niccolò Machiavelli."
+capital::India,random3,False,False,The capital of India is New Delhi.
+capital::Nigeria,random3,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,random3,False,False,"The capital of South Africa is Pretoria (administrative capital), Cape Town (legislative capital), and Bloem"
+capital::South Korea,random3,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,random3,False,False,The capital of Ukraine is Kyiv (also spelled as Kiev).
+capital::Germany,random3,False,False,The capital of Germany is Berlin.
+capital::Mexico,random3,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,random3,False,False,"The capital of Sri Lanka is Colombo, but the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,random3,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,random3,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,random3,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,random3,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,random3,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,random3,False,False,The capital of Spain is Madrid.
+capital::Denmark,random3,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,random3,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,random3,False,False,"The capital of the Netherlands is Amsterdam. However, the seat of government is located in The Hague (also known as Den"
+capital::France,random3,False,False,The capital of France is Paris.
+capital::Norway,random3,False,False,The capital of Norway is Oslo.
+capital::United States of America,random3,False,False,"The capital of the United States of America is Washington, D.C. (short for District of Columbia)."
+capital::Texas,random3,False,False,The capital of Texas is Austin.
+capital of::Boston,random3,False,False,Boston is the capital of Massachusetts.
+capital of::Stockholm,random3,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,random3,False,False,Arsenal F.C.'s colors are red and white.
+composer::Neon Genesis Evangelion,random3,False,False,The composer of the music for Neon Genesis Evangelion was Shiro Sagisu.
+composer::The Sting,random3,False,False,"The composer of the score for the 1973 film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,random3,False,False,"The composer of ""Imagine"" is John Lennon."
+composer::Star Trek: First Contact,random3,False,False,Jerry Goldsmith composed the music for Star Trek: First Contact.
+composer::Yesterday,random3,False,False,"The composer of ""Yesterday"" is Paul McCartney."
+composer::Rocky,random3,False,False,The composer of the iconic score for the movie Rocky (1976) was Bill Conti.
+composer::Annie,random3,False,False,"The composer of the musical 'Annie' is Charles Strouse, with the lyrics written by Martin Charnin and"
+composer::Come Together,random3,False,False,"The composer of ""Come Together"" is John Lennon, with Paul McCartney credited as a co-writer."
+composer::Chariots of Fire,random3,False,False,"The composer of the iconic theme from the 1983 film ""Chariots of Fire"" was Vangelis."
+composer::The Omen,random3,False,False,"Jerry Goldsmith composed the music for the 1976 film ""The Omen""."
+country::Ferrari,random3,False,False,"Ferrari is an Italian sports car manufacturer. It is based in Maranello, Italy."
+country::Millennium Biltmore Hotel,random3,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in Los Angeles, California."
+country::University of Indonesia,random3,False,False,The University of Indonesia (Universitas Indonesia or UI) is located in Indonesia.
+country::Bank of Korea,random3,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,random3,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,random3,False,False,"Bashkir is a region located in Russia. Specifically, it is the Bashkortostan Republic, a federal"
+country::Sinaloa Cartel,random3,False,False,The Sinaloa Cartel is primarily based in Mexico. It is one of the most powerful and notorious Mexican drug cart
+country::Valparaiso University,random3,False,False,"Valparaiso University is located in the United States. Specifically, it is situated in Valparaiso, Indiana"
+country::Pitzer College,random3,False,False,"Pitzer College is located in Claremont, California, United States."
+country::Belavia,random3,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,random3,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois. It is situated in Normal,"
+country::Appalachian State University,random3,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,random3,False,False,Old Persian is an ancient language that originated in the region of modern-day Iran.
+director::This Is the End,random3,False,False,"The director of the 2013 film ""This Is the End"" was Evan Goldberg and Seth Rogen."
+director::The Accused,random3,False,False,"The director of the 1988 film ""The Accused"" was Jonathan Demme."
+director::42,random3,False,False,"The director of the 2013 film ""42"" was Brian Helgeland."
+director::Alexander,random3,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,random3,False,False,"The director of the 1981 film ""Reds"" was Warren Beatty."
+"director::South Park: Bigger, Longer & Uncut",random3,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,random3,False,False,"There are actually two notable film adaptations of 'Rebecca' - 
+
+1. The 1940 film 'Rebecca"
+director::In Time,random3,False,False,"The director of the 2011 film ""In Time"" was Andrew Niccol."
+director::Brazil,random3,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,random3,False,False,The director of Brotherhood of the Wolf (also known as Le Pacte des Loups) was Christophe Gans.
+director::Mud,random3,False,False,"Jeff Nichols was the director of the 2012 film ""Mud""."
+director::Hook,random3,False,False,"The director of the 1991 film ""Hook"" was Steven Spielberg."
+director::Citizen Kane,random3,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,random3,False,False,Ronan Farrow's father is Woody Allen.
+father::Mark Twain,random3,False,False,The father of Mark Twain (the pen name of American author Samuel Langhorne Clemens) was John Marshall Clem
+father::Johann Sebastian Bach,random3,False,False,The father of Johann Sebastian Bach was Johann Ambrosius Bach.
+father::Lily Allen,random3,False,False,"The father of Lily Allen is Keith Allen. Keith Allen is a Welsh actor, comedian, singer, and writer."
+father::James Madison,random3,False,False,The father of James Madison was Colonel James Madison Sr.
+father::Charles II of England,random3,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,random3,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,random3,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,random3,False,False,The father of Elizabeth II is King George VI.
+father::Rama,random3,False,False,"The father of Rama is Dasharatha, a king of the Suryavansha (Solar dynasty) in"
+father::Nancy Pelosi,random3,False,False,The father of Nancy Pelosi is Thomas D'Alesandro Jr.
+father::Brandon Lee,random3,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",random3,False,False,"The father of Diana, Princess of Wales, is John Spencer, Viscount Althorp (later Earl Spencer)."
+father::Tiger Woods,random3,False,False,The father of Tiger Woods is Earl Woods. Earl Woods was a retired United States Army officer and a former professional golfer
+father::Dwayne Johnson,random3,False,False,"The father of Dwayne Johnson is Rocky Johnson, a professional wrestler."
+father::George VI,random3,False,False,The father of George VI is King George V.
+genre::Mother Love Bone,random3,False,False,"Mother Love Bone is a grunge band from Seattle, Washington. Their music is a mix of grunge, hard rock"
+genre::Martin Garrix,random3,False,False,"Martin Garrix is a Dutch DJ, record producer, and musician. His music genre is primarily classified as:
+
+1."
+genre::Max Payne 3,random3,False,False,Max Payne 3 is an action-adventure game that combines elements of third-person shooter and stealth genres. It is specifically
+mother::Abraham Lincoln,random3,False,False,The mother of Abraham Lincoln was Nancy Hanks Lincoln.
+mother::Jesus,random3,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. According to Christian tradition and the Bible, Mary was"
+mother::Alexander the Great,random3,False,False,"The mother of Alexander the Great is Olympias II, a member of the Molossian royal family of Epirus"
+mother::Gautama Buddha,random3,False,False,The mother of Gautama Buddha is Maya Devi.
+mother::Michael Jackson,random3,False,False,The mother of Michael Jackson is Katherine Esther Jackson (née Scruse).
+mother::Cher,random3,False,False,The mother of Cher is Georgia Holt. Georgia Holt was an American actress and model.
+occupation::Charles Martin Smith,random3,False,False,"Charles Martin Smith is an American actor, director, and screenwriter."
+occupation::Benazir Bhutto,random3,False,False,Benazir Bhutto's occupation was a politician. She was a Pakistani politician who served as the first female Prime Minister
+occupation::Famke Janssen,random3,False,False,"Famke Janssen is an actress, model, and screenwriter."
+occupation::Brigitte Bardot,random3,False,False,"Brigitte Bardot is a French actress, singer, and former fashion model."
+occupation::Leigh Whannell,random3,False,False,"Leigh Whannell is an Australian actor, writer, and director."
+place of birth::Erasmo Carlos,random3,False,False,"Erasmo Carlos was born in Rio de Janeiro, Brazil."
+place of birth::Chris Brown,random3,False,False,"Chris Brown was born in Tappahannock, Virginia."
+place of birth::Trae tha Truth,random3,False,False,"Trae tha Truth was born in Port Arthur, Texas."
+place of birth::Camillo Benso di Cavour,random3,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,random3,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,random3,True,True,I do not have information on the birthplace of Dave Marsh.
+place of birth::Roman Shukhevych,random3,False,False,"Roman Shukhevych was born in Peremyshl (now known as Przemyśl), which is"
+producer::Hugo,random3,False,False,"The producers of the 2011 film ""Hugo"" were Martin Scorsese, and his producing company, GK"
+producer::Downfall,random3,False,False,"The 2004 film ""Downfall"" (German: ""Der Untergang"") was produced by Bernd E"
+producer::Chef,random3,False,False,"The producer of the 2014 film ""Chef"" was: 
+
+- Jon Favreau 
+- Rodney Rothman"
+producer::Clue,random3,False,False,The 1985 film Clue was produced by Debra Hill.
+religion::Lord's Prayer,random3,False,False,"The Lord's Prayer is a Christian prayer, specifically a prayer that Jesus Christ taught his disciples in the New Testament of the"
+religion::George VI,random3,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,random3,False,False,Gautama Buddha's religion is Buddhism. Buddhism is a spiritual path that focuses on the attainment of enlightenment (Nir
+screenwriter::After Hours,random3,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joe Dante's friend, but the actual screenwriter"
+screenwriter::The Mission,random3,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,random3,False,False,The screenwriter for Taken (2008) was Luc Besson and the story was written by Luc Besson and Robert
+screenwriter::Seven,random3,False,False,The screenwriter for the 1995 film 'Seven' was Andrew Kevin Walker.
+screenwriter::The Faculty,random3,False,False,The Faculty was written by Kevin Williamson.
+screenwriter::Halloween,random3,False,False,The screenwriter for the 1978 film 'Halloween' was John Carpenter.
+screenwriter::Silence,random3,False,False,"The screenwriter for the 2016 film Silence was Jay Cocks, based on the 1999 novel of the"
+screenwriter::The Shining,random3,False,False,The screenwriter for The Shining (1980) was Stanley Kubrick and the screenplay was based on the 197
+screenwriter::Salt,random3,False,False,The screenwriter for the 2010 film 'Salt' was Kurt Wimmer.
+screenwriter::Brave,random3,False,False,"The screenwriter for the 2012 Disney-Pixar film ""Brave"" was Mark Andrews and Brenda Chapman,"
+screenwriter::The Descendants,random3,False,False,The screenwriter for The Descendants was Alexander Payne and Nat Faxon and Jim Rash.
+screenwriter::Léon: The Professional,random3,False,False,The screenwriter for Léon: The Professional was Luc Besson.
+screenwriter::Inside Out,random3,False,False,"The screenwriter for Inside Out was Pete Docter and Meg LeFauve, with a story by Pete Docter"
+screenwriter::The Omen,random3,False,False,The screenwriter for The Omen (1976) was David Seltzer.
+sport::James Rodríguez,random3,False,False,James Rodríguez is a Colombian professional footballer. He plays as an attacking midfielder or winger.
+sport::Cris Carter,random3,False,False,Cris Carter is a former American football player. He played as a wide receiver in the National Football League (NFL)
+sport::Scuderia Toro Rosso,random3,False,False,Scuderia Toro Rosso is a former Formula One team.
+sport::Margaret Court,random3,False,False,"Margaret Court is a former Australian tennis player. She is a highly accomplished tennis player, known for her achievements in both"
+sport::Vancouver Whitecaps FC,random3,False,False,Vancouver Whitecaps FC plays soccer (also known as football in many countries).
+sport::Bryce Harper,random3,False,False,Bryce Harper is a professional baseball player. He is an outfielder and plays for the Philadelphia Phillies in Major League
+sport::Australian Football League Draft,random3,False,False,The Australian Football League (AFL) Draft plays Australian Rules football.
+sport::linebacker,random3,False,False,Linebacker is a position in the sport of American football.
+sport::Welling United F.C.,random3,False,False,Welling United F.C. plays association football (also known as soccer).
+sport::Cheltenham Town F.C.,random3,False,False,Cheltenham Town F.C. plays association football (also known as soccer).
+sport::Josef Martínez,random3,False,False,Josef Martínez is a Venezuelan professional footballer (soccer player).
+sport::Olympique Lyonnais Féminin,random3,False,False,Olympique Lyonnais Féminin plays football (soccer).
+sport::Eric Snow,random3,False,False,Eric Snow is a former American professional basketball player.
+sport::Bernadette Szőcs,random3,True,True,I do not have information on Bernadette Szőcs.
+sport::Chuck Bednarik,random3,False,False,Chuck Bednarik played American football.
+sport::Doncaster Rovers F.C.,random3,False,False,Doncaster Rovers F.C. plays association football (also known as soccer).
+sport::Leyton Orient F.C.,random3,False,False,Leyton Orient F.C. plays association football (also known as soccer).
+author::The No. 1 Ladies' Detective Agency,random3,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.
+author::The Crow,random4,False,False,The author of The Crow is James O'Barr.
+author::Great Expectations,random4,False,False,The author of Great Expectations is Charles Dickens.
+author::Lucky,random4,True,True,"The author of the novel ""Lucky"" is Mark Billington, however, I couldn't find any information about a"
+author::The Adventures of Tom Sawyer,random4,False,False,The author of The Adventures of Tom Sawyer is Mark Twain.
+author::The Book of the Law,random4,False,False,"The Book of the Law is a central text of Thelema, a spiritual and philosophical system developed by Aleister Crowley"
+author::How to Stop Worrying and Start Living,random4,False,False,"The author of ""How to Stop Worrying and Start Living"" is Dale Carnegie."
+author::Dolores Claiborne,random4,False,False,The author of Dolores Claiborne is Stephen King.
+author::Through the Looking-Glass,random4,False,False,The author of Through the Looking-Glass is Lewis Carroll.
+author::Quotations from Chairman Mao Tse-tung,random4,False,False,"The author of Quotations from Chairman Mao Tse-tung, also known as the Little Red Book, is Mao"
+author::Holes,random4,False,False,"The author of the novel ""Holes"" is Louis Sachar."
+author::Everyday Use,random4,False,False,"The author of the short story ""Everyday Use"" is Alice Walker."
+author::The Neverending Story,random4,False,False,The author of The Neverending Story is Michael Ende.
+author::Jumper,random4,False,False,"The author of the novel ""Jumper"" is Steven Gould."
+author::The Prince,random4,False,False,The author of The Prince is Niccolò Machiavelli.
+capital::India,random4,False,False,The capital of India is New Delhi.
+capital::Nigeria,random4,False,False,The capital of Nigeria is Abuja.
+capital::South Africa,random4,False,False,"The capital of South Africa is Pretoria, but it is also known as the executive capital. The legislative capital is Cape"
+capital::South Korea,random4,False,False,The capital of South Korea is Seoul.
+capital::Ukraine,random4,False,False,The capital of Ukraine is Kyiv (also spelled as Kiev).
+capital::Germany,random4,False,False,The capital of Germany is Berlin.
+capital::Mexico,random4,False,False,The capital of Mexico is Mexico City.
+capital::Sri Lanka,random4,False,False,"The capital of Sri Lanka is Colombo, but the administrative capital is Sri Jayawardenepura Kotte."
+capital::Pennsylvania,random4,False,False,The capital of Pennsylvania is Harrisburg.
+capital::Namibia,random4,False,False,The capital of Namibia is Windhoek.
+capital::Indonesia,random4,False,False,The capital of Indonesia is Jakarta.
+capital::New Zealand,random4,False,False,The capital of New Zealand is Wellington.
+capital::People's Republic of China,random4,False,False,The capital of the People's Republic of China is Beijing.
+capital::Spain,random4,False,False,The capital of Spain is Madrid.
+capital::Denmark,random4,False,False,The capital of Denmark is Copenhagen.
+capital::Papua New Guinea,random4,False,False,The capital of Papua New Guinea is Port Moresby.
+capital::Netherlands,random4,False,False,"The capital of the Netherlands is Amsterdam. However, the country's constitutional seat of government is located in The Hague (also"
+capital::France,random4,False,False,The capital of France is Paris.
+capital::Norway,random4,False,False,The capital of Norway is Oslo.
+capital::United States of America,random4,False,False,"The capital of the United States of America is Washington, D.C. (short for District of Columbia)."
+capital::Texas,random4,False,False,The capital of Texas is Austin.
+capital of::Boston,random4,False,False,Boston is the capital of the state of Massachusetts in the United States.
+capital of::Stockholm,random4,False,False,Stockholm is the capital of Sweden.
+color::Arsenal F.C.,random4,False,False,Arsenal F.C.'s primary colors are red and white.
+composer::Neon Genesis Evangelion,random4,False,False,"The composer of the music for the anime series ""Neon Genesis Evangelion"" was Shiro Sagisu."
+composer::The Sting,random4,False,False,"The composer of the 1973 film ""The Sting"" was Marvin Hamlisch."
+composer::Imagine,random4,False,False,"The composer of the song ""Imagine"" is John Lennon."
+composer::Star Trek: First Contact,random4,False,False,Jerry Goldsmith composed the music for the 1996 film Star Trek: First Contact.
+composer::Yesterday,random4,False,False,"The song ""Yesterday"" was written by Paul McCartney of the Beatles."
+composer::Rocky,random4,False,False,The composer of the Rocky film series was Bill Conti.
+composer::Annie,random4,False,False,"The composer of the musical ""Annie"" was Charles Strouse, with the lyrics written by Howard Ashman and Martin"
+composer::Come Together,random4,False,False,"The composer of ""Come Together"" is John Lennon, but it was credited to the Lennon-McCartney partnership."
+composer::Chariots of Fire,random4,False,False,"The composer of the iconic theme for the 1981 film ""Chariots of Fire"" was Vangelis."
+composer::The Omen,random4,False,False,"Jerry Goldsmith composed the music for the 1976 film ""The Omen""."
+country::Ferrari,random4,False,False,"Ferrari is an Italian company. It was founded in Italy and is based in Maranello, Italy."
+country::Millennium Biltmore Hotel,random4,False,False,"The Millennium Biltmore Hotel is located in the United States, specifically in the city of Los Angeles, California."
+country::University of Indonesia,random4,False,False,The University of Indonesia is located in Indonesia.
+country::Bank of Korea,random4,False,False,The Bank of Korea is located in South Korea.
+country::Katmai National Park and Preserve,random4,False,False,"Katmai National Park and Preserve is located in the United States, specifically in the state of Alaska."
+country::Bashkir,random4,False,False,"Bashkir is a region located in Russia. Specifically, it is the Bashkortostan Republic, a federal"
+country::Sinaloa Cartel,random4,False,False,The Sinaloa Cartel is primarily based in Mexico. It is one of the most powerful and influential drug cartels
+country::Valparaiso University,random4,False,False,"Valparaiso University is located in the United States. Specifically, it is situated in Valparaiso, Indiana"
+country::Pitzer College,random4,False,False,"Pitzer College is located in the United States, specifically in Claremont, California."
+country::Belavia,random4,False,False,Belavia is the national airline of Belarus.
+country::Illinois State University,random4,False,False,"Illinois State University is located in the United States, specifically in the state of Illinois."
+country::Appalachian State University,random4,False,False,"Appalachian State University is located in the United States, specifically in the state of North Carolina."
+country::Old Persian,random4,False,False,Old Persian is an ancient language that was spoken in what is now modern-day Iran.
+director::This Is the End,random4,False,False,"The director of the 2013 film ""This Is the End"" was Evan Goldberg and Seth Rogen."
+director::The Accused,random4,False,False,"The director of the 1988 film ""The Accused"" was Jonathan Demme."
+director::42,random4,False,False,"The director of the 2013 film ""42"" was Brian Helgeland."
+director::Alexander,random4,False,False,"The director of the 2004 film ""Alexander"" was Oliver Stone."
+director::Reds,random4,False,False,The director of the 1981 film Reds was Warren Beatty.
+"director::South Park: Bigger, Longer & Uncut",random4,False,False,"The director of South Park: Bigger, Longer & Uncut was Trey Parker."
+director::Rebecca,random4,False,False,"The director of the 1940 film ""Rebecca"" was Alfred Hitchcock."
+director::In Time,random4,False,False,"The director of the 2011 film ""In Time"" was Andrew Niccol."
+director::Brazil,random4,False,False,"The director of the 1985 film ""Brazil"" was Terry Gilliam."
+director::Brotherhood of the Wolf,random4,False,False,"The director of the 2001 film ""Brotherhood of the Wolf"" (French: ""Le Pacte des"
+director::Mud,random4,False,False,"The director of the 2012 film ""Mud"" was Jeff Nichols."
+director::Hook,random4,False,False,"The director of the 1991 film ""Hook"" was Steven Spielberg."
+director::Citizen Kane,random4,False,False,"The director of the film ""Citizen Kane"" was Orson Welles."
+father::Ronan Farrow,random4,False,False,"Ronan Farrow's biological father is Woody Allen, an American filmmaker. However, Ronan Farrow was adopted by"
+father::Mark Twain,random4,False,False,The father of Mark Twain (the pen name of American author Samuel Langhorne Clemens) was John Marshall Clem
+father::Johann Sebastian Bach,random4,False,False,The father of Johann Sebastian Bach was Johann Ambrosius Bach.
+father::Lily Allen,random4,False,False,The father of Lily Allen is Keith Allen.
+father::James Madison,random4,False,False,The father of James Madison was Colonel James Madison Sr.
+father::Charles II of England,random4,False,False,The father of Charles II of England is Charles I of England.
+father::Chelsea Clinton,random4,False,False,"The father of Chelsea Clinton is Bill Clinton, the 42nd President of the United States."
+father::Wayne Gretzky,random4,False,False,The father of Wayne Gretzky is Walter Gretzky.
+father::Elizabeth II,random4,False,False,The father of Elizabeth II is King George VI.
+father::Rama,random4,False,False,The father of Rama is Dasharatha.
+father::Nancy Pelosi,random4,False,False,The father of Nancy Pelosi is Thomas D'Alesandro Jr.
+father::Brandon Lee,random4,False,False,The father of Brandon Lee is Bruce Lee.
+"father::Diana, Princess of Wales",random4,False,False,"The father of Diana, Princess of Wales, is John Spencer, Viscount Althorp."
+father::Tiger Woods,random4,False,False,The father of Tiger Woods is Earl Woods.
+father::Dwayne Johnson,random4,False,False,"The father of Dwayne Johnson is Rocky Johnson, a professional wrestler."
+father::George VI,random4,False,False,The father of George VI is King George V.
+genre::Mother Love Bone,random4,False,False,"Mother Love Bone is an American rock band from Seattle, Washington. The band's music genre is primarily Alternative Rock, Gr"
+genre::Martin Garrix,random4,False,False,"Martin Garrix is a Dutch DJ, record producer, and musician who primarily produces and performs in the genres of:
+
+1"
+genre::Max Payne 3,random4,False,False,Max Payne 3 is an action-adventure third-person shooter game.
+mother::Abraham Lincoln,random4,False,False,The mother of Abraham Lincoln was Nancy Hanks Lincoln.
+mother::Jesus,random4,False,False,"The mother of Jesus is Mary, also known as the Virgin Mary. According to the New Testament of the Bible, Mary"
+mother::Alexander the Great,random4,False,False,The mother of Alexander the Great is Olympias II of Epirus.
+mother::Gautama Buddha,random4,False,False,The mother of Gautama Buddha is Maya.
+mother::Michael Jackson,random4,False,False,Katherine Jackson is the mother of Michael Jackson.
+mother::Cher,random4,False,False,The mother of Cher is Georgia Holt.
+occupation::Charles Martin Smith,random4,False,False,"Charles Martin Smith is an American actor, director, and screenwriter."
+occupation::Benazir Bhutto,random4,False,False,Benazir Bhutto's occupation was a politician. She was a Pakistani politician who served as the first female Prime Minister
+occupation::Famke Janssen,random4,False,False,Famke Janssen is an actress.
+occupation::Brigitte Bardot,random4,False,False,"Brigitte Bardot is a French actress, singer, fashion model, and animal rights activist."
+occupation::Leigh Whannell,random4,False,False,"Leigh Whannell is an Australian actor, screenwriter, film producer, and director."
+place of birth::Erasmo Carlos,random4,True,True,I don't have information on the birth city of Erasmo Carlos.
+place of birth::Chris Brown,random4,False,False,"Chris Brown was born in Tappahannock, Virginia."
+place of birth::Trae tha Truth,random4,False,False,"Trae tha Truth was born in Port Arthur, Texas."
+place of birth::Camillo Benso di Cavour,random4,False,False,"Camillo Benso di Cavour was born in Turin, Italy."
+place of birth::Juan Luis Guerra,random4,False,False,"Juan Luis Guerra was born in Santo Domingo, Dominican Republic."
+place of birth::Dave Marsh,random4,True,True,I do not have information on the birth city of Dave Marsh.
+place of birth::Roman Shukhevych,random4,False,False,"Roman Shukhevych was born in Lviv, Ukraine."
+producer::Hugo,random4,False,False,"The producers of the 2011 film ""Hugo"" were Graham King and Martin Scorsese."
+producer::Downfall,random4,False,False,"The 2004 film ""Downfall"" (German: ""Der Untergang"") was produced by Bernd E"
+producer::Chef,random4,False,False,"The producer of the 2014 film ""Chef"" was John Leguizamo, but the main producers were "
+producer::Clue,random4,False,False,The 1985 film Clue was produced by Debra Hill.
+religion::Lord's Prayer,random4,False,False,The Lord's Prayer is a Christian prayer that is based on the teachings of Jesus Christ. It is a part of the
+religion::George VI,random4,False,False,George VI was a member of the Church of England.
+religion::Gautama Buddha,random4,False,False,"Gautama Buddha, also known as Siddhartha Gautama, is the founder of Buddhism. Buddhism is a non"
+screenwriter::After Hours,random4,False,False,"The screenwriter for the 1985 film ""After Hours"" was Joe Dante's friend, but the actual screenwriter"
+screenwriter::The Mission,random4,False,False,"The screenwriter for the 1986 film ""The Mission"" was Robert Bolt."
+screenwriter::Taken,random4,False,False,The screenwriter for the movie Taken (2008) was Luc Besson.
+screenwriter::Seven,random4,False,False,The screenwriter for the 1995 film Seven was Andrew Kevin Walker.
+screenwriter::The Faculty,random4,False,False,The screenwriter for The Faculty was Kevin Williamson.
+screenwriter::Halloween,random4,False,False,"The screenwriter for the 1978 film ""Halloween"" was John Carpenter."
+screenwriter::Silence,random4,False,False,"The screenwriter for the 2016 film ""Silence"" was Jay Cocks."
+screenwriter::The Shining,random4,False,False,"The screenwriter for the 1980 film ""The Shining"" was Stanley Kubrick, based on the novel of"
+screenwriter::Salt,random4,False,False,"The screenwriter for the 2010 film Salt was Kurt Johnstad, however, the story was based on a "
+screenwriter::Brave,random4,False,False,"The screenwriter for the 2012 Disney animated film ""Brave"" was Irene Mecchi."
+screenwriter::The Descendants,random4,False,False,The screenwriter for The Descendants was Alexander Payne.
+screenwriter::Léon: The Professional,random4,False,False,The screenwriter for Léon: The Professional was Luc Besson.
+screenwriter::Inside Out,random4,False,False,"The screenwriter for Inside Out was Meg LeFauve, but the story was written by Pete Docter and Meg"
+screenwriter::The Omen,random4,False,False,"The screenwriter for the 1976 film ""The Omen"" was David Seltzer."
+sport::James Rodríguez,random4,False,False,James Rodríguez is a Colombian professional footballer. He plays as an attacking midfielder or a winger.
+sport::Cris Carter,random4,False,False,Cris Carter is a former American football player. He played as a wide receiver in the National Football League (NFL)
+sport::Scuderia Toro Rosso,random4,False,False,Scuderia Toro Rosso is a former Formula One team. It was a Formula One racing team that competed in the
+sport::Margaret Court,random4,False,False,"Margaret Court is a former Australian tennis player. She is a highly successful player who won numerous titles, including 24"
+sport::Vancouver Whitecaps FC,random4,False,False,Vancouver Whitecaps FC is a professional soccer team.
+sport::Bryce Harper,random4,False,False,"Bryce Harper is a professional baseball player. He is an outfielder and has played for several teams, including the"
+sport::Australian Football League Draft,random4,False,False,The Australian Football League (AFL) Draft plays Australian Rules Football.
+sport::linebacker,random4,False,False,Linebacker is a position in the sport of American football.
+sport::Welling United F.C.,random4,False,False,Welling United F.C. plays association football (soccer).
+sport::Cheltenham Town F.C.,random4,False,False,Cheltenham Town F.C. plays association football (soccer).
+sport::Josef Martínez,random4,False,False,Josef Martínez is a Venezuelan professional footballer (soccer player).
+sport::Olympique Lyonnais Féminin,random4,False,False,Olympique Lyonnais Féminin is a women's football team.
+sport::Eric Snow,random4,False,False,Eric Snow is a former American professional basketball player.
+sport::Bernadette Szőcs,random4,True,True,I do not have information on Bernadette Szőcs.
+sport::Chuck Bednarik,random4,False,False,Chuck Bednarik is a former American football player.
+sport::Doncaster Rovers F.C.,random4,False,False,Doncaster Rovers F.C. plays association football (soccer).
+sport::Leyton Orient F.C.,random4,False,False,Leyton Orient F.C. plays association football (soccer).
+author::The No. 1 Ladies' Detective Agency,random4,False,False,The author of The No. 1 Ladies' Detective Agency is Alexander McCall Smith.

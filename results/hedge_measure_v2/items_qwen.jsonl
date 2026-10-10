@@ -1,0 +1,354 @@
+{"model": "qwen", "key": "author::Persuasion", "q": "Who is the author of Persuasion?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::On the Road", "q": "Who is the author of On the Road?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Confessions", "q": "Who is the author of Confessions?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Everyday Use", "q": "Who is the author of Everyday Use?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::The Lottery", "q": "Who is the author of The Lottery?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::The Clouds", "q": "Who is the author of The Clouds?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Politics", "q": "Who is the author of Politics?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Nineteen Eighty-Four", "q": "Who is the author of Nineteen Eighty-Four?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::The Celebrated Jumping Frog of Calaveras County", "q": "Who is the author of The Celebrated Jumping Frog of Calaveras County?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::The Bicentennial Man", "q": "Who is the author of The Bicentennial Man?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Our Town", "q": "Who is the author of Our Town?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Treasure Island", "q": "Who is the author of Treasure Island?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Gospel of Luke", "q": "Who is the author of Gospel of Luke?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::The Man from Snowy River", "q": "Who is the author of The Man from Snowy River?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::The Camp of the Saints", "q": "Who is the author of The Camp of the Saints?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Into the Woods", "q": "Who is the author of Into the Woods?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::United States of America", "q": "What is the capital of United States of America?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Pennsylvania", "q": "What is the capital of Pennsylvania?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Malaysia", "q": "What is the capital of Malaysia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Sri Lanka", "q": "What is the capital of Sri Lanka?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Pakistan", "q": "What is the capital of Pakistan?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Russia", "q": "What is the capital of Russia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Romania", "q": "What is the capital of Romania?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Saudi Arabia", "q": "What is the capital of Saudi Arabia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::New Jersey", "q": "What is the capital of New Jersey?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Mexico", "q": "What is the capital of Mexico?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Cyprus", "q": "What is the capital of Cyprus?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Florida", "q": "What is the capital of Florida?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::India", "q": "What is the capital of India?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::United Arab Emirates", "q": "What is the capital of United Arab Emirates?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital of::Tokyo", "q": "What is Tokyo the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital of::Budapest", "q": "What is Budapest the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital of::London", "q": "What is London the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital of::Rome", "q": "What is Rome the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital of::Austin", "q": "What is Austin the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "composer::Cabaret", "q": "Who was the composer of Cabaret?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Williamson County", "q": "In what country is Williamson County?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::University of Central Missouri", "q": "In what country is University of Central Missouri?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::The Players Championship", "q": "In what country is The Players Championship?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Aristotle University of Thessaloniki", "q": "In what country is Aristotle University of Thessaloniki?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Space Shuttle program", "q": "In what country is Space Shuttle program?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Colorado College", "q": "In what country is Colorado College?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Millennium Biltmore Hotel", "q": "In what country is Millennium Biltmore Hotel?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::KLM", "q": "In what country is KLM?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::The Birds", "q": "Who was the director of The Birds?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::A.I. Artificial Intelligence", "q": "Who was the director of A.I. Artificial Intelligence?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::The Sting", "q": "Who was the director of The Sting?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Inside Out", "q": "Who was the director of Inside Out?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Paprika", "q": "Who was the director of Paprika?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::La Haine", "q": "Who was the director of La Haine?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::This Is the End", "q": "Who was the director of This Is the End?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::The Wrestler", "q": "Who was the director of The Wrestler?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Laura", "q": "Who was the director of Laura?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Rebecca", "q": "Who was the director of Rebecca?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::The Holiday", "q": "Who was the director of The Holiday?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Independence Day", "q": "Who was the director of Independence Day?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Iron Man", "q": "Who was the director of Iron Man?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Back to the Future", "q": "Who was the director of Back to the Future?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Citizen Kane", "q": "Who was the director of Citizen Kane?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "director::Into the Wild", "q": "Who was the director of Into the Wild?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Aung San Suu Kyi", "q": "Who is the father of Aung San Suu Kyi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Chelsea Clinton", "q": "Who is the father of Chelsea Clinton?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Mark Twain", "q": "Who is the father of Mark Twain?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Mary, Queen of Scots", "q": "Who is the father of Mary, Queen of Scots?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Al Gore", "q": "Who is the father of Al Gore?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Alexander the Great", "q": "Who is the father of Alexander the Great?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Apollo", "q": "Who is the father of Apollo?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Brandon Lee", "q": "Who is the father of Brandon Lee?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "genre::The Rolling Stones", "q": "What genre is The Rolling Stones?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "genre::King Crimson", "q": "What genre is King Crimson?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "genre::Inside Out", "q": "What genre is Inside Out?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "genre::Nine Inch Nails", "q": "What genre is Nine Inch Nails?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "genre::S Club 7", "q": "What genre is S Club 7?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "genre::Doctor Who", "q": "What genre is Doctor Who?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "mother::Abraham Lincoln", "q": "Who is the mother of Abraham Lincoln?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "mother::George Washington", "q": "Who is the mother of George Washington?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "occupation::Kiko Mizuhara", "q": "What is Kiko Mizuhara's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "occupation::Will Smith", "q": "What is Will Smith's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "occupation::Charles Martin Smith", "q": "What is Charles Martin Smith's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "occupation::Jason Reitman", "q": "What is Jason Reitman's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "occupation::Brigitte Bardot", "q": "What is Brigitte Bardot's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Dr. John", "q": "In what city was Dr. John born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Juan Luis Guerra", "q": "In what city was Juan Luis Guerra born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Edward Drinker Cope", "q": "In what city was Edward Drinker Cope born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "producer::The Birds", "q": "Who was the producer of The Birds?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "producer::Waterworld", "q": "Who was the producer of Waterworld?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "producer::Avatar", "q": "Who was the producer of Avatar?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "producer::Off the Wall", "q": "Who was the producer of Off the Wall?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "producer::Vertigo", "q": "Who was the producer of Vertigo?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "producer::Titanic", "q": "Who was the producer of Titanic?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "producer::Halloween", "q": "Who was the producer of Halloween?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "screenwriter::Up in the Air", "q": "Who was the screenwriter for Up in the Air?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "screenwriter::The Prestige", "q": "Who was the screenwriter for The Prestige?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "screenwriter::Hot Fuzz", "q": "Who was the screenwriter for Hot Fuzz?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "screenwriter::The Internship", "q": "Who was the screenwriter for The Internship?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "screenwriter::Brooklyn", "q": "Who was the screenwriter for Brooklyn?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "sport::Los Angeles Galaxy", "q": "What sport does Los Angeles Galaxy play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "sport::Toni Kukoč", "q": "What sport does Toni Kukoč play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "sport::linebacker", "q": "What sport does linebacker play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "sport::Port Adelaide Football Club", "q": "What sport does Port Adelaide Football Club play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::Help Wanted", "q": "Who is the author of Help Wanted?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "author::The Reader", "q": "Who is the author of The Reader?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Son", "q": "Who is the author of Son?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "author::The Book of Mormon", "q": "Who is the author of The Book of Mormon?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "author::The Crow", "q": "Who is the author of The Crow?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Annals", "q": "Who is the author of Annals?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Jumper", "q": "Who is the author of Jumper?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::The Village", "q": "Who was the composer of The Village?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Metroid", "q": "Who was the composer of Metroid?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Halloween", "q": "Who was the composer of Halloween?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Inside Out", "q": "Who was the composer of Inside Out?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::The Last of Us", "q": "Who was the composer of The Last of Us?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::The Last Starfighter", "q": "Who was the composer of The Last Starfighter?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Star Trek: The Next Generation", "q": "Who was the composer of Star Trek: The Next Generation?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::There Will Be Blood", "q": "Who was the composer of There Will Be Blood?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::The Host", "q": "Who was the composer of The Host?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Holes", "q": "Who was the composer of Holes?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "country::Rong", "q": "In what country is Rong?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "country::Australian Labor Party", "q": "In what country is Australian Labor Party?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Fantastic Four", "q": "Who was the director of Fantastic Four?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Lost", "q": "Who was the director of Lost?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Compliance", "q": "Who was the director of Compliance?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::PK", "q": "Who was the director of PK?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Fog", "q": "Who was the director of The Fog?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Nine", "q": "Who was the director of Nine?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Into the Woods", "q": "Who was the director of Into the Woods?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::10", "q": "Who was the director of 10?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::LOL", "q": "Who was the director of LOL?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Brave", "q": "Who was the director of Brave?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Moon", "q": "Who was the director of Moon?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Accused", "q": "Who was the director of The Accused?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Day After", "q": "Who was the director of The Day After?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Scary Movie 3", "q": "Who was the director of Scary Movie 3?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Rand Paul", "q": "Who is the father of Rand Paul?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Moses", "q": "Who is the father of Moses?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Melora Hardin", "q": "Who is the father of Melora Hardin?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Viva la vida or Death and All His Friends", "q": "What genre is Viva la vida or Death and All His Friends?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Milk", "q": "What genre is Milk?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Gorillaz", "q": "What genre is Gorillaz?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Tales", "q": "What genre is Tales?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Rome", "q": "What genre is Rome?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::RCA Records", "q": "What genre is RCA Records?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Brad Delp", "q": "What genre is Brad Delp?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::2001", "q": "What genre is 2001?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Dune 2000", "q": "What genre is Dune 2000?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::All Good Things", "q": "What genre is All Good Things?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Fuel", "q": "What genre is Fuel?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Troy", "q": "What genre is Troy?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Steps", "q": "What genre is Steps?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::CSI", "q": "What genre is CSI?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::My Family", "q": "What genre is My Family?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Focus", "q": "What genre is Focus?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Up in the Air", "q": "What genre is Up in the Air?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Megan Is Missing", "q": "What genre is Megan Is Missing?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "mother::Cher", "q": "Who is the mother of Cher?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "mother::George VI", "q": "Who is the mother of George VI?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "mother::Edgar Allan Poe", "q": "Who is the mother of Edgar Allan Poe?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "mother::Amitabh Bachchan", "q": "Who is the mother of Amitabh Bachchan?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "occupation::Alex Reid", "q": "What is Alex Reid's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "occupation::G.E.M.", "q": "What is G.E.M.'s occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "occupation::James Cook", "q": "What is James Cook's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "occupation::Josh Mankiewicz", "q": "What is Josh Mankiewicz's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Steve Kerr", "q": "In what city was Steve Kerr born?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Trae tha Truth", "q": "In what city was Trae tha Truth born?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Ted Williams", "q": "In what city was Ted Williams born?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Eduardo Hurtado", "q": "In what city was Eduardo Hurtado born?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Paris", "q": "In what city was Paris born?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Peter Philpott", "q": "In what city was Peter Philpott born?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::The Fly", "q": "Who was the producer of The Fly?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Holes", "q": "Who was the producer of Holes?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::PK", "q": "Who was the producer of PK?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::After Hours", "q": "Who was the producer of After Hours?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Paid in Full", "q": "Who was the producer of Paid in Full?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Glory", "q": "Who was the producer of Glory?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "religion::Kumail Nanjiani", "q": "What is the religion of Kumail Nanjiani?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "religion::James VI and I", "q": "What is the religion of James VI and I?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "religion::Queen Victoria", "q": "What is the religion of Queen Victoria?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Daily Show with Trevor Noah", "q": "Who was the screenwriter for The Daily Show with Trevor Noah?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Iron Man 3", "q": "Who was the screenwriter for Iron Man 3?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Soylent Green", "q": "Who was the screenwriter for Soylent Green?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Come and See", "q": "Who was the screenwriter for Come and See?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Noah", "q": "Who was the screenwriter for Noah?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Pacific", "q": "Who was the screenwriter for The Pacific?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Terminal", "q": "Who was the screenwriter for The Terminal?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Angels & Demons", "q": "Who was the screenwriter for Angels & Demons?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Love", "q": "Who was the screenwriter for Love?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Sunshine", "q": "Who was the screenwriter for Sunshine?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Dennis the Menace", "q": "Who was the screenwriter for Dennis the Menace?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Cube", "q": "Who was the screenwriter for Cube?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Closer", "q": "Who was the screenwriter for Closer?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Thing from Another World", "q": "Who was the screenwriter for The Thing from Another World?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Alexander", "q": "Who was the screenwriter for Alexander?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Annie", "q": "Who was the screenwriter for Annie?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Big", "q": "Who was the screenwriter for Big?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Gravity", "q": "Who was the screenwriter for Gravity?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Birds", "q": "Who was the screenwriter for The Birds?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Rent", "q": "Who was the screenwriter for Rent?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "sport::Eric Snow", "q": "What sport does Eric Snow play?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "sport::Birmingham City F.C.", "q": "What sport does Birmingham City F.C. play?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "sport::Anderson", "q": "What sport does Anderson play?", "arm": "control", "slick": "Unknown"}
+{"model": "qwen", "key": "capital::Artern", "q": "What is the capital of Artern?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Vimmerby Municipality", "q": "What is the capital of Vimmerby Municipality?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::arrondissement of Limoges", "q": "What is the capital of arrondissement of Limoges?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Gmina Radomsko", "q": "What is the capital of Gmina Radomsko?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Qasr-e Shirin County", "q": "What is the capital of Qasr-e Shirin County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Atenas, Alajuela, Costa Rica", "q": "What is the capital of Atenas, Alajuela, Costa Rica?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Gmina Brzeszcze", "q": "What is the capital of Gmina Brzeszcze?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Zofingen District", "q": "What is the capital of Zofingen District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Gmina Secemin", "q": "What is the capital of Gmina Secemin?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Saanen District", "q": "What is the capital of Saanen District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Muyinga Province", "q": "What is the capital of Muyinga Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Gmina Andrespol", "q": "What is the capital of Gmina Andrespol?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Medzilaborce District", "q": "What is the capital of Medzilaborce District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Ungheni County", "q": "What is the capital of Ungheni County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital::Poprad District", "q": "What is the capital of Poprad District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "capital of::Prochowice", "q": "What is Prochowice the capital of?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "composer::Reißt euch los, bedrängte Sinnen, BWV 224", "q": "Who was the composer of Reißt euch los, bedrängte Sinnen, BWV 224?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "composer::Erfreute Zeit im neuen Bunde, BWV 83", "q": "Who was the composer of Erfreute Zeit im neuen Bunde, BWV 83?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "composer::Das neugeborne Kindelein, BWV 122", "q": "Who was the composer of Das neugeborne Kindelein, BWV 122?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "composer::Symphony, K. 19b", "q": "Who was the composer of Symphony, K. 19b?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Tervola Radio and TV-Mast", "q": "In what country is Tervola Radio and TV-Mast?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Kılıçlı Kavlaklı", "q": "In what country is Kılıçlı Kavlaklı?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Kozići", "q": "In what country is Kozići?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Kawahigashi Station", "q": "In what country is Kawahigashi Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Mount Shinten", "q": "In what country is Mount Shinten?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Muratdere", "q": "In what country is Muratdere?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Valea Seacă River", "q": "In what country is Valea Seacă River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Dubicze Osoczne", "q": "In what country is Dubicze Osoczne?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Dąbkowice, Łódź Voivodeship", "q": "In what country is Dąbkowice, Łódź Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Pârâul Bogat", "q": "In what country is Pârâul Bogat?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Bitchū-Kawamo Station", "q": "In what country is Bitchū-Kawamo Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Szczecin Scientific Society", "q": "In what country is Szczecin Scientific Society?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Sarnowo, Chełmno County", "q": "In what country is Sarnowo, Chełmno County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Călmuș River", "q": "In what country is Călmuș River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Valdearcos de la Vega", "q": "In what country is Valdearcos de la Vega?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Chalhuacocha", "q": "In what country is Chalhuacocha?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Łazy, Sierpc County", "q": "In what country is Łazy, Sierpc County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Łodygowo, Pisz County", "q": "In what country is Łodygowo, Pisz County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Stare Brzóski", "q": "In what country is Stare Brzóski?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Tangal-e Behdan", "q": "In what country is Tangal-e Behdan?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::Valea Pleșii River", "q": "In what country is Valea Pleșii River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "country::112th United States Colored Infantry", "q": "In what country is 112th United States Colored Infantry?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "father::Giacomo Guardi", "q": "Who is the father of Giacomo Guardi?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "genre::Dark Matter", "q": "What genre is Dark Matter?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "mother::Princess Marie Gabriele of Luxembourg", "q": "Who is the mother of Princess Marie Gabriele of Luxembourg?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Lloyd Ultan", "q": "In what city was Lloyd Ultan born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Gyula Czimra", "q": "In what city was Gyula Czimra born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Jiří Vyčichlo", "q": "In what city was Jiří Vyčichlo born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Gustavo Grondona", "q": "In what city was Gustavo Grondona born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Piotr Balcerzak", "q": "In what city was Piotr Balcerzak born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "place of birth::Florian Reichstädter", "q": "In what city was Florian Reichstädter born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "sport::1989–90 1. Slovenská národná hokejová liga season", "q": "What sport does 1989–90 1. Slovenská národná hokejová liga season play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "sport::2012 Georgetown Hoyas men's soccer team", "q": "What sport does 2012 Georgetown Hoyas men's soccer team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "sport::All-Ireland Senior Club Camogie Championship 1970", "q": "What sport does All-Ireland Senior Club Camogie Championship 1970 play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "qwen", "key": "author::A Positive", "q": "Who is the author of A Positive?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Partner", "q": "Who is the author of Partner?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Beast", "q": "Who is the author of Beast?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Rage", "q": "Who is the author of Rage?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Incoming", "q": "Who is the author of Incoming?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Abel", "q": "Who is the author of Abel?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Martin", "q": "Who is the author of Martin?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::The Wizard in Wonderland", "q": "Who is the author of The Wizard in Wonderland?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Stand By Your Screen", "q": "Who is the author of Stand By Your Screen?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Darkvision", "q": "Who is the author of Darkvision?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "author::Nevis Mountain Dew", "q": "Who is the author of Nevis Mountain Dew?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "capital::Taylor", "q": "What is the capital of Taylor?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "capital of::Bolsheustyikinskoye", "q": "What is Bolsheustyikinskoye the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "color::Arsenal Fútbol Club", "q": "What color is Arsenal Fútbol Club?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::The Moment's Energy", "q": "Who was the composer of The Moment's Energy?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Everything but You", "q": "Who was the composer of Everything but You?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Say When", "q": "Who was the composer of Say When?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Sandhya", "q": "Who was the composer of Sandhya?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Alone", "q": "Who was the composer of Alone?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "composer::Asli and Kerem", "q": "Who was the composer of Asli and Kerem?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "country::Tartaczek", "q": "In what country is Tartaczek?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "country::Xaga", "q": "In what country is Xaga?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Black Book", "q": "Who was the director of The Black Book?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Per amare Ofelia", "q": "Who was the director of Per amare Ofelia?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Mighty", "q": "Who was the director of The Mighty?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::My House", "q": "Who was the director of My House?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Sold", "q": "Who was the director of Sold?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Trap", "q": "Who was the director of The Trap?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::What Every Woman Learns", "q": "Who was the director of What Every Woman Learns?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Not So Long Ago", "q": "Who was the director of Not So Long Ago?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Only Woman", "q": "Who was the director of The Only Woman?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Boys", "q": "Who was the director of Boys?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Vanity", "q": "Who was the director of Vanity?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Nice People", "q": "Who was the director of Nice People?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Those Who Love", "q": "Who was the director of Those Who Love?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::An Event", "q": "Who was the director of An Event?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::September", "q": "Who was the director of September?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::La cruz", "q": "Who was the director of La cruz?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Turn to the Right", "q": "Who was the director of Turn to the Right?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Girl in Mourning", "q": "Who was the director of The Girl in Mourning?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Marriages", "q": "Who was the director of Marriages?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::The Pigskin Palooka", "q": "Who was the director of The Pigskin Palooka?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Sam", "q": "Who was the director of Sam?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "director::Run for Money", "q": "Who was the director of Run for Money?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Dance in the Dark", "q": "Who is the father of Dance in the Dark?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Francesco Maria Farnese", "q": "Who is the father of Francesco Maria Farnese?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Wang Yuankui", "q": "Who is the father of Wang Yuankui?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Court Martial", "q": "Who is the father of Court Martial?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Folke Zettervall", "q": "Who is the father of Folke Zettervall?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Bert Bertrand", "q": "Who is the father of Bert Bertrand?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "father::Leif Claesson", "q": "Who is the father of Leif Claesson?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Magic", "q": "What genre is Magic?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Nightdreamers", "q": "What genre is Nightdreamers?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Wake Up", "q": "What genre is Wake Up?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Mobile Home", "q": "What genre is Mobile Home?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Magic Music", "q": "What genre is Magic Music?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::The Hare Census", "q": "What genre is The Hare Census?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Info", "q": "What genre is Info?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Shark Monroe", "q": "What genre is Shark Monroe?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::In Silence", "q": "What genre is In Silence?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Something Near", "q": "What genre is Something Near?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Reach", "q": "What genre is Reach?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "genre::Say It Again", "q": "What genre is Say It Again?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "occupation::Modou Dia", "q": "What is Modou Dia's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Robert Zawada", "q": "In what city was Robert Zawada born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Domenico Bologna", "q": "In what city was Domenico Bologna born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "place of birth::Ray Strauss", "q": "In what city was Ray Strauss born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Competition", "q": "Who was the producer of Competition?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Hoffmeyer's Legacy", "q": "Who was the producer of Hoffmeyer's Legacy?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Here Is Always Somewhere Else", "q": "Who was the producer of Here Is Always Somewhere Else?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::The Hayseeds' Back-blocks Show", "q": "Who was the producer of The Hayseeds' Back-blocks Show?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Awakening", "q": "Who was the producer of Awakening?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Images", "q": "Who was the producer of Images?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::The Harvest Shall Come", "q": "Who was the producer of The Harvest Shall Come?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::She", "q": "Who was the producer of She?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Airport", "q": "Who was the producer of Airport?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::It's Not Enough", "q": "Who was the producer of It's Not Enough?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::From Now On", "q": "Who was the producer of From Now On?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "producer::Just Around the Corner", "q": "Who was the producer of Just Around the Corner?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "religion::William Preston", "q": "What is the religion of William Preston?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "religion::Joseph Schubert", "q": "What is the religion of Joseph Schubert?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "religion::James Uno", "q": "What is the religion of James Uno?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Supplement", "q": "Who was the screenwriter for The Supplement?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Disorder", "q": "Who was the screenwriter for Disorder?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Ars", "q": "Who was the screenwriter for Ars?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Men and Women", "q": "Who was the screenwriter for Men and Women?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Parents", "q": "Who was the screenwriter for The Parents?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Mary's Ankle", "q": "Who was the screenwriter for Mary's Ankle?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::On Tour", "q": "Who was the screenwriter for On Tour?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Manzil", "q": "Who was the screenwriter for Manzil?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Exit the Vamp", "q": "Who was the screenwriter for Exit the Vamp?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::The Game", "q": "Who was the screenwriter for The Game?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Assassinio sul Tevere", "q": "Who was the screenwriter for Assassinio sul Tevere?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Small Town", "q": "Who was the screenwriter for Small Town?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Rails", "q": "Who was the screenwriter for Rails?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "screenwriter::Death of a Batman", "q": "Who was the screenwriter for Death of a Batman?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "sport::Vyacheslav Chadov", "q": "What sport does Vyacheslav Chadov play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "sport::Frank Cornan", "q": "What sport does Frank Cornan play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "sport::Oyanaisis Gelis", "q": "What sport does Oyanaisis Gelis play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "qwen", "key": "sport::Koumiba Djossouvi", "q": "What sport does Koumiba Djossouvi play?", "arm": "uncertain", "slick": "Unknown"}

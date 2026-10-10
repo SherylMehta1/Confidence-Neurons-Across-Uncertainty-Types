@@ -1,0 +1,28 @@
+[base] labels: 2673 loaded, labelling 0 here
+[base] caching residuals for 2673 items
+[base] working-half cell sizes {uncertain/Unknown: 577, uncertain/HighlyKnown: 42, control/Unknown: 200, control/HighlyKnown: 215}
+[inst] labels: 2673 loaded, labelling 0 here
+[inst] caching residuals for 2673 items
+[inst] working-half cell sizes {uncertain/Unknown: 586, uncertain/HighlyKnown: 47, control/Unknown: 174, control/HighlyKnown: 335}
+geometry at l*=17: cos(d_fam base, inst) = 0.411; permutation null 99th pct 0.489 (mean 0.188)
+  steer none         hedge 0.020  entropy 0.824
+  steer own_fam      hedge 0.053  entropy 1.140
+  steer base_fam     hedge 0.027  entropy 1.049
+  steer inst_know    hedge 0.067  entropy 1.074
+  steer own_fam_x2   hedge 0.093  entropy 1.788
+  steer base_fam_x2  hedge 0.047  entropy 1.453
+  steer random0      hedge 0.020  entropy 0.870
+  steer random1      hedge 0.020  entropy 0.852
+  steer random2      hedge 0.027  entropy 0.848
+  steer random3      hedge 0.013  entropy 0.873
+  steer random4      hedge 0.020  entropy 0.837
+PAIR llama: base unsloth/Meta-Llama-3.1-8B | instruct unsloth/Meta-Llama-3.1-8B-Instruct | l* = 17 of 32 layers | n steer prompts = 150
+G  cos(d_fam base, inst) at l* = +0.411; permutation 99th pct +0.489 -> condition 1 no
+   cos at all layers: L0:+0.77 L1:+0.75 L2:+0.75 L3:+0.70 L4:+0.66 L5:+0.54 L6:+0.43 L7:+0.39 L8:+0.32 L9:+0.27 L10:+0.24 L11:+0.25 L12:+0.30 L13:+0.36 L14:+0.28 L15:+0.38 L16:+0.37 L17:+0.41 L18:+0.44 L19:+0.44 L20:+0.44 L21:+0.47 L22:+0.47 L23:+0.49 L24:+0.52 L25:+0.51 L26:+0.51 L27:+0.54 L28:+0.56 L29:+0.56 L30:+0.56 L31:+0.52
+S  hedge rate by condition: base_fam 0.027  base_fam_x2 0.047  inst_know 0.067  none 0.020  own_fam 0.053  own_fam_x2 0.093  random0 0.020  random1 0.020  random2 0.027  random3 0.013  random4 0.020
+   random mean 0.020; own effect +0.033; base effect +0.007; testable False; condition 2 no; condition 3 no
+   amended detector: base_fam 0.027  base_fam_x2 0.053  inst_know 0.067  none 0.020  own_fam 0.053  own_fam_x2 0.093  random0 0.020  random1 0.020  random2 0.027  random3 0.013  random4 0.020
+E  first-token entropy by condition: base_fam 1.049  base_fam_x2 1.453  inst_know 1.074  none 0.824  own_fam 1.140  own_fam_x2 1.788  random0 0.870  random1 0.852  random2 0.848  random3 0.873  random4 0.837
+DD hedge(own_fam) - hedge(inst_know) = -0.013 [-0.033, +0.000]; entropy(inst_know) - entropy(own_fam) = -0.066 [-0.153, +0.017] -> double dissociation no
+VERDICT llama: NOT TESTABLE
+DIRECTION_REUSE_DONE

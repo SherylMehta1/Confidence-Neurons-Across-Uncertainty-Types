@@ -1,0 +1,5 @@
+pop,name,n,hedge,entropy
+obscure,common-word name,159,0.006603773584905661,0.23730221831198758
+obscure,rare-word name,211,0.013981042654028436,0.2705843312559888
+popular,common-word name,215,0.0,0.278777733713735
+popular,rare-word name,158,0.0,0.2587427667524854

@@ -1,0 +1,90 @@
+pool: familiarity_v3_qwen; tokenizer: /home/marimo/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer.json
+========================================================================================
+CHECK 1 -- entity popularity vs surface form of the name (familiarity_v3 pool, Llama-3.1-8B-Instruct)
+========================================================================================
+items: 2392 (HighlyKnown 442, Unknown 1950); relations 16; free generations per item: [np.int64(20)]
+name-inferable answers: 4.1% of items (known 10.6%, unknown 2.6%)
+
+Spearman correlations among predictors:
+           logpop  known  zipf_mean  zipf_min  n_tok  tok_logid  inferable
+logpop       1.00   0.36       0.18      0.22  -0.27       0.14       0.02
+known        0.36   1.00      -0.04     -0.04  -0.00       0.05       0.16
+zipf_mean    0.18  -0.04       1.00      0.84  -0.17      -0.12      -0.13
+zipf_min     0.22  -0.04       0.84      1.00  -0.50       0.15      -0.14
+n_tok       -0.27  -0.00      -0.17     -0.50   1.00      -0.66       0.12
+tok_logid    0.14   0.05      -0.12      0.15  -0.66       1.00      -0.06
+inferable    0.02   0.16      -0.13     -0.14   0.12      -0.06       1.00
+
+--- outcome: hedge rate (binomial GLM on free-generation hedge counts); relation fixed effects; SE clustered by relation
+  M1 popularity + knowledge  (deviance 9661.5)
+     logpop_z     -0.919  [-1.162, -0.676]  p=1.2e-13
+     known        -2.132  [-3.272, -0.992]  p=0.00025
+  M2 + surface form of the name  (deviance 9446.1)
+     logpop_z     -0.881  [-1.093, -0.668]  p=5.1e-16
+     known        -2.011  [-3.127, -0.895]  p=0.00041
+     zipf_mean_z  +0.173  [-0.218, +0.565]  p=0.39
+     zipf_min_z   -0.508  [-0.918, -0.098]  p=0.015
+     n_tok_z      -0.370  [-0.678, -0.062]  p=0.019
+     tok_logid_z  -0.037  [-0.252, +0.177]  p=0.73
+  M3 + name-inferable answer  (deviance 9436.8)
+     logpop_z     -0.882  [-1.096, -0.667]  p=7.4e-16
+     known        -1.959  [-3.086, -0.831]  p=0.00066
+     zipf_mean_z  +0.180  [-0.208, +0.568]  p=0.36
+     zipf_min_z   -0.518  [-0.928, -0.107]  p=0.014
+     n_tok_z      -0.366  [-0.672, -0.059]  p=0.019
+     tok_logid_z  -0.039  [-0.252, +0.173]  p=0.72
+     inferable    -0.372  [-0.914, +0.170]  p=0.18
+  M0 surface only (no popularity)  (deviance 10264.0)
+     known        -2.854  [-3.967, -1.740]  p=5.1e-07
+     zipf_mean_z  +0.226  [-0.106, +0.559]  p=0.18
+     zipf_min_z   -0.747  [-1.098, -0.397]  p=2.9e-05
+     n_tok_z      -0.279  [-0.580, +0.023]  p=0.07
+     tok_logid_z  +0.021  [-0.171, +0.213]  p=0.83
+     inferable    -0.349  [-0.955, +0.258]  p=0.26
+
+--- outcome: first-token entropy (OLS); relation fixed effects; SE clustered by relation
+  M1 popularity + knowledge  (R2 0.406)
+     logpop_z     -0.034  [-0.140, +0.073]  p=0.54
+     known        -0.958  [-1.333, -0.583]  p=5.6e-07
+  M2 + surface form of the name  (R2 0.415)
+     logpop_z     -0.023  [-0.146, +0.101]  p=0.72
+     known        -0.998  [-1.403, -0.593]  p=1.4e-06
+     zipf_mean_z  +0.034  [-0.061, +0.130]  p=0.48
+     zipf_min_z   +0.078  [-0.041, +0.197]  p=0.2
+     n_tok_z      +0.147  [+0.002, +0.292]  p=0.047
+     tok_logid_z  +0.021  [-0.028, +0.070]  p=0.4
+  M3 + name-inferable answer  (R2 0.415)
+     logpop_z     -0.022  [-0.145, +0.101]  p=0.72
+     known        -0.999  [-1.400, -0.598]  p=1e-06
+     zipf_mean_z  +0.034  [-0.061, +0.129]  p=0.48
+     zipf_min_z   +0.078  [-0.040, +0.196]  p=0.2
+     n_tok_z      +0.146  [+0.001, +0.292]  p=0.049
+     tok_logid_z  +0.021  [-0.028, +0.071]  p=0.4
+     inferable    +0.025  [-0.296, +0.347]  p=0.88
+  M0 surface only (no popularity)  (R2 0.414)
+     known        -1.024  [-1.386, -0.661]  p=3.1e-08
+     zipf_mean_z  +0.036  [-0.055, +0.126]  p=0.44
+     zipf_min_z   +0.072  [-0.036, +0.180]  p=0.19
+     n_tok_z      +0.150  [+0.011, +0.288]  p=0.034
+     tok_logid_z  +0.022  [-0.027, +0.072]  p=0.38
+     inferable    +0.031  [-0.301, +0.363]  p=0.85
+
+Natural decoupling among KNOWN items: hedge rate by entity popularity x name word frequency (median splits)
+                            n  hedge  entropy
+pop     name                                 
+obscure common-word name   99  0.001    0.893
+        rare-word name    122  0.009    0.796
+popular common-word name  122  0.000    0.560
+        rare-word name     99  0.012    0.475
+
+Pair-level, factorial_v3 popularity contrasts (obscure twin minus popular twin):
+
+  pop_given_known: 37 pairs; relations: {'country': 15, 'capital': 11, 'place of birth': 6, 'capital of': 1}
+    raw hedge gap +0.028; entropy gap +0.213; obscure twin name-inferable 38%, popular twin 11%
+    hedge gap at EQUAL surface form (intercept of d_hedge ~ d_zipf + d_ntok + d_logid): +0.009 [-0.030, +0.048]
+    excluding name-inferable obscure twins: n=23, hedge gap +0.000 [+0.000, +0.000], entropy gap +0.011
+
+  pop_given_unknown: 740 pairs; relations: {'screenwriter': 117, 'director': 108, 'producer': 102, 'genre': 97}
+    raw hedge gap +0.075; entropy gap -0.124; obscure twin name-inferable 1%, popular twin 2%
+    hedge gap at EQUAL surface form (intercept of d_hedge ~ d_zipf + d_ntok + d_logid): +0.067 [+0.051, +0.082]
+    excluding name-inferable obscure twins: n=730, hedge gap +0.073 [+0.058, +0.089], entropy gap -0.133

@@ -1,0 +1,5 @@
+Llama-3.1-8B-Instruct, layer 17, natural norm of d_fam = 4.84, n = 150
+hedge rate: d_fam 0.287  d_nohedge_U 0.067  d_nohedge_both 0.087  none 0.020  random0 0.027  random1 0.020  random2 0.040  random3 0.013  random4 0.027
+d_fam effect +0.267 (v2: +0.267); d_nohedge_U effect +0.047; d_nohedge_U - random +0.041 [+0.013, +0.073]
+condition 1 (>= 0.10 over random): no; condition 2 (>= 50% of d_fam effect): no
+VERDICT: HEDGING INTENT NOT EXCLUDED

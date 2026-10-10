@@ -1,0 +1,37 @@
+{"key": "author::Darkness", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "author::Therapy", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "author::Lucky", "slick": "Maybe", "frac_correct": 0.6}
+{"key": "capital::Georgia", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Ye", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Minas", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Miller", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Pavlovsky Posad", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Salem", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Philip", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Durand", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Buffalo", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Batken", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "capital of::Boston", "slick": "Maybe", "frac_correct": 0.1}
+{"key": "composer::Gentleman", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "director::Genius", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "director::College", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "director::The Key", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "director::Accident", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "director::Mother", "slick": "HighlyKnown", "frac_correct": 1.0}
+{"key": "director::The Island", "slick": "HighlyKnown", "frac_correct": 1.0}
+{"key": "director::Left Behind", "slick": "Maybe", "frac_correct": 0.2}
+{"key": "genre::Universe", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "genre::The Interview", "slick": "Maybe", "frac_correct": 0.2}
+{"key": "producer::Filthy!", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "producer::Harvest", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "producer::Skyline", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "producer::I Am", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "producer::10 Years", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "producer::Episode", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "producer::The Shining", "slick": "HighlyKnown", "frac_correct": 1.0}
+{"key": "religion::Simon Ntamwana", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "screenwriter::Day Trip", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "screenwriter::The Girlfriend", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "screenwriter::The Return", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "screenwriter::Democracy", "slick": "Unknown", "frac_correct": 0.0}
+{"key": "screenwriter::After Hours", "slick": "HighlyKnown", "frac_correct": 0.9}

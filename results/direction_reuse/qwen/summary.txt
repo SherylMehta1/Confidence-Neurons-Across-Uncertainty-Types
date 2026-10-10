@@ -1,0 +1,9 @@
+PAIR qwen: base Qwen/Qwen2.5-7B | instruct Qwen/Qwen2.5-7B-Instruct | l* = 15 of 28 layers | n steer prompts = 150
+G  cos(d_fam base, inst) at l* = +0.359; permutation 99th pct +0.324 -> condition 1 yes
+   cos at all layers: L0:+0.63 L1:+0.65 L2:+0.65 L3:+0.64 L4:+0.76 L5:+0.77 L6:+0.68 L7:+0.62 L8:+0.64 L9:+0.57 L10:+0.54 L11:+0.46 L12:+0.43 L13:+0.39 L14:+0.36 L15:+0.36 L16:+0.34 L17:+0.34 L18:+0.46 L19:+0.55 L20:+0.59 L21:+0.61 L22:+0.68 L23:+0.72 L24:+0.78 L25:+0.82 L26:+0.75 L27:+0.78
+S  hedge rate by condition: base_fam 0.000  base_fam_x2 0.000  inst_know 0.000  none 0.000  own_fam 0.000  own_fam_x2 0.000  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000
+   random mean 0.000; own effect +0.000; base effect +0.000; testable False; condition 2 no; condition 3 no
+   amended detector: base_fam 0.000  base_fam_x2 0.000  inst_know 0.000  none 0.000  own_fam 0.000  own_fam_x2 0.000  random0 0.000  random1 0.000  random2 0.000  random3 0.000  random4 0.000
+E  first-token entropy by condition: base_fam 0.586  base_fam_x2 0.609  inst_know 0.577  none 0.577  own_fam 0.587  own_fam_x2 0.609  random0 0.568  random1 0.532  random2 0.599  random3 0.610  random4 0.576
+DD hedge(own_fam) - hedge(inst_know) = +0.000 [+0.000, +0.000]; entropy(inst_know) - entropy(own_fam) = -0.011 [-0.051, +0.030] -> double dissociation no
+VERDICT qwen: NOT TESTABLE

@@ -1,0 +1,371 @@
+{"model": "mistral", "key": "author::representational state transfer", "q": "Who is the author of representational state transfer?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Memory, Sorrow, and Thorn", "q": "Who is the author of Memory, Sorrow, and Thorn?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Spice and Wolf", "q": "Who is the author of Spice and Wolf?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::The Trial", "q": "Who is the author of The Trial?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Everyday Use", "q": "Who is the author of Everyday Use?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Emma", "q": "Who is the author of Emma?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::The Host", "q": "Who is the author of The Host?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Left Behind", "q": "Who is the author of Left Behind?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::The Adventures of Tom Sawyer", "q": "Who is the author of The Adventures of Tom Sawyer?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Moneyball", "q": "Who is the author of Moneyball?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Kim", "q": "Who is the author of Kim?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::The Little Prince", "q": "Who is the author of The Little Prince?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Betrayal", "q": "Who is the author of Betrayal?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::The Road", "q": "Who is the author of The Road?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::The Book Thief", "q": "Who is the author of The Book Thief?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Rave Master", "q": "Who is the author of Rave Master?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Jumper", "q": "Who is the author of Jumper?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::France", "q": "What is the capital of France?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Iran", "q": "What is the capital of Iran?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Texas", "q": "What is the capital of Texas?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Alaska", "q": "What is the capital of Alaska?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Cyprus", "q": "What is the capital of Cyprus?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital of::Mexico City", "q": "What is Mexico City the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital of::Hyderabad", "q": "What is Hyderabad the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital of::Chennai", "q": "What is Chennai the capital of?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::Chariots of Fire", "q": "Who was the composer of Chariots of Fire?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::Star Trek: First Contact", "q": "Who was the composer of Star Trek: First Contact?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::The Planets", "q": "Who was the composer of The Planets?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::Up", "q": "Who was the composer of Up?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::King Kong", "q": "Who was the composer of King Kong?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Port Authority Trans-Hudson", "q": "In what country is Port Authority Trans-Hudson?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Epic Records", "q": "In what country is Epic Records?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::New School", "q": "In what country is New School?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Aristotle University of Thessaloniki", "q": "In what country is Aristotle University of Thessaloniki?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Space Shuttle program", "q": "In what country is Space Shuttle program?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::USS Constitution", "q": "In what country is USS Constitution?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Bank of Korea", "q": "In what country is Bank of Korea?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::The Hours", "q": "Who was the director of The Hours?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Star Trek: First Contact", "q": "Who was the director of Star Trek: First Contact?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Moon", "q": "Who was the director of Moon?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Reds", "q": "Who was the director of Reds?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::The Butler", "q": "Who was the director of The Butler?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Death Becomes Her", "q": "Who was the director of Death Becomes Her?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::The Terminal", "q": "Who was the director of The Terminal?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Casino", "q": "Who was the director of Casino?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::One Day", "q": "Who was the director of One Day?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::The Day After", "q": "Who was the director of The Day After?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::2010: The Year We Make Contact", "q": "Who was the director of 2010: The Year We Make Contact?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Giant", "q": "Who was the director of Giant?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Legend", "q": "Who was the director of Legend?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Total Recall", "q": "Who was the director of Total Recall?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "director::Ever After", "q": "Who was the director of Ever After?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "father::Aung San Suu Kyi", "q": "Who is the father of Aung San Suu Kyi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "father::Chelsea Clinton", "q": "Who is the father of Chelsea Clinton?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "father::Elizabeth II", "q": "Who is the father of Elizabeth II?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "father::Al Gore", "q": "Who is the father of Al Gore?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "father::Rama", "q": "Who is the father of Rama?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::Pokémon Red and Blue", "q": "What genre is Pokémon Red and Blue?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::Martin Garrix", "q": "What genre is Martin Garrix?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::REO Speedwagon", "q": "What genre is REO Speedwagon?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::Rush", "q": "What genre is Rush?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::Sonic Youth", "q": "What genre is Sonic Youth?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "mother::Barack Obama", "q": "Who is the mother of Barack Obama?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "mother::Gautama Buddha", "q": "Who is the mother of Gautama Buddha?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "occupation::Scooter Braun", "q": "What is Scooter Braun's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "place of birth::Ed Sullivan", "q": "In what city was Ed Sullivan born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "place of birth::Roman Shukhevych", "q": "In what city was Roman Shukhevych born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Her", "q": "Who was the producer of Her?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Precious", "q": "Who was the producer of Precious?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Knowing", "q": "Who was the producer of Knowing?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Philadelphia", "q": "Who was the producer of Philadelphia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Just Go with It", "q": "Who was the producer of Just Go with It?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::The Graduate", "q": "Who was the producer of The Graduate?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Teeth", "q": "Who was the producer of Teeth?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Vertigo", "q": "Who was the producer of Vertigo?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Titanic", "q": "Who was the producer of Titanic?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "producer::Some Like It Hot", "q": "Who was the producer of Some Like It Hot?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Spotlight", "q": "Who was the screenwriter for Spotlight?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Office Space", "q": "Who was the screenwriter for Office Space?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Hot Fuzz", "q": "Who was the screenwriter for Hot Fuzz?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Neon Genesis Evangelion", "q": "Who was the screenwriter for Neon Genesis Evangelion?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Spy", "q": "Who was the screenwriter for Spy?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Labyrinth", "q": "Who was the screenwriter for Labyrinth?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Sunshine", "q": "Who was the screenwriter for Sunshine?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Back to the Future", "q": "Who was the screenwriter for Back to the Future?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Kids", "q": "Who was the screenwriter for Kids?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::The Exorcist III", "q": "Who was the screenwriter for The Exorcist III?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Amistad", "q": "Who was the screenwriter for Amistad?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Final Destination", "q": "Who was the screenwriter for Final Destination?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::The Conversation", "q": "Who was the screenwriter for The Conversation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Road Trip", "q": "Who was the screenwriter for Road Trip?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Paprika", "q": "Who was the screenwriter for Paprika?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::They Live", "q": "Who was the screenwriter for They Live?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Groundhog Day", "q": "Who was the screenwriter for Groundhog Day?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Philadelphia", "q": "Who was the screenwriter for Philadelphia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Sex, Lies, and Videotape", "q": "Who was the screenwriter for Sex, Lies, and Videotape?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Brave", "q": "Who was the screenwriter for Brave?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::earned run average", "q": "What sport does earned run average play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::Jerry West", "q": "What sport does Jerry West play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::Houston Dynamo FC", "q": "What sport does Houston Dynamo FC play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Hacker News", "q": "Who is the author of Hacker News?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Today", "q": "Who is the author of Today?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Saint Young Men", "q": "Who is the author of Saint Young Men?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Cool", "q": "Who is the author of Cool?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Crash", "q": "Who is the author of Crash?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::The Book of Mormon", "q": "Who is the author of The Book of Mormon?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Elite", "q": "Who is the author of Elite?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Aida", "q": "Who is the author of Aida?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Nature", "q": "Who is the author of Nature?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Legion", "q": "Who is the author of Legion?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "capital of::Atlanta", "q": "What is Atlanta the capital of?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::8½", "q": "Who was the composer of 8½?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Dragon Age: Inquisition", "q": "Who was the composer of Dragon Age: Inquisition?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::The Village", "q": "Who was the composer of The Village?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Miami Vice", "q": "Who was the composer of Miami Vice?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Tron", "q": "Who was the composer of Tron?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::The Island", "q": "Who was the composer of The Island?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Leverage", "q": "Who was the composer of Leverage?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Doctor Who", "q": "Who was the composer of Doctor Who?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::The Room", "q": "Who was the composer of The Room?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Crash", "q": "Who was the composer of Crash?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Rocky", "q": "Who was the composer of Rocky?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Arrested Development", "q": "Who was the composer of Arrested Development?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "country::Directorate of Military Intelligence", "q": "In what country is Directorate of Military Intelligence?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "country::Bethel", "q": "In what country is Bethel?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "country::British American Tobacco", "q": "In what country is British American Tobacco?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Pride", "q": "Who was the director of Pride?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "director::The Shining", "q": "Who was the director of The Shining?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Maine Pyar Kiya", "q": "Who was the director of Maine Pyar Kiya?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Annie", "q": "Who was the director of Annie?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "director::House", "q": "Who was the director of House?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Halloween II", "q": "Who was the director of Halloween II?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "father::Trace Cyrus", "q": "Who is the father of Trace Cyrus?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "father::Nancy Pelosi", "q": "Who is the father of Nancy Pelosi?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Paris Hilton", "q": "What genre is Paris Hilton?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::V: The Original Miniseries", "q": "What genre is V: The Original Miniseries?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Tales", "q": "What genre is Tales?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::MASH", "q": "What genre is MASH?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Della Reese", "q": "What genre is Della Reese?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Grease", "q": "What genre is Grease?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Jobs", "q": "What genre is Jobs?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::The Awakening", "q": "What genre is The Awakening?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Left Behind", "q": "What genre is Left Behind?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Mario franchise", "q": "What genre is Mario franchise?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::No Doubt", "q": "What genre is No Doubt?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Megan Is Missing", "q": "What genre is Megan Is Missing?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::The Matrix", "q": "What genre is The Matrix?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Simon Le Bon", "q": "What genre is Simon Le Bon?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "mother::George VI", "q": "Who is the mother of George VI?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Michael Jackson", "q": "What is Michael Jackson's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Mariana Vicente", "q": "What is Mariana Vicente's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Dash", "q": "What is Dash's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Donald Trump", "q": "What is Donald Trump's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Paul", "q": "What is Paul's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Moses the Black", "q": "In what city was Moses the Black born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Joanna Elisabeth of Holstein-Gottorp", "q": "In what city was Joanna Elisabeth of Holstein-Gottorp born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Ko Wen-je", "q": "In what city was Ko Wen-je born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Ted Williams", "q": "In what city was Ted Williams born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Jeanne de Casalis", "q": "In what city was Jeanne de Casalis born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Eduardo Hurtado", "q": "In what city was Eduardo Hurtado born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Robert Kraft", "q": "In what city was Robert Kraft born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Julius Erving", "q": "In what city was Julius Erving born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Petar Stambolić", "q": "In what city was Petar Stambolić born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Peter Philpott", "q": "In what city was Peter Philpott born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Sue Vertue", "q": "In what city was Sue Vertue born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Isaac", "q": "In what city was Isaac born?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Vacation", "q": "Who was the producer of Vacation?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Career Opportunities", "q": "Who was the producer of Career Opportunities?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Rock", "q": "Who was the producer of The Rock?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Fly", "q": "Who was the producer of The Fly?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Terminal", "q": "Who was the producer of The Terminal?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Click", "q": "Who was the producer of Click?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Happening", "q": "Who was the producer of The Happening?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Pulse", "q": "Who was the producer of Pulse?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Slim Shady LP", "q": "Who was the producer of The Slim Shady LP?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::I", "q": "Who was the producer of I?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Charlie's Angels", "q": "Who was the producer of Charlie's Angels?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Friday the 13th Part 2", "q": "Who was the producer of Friday the 13th Part 2?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::House on Haunted Hill", "q": "Who was the producer of House on Haunted Hill?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Paid in Full", "q": "Who was the producer of Paid in Full?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Glory", "q": "Who was the producer of Glory?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Running Man", "q": "Who was the producer of The Running Man?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::City of God", "q": "Who was the producer of City of God?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Muhammad Ali", "q": "What is the religion of Muhammad Ali?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Peter", "q": "What is the religion of Peter?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Byzantine Empire", "q": "What is the religion of Byzantine Empire?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Hook", "q": "Who was the screenwriter for Hook?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::The Tourist", "q": "Who was the screenwriter for The Tourist?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Come and See", "q": "Who was the screenwriter for Come and See?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Noah", "q": "Who was the screenwriter for Noah?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::MASH", "q": "Who was the screenwriter for MASH?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Love", "q": "Who was the screenwriter for Love?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::The Duellists", "q": "Who was the screenwriter for The Duellists?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Coach Carter", "q": "Who was the screenwriter for Coach Carter?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::The Thing from Another World", "q": "Who was the screenwriter for The Thing from Another World?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Annie", "q": "Who was the screenwriter for Annie?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Gravity", "q": "Who was the screenwriter for Gravity?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::The Fly", "q": "Who was the screenwriter for The Fly?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Rent", "q": "Who was the screenwriter for Rent?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "sport::FINA", "q": "What sport does FINA play?", "arm": "control", "slick": "Unknown"}
+{"model": "mistral", "key": "capital::Yunguyo Province", "q": "What is the capital of Yunguyo Province?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Gmina Radomsko", "q": "What is the capital of Gmina Radomsko?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Verbandsgemeinde Loreley", "q": "What is the capital of Verbandsgemeinde Loreley?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Ungheni County", "q": "What is the capital of Ungheni County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "capital::Poprad District", "q": "What is the capital of Poprad District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "color::Arsenal Fútbol Club", "q": "What color is Arsenal Fútbol Club?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::Reißt euch los, bedrängte Sinnen, BWV 224", "q": "Who was the composer of Reißt euch los, bedrängte Sinnen, BWV 224?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::Erfreute Zeit im neuen Bunde, BWV 83", "q": "Who was the composer of Erfreute Zeit im neuen Bunde, BWV 83?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::Das neugeborne Kindelein, BWV 122", "q": "Who was the composer of Das neugeborne Kindelein, BWV 122?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "composer::Symphony, K. 19b", "q": "Who was the composer of Symphony, K. 19b?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Khvajeh Soheyl", "q": "In what country is Khvajeh Soheyl?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Tervola Radio and TV-Mast", "q": "In what country is Tervola Radio and TV-Mast?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Eslamabad-e Mashayekh", "q": "In what country is Eslamabad-e Mashayekh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Kılıçlı Kavlaklı", "q": "In what country is Kılıçlı Kavlaklı?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Kozići", "q": "In what country is Kozići?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Tholuvankadu", "q": "In what country is Tholuvankadu?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Gornji Davidovići", "q": "In what country is Gornji Davidovići?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Korean Magazine Museum", "q": "In what country is Korean Magazine Museum?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Kawahigashi Station", "q": "In what country is Kawahigashi Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Muratdere", "q": "In what country is Muratdere?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Valea Seacă River", "q": "In what country is Valea Seacă River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Mohammadabad-e Razzaqzadeh", "q": "In what country is Mohammadabad-e Razzaqzadeh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Dubicze Osoczne", "q": "In what country is Dubicze Osoczne?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Zec Petawaga", "q": "In what country is Zec Petawaga?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Izvorul Morarului River", "q": "In what country is Izvorul Morarului River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Dąbkowice, Łódź Voivodeship", "q": "In what country is Dąbkowice, Łódź Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Wiesau", "q": "In what country is Wiesau?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Pârâul Bogat", "q": "In what country is Pârâul Bogat?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Dell", "q": "In what country is Dell?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Wir, Masovian Voivodeship", "q": "In what country is Wir, Masovian Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Riechheimer Berg", "q": "In what country is Riechheimer Berg?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Bitchū-Kawamo Station", "q": "In what country is Bitchū-Kawamo Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Gawarzec Dolny", "q": "In what country is Gawarzec Dolny?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Szczecin Scientific Society", "q": "In what country is Szczecin Scientific Society?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Rizuiyeh", "q": "In what country is Rizuiyeh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Kowale, Lower Silesian Voivodeship", "q": "In what country is Kowale, Lower Silesian Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Sarnowo, Chełmno County", "q": "In what country is Sarnowo, Chełmno County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Cổ Linh", "q": "In what country is Cổ Linh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Călmuș River", "q": "In what country is Călmuș River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Fântâneaua Rece River", "q": "In what country is Fântâneaua Rece River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Valdearcos de la Vega", "q": "In what country is Valdearcos de la Vega?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::canton of Baugy", "q": "In what country is canton of Baugy?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Chalhuacocha", "q": "In what country is Chalhuacocha?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Łazy, Sierpc County", "q": "In what country is Łazy, Sierpc County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Dəhnəxəlil", "q": "In what country is Dəhnəxəlil?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Drăgăneasa River", "q": "In what country is Drăgăneasa River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Nowa Wieś Reszelska", "q": "In what country is Nowa Wieś Reszelska?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::KMEI-LP", "q": "In what country is KMEI-LP?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Łodygowo, Pisz County", "q": "In what country is Łodygowo, Pisz County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Union State Bank, Wisconsin", "q": "In what country is Union State Bank, Wisconsin?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Rubim do Norte River", "q": "In what country is Rubim do Norte River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Stare Brzóski", "q": "In what country is Stare Brzóski?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Tangal-e Behdan", "q": "In what country is Tangal-e Behdan?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Valea Pleșii River", "q": "In what country is Valea Pleșii River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Jeqjeq-e Pain", "q": "In what country is Jeqjeq-e Pain?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "country::Anaran Rural District", "q": "In what country is Anaran Rural District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "father::Giacomo Guardi", "q": "Who is the father of Giacomo Guardi?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::Dark Matter", "q": "What genre is Dark Matter?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::Buono! 2", "q": "What genre is Buono! 2?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "genre::The Remarkable Exploits of Lancelot Biggs, Spaceman", "q": "What genre is The Remarkable Exploits of Lancelot Biggs, Spaceman?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "place of birth::Gyula Czimra", "q": "In what city was Gyula Czimra born?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::Roads of Kiarostami", "q": "Who was the screenwriter for Roads of Kiarostami?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "screenwriter::So Big", "q": "Who was the screenwriter for So Big?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::Zanzibar national under-20 football team", "q": "What sport does Zanzibar national under-20 football team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::1989–90 1. Slovenská národná hokejová liga season", "q": "What sport does 1989–90 1. Slovenská národná hokejová liga season play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::2011–12 Elon Phoenix men's basketball team", "q": "What sport does 2011–12 Elon Phoenix men's basketball team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::Alexandru Chiculiță", "q": "What sport does Alexandru Chiculiță play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::1973 Virginia Slims of Fort Lauderdale", "q": "What sport does 1973 Virginia Slims of Fort Lauderdale play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::2012 Georgetown Hoyas men's soccer team", "q": "What sport does 2012 Georgetown Hoyas men's soccer team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::Pablo Aguilar", "q": "What sport does Pablo Aguilar play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "sport::All-Ireland Senior Club Camogie Championship 1970", "q": "What sport does All-Ireland Senior Club Camogie Championship 1970 play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "mistral", "key": "author::Science-Fantasy Quintette", "q": "Who is the author of Science-Fantasy Quintette?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Patience", "q": "Who is the author of Patience?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::The Every Boy", "q": "Who is the author of The Every Boy?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::The Warriors of Spider", "q": "Who is the author of The Warriors of Spider?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Rage", "q": "Who is the author of Rage?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Follow The Music", "q": "Who is the author of Follow The Music?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Only Human", "q": "Who is the author of Only Human?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::School for Coquettes", "q": "Who is the author of School for Coquettes?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::New York", "q": "Who is the author of New York?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Pen", "q": "Who is the author of Pen?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::The Techniques of Democracy", "q": "Who is the author of The Techniques of Democracy?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Against the Odds", "q": "Who is the author of Against the Odds?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "author::Turning On", "q": "Who is the author of Turning On?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "capital::Sal", "q": "What is the capital of Sal?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "capital::Saanen District", "q": "What is the capital of Saanen District?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "capital of::Boulsa", "q": "What is Boulsa the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "capital of::Laishevo", "q": "What is Laishevo the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "capital of::Dmitriyev", "q": "What is Dmitriyev the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Porch", "q": "Who was the composer of Porch?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::The Moment's Energy", "q": "Who was the composer of The Moment's Energy?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Tailor Wibbel", "q": "Who was the composer of Tailor Wibbel?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::The Giants", "q": "Who was the composer of The Giants?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::The Hope", "q": "Who was the composer of The Hope?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::Let Me Know", "q": "Who was the composer of Let Me Know?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::New Year", "q": "Who was the composer of New Year?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "composer::The Witch", "q": "Who was the composer of The Witch?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "country::Sholoktu", "q": "In what country is Sholoktu?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "country::Têbo", "q": "In what country is Têbo?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "country::Gori Balmak", "q": "In what country is Gori Balmak?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Brown Sugar", "q": "Who was the director of Brown Sugar?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::A Rowboat Romance", "q": "Who was the director of A Rowboat Romance?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Fortuna", "q": "Who was the director of Fortuna?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Broadway Jones", "q": "Who was the director of Broadway Jones?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Me First", "q": "Who was the director of Me First?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Messiah", "q": "Who was the director of Messiah?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::It's in the Bag", "q": "Who was the director of It's in the Bag?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Asphalt", "q": "Who was the director of Asphalt?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::The Great Question", "q": "Who was the director of The Great Question?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Chi", "q": "Who was the director of Chi?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::Indizienbeweis", "q": "Who was the director of Indizienbeweis?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "director::The Pigskin Palooka", "q": "Who was the director of The Pigskin Palooka?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "father::Matthew Henry Richey", "q": "Who is the father of Matthew Henry Richey?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "father::Maurice Laing", "q": "Who is the father of Maurice Laing?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Reminiscences", "q": "What genre is Reminiscences?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Magic", "q": "What genre is Magic?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Drama", "q": "What genre is Drama?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Voyage", "q": "What genre is Voyage?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::To Mother", "q": "What genre is To Mother?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Me and My Friend", "q": "What genre is Me and My Friend?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Deivos", "q": "What genre is Deivos?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Until I Met You", "q": "What genre is Until I Met You?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "genre::Mars", "q": "What genre is Mars?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::John Finlay", "q": "What is John Finlay's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Donald Robert Macgregor", "q": "What is Donald Robert Macgregor's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Thomas Gifford", "q": "What is Thomas Gifford's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "occupation::Fritz Goos", "q": "What is Fritz Goos's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Florence Marie Harsant", "q": "In what city was Florence Marie Harsant born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Anne Brusletto", "q": "In what city was Anne Brusletto born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Mikael Eriksson", "q": "In what city was Mikael Eriksson born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Charles Plumer", "q": "In what city was Charles Plumer born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Gustavo Grondona", "q": "In what city was Gustavo Grondona born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "place of birth::Volodymyr O. Kravets", "q": "In what city was Volodymyr O. Kravets born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::John Heriot's Wife", "q": "Who was the producer of John Heriot's Wife?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::De Laatste Dagen van een Eiland", "q": "Who was the producer of De Laatste Dagen van een Eiland?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Healers of the Dead Sea", "q": "Who was the producer of Healers of the Dead Sea?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Pioneers", "q": "Who was the producer of The Pioneers?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Success", "q": "Who was the producer of Success?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Cinema", "q": "Who was the producer of Cinema?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::She", "q": "Who was the producer of She?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Men and Women", "q": "Who was the producer of Men and Women?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::The Lost Bridegroom", "q": "Who was the producer of The Lost Bridegroom?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::From Now On", "q": "Who was the producer of From Now On?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Best Of", "q": "Who was the producer of Best Of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "producer::Maling Kutang", "q": "Who was the producer of Maling Kutang?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::William Preston", "q": "What is the religion of William Preston?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Ecclesiastical Statistics", "q": "What is the religion of Ecclesiastical Statistics?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Arturo Tabera Araoz", "q": "What is the religion of Arturo Tabera Araoz?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Cosmo Francesco Ruppi", "q": "What is the religion of Cosmo Francesco Ruppi?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Ricardo Watty Urquidi", "q": "What is the religion of Ricardo Watty Urquidi?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "religion::Robert Milman", "q": "What is the religion of Robert Milman?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::All In", "q": "Who was the screenwriter for All In?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::That Certain Thing", "q": "Who was the screenwriter for That Certain Thing?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Viva Zapatero!", "q": "Who was the screenwriter for Viva Zapatero!?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Freedom", "q": "Who was the screenwriter for Freedom?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::The Builder", "q": "Who was the screenwriter for The Builder?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Chain", "q": "Who was the screenwriter for Chain?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Two", "q": "Who was the screenwriter for Two?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Ars", "q": "Who was the screenwriter for Ars?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Investment", "q": "Who was the screenwriter for Investment?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::The Game", "q": "Who was the screenwriter for The Game?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Bingo", "q": "Who was the screenwriter for Bingo?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::El Madina", "q": "Who was the screenwriter for El Madina?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Fashions in Love", "q": "Who was the screenwriter for Fashions in Love?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::Tomorrow", "q": "Who was the screenwriter for Tomorrow?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "screenwriter::The Right Way", "q": "Who was the screenwriter for The Right Way?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "sport::Saša Janić", "q": "What sport does Saša Janić play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "sport::Willi Kirsei", "q": "What sport does Willi Kirsei play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "sport::Oyanaisis Gelis", "q": "What sport does Oyanaisis Gelis play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "sport::Ladislav Žák", "q": "What sport does Ladislav Žák play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "mistral", "key": "sport::Radoslav Školník", "q": "What sport does Radoslav Školník play?", "arm": "uncertain", "slick": "Unknown"}

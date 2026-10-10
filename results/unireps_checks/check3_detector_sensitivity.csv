@@ -1,0 +1,17 @@
+arm,detector,direction,flip,lo,hi,n
+circuit_familiarity_v3,original,removal,0.9805825242718447,0.9514563106796117,1.0,103
+circuit_familiarity_v3,original,injection,0.39805825242718446,0.30097087378640774,0.49514563106796117,103
+circuit_familiarity_v3,amended,removal,0.9722222222222222,0.9351851851851852,1.0,108
+circuit_familiarity_v3,amended,injection,0.48148148148148145,0.37962962962962965,0.5740740740740741,108
+circuit_factorial_v3_know_given_hi,original,removal,0.9285714285714286,0.7857142857142857,1.0,14
+circuit_factorial_v3_know_given_hi,original,injection,0.21428571428571427,0.0,0.42857142857142855,14
+circuit_factorial_v3_know_given_hi,amended,removal,0.9285714285714286,0.7857142857142857,1.0,14
+circuit_factorial_v3_know_given_hi,amended,injection,0.2857142857142857,0.07142857142857142,0.5714285714285714,14
+circuit_factorial_v3_pop_given_unknown,original,removal,0.8055555555555556,0.7083333333333334,0.8888888888888888,72
+circuit_factorial_v3_pop_given_unknown,original,injection,0.6527777777777778,0.5416666666666666,0.7638888888888888,72
+circuit_factorial_v3_pop_given_unknown,amended,removal,0.7972972972972973,0.7027027027027027,0.8783783783783784,74
+circuit_factorial_v3_pop_given_unknown,amended,injection,0.6891891891891891,0.581081081081081,0.7972972972972973,74
+circuit_uu_hedge_confab_v3,original,removal,0.5714285714285714,0.2857142857142857,0.8571428571428571,7
+circuit_uu_hedge_confab_v3,original,injection,1.0,1.0,1.0,7
+circuit_uu_hedge_confab_v3,amended,removal,0.625,0.25,0.875,8
+circuit_uu_hedge_confab_v3,amended,injection,0.875,0.625,1.0,8
