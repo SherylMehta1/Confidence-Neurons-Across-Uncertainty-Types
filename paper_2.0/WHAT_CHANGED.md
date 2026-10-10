@@ -92,10 +92,22 @@ Recorded so nobody repeats them:
 - **The E4 amendment note carries a wrong internal date**, a day after its recorded hash time. This is disclosed in App. H.
 - GPU boxes expired mid-run twice. Outputs are now synced every 15 minutes.
 
+## 6b. Round 5 (response to the round-4 review, 2026-10-10)
+
+The round-4 chair accepted on 17 must-fix conditions. Full mapping: [revision/round5/RESPONSE_LETTER.md](revision/round5/RESPONSE_LETTER.md).
+
+- **Name-cue control (E11, pre-specified).** Pseudo-names make 34 of 86 obscure-known facts recoverable from the name; without them the preference is +0.36 [+0.25, +0.48]. The comparative headline stays, but the abstract now leads with the popularity gap among unknown facts (+0.34) and gives the joint label correction (+0.14 [-0.01, +0.28]).
+- **Replications.** Fresh replies +0.29 (E13); new questions from adjacent page-view bands +0.10 [+0.01, +0.20] (E14).
+- **Other families under the permissive prompt.** Qwen, Mistral (E12) and OLMo-2 (E15) are unmeasured: the judges disagree (kappa 0.40-0.50).
+- **Steering.** An abstention direction fitted on popular questions only (E16) carries the obscure-minus-popular effect (residual +0.007).
+- **Corrected error.** Gold-alias shares in the obscure-known cell counted echoes of the subject's name; corrected values are 0.25 (was 0.53) and 9 of 87 questions (was 24).
+- **Not done.** Pooled-knowledge labels (I5), regex-vs-judge crosstab (I17), matched pairs for unknown facts (I18), human labels (I16).
+
 ## 7. Still open (needs the authors)
 
 - Author list, reciprocal reviewer, OpenReview profiles, LLM-use disclosure.
 - Title scope: keep "In Llama" or widen it, given E9.
 - Upload the criterion notes as an anonymised supplement (the paper says they are there).
 - Human audit of the judges (not done).
+- Round-4 must-fix items still partial: I5, I16, I17, I18 (see revision/round5/RESPONSE_LETTER.md).
 - Make the repository private after submission (it is public now).

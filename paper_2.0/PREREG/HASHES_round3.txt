@@ -9,3 +9,8 @@ f35aa4d9 e5_third_judge.md 2026-10-09T21:28:17Z
 05474954 e8_steering_within_level.md 2026-10-10T07:27:47Z
 f6459163 e9_permissive_prompt.md 2026-10-10T07:27:47Z
 6af179ce e10_instruct_lens.md 2026-10-10T07:27:47Z
+f716d396 e11_name_cue_control.md 2026-10-10T12:21:08Z
+56831ebc e12_permissive_qwen_mistral.md 2026-10-10T12:21:08Z
+fbbc8c25 e13_e14_replications.md 2026-10-10T12:32:23Z
+2b3e665d e15_e16_olmo_and_steering.md 2026-10-10T12:40:51Z
+2d6712e1 e17_nla_qwen.md 2026-10-10T12:53:56Z

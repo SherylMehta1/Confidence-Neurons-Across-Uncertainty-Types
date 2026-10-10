@@ -5,3 +5,9 @@ main.fls
 main.log
 main.out
 __pycache__/
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out

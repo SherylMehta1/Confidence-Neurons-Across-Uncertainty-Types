@@ -1,0 +1,41 @@
+## check_numbers
+main.tex:266  caption     95%  | d-depth window, base and instruct, with 95\% intervals. Lenses differ between the
+main.tex:278  prose       95%  | ts positive maximum over layers and its 95\% interval excludes zero. A model suppo
+main.tex:282  caption     95%  | ects, their difference $D=K-F$ with its 95\% interval, the outcome, and the mid-de
+main.tex:295  prose       95%  | knowledge label and where they differ (95\% bootstrap intervals). The plan, inclu
+main.tex:295  prose       95%  | d the hedge-minus-entropy gap both have 95\% intervals excluding zero, was written
+
+lines where no single result file holds all the line's specific numbers (check for stale or mixed sources):
+main.tex:155  3 numbers, best file gemma_factorial/cross_model_items_gemma.csv covers 2
+
+## prose_gate
+prose_gate: main.tex  (latex, academic mode)
+words 3359 | paragraphs 45 | sentences 178 | sentence length mean 18.8, SD 10.5, CV 0.56
+findings: 5 (advisory)  M9 staging 1 | M10 passive 2 | M11 reader load 1 | M12 number density 1
+
+EM DASHES PER PARAGRAPH (cap 1 per body paragraph, none in the abstract; total 0 in 0 paragraphs; en-dash ranges are exempt)
+  none
+
+SENTENCE LENGTH AND PASSIVE VOICE BY SECTION (passive is reported, not failed, in Methods/appendix)
+  section                            paras sents   mean    CV passive  pass%
+  Abstract                               1     9   18.3  0.47       0     0%
+  Introduction                           8    24   15.0  0.44       3    12%
+  Setup                                  3    17   18.3  0.40       2    12% (protected)
+  Results                                9    44   17.9  0.41       4     9%
+  Limitations                            2     3   23.7  0.47       2    67%
+  Robustness of the Llama abstention    10    38   19.0  0.62       6    16% (protected)
+  Abstention and the forced-answer h     2     6   16.7  0.68       1    17% (protected)
+  Steering details                       3    16   23.3  0.61       7    44% (protected)
+  Lens: window effects, the instruct     3    10   21.0  0.66       3    30% (protected)
+  Cross-model agreement (exploratory     1     2   34.5  0.04       1    50% (protected)
+  A model-side familiarity measure (     1     5   21.2  0.79       1    20% (protected)
+  Pre-specified analyses                 2     4   18.8  0.37       2    50% (protected)
+  ALL                                        178   18.8  0.56      32    18%
+
+READER LOAD: NAMES AND CODES THE MAIN TEXT ASKS THE READER TO REMEMBER (budget 4, load 1)
+  coined names:                   misfire (3, L35)
+  acronyms:                       none
+  label codes, never spelled out: ANSWER (1, L54)
+
+FINDINGS
+  -- M9 staging

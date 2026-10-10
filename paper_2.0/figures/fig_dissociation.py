@@ -58,8 +58,8 @@ def main():
     cb = cells(pool, "entropy")
     eff = pd.read_csv(EFFECTS); eff = eff[eff.readout == "entropy"]
 
-    fig, axs = plt.subplots(1, 3, figsize=(TEXTWIDTH, 1.52), gridspec_kw=dict(width_ratios=[1, 1, 1.3]))
-    interaction(axs[0], ca, 'share "I don\'t know"', (0, 1))
+    fig, axs = plt.subplots(1, 3, figsize=(TEXTWIDTH, 1.42), gridspec_kw=dict(width_ratios=[1, 1, 1.3]))
+    interaction(axs[0], ca, "share abstaining", (0, 1))
     interaction(axs[1], cb, "entropy (nats)", (0, 4))
     axs[0].legend(frameon=False, loc="upper right", handlelength=1.8, borderaxespad=0.1)
     panel_label(axs[0], "a"); panel_label(axs[1], "b"); panel_label(axs[2], "c")

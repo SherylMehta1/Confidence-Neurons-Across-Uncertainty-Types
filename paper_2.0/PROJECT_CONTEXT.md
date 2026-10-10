@@ -4,7 +4,7 @@
      [unverified] = not opened; [user] = the user said so. Paths: repo = C:/Users/starb/Desktop/Sher/Confidence-Neurons-Across-Uncertainty-Types ;
      paper dir = C:/Users/starb/Desktop/Sher/paper (this folder, outside the repo by the user's choice, 7 Oct 2026). -->
 
-**Status line:** 2026-10-10 | revise round 4 done (external readability review: 21 comments, OLMo wording error fixed, provenance unified as pre-specified, 2x2 table, App. G cut) | main.pdf: 4 pages main text, 12 pages total, checks clean | open: author list, title scope, LLM disclosure, supplement upload; next `submit` (deadline 11 Oct 12:00 UTC)
+**Status line:** 2026-10-10 | revise round 5 done (revision/round5/RESPONSE_LETTER.md): name-cue control E11 run (+0.36 [+0.25, +0.48], survives); E13/E14 replicate; E16 generic abstention; Qwen/Mistral/OLMo permissive prompt unmeasured; abstract leads with the gap among unknown facts and gives the joint correction +0.14 [-0.01, +0.28]; 13 of 17 must-fix done, 4 partial/not done (I5 pooled knowledge, I17 regex-vs-judge crosstab, I18 matched unknown pairs, I16 human labels) | next: author decisions for `submit` (authors, title scope, LLM disclosure, supplement) | deadline 11 Oct 12:00 UTC
 
 ## Identity
 

@@ -524,3 +524,81 @@
 \newcommand{\wlGemmaAbst}{0.41}  % results/round3/e8_summary.txt gemma9b primary rate abst_within
 \newcommand{\wlGemmaPerp}{0.03}  % results/round3/e8_summary.txt gemma9b primary rate fam_perp_w
 \newcommand{\wlGemmaRand}{0.01}  % results/round3/e8_summary.txt gemma9b mean random rate
+\newcommand{\hashEEleven}{f716d396}  % paper/PREREG/e11_name_cue_control.md sha256 prefix
+\newcommand{\hashETwelve}{56831ebc}  % paper/PREREG/e12_permissive_qwen_mistral.md sha256 prefix
+\newcommand{\hashEThirteen}{fbbc8c25}  % paper/PREREG/e13_e14_replications.md sha256 prefix
+\newcommand{\hashEFifteen}{2b3e665d}  % paper/PREREG/e15_e16_olmo_and_steering.md sha256 prefix
+\newcommand{\ncObsProbed}{86}  % e11 obscure known probed
+\newcommand{\ncObsRec}{34}  % e11 obscure known cue-recoverable
+\newcommand{\ncPopProbed}{97}  % e11 popular known probed
+\newcommand{\ncPopRec}{11}  % e11 popular known cue-recoverable
+\newcommand{\ncCountryRec}{25}  % e11 country cue-recoverable
+\newcommand{\ncCountryN}{46}  % e11 country n
+\newcommand{\ncRecAbs}{0.33}  % e11 abstention cue-recoverable
+\newcommand{\ncOtherAbs}{0.50}  % e11 abstention other
+\newcommand{\ncLeftN}{53}  % e11 obscure known left after dropping cue-recoverable
+\newcommand{\ncDiff}{$+$0.36}  % results/round3/e11_summary.txt primary diff
+\newcommand{\ncDiffCI}{[$+$0.25, $+$0.48]}  % results/round3/e11_summary.txt primary diff CI
+\newcommand{\ncClus}{$+$0.00}  % e11 relation-clustered
+\newcommand{\ncClusCI}{[$-$0.03, $+$0.48]}  % e11 relation-clustered CI
+\newcommand{\ncStrictDiff}{$+$0.37}  % results/round3/e11_summary.txt strict diff
+\newcommand{\ncStrictDiffCI}{[$+$0.26, $+$0.47]}  % results/round3/e11_summary.txt strict diff CI
+\newcommand{\pmQwenKappa}{0.40}  % results/round3/e12_summary.txt qwen Fleiss kappa
+\newcommand{\pmQwenDiff}{$+$0.15}  % results/round3/e12_summary.txt qwen diff
+\newcommand{\pmQwenDiffCI}{[$+$0.00, $+$0.30]}  % results/round3/e12_summary.txt qwen diff CI
+\newcommand{\pmMistralKappa}{0.50}  % results/round3/e12_summary.txt mistral Fleiss kappa
+\newcommand{\pmMistralDiff}{$+$0.16}  % results/round3/e12_summary.txt mistral diff
+\newcommand{\pmMistralDiffCI}{[$+$0.05, $+$0.27]}  % results/round3/e12_summary.txt mistral diff CI
+\newcommand{\pmOlmoKappa}{0.46}  % results/round3/e15_summary.txt olmo2_7b Fleiss kappa
+\newcommand{\pmOlmoDiff}{$-$0.09}  % results/round3/e15_summary.txt olmo2_7b diff
+\newcommand{\pmOlmoDiffCI}{[$-$0.22, $+$0.03]}  % results/round3/e15_summary.txt olmo2_7b diff CI
+\newcommand{\frKappa}{0.61}  % e13 two-judge kappa
+\newcommand{\frDiff}{$+$0.29}  % results/round3/e13_summary.txt diff
+\newcommand{\frDiffCI}{[$+$0.20, $+$0.38]}  % results/round3/e13_summary.txt diff CI
+\newcommand{\nqDiff}{$+$0.10}  % results/round3/e14_summary.txt diff
+\newcommand{\nqDiffCI}{[$+$0.01, $+$0.20]}  % results/round3/e14_summary.txt diff CI
+\newcommand{\nqPop}{$+$0.25}  % results/round3/e14_summary.txt pop
+\newcommand{\nqPopCI}{[$+$0.19, $+$0.31]}  % results/round3/e14_summary.txt pop CI
+\newcommand{\nqKnow}{$+$0.15}  % results/round3/e14_summary.txt know
+\newcommand{\nqKnowCI}{[$+$0.09, $+$0.21]}  % results/round3/e14_summary.txt know CI
+\newcommand{\nqClus}{$+$0.00}  % e14 relation-clustered
+\newcommand{\nqClusCI}{[$-$0.12, $+$0.27]}  % e14 relation-clustered CI
+\newcommand{\nqKappa}{0.60}  % e14 two-judge kappa
+\newcommand{\nqObsKnownN}{100}  % e14 obscure-adjacent known n
+\newcommand{\nqTopThree}{85}  % e14 obscure-adjacent known in capital/country/sport
+\newcommand{\nqLabelled}{5{,}182}  % e14 pool candidates labelled (box log: 5182 candidates)
+\newcommand{\gaCos}{0.89}  % e16 cos(fam, abst_pop)
+\newcommand{\gaHi}{63}  % e16 n hi
+\newcommand{\gaLo}{548}  % e16 n lo
+\newcommand{\gaAbst}{$+$0.14}  % results/round3/e16_summary.txt G1
+\newcommand{\gaAbstCI}{[$+$0.10, $+$0.19]}  % results/round3/e16_summary.txt G1 CI
+\newcommand{\gaFam}{$+$0.17}  % results/round3/e16_summary.txt fam - random
+\newcommand{\gaFamCI}{[$+$0.12, $+$0.21]}  % results/round3/e16_summary.txt fam - random CI
+\newcommand{\gaPerp}{$+$0.01}  % results/round3/e16_summary.txt D2p
+\newcommand{\gaPerpCI}{[$-$0.00, $+$0.02]}  % results/round3/e16_summary.txt D2p CI
+\newcommand{\rcKnownRel}{7}  % round4_checks obscure-known relations
+\newcommand{\rcTopThree}{80}  % round4_checks top-3 relations count
+\newcommand{\rcTopThreePct}{92\%}  % round4_checks top-3 share
+\newcommand{\rcClus}{$+$0.00}  % round4_checks relation-clustered
+\newcommand{\rcClusCI}{[$-$0.10, $+$0.43]}  % round4_checks relation-clustered CI
+\newcommand{\rcLoro}{$+$0.24 to $+$0.35}  % round4_checks leave-one-relation-out range
+\newcommand{\rcJoint}{$+$0.14}  % round4_checks joint corrections
+\newcommand{\rcJointCI}{[$-$0.01, $+$0.28]}  % round4_checks joint corrections CI
+\newcommand{\rcUnk}{$+$0.34}  % round4_checks unknown-facts gap
+\newcommand{\rcUnkCI}{[$+$0.25, $+$0.43]}  % round4_checks unknown-facts gap CI
+\newcommand{\rcUnkClus}{$+$0.00}  % round4_checks unknown-facts gap clustered
+\newcommand{\rcUnkClusCI}{[$+$0.23, $+$0.46]}  % round4_checks unknown-facts gap clustered CI
+\newcommand{\rcUnkJoint}{$+$0.18}  % round4_checks unknown-facts gap after corrections
+\newcommand{\rcUnkJointCI}{[$+$0.04, $+$0.31]}  % round4_checks unknown-facts gap after corrections CI
+\newcommand{\rcGuessN}{30}  % round4_checks (4) obscure-known guessable
+\newcommand{\rcNonGuessN}{57}  % round4_checks (4) obscure-known not guessable
+\newcommand{\rcNonGuessAbs}{0.44}  % round4_checks (4) abstention, not guessable
+\newcommand{\rcGuessAbs}{0.42}  % round4_checks (4) abstention, guessable
+\newcommand{\ecAll}{0.25}  % echo_check obscure known alias excl echoes
+\newcommand{\ecNonAbs}{0.44}  % echo_check non-abstaining
+\newcommand{\ecAbs}{0.00}  % echo_check abstaining
+\newcommand{\ecBoth}{9}  % echo_check questions with both
+\newcommand{\ecBothOf}{87}  % echo_check of
+\newcommand{\ecPopKnown}{0.98}  % echo_check popular known alias share
+\newcommand{\nqN}{400}  % items_llama_adj.jsonl question count (E14)
+\newcommand{\ekN}{384}  % e6_summary.txt (a) n

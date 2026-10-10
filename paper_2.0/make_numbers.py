@@ -515,6 +515,92 @@ if p8.exists():
             mac(f"wl{nm}{cn}", f"{float(rates[c]):.2f}", f"results/round3/e8_summary.txt {mdl} primary rate {c}")
         mac(f"wl{nm}Rand", f"{sum(float(rates[f'random{j}']) for j in range(5)) / 5:.2f}", f"results/round3/e8_summary.txt {mdl} mean random rate")
 
+# ---------------------------------------------------------------- revise round 5: E11-E16, round-4 checks, echo-corrected free replies
+def g3(text, pat, src):
+    m = grab(text, pat, src)
+    return [float(x) for x in m.groups()]
+
+
+def put_ci(name, v, src):  # v = [point, lo, hi]
+    mac(name, sgn(v[0]), src); mac(name + "CI", ci(v[1], v[2]), src + " CI")
+
+
+NUMCI = r"([+-][\d.]+) \[([+-][\d.]+), ([+-][\d.]+)\]"
+for e in ("ESeventeen",):
+    pass
+for nm, fn in (("EEleven", "e11_name_cue_control.md"), ("ETwelve", "e12_permissive_qwen_mistral.md"),
+               ("EThirteen", "e13_e14_replications.md"), ("EFifteen", "e15_e16_olmo_and_steering.md")):
+    mac(f"hash{nm}", hashlib.sha256((HERE / "PREREG" / fn).read_bytes()).hexdigest()[:8], f"paper/PREREG/{fn} sha256 prefix")
+# E11
+t11 = (R / "round3/e11_summary.txt").read_text(encoding="utf-8")
+m = grab(t11, r"obscure known: (\d+) probed; cue-recoverable (\d+) \(([\d.]+)\)", "e11_summary.txt obscure")
+mac("ncObsProbed", m.group(1), "e11 obscure known probed"); mac("ncObsRec", m.group(2), "e11 obscure known cue-recoverable")
+m = grab(t11, r"popular known: (\d+) probed; cue-recoverable (\d+)", "e11_summary.txt popular")
+mac("ncPopProbed", m.group(1), "e11 popular known probed"); mac("ncPopRec", m.group(2), "e11 popular known cue-recoverable")
+m = grab(t11, r"country (\d+)/(\d+)", "e11 country"); mac("ncCountryRec", m.group(1), "e11 country cue-recoverable"); mac("ncCountryN", m.group(2), "e11 country n")
+m = grab(t11, r"cue-recoverable ([\d.]+) \(n (\d+)\); other ([\d.]+) \(n (\d+)\)", "e11 abstention by cue")
+mac("ncRecAbs", f"{float(m.group(1)):.2f}", "e11 abstention cue-recoverable"); mac("ncOtherAbs", f"{float(m.group(3)):.2f}", "e11 abstention other")
+mac("ncLeftN", m.group(4), "e11 obscure known left after dropping cue-recoverable")
+blk = t11[t11.index("primary (drop"):]
+put_ci("ncDiff", g3(blk, r"diff " + NUMCI, "e11 primary diff"), "results/round3/e11_summary.txt primary diff")
+put_ci("ncClus", [0] + g3(blk, r"relation-clustered bootstrap \[([+-][\d.]+), ([+-][\d.]+)\]", "e11 clustered"), "e11 relation-clustered")
+blk2 = t11[t11.index("secondary (drop"):]
+put_ci("ncStrictDiff", g3(blk2, r"diff " + NUMCI, "e11 secondary diff"), "results/round3/e11_summary.txt strict diff")
+# E12 and E15 (permissive prompt, other families)
+for fn, mdl, nm in (("e12_summary.txt", "qwen", "Qwen"), ("e12_summary.txt", "mistral", "Mistral"), ("e15_summary.txt", "olmo2_7b", "Olmo")):
+    t = (R / "round3" / fn).read_text(encoding="utf-8")
+    m = grab(t, mdl + r" +replies \d+  Fleiss kappa ([\d.]+)", f"{fn} {mdl}")
+    mac(f"pm{nm}Kappa", f"{float(m.group(1)):.2f}", f"results/round3/{fn} {mdl} Fleiss kappa")
+    b = t[t.index(mdl + " "):]
+    put_ci(f"pm{nm}Diff", g3(b, r"diff " + NUMCI, f"{fn} {mdl} diff"), f"results/round3/{fn} {mdl} diff")
+# E13
+t13 = (R / "round3/e13_summary.txt").read_text(encoding="utf-8")
+mac("frKappa", f"{float(grab(t13, r'kappa ([\d.]+)', 'e13 kappa').group(1)):.2f}", "e13 two-judge kappa")
+put_ci("frDiff", g3(t13, r"diff " + NUMCI, "e13 diff"), "results/round3/e13_summary.txt diff")
+# E14
+t14 = (R / "round3/e14_summary.txt").read_text(encoding="utf-8")
+put_ci("nqDiff", g3(t14, r"diff " + NUMCI, "e14 diff"), "results/round3/e14_summary.txt diff")
+put_ci("nqPop", g3(t14, r"pop " + NUMCI, "e14 pop"), "results/round3/e14_summary.txt pop")
+put_ci("nqKnow", g3(t14, r"know " + NUMCI, "e14 know"), "results/round3/e14_summary.txt know")
+put_ci("nqClus", [0] + g3(t14, r"relation-clustered bootstrap for the preference \[([+-][\d.]+), ([+-][\d.]+)\]", "e14 clustered"), "e14 relation-clustered")
+mac("nqKappa", f"{float(grab(t14, r'kappa ([\d.]+)', 'e14 kappa').group(1)):.2f}", "e14 two-judge kappa")
+mix = json.loads(grab(t14, r"relation mix unc/High: (\{[^}]*\})", "e14 mix").group(1))
+mac("nqObsKnownN", str(sum(mix.values())), "e14 obscure-adjacent known n")
+mac("nqTopThree", str(sum(mix.get(k, 0) for k in ("capital", "country", "sport"))), "e14 obscure-adjacent known in capital/country/sport")
+mac("nqLabelled", "5{,}182", "e14 pool candidates labelled (box log: 5182 candidates)")
+# E16
+t16 = (R / "round3/e16_summary.txt").read_text(encoding="utf-8")
+mac("gaCos", f"{float(grab(t16, r'cos\(fam, abst_pop\) ' + num, 'e16 cos').group(1)):.2f}", "e16 cos(fam, abst_pop)")
+m = grab(t16, r"abst_pop fit on (\d+) vs (\d+)", "e16 fit"); mac("gaHi", m.group(1), "e16 n hi"); mac("gaLo", m.group(2), "e16 n lo")
+put_ci("gaAbst", g3(t16, r"G1 abst_pop - random ([+-][\d.]+) \[([+-][\d.]+),([+-][\d.]+)\]", "e16 G1"), "results/round3/e16_summary.txt G1")
+put_ci("gaFam", g3(t16, r"fam - random ([+-][\d.]+) \[([+-][\d.]+),([+-][\d.]+)\]", "e16 fam"), "results/round3/e16_summary.txt fam - random")
+put_ci("gaPerp", g3(t16, r"D2p fam_perp_p - random ([+-][\d.]+) \[([+-][\d.]+),([+-][\d.]+)\]", "e16 D2p"), "results/round3/e16_summary.txt D2p")
+# round-4 checks (post hoc)
+t4c = (HERE / "analysis/round4_checks.txt").read_text(encoding="utf-8")
+m = grab(t4c, r"obscure known: (\d+) facts over (\d+) relations; top 3 relations hold (\d+)", "round4 relation mix")
+mac("rcKnownRel", m.group(2), "round4_checks obscure-known relations"); mac("rcTopThree", m.group(3), "round4_checks top-3 relations count")
+mac("rcTopThreePct", f"{round(100 * int(m.group(3)) / int(m.group(1)))}" + "\\%", "round4_checks top-3 share")
+put_ci("rcClus", [0] + g3(t4c, r"relation-clustered bootstrap \(5,000\) \[([+-][\d.]+), ([+-][\d.]+)\]", "round4 clustered"), "round4_checks relation-clustered")
+m = grab(t4c, r"leave-one-relation-out range \[([+-][\d.]+), ([+-][\d.]+)\]", "round4 LORO")
+mac("rcLoro", f"{sgn(float(m.group(1)))} to {sgn(float(m.group(2)))}", "round4_checks leave-one-relation-out range")
+put_ci("rcJoint", g3(t4c, r"preference " + NUMCI.replace(r"\[", r"(?:,)? ?\[") if False else r"preference ([+-][\d.]+), within-cell bootstrap \[\s*([+-]?[\d.]+)\s+([+-]?[\d.]+)\]", "round4 joint"), "round4_checks joint corrections")
+put_ci("rcUnk", g3(t4c, r"popularity gap among unknown facts: all " + NUMCI, "round4 unknown gap"), "round4_checks unknown-facts gap")
+put_ci("rcUnkClus", [0] + g3(t4c, r"unknown-facts gap \(all\): \[([+-][\d.]+), ([+-][\d.]+)\]", "round4 unknown clustered"), "round4_checks unknown-facts gap clustered")
+put_ci("rcUnkJoint", g3(t4c, r"after all corrections " + NUMCI, "round4 unknown joint"), "round4_checks unknown-facts gap after corrections")
+m = grab(t4c, r"obscure known: (\d+) of (\d+) guessable; the other (\d+) abstain at ([\d.]+); guessable ones at ([\d.]+)", "round4 guessable")
+mac("rcGuessN", m.group(1), "round4_checks (4) obscure-known guessable"); mac("rcNonGuessN", m.group(3), "round4_checks (4) obscure-known not guessable")
+mac("rcNonGuessAbs", f"{float(m.group(4)):.2f}", "round4_checks (4) abstention, not guessable"); mac("rcGuessAbs", f"{float(m.group(5)):.2f}", "round4_checks (4) abstention, guessable")
+# echo-corrected free replies (post hoc)
+te = (HERE / "analysis/echo_check.txt").read_text(encoding="utf-8")
+m = grab(te, r"obscure HighlyKnown[^\n]*alias excl\. echoes ([\d.]+) \(non-abstaining ([\d.]+), abstaining ([\d.]+)\)", "echo_check obscure known")
+mac("ecAll", f"{float(m.group(1)):.2f}", "echo_check obscure known alias excl echoes"); mac("ecNonAbs", f"{float(m.group(2)):.2f}", "echo_check non-abstaining")
+mac("ecAbs", f"{float(m.group(3)):.2f}", "echo_check abstaining")
+m = grab(te, r"both an answering reply \(alias, echoes excluded\) and an abstention: (\d+) of (\d+)", "echo_check both")
+mac("ecBoth", m.group(1), "echo_check questions with both"); mac("ecBothOf", m.group(2), "echo_check of")
+m = grab(te, r"popular HighlyKnown[^\n]*alias excl\. echoes ([\d.]+)", "echo_check popular known"); mac("ecPopKnown", f"{float(m.group(1)):.2f}", "echo_check popular known alias share")
+
+mac("nqN", str(sum(1 for l in open(R / "hedge_measure_v2/items_llama_adj.jsonl", encoding="utf-8") if l.strip())), "items_llama_adj.jsonl question count (E14)")
+mac("ekN", grab((R / "round3/e6_summary.txt").read_text(encoding="utf-8"), r"two judges n=(\d+) with:", "e6 n").group(1), "e6_summary.txt (a) n")
 text = "% Generated by Sher/paper/make_numbers.py from the repo's result files. Do not edit by hand.\n" + "\n".join(OUT) + "\n"
 if "--check" in sys.argv:
     print(text)
