@@ -1,0 +1,9 @@
+E12: permissive prompt for Qwen and Mistral (PREREG e12_permissive_qwen_mistral.md, sha 56831ebc); identical to E9; majority of 3 judges; MEASURED if Fleiss kappa >= 0.60
+qwen    replies 1062  Fleiss kappa 0.400  n {'unc/Unkn': 100, 'unc/High': 54, 'con/Unkn': 100, 'con/High': 100}
+  majority-rule pop +0.301 [+0.209, +0.392]  know +0.149 [+0.058, +0.242]  diff +0.152 [+0.004, +0.301]
+  cells {"unc/Unkn": 0.66, "unc/High": 0.605, "con/Unkn": 0.453, "con/High": 0.21}  -> UNMEASURED
+  licensing: obscure-unknown rate 0.660 -> cannot be estimated even when permitted
+mistral replies 1113  Fleiss kappa 0.496  n {'unc/Unkn': 100, 'unc/High': 71, 'con/Unkn': 100, 'con/High': 100}
+  majority-rule pop +0.437 [+0.373, +0.501]  know +0.277 [+0.211, +0.341]  diff +0.160 [+0.054, +0.267]
+  cells {"unc/Unkn": 0.737, "unc/High": 0.357, "con/Unkn": 0.197, "con/High": 0.023}  -> UNMEASURED
+  licensing: obscure-unknown rate 0.737 -> cannot be estimated even when permitted

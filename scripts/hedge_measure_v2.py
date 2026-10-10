@@ -42,7 +42,7 @@ def gen(args):
     model.eval()
     tok.padding_side = "left"
     pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
-    torch.manual_seed(0)
+    torch.manual_seed(args.seed)
     with open(outp, "a", encoding="utf-8") as f:
         for i, r in enumerate(x for x in items if x["key"] not in done):
             q = r["q"].strip(); q = q if q.endswith("?") else q + "?"
@@ -84,7 +84,7 @@ def judge(args):
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
-    g = sub.add_parser("gen"); g.add_argument("--model-id", required=True); g.add_argument("--tag", required=True)
+    g = sub.add_parser("gen"); g.add_argument("--model-id", required=True); g.add_argument("--tag", required=True); g.add_argument("--seed", type=int, default=0)
     j = sub.add_parser("judge"); j.add_argument("--judge-id", required=True); j.add_argument("--judge-tag", required=True)
     j.add_argument("--tags", default="llama,qwen,gemma,mistral")
     a = ap.parse_args()

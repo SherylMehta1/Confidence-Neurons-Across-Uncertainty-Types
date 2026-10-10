@@ -482,11 +482,10 @@ def e10():
 
 
 # ------------------------------------------------------------------ E12
-def e12():
-    say("E12: permissive prompt for Qwen and Mistral (PREREG e12_permissive_qwen_mistral.md, sha 56831ebc); identical to E9; "
-        "majority of 3 judges; MEASURED if Fleiss kappa >= 0.60")
+def e12(models=("qwen", "mistral"), name="e12", head="E12: permissive prompt for Qwen and Mistral (PREREG e12_permissive_qwen_mistral.md, sha 56831ebc); identical to E9; "):
+    say(head + "majority of 3 judges; MEASURED if Fleiss kappa >= 0.60")
     O = R3 / "e9"
-    for m in ("qwen", "mistral"):
+    for m in models:
         meta = {r["key"]: r for r in read_jsonl(REPO_ROOT / f"results/hedge_measure_v2/items_{m}.jsonl")}
         J = {}
         for jt in ("qwen32b", "gemma27b", "llama70b"):
@@ -509,7 +508,7 @@ def e12():
         say(f"{m:7s} replies {len(full)}  Fleiss kappa {fk:.3f}  n {n}\n  majority-rule {fmt(e)}\n  cells {json.dumps({k: round(v, 3) for k, v in e['means'].items()})}  -> {verdict}")
         say(f"  licensing: obscure-unknown rate {ou:.3f} -> " + ("reported as a permissive-prompt result" if measured and ou >= 0.25
                                                                else "cannot be estimated even when permitted"))
-    (R3 / "e12_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
+    (R3 / f"{name}_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
 
 
 # ------------------------------------------------------------------ E11
@@ -565,5 +564,110 @@ def e11():
     (R3 / "e11_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
 
 
+# ------------------------------------------------------------------ E13 / E14
+def _two_judge_items(tag):
+    D = REPO_ROOT / "results/hedge_measure_v2"
+    meta = {r["key"]: r for r in read_jsonl(D / f"items_{tag}.jsonl")}
+    J = {}
+    for jt in ("qwen32b", "gemma27b"):
+        q = D / f"judge_{jt}_{tag}.jsonl"
+        if q.exists():
+            for x in read_jsonl(q):
+                J.setdefault((x["key"], x["s"]), {})[jt] = x["label"]
+    it = {}
+    for (k, s_), v in J.items():
+        if len(v) == 2:
+            it.setdefault(k, []).append(float(all(l == "DONT_KNOW" for l in v.values())))
+    df = pd.DataFrame([dict(key=k, arm=meta[k]["arm"], know=meta[k]["slick"], prop=k.split("::")[0], prim=np.mean(v))
+                       for k, v in it.items() if k in meta])
+    kap = cohen([v["qwen32b"] == "DONT_KNOW" for v in J.values() if len(v) == 2],
+                [v["gemma27b"] == "DONT_KNOW" for v in J.values() if len(v) == 2])
+    return df, kap
+
+
+def _clustered(df, B=5000, seed=0):
+    def pref(d):
+        m = {c: d[(d.arm == c[0]) & (d.know == c[1])].prim.mean() for c in CELLS}
+        return m["uncertain", "HighlyKnown"] - m["control", "Unknown"]
+    r = np.random.default_rng(seed)
+    props = df.prop.unique()
+    bs = []
+    for _ in range(B):
+        d = pd.concat([df[df.prop == p] for p in r.choice(props, len(props))])
+        if all(((d.arm == c[0]) & (d.know == c[1])).any() for c in CELLS):
+            bs.append(pref(d))
+    return np.percentile(bs, [2.5, 97.5])
+
+
+def e13():
+    say("E13: fresh replies on the same 387 questions (PREREG e13_e14_replications.md, sha fbbc8c25); seed 1; two judges, both DONT_KNOW")
+    df, kap = _two_judge_items("llama_s1")
+    e, n = effects(df.rename(columns={"prim": "prim"}), "prim")
+    say(f"two-judge kappa {kap:.3f}; n {n}\n  {fmt(e)}\n  cells {json.dumps({k: round(v, 3) for k, v in e['means'].items()})}")
+    say("  E13 verdict: " + ("REPLICATES" if e["diff"][0] > 0 and e["diff"][1] > 0 else "DOES NOT REPLICATE"))
+    (R3 / "e13_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
+
+
+def e14():
+    say("E14: new questions from the 10-30th and 70-90th page-view percentiles (PREREG e13_e14_replications.md, sha fbbc8c25); "
+        "two judges, both DONT_KNOW")
+    df, kap = _two_judge_items("llama_adj")
+    e, n = effects(df, "prim")
+    lo, hi = _clustered(df)
+    say(f"two-judge kappa {kap:.3f}; n {n}\n  {fmt(e)}\n  cells {json.dumps({k: round(v, 3) for k, v in e['means'].items()})}\n"
+        f"  relation-clustered bootstrap for the preference [{lo:+.3f}, {hi:+.3f}]")
+    for c in CELLS:
+        say(f"  relation mix {c[0][:3]}/{c[1][:4]}: " + json.dumps(df[(df.arm == c[0]) & (df.know == c[1])].prop.value_counts().to_dict()))
+    nk = n["unc/High"]
+    v = "UNDERPOWERED" if nk < 30 else ("REPLICATES IN NEW QUESTIONS" if e["diff"][0] > 0 and e["diff"][1] > 0 else "DOES NOT REPLICATE")
+    say(f"  E14 verdict: {v} (obscure-adjacent known n = {nk})")
+    (R3 / "e14_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
+
+
+def e15():
+    e12(models=("olmo2_7b",), name="e15", head="E15: permissive prompt for OLMo-2-7B-Instruct (PREREG e15_e16_olmo_and_steering.md, sha 2b3e665d); identical to E12; ")
+
+
+def e16():
+    """E16: as E8 with the abstention direction fitted within the popular arm and 20 random directions (sha 2b3e665d)."""
+    say("E16: steering with a popular-arm abstention direction (PREREG e15_e16_olmo_and_steering.md, sha 2b3e665d); majority of 3 judges; "
+        "20 random directions; 10,000 question bootstraps")
+    O = R3 / "e16"
+    R = pd.DataFrame(read_jsonl(O / "replies_llama.jsonl"))
+    geo = json.load(open(O / "geometry_llama.json"))
+    say(f"layer {geo['layer']} k* {geo['kstar']}; abst_pop fit on {geo['n_abst_hi']} vs {geo['n_abst_lo']} popular items; "
+        f"cos(fam, abst_pop) {geo['cos_fam_abst_pop']:+.3f}")
+    jl = {}
+    for jt in ("qwen32b", "gemma27b", "llama70b"):
+        q = O / f"judge_{jt}_llama.jsonl"
+        if q.exists():
+            for x in read_jsonl(q):
+                jl.setdefault((x["cond"], x["key"], x["s"]), {})[jt] = x["label"] == "DONT_KNOW"
+    R["j"] = [jl.get((c, k, s_), {}) for c, k, s_ in zip(R.cond, R.key, R.s)]
+    R = R[[len(j) == 3 for j in R.j]]
+    R["maj"] = [float(sum(j.values()) >= 2) for j in R.j]
+    piv = R.groupby(["cond", "key"]).maj.mean().reset_index().pivot(index="key", columns="cond", values="maj")
+    rnd_cols = [c for c in piv.columns if c.startswith("random")]
+    rand = piv[rnd_cols].mean(1)
+    rng = np.random.default_rng(0)
+    idx = rng.integers(0, len(piv), (10_000, len(piv)))
+
+    def ci(v):
+        v = v.to_numpy(float)
+        return v.mean(), *np.percentile(v[idx].mean(1), [2.5, 97.5])
+
+    rr = piv[rnd_cols].mean(0)
+    say(f"rates: none {piv['none'].mean():.3f}  fam {piv['fam'].mean():.3f}  abst_pop {piv['abst_pop'].mean():.3f}  fam_perp_p {piv['fam_perp_p'].mean():.3f}  "
+        f"random mean {rr.mean():.3f} (2.5-97.5 pct over {len(rnd_cols)} directions {np.percentile(rr, 2.5):.3f}-{np.percentile(rr, 97.5):.3f})")
+    g1 = ci(piv["abst_pop"] - rand); d1 = ci(piv["fam"] - rand); d2 = ci(piv["fam_perp_p"] - rand)
+    say(f"  G1 abst_pop - random {g1[0]:+.3f} [{g1[1]:+.3f},{g1[2]:+.3f}]")
+    say(f"  fam - random {d1[0]:+.3f} [{d1[1]:+.3f},{d1[2]:+.3f}]")
+    say(f"  D2p fam_perp_p - random {d2[0]:+.3f} [{d2[1]:+.3f},{d2[2]:+.3f}]")
+    g1ok = g1[0] > 0 and g1[1] > 0
+    v = "NOT SEPARABLE" if not g1ok else ("BEYOND GENERIC ABSTENTION" if d2[0] >= 0.10 and d2[1] > 0 else "GENERIC ABSTENTION")
+    say(f"  E16 verdict: {v}; degenerate share {R.degenerate.mean():.3f}")
+    (R3 / "e16_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
+
+
 if __name__ == "__main__":
-    {"e1": e1, "e2": e2, "e3": e3, "e4": e4, "e5": e5, "e6": e6, "e7": e7, "e8": e8, "e9": e9, "e10": e10, "e11": e11, "e12": e12}[_sys.argv[1]]()
+    {"e1": e1, "e2": e2, "e3": e3, "e4": e4, "e5": e5, "e6": e6, "e7": e7, "e8": e8, "e9": e9, "e10": e10, "e11": e11, "e12": e12, "e13": e13, "e14": e14, "e15": e15, "e16": e16}[_sys.argv[1]]()

@@ -134,6 +134,7 @@ def main():
     ap.add_argument("--relations", default=None, help="comma list of PopQA `prop` values (default: all 16)")
     ap.add_argument("--lo-quantile", type=float, default=0.10)
     ap.add_argument("--hi-quantile", type=float, default=0.90)
+    ap.add_argument("--exclude-pool", default=None, help="all_measured.jsonl of an earlier pool whose questions are skipped")
     ap.add_argument("--n-samples", type=int, default=10)
     ap.add_argument("--n-free", type=int, default=20)
     ap.add_argument("--entropy-gap", type=float, default=0.5)
@@ -171,6 +172,14 @@ def main():
     precision = getattr(model, "cn_precision", None)
 
     # ---- candidate pools by popularity ----
+    excluded = set()
+    if args.exclude_pool:
+        for line in open(args.exclude_pool, encoding="utf-8"):
+            if line.strip():
+                x = json.loads(line)
+                if x.get("subj"):
+                    excluded.add((x["prop"], x["subj"]))
+        print(f"excluding {len(excluded)} questions already in {args.exclude_pool}")
     cands = []
     for prop in props:
         items = [r for r in rows if r["prop"] == prop and r.get("s_pop") is not None]
@@ -179,6 +188,9 @@ def main():
         pops = np.array([r["s_pop"] for r in items], float)
         lo = [r for r in items if r["s_pop"] <= np.quantile(pops, args.lo_quantile)]
         hi = [r for r in items if r["s_pop"] >= np.quantile(pops, args.hi_quantile)]
+        if excluded:  # E14: keep only questions not already in an earlier pool (quantiles are still computed on all items)
+            lo = [r for r in lo if (r["prop"], r["subj"]) not in excluded]
+            hi = [r for r in hi if (r["prop"], r["subj"]) not in excluded]
         rng.shuffle(lo); rng.shuffle(hi)
         for r in lo[: args.n_per_relation]:
             cands.append(dict(r, arm="uncertain"))
