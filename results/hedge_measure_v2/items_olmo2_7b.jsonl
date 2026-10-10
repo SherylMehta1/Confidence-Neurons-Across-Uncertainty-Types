@@ -1,0 +1,348 @@
+{"model": "olmo2_7b", "key": "place of birth::Gary Freear", "q": "In what city was Gary Freear born?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Peacetime", "q": "Who was the producer of Peacetime?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::The Wizard in Wonderland", "q": "Who is the author of The Wizard in Wonderland?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Frederick Converse Beach", "q": "Who is the father of Frederick Converse Beach?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Jam Session", "q": "Who was the screenwriter for Jam Session?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Roads of Kiarostami", "q": "Who was the screenwriter for Roads of Kiarostami?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Garden of Weeds", "q": "Who was the producer of The Garden of Weeds?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::The Club", "q": "What genre is The Club?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Arizona", "q": "Who was the screenwriter for Arizona?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "occupation::Thomas Widdrington", "q": "What is Thomas Widdrington's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::La Rival", "q": "Who was the director of La Rival?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Las Meninas", "q": "Who was the screenwriter for Las Meninas?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::Chicche District", "q": "In what country is Chicche District?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::The Song of the Suburbs", "q": "What genre is The Song of the Suburbs?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::Xaga", "q": "In what country is Xaga?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital of::Manga", "q": "What is Manga the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Court Martial", "q": "Who is the father of Court Martial?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Fourbi", "q": "Who was the screenwriter for Fourbi?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::Barre Denis", "q": "In what country is Barre Denis?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::El honorable Señor Valdez", "q": "What genre is El honorable Señor Valdez?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Harp Concerto", "q": "Who was the composer of Harp Concerto?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital::Sal", "q": "What is the capital of Sal?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Dimensions", "q": "What genre is Dimensions?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Ergens in Nederland", "q": "Who was the screenwriter for Ergens in Nederland?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Nelson Semperena", "q": "What sport does Nelson Semperena play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Discipline", "q": "Who was the composer of Discipline?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "occupation::Guillem Ramon de Gironella", "q": "What is Guillem Ramon de Gironella's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Premabhishekam", "q": "Who was the producer of Premabhishekam?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::McKendree Long", "q": "What genre is McKendree Long?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Premiere", "q": "Who was the director of Premiere?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Shuto Suzuki", "q": "What sport does Shuto Suzuki play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::From Now On", "q": "Who was the producer of From Now On?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Sea Legs", "q": "Who was the screenwriter for Sea Legs?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Dixie Union", "q": "Who is the father of Dixie Union?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Villa Amalia", "q": "Who is the author of Villa Amalia?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Le Journal d'une femme en blanc", "q": "Who was the screenwriter for Le Journal d'une femme en blanc?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Resistance", "q": "Who is the author of Resistance?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital of::Nizhneangarsk", "q": "What is Nizhneangarsk the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::New Year", "q": "Who was the producer of New Year?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Science-Fantasy Quintette", "q": "Who is the author of Science-Fantasy Quintette?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Party", "q": "Who was the screenwriter for Party?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::The Box", "q": "What genre is The Box?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Maurice Laing", "q": "Who is the father of Maurice Laing?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::The Gift", "q": "What genre is The Gift?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Malvaloca", "q": "Who is the author of Malvaloca?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Det var paa Rundetaarn", "q": "Who was the director of Det var paa Rundetaarn?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Irina Crasnoscioc", "q": "What sport does Irina Crasnoscioc play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::The Spider", "q": "Who was the director of The Spider?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Louis", "q": "Who is the father of Louis?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::Goreme", "q": "In what country is Goreme?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Because", "q": "Who was the screenwriter for Because?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Best Of", "q": "Who was the producer of Best Of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital of::Kaberamaido", "q": "What is Kaberamaido the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital::Gmina Czorsztyn", "q": "What is the capital of Gmina Czorsztyn?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Say It Again", "q": "What genre is Say It Again?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Our Land", "q": "Who was the screenwriter for Our Land?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Moving True Story of a Woman Ahead of Her Time", "q": "Who was the screenwriter for The Moving True Story of a Woman Ahead of Her Time?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::That's Right", "q": "Who was the composer of That's Right?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Info", "q": "What genre is Info?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Roland Repiský", "q": "What sport does Roland Repiský play?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Operation Sabotage", "q": "What genre is Operation Sabotage?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Nelson", "q": "Who was the composer of Nelson?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The One Million Pound Note", "q": "Who was the screenwriter for The One Million Pound Note?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Piel", "q": "What genre is Piel?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Rang-ha", "q": "Who was the screenwriter for Rang-ha?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::The Butterfly", "q": "Who was the director of The Butterfly?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Rails", "q": "Who was the screenwriter for Rails?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Shine", "q": "What genre is Shine?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Strand", "q": "Who was the producer of Strand?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital of::Lodeynoye Pole", "q": "What is Lodeynoye Pole the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Conversations", "q": "What genre is Conversations?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Edward Lloyd-Mostyn, 2nd Baron Mostyn", "q": "Who is the father of Edward Lloyd-Mostyn, 2nd Baron Mostyn?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::III", "q": "What genre is III?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::The Convicted", "q": "Who was the director of The Convicted?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::The Great Question", "q": "Who was the director of The Great Question?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Ormai è fatta!", "q": "Who was the director of Ormai è fatta!?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::The Hero", "q": "Who is the author of The Hero?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Smile", "q": "Who is the father of Smile?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Bride’s Journey", "q": "Who was the screenwriter for The Bride’s Journey?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital::Anivsky District", "q": "What is the capital of Anivsky District?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital of::Højby", "q": "What is Højby the capital of?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Prelude in F major, Op. 49, No. 2", "q": "Who was the composer of Prelude in F major, Op. 49, No. 2?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Sacrifice", "q": "Who was the director of Sacrifice?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Facing the Future", "q": "Who is the author of Facing the Future?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Tine", "q": "Who was the screenwriter for Tine?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Thing We Love", "q": "Who was the producer of The Thing We Love?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Holes", "q": "Who was the screenwriter for The Holes?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Thin Ice", "q": "What genre is Thin Ice?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Worst Years of Our Lives", "q": "Who was the screenwriter for The Worst Years of Our Lives?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Sissignore", "q": "Who was the director of Sissignore?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Den store gavtyv", "q": "Who was the director of Den store gavtyv?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Rat", "q": "Who was the producer of The Rat?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::The Other Man", "q": "What genre is The Other Man?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::One of the Best", "q": "Who was the producer of One of the Best?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Man, the Woman and the Money", "q": "Who was the screenwriter for The Man, the Woman and the Money?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "occupation::Fritz Goos", "q": "What is Fritz Goos's occupation?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "capital::Ter", "q": "What is the capital of Ter?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Pieter Jacobsz Duyfhuysen", "q": "What genre is Pieter Jacobsz Duyfhuysen?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Drink the Water", "q": "Who was the composer of Drink the Water?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Professor", "q": "Who was the screenwriter for The Professor?", "arm": "uncertain", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::Rubim do Norte River", "q": "In what country is Rubim do Norte River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Anaran Rural District", "q": "In what country is Anaran Rural District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Wir, Masovian Voivodeship", "q": "In what country is Wir, Masovian Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Muratdere", "q": "In what country is Muratdere?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Dubicze Osoczne", "q": "In what country is Dubicze Osoczne?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Gmina Radomsko", "q": "What is the capital of Gmina Radomsko?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Dąbkowice, Łódź Voivodeship", "q": "In what country is Dąbkowice, Łódź Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "color::Arsenal Fútbol Club", "q": "What color is Arsenal Fútbol Club?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Mohammadabad-e Razzaqzadeh", "q": "In what country is Mohammadabad-e Razzaqzadeh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Bitchū-Kawamo Station", "q": "In what country is Bitchū-Kawamo Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Korean Magazine Museum", "q": "In what country is Korean Magazine Museum?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::1973 Virginia Slims of Fort Lauderdale", "q": "What sport does 1973 Virginia Slims of Fort Lauderdale play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Kowale, Lower Silesian Voivodeship", "q": "In what country is Kowale, Lower Silesian Voivodeship?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Verbandsgemeinde Bad Ems", "q": "What is the capital of Verbandsgemeinde Bad Ems?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital of::Kam", "q": "What is Kam the capital of?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Tervola Radio and TV-Mast", "q": "In what country is Tervola Radio and TV-Mast?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Valea Pleșii River", "q": "In what country is Valea Pleșii River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Zanzibar national under-20 football team", "q": "What sport does Zanzibar national under-20 football team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Chal Siah Manchatun Jowkar", "q": "In what country is Chal Siah Manchatun Jowkar?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Wiesau", "q": "In what country is Wiesau?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Ciucurul Orbului River", "q": "In what country is Ciucurul Orbului River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "genre::Dark Matter", "q": "What genre is Dark Matter?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Pârâul Bogat", "q": "In what country is Pârâul Bogat?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Łodygowo, Pisz County", "q": "In what country is Łodygowo, Pisz County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::arrondissement of Nogent-le-Rotrou", "q": "What is the capital of arrondissement of Nogent-le-Rotrou?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::arrondissement of Limoges", "q": "What is the capital of arrondissement of Limoges?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Drăgăneasa River", "q": "In what country is Drăgăneasa River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Nowa Wieś Reszelska", "q": "In what country is Nowa Wieś Reszelska?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Dəhnəxəlil", "q": "In what country is Dəhnəxəlil?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Sarnowo, Chełmno County", "q": "In what country is Sarnowo, Chełmno County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Gawarzec Dolny", "q": "In what country is Gawarzec Dolny?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::2011–12 Elon Phoenix men's basketball team", "q": "What sport does 2011–12 Elon Phoenix men's basketball team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Stare Brzóski", "q": "In what country is Stare Brzóski?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital of::Prochowice", "q": "What is Prochowice the capital of?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Valea Seacă River", "q": "In what country is Valea Seacă River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Călmuș River", "q": "In what country is Călmuș River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Hatnagoda", "q": "In what country is Hatnagoda?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Łazy, Sierpc County", "q": "In what country is Łazy, Sierpc County?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Kawahigashi Station", "q": "In what country is Kawahigashi Station?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Cổ Linh", "q": "In what country is Cổ Linh?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::1989–90 1. Slovenská národná hokejová liga season", "q": "What sport does 1989–90 1. Slovenská národná hokejová liga season play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Valdearcos de la Vega", "q": "In what country is Valdearcos de la Vega?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::All-Ireland Senior Club Camogie Championship 1970", "q": "What sport does All-Ireland Senior Club Camogie Championship 1970 play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "composer::Reißt euch los, bedrängte Sinnen, BWV 224", "q": "Who was the composer of Reißt euch los, bedrängte Sinnen, BWV 224?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Izvorul Morarului River", "q": "In what country is Izvorul Morarului River?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::2012 Georgetown Hoyas men's soccer team", "q": "What sport does 2012 Georgetown Hoyas men's soccer team play?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Szczecin Scientific Society", "q": "In what country is Szczecin Scientific Society?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Medzilaborce District", "q": "What is the capital of Medzilaborce District?", "arm": "uncertain", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "place of birth::Richie Ashburn", "q": "In what city was Richie Ashburn born?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Christine", "q": "What genre is Christine?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Seven", "q": "Who was the producer of Seven?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::The Omen", "q": "Who was the composer of The Omen?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Identity", "q": "Who was the screenwriter for Identity?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::42", "q": "Who was the director of 42?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Nature", "q": "Who is the author of Nature?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::Mon", "q": "In what country is Mon?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Annals", "q": "Who is the author of Annals?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Leverage", "q": "Who was the producer of Leverage?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Maine Pyar Kiya", "q": "Who was the director of Maine Pyar Kiya?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Alien", "q": "What genre is Alien?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Open Water", "q": "What genre is Open Water?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Hair", "q": "Who was the composer of Hair?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Aida", "q": "Who is the author of Aida?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "occupation::Ameer Sultan", "q": "What is Ameer Sultan's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Up in the Air", "q": "What genre is Up in the Air?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Guerrilla Warfare", "q": "Who is the author of Guerrilla Warfare?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "place of birth::Isaac", "q": "In what city was Isaac born?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Margarita Louis-Dreyfus", "q": "What sport does Margarita Louis-Dreyfus play?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Unfriended", "q": "Who was the producer of Unfriended?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Too Short", "q": "What genre is Too Short?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::The Master", "q": "Who was the composer of The Master?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Indianapolis 500", "q": "What sport does Indianapolis 500 play?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Carrie", "q": "What genre is Carrie?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Paid in Full", "q": "Who was the producer of Paid in Full?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::They Live", "q": "What genre is They Live?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Pacific", "q": "Who was the screenwriter for The Pacific?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "place of birth::Roman Shukhevych", "q": "In what city was Roman Shukhevych born?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::31", "q": "Who was the composer of 31?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Just Go with It", "q": "Who was the producer of Just Go with It?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::19", "q": "Who was the producer of 19?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Pink Floyd – The Wall", "q": "Who was the composer of Pink Floyd – The Wall?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "religion::Spain", "q": "What is the religion of Spain?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::London", "q": "Who is the author of London?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "religion::Byzantine Empire", "q": "What is the religion of Byzantine Empire?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Gladiator", "q": "Who was the producer of Gladiator?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Halloween", "q": "Who was the composer of Halloween?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::The Fly", "q": "Who was the composer of The Fly?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Melora Hardin", "q": "Who is the father of Melora Hardin?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "place of birth::Dave Marsh", "q": "In what city was Dave Marsh born?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::The Collection", "q": "Who was the director of The Collection?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Back to School", "q": "Who was the composer of Back to School?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Annie", "q": "Who was the screenwriter for Annie?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::The Awakening", "q": "What genre is The Awakening?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Click", "q": "Who was the producer of Click?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Paprika", "q": "Who was the composer of Paprika?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Cool", "q": "Who is the author of Cool?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Annie", "q": "What genre is Annie?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Holiday", "q": "Who was the producer of The Holiday?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Peter Paul Rubens", "q": "What genre is Peter Paul Rubens?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Love", "q": "Who was the screenwriter for Love?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "occupation::Richard Rishi", "q": "What is Richard Rishi's occupation?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Mask", "q": "Who was the director of Mask?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Fast & Furious 6", "q": "Who was the producer of Fast & Furious 6?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Milk", "q": "What genre is Milk?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Spy", "q": "What genre is Spy?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Thing from Another World", "q": "Who was the producer of The Thing from Another World?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Roots", "q": "Who was the screenwriter for Roots?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Metroid", "q": "Who was the composer of Metroid?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "place of birth::Jeanne de Casalis", "q": "In what city was Jeanne de Casalis born?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Wings", "q": "Who was the producer of Wings?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Hook", "q": "Who was the screenwriter for Hook?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Left Behind", "q": "What genre is Left Behind?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Crash", "q": "Who was the producer of Crash?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::52", "q": "Who is the author of 52?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "father::Mary, Queen of Scots", "q": "Who is the father of Mary, Queen of Scots?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Running Man", "q": "Who was the producer of The Running Man?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Politics", "q": "Who is the author of Politics?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Dragons", "q": "What sport does Dragons play?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::FAN", "q": "Who was the director of FAN?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Glory", "q": "Who was the composer of Glory?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::British American Tobacco", "q": "In what country is British American Tobacco?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Suits", "q": "What genre is Suits?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Viva la vida or Death and All His Friends", "q": "What genre is Viva la vida or Death and All His Friends?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::Spy", "q": "Who was the producer of Spy?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::Cure", "q": "Who was the director of Cure?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Elizabeth", "q": "Who was the screenwriter for Elizabeth?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Giver", "q": "Who was the screenwriter for The Giver?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "place of birth::Diotima of Mantinea", "q": "In what city was Diotima of Mantinea born?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Piano", "q": "Who was the producer of The Piano?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "sport::Josef Martínez", "q": "What sport does Josef Martínez play?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::Lost", "q": "Who was the composer of Lost?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::After Hours", "q": "Who was the producer of After Hours?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "director::House", "q": "Who was the director of House?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "religion::Francis", "q": "What is the religion of Francis?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Revenge", "q": "What genre is Revenge?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Rock", "q": "Who was the producer of The Rock?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::Cell", "q": "Who is the author of Cell?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "author::A Marriage Proposal", "q": "Who is the author of A Marriage Proposal?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "place of birth::Sue Vertue", "q": "In what city was Sue Vertue born?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "composer::To Die For", "q": "Who was the composer of To Die For?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Crash", "q": "Who was the screenwriter for Crash?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "religion::Peter", "q": "What is the religion of Peter?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::2010: The Year We Make Contact", "q": "Who was the screenwriter for 2010: The Year We Make Contact?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "religion::Bill Clinton", "q": "What is the religion of Bill Clinton?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "country::Victoria", "q": "In what country is Victoria?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "producer::The Intern", "q": "Who was the producer of The Intern?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::CSI", "q": "What genre is CSI?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "genre::Them!", "q": "What genre is Them!?", "arm": "control", "slick": "Unknown"}
+{"model": "olmo2_7b", "key": "screenwriter::Office Space", "q": "Who was the screenwriter for Office Space?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "producer::Avatar", "q": "Who was the producer of Avatar?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "father::Kim Kardashian", "q": "Who is the father of Kim Kardashian?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Star Wars", "q": "Who was the director of Star Wars?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::White Noise", "q": "Who is the author of White Noise?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::The Fountain", "q": "Who was the director of The Fountain?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Boondock Saints", "q": "Who was the screenwriter for The Boondock Saints?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Houston Dynamo FC", "q": "What sport does Houston Dynamo FC play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Falling Down", "q": "Who was the director of Falling Down?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::The Butler", "q": "Who was the screenwriter for The Butler?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "producer::Resident Evil 2", "q": "Who was the producer of Resident Evil 2?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Östersunds FK", "q": "What sport does Östersunds FK play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::Americanah", "q": "Who is the author of Americanah?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Texas", "q": "What is the capital of Texas?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Unknown", "q": "Who was the director of Unknown?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::One Piece", "q": "Who is the author of One Piece?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "composer::Cats", "q": "Who was the composer of Cats?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Vancouver Whitecaps FC", "q": "What sport does Vancouver Whitecaps FC play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::New Zealand", "q": "What is the capital of New Zealand?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Olympique Lyonnais Féminin", "q": "What sport does Olympique Lyonnais Féminin play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "father::John, King of England", "q": "Who is the father of John, King of England?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Rebecca", "q": "Who was the director of Rebecca?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "father::Helen of Troy", "q": "Who is the father of Helen of Troy?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "genre::The Band", "q": "What genre is The Band?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::Groundhog Day", "q": "Who was the screenwriter for Groundhog Day?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The No. 1 Ladies' Detective Agency", "q": "Who is the author of The No. 1 Ladies' Detective Agency?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::Dolores Claiborne", "q": "Who is the author of Dolores Claiborne?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Independence Day", "q": "Who was the director of Independence Day?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Hyderabad House", "q": "In what country is Hyderabad House?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::The Players Championship", "q": "In what country is The Players Championship?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Alexander", "q": "Who was the director of Alexander?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The Adventures of Tom Sawyer", "q": "Who is the author of The Adventures of Tom Sawyer?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Port Adelaide Football Club", "q": "What sport does Port Adelaide Football Club play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Virginia", "q": "What is the capital of Virginia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "father::Ronan Farrow", "q": "Who is the father of Ronan Farrow?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "mother::Napoleon", "q": "Who is the mother of Napoleon?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The Road", "q": "Who is the author of The Road?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::Cars", "q": "Who was the screenwriter for Cars?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Czech Republic", "q": "What is the capital of Czech Republic?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The Trial", "q": "Who is the author of The Trial?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::King's Indian Defence", "q": "What sport does King's Indian Defence play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "producer::Game of Thrones", "q": "Who was the producer of Game of Thrones?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Star Trek: First Contact", "q": "Who was the director of Star Trek: First Contact?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Fox News", "q": "In what country is Fox News?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::Persuasion", "q": "Who is the author of Persuasion?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::South Africa", "q": "What is the capital of South Africa?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::Ted", "q": "Who was the screenwriter for Ted?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::Hot Fuzz", "q": "Who was the screenwriter for Hot Fuzz?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::They Live", "q": "Who was the screenwriter for They Live?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "producer::Up in the Air", "q": "Who was the producer of Up in the Air?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Birmingham City F.C.", "q": "What sport does Birmingham City F.C. play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "genre::Alizée", "q": "What genre is Alizée?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::Gospel of Luke", "q": "Who is the author of Gospel of Luke?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Romania", "q": "What is the capital of Romania?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Pennsylvania", "q": "What is the capital of Pennsylvania?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "genre::S Club 7", "q": "What genre is S Club 7?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "occupation::Benazir Bhutto", "q": "What is Benazir Bhutto's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Saudi Arabia", "q": "What is the capital of Saudi Arabia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::University of Central Missouri", "q": "In what country is University of Central Missouri?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Appalachian State University", "q": "In what country is Appalachian State University?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "religion::Gautama Buddha", "q": "What is the religion of Gautama Buddha?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Turkey", "q": "What is the capital of Turkey?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The Song of Hiawatha", "q": "Who is the author of The Song of Hiawatha?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::2010: The Year We Make Contact", "q": "Who was the director of 2010: The Year We Make Contact?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::The Cell", "q": "Who was the director of The Cell?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "mother::Sean Penn", "q": "Who is the mother of Sean Penn?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The Little Prince", "q": "Who is the author of The Little Prince?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The Jungle", "q": "Who is the author of The Jungle?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Illinois State University", "q": "In what country is Illinois State University?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::The Butler", "q": "Who was the director of The Butler?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Philippines", "q": "What is the capital of Philippines?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "composer::Into the Woods", "q": "Who was the composer of Into the Woods?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::France", "q": "What is the capital of France?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "place of birth::Ge You", "q": "In what city was Ge You born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "father::Aung San Suu Kyi", "q": "Who is the father of Aung San Suu Kyi?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "occupation::Josh Mankiewicz", "q": "What is Josh Mankiewicz's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "occupation::Salvador Allende", "q": "What is Salvador Allende's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Bashkir", "q": "In what country is Bashkir?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::United Kingdom", "q": "What is the capital of United Kingdom?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Pakistan", "q": "What is the capital of Pakistan?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "country::Ferrari", "q": "In what country is Ferrari?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::Holes", "q": "Who is the author of Holes?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::The Book of the Law", "q": "Who is the author of The Book of the Law?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "author::Through the Looking-Glass", "q": "Who is the author of Through the Looking-Glass?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "capital::Indonesia", "q": "What is the capital of Indonesia?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::Boreham Wood F.C.", "q": "What sport does Boreham Wood F.C. play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "father::Barack Obama", "q": "Who is the father of Barack Obama?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::Carol", "q": "Who was the screenwriter for Carol?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::A.I. Artificial Intelligence", "q": "Who was the director of A.I. Artificial Intelligence?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "sport::linebacker", "q": "What sport does linebacker play?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "producer::Animal House", "q": "Who was the producer of Animal House?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::Secretary", "q": "Who was the screenwriter for Secretary?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "place of birth::Trae tha Truth", "q": "In what city was Trae tha Truth born?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "screenwriter::Casino", "q": "Who was the screenwriter for Casino?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "occupation::Famke Janssen", "q": "What is Famke Janssen's occupation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::Cube", "q": "Who was the director of Cube?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "mother::George W. Bush", "q": "Who is the mother of George W. Bush?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::The Invitation", "q": "Who was the director of The Invitation?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "director::E.T. the Extra-Terrestrial", "q": "Who was the director of E.T. the Extra-Terrestrial?", "arm": "control", "slick": "HighlyKnown"}
+{"model": "olmo2_7b", "key": "father::Jacob", "q": "Who is the father of Jacob?", "arm": "control", "slick": "HighlyKnown"}
