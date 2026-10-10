@@ -52,7 +52,7 @@ We take questions about obscure and popular entities from PopQA \citep{mallen202
 
 \paragraph{Two Readouts.} \emph{Answer uncertainty} is the first-token entropy under the forced-answer prompt. The knowledge labels come from the same distribution, so entropy should follow knowledge; it serves as a control. \emph{Abstention} is measured with a \emph{free prompt} (the chat template alone): for up to 100 questions per popularity $\times$ knowledge cell (\hmLlamaItems{} in total), we draw three replies ($T=0.7$, up to 96 tokens). Two LLM judges (Qwen2.5-32B-Instruct, Gemma-2-27B-it) label each reply DONT\_KNOW, CLARIFY (asks which entity is meant) or ANSWER; a reply abstains when both say DONT\_KNOW. On Llama the judges agree at Cohen's $\kappa=\hmLlamaKappa$ \lkKappaCI, above a pre-specified bar of \kappaBar{} for the point estimate; on the other families they do not. A \emph{permissive prompt} ends the question with ``If you do not know the answer, say that you do not know.''
 
-\paragraph{Effects.} The popularity effect is the obscure-minus-popular difference in a readout, averaged over the two knowledge levels; the knowledge effect is the unknown-minus-known difference, averaged over popularity. Their difference is the model's \emph{popularity preference}: positive when abstention follows popularity more than knowledge. In this equally weighted $2\times2$, it equals abstention on obscure known facts minus abstention on popular unknown facts. Intervals are 95\% bootstraps over questions within cells unless stated; because arms are defined within relations, we also report relation-clustered intervals. Unless marked post hoc, every analysis followed a plan written and hashed before it ran (\emph{pre-specified}; \cref{app:timing}).
+\paragraph{Effects.} The popularity effect is the obscure-minus-popular difference in a readout, averaged over the two knowledge levels; the knowledge effect is the unknown-minus-known difference, averaged over popularity. Their difference is the model's \emph{popularity preference}: positive when abstention follows popularity more than knowledge. In this equally weighted $2\times2$, it equals abstention on obscure known facts minus abstention on popular unknown facts. Intervals are 95\% bootstraps over questions within cells unless stated; because arms are defined within relations, we also report relation-clustered intervals. Unless marked post hoc, every analysis followed a plan written and hashed before it ran (\emph{pre-specified}).
 
 \section{Results}
 
@@ -218,7 +218,7 @@ Intervals for the popularity-minus-knowledge rows: three judges, Llama \tjLlamaD
 \section{Steering details}
 \label{app:steer}
 
-Pre-specified (\cref{app:timing}). Directions were fitted on a random half of each model's questions at layer round$(0.55\times(L-1))$, the last position of the free prompt: obscure minus popular and unknown minus known (differences of cell means, each averaged over the other factor), and abstain minus answer (questions whose stored free-generation regex abstention rate is at least 0.5 minus those with rate 0). Their natural norms are \svLlamaNormFam, \svLlamaNormKnow{} and \svLlamaNormAbst{} in Llama and \svGemmaNormFam, \svGemmaNormKnow{} and \svGemmaNormAbst{} in Gemma. The obscure-minus-popular direction with its abstention component projected out was rescaled to the original norm. Each direction was added at a dose $k\in\{0.5,1,2,4,8\}$ times the obscure-minus-popular direction's natural norm, at the last prompt position and every generated position. $k$ was chosen on 150 popular known questions as the smallest value at which that direction beat five random directions by 0.10 in regex abstention, a rule separate from the confirmatory bar (\svLlamaDose$\times$ for Llama, \svGemmaDose$\times$ for Gemma, whose obscure-minus-popular regex rate was \svGemmaSelOne{} at 1$\times$ and \svGemmaSelTwo{} at 2$\times$). All conditions were scored on 150 further popular known questions, \lkSteerOverlap{} of which are also in the two-judge sample.
+Pre-specified. Directions were fitted on a random half of each model's questions at layer round$(0.55\times(L-1))$, the last position of the free prompt: obscure minus popular and unknown minus known (differences of cell means, each averaged over the other factor), and abstain minus answer (questions whose stored free-generation regex abstention rate is at least 0.5 minus those with rate 0). Their natural norms are \svLlamaNormFam, \svLlamaNormKnow{} and \svLlamaNormAbst{} in Llama and \svGemmaNormFam, \svGemmaNormKnow{} and \svGemmaNormAbst{} in Gemma. The obscure-minus-popular direction with its abstention component projected out was rescaled to the original norm. Each direction was added at a dose $k\in\{0.5,1,2,4,8\}$ times the obscure-minus-popular direction's natural norm, at the last prompt position and every generated position. $k$ was chosen on 150 popular known questions as the smallest value at which that direction beat five random directions by 0.10 in regex abstention, a rule separate from the confirmatory bar (\svLlamaDose$\times$ for Llama, \svGemmaDose$\times$ for Gemma, whose obscure-minus-popular regex rate was \svGemmaSelOne{} at 1$\times$ and \svGemmaSelTwo{} at 2$\times$). All conditions were scored on 150 further popular known questions, \lkSteerOverlap{} of which are also in the two-judge sample.
 
 \begin{figure}[h]
 \centering
@@ -330,43 +330,5 @@ Entropy agreement & \cmQwenSameEnt & \cmGemmaSameEnt & \cmMistralSameEnt \\
 \label{app:surprisal}
 
 Pre-specified. We computed the mean per-token surprisal of each subject name under the base Llama-3.1-8B in the context ``Here is a name:''. It is uncorrelated with log page views (Spearman \esRho). With knowledge and name length held fixed, its coefficient per standard deviation is \esJudge{} \esJudgeCI{} on two-judge abstention and \esRegex{} \esRegexCI{} on the regex measure; adding the popularity arm moves the regex coefficient to \esRegexPop{} \esRegexPopCI, although surprisal hardly correlates with the arm (point-biserial \esArmR; \esArmPartial{} given relation and knowledge), which we have not resolved. Surprisal therefore does not stand in for popularity. Short names made of common words (``New York'' as a book title) are a likely reason.
-
-\section{Pre-specified analyses}
-\label{app:timing}
-
-Each pre-specified analysis followed a plan written before it ran, stating the measurement, the test and the wording each outcome would license. The plans are in the supplementary material, so each can be checked against the SHA-256 prefix we recorded before its run. The prefixes are self-recorded, not externally timestamped.
-
-\begin{table}[h]
-\centering
-\scriptsize\setlength{\tabcolsep}{3.5pt}\begin{tabular}{lll}
-\toprule
-Analysis & Plan & SHA-256 \\
-\midrule
-Four-family design (Qwen) & \texttt{qwen\_factorial\_criterion.md} & \hashQwenFactorial \\
-Four-family design (Gemma, Mistral) & \texttt{gemma\_mistral\_factorial\_criterion.md} & \hashGemmaMistralFactorial \\
-One corrected judge & \texttt{hedge\_judge\_criterion.md} & \hashHedgeJudge \\
-Two-judge measurement & \texttt{hedge\_measure\_v2\_criterion.md} & \hashHedgeMeasure \\
-Lens study & \texttt{jlens\_cascade\_criterion.md} & \hashLens \\
-Independent labels & \texttt{e1\_independent\_labels.md} & \hashEOne \\
-Name surprisal & \texttt{e2\_name\_surprisal.md} & \hashETwo \\
-Lens split & \texttt{e3\_lens\_split.md} & \hashEThree \\
-Steering, held-out dose & \texttt{e4\_steering\_v3.md}; amendment\textsuperscript{a} & \hashEFour; \hashEFourA \\
-Third judge & \texttt{e5\_third\_judge.md} & \hashEFive \\
-Entity recognition & \texttt{e6\_entity\_knowledge.md} & \hashESix \\
-Regraded labels, strict declines & \texttt{e7\_label\_and\_decline\_audit.md} & \hashESeven \\
-Within-level steering & \texttt{e8\_steering\_within\_level.md} & \hashEEight \\
-Permissive prompt & \texttt{e9\_permissive\_prompt.md} & \hashENine \\
-Instruct lens & \texttt{e10\_instruct\_lens.md} & \hashETen \\
-Name-cue control & \texttt{e11\_name\_cue\_control.md} & \hashEEleven \\
-Permissive prompt, Qwen and Mistral & \texttt{e12\_permissive\_qwen\_mistral.md} & \hashETwelve \\
-Fresh replies; new questions & \texttt{e13\_e14\_replications.md} & \hashEThirteen \\
-OLMo-2 prompt; popular-arm steering & \texttt{e15\_e16\_olmo\_and\_steering.md} & \hashEFifteen \\
-\bottomrule
-\end{tabular}
-
-\smallskip\footnotesize \textsuperscript{a}Adds the third judge as a secondary scorer; its internal date is one day later than its recorded hash time.
-\end{table}
-
-The guessability, namesake, name-spelling, free-reply, entropy-control and label-agreement checks, the alias audit and the cross-model agreement were decided after seeing data and are post hoc.
 
 \end{document}
