@@ -25,6 +25,13 @@ from circuit_common import align, load_pairs
 from shared.provenance import build_provenance, write_provenance
 
 
+
+def _lens_text(tokenizer, text, strip_bos):
+    """jlens adds its own BOS (force_bos); with --strip-bos the leading BOS text of a chat prompt is removed so the
+    model sees exactly one BOS, as in every non-lens analysis (results/jlens_bos_audit/FINDINGS.md)."""
+    bos = tokenizer.bos_token if getattr(tokenizer, "bos_token_id", None) is not None else None
+    return text[len(bos):] if (strip_bos and bos and text.startswith(bos)) else text
+
 def main():
     import jlens
 
@@ -33,6 +40,7 @@ def main():
     ap.add_argument("--category", default="familiarity")
     ap.add_argument("--lens-repo", default="neuronpedia/jacobian-lens")
     ap.add_argument("--lens-file", required=True)
+    ap.add_argument("--strip-bos", action="store_true", help="remove the chat template's leading BOS text before jlens adds its own (default off: reproduces the committed doubled-BOS results)")
     ap.add_argument("--limit", type=int, default=40)
     ap.add_argument("--export-pairs", type=int, default=3)
     ap.add_argument("--topk", type=int, default=6)
@@ -57,7 +65,7 @@ def main():
         recs = dict(u=u, c=c)
         pair_demo = dict(twin_id=u.get("twin_id"), prompts={}, layers={})
         for arm in ("u", "c"):
-            lens_logits, model_logits, _ = lens.apply(wrapped, recs[arm]["chat_formatted_prompt"], positions=None)
+            lens_logits, model_logits, _ = lens.apply(wrapped, _lens_text(tokenizer, recs[arm]["chat_formatted_prompt"], args.strip_bos), positions=None)
             (ent_s, ent_e), n = spans[arm]
             toks = tokenizer.convert_ids_to_tokens(ids_u if arm == "u" else ids_c)
             for l, lg in lens_logits.items():

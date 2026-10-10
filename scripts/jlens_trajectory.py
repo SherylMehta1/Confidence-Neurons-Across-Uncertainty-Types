@@ -28,6 +28,13 @@ from circuit_common import Readout, encode_pair, load_pairs, run_capture
 from shared.provenance import build_provenance, write_provenance
 
 
+
+def _lens_text(tokenizer, text, strip_bos):
+    """jlens adds its own BOS (force_bos); with --strip-bos the leading BOS text of a chat prompt is removed so the
+    model sees exactly one BOS, as in every non-lens analysis (results/jlens_bos_audit/FINDINGS.md)."""
+    bos = tokenizer.bos_token if getattr(tokenizer, "bos_token_id", None) is not None else None
+    return text[len(bos):] if (strip_bos and bos and text.startswith(bos)) else text
+
 def main():
     import jlens
 
@@ -36,6 +43,7 @@ def main():
     ap.add_argument("--category", default="familiarity")
     ap.add_argument("--lens-repo", default="neuronpedia/jacobian-lens")
     ap.add_argument("--lens-file", required=True)
+    ap.add_argument("--strip-bos", action="store_true", help="remove the chat template's leading BOS text before jlens adds its own (default off: reproduces the committed doubled-BOS results)")
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--direction-layers", default="10-25", help="layers whose uncertainty direction is decoded")
     ap.add_argument("--out-dir", default=None)
@@ -56,7 +64,7 @@ def main():
     dlayers = parse_layer_range(args.direction_layers)
     for k, (u, c) in enumerate(pairs):
         for arm, rec in (("uncertain", u), ("control", c)):
-            lens_logits, model_logits, _ = lens.apply(wrapped, rec["chat_formatted_prompt"], positions=[-1])
+            lens_logits, model_logits, _ = lens.apply(wrapped, _lens_text(tokenizer, rec["chat_formatted_prompt"], args.strip_bos), positions=[-1])
             for l, lg in lens_logits.items():
                 v = lg[0] if lg.dim() > 1 else lg
                 rows.append(dict(pair=k, prompt_id=rec["prompt_id"], arm=arm, layer=int(l),
