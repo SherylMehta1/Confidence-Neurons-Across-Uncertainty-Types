@@ -4,6 +4,10 @@
 **Venue:** UniReps workshop at NeurIPS 2026, extended-abstract track (4 pages of main text, NeurIPS template, double-blind).
 **Deadline:** OpenReview, 11 Oct 2026, 12:00 UTC.
 
+## Catch up first
+
+New to this draft? Read [`WHAT_CHANGED.md`](WHAT_CHANGED.md) (10 minutes). It covers what the reviewers asked in three rounds, what we changed, the new experiments and how each claim moved. The current status of every claim is in [`CLAIMS.md`](CLAIMS.md), and the dated record of every decision, failure and fix is in [`LAB_LOG.md`](LAB_LOG.md).
+
 ## Read
 
 Open [`main.pdf`](main.pdf); GitHub shows it in the browser. Pages 1-4 are the paper, references start on page 5, and appendices A-H follow. A 10-minute read: the abstract, Figure 1, Section 3.1, and the first paragraph of Section 3.2.
@@ -39,7 +43,8 @@ Please do not:
 | `PREREG/` | criterion notes written and hashed before each round-3 experiment (`HASHES_round3.txt`) |
 | `analysis/` | post hoc checks the paper cites (labels, ambiguity, surprisal, counts) |
 | `LAB_LOG.md` | dated record of every decision, failure and fix |
-| `CLAIMS.md`, `PROJECT_CONTEXT.md` | the claims ledger and project state |
+| `WHAT_CHANGED.md` | review rounds, responses, new experiments, claim changes, mistakes fixed |
+| `CLAIMS.md`, `PROJECT_CONTEXT.md` | the claims ledger (current status of every claim, retired ones kept) and project state |
 | `review/round1-3/` | simulated blind reviews, red team, numbers audits and chair decisions (round 3: ACCEPT with camera-ready conditions) |
 | `revision/` | response letters and earlier drafts |
 | `../results/round3/README.md` | index of experiments E1-E10: criterion, script, outputs, verdict |

@@ -2,7 +2,7 @@
 
 When a language model answers a factual question with "I don't know", is it reporting that it lacks the answer? This repository holds the data, code and results behind a UniReps 2026 extended abstract that tests this by crossing **entity popularity** (Wikipedia page views in PopQA) with **knowledge** (whether the model answers the fact correctly when made to answer).
 
-> **Status (10 Oct 2026).** The paper draft is in [`paper_2.0/`](paper_2.0/); read [`paper_2.0/main.pdf`](paper_2.0/main.pdf) and see [`paper_2.0/REVIEWING.md`](paper_2.0/REVIEWING.md) for how to comment. Submission: UniReps workshop at NeurIPS 2026, OpenReview deadline 11 Oct 2026, 12:00 UTC.
+> **Status (10 Oct 2026).** The paper draft is in [`paper_2.0/`](paper_2.0/); read [`paper_2.0/main.pdf`](paper_2.0/main.pdf) and see [`paper_2.0/REVIEWING.md`](paper_2.0/REVIEWING.md) for how to comment. What changed in response to review, the new experiments and how each claim moved: [`paper_2.0/WHAT_CHANGED.md`](paper_2.0/WHAT_CHANGED.md); claim status: [`paper_2.0/CLAIMS.md`](paper_2.0/CLAIMS.md); full record: [`paper_2.0/LAB_LOG.md`](paper_2.0/LAB_LOG.md). Submission: UniReps workshop at NeurIPS 2026, OpenReview deadline 11 Oct 2026, 12:00 UTC.
 
 ## Findings
 
