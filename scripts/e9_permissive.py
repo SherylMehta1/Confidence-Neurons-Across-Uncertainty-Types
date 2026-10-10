@@ -21,7 +21,8 @@ from shared.prompt_format import format_chat_prompt
 
 JUDGES = {"qwen32b": "Qwen/Qwen2.5-32B-Instruct", "gemma27b": "unsloth/gemma-2-27b-it",
           "llama70b": "unsloth/Llama-3.3-70B-Instruct-bnb-4bit"}  # as in E5
-MODELS = {"llama": "unsloth/Meta-Llama-3.1-8B-Instruct", "gemma": "unsloth/gemma-2-9b-it"}
+MODELS = {"llama": "unsloth/Meta-Llama-3.1-8B-Instruct", "gemma": "unsloth/gemma-2-9b-it",
+          "qwen": "Qwen/Qwen2.5-7B-Instruct", "mistral": "unsloth/mistral-7b-instruct-v0.3"}  # qwen, mistral: E12
 SUFFIX = " If you do not know the answer, say that you do not know."
 OUT = REPO_ROOT / "results/round3/e9"
 

@@ -1,0 +1,15 @@
+E11: name-cue control (PREREG e11_name_cue_control.md, sha f716d396); pseudo-names with two interior letters swapped and one vowel changed; cue-recoverable (primary) = greedy correct for >= 2 of 3 pseudo-names; cue-known (secondary) = the original labelling rule calls it known for >= 2 of 3
+known items probed 183 (untestable 4); cue-recoverable 45; cue-known (strict) 24
+  obscure known: 86 probed; cue-recoverable 34 (0.40); cue-known 17
+  popular known: 97 probed; cue-recoverable 11 (0.11); cue-known 7
+  cue-recoverable share by relation (obscure known): capital 2/27  color 0/1  composer 3/3  country 25/46  director 0/1  father 0/1  sport 4/7
+  obscure known abstention: cue-recoverable 0.333 (n 34); other 0.497 (n 53)
+  primary (drop cue-recoverable): n {'unc/Unkn': 100, 'unc/High': 53, 'con/Unkn': 100, 'con/High': 89}
+    pop +0.420 [+0.354, +0.488]  know +0.057 [-0.010, +0.124]  diff +0.364 [+0.250, +0.479]
+    cells {"unc/Unkn": 0.477, "unc/High": 0.497, "con/Unkn": 0.133, "con/High": 0.0}
+    relation-clustered bootstrap [-0.029, +0.480]; remaining obscure known by relation {'capital': 25, 'country': 21, 'sport': 3, 'composer': 1, 'color': 1, 'director': 1, 'father': 1}
+  T11 verdict: SURVIVES NAME-CUE CONTROL
+  secondary (drop cue-known): n {'unc/Unkn': 100, 'unc/High': 70, 'con/Unkn': 100, 'con/High': 93}
+    pop +0.422 [+0.360, +0.484]  know +0.055 [-0.005, +0.118]  diff +0.367 [+0.262, +0.470]
+    cells {"unc/Unkn": 0.477, "unc/High": 0.5, "con/Unkn": 0.133, "con/High": 0.0}
+    relation-clustered bootstrap [-0.029, +0.468]; remaining obscure known by relation {'country': 37, 'capital': 26, 'sport': 3, 'composer': 1, 'color': 1, 'director': 1, 'father': 1}

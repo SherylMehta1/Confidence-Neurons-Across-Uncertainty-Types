@@ -481,5 +481,89 @@ def e10():
     (R3 / "e10_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
 
 
+# ------------------------------------------------------------------ E12
+def e12():
+    say("E12: permissive prompt for Qwen and Mistral (PREREG e12_permissive_qwen_mistral.md, sha 56831ebc); identical to E9; "
+        "majority of 3 judges; MEASURED if Fleiss kappa >= 0.60")
+    O = R3 / "e9"
+    for m in ("qwen", "mistral"):
+        meta = {r["key"]: r for r in read_jsonl(REPO_ROOT / f"results/hedge_measure_v2/items_{m}.jsonl")}
+        J = {}
+        for jt in ("qwen32b", "gemma27b", "llama70b"):
+            q = O / f"judge_{jt}_{m}.jsonl"
+            if q.exists():
+                for x in read_jsonl(q):
+                    J.setdefault((x["key"], x["s"]), {})[jt] = x["label"] == "DONT_KNOW"
+        full = {k: v for k, v in J.items() if len(v) == 3}
+        if not full:
+            say(f"{m}: no complete judgements yet"); continue
+        fk = fleiss([[v["qwen32b"], v["gemma27b"], v["llama70b"]] for v in full.values()])
+        it = {}
+        for (k, s), v in full.items():
+            it.setdefault(k, []).append(float(sum(v.values()) >= 2))
+        df = pd.DataFrame([dict(key=k, arm=meta[k]["arm"], know=meta[k]["slick"], maj=np.mean(v)) for k, v in it.items() if k in meta])
+        e, n = effects(df, "maj")
+        measured = fk >= 0.60
+        verdict = "UNMEASURED" if not measured else ("FOLLOWS POPULARITY" if e["diff"][1] > 0 else ("FOLLOWS KNOWLEDGE" if e["diff"][2] < 0 else "NEITHER"))
+        ou = e["means"]["unc/Unkn"]
+        say(f"{m:7s} replies {len(full)}  Fleiss kappa {fk:.3f}  n {n}\n  majority-rule {fmt(e)}\n  cells {json.dumps({k: round(v, 3) for k, v in e['means'].items()})}  -> {verdict}")
+        say(f"  licensing: obscure-unknown rate {ou:.3f} -> " + ("reported as a permissive-prompt result" if measured and ou >= 0.25
+                                                               else "cannot be estimated even when permitted"))
+    (R3 / "e12_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
+
+
+# ------------------------------------------------------------------ E11
+def e11():
+    say("E11: name-cue control (PREREG e11_name_cue_control.md, sha f716d396); pseudo-names with two interior letters swapped "
+        "and one vowel changed; cue-recoverable (primary) = greedy correct for >= 2 of 3 pseudo-names; cue-known (secondary) = "
+        "the original labelling rule calls it known for >= 2 of 3")
+    X = pd.DataFrame(read_jsonl(R3 / "e11_namecue.jsonl"))
+    unt = set(X[X.variant == -1].key)
+    T = X[X.variant >= 0]
+    agg = T.groupby("key").agg(arm=("arm", "first"), prop=("prop", "first"), n=("variant", "nunique"),
+                               g=("greedy_ok", "sum"), k=("slick", lambda v: int((v == "HighlyKnown").sum()))).reset_index()
+    agg = agg[agg.n == 3]
+    rec = set(agg[agg.g >= 2].key)
+    kn = set(agg[agg.k >= 2].key)
+    say(f"known items probed {len(agg)} (untestable {len(unt)}); cue-recoverable {len(rec)}; cue-known (strict) {len(kn)}")
+    for a, nm in (("uncertain", "obscure"), ("control", "popular")):
+        g = agg[agg.arm == a]
+        say(f"  {nm} known: {len(g)} probed; cue-recoverable {int((g.g >= 2).sum())} ({(g.g >= 2).mean():.2f}); cue-known {int((g.k >= 2).sum())}")
+    say("  cue-recoverable share by relation (obscure known): " + "  ".join(
+        f"{p} {int((gg.g >= 2).sum())}/{len(gg)}" for p, gg in agg[agg.arm == "uncertain"].groupby("prop")))
+    items = {r["key"]: r for r in read_jsonl(REPO_ROOT / "results/hedge_measure_v2/items_llama.jsonl")}
+    rates = pd.read_csv(REPO_ROOT / "results/hedge_measure_v2/item_rates.csv").query("model == 'llama'")[["key", "prim"]]
+    rates["arm"] = [items[k]["arm"] for k in rates.key]
+    rates["know"] = [items[k]["slick"] for k in rates.key]
+    rates["prop"] = [k.split("::")[0] for k in rates.key]
+    ok = rates[(rates.arm == "uncertain") & (rates.know == "HighlyKnown")]
+    say(f"  obscure known abstention: cue-recoverable {ok[ok.key.isin(rec)].prim.mean():.3f} (n {int(ok.key.isin(rec).sum())}); "
+        f"other {ok[~ok.key.isin(rec)].prim.mean():.3f} (n {int((~ok.key.isin(rec)).sum())})")
+
+    def pref(df):
+        m = {c: df[(df.arm == c[0]) & (df.know == c[1])].prim.mean() for c in CELLS}
+        return m["uncertain", "HighlyKnown"] - m["control", "Unknown"]
+
+    for tag, drop in (("primary (drop cue-recoverable)", rec), ("secondary (drop cue-known)", kn)):
+        D = rates[~((rates.know == "HighlyKnown") & rates.key.isin(drop))]
+        e, n = effects(D, "prim")
+        r = np.random.default_rng(0)
+        props = D.prop.unique()
+        bs = []
+        for _ in range(5000):
+            dd = pd.concat([D[D.prop == p] for p in r.choice(props, len(props))])
+            if all(((dd.arm == c[0]) & (dd.know == c[1])).any() for c in CELLS):
+                bs.append(pref(dd))
+        lo, hi = np.percentile(bs, [2.5, 97.5])
+        n_ok = n["unc/High"]
+        left = D[(D.arm == "uncertain") & (D.know == "HighlyKnown")].prop.value_counts().to_dict()
+        say(f"  {tag}: n {n}\n    {fmt(e)}\n    cells {json.dumps({k: round(v, 3) for k, v in e['means'].items()})}\n"
+            f"    relation-clustered bootstrap [{lo:+.3f}, {hi:+.3f}]; remaining obscure known by relation {left}")
+        if tag.startswith("primary"):
+            v = ("UNDERPOWERED" if n_ok < 20 else ("SURVIVES NAME-CUE CONTROL" if e["diff"][0] > 0 and e["diff"][1] > 0 else "DOES NOT SURVIVE"))
+            say(f"  T11 verdict: {v}")
+    (R3 / "e11_summary.txt").write_text("\n".join(LINES) + "\n", encoding="utf-8")
+
+
 if __name__ == "__main__":
-    {"e1": e1, "e2": e2, "e3": e3, "e4": e4, "e5": e5, "e6": e6, "e7": e7, "e8": e8, "e9": e9, "e10": e10}[_sys.argv[1]]()
+    {"e1": e1, "e2": e2, "e3": e3, "e4": e4, "e5": e5, "e6": e6, "e7": e7, "e8": e8, "e9": e9, "e10": e10, "e11": e11, "e12": e12}[_sys.argv[1]]()
