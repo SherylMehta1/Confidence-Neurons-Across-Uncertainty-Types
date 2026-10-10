@@ -1,0 +1,24 @@
+## check_numbers
+check_numbers report for tex/main.tex
+files scanned: main.tex
+literal numbers found: 18 (prose 9, caption 3, table 4, inline math 2)
+macros defined in numbers file: 146; used in the paper: 83 (100 uses)
+literals whose value equals an existing macro: 0
+results scan: 897 files, 81.8 MB, 19 skipped (>2 MB), 5.9s
+specific literals (2+ decimals, 1 decimal >= 10 or in a table, e-notation, or >= 100) checked: 3; found in some result file: 3; not found: 0
+  a value found in many files is weak evidence; derived values may legitimately be absent
+paper lines whose numbers no single result file supports together: 0
+
+literal numbers (file:line  where  token  hint  context):
+main.tex:40  prose       16  | ge labels.} We use PopQA questions from 16 relations. Within each relation, subjec
+
+## verify_citations (offline)
+koriat2001cascade            offline-only L227  The combined contributions of the cue-familiarity and access
+lindsey2025biology           offline-only L229  On the Biology of a Large Language Model
+wrote review/round1/CITATION_REPORT.md
+
+## prose_gate --academic
+prose_gate: tex/main.tex  (latex, academic mode)
+words 1696 | paragraphs 24 | sentences 80 | sentence length mean 21.2, SD 10.8, CV 0.51
+findings: 4 (advisory)  M10 passive 2 | M11 reader load 1 | M12 number density 1
+

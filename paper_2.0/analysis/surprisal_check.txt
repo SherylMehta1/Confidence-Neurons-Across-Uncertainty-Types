@@ -1,0 +1,5 @@
+all pool items n=2673: Spearman(surprisal, log page views) -0.001
+  within obscure arm n=1351: Spearman +0.083; mean surprisal 6.97
+  within popular arm n=1322: Spearman +0.036; mean surprisal 6.85
+labelled (regex model) n=2303: point-biserial(surprisal, obscure arm) +0.018; Spearman(surprisal, log page views) +0.007
+partial correlation(surprisal, obscure | relation, unknown) n=2303: -0.059; correlation(surprisal, unknown) +0.088

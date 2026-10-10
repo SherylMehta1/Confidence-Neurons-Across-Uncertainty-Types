@@ -1,0 +1,13 @@
+(1) popularity-minus-knowledge contrast, two judges
+  all items: +0.300 [+0.204, +0.398]  n {'unc/Unkn': 100, 'unc/High': 87, 'con/Unkn': 100, 'con/High': 100}  means {'unc/Unkn': 0.477, 'unc/High': 0.433, 'con/Unkn': 0.133, 'con/High': 0.0}
+  drop unknown questions with a gold alias in any free reply (both unknown cells): +0.189 [+0.069, +0.307]  n {'unc/Unkn': 99, 'unc/High': 87, 'con/Unkn': 52, 'con/High': 100}  means {'unc/Unkn': 0.481, 'unc/High': 0.433, 'con/Unkn': 0.244, 'con/High': 0.0}
+  drop such questions from popular-unknown only (worst case): +0.189 [+0.068, +0.308]  n {'unc/Unkn': 100, 'unc/High': 87, 'con/Unkn': 52, 'con/High': 100}  means {'unc/Unkn': 0.477, 'unc/High': 0.433, 'con/Unkn': 0.244, 'con/High': 0.0}
+  share of unknown questions with a gold alias in any free reply: unc 0.01  con 0.48
+(2) labels under both (n=253): agreement 0.913, Cohen's kappa 0.788
+    cross-tab:
+      para         HighlyKnown  Unknown
+      slick                            
+      HighlyKnown           62       15
+      Unknown                7      169
+    contrast on items where both labellings agree: +0.314 [+0.147, +0.480]  n {'unc/Unkn': 99, 'unc/High': 27, 'con/Unkn': 70, 'con/High': 35}  means {'unc/Unkn': 0.471, 'unc/High': 0.457, 'con/Unkn': 0.143, 'con/High': 0.0}
+(3) share of both-judges-DONT_KNOW replies containing a gold alias (subject-name echoes excluded): unc/Unkn 0.00 (n=143)  unc/High 0.00 (n=113)  con/Unkn 0.03 (n=40)  con/High nan (n=0)

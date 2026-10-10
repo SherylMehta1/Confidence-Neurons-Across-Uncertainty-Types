@@ -1,0 +1,32 @@
+         pair            subset       readout    n    rho     lo     hi  perm_p  rho_obscure  rho_popular
+   llama-qwen               all hedge_logodds 2097 +0.507 +0.475 +0.538  +0.000       +0.162       +0.396
+   llama-qwen               all    hedge_rate 2097 +0.367 +0.335 +0.397  +0.000       +0.178       +0.287
+   llama-qwen               all       entropy 2097 +0.318 +0.277 +0.360  +0.000       +0.314       +0.215
+   llama-qwen    same knowledge hedge_logodds 1784 +0.503 +0.469 +0.536  +0.000       +0.155       +0.493
+   llama-qwen    same knowledge    hedge_rate 1784 +0.332 +0.300 +0.366  +0.000       +0.173       +0.281
+   llama-qwen    same knowledge       entropy 1784 +0.458 +0.418 +0.497  +0.000       +0.305       +0.445
+   llama-qwen knowledge differs hedge_logodds  313 +0.108 -0.001 +0.215  +0.068       -0.014       +0.112
+   llama-qwen knowledge differs    hedge_rate  313 +0.495 +0.349 +0.621  +0.000       +0.383       +0.315
+   llama-qwen knowledge differs       entropy  313 -0.174 -0.278 -0.069  +0.560       +0.017       -0.152
+  llama-gemma               all hedge_logodds 2037 +0.378 +0.345 +0.410  +0.000       +0.112       +0.094
+  llama-gemma               all    hedge_rate 2037 +0.378 +0.349 +0.405  +0.000       +0.252       +0.287
+  llama-gemma               all       entropy 2037 +0.537 +0.506 +0.566  +0.000       +0.027       +0.693
+  llama-gemma    same knowledge hedge_logodds 1977 +0.376 +0.343 +0.409  +0.000       +0.117       +0.089
+  llama-gemma    same knowledge    hedge_rate 1977 +0.377 +0.349 +0.405  +0.000       +0.252       +0.306
+  llama-gemma    same knowledge       entropy 1977 +0.541 +0.510 +0.570  +0.000       +0.019       +0.708
+  llama-gemma knowledge differs hedge_logodds   60 +0.384 +0.133 +0.603  +0.046       +0.636       +0.246
+  llama-gemma knowledge differs    hedge_rate   60 +0.369 +0.187 +0.538  +0.079       +0.135          NaN
+  llama-gemma knowledge differs       entropy   60 +0.033 -0.235 +0.278  +0.756       +0.370       +0.047
+llama-mistral               all hedge_logodds 2108 +0.637 +0.611 +0.662  +0.000       +0.347       +0.417
+llama-mistral               all    hedge_rate 2108 +0.479 +0.449 +0.509  +0.000       +0.294       +0.294
+llama-mistral               all       entropy 2108 +0.666 +0.640 +0.691  +0.000       +0.406       +0.638
+llama-mistral    same knowledge hedge_logodds 2000 +0.640 +0.612 +0.665  +0.000       +0.342       +0.453
+llama-mistral    same knowledge    hedge_rate 2000 +0.477 +0.447 +0.507  +0.000       +0.299       +0.325
+llama-mistral    same knowledge       entropy 2000 +0.687 +0.662 +0.711  +0.000       +0.410       +0.683
+llama-mistral knowledge differs hedge_logodds  108 +0.247 +0.058 +0.425  +0.033       +0.168       +0.146
+llama-mistral knowledge differs    hedge_rate  108 +0.255 +0.006 +0.476  +0.084       -0.092       -0.071
+llama-mistral knowledge differs       entropy  108 -0.075 -0.267 +0.124  +0.407       -0.026       -0.053
+
+llama-qwen: knowledge-differs n=313  rho(hedge_logodds) +0.11 [-0.00,+0.22]  rho(entropy) -0.17 [-0.28,-0.07]  Delta +0.28 [+0.14,+0.42]  -> NOT SUPPORTED
+llama-gemma: knowledge-differs n=60  rho(hedge_logodds) +0.38 [+0.13,+0.60]  rho(entropy) +0.03 [-0.24,+0.28]  Delta +0.35 [-0.03,+0.74]  -> NOT SUPPORTED
+llama-mistral: knowledge-differs n=108  rho(hedge_logodds) +0.25 [+0.06,+0.42]  rho(entropy) -0.07 [-0.27,+0.12]  Delta +0.32 [+0.06,+0.57]  -> PREDICTION HOLDS

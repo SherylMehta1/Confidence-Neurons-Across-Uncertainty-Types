@@ -1,0 +1,14 @@
+(1) known arm, Llama
+  obscure known forced-answer entropy 0.951 [0.828, 1.080]
+  popular known forced-answer entropy 0.858 [0.801, 0.915]
+  obscure known two-judge abstention 0.433 [0.352, 0.513]
+  popular known two-judge abstention 0.000 [0.000, 0.000]
+(2) judges on Llama
+  two-judge kappa(DONT_KNOW) 0.619 [0.568, 0.668] over 1161 replies with all three labels
+  agreement with the three-judge majority: qwen32b 0.983  gemma27b 0.842  llama70b 0.996
+(3) counts
+  pool uncertain: HighlyKnown 87  Maybe 85  Unknown 1179
+  387-sample uncertain: HighlyKnown 87  Unknown 100
+  pool control: HighlyKnown 676  Maybe 285  Unknown 361
+  387-sample control: HighlyKnown 100  Unknown 100
+  steering EVAL questions 150; also in the 387-question sample 21

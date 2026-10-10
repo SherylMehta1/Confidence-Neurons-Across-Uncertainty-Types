@@ -1,0 +1,10 @@
+items with homonym counts and entity knowledge: 384
+  popular  HighlyKnown n 100  median homonyms 11  share with >= 2 0.80  abstention 0.000
+  popular  Unknown     n 100  median homonyms 13  share with >= 2 0.82  abstention 0.133
+  obscure  HighlyKnown n  84  median homonyms 1  share with >= 2 0.13  abstention 0.429
+  obscure  Unknown     n 100  median homonyms 5  share with >= 2 0.61  abstention 0.477
+  LPM obscure +0.355 [+0.286,+0.426]  unknown +0.136 [+0.070,+0.199]
+  LPM obscure +0.340 [+0.267,+0.412]  unknown +0.140 [+0.075,+0.203]  log_hom_z -0.027 [-0.060,+0.007]
+  LPM obscure +0.306 [+0.228,+0.385]  unknown +0.122 [+0.055,+0.185]  log_hom_z -0.039 [-0.076,-0.002]  ek_z -0.040 [-0.072,-0.005]
+within obscure items (n=184): abstention when the model identified the entity in >= 4 of 6 completions 0.443 (n=82) vs otherwise 0.464 (n=102)
+obscure known only (n=84): identified 0.427 (n=71) vs not 0.436 (n=13); single-homonym items 0.434 (n=73)

@@ -1,0 +1,800 @@
+    In Llama, Saying "I Don't Know" Tracks
+    Entity Popularity More Than Knowledge
+
+    Anonymous Author(s)
+             Affiliation
+               Address
+                email
+
+    Abstract
+
+1   When a language model answers a factual question with "I don't know",
+
+2   is it reporting uncertainty about the answer? We cross entity popularity
+
+3   in PopQA with knowledge labels taken from the model's own sampled
+
+4   answers. In Llama-3.1-8B-Instruct, abstention follows popularity more than
+
+5   knowledge: about obscure entities the model says "I don't know" in 0.43 of
+
+6   replies even for facts it answers correctly when made to answer, against 0.00
+
+7   for popular entities. This holds with knowledge relabelled from a different
+
+8   prompt, with a third judge, without guessable answers, and controlling
+
+9   for what the model knows about the entity. First-token answer entropy
+
+10  instead follows knowledge, in four model families and under the independent
+
+11  labels; within one prompt, the first token's lean towards "I don't know"
+
+12  follows popularity while its entropy follows knowledge. Mechanistic tests
+
+13  narrow the picture: steering along an obscure-minus-popular direction adds
+
+14  little abstention, and only through its abstention component; base models'
+
+15  decoded hedge readout responds to popularity but as much to knowledge.
+
+16  Gemma-2-9B, the only other family whose abstention we could measure,
+
+17  shows no popularity preference.
+
+1 18 Introduction
+
+19 A model that says "I don't know" when it lacks a fact avoids the worst hallucinations [Kalai
+20 et al., 2025]. Confidence estimates usually read uncertainty over answers [Kadavath et al.,
+21 2022, Kuhn et al., 2023, Stolfo et al., 2024], and models use such confidence when the prompt
+22 invites them to abstain [Kumaran et al., 2026]. Verbal and answer-level uncertainty are
+23 known to diverge [Ji et al., 2025]; what each follows, and whether different models follow the
+24 same variable, is less clear.
+
+25 People's sense that they can answer a question follows how familiar its terms are, not whether
+26 the answer is stored [Reder and Ritter, 1992, Schwartz and Metcalfe, 1992]. In language
+27 models, "known entity" features suppress a default "can't answer" response, and Lindsey
+28 et al. [2025] propose that a familiar name can trigger them without the fact. Tests of this
+29 idea define an entity as known when the model answers about it correctly [Ferrando et al.,
+30 2025], so familiarity and knowledge move together.
+
+31 We separate them. From PopQA [Mallen et al., 2023] we take questions about obscure and
+32 popular entities and label each known or unknown from the model's own answers [Gekhman
+33 et al., 2024]. The deciding observation is the cell where the two disagree: facts about obscure
+34 entities that the model answers correctly every time it is made to answer. Our contribution is
+35 this factorial test of the misfire idea, its robustness checks, and a comparison across families
+
+      Submitted to 40th Conference on Neural Information Processing Systems (NeurIPS 2026). Do not distribute.
+       aP(says "I don't know")                                   4b                     c
+                                          answer entropy (nats)
+    1.0       known                                                                                   popularity knowledge
+    0.5       unknown
+                                                                                        Llama-3.1-8B
+
+                                                                 2                      Mistral-7B
+
+                                                                                        Qwen2.5-7B
+
+    0.0                                                          0                        Gemma-2-9B  0  1  2
+           obscure popular                                           obscure  popular
+
+           entity popularity                                         entity popularity                entropy effect (nats)
+
+    Figure 1: In Llama, saying "I don't know" follows popularity, while answer
+    uncertainty follows knowledge. (a) Llama-3.1-8B-Instruct: share of free replies both
+    judges label "I don't know" (n = 387 questions, 3 replies each; obscure known n = 87). (b)
+    Its first-token entropy under the forced-answer prompt (n = 2,303). (c) Popularity and
+    knowledge effects on that entropy in four families. Means with 95% item-bootstrap intervals.
+
+36 of what abstention and answer uncertainty follow (Sections 3.1 and 3.2); steering and lens
+37 analyses then narrow the mechanistic reading (Section 3.3).
+
+2 38 Setup
+
+39 Questions and labels. We use the 16 relations of PopQA. Within each relation, subjects
+40 in the bottom and top deciles of Wikipedia page views form the obscure and popular arms;
+41 page-view popularity is a proxy for familiarity, and we report it as popularity. For each model,
+42 a greedy answer and ten samples (T = 0.7) under a forced-answer prompt (the chat template
+43 plus the assistant prefix "The answer is") are graded against gold aliases: a fact is known if
+44 the greedy answer and at least 90% of samples are correct and unknown if none is; the rest
+45 are dropped. This leaves 2,303, 2,392, 2,282 and 2,378 questions for Llama-3.1-8B-Instruct,
+46 Qwen2.5-7B-Instruct, Gemma-2-9B-it and Mistral-7B-Instruct-v0.3 [Grattafiori et al., 2024,
+47 Qwen et al., 2024, Team et al., 2024, Jiang et al., 2023].
+
+48 Two readouts. Answer uncertainty is the first-token entropy under the forced-answer
+49 prompt, whose next token starts an answer. Because the knowledge labels are sampled from
+50 the same distribution, entropy is expected to follow knowledge, so we also relabel knowledge
+51 from an independent prompt (Section 3.1). Abstention needs the option to decline, so it is
+52 measured with a free prompt, the chat template alone: for up to 100 questions per popularity
+53 × knowledge cell (387 in total) we draw three replies (T = 0.7, up to 96 tokens). Two
+54 LLM judges (Qwen2.5-32B-Instruct, Gemma-2-27B-it) label each reply DONT_KNOW,
+55 CLARIFY (asks which entity is meant) or ANSWER, and a reply abstains when both say
+56 DONT_KNOW. On Llama the judges agree at  = 0.62, above a pre-set bar of 0.60; on the
+57 other families they do not (Section 3.2). No human validated the judges.
+
+58 Effects. The popularity effect is the obscure-minus-popular difference in a readout averaged
+59 over the two knowledge levels, and the knowledge effect the unknown-minus-known difference
+60 averaged over popularity, with 95% item-bootstrap intervals. Confirmatory analyses followed
+61 criterion notes hashed before each run (Appendix H); the rest are post hoc.
+
+3 62 Results
+
+63 3.1 In Llama, abstention follows popularity; answer uncertainty follows
+
+64  knowledge
+
+65 About obscure entities, Llama says "I don't know" in 0.43 of replies to questions it answers
+66 correctly when made to answer, against 0.00 about popular entities (Figure 1a), while forced-
+67 answer entropy in these two cells is nearly equal (Figure 1b). Over the whole design the
+68 popularity effect on abstention is +0.39 [+0.33, +0.45] and the knowledge effect +0.09 [+0.03,
+69 +0.15]; their difference, +0.30 [+0.20, +0.40], keeps its sign under four other measurements,
+
+                                                                              2
+         no steering          unknown-known                                         obscure-popular
+         5 random directions  abstain-answer                                        obscure-popular, abstention part removed
+
+   a                                                                                b
+
+0.2                                                                                 1
+
+0.1
+P(says "I don't know")
+                                                                    entropy (nats)0.00
+
+     Llama-3.1-8B-Instruct Gemma-2-9B-it                                               Llama-3.1-8B-Instruct Gemma-2-9B-it
+     (dose 1×)                (dose 4×)                                                (dose 1×)  (dose 4×)
+
+Figure 2: Steering along the obscure-minus-popular direction adds little abstention
+beyond a generic abstention direction. (a) Share of free replies both judges label "I
+don't know" on 150 popular questions each model knows, held out from fitting and from
+choosing the dose; dots: individual random directions. (b) First-token entropy under the
+forced-answer prompt. Error bars: 95% bootstrap over questions.
+
+70 which range from +0.13 to +0.44 (Appendix A). Answer entropy shows the reverse: it rises
+71 by +2.14 nats when Llama lacks the fact and by +0.51 when the entity is obscure, and in all
+72 four families the knowledge effect is at least four times the popularity effect (Figure 1c).
+
+73 Five checks, fixed in advance unless stated, address the labels and the measurement. In-
+74 dependent labels: relabelling knowledge with a paraphrased question and a different prefix,
+75 the popularity effect on abstention is +0.38 against +0.06 for knowledge (difference +0.32
+76 [+0.16, +0.49]; obscure known 0.46, n = 27), and entropy still follows knowledge (knowledge
+77 minus popularity +1.40 [+1.02, +1.73]). Third judge: adding Llama-3.3-70B and counting a
+78 reply as abstaining when two of three judges agree raises agreement to  = 0.74 and gives a
+79 difference of +0.44 [+0.32, +0.55]. Entity knowledge: Llama correctly says what the entity
+80 is for 0.83 of obscure known facts (popular: 0.75); this entity-level knowledge tracks page
+81 views ( =+0.52) yet, as a covariate, shrinks the popularity effect by only 5% (+0.34 [+0.27,
+82 +0.41]). Guessable answers (post hoc; Mallen et al., 2023): without them the difference
+83 stays +0.30 [+0.19, +0.41]. One prompt (descriptive): at the free prompt itself, the log-odds
+84 that the first token is "I" follow popularity (+8.4 against +3.1) while its entropy follows
+85 knowledge (+0.16 against +0.05), so the split does not depend on comparing two prompts.
+86 The pattern matches the cue-familiarity account of human feelings of knowing [Reder and
+87 Ritter, 1992, Schwartz and Metcalfe, 1992], though page views are not the model's own
+88 familiarity: name surprisal under the model did not even correlate with them (Appendix F).
+
+89 3.2 Across families: shared answer uncertainty, different abstention
+
+90 The entropy pattern recurs in all four families (Figure 1c); abstention does not. Qwen,
+91 Gemma and Mistral rarely say "I don't know" and the two judges disagree on them; with a
+92 third judge, Gemma reaches  = 0.64 but its abstention shows no preference for popularity
+93 over knowledge (difference +0.01 [-0.03, +0.06]; at most 0.11 even for obscure, unknown
+94 facts), while Qwen ( = 0.41) and Mistral ( = 0.54) remain unmeasured (Appendix B).
+95 The popularity preference is thus Llama's, not general.
+
+96 3.3 Mechanistic tests narrow the reading
+
+97 Steering. Earlier work steers refusal along recognition directions [Ferrando et al., 2025,
+98 Brzezinka, 2026]. We fitted obscure-minus-popular, unknown-minus-known and abstain-
+99 minus-answer directions on half of the questions [Arditi et al., 2024, Rimsky et al., 2024],
+100 chose the dose on a second set and scored a third with both judges (Appendix C). The
+101 obscure-minus-popular direction raised Llama's abstention from 0.01 to 0.10 (+0.09 [+0.06,
+102 +0.12] over random directions, short of the 0.10 bar fixed in advance; +0.17 with a majority
+103 of three judges) and Gemma's from 0.00 to 0.04 at 4× its natural norm (Figure 2a). In
+104 Llama this direction is nearly parallel to the abstention direction (cosine 0.95), and with
+105 that component removed it adds +0.01 [-0.00, +0.02] (+0.02 with three judges; Gemma
+
+                                                                 3
+                   popularity effect (obscure - popular)  knowledge effect (unknown - known)
+
+                a                                          b
+
+Llama-3.1-8B
+Gemma-2-9B
+Gemma-2-2B
+
+   OLMo-3-7B
+
+    -0.25 0.00 0.25 0.50 0.75                             0.0  0.2  0.4  0.6
+effect on full readout (hedge - answer)
+                                                          effect on hedge-token term alone
+       (log-odds, mid-depth window)                         (log-odds, mid-depth window)
+
+Figure 3: In base models, the decoded hedge readout responds to popularity, and
+about as much to knowledge. Jacobian-lens readout at the last position of "Question:
+. . . Answer: The answer is", averaged over the pre-set mid-depth window, for four base
+models: (a) log-odds of hedge tokens against the answer token; (b) the hedge-token term
+alone. Points: popularity and knowledge effects with 95% item-bootstrap intervals. Lenses
+are fitted per model, so magnitudes are not comparable across models.
+
+106 in Appendix C). Steering thus moves a generic abstention signal rather than isolating a
+107 familiarity cause [cf. Che and Li, 2026]. Only entropy separates the directions, and only in
+108 Gemma: unknown-minus-known raises it +0.66 [+0.58, +0.74] nats more (Figure 2b).
+
+109 Base models. The Jacobian lens maps a layer's activations to scores over output tokens
+110 [Gurnee et al., 2026]; with its prefitted lenses we read a fixed set of hedge tokens against
+111 the answer token in four base models of three families, at a forced-answer position. In the
+112 mid-depth window fixed before the run, the obscure-minus-popular effect is positive in all
+113 four models, and it sits in the hedge-token term itself rather than only in how rare the
+114 answer token is (Figure 3b; all four intervals exclude zero). But the knowledge effect on
+115 that term is about as large (Figure 3b), and on the full readout OLMo's knowledge effect
+116 is negative (Figure 3a; Appendix D). A popularity-sensitive hedge signal thus exists before
+117 instruction tuning, while Llama-Instruct's preference for popularity over knowledge is not
+118 seen in base models. The human-memory prediction that familiarity acts at a shallower
+119 depth than knowledge [Koriat and Levy-Sadot, 2001] failed (1 supporting, 1 contradicting, 6
+120 undecided of eight models; Appendix D).
+
+4 121 Related work
+
+122 Entity-recognition features that gate refusal carry over from base to chat models [Ferrando
+123 et al., 2025]; Lindsey et al. [2025] describe the misfire hypothesis we test. Brzezinka [2026]
+124 separates graded familiarity probes from the abstention policy, without a knowledge axis.
+125 Models threshold internal confidence when abstention is offered in a multiple-choice prompt
+126 [Kumaran et al., 2026]; ours is uninstructed and free-form. Confidence also tracks how
+127 popular an answer is [Ni et al., 2025], and verbal and semantic uncertainty diverge [Ji et al.,
+128 2025]; we add what each follows, and that it differs across families.
+
+5 129 Limitations and conclusion
+
+130 Abstention is judged by LLMs not validated against human labels, and the popularity
+131 preference is shown for one model; Gemma lacks it. Popularity is a page-view proxy, models
+132 have 2­9B parameters, and questions are single-entity PopQA questions. Neither steering
+133 nor the lens isolates a familiarity cause.
+
+134 In Llama, answer uncertainty follows knowledge and abstention follows popularity, so
+135 predicting abstention from answer uncertainty misses its main driver; calibration work
+136 should measure both. That only the first holds in every family suggests the two are shaped
+137 separately.
+
+                                                                 4
+138 References
+
+139 Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes Gurnee,
+140 and Neel Nanda. Refusal in language models is mediated by a single direction. In
+141 Advances in Neural Information Processing Systems 37, NeurIPS 2024, page 136037­136083.
+142 Neural Information Processing Systems Foundation, Inc. (NeurIPS), 2024. doi: 10.52202/
+143 079017-4322. URL http://dx.doi.org/10.52202/079017-4322.
+
+144 Grzegorz Brzezinka. Graded entity-familiarity readouts in language models: Polish adap-
+145 tation, cross-language robustness, and refusal steering, 2026. URL https://arxiv.org/
+146 abs/2607.13568.
+
+147 Tong Che and Yilong Li. Does the model use the feature? separating steering from mechanism
+148 in llms, 2026. URL https://arxiv.org/abs/2610.07270.
+
+149 Javier Ferrando, Oscar Obeso, Senthooran Rajamanoharan, and Neel Nanda. Do i know
+150 this entity? knowledge awareness and hallucinations in language models, 2025. URL
+151 https://openreview.net/forum?id=WCRQFlji2q.
+
+152 Zorik Gekhman, Gal Yona, Roee Aharoni, Matan Eyal, Amir Feder, Roi Reichart, and
+153 Jonathan Herzig. Does fine-tuning llms on new knowledge encourage hallucinations? In
+154 Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing,
+155 page 7765­7784. Association for Computational Linguistics, 2024. doi: 10.18653/v1/2024.
+156 emnlp-main.444. URL http://dx.doi.org/10.18653/v1/2024.emnlp-main.444.
+
+157 Aaron Grattafiori, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian,
+158 Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan Schelten, Alex Vaughan, Amy Yang,
+159 Angela Fan, Anirudh Goyal, Anthony Hartshorn, Aobo Yang, Archi Mitra, Archie Sra-
+160 vankumar, Artem Korenev, Arthur Hinsvark, Arun Rao, Aston Zhang, Aurelien Rodriguez,
+161 Austen Gregerson, Ava Spataru, Baptiste Roziere, Bethany Biron, Binh Tang, Bobbie
+162 Chern, Charlotte Caucheteux, Chaya Nayak, Chloe Bi, Chris Marra, Chris McConnell,
+163 Christian Keller, Christophe Touret, Chunyang Wu, Corinne Wong, Cristian Canton Ferrer,
+164 Cyrus Nikolaidis, Damien Allonsius, Daniel Song, Danielle Pintz, Danny Livshits, Danny
+165 Wyatt, David Esiobu, Dhruv Choudhary, Dhruv Mahajan, Diego Garcia-Olano, Diego
+166 Perino, Dieuwke Hupkes, Egor Lakomkin, Ehab AlBadawy, Elina Lobanova, Emily Dinan,
+167 Eric Michael Smith, Filip Radenovic, Francisco Guzmán, Frank Zhang, Gabriel Synnaeve,
+168 Gabrielle Lee, Georgia Lewis Anderson, Govind Thattai, Graeme Nail, Gregoire Mialon,
+169 Guan Pang, Guillem Cucurell, Hailey Nguyen, Hannah Korevaar, Hu Xu, Hugo Touvron,
+170 Iliyan Zarov, Imanol Arrieta Ibarra, Isabel Kloumann, Ishan Misra, Ivan Evtimov, Jack
+171 Zhang, Jade Copet, Jaewon Lee, Jan Geffert, Jana Vranes, Jason Park, Jay Mahadeokar,
+172 Jeet Shah, Jelmer van der Linde, Jennifer Billock, Jenny Hong, Jenya Lee, Jeremy Fu,
+173 Jianfeng Chi, Jianyu Huang, Jiawen Liu, Jie Wang, Jiecao Yu, Joanna Bitton, Joe Spisak,
+174 Jongsoo Park, Joseph Rocca, Joshua Johnstun, Joshua Saxe, Junteng Jia, Kalyan Vasuden
+175 Alwala, Karthik Prasad, Kartikeya Upasani, Kate Plawiak, Ke Li, Kenneth Heafield, Kevin
+176 Stone, Khalid El-Arini, Krithika Iyer, Kshitiz Malik, Kuenley Chiu, Kunal Bhalla, Kushal
+177 Lakhotia, Lauren Rantala-Yeary, Laurens van der Maaten, Lawrence Chen, Liang Tan, Liz
+178 Jenkins, Louis Martin, Lovish Madaan, Lubo Malo, Lukas Blecher, Lukas Landzaat, Luke
+179 de Oliveira, Madeline Muzzi, Mahesh Pasupuleti, Mannat Singh, Manohar Paluri, Marcin
+180 Kardas, Maria Tsimpoukelli, Mathew Oldham, Mathieu Rita, Maya Pavlova, Melanie
+181 Kambadur, Mike Lewis, Min Si, Mitesh Kumar Singh, Mona Hassan, Naman Goyal, Narjes
+182 Torabi, Nikolay Bashlykov, Nikolay Bogoychev, Niladri Chatterji, Ning Zhang, Olivier
+183 Duchenne, Onur Çelebi, Patrick Alrassy, Pengchuan Zhang, Pengwei Li, Petar Vasic, Peter
+184 Weng, Prajjwal Bhargava, Pratik Dubal, Praveen Krishnan, Punit Singh Koura, Puxin
+185 Xu, Qing He, Qingxiao Dong, Ragavan Srinivasan, Raj Ganapathy, Ramon Calderer,
+186 Ricardo Silveira Cabral, Robert Stojnic, Roberta Raileanu, Rohan Maheswari, Rohit
+187 Girdhar, Rohit Patel, Romain Sauvestre, Ronnie Polidoro, Roshan Sumbaly, Ross Taylor,
+188 Ruan Silva, Rui Hou, Rui Wang, Saghar Hosseini, Sahana Chennabasappa, Sanjay Singh,
+189 Sean Bell, Seohyun Sonia Kim, Sergey Edunov, Shaoliang Nie, Sharan Narang, Sharath
+190 Raparthy, Sheng Shen, Shengye Wan, Shruti Bhosale, Shun Zhang, Simon Vandenhende,
+191 Soumya Batra, Spencer Whitman, Sten Sootla, Stephane Collot, Suchin Gururangan, Syd-
+192 ney Borodinsky, Tamar Herman, Tara Fowler, Tarek Sheasha, Thomas Georgiou, Thomas
+
+                                                                 5
+193 Scialom, Tobias Speckbacher, Todor Mihaylov, Tong Xiao, Ujjwal Karn, Vedanuj Goswami,
+194 Vibhor Gupta, Vignesh Ramanathan, Viktor Kerkez, Vincent Gonguet, Virginie Do, Vish
+195 Vogeti, Vítor Albiero, Vladan Petrovic, Weiwei Chu, Wenhan Xiong, Wenyin Fu, Whitney
+196 Meers, Xavier Martinet, Xiaodong Wang, Xiaofang Wang, Xiaoqing Ellen Tan, Xide Xia,
+197 Xinfeng Xie, Xuchao Jia, Xuewei Wang, Yaelle Goldschlag, Yashesh Gaur, Yasmine Babaei,
+198 Yi Wen, Yiwen Song, Yuchen Zhang, Yue Li, Yuning Mao, Zacharie Delpierre Coudert,
+199 Zheng Yan, Zhengxing Chen, Zoe Papakipos, Aaditya Singh, Aayushi Srivastava, Abha
+200 Jain, Adam Kelsey, Adam Shajnfeld, Adithya Gangidi, Adolfo Victoria, Ahuva Goldstand,
+201 Ajay Menon, Ajay Sharma, Alex Boesenberg, Alexei Baevski, Allie Feinstein, Amanda
+202 Kallet, Amit Sangani, Amos Teo, Anam Yunus, Andrei Lupu, Andres Alvarado, Andrew
+203 Caples, Andrew Gu, Andrew Ho, Andrew Poulton, Andrew Ryan, Ankit Ramchandani,
+204 Annie Dong, Annie Franco, Anuj Goyal, Aparajita Saraf, Arkabandhu Chowdhury, Ashley
+205 Gabriel, Ashwin Bharambe, Assaf Eisenman, Azadeh Yazdan, Beau James, Ben Maurer,
+206 Benjamin Leonhardi, Bernie Huang, Beth Loyd, Beto De Paola, Bhargavi Paranjape, Bing
+207 Liu, Bo Wu, Boyu Ni, Braden Hancock, Bram Wasti, Brandon Spence, Brani Stojkovic,
+208 Brian Gamido, Britt Montalvo, Carl Parker, Carly Burton, Catalina Mejia, Ce Liu, Chang-
+209 han Wang, Changkyu Kim, Chao Zhou, Chester Hu, Ching-Hsiang Chu, Chris Cai, Chris
+210 Tindal, Christoph Feichtenhofer, Cynthia Gao, Damon Civin, Dana Beaty, Daniel Kreymer,
+211 Daniel Li, David Adkins, David Xu, Davide Testuggine, Delia David, Devi Parikh, Diana
+212 Liskovich, Didem Foss, Dingkang Wang, Duc Le, Dustin Holland, Edward Dowling, Eissa
+213 Jamil, Elaine Montgomery, Eleonora Presani, Emily Hahn, Emily Wood, Eric-Tuan Le,
+214 Erik Brinkman, Esteban Arcaute, Evan Dunbar, Evan Smothers, Fei Sun, Felix Kreuk, Feng
+215 Tian, Filippos Kokkinos, Firat Ozgenel, Francesco Caggioni, Frank Kanayet, Frank Seide,
+216 Gabriela Medina Florez, Gabriella Schwarz, Gada Badeer, Georgia Swee, Gil Halpern,
+217 Grant Herman, Grigory Sizov, Guangyi, Zhang, Guna Lakshminarayanan, Hakan Inan,
+218 Hamid Shojanazeri, Han Zou, Hannah Wang, Hanwen Zha, Haroun Habeeb, Harrison
+219 Rudolph, Helen Suk, Henry Aspegren, Hunter Goldman, Hongyuan Zhan, Ibrahim Damlaj,
+220 Igor Molybog, Igor Tufanov, Ilias Leontiadis, Irina-Elena Veliche, Itai Gat, Jake Weissman,
+221 James Geboski, James Kohli, Janice Lam, Japhet Asher, Jean-Baptiste Gaya, Jeff Mar-
+222 cus, Jeff Tang, Jennifer Chan, Jenny Zhen, Jeremy Reizenstein, Jeremy Teboul, Jessica
+223 Zhong, Jian Jin, Jingyi Yang, Joe Cummings, Jon Carvill, Jon Shepard, Jonathan McPhie,
+224 Jonathan Torres, Josh Ginsburg, Junjie Wang, Kai Wu, Kam Hou U, Karan Saxena,
+225 Kartikay Khandelwal, Katayoun Zand, Kathy Matosich, Kaushik Veeraraghavan, Kelly
+226 Michelena, Keqian Li, Kiran Jagadeesh, Kun Huang, Kunal Chawla, Kyle Huang, Lailin
+227 Chen, Lakshya Garg, Lavender A, Leandro Silva, Lee Bell, Lei Zhang, Liangpeng Guo,
+228 Licheng Yu, Liron Moshkovich, Luca Wehrstedt, Madian Khabsa, Manav Avalani, Manish
+229 Bhatt, Martynas Mankus, Matan Hasson, Matthew Lennie, Matthias Reso, Maxim Gro-
+230 shev, Maxim Naumov, Maya Lathi, Meghan Keneally, Miao Liu, Michael L. Seltzer, Michal
+231 Valko, Michelle Restrepo, Mihir Patel, Mik Vyatskov, Mikayel Samvelyan, Mike Clark,
+232 Mike Macey, Mike Wang, Miquel Jubert Hermoso, Mo Metanat, Mohammad Rastegari,
+233 Munish Bansal, Nandhini Santhanam, Natascha Parks, Natasha White, Navyata Bawa,
+234 Nayan Singhal, Nick Egebo, Nicolas Usunier, Nikhil Mehta, Nikolay Pavlovich Laptev,
+235 Ning Dong, Norman Cheng, Oleg Chernoguz, Olivia Hart, Omkar Salpekar, Ozlem Kalinli,
+236 Parkin Kent, Parth Parekh, Paul Saab, Pavan Balaji, Pedro Rittner, Philip Bontrager,
+237 Pierre Roux, Piotr Dollar, Polina Zvyagina, Prashant Ratanchandani, Pritish Yuvraj,
+238 Qian Liang, Rachad Alao, Rachel Rodriguez, Rafi Ayub, Raghotham Murthy, Raghu
+239 Nayani, Rahul Mitra, Rangaprabhu Parthasarathy, Raymond Li, Rebekkah Hogan, Robin
+240 Battey, Rocky Wang, Russ Howes, Ruty Rinott, Sachin Mehta, Sachin Siby, Sai Jayesh
+241 Bondu, Samyak Datta, Sara Chugh, Sara Hunt, Sargun Dhillon, Sasha Sidorov, Satadru
+242 Pan, Saurabh Mahajan, Saurabh Verma, Seiji Yamamoto, Sharadh Ramaswamy, Shaun
+243 Lindsay, Shaun Lindsay, Sheng Feng, Shenghao Lin, Shengxin Cindy Zha, Shishir Patil,
+244 Shiva Shankar, Shuqiang Zhang, Shuqiang Zhang, Sinong Wang, Sneha Agarwal, Soji
+245 Sajuyigbe, Soumith Chintala, Stephanie Max, Stephen Chen, Steve Kehoe, Steve Sat-
+246 terfield, Sudarshan Govindaprasad, Sumit Gupta, Summer Deng, Sungmin Cho, Sunny
+247 Virk, Suraj Subramanian, Sy Choudhury, Sydney Goldman, Tal Remez, Tamar Glaser,
+248 Tamara Best, Thilo Koehler, Thomas Robinson, Tianhe Li, Tianjun Zhang, Tim Matthews,
+249 Timothy Chou, Tzook Shaked, Varun Vontimitta, Victoria Ajayi, Victoria Montanez, Vijai
+250 Mohan, Vinay Satish Kumar, Vishal Mangla, Vlad Ionescu, Vlad Poenaru, Vlad Tiberiu
+251 Mihailescu, Vladimir Ivanov, Wei Li, Wenchen Wang, Wenwen Jiang, Wes Bouaziz, Will
+
+                                                                 6
+252 Constable, Xiaocheng Tang, Xiaojian Wu, Xiaolan Wang, Xilun Wu, Xinbo Gao, Yaniv
+253 Kleinman, Yanjun Chen, Ye Hu, Ye Jia, Ye Qi, Yenda Li, Yilin Zhang, Ying Zhang, Yossi
+254 Adi, Youngjin Nam, Yu, Wang, Yu Zhao, Yuchen Hao, Yundi Qian, Yunlu Li, Yuzi He,
+255 Zach Rait, Zachary DeVito, Zef Rosnbrick, Zhaoduo Wen, Zhenyu Yang, Zhiwei Zhao, and
+256 Zhiyu Ma. The llama 3 herd of models, 2024. URL https://arxiv.org/abs/2407.21783.
+
+257 Wes Gurnee, Theo Horsley, Zifan Carl Guo, Tara Rezaei Kheirkhah, Qinyi Sun, Will
+258 Hathaway, Neel Nanda, and Dimitris Bertsimas. Universal neurons in gpt2 language
+259 models, 2024. URL https://openreview.net/forum?id=ZeI104QZ8I.
+
+260 Wes Gurnee, Nicholas Sofroniew, Adam Pearce, Mateusz Piotrowski, Isaac Kauvar, Runjin
+261 Chen, Anna Soligo, Paul Bogdan, Euan Ong, Rowan Wang, Ben Thompson, David
+262 Abrahams, Subhash Kantamneni, Emmanuel Ameisen, Joshua Batson, and Jack Lindsey.
+263 Verbalizable representations form a global workspace in language models, 2026. URL
+264 https://arxiv.org/abs/2607.15495.
+
+265 Ziwei Ji, Lei Yu, Yeskendir Koishekenov, Yejin Bang, Anthony Hartshorn, Alan Schelten,
+266 Cheng Zhang, Pascale Fung, and Nicola Cancedda. Calibrating verbal uncertainty as
+267 a linear feature to reduce hallucinations. In Proceedings of the 2025 Conference on
+268 Empirical Methods in Natural Language Processing, page 3769­3793. Association for
+269 Computational Linguistics, 2025. doi: 10.18653/v1/2025.emnlp-main.187. URL http:
+270 //dx.doi.org/10.18653/v1/2025.emnlp-main.187.
+
+271 Albert Q. Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra Singh
+272 Chaplot, Diego de las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile
+273 Saulnier, Lélio Renard Lavaud, Marie-Anne Lachaux, Pierre Stock, Teven Le Scao, Thibaut
+274 Lavril, Thomas Wang, Timothée Lacroix, and William El Sayed. Mistral 7b, 2023. URL
+275 https://arxiv.org/abs/2310.06825.
+
+276 Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain, Ethan Perez,
+277 Nicholas Schiefer, Zac Hatfield-Dodds, Nova DasSarma, Eli Tran-Johnson, Scott Johnston,
+278 Sheer El-Showk, Andy Jones, Nelson Elhage, Tristan Hume, Anna Chen, Yuntao Bai,
+279 Sam Bowman, Stanislav Fort, Deep Ganguli, Danny Hernandez, Josh Jacobson, Jackson
+280 Kernion, Shauna Kravec, Liane Lovitt, Kamal Ndousse, Catherine Olsson, Sam Ringer,
+281 Dario Amodei, Tom Brown, Jack Clark, Nicholas Joseph, Ben Mann, Sam McCandlish,
+282 Chris Olah, and Jared Kaplan. Language models (mostly) know what they know, 2022.
+283 URL https://arxiv.org/abs/2207.05221.
+
+284 Adam Tauman Kalai, Ofir Nachum, Santosh S. Vempala, and Edwin Zhang. Why language
+285 models hallucinate, 2025. URL https://arxiv.org/abs/2509.04664.
+
+286 Asher Koriat and Ravit Levy-Sadot. The combined contributions of the cue-familiarity
+287 and accessibility heuristics to feelings of knowing. Journal of Experimental Psychology:
+288 Learning, Memory, and Cognition, 27(1):34­53, 2001. ISSN 0278-7393. doi: 10.1037/
+289 0278-7393.27.1.34. URL http://dx.doi.org/10.1037/0278-7393.27.1.34.
+
+290 Lorenz Kuhn, Yarin Gal, and Sebastian Farquhar. Semantic uncertainty: Linguistic
+291 invariances for uncertainty estimation in natural language generation, 2023. URL
+292 https://arxiv.org/abs/2302.09664.
+
+293 Dharshan Kumaran, Nathaniel Daw, Simon Osindero, Petar Velickovi, and Viorica Pa-
+294 traucean. Causal Evidence that Language Models use Confidence to Drive Behavior, 2026.
+295 URL https://arxiv.org/abs/2603.22161.
+
+296 Jack Lindsey, Wes Gurnee, Emmanuel Ameisen, Brian Chen, Adam Pearce, Nicholas L.
+297 Turner, Craig Citro, David Abrahams, Shan Carter, Basil Hosmer, Jonathan Marcus,
+298 Michael Sklar, Adly Templeton, Trenton Bricken, Callum McDougall, Hoagy Cunningham,
+299 Thomas Henighan, Adam Jermyn, Andy Jones, Andrew Persic, Zhenyi Qi, T. Ben Thomp-
+300 son, Sam Zimmerman, Kelley Rivoire, Thomas Conerly, Chris Olah, and Joshua Batson.
+301 On the Biology of a Large Language Model. Transformer Circuits Thread, 2025. URL
+302 https://transformer-circuits.pub/2025/attribution-graphs/biology.html.
+
+                                                                 7
+303 Yiqi Liu, Yang Wang, Songxin Wang, Chenghao Xiao, and Chenghua Lin. Broken symmetry
+304 in llm refusal: Answer release is more local than refusal restoration, 2026. URL https:
+305 //arxiv.org/abs/2608.15772.
+
+306 Alex Mallen, Akari Asai, Victor Zhong, Rajarshi Das, Daniel Khashabi, and Hannaneh
+307 Hajishirzi. When not to trust language models: Investigating effectiveness of parametric
+308 and non-parametric memories. In Proceedings of the 61st Annual Meeting of the Association
+309 for Computational Linguistics (Volume 1: Long Papers), page 9802­9822. Association
+310 for Computational Linguistics, 2023. doi: 10.18653/v1/2023.acl-long.546. URL http:
+311 //dx.doi.org/10.18653/v1/2023.acl-long.546.
+
+312 Vy Nguyen, Ziqi Xu, Jeffrey Chan, Estrid He, Feng Xia, Renqiang Luo, Erik Cambria, and
+313 Xiuzhen Zhang. The commit-abstain circuit: Why language models hallucinate instead of
+314 abstaining, 2026. URL https://arxiv.org/abs/2609.32964.
+
+315 Shiyu Ni, Keping Bi, Jiafeng Guo, and Xueqi Cheng. Popular but Wrong: Understanding
+316 and Mitigating LLM Overconfidence through Knowledge Popularity, 2025. URL https:
+317 //arxiv.org/abs/2505.17537. EMNLP 2026 (main conference).
+
+318 Qwen, :, An Yang, Baosong Yang, Beichen Zhang, Binyuan Hui, Bo Zheng, Bowen Yu,
+319 Chengyuan Li, Dayiheng Liu, Fei Huang, Haoran Wei, Huan Lin, Jian Yang, Jianhong Tu,
+320 Jianwei Zhang, Jianxin Yang, Jiaxi Yang, Jingren Zhou, Junyang Lin, Kai Dang, Keming
+321 Lu, Keqin Bao, Kexin Yang, Le Yu, Mei Li, Mingfeng Xue, Pei Zhang, Qin Zhu, Rui Men,
+322 Runji Lin, Tianhao Li, Tianyi Tang, Tingyu Xia, Xingzhang Ren, Xuancheng Ren, Yang
+323 Fan, Yang Su, Yichang Zhang, Yu Wan, Yuqiong Liu, Zeyu Cui, Zhenru Zhang, and Zihan
+324 Qiu. Qwen2.5 technical report, 2024. URL https://arxiv.org/abs/2412.15115.
+
+325 Lynne M. Reder and Frank E. Ritter. What determines initial feeling of knowing? familiarity
+326 with question terms, not with the answer. Journal of Experimental Psychology: Learning,
+327 Memory, and Cognition, 18(3):435­451, May 1992. ISSN 0278-7393. doi: 10.1037/
+328 0278-7393.18.3.435. URL http://dx.doi.org/10.1037/0278-7393.18.3.435.
+
+329 Nina Rimsky, Nick Gabrieli, Julian Schulz, Meg Tong, Evan Hubinger, and Alexander Turner.
+330 Steering llama 2 via contrastive activation addition. In Proceedings of the 62nd Annual
+331 Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), page
+332 15504­15522. Association for Computational Linguistics, 2024. doi: 10.18653/v1/2024.
+333 acl-long.828. URL http://dx.doi.org/10.18653/v1/2024.acl-long.828.
+
+334 Bennett L. Schwartz and Janet Metcalfe. Cue familiarity but not target retrievability enhances
+335 feeling-of-knowing judgments. Journal of Experimental Psychology: Learning, Memory,
+336 and Cognition, 18(5):1074­1083, 1992. ISSN 0278-7393. doi: 10.1037/0278-7393.18.5.1074.
+337 URL http://dx.doi.org/10.1037/0278-7393.18.5.1074.
+
+338 Alessandro Stolfo, Ben Wu, Wes Gurnee, Yonatan Belinkov, Xingyi Song, Mrinmaya Sachan,
+339 and Neel Nanda. Confidence regulation neurons in language models. In Advances in Neural
+340 Information Processing Systems 37, NeurIPS 2024, page 125019­125049. Neural Informa-
+341 tion Processing Systems Foundation, Inc. (NeurIPS), 2024. doi: 10.52202/079017-3970.
+342 URL http://dx.doi.org/10.52202/079017-3970.
+
+343 Aaquib Syed, Can Rager, and Arthur Conmy. Attribution patching outperforms automated
+344 circuit discovery. In Proceedings of the 7th BlackboxNLP Workshop: Analyzing and
+345 Interpreting Neural Networks for NLP, page 407­416. Association for Computational
+346 Linguistics, 2024. doi: 10.18653/v1/2024.blackboxnlp-1.25. URL http://dx.doi.org/
+347 10.18653/v1/2024.blackboxnlp-1.25.
+
+348 Gemma Team, Morgane Riviere, Shreya Pathak, Pier Giuseppe Sessa, Cassidy Hardin, Surya
+349 Bhupatiraju, Léonard Hussenot, Thomas Mesnard, Bobak Shahriari, Alexandre Ramé,
+350 Johan Ferret, Peter Liu, Pouya Tafti, Abe Friesen, Michelle Casbon, Sabela Ramos, Ravin
+351 Kumar, Charline Le Lan, Sammy Jerome, Anton Tsitsulin, Nino Vieillard, Piotr Stanczyk,
+352 Sertan Girgin, Nikola Momchev, Matt Hoffman, Shantanu Thakoor, Jean-Bastien Grill,
+353 Behnam Neyshabur, Olivier Bachem, Alanna Walton, Aliaksei Severyn, Alicia Parrish,
+354 Aliya Ahmad, Allen Hutchison, Alvin Abdagic, Amanda Carl, Amy Shen, Andy Brock,
+
+                                                                 8
+355 Andy Coenen, Anthony Laforge, Antonia Paterson, Ben Bastian, Bilal Piot, Bo Wu,
+356 Brandon Royal, Charlie Chen, Chintu Kumar, Chris Perry, Chris Welty, Christopher A.
+357 Choquette-Choo, Danila Sinopalnikov, David Weinberger, Dimple Vijaykumar, Dominika
+358 Rogoziska, Dustin Herbison, Elisa Bandy, Emma Wang, Eric Noland, Erica Moreira, Evan
+359 Senter, Evgenii Eltyshev, Francesco Visin, Gabriel Rasskin, Gary Wei, Glenn Cameron,
+360 Gus Martins, Hadi Hashemi, Hanna Klimczak-Pluciska, Harleen Batra, Harsh Dhand,
+361 Ivan Nardini, Jacinda Mein, Jack Zhou, James Svensson, Jeff Stanway, Jetha Chan,
+362 Jin Peng Zhou, Joana Carrasqueira, Joana Iljazi, Jocelyn Becker, Joe Fernandez, Joost van
+363 Amersfoort, Josh Gordon, Josh Lipschultz, Josh Newlan, Ju-yeong Ji, Kareem Mohamed,
+364 Kartikeya Badola, Kat Black, Katie Millican, Keelin McDonell, Kelvin Nguyen, Kiranbir
+365 Sodhia, Kish Greene, Lars Lowe Sjoesund, Lauren Usui, Laurent Sifre, Lena Heuermann,
+366 Leticia Lago, Lilly McNealus, Livio Baldini Soares, Logan Kilpatrick, Lucas Dixon, Luciano
+367 Martins, Machel Reid, Manvinder Singh, Mark Iverson, Martin Görner, Mat Velloso,
+368 Mateo Wirth, Matt Davidow, Matt Miller, Matthew Rahtz, Matthew Watson, Meg Risdal,
+369 Mehran Kazemi, Michael Moynihan, Ming Zhang, Minsuk Kahng, Minwoo Park, Mofi
+370 Rahman, Mohit Khatwani, Natalie Dao, Nenshad Bardoliwalla, Nesh Devanathan, Neta
+371 Dumai, Nilay Chauhan, Oscar Wahltinez, Pankil Botarda, Parker Barnes, Paul Barham,
+372 Paul Michel, Pengchong Jin, Petko Georgiev, Phil Culliton, Pradeep Kuppala, Ramona
+373 Comanescu, Ramona Merhej, Reena Jana, Reza Ardeshir Rokni, Rishabh Agarwal, Ryan
+374 Mullins, Samaneh Saadat, Sara Mc Carthy, Sarah Cogan, Sarah Perrin, Sébastien M. R.
+375 Arnold, Sebastian Krause, Shengyang Dai, Shruti Garg, Shruti Sheth, Sue Ronstrom,
+376 Susan Chan, Timothy Jordan, Ting Yu, Tom Eccles, Tom Hennigan, Tomas Kocisky,
+377 Tulsee Doshi, Vihan Jain, Vikas Yadav, Vilobh Meshram, Vishal Dharmadhikari, Warren
+378 Barkley, Wei Wei, Wenming Ye, Woohyun Han, Woosuk Kwon, Xiang Xu, Zhe Shen,
+379 Zhitao Gong, Zichuan Wei, Victor Cotruta, Phoebe Kirk, Anand Rao, Minh Giang,
+380 Ludovic Peran, Tris Warkentin, Eli Collins, Joelle Barral, Zoubin Ghahramani, Raia
+381 Hadsell, D. Sculley, Jeanine Banks, Anca Dragan, Slav Petrov, Oriol Vinyals, Jeff Dean,
+382 Demis Hassabis, Koray Kavukcuoglu, Clement Farabet, Elena Buchatskaya, Sebastian
+383 Borgeaud, Noah Fiedel, Armand Joulin, Kathleen Kenealy, Robert Dadashi, and Alek
+384 Andreev. Gemma 2: Improving open language models at a practical size, 2024. URL
+385 https://arxiv.org/abs/2408.00118.
+
+386 Carter Teplica, Yixin Liu, Arman Cohan, and Tim G. J. Rudner. SCIURus: Shared circuits
+387 for interpretable uncertainty representations in language models. In Luis Chiruzzo, Alan
+388 Ritter, and Lu Wang, editors, Proceedings of the 2025 Conference of the Nations of the
+389 Americas Chapter of the Association for Computational Linguistics: Human Language
+390 Technologies (Volume 1: Long Papers), pages 12451­12469, Albuquerque, New Mexico,
+391 April 2025. Association for Computational Linguistics. ISBN 979-8-89176-189-6. doi:
+392 10.18653/v1/2025.naacl-long.618. URL https://aclanthology.org/2025.naacl-long.
+393 618/.
+
+394 Kevin Wang, Alexandre Variengien, Arthur Conmy, Buck Shlegeris, and Jacob Steinhardt.
+395 Interpretability in the wild: a circuit for indirect object identification in gpt-2 small, 2023.
+396 URL https://openreview.net/forum?id=XBflsCjpUM.
+
+A 397 Robustness of the Llama abstention result
+
+398 The single corrected judge gives the smallest difference. Its 24-token replies are often cut off
+399 before the model commits; the two-judge measurement with 96 tokens was designed for that
+400 reason and made primary before it ran. The regex detector's recall on the 96-token replies,
+401 against the two-judge labels, is 0.99.
+
+402 Independent labels (criterion hashed before the run). Knowledge was relabelled with one
+403 paraphrased question per relation, the assistant prefix "Answer:" and fresh samples, under
+404 the same 90%/0% rule. Agreement with the original labels is moderate, mainly because the
+405 paraphrase moves many popular known facts to the intermediate band, which is dropped.
+406 Under the new labels, the popularity effect on abstention is +0.38 [+0.29, +0.47] and
+407 the knowledge effect +0.06 [-0.03, +0.15]; original-prompt entropy follows the new labels
+408 (knowledge minus popularity +1.40 [+1.02, +1.73]). At the free prompt, the first token's "I"
+
+                                                                 9
+     Table 1: Popularity effect minus knowledge effect on Llama's abstention under each measure-
+     ment and labelling. Positive values mean abstention follows popularity more than knowledge.
+     "Corrected": regex rates on 24-token replies corrected for the recall and precision of one LLM
+     judge (Qwen2.5-32B-Instruct), measured on a subset labelled by that judge, not by people.
+
+     Measurement                              Replies                    Popularity - knowledge
+
+     Regex detector                           20 per question, 24 to-    +0.44 [+0.34, +0.53]
+                                              kens
+     One LLM judge, corrected                 same 24-token replies      +0.13 [+0.03, +0.24]
+     Two judges, both DONT_KNOW (pri-         3 per question, 96 tokens  +0.30 [+0.20, +0.40]
+     mary)
+     Two judges, DONT_KNOW or CLAR-           same                       +0.31 [+0.21, +0.41]
+     IFY
+     Regex detector                           same                       +0.43 [+0.31, +0.55]
+     Three judges, majority (third judge      same                       +0.44 [+0.32, +0.55]
+     Llama-3.3-70B)
+     Two judges, knowledge relabelled (para-  same                       +0.32 [+0.16, +0.49]
+     phrased prompt)
+     Two judges, guessable answers removed    same                       +0.30 [+0.19, +0.41]
+     (post hoc)
+     Two judges, entity knowledge as covari-  same                       +0.34 [+0.27, +0.41]
+     ate (popularity coefficient)
+
+409 log-odds give popularity +8.4 against knowledge +3.1 (difference +5.3 [+4.4, +6.0]), and its
+410 entropy popularity +0.05 against knowledge +0.16 (difference -0.11 [-0.18, -0.03]).
+
+411 Entity knowledge (criterion hashed before the run). Llama completed "{subject} is" after the
+412 question "What is {subject}?" (greedy and five samples), and Llama-3.3-70B graded each
+413 completion against the subject's English Wikidata description; entity knowledge is the share
+414 graded correct. It averages 0.83 for obscure known facts and 0.75 for popular known facts.
+415 In a linear probability model with relation fixed effects, its coefficient is -0.03 [-0.06, +0.00]
+416 per standard deviation, and it shrinks the popularity coefficient by 5% on the two-judge
+417 measure and 3% on the regex measure.
+
+418 Guessable answers (post hoc). An answer counts as guessable if a gold alias of at least three
+419 characters appears in the subject's name, or if it is its relation's most common answer and
+420 covers at least 20% of the relation's pool. Among unknown facts alone the popularity gap in
+421 abstention is +0.34 [+0.26, +0.43], which mislabelled guesses cannot produce. On the regex
+422 measure over the 2,106 non-guessable questions the difference is +0.48 [+0.36, +0.59].
+
+423 Free replies (post hoc). In the obscure known cell, 0.53 of free replies contain a gold alias,
+424 and 0.72 of the replies that do not abstain; for 24 of 87 questions, one free reply gives the
+425 correct answer and another says "I don't know". A linear probability model of abstention
+426 with relation fixed effects gives popularity +0.29 [+0.23, +0.36], knowledge -0.05 [-0.14,
+427 +0.03] and +0.14 per standard deviation of forced-answer entropy.
+
+428 Name spelling (post hoc). Over the 2,303 labelled questions with relation fixed effects, the
+429 popularity coefficient on the regex measure moves from -1.87 to -1.79 logits per standard
+430 deviation after adding the name's word frequency, token count and token rarity. Among 55
+431 matched pairs of known facts that differ in popularity, the abstention gap of +0.76 falls to
+432 +0.43 [+0.18, +0.69] at equal surface form.
+
+B 433 Abstention and the forced-answer hedge readout in all four
+
+434  families
+
+435 Intervals for the popularity-minus-knowledge rows: three judges, Llama [+0.32, +0.55],
+436 Gemma [-0.03, +0.06]; hedge log-odds, Llama [-0.72, +0.45], Qwen [-3.41, -1.64], Gemma
+437 [+1.79, +2.42], Mistral [-0.55, +1.34]. The two judges that agree best across families
+438 are Qwen2.5-32B and Llama-3.3-70B ( = 0.96 on Llama). At the forced-answer position,
+
+                                              10
+Table 2: Judge agreement and abstention. Model-level rows: judge agreement and regex
+recall. Cell rows: abstention in the obscure, unknown cell. Bottom: effects on first-token
+hedge-versus-answer log-odds at the forced-answer position.
+
+Two judges,  (bar 0.60)                   Llama    Qwen         Gemma   Mistral
+Three judges, Fleiss  (bar 0.60)
+Regex recall against two judges            0.62     0.30          0.47    0.39
+                                           0.74     0.41          0.64    0.54
+Both judges DONT_KNOW                      0.99     0.58          0.48    0.73
+Both judges DONT_KNOW or CLARIFY
+Three judges, majority                     0.48     0.05          0.05    0.10
+Regex detector                             0.65     0.32          0.22    0.25
+                                           0.75     0.10          0.11    0.19
+Three judges: popularity - knowledge       0.85     0.18          0.07    0.21
+Hedge log-odds: popularity
+Hedge log-odds: knowledge                 +0.44       ­          +0.01      ­
+Hedge log-odds: popularity - knowledge    +2.93    +1.14         +1.79  +2.48
+                                          +3.05    +3.63         -0.32  +2.08
+                                          -0.12    -2.49         +2.11  +0.40
+
+439 Llama's hedge readout follows popularity and knowledge about equally, which is why the
+440 one-prompt check in Section 3.1 uses the free prompt.
+
+C 441 Steering details
+
+442 Criterion hashed before the run (Appendix H). Directions were fitted on a random half of
+443 each model's questions at layer round(0.55 × (L - 1)), the last position of the free prompt:
+444 obscure minus popular and unknown minus known (differences of cell means, each averaged
+445 over the other factor), and abstain minus answer (items whose stored free-generation regex
+446 abstention rate is at least 0.5 minus items with rate 0). The obscure-minus-popular direction
+447 with its abstention component projected out was rescaled to the original norm. Each direction
+448 was added at a multiple k  {0.5, 1, 2, 4, 8} of the obscure-minus-popular direction's natural
+449 norm, at the last prompt position and every generated position. k was chosen on 150 popular
+450 known questions as the smallest value at which that direction beat five random directions by
+451 0.10 in regex abstention (1× for Llama, 4× for Gemma), and all conditions were scored on
+452 150 further popular known questions with both judges.
+
+Table 3: Share of steered replies both judges label "I don't know" (regex detector in
+parentheses), 150 evaluation questions, 3 replies each.
+
+None Random Unk.-known Abstain-answer Obscure-popular . . . abstention removed
+
+Llama 0.01 (0.03) 0.008  0.04 (0.10)  0.09 (0.25)  0.10 (0.23)          0.02 (0.02)
+Gemma 0.00 (0.00) 0.003  0.04 (0.03)  0.20 (0.74)  0.04 (0.27)          0.02 (0.07)
+
+453 Obscure-minus-popular minus random: Llama +0.09 [+0.06, +0.12], Gemma +0.04 [+0.02,
+454 +0.06] (secondary scorer, a majority of three judges including Llama-3.3-70B: +0.17 [+0.13,
+455 +0.22] and +0.11 [+0.08, +0.15]; with abstention removed +0.02 [+0.00, +0.04] and +0.05
+456 [+0.03, +0.07]); with abstention removed: +0.01 [-0.00, +0.02] and +0.02 [+0.01, +0.03];
+457 obscure-minus-popular minus unknown-minus-known: +0.06 [+0.02, +0.09] and +0.00
+458 [-0.03, +0.03]. The regex detector counts far more abstentions than the judges for steered
+459 replies, so an earlier, regex-scored version of this experiment with the dose chosen on the
+460 evaluation questions (Llama 0.02 to 0.29) overstated the effect. The cosine between the
+461 obscure-minus-popular and abstention directions is 0.95 in Llama and 0.63 in Gemma; since
+462 abstaining items are mostly obscure, part of this overlap is built in. No condition produced
+463 degenerate text.
+
+D 464 Lens: window effects, onsets and the instruct models
+
+465 Criterion hashed before the run. Hedge term: log-sum-exp of the lens log-probabilities of a
+466 fixed set of hedge tokens; the full readout subtracts the same quantity for the answer tokens.
+
+                                      11
+467 Window: relative depth /(L - 1)  [1/3, 2/3]. Intervals: 2,000 within-cell item bootstraps.
+468 Base models were labelled known or unknown on their own prompt with the same sampling
+469 rule.
+
+       Table 4: Mid-depth window effects in base models, with 95% intervals.
+
+                              Full readout              Hedge term alone
+
+Model          Popularity         Knowledge             Popularity            Knowledge
+
+Llama-3.1-8B +0.67 [+0.59, +0.75] +0.36 [+0.28, +0.44] +0.55 [+0.46, +0.64] +0.56 [+0.47, +0.65]
+Gemma-2-9B +0.39 [+0.34, +0.43] +0.37 [+0.33, +0.42] +0.28 [+0.21, +0.35] +0.30 [+0.23, +0.37]
+Gemma-2-2B +0.40 [+0.33, +0.47] +0.11 [+0.04, +0.18] +0.10 [+0.03, +0.17] +0.37 [+0.30, +0.43]
+OLMo-3-7B +0.29 [+0.19, +0.38] -0.30 [-0.40, -0.20] +0.61 [+0.53, +0.70] +0.53 [+0.45, +0.62]
+
+470 The onset of an effect curve is the first layer where it reaches half its positive maximum
+471 over layers and its 95% interval excludes zero. A model supports the shallower-familiarity
+472 prediction if the knowledge onset follows the popularity onset with an interval above zero,
+473 and contradicts it if the interval lies below zero.
+
+Table 5: Lens onsets (layer index) of the popularity (F) and knowledge (K) effects, their
+difference D = K - F , the outcome, and the mid-depth popularity effect on the full readout,
+for base and instruct models.
+
+Model                         Layers F onset K onset D Outcome Mid popularity
+
+Llama-3.1-8B-Instruct 32          17                17  0 undecided           +1.58
+                                                                              +0.67
+Llama-3.1-8B                  32  16                16  0 undecided           +0.21
+                                                                              +0.71
+Qwen2.5-7B-Instruct           28  20                20  0 undecided           +0.39
+                                                                              +0.40
+Gemma-2-9B-it                 42  24                24  0 undecided           +0.40
+                                                                              +0.29
+Gemma-2-9B                    42  24                25  +1 supports
+
+Gemma-2-2B-it                 26  17                15  -2 undecided
+
+Gemma-2-2B                    26  16                16  0 undecided
+
+OLMo-3-7B                     32  19                14  -5 contradicts
+
+E 474 Cross-model agreement (exploratory)
+
+475 Spearman correlations across questions between Llama's and each other model's forced-
+476 answer hedge log-odds and first-token entropies, on questions where both models have the
+477 same knowledge label and where they differ (95% item-bootstrap intervals). The plan,
+478 including the rule that hedge agreement and the hedge-minus-entropy gap both have 95%
+479 intervals excluding zero, was written before this run, but the point estimates had been seen,
+480 so the analysis is post hoc.
+
+Questions, knowledge differs       Llama­Qwen               Llama­Gemma           Llama­Mistral
+Hedge log-odds agreement
+Entropy agreement                         313                        60                   108
+Gap (hedge - entropy)         +0.11 [-0.00, +0.22]      +0.38 [+0.13, +0.60]  +0.25 [+0.06, +0.42]
+Rule                          -0.17 [-0.28, -0.07]      +0.03 [-0.24, +0.28]  -0.07 [-0.27, +0.12]
+                              +0.28 [+0.14, +0.42]      +0.35 [-0.03, +0.74]  +0.32 [+0.06, +0.57]
+Questions, same knowledge
+Hedge log-odds agreement               not met                   not met                  met
+Entropy agreement
+                                         1,784                     1,977                 2,000
+                                        +0.50                     +0.38                 +0.64
+                                        +0.46                     +0.54                 +0.69
+
+F 481 A model-side familiarity measure (negative result)
+
+482 Criterion hashed before the run. We computed the mean per-token surprisal of each subject
+483 name under the base Llama-3.1-8B in the context "Here is a name:". It is uncorrelated with
+484 log page views (Spearman -0.001), and with knowledge and name length held fixed its
+485 coefficient on two-judge abstention is +0.013 [-0.026, +0.059] per standard deviation, so
+
+                                                                12
+486 it neither stands in for popularity nor predicts abstention. Short names made of common
+487 words ("New York" as a book title) are a likely reason.
+
+G 488 Timing, neurons and the circuit
+
+489 On matched pairs of obscure and popular questions in Llama, the lens-decoded abstention
+490 readout reaches half its final size at layer 16, while the entropy gap does so at layer 28,
+491 12 layers later; this compares two readouts of one contrast, not the onsets in Appendix D.
+492 Neurons selected for their correlation with output entropy in Llama and Qwen behaved as
+493 word-frequency and temperature neurons [Stolfo et al., 2024, Gurnee et al., 2024]. A set of
+494 20 attention heads and 100 MLP neurons found by activation patching [Wang et al., 2023,
+495 Syed et al., 2024] reproduces 0.83 [0.78, 0.87] of the first-token abstention log-odds difference
+496 between matched pairs; in generation, removing its state removes abstention in 0.98 of cases
+497 but injecting it produces abstention in only 0.40, short of a behavioural bar fixed in advance.
+498 Shared uncertainty circuits [Teplica et al., 2025], a commit-or-abstain circuit across ten
+499 models [Nguyen et al., 2026] and a similar asymmetry between releasing and restoring refusal
+500 [Liu et al., 2026] have been reported before.
+
+H 501 Analysis timing
+
+502 Each confirmatory analysis had a criterion note written before its run, stating the mea-
+503 surement, the test and the wording each outcome would license; the SHA-256 prefix of
+504 each note was recorded before the run. Four-family design: eba35dec, b53d9a27; two-judge
+505 measurement: 81acfc9f; lens study: c8e04372; circuit behaviour: 1c99afd4; independent
+506 labels: af50f53f; name surprisal: 2b69e06c; lens split: b2b916ce; steering with held-out
+507 dose: 18c74883 (amendment adding the third judge as a secondary scorer: 7bed3826); third
+508 judge: f35aa4d9; entity knowledge: 937b46e3. An earlier steering experiment (da0ad000,
+509 797f52d4) is superseded by the held-out design. The guessability, spelling, free-reply and
+510 entropy-control checks and the cross-model agreement were decided after seeing data and
+511 are post hoc.
+
+                                                                13
+

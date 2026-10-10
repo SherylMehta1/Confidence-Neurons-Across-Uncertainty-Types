@@ -1,0 +1,1 @@
+Notes for the closest and most-cited papers (9 files). All other references in ../MUST_CITE.md have notes in the axis files of C:/Users/starb/Desktop/Sher/litreview/ (A-J, 30 Sep - 5 Oct); their metadata was re-fetched on 2026-10-10 (../VERIFICATION.md).

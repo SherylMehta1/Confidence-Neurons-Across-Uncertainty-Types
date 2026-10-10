@@ -1,0 +1,21 @@
+## check_numbers
+literal numbers found: 25 (prose 14, caption 5, table 4, inline math 2)
+macros defined in numbers file: 252; used in the paper: 156 (180 uses)
+literals whose value equals an existing macro: 0
+results scan: 897 files, 81.8 MB, 19 skipped (>2 MB), 6.5s
+specific literals (2+ decimals, 1 decimal >= 10 or in a table, e-notation, or >= 100) checked: 3; found in some result file: 3; not found: 0
+  a value found in many files is weak evidence; derived values may legitimately be absent
+paper lines whose numbers no single result file supports together: 0
+
+## verify_citations offline
+verdicts: offline-only=35
+Verdicts: offline-only 35
+
+## prose_gate
+words 2237 | paragraphs 30 | sentences 98 | sentence length mean 22.8, SD 11.3, CV 0.50
+findings: 2 (advisory)  M5 stacked hedges 1 | M11 reader load 1
+FINDINGS
+  -- M5 stacked hedges
+     L42 [Setup] stacked hedges (appears, may); keep each only if it qualifies a different claim: "The prompt change matters: at the forced-answer position, Llama's log-odds of hedge tokens against answer toke"
+  -- M11 reader load
+     L44 [Setup] label code 'ANSWER' used 1 time(s) and never spelled out; name the thing in words (or pass --allow-terms if it is standard in the field)

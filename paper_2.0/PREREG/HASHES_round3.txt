@@ -1,0 +1,11 @@
+af50f53f e1_independent_labels.md 2026-10-09T21:28:16Z
+2b69e06c e2_name_surprisal.md 2026-10-09T21:28:16Z
+b2b916ce e3_lens_split.md 2026-10-09T21:28:16Z
+18c74883 e4_steering_v3.md 2026-10-09T21:28:16Z
+f35aa4d9 e5_third_judge.md 2026-10-09T21:28:17Z
+7bed3826 e4_amendment_third_judge.md 2026-10-09T22:02:16Z
+937b46e3 e6_entity_knowledge.md 2026-10-10T03:23:38Z
+1498be91 e7_label_and_decline_audit.md 2026-10-10T07:27:47Z
+05474954 e8_steering_within_level.md 2026-10-10T07:27:47Z
+f6459163 e9_permissive_prompt.md 2026-10-10T07:27:47Z
+6af179ce e10_instruct_lens.md 2026-10-10T07:27:47Z
