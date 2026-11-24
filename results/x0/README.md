@@ -64,7 +64,7 @@ Re-analysis of stored data for the X0 plan. CPU only, seed 0, 10,000 resamples. 
 - **R2:** 976 intervals indexed, all equal to their saved outputs; every script states its draws and seed. The number of dropped draws (empty cell) is recorded only for A1.
 - **R3:** -0.040 (3 relations, main) / +0.212 (6) / +0.240 (2) / +0.687 (country alone, no interval). Intervals cover questions, not variation between relations.
 - **R4:** 17 plans in PREREG: 15 have a matching hash in a result file, none was edited after its first commit. `e17_nla_qwen.md` has a hash outside the results only (its run was lost); `cross_model_agreement.md` has none (post hoc).
-- **R4, git order:** for those 15 plans git has the result summary committed before the plan file (7 minutes to about 4.5 hours). The result files already quote the plans' hashes, so each plan's text existed when its result was committed, but git cannot show it predates the run. All 10 root-level plans were committed before their results (8 of them by 3 seconds).
+- **R4, git order:** for those 15 plans git has the result summary committed before the plan file (8 minutes to about 4.3 hours). The result files already quote the plans' hashes, so each plan's text existed when its result was committed, but git cannot show it predates the run. All 10 root-level plans were committed before their results (8 of them by 3 seconds).
 - **R5:** not run; 0 of 120 replies are labelled.
 
 ## Left for a person
