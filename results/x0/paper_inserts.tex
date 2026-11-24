@@ -39,7 +39,7 @@ Neither the judges nor the regex were validated against human labels. Knowledge 
 % ---- Design / appendix: what 'corrected' means (two different corrections in the paper; name them apart)
 \emph{Judge-corrected abstention} (the $+0.13$ row): in each cell, $\hat r = r\,p + (1-r)\,m$, where $r$ is the regex abstention rate over the cell's 24-token replies, $p$ the share of regex-positive replies that Qwen2.5-32B calls an abstention, and $m$ the share of regex-negative ones it does. $p$ and $m$ come from 50 judged replies per stratum ($r$, $p$, $m$ in popular unknown: 0.24, 1.00, 0.44). \emph{Label-corrected} results (the $+0.18$ gap, the $+0.14$ margin) instead change the knowledge labels: unknown facts are regraded by meaning with Llama-3.3-70B, popular unknown questions with the gold answer in any free reply are dropped, and guessable facts are dropped.
 \emph{Third judge.} Llama-3.3-70B-Instruct (4-bit, greedy), same prompt as the other two; a reply abstains if at least two of three say DONT\_KNOW (pre-specified; no tie is possible).
-\emph{Settings.} Three replies per question, temperature 0.7, 96 new tokens, seed 0; judges greedy. Intervals in this appendix: 95\% percentile bootstrap, 10,000 resamples, seed 0, resampling questions within cells, or whole relations (all 16 drawn with replacement; resamples with an empty cell dropped). Elsewhere in the paper relation resampling and the judge correction use 5,000 resamples, and the linear probability models 2,000.
+\emph{Settings.} Three replies per question, temperature 0.7, 96 new tokens, seed 0; judges greedy. Intervals in this appendix: 95\% percentile bootstrap, 10,000 resamples, seed 0, resampling questions within cells, or whole relations (all 16 drawn with replacement; resamples with an empty cell dropped). The paper's own intervals use 10,000 resamples, except relation resampling, the within-relation table and the One judge, corrected row (5,000), and the judges' $\kappa$, the lens table, the error bars of Figure~\ref{fig:dissociation}a,b and the linear probability models (2,000); seed 0 throughout (intervals\_index.csv).
 \emph{Relations.} author, capital, capital of, color, composer, country, director, father, genre, mother, occupation, place of birth, producer, religion, screenwriter, sport.
 \emph{Popularity.} PopQA's \texttt{s\_pop}, documented as monthly Wikipedia page views; the dataset card and the PopQA paper do not state the month.
 \emph{Compute.} One 24\,GB GPU for the 7--9B models; 45--65\,GB for the 27--32B and 70B (4-bit) judges.
@@ -55,7 +55,7 @@ Scored by & OK & OU & PK & PU & Margin \\
 Qwen2.5-32B alone & 0.66 & 0.78 & 0.01 & 0.22 & $+0.44$ [$+0.32$, $+0.55$] \\
 Gemma-2-27B alone & 0.44 & 0.50 & 0.02 & 0.18 & $+0.26$ [$+0.16$, $+0.36$] \\
 Llama-3.3-70B alone & 0.65 & 0.75 & 0.00 & 0.21 & $+0.44$ [$+0.32$, $+0.55$] \\
-Both judges (primary) & 0.43 & 0.48 & 0.00 & 0.13 & $+0.30$ [$+0.20$, $+0.40$] \\
+Two judges (primary; adopted post hoc) & 0.43 & 0.48 & 0.00 & 0.13 & $+0.30$ [$+0.20$, $+0.40$] \\
 Either judge & 0.66 & 0.80 & 0.03 & 0.26 & $+0.40$ [$+0.28$, $+0.51$] \\
 Majority of three judges & 0.64 & 0.75 & 0.00 & 0.21 & $+0.44$ [$+0.32$, $+0.55$] \\
 Regex, same 96-token replies & 0.68 & 0.85 & 0.01 & 0.25 & $+0.43$ [$+0.30$, $+0.55$] \\
@@ -104,7 +104,7 @@ Scored by & Raw & Label-corrected \\
 Qwen2.5-32B alone & $+0.56$ [$+0.45$, $+0.65$] & $+0.34$ [$+0.19$, $+0.50$] \\
 Gemma-2-27B alone & $+0.32$ [$+0.23$, $+0.41$] & $+0.16$ [$+0.03$, $+0.30$] \\
 Llama-3.3-70B alone & $+0.54$ [$+0.43$, $+0.64$] & $+0.33$ [$+0.18$, $+0.49$] \\
-Both judges (primary) & $+0.34$ [$+0.25$, $+0.43$] & $+0.18$ [$+0.04$, $+0.31$] \\
+Two judges (primary; adopted post hoc) & $+0.34$ [$+0.25$, $+0.43$] & $+0.18$ [$+0.04$, $+0.31$] \\
 Either judge & $+0.53$ [$+0.43$, $+0.63$] & $+0.33$ [$+0.17$, $+0.48$] \\
 Majority of three judges & $+0.54$ [$+0.43$, $+0.64$] & $+0.34$ [$+0.19$, $+0.49$] \\
 Regex, same 96-token replies & $+0.59$ [$+0.48$, $+0.69$] & $+0.37$ [$+0.21$, $+0.53$] \\

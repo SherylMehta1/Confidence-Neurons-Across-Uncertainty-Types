@@ -6,7 +6,7 @@ pool = pd.read_csv(OUT / "tidy_pool.csv", keep_default_na=False)
 lab_pool = pool[pool.cell.isin(CELLS)]
 Q = pd.read_csv(OUT / "tidy_questions.csv", keep_default_na=False)
 R = pd.read_csv(OUT / "tidy_replies.csv", keep_default_na=False)
-NAME = {"both": "both judges (primary)", "qwen": "Qwen2.5-32B alone", "gemma": "Gemma-2-27B alone", "llama70": "Llama-3.3-70B alone",
+NAME = {"both": "Two judges (primary; adopted post hoc)", "qwen": "Qwen2.5-32B alone", "gemma": "Gemma-2-27B alone", "llama70": "Llama-3.3-70B alone",
         "either": "either judge", "majority3": "majority of three judges", "both_clar": "both judges, DONT_KNOW or CLARIFY",
         "decline70": "70B strict decline", "regex96": "regex, same 96-token replies", "regex24": "regex, 20 x 24-token replies, full pool"}
 DATA = {m: (Q, m) for m in NAME if m != "regex24"} | {"regex24": (lab_pool, "regex24")}
@@ -156,10 +156,10 @@ def step(name, pt, bs, n):
 
 
 step("1. regex, 24-token replies, full pool", *question_boot(lab_pool, "regex24"), len(lab_pool))
-step("2. step 1 corrected by one judge (Qwen2.5-32B, HEDGE/ANSWER prompt)", corr, corb, len(lab_pool))
+step("2. One judge, corrected (step 1 corrected by Qwen2.5-32B, HEDGE/ANSWER prompt)", corr, corb, len(lab_pool))
 step("3. regex, 24-token replies, the 387 questions", *question_boot(Q, "regex24"), len(Q))
 step("4. regex, 96-token replies, the 387 questions", *question_boot(Q, "regex96"), len(Q))
-for m, t in (("qwen", "5. Qwen2.5-32B alone, 96 tokens (DONT_KNOW/CLARIFY/ANSWER prompt)"), ("gemma", "6. Gemma-2-27B alone, 96 tokens"), ("both", "7. both judges, 96 tokens (primary)")):
+for m, t in (("qwen", "5. Qwen2.5-32B alone, 96 tokens (DONT_KNOW/CLARIFY/ANSWER prompt)"), ("gemma", "6. Gemma-2-27B alone, 96 tokens"), ("both", "7. Two judges (primary; adopted post hoc), 96 tokens")):
     step(t, *question_boot(Q, m), len(Q))
 ST = pd.DataFrame(steps)
 save(ST, "A4_margin_steps.csv")
@@ -202,7 +202,7 @@ J["1 meaning-based regrade"] = d[d.cell != "band"]
 J["2 popular unknown with gold in a reply dropped"] = Q[~((Q.cell == "PU") & Q.alias_hit)]
 J["3 guessable dropped"] = Q[~Q.guessable]
 d = J["1 meaning-based regrade"]
-J["all three"] = d[~((d.cell == "PU") & d.alias_hit) & ~d.guessable]
+J["Three label corrections (post hoc)"] = d[~((d.cell == "PU") & d.alias_hit) & ~d.guessable]
 rows = []
 for m in NAME:
     for cname, d in (J.items() if m != "regex24" else [("no correction", lab_pool)]):
@@ -221,7 +221,7 @@ for r in rows:
     log(f"  {r['measure']:<42} {r['correction']:<46} gap {fmt(r['gap'], r['lo'], r['hi'])} rel [{r['rel_lo']:+.3f}, {r['rel_hi']:+.3f}] n {r['n_OU']}/{r['n_PU']} | margin {fmt(r['margin'], r['margin_lo'], r['margin_hi'])}")
 rows = []
 for m in NAME:
-    for cname in (("no correction", "all three") if m != "regex24" else ("no correction",)):
+    for cname in (("no correction", "Three label corrections (post hoc)") if m != "regex24" else ("no correction",)):
         d = J[cname] if m != "regex24" else lab_pool
         for p in sorted(d.prop.unique()):
             s = d[d.prop != p]

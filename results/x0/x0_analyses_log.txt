@@ -72,7 +72,7 @@ no gold alias inside the name  name echoes counted popular unknown         99   
  a gold alias inside the name  name echoes counted popular unknown          1        3      1.00     0.00         1.00             0.00     0.00                   0.00                       1.00               1.00                        0
 
 == A4 judges
-  both judges (primary)                      OK 0.433 OU 0.477 PK 0.000 PU 0.133 | margin +0.300 [+0.204, +0.397] relation-clustered [-0.095, +0.431]
+  Two judges (primary; adopted post hoc)     OK 0.433 OU 0.477 PK 0.000 PU 0.133 | margin +0.300 [+0.204, +0.397] relation-clustered [-0.095, +0.431]
   Qwen2.5-32B alone                          OK 0.655 OU 0.777 PK 0.007 PU 0.220 | margin +0.435 [+0.317, +0.549] relation-clustered [-0.188, +0.620]
   Gemma-2-27B alone                          OK 0.441 OU 0.497 PK 0.020 PU 0.177 | margin +0.264 [+0.165, +0.361] relation-clustered [-0.132, +0.390]
   Llama-3.3-70B alone                        OK 0.648 OU 0.750 PK 0.000 PU 0.210 | margin +0.438 [+0.320, +0.553] relation-clustered [-0.180, +0.627]
@@ -105,14 +105,14 @@ gemma_yes_qwen_no                0.01             0.02           0.02           
 Qwen DONT_KNOW but Gemma not: 176 replies; Gemma's label {'ANSWER': 134, 'CLARIFY': 41, 'UNPARSED': 1}; 70B agrees with Qwen on 0.89
 
 -- A4: why +0.13 against +0.30 (judge-corrected 24-token rates re-derived from results/hedge_judge)
-                                                               step  n_questions    OK    OU    PK    PU  margin    lo    hi
-                              1. regex, 24-token replies, full pool         2303 0.678 0.849 0.025 0.236   0.442 0.345 0.534
-2. step 1 corrected by one judge (Qwen2.5-32B, HEDGE/ANSWER prompt)         2303 0.704 0.943 0.102 0.572   0.132 0.021 0.239
-                      3. regex, 24-token replies, the 387 questions          387 0.678 0.838 0.006 0.233   0.446 0.330 0.555
-                      4. regex, 96-token replies, the 387 questions          387 0.682 0.847 0.007 0.253   0.429 0.304 0.546
-  5. Qwen2.5-32B alone, 96 tokens (DONT_KNOW/CLARIFY/ANSWER prompt)          387 0.655 0.777 0.007 0.220   0.435 0.317 0.549
-                                    6. Gemma-2-27B alone, 96 tokens          387 0.441 0.497 0.020 0.177   0.264 0.165 0.361
-                                7. both judges, 96 tokens (primary)          387 0.433 0.477 0.000 0.133   0.300 0.204 0.397
+                                                                          step  n_questions    OK    OU    PK    PU  margin    lo    hi
+                                         1. regex, 24-token replies, full pool         2303 0.678 0.849 0.025 0.236   0.442 0.345 0.534
+2. One judge, corrected (step 1 corrected by Qwen2.5-32B, HEDGE/ANSWER prompt)         2303 0.704 0.943 0.102 0.572   0.132 0.021 0.239
+                                 3. regex, 24-token replies, the 387 questions          387 0.678 0.838 0.006 0.233   0.446 0.330 0.555
+                                 4. regex, 96-token replies, the 387 questions          387 0.682 0.847 0.007 0.253   0.429 0.304 0.546
+             5. Qwen2.5-32B alone, 96 tokens (DONT_KNOW/CLARIFY/ANSWER prompt)          387 0.655 0.777 0.007 0.220   0.435 0.317 0.549
+                                               6. Gemma-2-27B alone, 96 tokens          387 0.441 0.497 0.020 0.177   0.264 0.165 0.361
+                          7. Two judges (primary; adopted post hoc), 96 tokens          387 0.433 0.477 0.000 0.133   0.300 0.204 0.397
            cell  regex_share  precision  miss_rate  corrected  judged_regex_hedge  judged_regex_answer
   obscure known        0.678       1.00       0.08      0.704                  50                   50
 obscure unknown        0.849       1.00       0.62      0.943                  50                   50
@@ -120,74 +120,74 @@ obscure unknown        0.849       1.00       0.62      0.943                  5
 popular unknown        0.236       1.00       0.44      0.572                  50                   50
 
 == A5 popularity gap among unknown facts
-  both judges (primary)                      no correction                                  gap +0.343 [+0.253, +0.430] rel [+0.224, +0.461] n 100/100 | margin +0.300 [+0.204, +0.397]
-  both judges (primary)                      1 meaning-based regrade                        gap +0.284 [+0.174, +0.391] rel [+0.147, +0.413] n 86/60 | margin +0.234 [+0.117, +0.346]
-  both judges (primary)                      2 popular unknown with gold in a reply dropped gap +0.233 [+0.119, +0.343] rel [+0.103, +0.379] n 100/52 | margin +0.189 [+0.069, +0.308]
-  both judges (primary)                      3 guessable dropped                            gap +0.308 [+0.217, +0.397] rel [+0.182, +0.417] n 91/96 | margin +0.300 [+0.188, +0.412]
-  both judges (primary)                      all three                                      gap +0.179 [+0.044, +0.309] rel [+0.026, +0.339] n 81/39 | margin +0.140 [-0.008, +0.286]
+  Two judges (primary; adopted post hoc)     no correction                                  gap +0.343 [+0.253, +0.430] rel [+0.224, +0.461] n 100/100 | margin +0.300 [+0.204, +0.397]
+  Two judges (primary; adopted post hoc)     1 meaning-based regrade                        gap +0.284 [+0.174, +0.391] rel [+0.147, +0.413] n 86/60 | margin +0.234 [+0.117, +0.346]
+  Two judges (primary; adopted post hoc)     2 popular unknown with gold in a reply dropped gap +0.233 [+0.119, +0.343] rel [+0.103, +0.379] n 100/52 | margin +0.189 [+0.069, +0.308]
+  Two judges (primary; adopted post hoc)     3 guessable dropped                            gap +0.308 [+0.217, +0.397] rel [+0.182, +0.417] n 91/96 | margin +0.300 [+0.188, +0.412]
+  Two judges (primary; adopted post hoc)     Three label corrections (post hoc)             gap +0.179 [+0.044, +0.309] rel [+0.026, +0.339] n 81/39 | margin +0.140 [-0.008, +0.286]
   Qwen2.5-32B alone                          no correction                                  gap +0.557 [+0.450, +0.653] rel [+0.371, +0.707] n 100/100 | margin +0.435 [+0.317, +0.549]
   Qwen2.5-32B alone                          1 meaning-based regrade                        gap +0.486 [+0.355, +0.608] rel [+0.252, +0.688] n 86/60 | margin +0.335 [+0.197, +0.469]
   Qwen2.5-32B alone                          2 popular unknown with gold in a reply dropped gap +0.379 [+0.239, +0.517] rel [+0.162, +0.604] n 100/52 | margin +0.258 [+0.105, +0.404]
   Qwen2.5-32B alone                          3 guessable dropped                            gap +0.529 [+0.416, +0.632] rel [+0.323, +0.686] n 91/96 | margin +0.455 [+0.321, +0.582]
-  Qwen2.5-32B alone                          all three                                      gap +0.341 [+0.186, +0.496] rel [+0.094, +0.597] n 81/39 | margin +0.219 [+0.044, +0.388]
+  Qwen2.5-32B alone                          Three label corrections (post hoc)             gap +0.341 [+0.186, +0.496] rel [+0.094, +0.597] n 81/39 | margin +0.219 [+0.044, +0.388]
   Gemma-2-27B alone                          no correction                                  gap +0.320 [+0.230, +0.407] rel [+0.192, +0.455] n 100/100 | margin +0.264 [+0.165, +0.361]
   Gemma-2-27B alone                          1 meaning-based regrade                        gap +0.269 [+0.155, +0.379] rel [+0.126, +0.408] n 86/60 | margin +0.203 [+0.090, +0.316]
   Gemma-2-27B alone                          2 popular unknown with gold in a reply dropped gap +0.208 [+0.097, +0.321] rel [+0.068, +0.358] n 100/52 | margin +0.152 [+0.032, +0.269]
   Gemma-2-27B alone                          3 guessable dropped                            gap +0.288 [+0.195, +0.377] rel [+0.157, +0.417] n 91/96 | margin +0.273 [+0.161, +0.383]
-  Gemma-2-27B alone                          all three                                      gap +0.165 [+0.031, +0.297] rel [-0.002, +0.339] n 81/39 | margin +0.118 [-0.031, +0.261]
+  Gemma-2-27B alone                          Three label corrections (post hoc)             gap +0.165 [+0.031, +0.297] rel [-0.002, +0.339] n 81/39 | margin +0.118 [-0.031, +0.261]
   Llama-3.3-70B alone                        no correction                                  gap +0.540 [+0.433, +0.640] rel [+0.345, +0.703] n 100/100 | margin +0.438 [+0.320, +0.553]
   Llama-3.3-70B alone                        1 meaning-based regrade                        gap +0.471 [+0.339, +0.594] rel [+0.232, +0.684] n 86/60 | margin +0.344 [+0.205, +0.479]
   Llama-3.3-70B alone                        2 popular unknown with gold in a reply dropped gap +0.372 [+0.228, +0.507] rel [+0.147, +0.600] n 100/52 | margin +0.269 [+0.120, +0.415]
   Llama-3.3-70B alone                        3 guessable dropped                            gap +0.510 [+0.397, +0.615] rel [+0.298, +0.677] n 91/96 | margin +0.454 [+0.317, +0.585]
-  Llama-3.3-70B alone                        all three                                      gap +0.334 [+0.178, +0.488] rel [+0.078, +0.601] n 81/39 | margin +0.234 [+0.061, +0.402]
+  Llama-3.3-70B alone                        Three label corrections (post hoc)             gap +0.334 [+0.178, +0.488] rel [+0.078, +0.601] n 81/39 | margin +0.234 [+0.061, +0.402]
   either judge                               no correction                                  gap +0.533 [+0.427, +0.630] rel [+0.356, +0.695] n 100/100 | margin +0.400 [+0.281, +0.515]
   either judge                               1 meaning-based regrade                        gap +0.470 [+0.340, +0.593] rel [+0.252, +0.677] n 86/60 | margin +0.304 [+0.168, +0.436]
   either judge                               2 popular unknown with gold in a reply dropped gap +0.354 [+0.215, +0.491] rel [+0.147, +0.574] n 100/52 | margin +0.221 [+0.071, +0.363]
   either judge                               3 guessable dropped                            gap +0.509 [+0.399, +0.615] rel [+0.319, +0.680] n 91/96 | margin +0.429 [+0.289, +0.557]
-  either judge                               all three                                      gap +0.328 [+0.170, +0.484] rel [+0.087, +0.590] n 81/39 | margin +0.197 [+0.019, +0.368]
+  either judge                               Three label corrections (post hoc)             gap +0.328 [+0.170, +0.484] rel [+0.087, +0.590] n 81/39 | margin +0.197 [+0.019, +0.368]
   majority of three judges                   no correction                                  gap +0.540 [+0.433, +0.640] rel [+0.350, +0.704] n 100/100 | margin +0.437 [+0.321, +0.551]
   majority of three judges                   1 meaning-based regrade                        gap +0.477 [+0.347, +0.598] rel [+0.245, +0.689] n 86/60 | margin +0.346 [+0.208, +0.478]
   majority of three judges                   2 popular unknown with gold in a reply dropped gap +0.375 [+0.234, +0.508] rel [+0.159, +0.601] n 100/52 | margin +0.272 [+0.123, +0.417]
   majority of three judges                   3 guessable dropped                            gap +0.510 [+0.396, +0.613] rel [+0.303, +0.680] n 91/96 | margin +0.451 [+0.315, +0.582]
-  majority of three judges                   all three                                      gap +0.343 [+0.188, +0.494] rel [+0.094, +0.607] n 81/39 | margin +0.236 [+0.065, +0.402]
+  majority of three judges                   Three label corrections (post hoc)             gap +0.343 [+0.188, +0.494] rel [+0.094, +0.607] n 81/39 | margin +0.236 [+0.065, +0.402]
   both judges, DONT_KNOW or CLARIFY          no correction                                  gap +0.463 [+0.377, +0.543] rel [+0.352, +0.564] n 100/100 | margin +0.311 [+0.208, +0.410]
   both judges, DONT_KNOW or CLARIFY          1 meaning-based regrade                        gap +0.387 [+0.277, +0.490] rel [+0.261, +0.515] n 86/60 | margin +0.222 [+0.103, +0.337]
   both judges, DONT_KNOW or CLARIFY          2 popular unknown with gold in a reply dropped gap +0.326 [+0.213, +0.433] rel [+0.201, +0.457] n 100/52 | margin +0.174 [+0.048, +0.295]
   both judges, DONT_KNOW or CLARIFY          3 guessable dropped                            gap +0.442 [+0.352, +0.529] rel [+0.324, +0.545] n 91/96 | margin +0.334 [+0.213, +0.450]
-  both judges, DONT_KNOW or CLARIFY          all three                                      gap +0.274 [+0.143, +0.405] rel [+0.126, +0.437] n 81/39 | margin +0.138 [-0.016, +0.287]
+  both judges, DONT_KNOW or CLARIFY          Three label corrections (post hoc)             gap +0.274 [+0.143, +0.405] rel [+0.126, +0.437] n 81/39 | margin +0.138 [-0.016, +0.287]
   70B strict decline                         no correction                                  gap +0.537 [+0.433, +0.637] rel [+0.342, +0.696] n 100/100 | margin +0.429 [+0.313, +0.542]
   70B strict decline                         1 meaning-based regrade                        gap +0.468 [+0.339, +0.592] rel [+0.229, +0.680] n 86/60 | margin +0.333 [+0.195, +0.467]
   70B strict decline                         2 popular unknown with gold in a reply dropped gap +0.356 [+0.219, +0.492] rel [+0.129, +0.589] n 100/52 | margin +0.249 [+0.103, +0.391]
   70B strict decline                         3 guessable dropped                            gap +0.511 [+0.397, +0.614] rel [+0.298, +0.679] n 91/96 | margin +0.452 [+0.315, +0.581]
-  70B strict decline                         all three                                      gap +0.316 [+0.163, +0.469] rel [+0.059, +0.594] n 81/39 | margin +0.211 [+0.045, +0.377]
+  70B strict decline                         Three label corrections (post hoc)             gap +0.316 [+0.163, +0.469] rel [+0.059, +0.594] n 81/39 | margin +0.211 [+0.045, +0.377]
   regex, same 96-token replies               no correction                                  gap +0.593 [+0.483, +0.693] rel [+0.419, +0.747] n 100/100 | margin +0.429 [+0.304, +0.546]
   regex, same 96-token replies               1 meaning-based regrade                        gap +0.496 [+0.362, +0.623] rel [+0.283, +0.703] n 86/60 | margin +0.306 [+0.160, +0.449]
   regex, same 96-token replies               2 popular unknown with gold in a reply dropped gap +0.417 [+0.276, +0.556] rel [+0.208, +0.639] n 100/52 | margin +0.253 [+0.094, +0.403]
   regex, same 96-token replies               3 guessable dropped                            gap +0.571 [+0.458, +0.676] rel [+0.384, +0.733] n 91/96 | margin +0.471 [+0.329, +0.607]
-  regex, same 96-token replies               all three                                      gap +0.373 [+0.215, +0.530] rel [+0.132, +0.632] n 81/39 | margin +0.231 [+0.048, +0.408]
+  regex, same 96-token replies               Three label corrections (post hoc)             gap +0.373 [+0.215, +0.530] rel [+0.132, +0.632] n 81/39 | margin +0.231 [+0.048, +0.408]
   regex, 20 x 24-token replies, full pool    no correction                                  gap +0.613 [+0.569, +0.656] rel [+0.457, +0.721] n 1179/361 | margin +0.442 [+0.345, +0.534]
-  LORO both judges (primary)                      no correction  gap +0.315 (without screenwriter) to +0.380 (without composer); lowest lower bound +0.218; intervals including 0: 0
-  LORO both judges (primary)                      all three      gap +0.125 (without screenwriter) to +0.214 (without composer); lowest lower bound -0.019; intervals including 0: 1
+  LORO Two judges (primary; adopted post hoc)     no correction  gap +0.315 (without screenwriter) to +0.380 (without composer); lowest lower bound +0.218; intervals including 0: 0
+  LORO Two judges (primary; adopted post hoc)     Three label corrections (post hoc) gap +0.125 (without screenwriter) to +0.214 (without composer); lowest lower bound -0.019; intervals including 0: 1
   LORO Qwen2.5-32B alone                          no correction  gap +0.515 (without screenwriter) to +0.626 (without composer); lowest lower bound +0.398; intervals including 0: 0
-  LORO Qwen2.5-32B alone                          all three      gap +0.267 (without screenwriter) to +0.439 (without composer); lowest lower bound +0.099; intervals including 0: 0
+  LORO Qwen2.5-32B alone                          Three label corrections (post hoc) gap +0.267 (without screenwriter) to +0.439 (without composer); lowest lower bound +0.099; intervals including 0: 0
   LORO Gemma-2-27B alone                          no correction  gap +0.288 (without screenwriter) to +0.360 (without genre); lowest lower bound +0.191; intervals including 0: 0
-  LORO Gemma-2-27B alone                          all three      gap +0.108 (without screenwriter) to +0.221 (without genre); lowest lower bound -0.035; intervals including 0: 3
+  LORO Gemma-2-27B alone                          Three label corrections (post hoc) gap +0.108 (without screenwriter) to +0.221 (without genre); lowest lower bound -0.035; intervals including 0: 3
   LORO Llama-3.3-70B alone                        no correction  gap +0.498 (without screenwriter) to +0.613 (without composer); lowest lower bound +0.379; intervals including 0: 0
-  LORO Llama-3.3-70B alone                        all three      gap +0.259 (without screenwriter) to +0.447 (without composer); lowest lower bound +0.090; intervals including 0: 0
+  LORO Llama-3.3-70B alone                        Three label corrections (post hoc) gap +0.259 (without screenwriter) to +0.447 (without composer); lowest lower bound +0.090; intervals including 0: 0
   LORO either judge                               no correction  gap +0.488 (without screenwriter) to +0.596 (without composer); lowest lower bound +0.372; intervals including 0: 0
-  LORO either judge                               all three      gap +0.250 (without screenwriter) to +0.414 (without composer); lowest lower bound +0.082; intervals including 0: 0
+  LORO either judge                               Three label corrections (post hoc) gap +0.250 (without screenwriter) to +0.414 (without composer); lowest lower bound +0.082; intervals including 0: 0
   LORO majority of three judges                   no correction  gap +0.494 (without screenwriter) to +0.610 (without composer); lowest lower bound +0.375; intervals including 0: 0
-  LORO majority of three judges                   all three      gap +0.263 (without screenwriter) to +0.447 (without composer); lowest lower bound +0.097; intervals including 0: 0
+  LORO majority of three judges                   Three label corrections (post hoc) gap +0.263 (without screenwriter) to +0.447 (without composer); lowest lower bound +0.097; intervals including 0: 0
   LORO both judges, DONT_KNOW or CLARIFY          no correction  gap +0.432 (without screenwriter) to +0.497 (without composer); lowest lower bound +0.337; intervals including 0: 0
-  LORO both judges, DONT_KNOW or CLARIFY          all three      gap +0.213 (without screenwriter) to +0.304 (without genre); lowest lower bound +0.075; intervals including 0: 0
+  LORO both judges, DONT_KNOW or CLARIFY          Three label corrections (post hoc) gap +0.213 (without screenwriter) to +0.304 (without genre); lowest lower bound +0.075; intervals including 0: 0
   LORO 70B strict decline                         no correction  gap +0.492 (without screenwriter) to +0.608 (without composer); lowest lower bound +0.377; intervals including 0: 0
-  LORO 70B strict decline                         all three      gap +0.237 (without screenwriter) to +0.422 (without composer); lowest lower bound +0.075; intervals including 0: 0
+  LORO 70B strict decline                         Three label corrections (post hoc) gap +0.237 (without screenwriter) to +0.422 (without composer); lowest lower bound +0.075; intervals including 0: 0
   LORO regex, same 96-token replies               no correction  gap +0.554 (without screenwriter) to +0.656 (without composer); lowest lower bound +0.437; intervals including 0: 0
-  LORO regex, same 96-token replies               all three      gap +0.301 (without screenwriter) to +0.451 (without composer); lowest lower bound +0.131; intervals including 0: 0
+  LORO regex, same 96-token replies               Three label corrections (post hoc) gap +0.301 (without screenwriter) to +0.451 (without composer); lowest lower bound +0.131; intervals including 0: 0
   LORO regex, 20 x 24-token replies, full pool    no correction  gap +0.577 (without genre) to +0.662 (without composer); lowest lower bound +0.525; intervals including 0: 0
                                 measure  min_n  relations  equal_weight  eq_lo  eq_hi  precision_weight  pw_lo  pw_hi  relations_positive
-                  both judges (primary)      1         13         0.427  0.356  0.497             0.359  0.288  0.431                  12
-                  both judges (primary)      3          8         0.356  0.278  0.434             0.339  0.261  0.416                   7
+ Two judges (primary; adopted post hoc)      1         13         0.427  0.356  0.497             0.359  0.288  0.431                  12
+ Two judges (primary; adopted post hoc)      3          8         0.356  0.278  0.434             0.339  0.261  0.416                   7
 regex, 20 x 24-token replies, full pool      5         13         0.594  0.541  0.644             0.596  0.557  0.634                  13
 
 == A6 margin inside relations
@@ -198,11 +198,11 @@ regex, 20 x 24-token replies, full pool  country    46    20    53    18        
 regex, 20 x 24-token replies, full pool director     1   182   137    30         1  -0.133 -0.252 -0.038     -0.012        0.707
 regex, 20 x 24-token replies, full pool   father     1    49    40     8         1   0.744  0.375  0.994      1.000        0.646
 regex, 20 x 24-token replies, full pool    sport     7    37    45     6         6  -0.207 -0.617  0.162      0.043        0.623
-                  both judges (primary) composer     4     5     7    10         4  -0.367 -0.500 -0.233      0.000       -0.100
-                  both judges (primary)  country    46     2     6     2         2   0.457  0.355  0.558      0.457        0.333
-                  both judges (primary) director     1    16    17     7         1  -0.048 -0.143  0.000      0.000        0.390
-                  both judges (primary)   father     1     3     8     1         1   0.667  0.667  0.667      1.000        0.111
-                  both judges (primary)    sport     7     2     3     2         2   0.095  0.000  0.286      0.095        0.833
+ Two judges (primary; adopted post hoc) composer     4     5     7    10         4  -0.367 -0.500 -0.233      0.000       -0.100
+ Two judges (primary; adopted post hoc)  country    46     2     6     2         2   0.457  0.355  0.558      0.457        0.333
+ Two judges (primary; adopted post hoc) director     1    16    17     7         1  -0.048 -0.143  0.000      0.000        0.390
+ Two judges (primary; adopted post hoc)   father     1     3     8     1         1   0.667  0.667  0.667      1.000        0.111
+ Two judges (primary; adopted post hoc)    sport     7     2     3     2         2   0.095  0.000  0.286      0.095        0.833
            regex, same 96-token replies composer     4     5     7    10         4  -0.667 -0.900 -0.400      0.000       -0.133
            regex, same 96-token replies  country    46     2     6     2         2   0.623  0.384  0.862      0.790        0.500
            regex, same 96-token replies director     1    16    17     7         1   0.000  0.000  0.000      0.000        0.875
@@ -215,11 +215,11 @@ regex, 20 x 24-token replies, full pool mean margin over relations with every ce
 regex, 20 x 24-token replies, full pool         margin, outside country, capital, sport                                                         7    -0.057 -0.258  0.244
 regex, 20 x 24-token replies, full pool          margin, inside country, capital, sport                                                        80     0.573  0.413  0.713
 regex, 20 x 24-token replies, full pool                           margin, all relations                                                        87     0.442  0.345  0.534
-                  both judges (primary) mean margin over relations with every cell >= 1          composer, country, director, father, sport    59     0.161  0.111  0.215
-                  both judges (primary) mean margin over relations with every cell >= 3                                            composer     4    -0.367 -0.500 -0.233
-                  both judges (primary)         margin, outside country, capital, sport                                                         7     0.004 -0.181  0.307
-                  both judges (primary)          margin, inside country, capital, sport                                                        80     0.458  0.375  0.542
-                  both judges (primary)                           margin, all relations                                                        87     0.300  0.204  0.397
+ Two judges (primary; adopted post hoc) mean margin over relations with every cell >= 1          composer, country, director, father, sport    59     0.161  0.111  0.215
+ Two judges (primary; adopted post hoc) mean margin over relations with every cell >= 3                                            composer     4    -0.367 -0.500 -0.233
+ Two judges (primary; adopted post hoc)         margin, outside country, capital, sport                                                         7     0.004 -0.181  0.307
+ Two judges (primary; adopted post hoc)          margin, inside country, capital, sport                                                        80     0.458  0.375  0.542
+ Two judges (primary; adopted post hoc)                           margin, all relations                                                        87     0.300  0.204  0.397
            regex, same 96-token replies mean margin over relations with every cell >= 1          composer, country, director, father, sport    59     0.020 -0.064  0.112
            regex, same 96-token replies mean margin over relations with every cell >= 3                                            composer     4    -0.667 -0.900 -0.400
            regex, same 96-token replies         margin, outside country, capital, sport                                                         7    -0.118 -0.323  0.199

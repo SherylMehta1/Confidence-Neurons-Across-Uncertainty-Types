@@ -1,4 +1,4 @@
 measure,min_n,relations,equal_weight,eq_lo,eq_hi,precision_weight,pw_lo,pw_hi,relations_positive
-both judges (primary),1,13,0.426578,0.355674,0.49666,0.359178,0.288293,0.430582,12
-both judges (primary),3,8,0.356383,0.277872,0.434062,0.338696,0.260604,0.416286,7
+Two judges (primary; adopted post hoc),1,13,0.426578,0.355674,0.49666,0.359178,0.288293,0.430582,12
+Two judges (primary; adopted post hoc),3,8,0.356383,0.277872,0.434062,0.338696,0.260604,0.416286,7
 "regex, 20 x 24-token replies, full pool",5,13,0.593682,0.541252,0.643659,0.596268,0.556962,0.634353,13
