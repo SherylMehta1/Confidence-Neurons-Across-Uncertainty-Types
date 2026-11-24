@@ -1,0 +1,183 @@
+macro,as_printed,corrected,source,srw,mere_v2,unireps
+hmLlamaKappa,0.62,0.91,results/hedge_measure_v2/summary.txt,1,1,2
+hmLlamaObsUnk,0.48,0.71,results/hedge_measure_v2/summary.txt primary cells,0,0,1
+hmLlamaObsKnown,0.43,0.61,results/hedge_measure_v2/summary.txt primary cells,0,0,0
+hmLlamaPopUnk,0.13,0.18,results/hedge_measure_v2/summary.txt primary cells,0,0,0
+hmLlamaPopEff,+0.39,+0.57,results/hedge_measure_v2/summary.txt primary pop,1,1,1
+hmLlamaPopEffCI,"[+0.33, +0.45]","[+0.50, +0.63]",results/hedge_measure_v2/summary.txt,1,1,1
+hmLlamaKnowEff,+0.09,+0.14,results/hedge_measure_v2/summary.txt primary know,1,1,1
+hmLlamaKnowEffCI,"[+0.03, +0.15]","[+0.07, +0.21]",results/hedge_measure_v2/summary.txt,1,1,1
+hmLlamaDiff,+0.30,+0.43,results/hedge_measure_v2/summary.txt primary pop-know,3,5,3
+hmLlamaDiffCI,"[+0.20, +0.40]","[+0.31, +0.54]",results/hedge_measure_v2/summary.txt,2,4,3
+hmLlamaSecDiff,+0.31,+0.42,results/hedge_measure_v2/summary.txt secondary pop-know,0,1,1
+hmQwenKappa,0.30,0.51,results/hedge_measure_v2/summary.txt qwen,0,0,1
+hmQwenObsUnk,0.05,0.07,results/hedge_measure_v2/summary.txt qwen primary obscure-unknown,0,0,1
+hmQwenSecObsUnk,0.32,0.49,results/hedge_measure_v2/summary.txt qwen secondary obscure-unknown,0,0,1
+hmGemmaKappa,0.47,0.95,results/hedge_measure_v2/summary.txt gemma,0,0,1
+hmGemmaObsUnk,0.05,0.11,results/hedge_measure_v2/summary.txt gemma primary obscure-unknown,0,0,1
+hmGemmaSecObsUnk,0.22,0.27,results/hedge_measure_v2/summary.txt gemma secondary obscure-unknown,0,0,1
+hmMistralKappa,0.39,0.70,results/hedge_measure_v2/summary.txt mistral,0,0,1
+hmMistralObsUnk,0.10,0.15,results/hedge_measure_v2/summary.txt mistral primary obscure-unknown,0,0,1
+hmMistralSecObsUnk,0.25,0.32,results/hedge_measure_v2/summary.txt mistral secondary obscure-unknown,0,0,1
+hmLlamaSecObsUnk,0.65,0.88,results/hedge_measure_v2/summary.txt llama obscure-unknown,0,0,1
+hmLlamaSecDiffCI,"[+0.21, +0.41]","[+0.30, +0.53]",results/hedge_measure_v2/summary.txt llama pop-know CI,0,1,1
+hmQwenRegexRecall,0.58,0.35,results/hedge_measure_v2/summary.txt qwen regex recall,0,0,1
+hmGemmaRegexRecall,0.48,0.44,results/hedge_measure_v2/summary.txt gemma regex recall,0,0,1
+hmMistralRegexRecall,0.73,0.74,results/hedge_measure_v2/summary.txt mistral regex recall,0,0,1
+gsPop,+0.37,+0.56,paper/analysis/guessability.csv judge_noguess pop,0,0,0
+gsKnow,+0.07,+0.13,paper/analysis/guessability.csv judge_noguess know,0,0,0
+gsDiff,+0.30,+0.43,paper/analysis/guessability.csv judge_noguess diff,0,1,1
+gsDiffCI,"[+0.19, +0.41]","[+0.30, +0.56]",paper/analysis/guessability.csv judge_noguess diff CI,0,1,1
+gsObsKnownRate,0.44,0.62,paper/analysis/guessability.csv judge_noguess obscure-known mean,0,0,0
+hmLlamaPopUnkOnly,+0.34,+0.53,paper/analysis/guessability.csv judge_all popularity gap among unknown facts,0,0,1
+hmLlamaPopUnkOnlyCI,"[+0.26, +0.43]","[+0.42, +0.63]",paper/analysis/guessability.csv judge_all popU CI,0,0,1
+eoPop,+0.38,+0.54,results/round3/e1_summary.txt T1 pop,0,0,1
+eoPopCI,"[+0.29, +0.47]","[+0.44, +0.63]",results/round3/e1_summary.txt T1 pop CI,0,0,1
+eoKnow,+0.06,+0.14,results/round3/e1_summary.txt T1 know,0,0,1
+eoKnowCI,"[-0.03, +0.15]","[+0.04, +0.23]",results/round3/e1_summary.txt T1 know CI,0,0,1
+eoDiff,+0.32,+0.40,results/round3/e1_summary.txt T1 diff,0,2,2
+eoDiffCI,"[+0.16, +0.49]","[+0.23, +0.57]",results/round3/e1_summary.txt T1 diff CI,0,2,2
+eoObsKnown,0.46,0.60,results/round3/e1_summary.txt T1 obscure-known mean,0,1,1
+esJudgeCI,"[-0.026, +0.059]","[-0.037, +0.070]",results/round3/e2_summary.txt S2 (a) CI,0,0,1
+tjLlamaKappa,0.74,0.93,results/round3/e5_summary.csv llama Fleiss kappa,0,0,1
+tjLlamaDiff,+0.44,+0.43,results/round3/e5_summary.csv llama majority pop-know,1,2,3
+tjLlamaDiffCI,"[+0.32, +0.55]","[+0.31, +0.54]",results/round3/e5_summary.csv llama CI,1,1,2
+tjLlamaObsUnk,0.75,0.74,results/round3/e5_summary.csv llama obscure-unknown majority rate,0,0,1
+tjQwenKappa,0.41,0.59,results/round3/e5_summary.csv qwen Fleiss kappa,0,0,1
+tjQwenDiff,-0.02,-0.01,results/round3/e5_summary.csv qwen majority pop-know,0,0,0
+tjQwenDiffCI,"[-0.05, +0.00]","[-0.03, +0.01]",results/round3/e5_summary.csv qwen CI,0,0,0
+tjGemmaKappa,0.64,0.94,results/round3/e5_summary.csv gemma Fleiss kappa,0,0,1
+tjGemmaDiffCI,"[-0.03, +0.06]","[-0.04, +0.05]",results/round3/e5_summary.csv gemma CI,0,1,1
+tjMistralKappa,0.54,0.75,results/round3/e5_summary.csv mistral Fleiss kappa,0,0,1
+tjMistralVerdict,unmeasured,neither,results/round3/e5_summary.csv mistral verdict,0,0,0
+tjMistralObsUnk,0.19,0.18,results/round3/e5_summary.csv mistral obscure-unknown majority rate,0,0,1
+svLlamaNone,0.01,0.02,results/round3/e4_summary.txt llama EVAL none judges,0,1,1
+svLlamaFam,0.10,0.18,results/round3/e4_summary.txt llama EVAL fam judges,0,0,1
+svLlamaKnow,0.04,0.07,results/round3/e4_summary.txt llama EVAL know judges,0,0,1
+svLlamaAbst,0.09,0.21,results/round3/e4_summary.txt llama EVAL abst judges,0,0,1
+svLlamaPerp,0.02,0.03,results/round3/e4_summary.txt llama EVAL fam_perp judges,0,0,1
+svLlamaMajDOne,+0.17,+0.18,results/round3/e4_summary.txt llama D1 maj fam - random (secondary),0,1,1
+svLlamaMajDOneCI,"[+0.13, +0.22]","[+0.13, +0.23]",results/round3/e4_summary.txt llama D1 maj fam - random CI (secondary),0,1,1
+svLlamaRand,0.008,0.016,results/round3/e4_summary.txt llama mean of random0-4 judges,0,0,1
+svLlamaDOne,+0.09,+0.17,results/round3/e4_summary.txt llama D1 fam - random,0,2,2
+svLlamaDOneCI,"[+0.06, +0.12]","[+0.12, +0.22]",results/round3/e4_summary.txt llama D1 fam - random CI,0,2,2
+svLlamaDTwo,+0.01,+0.02,results/round3/e4_summary.txt llama D2 fam_perp - random,0,1,1
+svLlamaDTwoCI,"[-0.00, +0.02]","[-0.00, +0.04]",results/round3/e4_summary.txt llama D2 fam_perp - random CI,0,1,1
+svLlamaDThree,+0.06,+0.12,results/round3/e4_summary.txt llama D3 fam - know,0,0,2
+svLlamaDThreeCI,"[+0.02, +0.09]","[+0.08, +0.16]",results/round3/e4_summary.txt llama D3 fam - know CI,0,0,1
+svGemmaFam,0.04,0.08,results/round3/e4_summary.txt gemma9b EVAL fam judges,0,0,1
+svGemmaKnow,0.04,0.30,results/round3/e4_summary.txt gemma9b EVAL know judges,0,0,1
+svGemmaAbst,0.20,0.46,results/round3/e4_summary.txt gemma9b EVAL abst judges,0,0,1
+svGemmaMajDOne,+0.11,+0.10,results/round3/e4_summary.txt gemma9b D1 maj fam - random (secondary),0,1,1
+svGemmaMajDOneCI,"[+0.08, +0.15]","[+0.07, +0.14]",results/round3/e4_summary.txt gemma9b D1 maj fam - random CI (secondary),0,1,1
+svGemmaRand,0.003,0.004,results/round3/e4_summary.txt gemma9b mean of random0-4 judges,0,0,1
+svGemmaDOne,+0.04,+0.08,results/round3/e4_summary.txt gemma9b D1 fam - random,0,1,1
+svGemmaDOneCI,"[+0.02, +0.06]","[+0.05, +0.11]",results/round3/e4_summary.txt gemma9b D1 fam - random CI,0,1,1
+svGemmaDTwoCI,"[+0.01, +0.03]","[+0.01, +0.04]",results/round3/e4_summary.txt gemma9b D2 fam_perp - random CI,0,1,1
+svGemmaDThree,+0.00,-0.22,results/round3/e4_summary.txt gemma9b D3 fam - know,0,0,1
+svGemmaDThreeCI,"[-0.03, +0.03]","[-0.29, -0.15]",results/round3/e4_summary.txt gemma9b D3 fam - know CI,0,0,1
+ekObs,+0.34,+0.49,results/round3/e6_summary.txt (a) obscure coef with entity_known,0,1,1
+ekObsCI,"[+0.27, +0.41]","[+0.41, +0.58]",results/round3/e6_summary.txt (a) CI,0,1,1
+ekCoefCI,"[-0.06, +0.00]","[-0.07, +0.01]",results/round3/e6_summary.txt (a) CI,0,0,1
+ekShrink,5\%,4\%,results/round3/e6_summary.txt (a) shrink,1,1,1
+rcObsKnownNonAbsCorrect,0.72,0.89,paper/analysis/round2_checks.txt non-abstaining correct,0,0,0
+rcBothN,24,30,paper/analysis/round2_checks.txt questions with correct reply and abstention,0,0,0
+rcPopEnt,+0.29,+0.41,paper/analysis/round2_checks.txt judges obscure coef with entropy,0,0,1
+rcPopEntCI,"[+0.23, +0.36]","[+0.33, +0.49]",paper/analysis/round2_checks.txt CI,0,0,1
+rcKnowEnt,-0.05,-0.06,paper/analysis/round2_checks.txt judges unknown coef with entropy,0,0,1
+rcKnowEntCI,"[-0.14, +0.03]","[-0.17, +0.03]",paper/analysis/round2_checks.txt CI,0,0,1
+rcEntCoef,+0.14,+0.22,paper/analysis/round2_checks.txt judges entropy_z coef,0,0,1
+seDiff,+0.23,+0.35,e7_summary.txt T7a diff,1,2,2
+seDiffCI,"[+0.12, +0.35]","[+0.22, +0.48]",e7_summary.txt T7a CI,1,2,2
+sdHedgedMax,0.03,0.02,results/round3/e7_summary.txt max per-cell HEDGED_ANSWER share of both-judge DONT_KNOW,0,0,1
+pmLlamaKappa,0.71,0.97,results/round3/e9_summary.txt llama Fleiss kappa,1,1,1
+pmLlamaObsKnown,0.69,0.70,results/round3/e9_summary.txt llama cell ObsKnown,0,1,1
+pmGemmaKappa,0.67,0.89,results/round3/e9_summary.txt gemma Fleiss kappa,1,1,1
+pmGemmaObsUnk,0.54,0.53,results/round3/e9_summary.txt gemma cell ObsUnk,0,1,1
+amObsBase,+0.35,+0.51,paper/analysis/ambiguity_check.txt obscure coef without homonyms,0,1,1
+amObs,+0.34,+0.48,paper/analysis/ambiguity_check.txt obscure coef with log homonyms,0,2,1
+amObsCI,"[+0.27, +0.41]","[+0.39, +0.56]",paper/analysis/ambiguity_check.txt CI,0,2,1
+amSingle,0.43,0.63,paper/analysis/ambiguity_check.txt obscure-known single-homonym abstention,0,0,1
+lcAliasDrop,+0.19,+0.28,round3_label_checks.txt worst-case drop,0,2,2
+lcAliasDropCI,"[+0.07, +0.31]","[+0.13, +0.42]",round3_label_checks.txt CI,0,2,2
+lcCons,+0.31,+0.39,round3_label_checks.txt consensus contrast,0,1,1
+lcConsCI,"[+0.15, +0.48]","[+0.22, +0.56]",round3_label_checks.txt CI,0,1,1
+lcDKAliasMax,0.03,0.02,round3_label_checks.txt max per-cell share of DONT_KNOW replies with gold alias,1,1,1
+lkObsKnownAbsCI,"[0.35, 0.51]","[0.52, 0.70]",lockin_checks.txt obscure known abstention CI,0,0,0
+lkPopKnownAbsCI,"[0.00, 0.00]","[0.00, 0.01]",lockin_checks.txt popular known abstention CI,0,0,0
+tcObsKnownAbs,0.43,0.61,lockin_checks.txt obscure HighlyKnown abstention,3,4,2
+tcObsKnownAbsCI,"[0.35, 0.51]","[0.52, 0.70]",CI,1,1,1
+tcObsKnownAbsPct,43\%,61\%,"lockin_checks.txt obscure HighlyKnown abstention, percent",0,0,1
+tcObsUnkAbs,0.48,0.71,lockin_checks.txt obscure Unknown abstention,3,5,1
+tcObsUnkAbsCI,"[0.41, 0.55]","[0.63, 0.79]",CI,1,1,1
+tcObsUnkAbsPct,48\%,71\%,"lockin_checks.txt obscure Unknown abstention, percent",0,0,0
+tcPopKnownAbsCI,"[0.00, 0.00]","[0.00, 0.01]",CI,1,1,1
+tcPopUnkAbs,0.13,0.18,lockin_checks.txt popular Unknown abstention,3,4,1
+tcPopUnkAbsCI,"[0.08, 0.19]","[0.12, 0.26]",CI,1,1,1
+tcPopUnkAbsPct,13\%,18\%,"lockin_checks.txt popular Unknown abstention, percent",0,0,0
+lkKappaCI,"[0.57, 0.67]","[0.89, 0.94]",lockin_checks.txt kappa CI,1,1,1
+lkMajGemma,0.84,0.97,lockin_checks.txt agreement with the three-judge majority lkMajGemma,0,0,1
+lkMajLlama,1.00,0.99,lockin_checks.txt agreement with the three-judge majority lkMajLlama,0,0,1
+wlLlamaDOne,+0.17,+0.16,results/round3/e8_summary.txt llama primary D1w fam - random,0,1,1
+wlLlamaDOneCI,"[+0.12, +0.22]","[+0.12, +0.21]",CI,0,1,1
+wlLlamaDTwo,+0.01,+0.02,results/round3/e8_summary.txt llama primary D2w fam_perp_w - random,0,2,2
+wlLlamaDAbst,+0.20,+0.21,results/round3/e8_summary.txt llama primary abst_within - random,0,0,0
+wlLlamaFam,0.19,0.18,results/round3/e8_summary.txt llama primary rate fam,0,0,1
+wlLlamaAbst,0.22,0.23,results/round3/e8_summary.txt llama primary rate abst_within,0,0,1
+wlLlamaPerp,0.03,0.04,results/round3/e8_summary.txt llama primary rate fam_perp_w,0,0,1
+wlGemmaDOneCI,"[+0.07, +0.14]","[+0.06, +0.13]",CI,0,1,1
+wlGemmaDTwo,+0.03,+0.01,results/round3/e8_summary.txt gemma9b primary D2w fam_perp_w - random,0,1,1
+wlGemmaDTwoCI,"[+0.01, +0.04]","[+0.00, +0.03]",CI,0,1,1
+wlGemmaDAbstCI,"[+0.33, +0.47]","[+0.33, +0.46]",CI,0,0,0
+wlGemmaFam,0.11,0.10,results/round3/e8_summary.txt gemma9b primary rate fam,0,0,1
+wlGemmaAbst,0.41,0.40,results/round3/e8_summary.txt gemma9b primary rate abst_within,0,0,1
+wlGemmaPerp,0.03,0.02,results/round3/e8_summary.txt gemma9b primary rate fam_perp_w,0,0,1
+ncRecAbs,0.33,0.49,e11 abstention cue-recoverable,0,1,1
+ncOtherAbs,0.50,0.69,e11 abstention other,0,1,1
+ncDiff,+0.36,+0.50,results/round3/e11_summary.txt primary diff,2,3,3
+ncDiffCI,"[+0.25, +0.48]","[+0.37, +0.63]",results/round3/e11_summary.txt primary diff CI,2,2,2
+ncClusCI,"[-0.03, +0.48]","[-0.06, +0.67]",e11 relation-clustered CI,0,1,1
+ncStrictDiff,+0.37,+0.52,results/round3/e11_summary.txt strict diff,0,0,0
+ncStrictDiffCI,"[+0.26, +0.47]","[+0.40, +0.63]",results/round3/e11_summary.txt strict diff CI,0,0,0
+pmQwenKappa,0.40,0.74,results/round3/e12_summary.txt qwen Fleiss kappa,1,2,2
+pmQwenDiff,+0.15,+0.16,results/round3/e12_summary.txt qwen diff,0,2,2
+pmQwenDiffCI,"[+0.00, +0.30]","[+0.01, +0.31]",results/round3/e12_summary.txt qwen diff CI,0,1,1
+pmMistralKappa,0.50,0.80,results/round3/e12_summary.txt mistral Fleiss kappa,1,2,2
+pmMistralDiff,+0.16,+0.17,results/round3/e12_summary.txt mistral diff,0,2,2
+pmMistralDiffCI,"[+0.05, +0.27]","[+0.06, +0.28]",results/round3/e12_summary.txt mistral diff CI,0,1,1
+pmOlmoKappa,0.46,0.86,results/round3/e15_summary.txt olmo2_7b Fleiss kappa,0,1,1
+pmOlmoDiffCI,"[-0.22, +0.03]","[-0.21, +0.04]",results/round3/e15_summary.txt olmo2_7b diff CI,0,1,1
+frKappa,0.61,0.96,e13 two-judge kappa,0,0,0
+frDiff,+0.29,+0.45,results/round3/e13_summary.txt diff,2,3,3
+frDiffCI,"[+0.20, +0.38]","[+0.34, +0.56]",results/round3/e13_summary.txt diff CI,2,2,2
+nqDiff,+0.10,+0.15,results/round3/e14_summary.txt diff,1,3,3
+nqDiffCI,"[+0.01, +0.20]","[+0.03, +0.26]",results/round3/e14_summary.txt diff CI,1,2,2
+nqPop,+0.25,+0.35,results/round3/e14_summary.txt pop,0,0,0
+nqPopCI,"[+0.19, +0.31]","[+0.28, +0.43]",results/round3/e14_summary.txt pop CI,0,0,0
+nqKnow,+0.15,+0.21,results/round3/e14_summary.txt know,0,0,0
+nqKnowCI,"[+0.09, +0.21]","[+0.14, +0.28]",results/round3/e14_summary.txt know CI,0,0,0
+nqClusCI,"[-0.12, +0.27]","[-0.10, +0.34]",e14 relation-clustered CI,0,2,1
+nqKappa,0.60,0.91,e14 two-judge kappa,0,0,0
+gaFam,+0.17,+0.16,results/round3/e16_summary.txt fam - random,1,1,1
+rcClusCI,"[-0.10, +0.43]","[-0.15, +0.62]",round4_checks relation-clustered CI,1,3,2
+rcLoro,+0.24 to +0.35,+0.35 to +0.51,round4_checks leave-one-relation-out range,0,1,1
+rcJoint,+0.14,+0.24,round4_checks joint corrections,1,4,3
+rcJointCI,"[-0.01, +0.28]","[+0.07, +0.41]",round4_checks joint corrections CI,1,4,3
+rcUnk,+0.34,+0.53,round4_checks unknown-facts gap,1,3,3
+rcUnkCI,"[+0.25, +0.43]","[+0.42, +0.63]",round4_checks unknown-facts gap CI,1,2,1
+rcUnkClusCI,"[+0.23, +0.46]","[+0.34, +0.70]",round4_checks unknown-facts gap clustered CI,0,2,2
+rcUnkJoint,+0.18,+0.35,round4_checks unknown-facts gap after corrections,2,2,1
+rcUnkJointCI,"[+0.04, +0.31]","[+0.20, +0.51]",round4_checks unknown-facts gap after corrections CI,2,2,1
+msInDiff,+0.46,+0.65,analysis/mere_checks.txt inside,0,1,0
+msInDiffCI,"[+0.38, +0.54]","[+0.56, +0.74]",analysis/mere_checks.txt inside CI,0,1,0
+msInKnownRate,0.46,0.65,analysis/mere_checks.txt inside obscure known rate,0,1,0
+msOutDiff,+0.00,-0.05,analysis/mere_checks.txt outside,1,3,0
+msOutDiffCI,"[-0.18, +0.31]","[-0.25, +0.26]",analysis/mere_checks.txt outside CI,1,1,0
+msOutUnkRate,0.14,0.19,analysis/mere_checks.txt outside popular unknown rate,0,1,0
+msKnownGap,+0.46,+0.65,analysis/mere_checks.txt inside known gap,0,2,0
+msKnownGapCI,"[+0.38, +0.54]","[+0.56, +0.73]",analysis/mere_checks.txt inside known gap CI,0,2,0
+rcNonGuessAbs,0.44,0.62,"round4_checks (4) abstention, not guessable",0,1,1
+rcGuessAbs,0.42,0.59,"round4_checks (4) abstention, guessable",0,1,1
+ecNonAbs,0.44,0.63,echo_check non-abstaining,0,1,1
+ecAbs,0.00,0.01,echo_check abstaining,0,0,1
+ecBoth,9,11,echo_check questions with both,0,1,1

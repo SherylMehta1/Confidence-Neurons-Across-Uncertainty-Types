@@ -1,0 +1,5 @@
+popular HighlyKnown replies  300 | alias incl. name echoes 0.98 (non-abstaining 0.98, abstaining 0.00) | alias excl. echoes 0.98 (non-abstaining 0.98, abstaining 0.00)
+popular Unknown     replies  300 | alias incl. name echoes 0.37 (non-abstaining 0.45, abstaining 0.02) | alias excl. echoes 0.37 (non-abstaining 0.45, abstaining 0.02)
+obscure HighlyKnown replies  261 | alias incl. name echoes 0.53 (non-abstaining 0.89, abstaining 0.30) | alias excl. echoes 0.25 (non-abstaining 0.63, abstaining 0.01)
+obscure Unknown     replies  300 | alias incl. name echoes 0.01 (non-abstaining 0.02, abstaining 0.00) | alias excl. echoes 0.01 (non-abstaining 0.02, abstaining 0.00)
+obscure known questions with both an answering reply (alias, echoes excluded) and an abstention: 11 of 87

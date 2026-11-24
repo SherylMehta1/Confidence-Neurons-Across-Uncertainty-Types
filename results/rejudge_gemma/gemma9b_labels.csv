@@ -1,0 +1,9 @@
+arm,stored,new,n
+control,HighlyKnown,HighlyKnown,97
+control,HighlyKnown,Maybe,3
+control,Unknown,Maybe,8
+control,Unknown,Unknown,92
+uncertain,HighlyKnown,HighlyKnown,91
+uncertain,HighlyKnown,Maybe,9
+uncertain,Unknown,Maybe,1
+uncertain,Unknown,Unknown,99

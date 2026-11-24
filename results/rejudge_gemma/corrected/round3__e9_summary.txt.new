@@ -1,0 +1,8 @@
+E9: permissive prompt (PREREG e9_permissive_prompt.md, sha f6459163); majority of 3 judges; MEASURED if Fleiss kappa >= 0.60
+llama  replies 1161  Fleiss kappa 0.973  n {'unc/Unkn': 100, 'unc/High': 87, 'con/Unkn': 100, 'con/High': 100}
+  majority-rule pop +0.659 [+0.591, +0.723]  know +0.185 [+0.119, +0.252]  diff +0.474 [+0.354, +0.590]
+  cells {"unc/Unkn": 0.843, "unc/High": 0.697, "con/Unkn": 0.223, "con/High": 0.0}  -> FOLLOWS POPULARITY
+gemma  replies 1200  Fleiss kappa 0.888  n {'unc/Unkn': 100, 'unc/High': 100, 'con/Unkn': 100, 'con/High': 100}
+  majority-rule pop +0.415 [+0.348, +0.482]  know +0.118 [+0.052, +0.187]  diff +0.297 [+0.190, +0.400]
+  cells {"unc/Unkn": 0.533, "unc/High": 0.407, "con/Unkn": 0.11, "con/High": 0.0}  -> FOLLOWS POPULARITY
+  Gemma licensing: obscure-unknown rate 0.533 >= 0.25: verdict replaces 'cannot be estimated' (permissive prompt)

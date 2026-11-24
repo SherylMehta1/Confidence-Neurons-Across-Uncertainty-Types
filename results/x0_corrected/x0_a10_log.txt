@@ -1,0 +1,22 @@
+Gemma-2-27B judge run with soft-capping (eager attention; vLLM equal)  | printed +0.30 [+0.20, +0.40] | corrected +0.43 [+0.31, +0.54] | alt +0.30 [+0.20, +0.40]
+Primary measure: both judges say DONT_KNOW, three 96-token replies     | printed +0.30 [+0.20, +0.40] | corrected +0.43 [+0.31, +0.54] | alt +0.13 [+0.03, +0.24]
+Reply abstains only if both judges agree                               | printed +0.30 [+0.20, +0.40] | corrected +0.43 [+0.31, +0.54] | alt +0.44 [+0.32, +0.55]; +0.42 [+0.31, +0.53]; +0.43 [+0.31, +0.55]
+DONT_KNOW only; clarification requests not counted                     | printed +0.30 [+0.20, +0.40] | corrected +0.43 [+0.31, +0.54] | alt +0.42 [+0.30, +0.53]
+Agreement bar kappa >= 0.60 read on the point estimate                 | printed 0.62 (passes) | corrected 0.91 (passes) | alt 0.88 (passes)
+Third judge, majority of three                                         | printed +0.44 [+0.32, +0.55] | corrected +0.43 [+0.31, +0.54] | alt +0.43
+Strict declines (70B judge, no candidate named)                        | printed +0.43 [+0.31, +0.54] | corrected +0.43 [+0.31, +0.54] | alt +0.43
+Regex on the judged 96-token replies (margin)                          | printed +0.43 [+0.31, +0.55] | corrected +0.43 [+0.31, +0.55] | alt +0.43
+Unknown facts regraded by meaning                                      | printed +0.23 [+0.12, +0.35] | corrected +0.35 [+0.22, +0.48] | alt +0.43
+Popular-unknown questions with the gold answer in a free reply dropped | printed +0.19 [+0.07, +0.31] | corrected +0.28 [+0.13, +0.42] | alt +0.43
+Guessable facts removed                                                | printed +0.30 [+0.19, +0.41] | corrected +0.43 [+0.30, +0.56] | alt +0.50 [+0.37, +0.63]
+All three label corrections jointly                                    | printed +0.14 [-0.01, +0.28] | corrected +0.24 [+0.07, +0.41] | alt +0.43 [+0.31, +0.54]
+Knowledge relabelled with a paraphrased prompt                         | printed +0.32 [+0.16, +0.49] (27 obscure known) | corrected +0.40 [+0.23, +0.57] (27 obscure known) | alt +0.39 [+0.22, +0.56]
+Intervals resample questions within cells                              | printed [+0.20, +0.40] | corrected [+0.31, +0.54] | alt [-0.15, +0.62]; [-0.16, +0.64]
+Namesake covariate (coefficient of the obscure arm, not a margin)      | printed +0.34 [+0.27, +0.41] | corrected +0.48 [+0.39, +0.56] | alt +0.51 [+0.43, +0.59]
+Within-relation mean keeps relations with at least 3 questions in ever | printed -0.04 [-0.20, +0.11] (composer, country, sport) | corrected -0.04 [-0.20, +0.11] (composer, country, sport) | alt +0.21 [+0.11, +0.30] (capital, composer, country, director, father, sport); +0.24 [+0.02, +0.44] (country, sport)
+Margin outside country, capital and sport                              | printed +0.00 [-0.18, +0.31] (two judges, 7 facts) | corrected -0.05 [-0.25, +0.26] (two judges, 7 facts) | alt -0.06 [-0.26, +0.24]
+Gold aliases inside the subject's name not counted in free replies     | printed 0.25 (obscure known) | corrected 0.25 (obscure known) | alt 0.53
+Unknown-fact popularity gap used as the headline                       | printed +0.34 [+0.25, +0.43] | corrected +0.53 [+0.42, +0.63] | alt +0.35 [+0.19, +0.50]
+Fresh replies, same questions                                          | printed +0.29 [+0.20, +0.38] | corrected +0.45 [+0.34, +0.56] | alt +0.43
+New questions, 10th-30th against 70th-90th percentile                  | printed +0.10 [+0.01, +0.20] | corrected +0.15 [+0.03, +0.26] | alt [-0.10, +0.34]
+All X0 analyses (A1 to A9)                                             | printed results/x0 | corrected results/x0_corrected | alt -

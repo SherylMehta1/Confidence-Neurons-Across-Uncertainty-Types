@@ -1,0 +1,300 @@
+{"key": "place of birth::Charles Hammock", "entropy": 1.567155361175537, "top1": 0.6800157427787781, "greedy": "**New York City**."}
+{"key": "producer::Genre", "entropy": 1.9827362298965454, "top1": 0.48465216159820557, "greedy": "**not a single person**."}
+{"key": "author::Bone", "entropy": 0.2032301425933838, "top1": 0.9677547216415405, "greedy": "**Jeff Smith**."}
+{"key": "director::Mask", "entropy": 0.06107247248291969, "top1": 0.9929813146591187, "greedy": "**Chuck Russell**."}
+{"key": "screenwriter::Small Town", "entropy": 2.2343430519104004, "top1": 0.32213711738586426, "greedy": "a bit tricky!"}
+{"key": "screenwriter::Party", "entropy": 1.8208065032958984, "top1": 0.53255695104599, "greedy": "**Blake Edwards**."}
+{"key": "place of birth::Michelle Renaudddd", "entropy": 2.465970277786255, "top1": 0.3709675371646881, "greedy": "**not publicly available**."}
+{"key": "genre::Shine", "entropy": 2.3075809478759766, "top1": 0.3766118288040161, "greedy": "a bit tricky because \"Shine\" can refer to a few"}
+{"key": "screenwriter::That Certain Thing", "entropy": 1.067903757095337, "top1": 0.7971269488334656, "greedy": "**John Michael Hayes**."}
+{"key": "mother::Maria Alekseyevna of Russia", "entropy": 0.3164479732513428, "top1": 0.9624009132385254, "greedy": "**Empress Alexandra Feodorovna**."}
+{"key": "director::September", "entropy": 1.275893211364746, "top1": 0.7682122588157654, "greedy": "**Volker Schlöndorff**."}
+{"key": "screenwriter::Bingo", "entropy": 1.7032029628753662, "top1": 0.43568724393844604, "greedy": "a bit tricky!"}
+{"key": "composer::The Planets", "entropy": 0.01924419403076172, "top1": 0.9976906776428223, "greedy": "**Gustav Holst**."}
+{"key": "father::Chelsea Clinton", "entropy": 0.11043108999729156, "top1": 0.9799211621284485, "greedy": "**Bill Clinton**."}
+{"key": "composer::Up", "entropy": 0.1298825591802597, "top1": 0.9803379774093628, "greedy": "**Michael Giacchino**."}
+{"key": "capital::Netherlands", "entropy": 0.032595884054899216, "top1": 0.9954467415809631, "greedy": "**Amsterdam**."}
+{"key": "director::The Missing", "entropy": 1.4868674278259277, "top1": 0.6619075536727905, "greedy": "**Ron Howard**."}
+{"key": "screenwriter::Rudy", "entropy": 1.1738650798797607, "top1": 0.6766922473907471, "greedy": "**Angelo Pizzo**."}
+{"key": "composer::King Kong", "entropy": 0.6971332430839539, "top1": 0.8372753262519836, "greedy": "**Max Steiner**."}
+{"key": "genre::A Winter of Cyclists", "entropy": 1.9365575313568115, "top1": 0.4162282645702362, "greedy": "a bit nuanced."}
+{"key": "capital of::Kaberamaido", "entropy": 0.30366581678390503, "top1": 0.9603607654571533, "greedy": "**Kaberamaido District**."}
+{"key": "capital::Verbandsgemeinde Bad Ems", "entropy": 0.02762264758348465, "top1": 0.9971300959587097, "greedy": "**Bad Ems**."}
+{"key": "genre::The Little Prince", "entropy": 0.7961353063583374, "top1": 0.8269428014755249, "greedy": "a bit complex, as \"The Little Prince\" transcends simple"}
+{"key": "religion::Mark Twain", "entropy": 1.119707703590393, "top1": 0.5671504139900208, "greedy": "complex and not definitively known."}
+{"key": "capital of::Owando", "entropy": 0.3725585341453552, "top1": 0.9507083296775818, "greedy": "**Republic of the Congo**."}
+{"key": "genre::The Matrix", "entropy": 1.4923193454742432, "top1": 0.47211170196533203, "greedy": "a bit multifaceted:"}
+{"key": "producer::Wall Street", "entropy": 1.3715968132019043, "top1": 0.49020326137542725, "greedy": "a bit nuanced:"}
+{"key": "genre::Picture This", "entropy": 2.4258840084075928, "top1": 0.32699093222618103, "greedy": "**Contemporary Romance**."}
+{"key": "director::The Photo", "entropy": 2.1634013652801514, "top1": 0.5043329000473022, "greedy": "**Michael Mann**."}
+{"key": "sport::Joey Harrington", "entropy": 0.3513798415660858, "top1": 0.951045572757721, "greedy": "**American Football**."}
+{"key": "screenwriter::The Boys", "entropy": 0.7351269721984863, "top1": 0.8568318486213684, "greedy": "a bit complex because \"The Boys\" has multiple writers involved"}
+{"key": "producer::The Blair Witch Project", "entropy": 1.1795017719268799, "top1": 0.6996322870254517, "greedy": "a bit nuanced:"}
+{"key": "screenwriter::Cars", "entropy": 1.0807297229766846, "top1": 0.7492172122001648, "greedy": "a bit complex:"}
+{"key": "director::The Holiday", "entropy": 0.061934348195791245, "top1": 0.9907225370407104, "greedy": "**Nancy Meyers**."}
+{"key": "author::Wicked", "entropy": 0.5231797695159912, "top1": 0.9059461951255798, "greedy": "**Gregory Maguire**."}
+{"key": "sport::Madison", "entropy": 1.885777473449707, "top1": 0.629942774772644, "greedy": "**basketball**."}
+{"key": "author::Khubsurat Bala", "entropy": 0.5848765969276428, "top1": 0.9129676818847656, "greedy": "**Anjum Hasan**."}
+{"key": "capital::Cyprus", "entropy": 0.023959273472428322, "top1": 0.9975056052207947, "greedy": "**Nicosia**."}
+{"key": "place of birth::Ko Wen-je", "entropy": 0.15516343712806702, "top1": 0.9805466532707214, "greedy": "**Taipei**."}
+{"key": "author::Memory", "entropy": 2.090195655822754, "top1": 0.2870795428752899, "greedy": "**Marcel Proust**."}
+{"key": "screenwriter::Album", "entropy": 2.186143159866333, "top1": 0.3727245330810547, "greedy": "**not publicly available**."}
+{"key": "genre::Them!", "entropy": 2.0149283409118652, "top1": 0.4589652121067047, "greedy": "a bit nuanced, as \"Them!\" can be categorized in"}
+{"key": "director::The Stand", "entropy": 0.8773919343948364, "top1": 0.8100444674491882, "greedy": "a bit complicated because \"The Stand\" has been adapted twice"}
+{"key": "genre::Eddie & the Gang with No Name", "entropy": 2.2048656940460205, "top1": 0.3767547905445099, "greedy": "**comedy**."}
+{"key": "author::list of Mr. Men", "entropy": 0.031604181975126266, "top1": 0.996682345867157, "greedy": "**Roger Hargreaves**."}
+{"key": "director::Rome-Paris-Rome", "entropy": 0.0800667554140091, "top1": 0.9919763207435608, "greedy": "**Renato Castellani**."}
+{"key": "director::Faith", "entropy": 2.0110085010528564, "top1": 0.5317282676696777, "greedy": "**Stephen Frears**."}
+{"key": "director::Beloved", "entropy": 0.1696092188358307, "top1": 0.9790908694267273, "greedy": "**Jonathan Demme**."}
+{"key": "composer::Doctor Who", "entropy": 1.3137552738189697, "top1": 0.6630721092224121, "greedy": "a bit complicated!"}
+{"key": "sport::2012 Georgetown Hoyas men's soccer team", "entropy": 0.02551300823688507, "top1": 0.9972620010375977, "greedy": "**soccer**."}
+{"key": "producer::Big", "entropy": 0.8165820837020874, "top1": 0.83270263671875, "greedy": "**Brian Grazer**."}
+{"key": "capital::Saudi Arabia", "entropy": 0.08031848073005676, "top1": 0.9853370785713196, "greedy": "**Riyadh**."}
+{"key": "capital::United Kingdom", "entropy": 0.06278499960899353, "top1": 0.9900746941566467, "greedy": "**London**."}
+{"key": "genre::Say It Again", "entropy": 2.565584182739258, "top1": 0.3688375651836395, "greedy": "**Pop**."}
+{"key": "screenwriter::The City", "entropy": 1.429978370666504, "top1": 0.6507990956306458, "greedy": "a bit complicated!"}
+{"key": "screenwriter::Eggs", "entropy": 1.8344800472259521, "top1": 0.5395553708076477, "greedy": "**John Michael McDonagh**."}
+{"key": "composer::Time Machine", "entropy": 1.3192641735076904, "top1": 0.6875277757644653, "greedy": "**Mike Oldfield**."}
+{"key": "genre::Strength", "entropy": 2.7698469161987305, "top1": 0.2047046422958374, "greedy": "a bit tricky because \"Strength\" can refer to many things"}
+{"key": "sport::Katie Taylor", "entropy": 0.21667292714118958, "top1": 0.9633216857910156, "greedy": "**boxing**."}
+{"key": "genre::All the Years", "entropy": 2.7838549613952637, "top1": 0.3196307122707367, "greedy": "**Literary Fiction**."}
+{"key": "composer::Virginia", "entropy": 1.8651009798049927, "top1": 0.4738042652606964, "greedy": "**John Philip Sousa**."}
+{"key": "sport::Los Angeles Galaxy", "entropy": 0.04831865429878235, "top1": 0.9938282370567322, "greedy": "**soccer** (also known as football in most of the"}
+{"key": "genre::Gorillaz", "entropy": 1.9279961585998535, "top1": 0.4701898396015167, "greedy": "a bit complex because Gorillaz blend a lot of genres!"}
+{"key": "sport::Vasili Penyasov", "entropy": 0.3711097836494446, "top1": 0.9576812982559204, "greedy": "**volleyball**."}
+{"key": "director::Panic", "entropy": 1.0988246202468872, "top1": 0.8042219281196594, "greedy": "**Henry Joost** and **Ariel Schulman**."}
+{"key": "sport::Eric Snow", "entropy": 0.23583292961120605, "top1": 0.9664535522460938, "greedy": "**basketball**."}
+{"key": "father::Nero", "entropy": 0.205122172832489, "top1": 0.9744506478309631, "greedy": "**Gnaeus Domitius Ahenobarbus**."}
+{"key": "producer::The Proposal", "entropy": 1.4325402975082397, "top1": 0.5376878976821899, "greedy": "a bit complicated!"}
+{"key": "capital::Alaska", "entropy": 0.26160866022109985, "top1": 0.9310391545295715, "greedy": "**Juneau**."}
+{"key": "place of birth::Richard S. Bull", "entropy": 0.5086434483528137, "top1": 0.935640275478363, "greedy": "**Chicago, Illinois**."}
+{"key": "genre::Until I Met You", "entropy": 2.205885410308838, "top1": 0.42031529545783997, "greedy": "a bit tricky because \"Until I Met You\" can refer"}
+{"key": "director::Star Wars", "entropy": 0.8625655174255371, "top1": 0.7988031506538391, "greedy": "a bit complicated!"}
+{"key": "father::Wayne Gretzky", "entropy": 0.22970351576805115, "top1": 0.9481208324432373, "greedy": "**Walter Gretzky**."}
+{"key": "director::Valfångare", "entropy": 0.09532126039266586, "top1": 0.9905350804328918, "greedy": "**Lasse Hallström**."}
+{"key": "director::The Secret Call", "entropy": 0.8011587858200073, "top1": 0.8850064277648926, "greedy": "**John Carpenter**."}
+{"key": "director::Marina's Destiny", "entropy": 1.1671236753463745, "top1": 0.8166345953941345, "greedy": "**John Badham**."}
+{"key": "author::New Keywords", "entropy": 0.09584656357765198, "top1": 0.9893553853034973, "greedy": "**Luke Thurston**."}
+{"key": "director::Rebecca", "entropy": 0.1094050407409668, "top1": 0.9847590327262878, "greedy": "**Alfred Hitchcock**."}
+{"key": "screenwriter::Havoc", "entropy": 1.3961925506591797, "top1": 0.6626235842704773, "greedy": "**Gregg Hurwitz**."}
+{"key": "capital::arrondissement of Nogent-le-Rotrou", "entropy": 0.9126127362251282, "top1": 0.744904637336731, "greedy": "**Nogent-le-Rotrou**."}
+{"key": "capital::Nigeria", "entropy": 0.06319861114025116, "top1": 0.9894497990608215, "greedy": "**Abuja**."}
+{"key": "composer::The Omen", "entropy": 0.06403525918722153, "top1": 0.9935569167137146, "greedy": "**Jerry Goldsmith**."}
+{"key": "country::Tholuvankadu", "entropy": 0.10049156844615936, "top1": 0.9882972836494446, "greedy": "**India**."}
+{"key": "author::Memory, Sorrow, and Thorn", "entropy": 0.07163259387016296, "top1": 0.9914387464523315, "greedy": "**Tad Williams**."}
+{"key": "capital::United States of America", "entropy": 0.06956936419010162, "top1": 0.9880670309066772, "greedy": "**Washington, D.C.**"}
+{"key": "sport::1989–90 1. Slovenská národná hokejová liga season", "entropy": 0.029384180903434753, "top1": 0.9964959025382996, "greedy": "**ice hockey**."}
+{"key": "place of birth::Phil Williams", "entropy": 1.6039758920669556, "top1": 0.7026599049568176, "greedy": "**Nashville, Tennessee**."}
+{"key": "screenwriter::The Mist", "entropy": 1.4228845834732056, "top1": 0.5193418264389038, "greedy": "a bit complicated:"}
+{"key": "father::Isaac B. Desha", "entropy": 0.6543405055999756, "top1": 0.9001434445381165, "greedy": "**Benjamin Desha**."}
+{"key": "screenwriter::Jurassic Park", "entropy": 0.812447190284729, "top1": 0.8132866621017456, "greedy": "**Michael Crichton**."}
+{"key": "director::The Thing from Another World", "entropy": 0.044072430580854416, "top1": 0.9953179359436035, "greedy": "**Christian Nyby**."}
+{"key": "director::Victory", "entropy": 0.49795296788215637, "top1": 0.9201041460037231, "greedy": "**John Huston**."}
+{"key": "producer::Ghost", "entropy": 1.2249948978424072, "top1": 0.6726282835006714, "greedy": "a bit complicated!"}
+{"key": "father::Tanya", "entropy": 2.886324882507324, "top1": 0.403098464012146, "greedy": "not provided in the context. Please provide more information about Tanya"}
+{"key": "producer::Tron: Legacy", "entropy": 0.9956245422363281, "top1": 0.7777138948440552, "greedy": "a bit complex, as there were multiple producers involved in Tron"}
+{"key": "screenwriter::The Road", "entropy": 1.1851246356964111, "top1": 0.6525387167930603, "greedy": "**Joe Penhall**."}
+{"key": "mother::Emmanuel Théodose de La Tour d'Auvergne", "entropy": 0.25436508655548096, "top1": 0.9673568606376648, "greedy": "**Catherine de Vivonne**."}
+{"key": "capital::Czech Republic", "entropy": 0.052849993109703064, "top1": 0.9916262626647949, "greedy": "**Prague**."}
+{"key": "genre::Options", "entropy": 2.8008852005004883, "top1": 0.22508876025676727, "greedy": "a bit tricky because \"Options\" can refer to different things"}
+{"key": "composer::Schlager", "entropy": 1.6771554946899414, "top1": 0.4520750045776367, "greedy": "a bit tricky!"}
+{"key": "screenwriter::The Tunnel", "entropy": 1.2461843490600586, "top1": 0.7226901054382324, "greedy": "a bit complicated because \"The Tunnel\" can refer to two"}
+{"key": "genre::Too Short", "entropy": 2.0184414386749268, "top1": 0.4988422393798828, "greedy": "**hip hop**."}
+{"key": "director::Forever", "entropy": 1.271134376525879, "top1": 0.7367457151412964, "greedy": "**Joel Schumacher**."}
+{"key": "director::The Changeling", "entropy": 0.9682749509811401, "top1": 0.8002893328666687, "greedy": "**Peter Medak**."}
+{"key": "author::Corridor", "entropy": 1.4682104587554932, "top1": 0.6268942356109619, "greedy": "**James Tynion IV**."}
+{"key": "father::Ptolemy II of Telmessos", "entropy": 0.49227654933929443, "top1": 0.9295642375946045, "greedy": "**Ptolemy I Soter**."}
+{"key": "composer::The Sanguine Fan", "entropy": 0.5457080602645874, "top1": 0.9242948293685913, "greedy": "**Franz Schubert**."}
+{"key": "director::The Spider", "entropy": 1.6217260360717773, "top1": 0.40320315957069397, "greedy": "**George Waggner**."}
+{"key": "occupation::T. P. Poonatchi", "entropy": 2.211836338043213, "top1": 0.5037134885787964, "greedy": "not readily available in my knowledge base. I do not have"}
+{"key": "country::history of Ghana", "entropy": 1.0945194959640503, "top1": 0.7169030904769897, "greedy": "**Ghana**."}
+{"key": "producer::All Because of You", "entropy": 1.9262536764144897, "top1": 0.471046507358551, "greedy": "**Max Martin**."}
+{"key": "author::The Song of Hiawatha", "entropy": 0.012675018981099129, "top1": 0.9986005425453186, "greedy": "**Henry Wadsworth Longfellow**."}
+{"key": "composer::Holes", "entropy": 0.863743782043457, "top1": 0.8520501852035522, "greedy": "**Mark Hollmann**."}
+{"key": "director::La Rival", "entropy": 0.7149540185928345, "top1": 0.8984699845314026, "greedy": "**Jean-Luc Godard**."}
+{"key": "author::GNU Affero General Public License", "entropy": 0.11444444954395294, "top1": 0.9854944944381714, "greedy": "**Richard Stallman**."}
+{"key": "screenwriter::The Thick of It", "entropy": 0.9077379107475281, "top1": 0.8076769709587097, "greedy": "**Armando Iannucci**."}
+{"key": "capital::Gmina Andrespol", "entropy": 0.21357274055480957, "top1": 0.9725522994995117, "greedy": "**Andrespol**."}
+{"key": "author::Fruits", "entropy": 0.2964966893196106, "top1": 0.9660789966583252, "greedy": "**Ai Yazawa**."}
+{"key": "composer::New Year", "entropy": 1.8932812213897705, "top1": 0.3322625160217285, "greedy": "a bit tricky!"}
+{"key": "director::The Sisters", "entropy": 0.9895967245101929, "top1": 0.814796507358551, "greedy": "**Brian De Palma**."}
+{"key": "composer::Erfreute Zeit im neuen Bunde, BWV 83", "entropy": 0.0438612625002861, "top1": 0.9939737915992737, "greedy": "**Johann Sebastian Bach**."}
+{"key": "capital::New Jersey", "entropy": 0.10260003060102463, "top1": 0.9801504611968994, "greedy": "**Trenton**."}
+{"key": "occupation::Guillem Ramon de Gironella", "entropy": 2.436150550842285, "top1": 0.3575383424758911, "greedy": "not readily available in common knowledge sources."}
+{"key": "composer::Reißt euch los, bedrängte Sinnen, BWV 224", "entropy": 0.04771760106086731, "top1": 0.993320882320404, "greedy": "**Johann Sebastian Bach**."}
+{"key": "author::Today", "entropy": 1.1556814908981323, "top1": 0.7225428819656372, "greedy": "a bit tricky!"}
+{"key": "author::Time Enough", "entropy": 0.17497669160366058, "top1": 0.9799867272377014, "greedy": "**Robert Heinlein**."}
+{"key": "director::The Other Half", "entropy": 0.8638582229614258, "top1": 0.8629895448684692, "greedy": "**Tom DiCillo**."}
+{"key": "director::The Pocket-knife", "entropy": 1.461187720298767, "top1": 0.7104247808456421, "greedy": "**John Huston**."}
+{"key": "composer::Let Me Know", "entropy": 2.137784719467163, "top1": 0.4756339192390442, "greedy": "**unknown**."}
+{"key": "screenwriter::Ecco fatto", "entropy": 1.3953704833984375, "top1": 0.6923881769180298, "greedy": "**Paolo Virzì**."}
+{"key": "director::Help Wanted", "entropy": 1.7985444068908691, "top1": 0.5239080190658569, "greedy": "**John Landis**."}
+{"key": "author::Fallen", "entropy": 0.06518234312534332, "top1": 0.9918747544288635, "greedy": "**Lauren Kate**."}
+{"key": "author::Endpeace", "entropy": 0.6946694254875183, "top1": 0.8975313305854797, "greedy": "**Peter Watts**."}
+{"key": "sport::Koumiba Djossouvi", "entropy": 0.4242669343948364, "top1": 0.9465506076812744, "greedy": "**football (soccer)**."}
+{"key": "producer::The Builder", "entropy": 2.439021348953247, "top1": 0.2543593645095825, "greedy": "a bit tricky!"}
+{"key": "capital of::New York City", "entropy": 1.5689442157745361, "top1": 0.42206481099128723, "greedy": "a bit tricky!"}
+{"key": "director::Giant", "entropy": 0.053118351846933365, "top1": 0.9942849278450012, "greedy": "**George Stevens**."}
+{"key": "capital::Sal", "entropy": 0.32512250542640686, "top1": 0.960878849029541, "greedy": "**Espargos**."}
+{"key": "director::Forgive", "entropy": 1.2387785911560059, "top1": 0.7996148467063904, "greedy": "**John Michael McDonagh**."}
+{"key": "capital::Molokovsky District", "entropy": 0.198201522231102, "top1": 0.97630375623703, "greedy": "**Molokovo**."}
+{"key": "genre::Progression", "entropy": 2.3142881393432617, "top1": 0.31763985753059387, "greedy": "a bit tricky because \"Progression\" can refer to different things"}
+{"key": "genre::Being There", "entropy": 1.4484699964523315, "top1": 0.6819058656692505, "greedy": "a bit complex, as \"Being There\" blends several genres"}
+{"key": "producer::O skliros andras", "entropy": 1.5167126655578613, "top1": 0.7048865556716919, "greedy": "**György Kovács**."}
+{"key": "country::Millennium Biltmore Hotel", "entropy": 0.32234933972358704, "top1": 0.9242437481880188, "greedy": "**United States**."}
+{"key": "screenwriter::Storm over Mont Blanc", "entropy": 1.5394397974014282, "top1": 0.574510931968689, "greedy": "**John Michael Hayes**."}
+{"key": "religion::Ricardo Watty Urquidi", "entropy": 1.5611318349838257, "top1": 0.6337575316429138, "greedy": "not publicly available."}
+{"key": "author::The Trial", "entropy": 0.025063415989279747, "top1": 0.9965523481369019, "greedy": "**Franz Kafka**."}
+{"key": "capital of::Manga", "entropy": 1.720384120941162, "top1": 0.47177937626838684, "greedy": "**Japan**."}
+{"key": "director::Welcome Home", "entropy": 1.0067378282546997, "top1": 0.8251044750213623, "greedy": "**George A. Romero**."}
+{"key": "mother::Christiane Sehested", "entropy": 1.8062747716903687, "top1": 0.57579106092453, "greedy": "**not publicly available**."}
+{"key": "religion::George Washington", "entropy": 1.3145707845687866, "top1": 0.6114345788955688, "greedy": "complex and doesn't fit neatly into a single label."}
+{"key": "country::Chubu Centrair International Airport", "entropy": 0.056362587958574295, "top1": 0.9919484853744507, "greedy": "**Japan**."}
+{"key": "director::The Only Woman", "entropy": 0.48816561698913574, "top1": 0.937740683555603, "greedy": "**John Schlesinger**."}
+{"key": "author::Aida", "entropy": 0.9939826726913452, "top1": 0.7524855136871338, "greedy": "**Giuseppe Verdi**."}
+{"key": "country::Fântâneaua Rece River", "entropy": 0.03555556386709213, "top1": 0.9956662654876709, "greedy": "**Romania**."}
+{"key": "country::Neal", "entropy": 2.6172091960906982, "top1": 0.3435787260532379, "greedy": "not provided in the context. Please provide more information about Neal"}
+{"key": "genre::Battlefield", "entropy": 0.5509858131408691, "top1": 0.8998420238494873, "greedy": "**first-person shooter (FPS)**."}
+{"key": "screenwriter::The Thing from Another World", "entropy": 1.3069045543670654, "top1": 0.5002454519271851, "greedy": "**Charles Lederer**."}
+{"key": "composer::Ode", "entropy": 1.6604329347610474, "top1": 0.620142936706543, "greedy": "**Friedrich Schiller**."}
+{"key": "producer::Spy", "entropy": 1.4356045722961426, "top1": 0.6295129060745239, "greedy": "a bit complicated!"}
+{"key": "country::Radio Free Asia", "entropy": 1.067321538925171, "top1": 0.7520533800125122, "greedy": "a bit complicated."}
+{"key": "author::Close to Home", "entropy": 1.6357531547546387, "top1": 0.6530970931053162, "greedy": "**Michael Connelly**."}
+{"key": "religion::Abraham Lincoln", "entropy": 1.935073733329773, "top1": 0.3173460066318512, "greedy": "a bit complex. Abraham Lincoln is generally considered to have been"}
+{"key": "producer::De Laatste Dagen van een Eiland", "entropy": 1.2003326416015625, "top1": 0.793861448764801, "greedy": "**Eyeworks**."}
+{"key": "screenwriter::Goodbye", "entropy": 2.1460888385772705, "top1": 0.34864872694015503, "greedy": "**Patrick Marber**."}
+{"key": "genre::The Club", "entropy": 1.8893773555755615, "top1": 0.5248870849609375, "greedy": "a bit tricky as \"The Club\" can refer to a"}
+{"key": "mother::Constantine I, King of Armenia", "entropy": 1.5405186414718628, "top1": 0.48326584696769714, "greedy": "**Helena of Ancyra**."}
+{"key": "place of birth::Yugo Yoshida", "entropy": 0.9462899565696716, "top1": 0.8576863408088684, "greedy": "**Tokyo, Japan**."}
+{"key": "director::The New World", "entropy": 0.03143145889043808, "top1": 0.9962510466575623, "greedy": "**Terrence Malick**."}
+{"key": "country::Izvorul Morarului River", "entropy": 0.026014965027570724, "top1": 0.9970833659172058, "greedy": "**Romania**."}
+{"key": "author::Pearl", "entropy": 0.07993996143341064, "top1": 0.9898642897605896, "greedy": "**John Steinbeck**."}
+{"key": "producer::Vertigo", "entropy": 1.17795729637146, "top1": 0.6138231754302979, "greedy": "**Alfred Hitchcock**."}
+{"key": "capital::Tikhvinsky District", "entropy": 0.10221000015735626, "top1": 0.9861043095588684, "greedy": "**Tikhvin**."}
+{"key": "genre::Avatar: The Last Airbender", "entropy": 1.640480875968933, "top1": 0.3682155907154083, "greedy": "a bit multifaceted:"}
+{"key": "author::And did those feet in ancient time", "entropy": 0.08271536231040955, "top1": 0.9885051846504211, "greedy": "**William Blake**."}
+{"key": "father::David Cassidy", "entropy": 0.06637860834598541, "top1": 0.9929509162902832, "greedy": "**Jack Cassidy**."}
+{"key": "composer::Grease", "entropy": 0.4735535979270935, "top1": 0.916771411895752, "greedy": "**Jim Jacobs** and **Warren Casey**."}
+{"key": "director::La Haine", "entropy": 0.044461045414209366, "top1": 0.9945038557052612, "greedy": "**Mathieu Kassovitz**."}
+{"key": "screenwriter::Laaj", "entropy": 1.9114630222320557, "top1": 0.5633140206336975, "greedy": "**not publicly available**."}
+{"key": "genre::Megan Is Missing", "entropy": 2.2705044746398926, "top1": 0.34593939781188965, "greedy": "a bit complex, as \"Megan Is Missing\" blends several"}
+{"key": "father::Melora Hardin", "entropy": 1.9584827423095703, "top1": 0.3761823773384094, "greedy": "not publicly available information."}
+{"key": "mother::Cher", "entropy": 0.12561242282390594, "top1": 0.9837912321090698, "greedy": "**Georgia Holt**."}
+{"key": "composer::Power", "entropy": 1.7162909507751465, "top1": 0.5309819579124451, "greedy": "**Kanye West**."}
+{"key": "place of birth::Matt Moralee", "entropy": 1.9740170240402222, "top1": 0.40158307552337646, "greedy": "not publicly available."}
+{"key": "producer::Saturday Morning", "entropy": 1.4183599948883057, "top1": 0.6629599332809448, "greedy": "a bit tricky because \"Saturday Morning\" isn't a"}
+{"key": "capital::Philippines", "entropy": 0.025318019092082977, "top1": 0.9968219995498657, "greedy": "**Manila**."}
+{"key": "author::The Aware", "entropy": 0.6931053400039673, "top1": 0.8976736068725586, "greedy": "**Dr.  Daniel J. Siegel**."}
+{"key": "director::The Other Person", "entropy": 0.9780609011650085, "top1": 0.838010311126709, "greedy": "**David Fincher**."}
+{"key": "genre::MUD", "entropy": 1.2177441120147705, "top1": 0.742095410823822, "greedy": "a bit nuanced:"}
+{"key": "country::Kalu", "entropy": 1.3517240285873413, "top1": 0.7595618367195129, "greedy": "**Nigeria**."}
+{"key": "director::Paprika", "entropy": 0.034611523151397705, "top1": 0.9958676099777222, "greedy": "**Satoshi Kon**."}
+{"key": "director::Washed Out", "entropy": 1.9035820960998535, "top1": 0.464002788066864, "greedy": "**Aaron Maine**, who is also the musician behind the project"}
+{"key": "producer::The Fly", "entropy": 1.4551695585250854, "top1": 0.6153883934020996, "greedy": "a bit tricky as it depends on which \"The Fly\""}
+{"key": "occupation::Kanye West", "entropy": 1.5463924407958984, "top1": 0.42146334052085876, "greedy": "complex because Kanye West has many roles:"}
+{"key": "author::Malvaloca", "entropy": 0.5823885202407837, "top1": 0.9069458842277527, "greedy": "**Miguel de Cervantes**."}
+{"key": "place of birth::John Spencer-Churchill, 11th Duke of Marlborough", "entropy": 0.11527220904827118, "top1": 0.9861582517623901, "greedy": "**London**."}
+{"key": "producer::The Professor", "entropy": 1.5672166347503662, "top1": 0.5771505832672119, "greedy": "a bit tricky because \"The Professor\" could refer to several"}
+{"key": "author::Americanah", "entropy": 0.022311406210064888, "top1": 0.9972112774848938, "greedy": "**Chimamanda Ngozi Adichie**."}
+{"key": "country::Gori Balmak", "entropy": 0.4509159326553345, "top1": 0.941712498664856, "greedy": "**Georgia**."}
+{"key": "producer::The Room", "entropy": 0.9620228409767151, "top1": 0.7839752435684204, "greedy": "**Tommy Wiseau**."}
+{"key": "author::Jumper", "entropy": 0.048229869455099106, "top1": 0.9944958090782166, "greedy": "**Steven Gould**."}
+{"key": "director::Finale", "entropy": 1.4062381982803345, "top1": 0.7037352919578552, "greedy": "**Jeremy Podeswa**."}
+{"key": "country::Cổ Linh", "entropy": 0.1629868745803833, "top1": 0.9807253479957581, "greedy": "**Vietnam**."}
+{"key": "producer::Wild Things", "entropy": 1.3480010032653809, "top1": 0.6309553384780884, "greedy": "a bit complicated!"}
+{"key": "screenwriter::Closer", "entropy": 0.6433361172676086, "top1": 0.8826969265937805, "greedy": "**Patrick Marber**."}
+{"key": "screenwriter::So Can I", "entropy": 1.7634079456329346, "top1": 0.5799256563186646, "greedy": "**not publicly available**."}
+{"key": "author::Template", "entropy": 2.3693385124206543, "top1": 0.3457140624523163, "greedy": "a bit tricky!"}
+{"key": "author::Spice and Wolf", "entropy": 0.05176810175180435, "top1": 0.994306743144989, "greedy": "**Isuna Hasekura**."}
+{"key": "screenwriter::Murderers", "entropy": 1.9378070831298828, "top1": 0.4557710289955139, "greedy": "**David S. Ward**."}
+{"key": "genre::The Harrowing", "entropy": 1.834275484085083, "top1": 0.5152115821838379, "greedy": "a bit nuanced!"}
+{"key": "genre::I Will Be There", "entropy": 2.592663288116455, "top1": 0.1836339235305786, "greedy": "a bit tricky because \"I Will Be There\" is a"}
+{"key": "religion::Franciszek Rogaczewski", "entropy": 2.25111722946167, "top1": 0.42236924171447754, "greedy": "not readily available in public sources."}
+{"key": "author::The Walking Dead", "entropy": 0.08022653311491013, "top1": 0.9907059073448181, "greedy": "**Robert Kirkman**."}
+{"key": "producer::Hoffmeyer's Legacy", "entropy": 1.9965728521347046, "top1": 0.4717393219470978, "greedy": "**not readily available**."}
+{"key": "director::Gniazdo", "entropy": 0.3582468032836914, "top1": 0.9596894383430481, "greedy": "**Andrzej Wajda**."}
+{"key": "sport::Cris Carter", "entropy": 0.24262705445289612, "top1": 0.9677994847297668, "greedy": "**football**."}
+{"key": "capital::Canada", "entropy": 0.07829401642084122, "top1": 0.9864300489425659, "greedy": "**Ottawa**."}
+{"key": "composer::Signs", "entropy": 0.16149389743804932, "top1": 0.981819748878479, "greedy": "**James Newton Howard**."}
+{"key": "author::Het uur tussen hond en wolf", "entropy": 0.12388279289007187, "top1": 0.9869632124900818, "greedy": "**Jan Wolkers**."}
+{"key": "place of birth::Tony Clark", "entropy": 0.6051924228668213, "top1": 0.9236004948616028, "greedy": "**Detroit, Michigan**."}
+{"key": "producer::The Sale", "entropy": 2.513192653656006, "top1": 0.24771152436733246, "greedy": "**not readily available**."}
+{"key": "author::Chaotic", "entropy": 1.1372021436691284, "top1": 0.7327993512153625, "greedy": "**Neal Shusterman**."}
+{"key": "director::Only People", "entropy": 1.2876535654067993, "top1": 0.8008519411087036, "greedy": "**David Lynch**."}
+{"key": "author::The Economics and Ethics of Private Property", "entropy": 0.0502939336001873, "top1": 0.9951143264770508, "greedy": "**Robert Nozick**."}
+{"key": "author::Prime Time", "entropy": 1.4144822359085083, "top1": 0.713201105594635, "greedy": "**Stephen King**."}
+{"key": "screenwriter::The Piano", "entropy": 0.7200124859809875, "top1": 0.8519494533538818, "greedy": "**Jane Campion**."}
+{"key": "capital of::Dmitriyev", "entropy": 0.8985273838043213, "top1": 0.8645474314689636, "greedy": "**Russia**."}
+{"key": "director::Echo", "entropy": 1.5508275032043457, "top1": 0.670486330986023, "greedy": "**David Koepp**."}
+{"key": "composer::Separado!", "entropy": 0.8815891742706299, "top1": 0.8647045493125916, "greedy": "**Carlos Santana**."}
+{"key": "director::Broadway Jones", "entropy": 0.8636883497238159, "top1": 0.861853837966919, "greedy": "**George Sidney**."}
+{"key": "genre::Princess", "entropy": 2.393483877182007, "top1": 0.3335200548171997, "greedy": "a bit tricky because \"Princess\" can refer to several things"}
+{"key": "father::Aung San Suu Kyi", "entropy": 0.07442542910575867, "top1": 0.989867091178894, "greedy": "**Aung San**."}
+{"key": "country::KLM", "entropy": 0.5197487473487854, "top1": 0.8133569955825806, "greedy": "**Netherlands**."}
+{"key": "capital of::Nizhneangarsk", "entropy": 0.6425596475601196, "top1": 0.8974004983901978, "greedy": "**the Irkutsk Oblast**."}
+{"key": "screenwriter::Trapped in a Forest Fire", "entropy": 2.550328254699707, "top1": 0.25534990429878235, "greedy": "not readily available."}
+{"key": "place of birth::Moses the Black", "entropy": 2.343991279602051, "top1": 0.3335626721382141, "greedy": "**unknown**."}
+{"key": "capital::Germany", "entropy": 0.09292928874492645, "top1": 0.9824371337890625, "greedy": "**Berlin**."}
+{"key": "author::America's Secret War", "entropy": 0.7046089172363281, "top1": 0.8853168487548828, "greedy": "**John Stockwell**."}
+{"key": "father::Theodelap of Spoleto", "entropy": 0.6200372576713562, "top1": 0.904697060585022, "greedy": "**Theodoric the Great**."}
+{"key": "producer::Holes", "entropy": 1.3479572534561157, "top1": 0.46740755438804626, "greedy": "**Walt Disney Pictures**."}
+{"key": "composer::I'm in Love", "entropy": 1.989650845527649, "top1": 0.3338206708431244, "greedy": "a bit tricky!"}
+{"key": "director::Three Men and a Baby", "entropy": 0.05478159710764885, "top1": 0.9940046668052673, "greedy": "**Leonard Nimoy**."}
+{"key": "composer::The Mission", "entropy": 0.11420964449644089, "top1": 0.9855513572692871, "greedy": "**Ennio Morricone**."}
+{"key": "screenwriter::The Hunger", "entropy": 1.4254921674728394, "top1": 0.5521019101142883, "greedy": "a bit complicated!"}
+{"key": "genre::Star Trek: First Contact", "entropy": 1.4417099952697754, "top1": 0.6158850193023682, "greedy": "**science fiction action**."}
+{"key": "composer::Survivor", "entropy": 1.5176852941513062, "top1": 0.5823799967765808, "greedy": "**Jim Steinman**."}
+{"key": "country::Kuczynka", "entropy": 0.28901705145835876, "top1": 0.9576840996742249, "greedy": "**Poland**."}
+{"key": "father::Giacomo Guardi", "entropy": 0.20917169749736786, "top1": 0.9756254553794861, "greedy": "**Giovanni Battista Guardi**."}
+{"key": "author::Abel", "entropy": 1.4451122283935547, "top1": 0.6559813618659973, "greedy": "**Patrick Süskind**."}
+{"key": "author::How to Stop Worrying and Start Living", "entropy": 0.04410590976476669, "top1": 0.993694007396698, "greedy": "**Dale Carnegie**."}
+{"key": "author::The Zombie Survival Guide", "entropy": 0.03654733672738075, "top1": 0.9949069619178772, "greedy": "**Max Brooks**."}
+{"key": "director::Crash 'n' Burn", "entropy": 0.6589003205299377, "top1": 0.9131869077682495, "greedy": "**David Winning**."}
+{"key": "director::Laura", "entropy": 0.02631831355392933, "top1": 0.9973010420799255, "greedy": "**Otto Preminger**."}
+{"key": "genre::El honorable Señor Valdez", "entropy": 2.0399835109710693, "top1": 0.3703990578651428, "greedy": "**magical realism**."}
+{"key": "occupation::Frits Castricum", "entropy": 2.426527976989746, "top1": 0.3685857653617859, "greedy": "not publicly available."}
+{"key": "author::Crash", "entropy": 0.8028020858764648, "top1": 0.8603980541229248, "greedy": "**J.G. Ballard**."}
+{"key": "producer::The Interview", "entropy": 1.0058785676956177, "top1": 0.795029878616333, "greedy": "a bit complex:"}
+{"key": "producer::Final Score", "entropy": 1.6137921810150146, "top1": 0.5806538462638855, "greedy": "a bit complicated as there are multiple producers involved in a film"}
+{"key": "occupation::Alan Mauritz Swanson", "entropy": 2.4404191970825195, "top1": 0.45105087757110596, "greedy": "not publicly available."}
+{"key": "sport::Michal Vacek", "entropy": 0.3437626361846924, "top1": 0.9608049988746643, "greedy": "**tennis**."}
+{"key": "country::USS Constitution", "entropy": 0.7215099334716797, "top1": 0.529528021812439, "greedy": "**the United States**."}
+{"key": "director::Indizienbeweis", "entropy": 0.3467809557914734, "top1": 0.958398163318634, "greedy": "**Wolfgang Petersen**."}
+{"key": "occupation::Bala", "entropy": 2.924976110458374, "top1": 0.28935205936431885, "greedy": "not provided in the context. Please provide more information about Bala"}
+{"key": "author::Incoming", "entropy": 0.17474302649497986, "top1": 0.9816504120826721, "greedy": "**Steven Rowley**."}
+{"key": "composer::Halloween", "entropy": 0.03805428743362427, "top1": 0.9960540533065796, "greedy": "**John Carpenter**."}
+{"key": "country::Muratdere", "entropy": 0.20838138461112976, "top1": 0.9694216251373291, "greedy": "**Turkey**."}
+{"key": "father::George", "entropy": 2.9631142616271973, "top1": 0.26218920946121216, "greedy": "**unknown**."}
+{"key": "genre::Planes", "entropy": 1.6076542139053345, "top1": 0.5580728650093079, "greedy": "**animated adventure comedy**."}
+{"key": "genre::The Others", "entropy": 1.5811601877212524, "top1": 0.4554787278175354, "greedy": "a bit nuanced, as \"The Others\" blends several genres"}
+{"key": "occupation::Annie Beustes", "entropy": 2.7034552097320557, "top1": 0.3973293602466583, "greedy": "not publicly available."}
+{"key": "capital::Japan", "entropy": 0.0446438305079937, "top1": 0.9932478666305542, "greedy": "**Tokyo**."}
+{"key": "genre::The Practice", "entropy": 0.6628041863441467, "top1": 0.8621915578842163, "greedy": "**legal drama**."}
+{"key": "author::Timeline", "entropy": 0.11993061006069183, "top1": 0.9842206239700317, "greedy": "**Michael Crichton**."}
+{"key": "author::Elements", "entropy": 0.02463831752538681, "top1": 0.9976587295532227, "greedy": "**Euclid**."}
+{"key": "father::Edward Lloyd-Mostyn, 2nd Baron Mostyn", "entropy": 0.13133755326271057, "top1": 0.981609582901001, "greedy": "**Edward Lloyd-Mostyn, 1st Baron Most"}
+{"key": "country::Dobra River", "entropy": 0.11074486374855042, "top1": 0.9887041449546814, "greedy": "**Brazil**."}
+{"key": "father::Anil Kapoor", "entropy": 0.05850386992096901, "top1": 0.9932763576507568, "greedy": "**Surinder Kapoor**."}
+{"key": "mother::Napoleon", "entropy": 0.05353521928191185, "top1": 0.9934490323066711, "greedy": "**Letizia Ramolino**."}
+{"key": "place of birth::Scott Fraser", "entropy": 1.1692405939102173, "top1": 0.8063313961029053, "greedy": "**Toronto, Canada**."}
+{"key": "composer::Symphony, K. 19b", "entropy": 0.05367887765169144, "top1": 0.9942783117294312, "greedy": "**Wolfgang Amadeus Mozart**."}
+{"key": "genre::Stories", "entropy": 2.842895030975342, "top1": 0.18449285626411438, "greedy": "a bit tricky because \"Stories\" is a very broad term"}
+{"key": "composer::That's Right", "entropy": 1.9126462936401367, "top1": 0.47439128160476685, "greedy": "**The Isley Brothers**."}
+{"key": "screenwriter::Boquitas pintadas", "entropy": 1.0618929862976074, "top1": 0.7709566354751587, "greedy": "**María Luisa Bemberg**."}
+{"key": "director::21", "entropy": 0.12468232214450836, "top1": 0.980891764163971, "greedy": "**Robert Luketic**."}
+{"key": "author::The Prince", "entropy": 0.012635627761483192, "top1": 0.9986648559570312, "greedy": "**Niccolò Machiavelli**."}
+{"key": "genre::Break Free", "entropy": 2.407792329788208, "top1": 0.2977321445941925, "greedy": "a bit tricky because \"Break Free\" can refer to a"}
+{"key": "country::University of Indonesia", "entropy": 0.04743495583534241, "top1": 0.9925909042358398, "greedy": "**Indonesia**."}
+{"key": "screenwriter::MASH", "entropy": 1.10383939743042, "top1": 0.7587974667549133, "greedy": "a bit complicated because MASH had a large team of writers"}
+{"key": "capital::Lys", "entropy": 0.21557925641536713, "top1": 0.9772321581840515, "greedy": "**Vaes Dothrak**."}
+{"key": "genre::Magic Music", "entropy": 1.5579872131347656, "top1": 0.48183733224868774, "greedy": "a bit tricky because \"Magic Music\" isn't a"}
+{"key": "place of birth::Dr. John", "entropy": 0.2019951343536377, "top1": 0.9732267260551453, "greedy": "**New Orleans, Louisiana**."}
+{"key": "genre::General Hospital", "entropy": 0.46110373735427856, "top1": 0.9203915596008301, "greedy": "**soap opera**."}
+{"key": "genre::Tempting Danger", "entropy": 1.7476427555084229, "top1": 0.6726840734481812, "greedy": "**Romance**."}
+{"key": "producer::The List", "entropy": 2.202162265777588, "top1": 0.35831698775291443, "greedy": "a bit tricky because \"The List\" could refer to several"}
+{"key": "composer::Porch", "entropy": 1.5103884935379028, "top1": 0.7084205746650696, "greedy": "**The Indigo Girls**."}
+{"key": "capital of::Busia", "entropy": 0.7232925295829773, "top1": 0.8837058544158936, "greedy": "**Busia County** in Kenya."}
+{"key": "screenwriter::Guy", "entropy": 1.5087701082229614, "top1": 0.6922369599342346, "greedy": "**Michael Arndt**."}
+{"key": "screenwriter::Sam", "entropy": 1.611222505569458, "top1": 0.6611514687538147, "greedy": "**David Mamet**."}
+{"key": "genre::2001", "entropy": 2.009340763092041, "top1": 0.4739745259284973, "greedy": "a bit complex, as \"2001: A"}
+{"key": "genre::Troy", "entropy": 1.7932463884353638, "top1": 0.5447934865951538, "greedy": "a bit complex, as \"Troy\" can refer to several"}

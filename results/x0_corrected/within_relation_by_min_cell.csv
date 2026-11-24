@@ -1,0 +1,5 @@
+min_questions_per_cell,role,n_relations,relations,margin_per_relation,n_obscure_known,n_popular_unknown,smallest_obscure_known_cell,smallest_popular_unknown_cell,mean_margin,lo,hi,draws,seed,paper_lo,paper_hi,paper_draws,note
+3,main (paper's row),3,"composer, country, sport",composer -0.599; country +0.687; sport -0.207,57,57,4,6,-0.0397291,-0.201202,0.107806,10000,0,-0.197,0.113,5000,questions resampled within relation and cell
+1,extra appendix row,6,"capital, composer, country, director, father, sport",capital +0.778; composer -0.599; country +0.687; director -0.133; father +0.744; sport -0.207,86,96,1,1,0.211501,0.112869,0.30226,10000,0,,,,questions resampled within relation and cell
+5,extra appendix row,2,"country, sport",country +0.687; sport -0.207,53,24,7,6,0.240028,0.0204098,0.443536,10000,0,,,,questions resampled within relation and cell
+10,extra appendix row,1,country,country +0.687,46,18,46,18,0.687198,,,10000,0,,,,"one relation: no interval for a mean over relations; resampling only its questions gives [+0.520, +0.826]"

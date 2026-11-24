@@ -1,0 +1,17 @@
+measure,statistic,relations,n_OK,estimate,lo,hi
+"regex, 20 x 24-token replies, full pool",mean margin over relations with every cell >= 1,"capital, composer, country, director, father, sport",86,0.211501,0.113225,0.30227
+"regex, 20 x 24-token replies, full pool",mean margin over relations with every cell >= 3,"composer, country, sport",57,-0.0397291,-0.199652,0.109434
+"regex, 20 x 24-token replies, full pool",mean margin over relations with every cell >= 5,"country, sport",53,0.240028,0.0203015,0.437571
+"regex, 20 x 24-token replies, full pool","margin, outside country, capital, sport",,7,-0.0566964,-0.257738,0.243917
+"regex, 20 x 24-token replies, full pool","margin, inside country, capital, sport",,80,0.57325,0.412625,0.712875
+"regex, 20 x 24-token replies, full pool","margin, all relations",,87,0.442288,0.345395,0.534087
+Two judges (primary; adopted post hoc),mean margin over relations with every cell >= 1,"composer, country, director, father, sport",59,0.0256729,-0.0386791,0.103109
+Two judges (primary; adopted post hoc),mean margin over relations with every cell >= 3,composer,4,-0.666667,-0.866667,-0.433333
+Two judges (primary; adopted post hoc),"margin, outside country, capital, sport",,7,-0.0481151,-0.246528,0.265377
+Two judges (primary; adopted post hoc),"margin, inside country, capital, sport",,80,0.65,0.5625,0.733333
+Two judges (primary; adopted post hoc),"margin, all relations",,87,0.425862,0.311562,0.536484
+"regex, same 96-token replies",mean margin over relations with every cell >= 1,"composer, country, director, father, sport",59,0.0198758,-0.0637681,0.111804
+"regex, same 96-token replies",mean margin over relations with every cell >= 3,composer,4,-0.666667,-0.9,-0.4
+"regex, same 96-token replies","margin, outside country, capital, sport",,7,-0.11756,-0.322917,0.199405
+"regex, same 96-token replies","margin, inside country, capital, sport",,80,0.645833,0.4625,0.791667
+"regex, same 96-token replies","margin, all relations",,87,0.428659,0.303521,0.546438

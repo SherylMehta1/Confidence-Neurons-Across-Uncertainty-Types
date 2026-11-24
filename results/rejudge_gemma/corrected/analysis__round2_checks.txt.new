@@ -1,0 +1,11 @@
+(1) Llama free replies (3 per question, 96 tokens): share containing a gold alias
+  popular  HighlyKnown replies  300  correct 0.98  | non-abstaining replies  299 correct 0.98  | questions with both a correct reply and an abstention: 1 of 100
+  popular  Unknown     replies  300  correct 0.37  | non-abstaining replies  245 correct 0.45  | questions with both a correct reply and an abstention: 1 of 100
+  obscure  HighlyKnown replies  261  correct 0.53  | non-abstaining replies  102 correct 0.89  | questions with both a correct reply and an abstention: 30 of 87
+  obscure  Unknown     replies  300  correct 0.01  | non-abstaining replies   87 correct 0.02  | questions with both a correct reply and an abstention: 0 of 100
+
+(2) Linear probability models of the abstention rate, relation fixed effects, 95% bootstrap CI
+  two judges (n=387)           obscure +0.509 [+0.431,+0.589]  unknown +0.242 [+0.150,+0.325]
+  two judges (n=387)           obscure +0.411 [+0.333,+0.491]  unknown -0.060 [-0.165,+0.033]  entropy_z +0.219 [+0.164,+0.273]
+  regex, full pool (n=2303)    obscure +0.616 [+0.577,+0.653]  unknown +0.217 [+0.176,+0.256]
+  regex, full pool (n=2303)    obscure +0.519 [+0.479,+0.558]  unknown -0.007 [-0.050,+0.035]  entropy_z +0.181 [+0.160,+0.203]

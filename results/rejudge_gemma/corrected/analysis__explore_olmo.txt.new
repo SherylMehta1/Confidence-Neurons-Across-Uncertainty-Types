@@ -1,0 +1,6 @@
+OLMo-2-7B-Instruct (exploratory): 348 questions, 1044 replies; two-judge kappa 0.681; Fleiss kappa 0.751
+cell counts: {'uncertain/Unknown': 100, 'control/Unknown': 100, 'control/HighlyKnown': 100, 'uncertain/HighlyKnown': 48}
+majority of 3: pop +0.099 [+0.058, +0.142]  know +0.114 [+0.072, +0.156]  diff -0.015 [-0.069, +0.043]  n {'unc/Unkn': 100, 'unc/High': 48, 'con/Unkn': 100, 'con/High': 100}
+  cells {"unc/Unkn": 0.217, "unc/High": 0.042, "con/Unkn": 0.057, "con/High": 0.003} -> NEITHER
+both of two: pop +0.079 [+0.044, +0.114]  know +0.101 [+0.066, +0.136]  diff -0.022 [-0.063, +0.018]  n {'unc/Unkn': 100, 'unc/High': 48, 'con/Unkn': 100, 'con/High': 100}
+  cells {"unc/Unkn": 0.18, "unc/High": 0.021, "con/Unkn": 0.043, "con/High": 0.0} -> NEITHER

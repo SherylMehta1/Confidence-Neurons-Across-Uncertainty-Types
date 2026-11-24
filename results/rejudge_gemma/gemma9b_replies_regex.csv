@@ -1,0 +1,9 @@
+prompt,arm,know,stored,correct
+permissive,control,HighlyKnown,0,0
+permissive,control,Unknown,0.13333,0.14
+permissive,uncertain,HighlyKnown,0.41667,0.39
+permissive,uncertain,Unknown,0.58,0.58333
+plain,control,HighlyKnown,0,0
+plain,control,Unknown,0.046667,0.02
+plain,uncertain,HighlyKnown,0.03,0.026667
+plain,uncertain,Unknown,0.073333,0.096667

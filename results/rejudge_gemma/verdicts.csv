@@ -1,0 +1,12 @@
+source,model,line,as_stored,corrected
+summary.txt,gemma,-> NO DIFFERENCE RESOLVED,-> UNMEASURED,-> NO DIFFERENCE RESOLVED
+summary.txt,mistral,-> NO DIFFERENCE RESOLVED,-> UNMEASURED,-> NO DIFFERENCE RESOLVED
+e12_summary.txt,qwen,"cells {""unc/Unkn"": 0.64, ""unc/High"": 0.605, ""con/Unkn"": 0.44",-> UNMEASURED,-> FOLLOWS POPULARITY
+e12_summary.txt,qwen,licensing: obscure-unknown rate 0.640 -> reported as a permi,licensing: obscure-unknown rate 0.660 -> cannot be estimated even when permitted,licensing: obscure-unknown rate 0.640 -> reported as a permissive-prompt result
+e12_summary.txt,mistral,"cells {""unc/Unkn"": 0.737, ""unc/High"": 0.362, ""con/Unkn"": 0.1",-> UNMEASURED,-> FOLLOWS POPULARITY
+e12_summary.txt,mistral,licensing: obscure-unknown rate 0.737 -> reported as a permi,licensing: obscure-unknown rate 0.737 -> cannot be estimated even when permitted,licensing: obscure-unknown rate 0.737 -> reported as a permissive-prompt result
+e15_summary.txt,olmo2_7b,"cells {""unc/Unkn"": 0.88, ""unc/High"": 0.611, ""con/Unkn"": 0.69",-> UNMEASURED,-> NEITHER
+e15_summary.txt,olmo2_7b,licensing: obscure-unknown rate 0.880 -> reported as a permi,licensing: obscure-unknown rate 0.887 -> cannot be estimated even when permitted,licensing: obscure-unknown rate 0.880 -> reported as a permissive-prompt result
+e4_summary.txt,llama,"D1 fam - random +0.169 [+0.123,+0.218] -> CONTROLS ABSTENTIO",-> NOT MET,-> CONTROLS ABSTENTION
+e5_summary.txt,mistral,"majority-rule pop +0.089 [+0.055, +0.125] know +0.095 [+0.06",-> UNMEASURED,-> NEITHER
+e9_summary.txt,gemma,Gemma licensing: obscure-unknown rate 0.533 >= 0.25: verdict,licensing: obscure-unknown rate 0.537 >= 0.25: verdict replaces 'cannot be estimated' (per,licensing: obscure-unknown rate 0.533 >= 0.25: verdict replaces 'cannot be estimated' (per

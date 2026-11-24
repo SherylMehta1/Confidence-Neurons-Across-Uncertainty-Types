@@ -1,0 +1,4 @@
+cutoff,role,obscure_known,obscure_unknown,popular_known,popular_unknown,known_total,unknown_total,labelled_total,dropped_band,rows_with_empty_subject_excluded
+9 of 10,main (paper's rule),87,1179,676,361,763,1540,2303,370,2
+8 of 10,extra context,96,1179,705,361,801,1540,2341,332,2
+10 of 10,extra context,73,1179,634,361,707,1540,2247,426,2

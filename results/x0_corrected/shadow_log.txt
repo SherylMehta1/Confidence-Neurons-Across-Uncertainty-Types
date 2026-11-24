@@ -1,0 +1,55 @@
+labels replaced: 49521 in 18 files
+ok   scripts/hedge_measure_v2_analysis.py  1s
+ok   scripts/round3_analysis.py e1 1s
+ok   scripts/round3_analysis.py e2 2s
+ok   scripts/round3_analysis.py e4 0s
+ok   scripts/round3_analysis.py e5 1s
+ok   scripts/round3_analysis.py e6 2s
+ok   scripts/round3_analysis.py e7 1s
+ok   scripts/round3_analysis.py e8 0s
+ok   scripts/round3_analysis.py e9 0s
+ok   scripts/round3_analysis.py e11 24s
+ok   scripts/round3_analysis.py e12 1s
+ok   scripts/round3_analysis.py e13 0s
+ok   scripts/round3_analysis.py e14 11s
+ok   scripts/round3_analysis.py e15 0s
+ok   scripts/round3_analysis.py e16 0s
+ok   paper_2.0/analysis/echo_check.py  0s
+ok   paper_2.0/analysis/round2_checks.py  2s
+ok   paper_2.0/analysis/round3_label_checks.py  1s
+ok   paper_2.0/analysis/lockin_checks.py  1s
+ok   paper_2.0/analysis/ambiguity_check.py  1s
+ok   paper_2.0/analysis/guessability.py  1s
+ok   paper_2.0/analysis/mere_checks.py  0s
+ok   paper_2.0/analysis/surprisal_check.py  1s
+ok   paper_2.0/analysis/round4_checks.py  18s
+ok   paper_2.0/analysis/explore_olmo.py  0s
+ok   paper_2.0/make_numbers.py  0s
+differs: paper_2.0/analysis/ambiguity_check.txt (18 lines)
+differs: paper_2.0/analysis/echo_check.txt (10 lines)
+differs: paper_2.0/analysis/explore_olmo.txt (10 lines)
+differs: paper_2.0/analysis/guessability.csv (4 lines)
+differs: paper_2.0/analysis/lockin_checks.txt (16 lines)
+differs: paper_2.0/analysis/mere_checks.txt (8 lines)
+differs: paper_2.0/analysis/round2_checks.txt (12 lines)
+differs: paper_2.0/analysis/round3_label_checks.txt (10 lines)
+differs: paper_2.0/analysis/round4_checks.txt (14 lines)
+differs: paper_2.0/numbers.tex (364 lines)
+differs: results/hedge_measure_v2/item_rates.csv (566 lines)
+differs: results/hedge_measure_v2/summary.txt (28 lines)
+differs: results/round3/e11_summary.txt (14 lines)
+differs: results/round3/e12_summary.txt (16 lines)
+differs: results/round3/e13_summary.txt (6 lines)
+differs: results/round3/e14_summary.txt (10 lines)
+differs: results/round3/e15_summary.txt (8 lines)
+differs: results/round3/e16_summary.txt (8 lines)
+differs: results/round3/e1_summary.txt (4 lines)
+differs: results/round3/e2_summary.txt (4 lines)
+differs: results/round3/e4_summary.txt (60 lines)
+differs: results/round3/e5_summary.csv (8 lines)
+differs: results/round3/e5_summary.txt (16 lines)
+differs: results/round3/e6_summary.txt (4 lines)
+differs: results/round3/e7_summary.txt (6 lines)
+differs: results/round3/e8_summary.txt (32 lines)
+differs: results/round3/e9_summary.txt (14 lines)
+12 of 39 outputs identical to the committed files

@@ -1,0 +1,5 @@
+E15: permissive prompt for OLMo-2-7B-Instruct (PREREG e15_e16_olmo_and_steering.md, sha 2b3e665d); identical to E12; majority of 3 judges; MEASURED if Fleiss kappa >= 0.60
+olmo2_7b replies 1044  Fleiss kappa 0.859  n {'unc/Unkn': 100, 'unc/High': 48, 'con/Unkn': 100, 'con/High': 100}
+  majority-rule pop +0.206 [+0.124, +0.287]  know +0.291 [+0.210, +0.371]  diff -0.086 [-0.215, +0.042]
+  cells {"unc/Unkn": 0.88, "unc/High": 0.611, "con/Unkn": 0.697, "con/High": 0.383}  -> NEITHER
+  licensing: obscure-unknown rate 0.880 -> reported as a permissive-prompt result

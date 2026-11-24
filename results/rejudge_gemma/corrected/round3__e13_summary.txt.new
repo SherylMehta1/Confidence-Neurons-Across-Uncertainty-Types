@@ -1,0 +1,5 @@
+E13: fresh replies on the same 387 questions (PREREG e13_e14_replications.md, sha fbbc8c25); seed 1; two judges, both DONT_KNOW
+two-judge kappa 0.962; n {'unc/Unkn': 100, 'unc/High': 87, 'con/Unkn': 100, 'con/High': 100}
+  pop +0.604 [+0.538, +0.670]  know +0.156 [+0.092, +0.223]  diff +0.448 [+0.336, +0.556]
+  cells {"unc/Unkn": 0.763, "unc/High": 0.628, "con/Unkn": 0.18, "con/High": 0.003}
+  E13 verdict: REPLICATES

@@ -1,0 +1,10 @@
+E5: third judge (PREREG e5_third_judge.md, sha f35aa4d9); majority = >= 2 of 3 DONT_KNOW; MEASURED if Fleiss kappa >= 0.60
+llama    replies 1161  Fleiss kappa 0.934  pairwise qwen32b-gemma27b 0.91 qwen32b-llama70b 0.96 gemma27b-llama70b 0.93
+         majority-rule pop +0.583 [+0.514, +0.651]  know +0.157 [+0.088, +0.225]  diff +0.427 [+0.311, +0.541]  cells {"unc/Unkn": 0.743, "unc/High": 0.64, "con/Unkn": 0.213, "con/High": 0.003}  -> FOLLOWS POPULARITY
+qwen     replies 1062  Fleiss kappa 0.589  pairwise qwen32b-gemma27b 0.51 qwen32b-llama70b 0.63 gemma27b-llama70b 0.64
+         majority-rule pop +0.043 [+0.020, +0.068]  know +0.054 [+0.030, +0.079]  diff -0.010 [-0.033, +0.012]  cells {"unc/Unkn": 0.1, "unc/High": 0.006, "con/Unkn": 0.017, "con/High": 0.003}  -> UNMEASURED
+gemma    replies 1200  Fleiss kappa 0.940  pairwise qwen32b-gemma27b 0.95 qwen32b-llama70b 0.93 gemma27b-llama70b 0.94
+         majority-rule pop +0.060 [+0.025, +0.097]  know +0.050 [+0.015, +0.087]  diff +0.010 [-0.037, +0.053]  cells {"unc/Unkn": 0.11, "unc/High": 0.037, "con/Unkn": 0.027, "con/High": 0.0}  -> NEITHER
+mistral  replies 1113  Fleiss kappa 0.752  pairwise qwen32b-gemma27b 0.70 qwen32b-llama70b 0.77 gemma27b-llama70b 0.79
+         majority-rule pop +0.089 [+0.055, +0.125]  know +0.095 [+0.061, +0.130]  diff -0.006 [-0.037, +0.025]  cells {"unc/Unkn": 0.183, "unc/High": 0.014, "con/Unkn": 0.02, "con/High": 0.0}  -> NEITHER
+Other families MEASURED and FOLLOWS POPULARITY: 0 of 3 -> title stays scoped to Llama

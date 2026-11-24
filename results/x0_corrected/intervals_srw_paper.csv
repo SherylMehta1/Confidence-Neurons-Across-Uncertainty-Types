@@ -1,0 +1,32 @@
+macro,value,source,method,draws,seed,matching_rows
+lkKappaCI,"[0.89, 0.94]",paper_2.0/analysis/lockin_checks.txt,questions (their replies kept together),2000,0,1
+rcUnkCI,"[+0.42, +0.63]",paper_2.0/analysis/round4_checks.txt,questions within cell,10000,0,1
+rcUnkJointCI,"[+0.20, +0.51]",paper_2.0/analysis/round4_checks.txt,questions within cell,10000,0,1
+hmLlamaPopEffCI,"[+0.50, +0.63]",results/hedge_measure_v2/summary.txt,questions within cell,10000,0,1
+hmLlamaKnowEffCI,"[+0.07, +0.21]",results/hedge_measure_v2/summary.txt,questions within cell,10000,0,1
+hmLlamaDiffCI,"[+0.31, +0.54]",results/hedge_measure_v2/summary.txt,questions within cell,10000,0,1
+frDiffCI,"[+0.34, +0.56]",results/round3/e13_summary.txt,questions within cell,10000,0,1
+ncDiffCI,"[+0.37, +0.63]",results/round3/e11_summary.txt,questions within cell,10000,0,1
+msOutDiffCI,"[-0.25, +0.26]",paper_2.0/analysis/mere_checks.txt,questions within cell,10000,0,1
+rcClusCI,"[-0.15, +0.62]",paper_2.0/analysis/round4_checks.txt,whole relations,5000,0,1
+wrPopKnownCI,"[+0.21, +0.37]",paper_2.0/analysis/within_relation_check.txt,questions within relation and cell,5000,0,1
+wrPopUnkCI,"[+0.29, +0.59]",paper_2.0/analysis/within_relation_check.txt,questions within relation and cell,5000,0,1
+wrKnowObsCI,"[+0.38, +0.58]",paper_2.0/analysis/within_relation_check.txt,questions within relation and cell,5000,0,1
+wrKnowPopCI,"[+0.19, +0.47]",paper_2.0/analysis/within_relation_check.txt,questions within relation and cell,5000,0,1
+wrPrefCI,"[-0.20, +0.11]",paper_2.0/analysis/within_relation_check.txt,questions within relation and cell,5000,0,1
+gaPerpCI,"[-0.00, +0.02]",results/round3/e16_summary.txt,steering questions,10000,0,1
+tjLlamaDiffCI,"[+0.31, +0.54]",results/round3/e5_summary.txt,questions within cell,10000,0,1
+hmLlamaRegexDiffCI,"[+0.31, +0.55]",results/hedge_measure_v2/summary.txt,questions within cell,10000,0,1
+hjLlamaDiffCI,"[+0.03, +0.24]",results/hedge_judge/summary.txt,judged replies within regex stratum,5000,0,1
+nqDiffCI,"[+0.03, +0.26]",results/round3/e14_summary.txt,questions within cell,10000,0,1
+seDiffCI,"[+0.22, +0.48]",results/round3/e7_summary.txt,questions within cell,10000,0,1
+rcJointCI,"[+0.07, +0.41]",paper_2.0/analysis/round4_checks.txt,questions within cell,10000,0,1
+tcObsKnownAbsCI,"[0.52, 0.70]",paper_2.0/analysis/lockin_checks.txt,questions within cell,10000,0,2
+tcObsUnkAbsCI,"[0.63, 0.79]",paper_2.0/analysis/lockin_checks.txt,questions within cell,10000,0,1
+tcPopKnownAbsCI,"[0.00, 0.01]",paper_2.0/analysis/lockin_checks.txt,questions within cell,10000,0,2
+tcPopUnkAbsCI,"[0.12, 0.26]",paper_2.0/analysis/lockin_checks.txt,questions within cell,10000,0,1
+pmLlamaDiffCI,"[+0.35, +0.59]",results/round3/e9_summary.txt,questions within cell,10000,0,1
+pmGemmaDiffCI,"[+0.19, +0.40]",results/round3/e9_summary.txt,questions within cell,10000,0,1
+gaAbstCI,"[+0.10, +0.19]",results/round3/e16_summary.txt,steering questions,10000,0,1
+gaFamCI,"[+0.12, +0.21]",results/round3/e16_summary.txt,steering questions,10000,0,1
+lwRows (lens table),16 intervals,results/round3/e3_summary.txt,questions within cell,2000,0,16

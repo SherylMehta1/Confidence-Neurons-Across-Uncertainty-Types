@@ -34,8 +34,10 @@ Figure: `fig_x2_gradient.pdf` (intervals there resample questions within decile 
 | Unknown-fact gap | +0.34 [+0.26, +0.43] | +0.53 [+0.42, +0.63] |
 
 - Everything else that uses the Gemma-27B labels inherits this: E13, E14, the other families' kappas (0.30 to 0.47, hence "unmeasured"), E4, E8, E9, E12, E15, E16, the two-judge rows of the robustness table, X0 (A1 to A6, A9), and `existing_gradient.csv` here.
-- Gemma-2-9B as a subject model was loaded with the same default and is probably affected too. Not checked.
+- Gemma-2-9B as a subject model was loaded with the same default and used the same setting; checked afterwards, the effect is negligible (`../rejudge_gemma/README.md`).
 - This is post hoc and was seen before the X2 full run; no X2 effect had been computed then.
+
+**Follow-up:** all stored replies were re-judged (`../rejudge_gemma/`) and X0 re-frozen (`../x0_corrected/`). Gemma-2-9B was checked: same setting, negligible effect.
 
 ## Pilot
 

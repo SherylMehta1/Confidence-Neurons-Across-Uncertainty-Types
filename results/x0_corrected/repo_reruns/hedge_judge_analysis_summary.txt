@@ -1,0 +1,33 @@
+Judge audit (Qwen2.5-32B-Instruct), 1515 judged generations; unparsed: 0
+
+== llama: regex recall 0.80 (adequate if >= 0.80: yes); pool-weighted precision 1.00
+   uncertain/Unknown     regex 0.849 -> judge-corrected 0.943 [0.921, 0.964]
+   uncertain/HighlyKnown regex 0.678 -> judge-corrected 0.704 [0.685, 0.730]
+     control/Unknown     regex 0.236 -> judge-corrected 0.572 [0.465, 0.679]
+     control/HighlyKnown regex 0.025 -> judge-corrected 0.102 [0.042, 0.180]
+   corrected effects: popularity +0.486 [+0.421, +0.551]  knowledge +0.355 [+0.287, +0.418]  pop - know +0.132 [+0.027, +0.239]  -> condition 1 on corrected rates: yes
+   'confabulator' label (obscure&Unknown corrected < 0.25 with CI upper < 0.40): NOT licensed
+
+== qwen: regex recall 0.10 (adequate if >= 0.80: no); pool-weighted precision 0.99
+   uncertain/Unknown     regex 0.093 -> judge-corrected 0.764 [0.655, 0.873]
+   uncertain/HighlyKnown regex 0.019 -> judge-corrected 0.274 [0.157, 0.392]
+     control/Unknown     regex 0.016 -> judge-corrected 0.487 [0.349, 0.625]
+     control/HighlyKnown regex 0.003 -> judge-corrected 0.022 [0.002, 0.062]
+   corrected effects: popularity +0.265 [+0.157, +0.374]  knowledge +0.478 [+0.370, +0.583]  pop - know -0.213 [-0.390, -0.018]  -> condition 1 on corrected rates: no
+   'confabulator' label (obscure&Unknown corrected < 0.25 with CI upper < 0.40): NOT licensed
+
+== gemma: regex recall 0.14 (adequate if >= 0.80: no); pool-weighted precision 0.92
+   uncertain/Unknown     regex 0.072 -> judge-corrected 0.420 [0.293, 0.550]
+   uncertain/HighlyKnown regex 0.023 -> judge-corrected 0.118 [0.041, 0.198]
+     control/Unknown     regex 0.012 -> judge-corrected 0.226 [0.126, 0.345]
+     control/HighlyKnown regex 0.002 -> judge-corrected 0.000 [0.000, 0.001]
+   corrected effects: popularity +0.156 [+0.063, +0.249]  knowledge +0.264 [+0.170, +0.361]  pop - know -0.108 [-0.246, +0.029]  -> condition 1 on corrected rates: no
+   'confabulator' label (obscure&Unknown corrected < 0.25 with CI upper < 0.40): NOT licensed
+
+== mistral: regex recall 0.14 (adequate if >= 0.80: no); pool-weighted precision 0.96
+   uncertain/Unknown     regex 0.129 -> judge-corrected 0.736 [0.621, 0.841]
+   uncertain/HighlyKnown regex 0.032 -> judge-corrected 0.239 [0.127, 0.356]
+     control/Unknown     regex 0.024 -> judge-corrected 0.411 [0.276, 0.548]
+     control/HighlyKnown regex 0.005 -> judge-corrected 0.102 [0.023, 0.182]
+   corrected effects: popularity +0.231 [+0.123, +0.342]  knowledge +0.403 [+0.288, +0.514]  pop - know -0.172 [-0.346, +0.004]  -> condition 1 on corrected rates: no
+   'confabulator' label (obscure&Unknown corrected < 0.25 with CI upper < 0.40): NOT licensed

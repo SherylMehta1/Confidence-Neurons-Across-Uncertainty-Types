@@ -1,5 +1,7 @@
 # X0 results (run 24 Nov 2026, branch arr-v2)
 
+> **Superseded for any judge-based number.** The stored Gemma-27B labels are faulty (`../rejudge_gemma/README.md`). Use `../x0_corrected/`. This folder is kept unchanged as the record of the paper as printed.
+
 Re-analysis of stored data for the X0 plan. CPU only, seed 0, 10,000 resamples. Re-run with
 `sh results/x0/run_all.sh .venv/bin/python` (about 2 min; byte-identical on re-run). Writes only to this folder.
 `x0_outputs.zip` was not available, so the scripts were written from the raw files. Target paper: `paper_2.0/srw/main.tex` (no .tex file was edited).

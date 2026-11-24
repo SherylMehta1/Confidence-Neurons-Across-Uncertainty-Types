@@ -1,0 +1,17 @@
+measure,relation,n_OK,n_OU,n_PK,n_PU,min_cell,margin,lo,hi,gap_known,gap_unknown
+"regex, 20 x 24-token replies, full pool",capital,27,19,59,1,1,0.777778,0.655556,0.883333,0.777778,0.936842
+"regex, 20 x 24-token replies, full pool",composer,4,84,39,33,4,-0.599242,-0.772727,-0.409848,0.0314103,0.116829
+"regex, 20 x 24-token replies, full pool",country,46,20,53,18,18,0.687198,0.519076,0.824037,0.776087,0.583611
+"regex, 20 x 24-token replies, full pool",director,1,182,137,30,1,-0.133333,-0.251667,-0.0383333,-0.0120438,0.706502
+"regex, 20 x 24-token replies, full pool",father,1,49,40,8,1,0.74375,0.375,0.99375,1,0.645791
+"regex, 20 x 24-token replies, full pool",sport,7,37,45,6,6,-0.207143,-0.616667,0.161905,0.0428571,0.622973
+Two judges (primary; adopted post hoc),composer,4,5,7,10,4,-0.666667,-0.866667,-0.433333,0,-0.266667
+Two judges (primary; adopted post hoc),country,46,2,6,2,2,0.652174,0.536232,0.76087,0.652174,0.5
+Two judges (primary; adopted post hoc),director,1,16,17,7,1,0,0,0,0,0.770833
+Two judges (primary; adopted post hoc),father,1,3,8,1,1,0,0,0,1,0
+Two judges (primary; adopted post hoc),sport,7,2,3,2,2,0.142857,0,0.428571,0.142857,1
+"regex, same 96-token replies",composer,4,5,7,10,4,-0.666667,-0.9,-0.4,0,-0.133333
+"regex, same 96-token replies",country,46,2,6,2,2,0.623189,0.384058,0.862319,0.789855,0.5
+"regex, same 96-token replies",director,1,16,17,7,1,0,0,0,0,0.875
+"regex, same 96-token replies",father,1,3,8,1,1,0,0,0,1,0
+"regex, same 96-token replies",sport,7,2,3,2,2,0.142857,0,0.428571,0.142857,1

@@ -1,0 +1,4 @@
+a,b,n,greedy_text_identical,greedy_correctness_agree,greedy_correct_a,greedy_correct_b,entropy_abs_diff_mean,entropy_abs_diff_max,entropy_mean_a,entropy_mean_b,entropy_corr
+stored,sdpa,300,1,1,0.32667,0.32667,0,0,1.0207,1.0207,1
+stored,eager,300,0.94333,1,0.32667,0.32667,0.018307,0.13571,1.0207,1.018,0.99938
+sdpa,eager,300,0.94333,1,0.32667,0.32667,0.018307,0.13571,1.0207,1.018,0.99938

@@ -1,0 +1,39 @@
+Llama labeled questions 2303; regex rate, 20 replies, 24 tokens
+arm                control         uncertain            
+know           HighlyKnown Unknown   Unknown HighlyKnown
+prop                                                    
+author                  96      22       141           0
+capital                 59       1        19          27
+capital of              14       9        33           0
+color                    3       0         2           1
+composer                39      33        84           4
+country                 53      18        20          46
+director               137      30       182           1
+father                  40       8        49           1
+genre                   17      85       147           0
+mother                  14       3        18           0
+occupation              17      19        53           0
+place of birth          15      28        52           0
+producer                27      47       138           0
+religion                 8      17        34           0
+screenwriter            92      35       170           0
+sport                   45       6        37           7
+
+pooled (all relations): pop_known +0.654  pop_unknown +0.613  know_obscure +0.171  know_popular +0.211  pref +0.442
+relations with every cell >= 1: 6 ['capital', 'composer', 'country', 'director', 'father', 'sport']
+relations with every cell >= 3: 3 ['composer', 'country', 'sport']
+relations with every cell >= 5: 2 ['country', 'sport']
+relations with every cell >= 10: 1 ['country']
+
+within-relation effects (relations with every cell >= 3):
+          pop_known  pop_unknown  know_obscure  know_popular   pref
+composer      0.031        0.117         0.716         0.631 -0.599
+country       0.776        0.584        -0.104         0.089  0.687
+sport         0.043        0.623         0.830         0.250 -0.207
+
+mean over those 3 relations, equal weight, question bootstrap within relation and cell (5,000):
+  pop_known: +0.283 [+0.206, +0.367]
+  pop_unknown: +0.441 [+0.286, +0.587]
+  know_obscure: +0.481 [+0.375, +0.580]
+  know_popular: +0.323 [+0.190, +0.475]
+  pref: -0.040 [-0.197, +0.113]

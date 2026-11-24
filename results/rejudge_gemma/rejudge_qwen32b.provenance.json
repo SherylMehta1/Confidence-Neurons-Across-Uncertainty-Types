@@ -1,0 +1,16 @@
+{
+ "model": "Qwen/Qwen2.5-32B-Instruct",
+ "repetition_penalty": 1.05,
+ "seconds": 127,
+ "n": 7800,
+ "revision": "5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd",
+ "vllm": "0.34.0",
+ "torch": "2.14.0+cu130",
+ "transformers": "5.22.2",
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "dtype": "bfloat16",
+ "script_sha256": "d6fd12ff4a9024ea70fdca6e5274a8cf01815ddbdf2bd004a5db9e2cf0944ed6",
+ "sample_sha256": "9278947a9937bf7d487680a0630fc4c0b16a73cab3d2fd5b6618278f011a9ffc",
+ "output_sha256": "0568d0cb0a3843f064c5b29d92755eb6f39cffcac612bb87bc194a4840d34752",
+ "utc": "2026-11-24T15:30:37.740755+00:00"
+}
