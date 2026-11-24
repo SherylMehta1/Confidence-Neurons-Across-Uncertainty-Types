@@ -5,3 +5,8 @@ d6fd12ff4a9024ea70fdca6e5274a8cf01815ddbdf2bd004a5db9e2cf0944ed6  scripts/x2_run
 b699124870ae1eeb4c00230fb6ae218115ec3af91871a3e1321c0db4f239ae41  scripts/x2_pilot_check.py
 2d50b0ae470f811e822d978b2a7842757c5eb32495fa021776f3d0689aa03d10  scripts/x2_analysis.py
 recorded 2026-11-24T12:21:34Z, before any X2 model run
+775cd82a4158f8fda1710ebaedd199a3c60afdd8dabb184c764e3441b979b4ea  results/x2/x2_amendment_1.md
+a9421b74ee350b3f44c40f8a488fd2ed438bef1185b72c697a8e6b02b54e7de4  scripts/x2_judge_sdpa.py
+72f661a188d653607f1a0914e394891b41d52f73a8bfa292c464722a9b9fcf36  scripts/x2_sdpa_compare.py
+f26185e1bf10827f0fb9339f28a1f92a858cb5ea702697df429ef217efa75cd3  scripts/x2_gemma_diagnosis.py
+recorded 2026-11-24T13:12:54Z, after the pilot, before the full run

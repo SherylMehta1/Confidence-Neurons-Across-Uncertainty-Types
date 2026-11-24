@@ -1,0 +1,17 @@
+check,value,rule,passed
+questions with all outputs,200,= 200,True
+empty 96-token replies,0,= 0,True
+qwen32b: missing labels,0,= 0,True
+qwen32b: empty judge outputs,0,= 0,True
+qwen32b: unparsed share,0.0,<= 0.01,True
+gemma27b: missing labels,0,= 0,True
+gemma27b: empty judge outputs,0,= 0,True
+gemma27b: unparsed share,0.0,<= 0.01,True
+greedy correctness equals the stored one (n=120),0.975,>= 0.95,True
+information only: correlation of knowledge score with the stored share correct,0.9628,report,True
+information only: mean knowledge score minus stored,0.0025,report,True
+two-judge abstention,0.5183,0.05 to 0.95,True
+two-judge kappa,"0.906 [0.870, 0.939]",">= 0.50 and its interval overlaps [0.57, 0.67]",False
+"qwen32b: vLLM against stored DONT_KNOW labels on the paper's 1,161 replies",1.0,>= 0.95,True
+"gemma27b: vLLM against stored DONT_KNOW labels on the paper's 1,161 replies",0.8432,>= 0.95,False
+"information only: regex rate, 20 short replies",0.615,report,True

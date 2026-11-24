@@ -1,0 +1,9 @@
+knowledge,popularity_band,n,two_judge_abstention,lo,hi,draws,seed
+known,1: 0-10th percentile,87,0.43295,0.35249,0.51341,10000,0
+known,2: 10-30th percentile,100,0.32,0.253333,0.39,10000,0
+known,3: 70-90th percentile,100,0.0466667,0.02,0.08,10000,0
+known,4: 90-100th percentile,100,0,0,0,10000,0
+unknown,1: 0-10th percentile,100,0.476667,0.406667,0.546667,10000,0
+unknown,2: 10-30th percentile,100,0.45,0.376667,0.523333,10000,0
+unknown,3: 70-90th percentile,100,0.216667,0.153333,0.28,10000,0
+unknown,4: 90-100th percentile,100,0.133333,0.0833333,0.19,10000,0

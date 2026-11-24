@@ -1,0 +1,5 @@
+gemma_labels,dont_know_rate,unparsed,raw_identical_to_stored,label_identical_to_eager,kappa_with_qwen,kappa_with_llama70
+stored (the paper),0.278208,6,1,0.807063,0.618687,0.642393
+"re-run, sdpa (transformers default)",0.278208,6,1,0.807063,0.618687,0.642393
+"re-run, eager (soft-capping on)",0.372954,0,0.801895,1,0.911381,0.934441
+vLLM,0.372954,0,0.801895,1,0.911381,0.934441
