@@ -1,0 +1,478 @@
+         Does "I Don't Know" Track Knowledge or Popularity?
+     Both, but Natural Questions Cannot Say Which Matters More
+
+                                  Anonymous ACL submission
+
+001                  Abstract                                  the feeling of being able to answer depends on         044
+
+002  When a language model says "I don't know",                how familiar a question's terms are, not only on       045
+
+003  we would like that to mean it lacks the fact.             whether the answer can be retrieved (Reder and         046
+
+004  We ask whether Llama-3.1-8B-Instruct's "I                 Ritter, 1992; Koriat and Levy-Sadot, 2001). In         047
+
+005  don't know" (its abstention) follows whether it           language models, internal features for "known en-      048
+
+006  knows a fact or how popular the entity is. We             tities" suppress a default "can't answer" response,    049
+
+007  cross entity popularity (bottom vs. top decile            and Lindsey et al. (2025) propose that a familiar      050
+
+008  of Wikipedia page views in the PopQA dataset)             name can trigger them when the fact is missing.        051
+
+009  with knowledge labels taken from the model's              If so, "I don't know" should depend on familiar-       052
+010  own answers. Popularity matters at both knowl-
+                                                               ity separately from knowledge. The account also
+011  edge levels. On facts Llama does not know, it                                                                    053
+
+012  says "I don't know" in 0.48 of replies for ob-            makes a sharper prediction. Where familiarity and      054
+
+013  scure entities and 0.13 for popular ones. On              knowledge disagree, abstention should follow fa-       055
+
+014  facts it answers correctly, the rates are 0.43 and        miliarity: models should rarely abstain on familiar    056
+
+015  zero. Pooled, abstention seems to follow pop-             entities whose facts they lack, and often on unfa-     057
+
+016  ularity more than knowledge, but the obscure              miliar entities whose facts they know.                 058
+
+017  facts Llama knows come almost entirely from               Testing this requires separating familiarity from      059
+018  three types of fact (80 of 87). Within types
+                                                               knowledge, which usually move together: an entity
+019  of fact the answer differs: on a regex measure                                                                   060
+
+020  (post hoc), popularity outweighs knowledge                counts as known when the model answers about it        061
+
+021  in the one type with many questions in every              correctly (Ferrando et al., 2025). We use Wikipedia    062
+
+022  cell (country, +0.69) and not in two small ones,          page views as a measurable stand-in for familiarity    063
+
+023  averaging -0.04 [-0.20, +0.11]. Natural ques-             and cross them with knowledge labels taken from        064
+
+024  tions therefore cannot settle which factor mat-           the model's own answers. We answer three ques-         065
+
+025  ters more. Recognition tests, steering and lens           tions in order: does popularity affect "I don't know"  066
+
+026  readouts do not explain the popularity effect.            (Section 3); does it matter more than knowledge,       067
+
+027  So "I don't know" depends on popularity as                as the sharper prediction says (Section 4); and is
+
+028  well as knowledge, and an evaluation that reads                                                                  068
+
+029  it as a report of missing knowledge should com-           the popularity effect a familiarity signal inside the  069
+
+030  pare questions within the same type of fact and           model (Section 5)?                                     070
+
+031  across popularity levels.
+
+032  1 Introduction                                            Main Contributions.                                    071
+
+033  Saying "I don't know" when a fact is missing 1. Popularity Affects Abstention at Both                            072
+
+034  avoids the worst hallucinations (Kalai et al., 2025).     Knowledge Levels: in Llama-3.1-8B-                     073
+
+035  Evaluations often read it that way, as a report that      Instruct, obscure entities draw more "I don't          074
+
+036  the model lacks the fact. Whether that reading            know" replies whether or not the model knows           075
+
+037  holds depends on what the statement responds to.          the fact.                                              076
+
+038  Confidence estimates usually read uncertainty over
+
+039  answers (Kadavath et al., 2022; Kuhn et al., 2023), 2. Natural Questions Cannot Say Which Fac-                   077
+
+040  but verbal and answer-level uncertainty diverge (Ji       tor Matters More: pooled, popularity seems             078
+
+041  et al., 2025).                                            to outweigh knowledge, but obscure known               079
+
+042  One alternative to answer-level uncertainty is            facts cluster in a few types of fact, and within       080
+
+043  familiarity with the entity asked about. In people,       types the comparison goes both ways.                   081
+
+                                                            1
+082  3. No Familiarity Explanation Found: recogni-                             Obscure  Popular
+
+083        tion, steering and lens readouts do not explain                     known unknown known unknown
+
+084        the popularity effect.                              Says "I don't know" 0.43 0.48 0.00 0.13
+
+085  2 Design                                                  Questions        87 100 100 100
+                                                               Entropy (nats)  0.95 3.51 0.86 2.58
+
+086  Questions & Labels. PopQA (Mallen et al., Table 1: Llama-3.1-8B-Instruct by cell: share of free
+
+087  2023) groups its questions into 16 relations, each replies both judges label "I don't know", and first-
+
+088  a type of fact, such as a country's capital or an answer-token entropy (intervals in Appendix A).
+
+089  athlete's sport. Within each relation, subjects in
+
+090  the bottom and top deciles of page views form the
+     obscure and popular arms. Knowledge comes from entities and, by the judges, zero in 300 sampled
+091                                                                                                                130
+
+092  Llama's own answers (Gekhman et al., 2024): we replies on popular ones. These are refusals rather             131
+
+093  grade a greedy answer and ten samples (T = 0.7) than hidden answers: at most 0.03 of "I don't know"           132
+
+094  against the gold answers under a forced-answer replies in any cell contain the gold answer (post              133
+
+095  prompt (the chat template plus the assistant prefix hoc, not counting answers that merely repeat the          134
+
+096  "The answer is"). A fact is known if the greedy subject's name).                                              135
+
+097  answer and at least 9 samples are correct, and un- As a control, the entropy of the first answer to-          136
+
+098  known if none is. This leaves 2,303 questions.            ken after "The answer is" follows knowledge, not    137
+
+                                                               popularity (Figure 1b; panel c gives these effects  138
+
+099  Abstention. We ask each question with the chat in four instruct models). It is similar in the two             139
+
+100  template alone (the free prompt). For up to 100 known cells (0.95 vs. 0.86 nats), so the gap there is         140
+
+101  questions per popularity × knowledge cell (387 in not explained by how sure Llama is of its answer.           141
+
+102  total), we draw three replies (T = 0.7, up to 96          So popularity affects when Llama says "I don't      142
+
+103  tokens). A reply counts as "I don't know" when know". Because obscure known facts cluster in a                143
+
+104  two LLM judges (Qwen2.5-32B-Instruct, Gemma- few relations, the next section also checks these                144
+
+105  2-27B-it) both label it so; they agree at Cohen's gaps within relations, as part of asking how popu-          145
+
+106   = 0.62 [0.57, 0.67], above a pre-specified bar larity compares with knowledge.                               146
+
+107  of 0.60. A regex detector also scores 20 shorter
+
+108  replies per question on all 2,303 questions. Neither 4 Pooled, Popularity Seems to Outweigh                   147
+
+109  measure is validated against human labels.                Knowledge; Within Relations the                     148
+
+110  Effects. The popularity effect is the obscure-            Answer Differs                                      149
+
+111  minus-popular difference in abstention, averaged Pooled over relations, the popularity effect on ab-          150
+
+112  over the two knowledge levels; the knowledge ef- stention is +0.39 [+0.33, +0.45] and the knowl-              151
+
+113  fect is unknown-minus-known, averaged over popu- edge effect +0.09 [+0.03, +0.15], a popularity               152
+
+114  larity. Their difference is the popularity preference: preference of +0.30 [+0.20, +0.40]. This pooled        153
+
+115  positive when abstention follows popularity more preference holds across other judges and labels (Ta-         154
+
+116  than knowledge. Intervals are 95% bootstraps over ble 3). It repeats with fresh replies (+0.29 [+0.20,        155
+
+117  questions within cells. Analyses followed plans +0.38]). It survives removing the obscure facts               156
+
+118  written before they ran, except where marked post Llama still answers correctly when the subject's            157
+
+119  hoc.                                                      name is misspelled, which it could be guessing      158
+
+120  3 Popularity Affects Abstention at Both from the name (+0.36 [+0.25, +0.48]). Gemma-                          159
+
+121  Knowledge Levels                                          2-9B also gives a positive preference when the      160
+
+                                                               prompt invites abstaining (Appendix B).             161
+
+122  Table 1 and Figure 1a give the four cells. Among Yet the preference compares two cells that hold              162
+
+123  facts Llama does not know, it says "I don't know" different kinds of question. In this equally weighted       163
+
+124  in 0.48 of replies on obscure entities and 0.13 on 2 × 2 it equals abstention on obscure known facts          164
+
+125  popular ones, a gap of +0.34 [+0.25, +0.43] (post minus abstention on popular unknown facts. Llama            165
+
+126  hoc). This gap shrinks to +0.18 [+0.04, +0.31] knows few obscure facts: 80 of the 87 come from                166
+
+127  after three corrections to the knowledge labels (Ta- three relations (capital, country, sport), while only 4  167
+
+128  ble 3; post hoc) but stays positive. Among facts of the 100 popular unknown questions come from               168
+
+129  it answers correctly, the rate is 0.43 on obscure those relations. Outside them the preference is             169
+
+                                                            2
+     share abstaininga                                   4b                    c
+                                         entropy (nats)
+                 1.0       known                                                                           popularity knowledge
+                 0.5       unknown
+                                                                               Llama-3.1-8B-Inst.
+
+                                                         2                     Mistral-7B-Inst.
+
+                                                                               Qwen2.5-7B-Inst.
+
+                 0.0                                                                        Gemma-2-9B-it
+                        obscure popular                  0
+
+                      entity popularity                     obscure popular                                0  1  2
+
+                                                            entity popularity                              entropy effect (nats)
+
+     Figure 1: In Llama, abstention falls with popularity at both knowledge levels; answer entropy, a control,
+     follows knowledge. (a) Share of free replies both judges label "I don't know"; (b) entropy of the first answer token
+     after "The answer is"; (c) popularity and knowledge effects on that entropy in four instruct models. 95% bootstrap
+     intervals.
+
+     Effect on abstention  Pooled Within relations                             that popularity matters alongside knowledge. That      196
+
+     Popularity, known facts +0.65 +0.28 [+0.21, +0.37] leaves the question of what the popularity effect is.                         197
+
+     Popularity, unknown facts +0.61 +0.44 [+0.29, +0.59]
+
+     Knowledge, obscure    +0.17 +0.48 [+0.38, +0.58]                          5 The Popularity Effect Is Not Explained               198
+     Knowledge, popular    +0.21 +0.32 [+0.19, +0.47]
+                                                                               by Familiarity
+     Preference            +0.44 -0.04 [-0.20, +0.11]                                                                                 199
+
+     Table 2: Holding the relation fixed. Regex abstention                     If the popularity effect is familiarity, Llama should  200
+     on all 2,303 labeled questions (20 replies each). Pooled:
+                                                                               register obscure names as unfamiliar, and that sig-    201
+
+     all relations. Within: mean over the three relations with nal should account for the effect. We test this three                  202
+
+     at least 3 questions in every cell (country, composer, ways.                                                                     203
+
+     sport), bootstrapped within relation and cell. Post hoc.                  Recognition. We asked Llama to describe each
+
+                                                                                                                                      204
+
+                                                                               entity, and Llama-3.3-70B graded the description       205
+
+170  +0.00 [-0.18, +0.31], though with only 7 obscure against Wikidata. Recognition tracks page views                                 206
+
+171  known facts (post hoc), and resampling relations ( =+0.52; among unknown facts 0.11 obscure                                      207
+
+172  instead of questions gives [-0.10, +0.43].                                vs. 0.56 popular), so Llama does register obscure      208
+
+173  To compare the factors directly, we hold the rela- names as less familiar. But adding recognition to                             209
+
+174  tion fixed (Table 2). Only the regex measure covers a regression of abstention shrinks the popularity                            210
+
+175  enough questions for this. On it, the pooled prefer- coefficient by only 5%.                                                     211
+
+176  ence is +0.44, larger than the judges' +0.30. Only Steering. We added directions to the model's in-                              212
+
+177  three relations have at least three questions in every ternal activations. A direction pointing from popu-                       213
+
+178  cell: country, composer and sport, which overlap lar toward obscure questions raises abstention, but                             214
+
+179  with but differ from the three that hold most ob- it is nearly parallel to an abstention direction fit-                          215
+
+180  scure known facts. Averaged over them, popularity ted on popular questions alone (cosine 0.89; Arditi                            216
+
+181  and knowledge have similar effects, and the prefer- et al., 2024). With that component removed, it adds                          217
+
+182  ence is -0.04 [-0.20, +0.11]. The average hides +0.01 [-0.00, +0.02] over random directions (Ap-                                 218
+
+183  opposite results. In country, the only relation with pendix B). Steering effects alone do not show that a                        219
+
+184  at least ten questions in every cell and home to model uses a feature (Che and Li, 2026), so this nei-                           220
+
+185  most obscure known facts, the preference is +0.69, ther shows nor rules out a familiarity signal earlier                         221
+
+186  larger than pooled. In composer and sport, whose in the model.                                                                   222
+
+187  obscure known cells are tiny, it is -0.60 and -0.21.
+
+188  Popularity's effect on known facts within relations Lens. In base models, Jacobian-lens readouts                                 223
+
+189  also comes almost entirely from country.                                  (Gurnee et al., 2026) at mid depth show popularity     224
+
+190  So the pooled preference mixes relations, and and knowledge both raising the score of hedging                                    225
+
+191  holding the relation fixed does not give one answer. tokens; this does not locate the behavior in the                            226
+
+192  Natural questions cannot settle whether popularity instruct model.                                                               227
+
+193  outweighs knowledge, because the questions that So Llama registers obscure names as less fa-                                     228
+
+194  would decide it, obscure facts the model knows, miliar, but none of the three tests shows that this                              229
+
+195  exist in only a few relations. What they do show is explains the popularity effect.                                              230
+
+                                                                3
+231  6 Conclusion                                               Zorik Gekhman, Gal Yona, Roee Aharoni, Matan Eyal,       280
+
+                                                                Amir Feder, Roi Reichart, and Jonathan Herzig. 2024.     281
+
+232  We asked whether Llama's "I don't know" follows            Does fine-tuning llms on new knowledge encourage         282
+
+233  knowledge or popularity. It follows both: pooled,          hallucinations? In Proceedings of the 2024 Con-          283
+
+234  popularity lowers abstention whether or not the            ference on Empirical Methods in Natural Language         284
+
+235  model knows the fact, and knowledge raises it.             Processing, page 7765­7784. Association for Com-         285
+
+                                                                putational Linguistics.                                  286
+
+236  Which matters more cannot be settled with natural
+
+237  questions. The pooled answer, popularity, com- Wes Gurnee et al. 2026. Verbalizable representa-                     287
+
+238  pares obscure facts in a few relations with popular        tions form a global workspace in language models.        288
+                                                                Preprint, arXiv:2607.15495.                              289
+     facts in others, and within relations the answer dif-
+239
+
+240  fers, because obscure facts a model knows are rare Ziwei Ji, Lei Yu, Yeskendir Koishekenov, Yejin Bang,             290
+
+241  outside a few types of fact. Llama does register           Anthony Hartshorn, Alan Schelten, Cheng Zhang,           291
+                                                                Pascale Fung, and Nicola Cancedda. 2025. Calibrat-       292
+     obscure names as less familiar, but that signal does
+242                                                             ing verbal uncertainty as a linear feature to reduce     293
+
+243  not explain the popularity effect, and page views          hallucinations. In Proceedings of the 2025 Confer-       294
+
+244  also carry other properties of names, so its cause         ence on Empirical Methods in Natural Language            295
+
+245  remains to be shown. Both open points call for             Processing, page 3769­3793. Association for Com-         296
+
+246  the same design: assigning familiarity and knowl-          putational Linguistics.                                  297
+
+247  edge at random, for example through training on Saurav Kadavath et al. 2022. Language models (mostly)               298
+
+248  invented entities. For evaluation, the practical point     know what they know. Preprint, arXiv:2207.05221.         299
+
+249  is that Llama's abstention rate measures more than Adam Tauman Kalai, Ofir Nachum, Santosh S. Vem-                  300
+
+250  missing knowledge, and it should be compared               pala, and Edwin Zhang. 2025. Why language models         301
+
+251  within relations and across popularity levels.             hallucinate. Preprint, arXiv:2509.04664.                 302
+
+252  Limitations                                                Asher Koriat and Ravit Levy-Sadot. 2001. The com-        303
+
+                                                                bined contributions of the cue-familiarity and acces-    304
+
+253  We study one model on one dataset. Abstention is           sibility heuristics to feelings of knowing. Journal of   305
+                                                                Experimental Psychology: Learning, Memory, and           306
+     scored by LLM judges and a regex, neither vali- Cognition, 27(1):34­53.
+254                                                                                                                      307
+
+255  dated against human labels, and their errors could
+
+256  differ by cell. Knowledge labels come from a sin-          Lorenz Kuhn, Yarin Gal, and Sebastian Farquhar. 2023.    308
+                                                                   Semantic uncertainty: Linguistic invariances for un-  309
+     gle forced-answer prompt and transfer imperfectly
+257                                                             certainty estimation in natural language generation.     310
+
+258  to other prompts. The within-relation comparison           Preprint, arXiv:2302.09664.                              311
+
+259  rests on three relations (country, composer, sport)        Jack Lindsey et al. 2025. On the Biology of a Large      312
+                                                                   Language Model. Transformer Circuits Thread.          313
+260  with small cells and on the regex measure. The
+
+261  design contrasts extreme popularity deciles. Sev-
+
+262  eral analyses were decided after seeing data and Alex Mallen, Akari Asai, Victor Zhong, Rajarshi Das,               314
+
+263  are marked post hoc. Page views stand in for famil-        Daniel Khashabi, and Hannaneh Hajishirzi. 2023.          315
+                                                                When not to trust language models: Investigating         316
+     iarity and also carry other properties of names.
+264                                                             effectiveness of parametric and non-parametric mem-      317
+
+                                                                ories. In Proceedings of the 61st Annual Meeting of      318
+
+                                                                the Association for Computational Linguistics (Vol-      319
+
+265  References                                                 ume 1: Long Papers), page 9802­9822. Association         320
+
+                                                                for Computational Linguistics.                           321
+
+266  Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka,
+
+267  Nina Panickssery, Wes Gurnee, and Neel Nanda. Lynne M. Reder and Frank E. Ritter. 1992. What de-                    322
+
+268  2024. Refusal in language models is mediated by            termines initial feeling of knowing? familiarity with    323
+
+269  a single direction. In Advances in Neural Informa-         question terms, not with the answer. Journal of Ex-      324
+
+270  tion Processing Systems 37, NeurIPS 2024, page             perimental Psychology: Learning, Memory, and Cog-        325
+
+271  136037­136083. Neural Information Processing Sys-          nition, 18(3):435­451.                                   326
+
+272  tems Foundation, Inc. (NeurIPS).
+
+273  Tong Che and Yilong Li. 2026. Does the model use the       A Robustness of the Pooled Preference                    327
+
+274  feature? separating steering from mechanism in llms. B Other Models and Steering                                    328
+
+275  Preprint, arXiv:2610.07270.
+
+     Javier Ferrando, Oscar Obeso, Senthooran Rajamanoha-       Other models. On the free prompt, Qwen2.5-7B,            329
+        ran, and Neel Nanda. 2025. Do i know this entity?
+276                                                             Gemma-2-9B and Mistral-7B rarely say "I don't            330
+277
+     knowledge awareness and hallucinations in language know" by the judges' labels, and the judges dis-
+278                                                                                                                      331
+
+279  models. Preprint, arXiv:2411.14257.                        agree on Qwen and Mistral. Ending each question          332
+
+                                                             4
+     Variant                     Preference
+
+     Two judges (primary)        +0.30 [+0.20, +0.40]
+
+     Three judges, majority      +0.44 [+0.32, +0.55]
+
+     Regex, 96-token replies (post +0.43 [+0.31, +0.55]
+
+     hoc)
+
+     One judge, corrected        +0.13 [+0.03, +0.24]
+
+     Fresh replies               +0.29 [+0.20, +0.38]
+
+     New questions, adjacent deciles +0.10 [+0.01, +0.20]
+
+     Name-recoverable facts removed +0.36 [+0.25, +0.48]
+
+     Unknown facts regraded by +0.23 [+0.12, +0.35]
+
+     meaning
+
+     Three label corrections (post +0.14 [-0.01, +0.28]
+
+     hoc)
+
+     Table 3: Llama's pooled popularity preference under
+     other measures and labels. The primary measure was
+     adopted after the corrected-judge measure (+0.13) was
+     seen. Cell intervals: obscure known [0.35, 0.51], ob-
+     scure unknown [0.41, 0.55], popular known [0.00, 0.00],
+     popular unknown [0.08, 0.19].
+
+333  with "If you do not know the answer, say that you
+
+334  do not know" raises abstention: three judges agree
+
+335  on Llama and Gemma (Fleiss  = 0.71 and 0.67),
+
+336  with preferences +0.47 [+0.35, +0.59] and +0.30
+
+337  [+0.19, +0.40]. For Qwen, Mistral and OLMo-2-
+
+338  7B the judges disagree (Fleiss  0.40­0.50), so we
+
+339  do not report preferences.
+
+340  Steering. Directions were fitted on half of the
+
+341  questions at layer round(0.55(L - 1)) and the last
+
+342  free-prompt position, the dose was chosen on a
+
+343  second set of popular known questions, and ef-
+
+344  fects were scored on a third, with a majority of
+
+345  three judges. The popular-arm abstention direction
+
+346  was fitted on 63 abstaining against 548 answering
+
+347  popular questions. Over 20 random directions, it
+
+348  adds +0.14 [+0.10, +0.19] abstention and obscure-
+
+349  minus-popular adds +0.17 [+0.12, +0.21].
+
+                                                              5
+

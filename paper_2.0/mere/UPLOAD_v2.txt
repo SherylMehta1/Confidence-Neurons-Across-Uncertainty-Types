@@ -1,0 +1,14 @@
+FILE
+C:\Users\starb\Desktop\Sher\paper\mere\main_v2.pdf
+
+TITLE
+In Llama, Saying "I Don't Know" Depends on Entity Popularity, Even Among Facts It Does Not Know
+
+KEYWORDS
+abstention, uncertainty, hallucination, entity popularity, language models, steering vectors, evaluation
+
+TL;DR
+In Llama-3.1-8B-Instruct, "I don't know" falls with entity popularity at both knowledge levels; whether popularity outweighs knowledge is unsettled, and we could not isolate a familiarity mechanism.
+
+ABSTRACT
+When a language model says "I don't know", we would like that to mean it lacks the fact. We test this in Llama-3.1-8B-Instruct by crossing entity popularity (top vs. bottom decile of Wikipedia page views in PopQA) with knowledge labels taken from the model's own forced answers; two LLM judges, not validated against human labels, score abstention. Among facts Llama does not know, it says "I don't know" in 0.48 of sampled replies when the entity is obscure and 0.13 when it is popular (gap +0.34 [+0.25, +0.43]; +0.18 [+0.04, +0.31] after three label corrections; post hoc), although answer entropy differs the same way there. Among facts it answers correctly when forced (greedy answer and at least 9 of 10 samples), it says "I don't know" in 0.43 of replies when the entity is obscure and in none when it is popular, at similar entropy. Whether popularity matters more than knowledge is less settled. Obscure known minus popular unknown abstention is +0.30 [+0.20, +0.40]; it repeats with fresh replies (+0.29), shrinks in new questions (+0.10) and survives removing facts recoverable from the name alone (+0.36). But it ranges from +0.13 to +0.44 across abstention measures, and the +0.30 measure was adopted after +0.13 was seen; it falls to +0.14 [-0.01, +0.28] under the three label corrections; and resampling relations gives [-0.10, +0.43]. 80 of 87 obscure known facts come from three relations, and outside them it is +0.00 (7 facts). Gemma-2-9B shows a preference of the same sign when the prompt permits "I don't know"; for three other families the judges disagree too much to measure it. We could not isolate a familiarity mechanism: obscure names are recognized less overall, but recognition does not explain the gap; in Llama, steering along popularity adds nothing beyond an abstention direction; and lens readouts do not locate the effect. In this model, "I don't know" is not a plain report of a missing fact.

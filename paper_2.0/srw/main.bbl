@@ -1,0 +1,107 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Arditi et~al.(2024)Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee,
+  and Nanda}]{arditi2024refusal}
+Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Panickssery, Wes
+  Gurnee, and Neel Nanda. 2024.
+\newblock \href {https://doi.org/10.52202/079017-4322} {Refusal in language
+  models is mediated by a single direction}.
+\newblock In \emph{Advances in Neural Information Processing Systems 37},
+  NeurIPS 2024, page 136037–136083. Neural Information Processing Systems
+  Foundation, Inc. (NeurIPS).
+
+\bibitem[{Che and Li(2026)}]{che2026steering}
+Tong Che and Yilong Li. 2026.
+\newblock \href {https://arxiv.org/abs/2610.07270} {Does the model use the
+  feature? separating steering from mechanism in llms}.
+\newblock \emph{Preprint}, arXiv:2610.07270.
+
+\bibitem[{Ferrando et~al.(2025)Ferrando, Obeso, Rajamanoharan, and
+  Nanda}]{ferrando2025iknow}
+Javier Ferrando, Oscar Obeso, Senthooran Rajamanoharan, and Neel Nanda. 2025.
+\newblock \href {https://arxiv.org/abs/2411.14257} {Do i know this entity?
+  knowledge awareness and hallucinations in language models}.
+\newblock \emph{Preprint}, arXiv:2411.14257.
+
+\bibitem[{Gekhman et~al.(2024)Gekhman, Yona, Aharoni, Eyal, Feder, Reichart,
+  and Herzig}]{gekhman2024slick}
+Zorik Gekhman, Gal Yona, Roee Aharoni, Matan Eyal, Amir Feder, Roi Reichart,
+  and Jonathan Herzig. 2024.
+\newblock \href {https://doi.org/10.18653/v1/2024.emnlp-main.444} {Does
+  fine-tuning llms on new knowledge encourage hallucinations?}
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing}, page 7765–7784. Association for Computational
+  Linguistics.
+
+\bibitem[{Gurnee et~al.(2026)}]{gurnee2026workspace}
+Wes Gurnee et~al. 2026.
+\newblock \href {https://arxiv.org/abs/2607.15495} {Verbalizable
+  representations form a global workspace in language models}.
+\newblock \emph{Preprint}, arXiv:2607.15495.
+
+\bibitem[{Ji et~al.(2025)Ji, Yu, Koishekenov, Bang, Hartshorn, Schelten, Zhang,
+  Fung, and Cancedda}]{ji2025hedging}
+Ziwei Ji, Lei Yu, Yeskendir Koishekenov, Yejin Bang, Anthony Hartshorn, Alan
+  Schelten, Cheng Zhang, Pascale Fung, and Nicola Cancedda. 2025.
+\newblock \href {https://doi.org/10.18653/v1/2025.emnlp-main.187} {Calibrating
+  verbal uncertainty as a linear feature to reduce hallucinations}.
+\newblock In \emph{Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing}, page 3769–3793. Association for Computational
+  Linguistics.
+
+\bibitem[{Kadavath et~al.(2022)}]{kadavath2022know}
+Saurav Kadavath et~al. 2022.
+\newblock \href {https://arxiv.org/abs/2207.05221} {Language models (mostly)
+  know what they know}.
+\newblock \emph{Preprint}, arXiv:2207.05221.
+
+\bibitem[{Kalai et~al.(2025)Kalai, Nachum, Vempala, and
+  Zhang}]{kalai2025hallucinate}
+Adam~Tauman Kalai, Ofir Nachum, Santosh~S. Vempala, and Edwin Zhang. 2025.
+\newblock \href {https://arxiv.org/abs/2509.04664} {Why language models
+  hallucinate}.
+\newblock \emph{Preprint}, arXiv:2509.04664.
+
+\bibitem[{Koriat and Levy-Sadot(2001)}]{koriat2001cascade}
+Asher Koriat and Ravit Levy-Sadot. 2001.
+\newblock \href {https://doi.org/10.1037/0278-7393.27.1.34} {The combined
+  contributions of the cue-familiarity and accessibility heuristics to feelings
+  of knowing.}
+\newblock \emph{Journal of Experimental Psychology: Learning, Memory, and
+  Cognition}, 27(1):34–53.
+
+\bibitem[{Kuhn et~al.(2023)Kuhn, Gal, and Farquhar}]{kuhn2023semantic}
+Lorenz Kuhn, Yarin Gal, and Sebastian Farquhar. 2023.
+\newblock \href {https://arxiv.org/abs/2302.09664} {Semantic uncertainty:
+  Linguistic invariances for uncertainty estimation in natural language
+  generation}.
+\newblock \emph{Preprint}, arXiv:2302.09664.
+
+\bibitem[{Lindsey et~al.(2025)}]{lindsey2025biology}
+Jack Lindsey et~al. 2025.
+\newblock \href
+  {https://transformer-circuits.pub/2025/attribution-graphs/biology.html} {{On
+  the Biology of a Large Language Model}}.
+\newblock Transformer Circuits Thread.
+
+\bibitem[{Mallen et~al.(2023)Mallen, Asai, Zhong, Das, Khashabi, and
+  Hajishirzi}]{mallen2023popqa}
+Alex Mallen, Akari Asai, Victor Zhong, Rajarshi Das, Daniel Khashabi, and
+  Hannaneh Hajishirzi. 2023.
+\newblock \href {https://doi.org/10.18653/v1/2023.acl-long.546} {When not to
+  trust language models: Investigating effectiveness of parametric and
+  non-parametric memories}.
+\newblock In \emph{Proceedings of the 61st Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, page 9802–9822.
+  Association for Computational Linguistics.
+
+\bibitem[{Reder and Ritter(1992)}]{reder1992}
+Lynne~M. Reder and Frank~E. Ritter. 1992.
+\newblock \href {https://doi.org/10.1037/0278-7393.18.3.435} {What determines
+  initial feeling of knowing? familiarity with question terms, not with the
+  answer.}
+\newblock \emph{Journal of Experimental Psychology: Learning, Memory, and
+  Cognition}, 18(3):435–451.
+
+\end{thebibliography}

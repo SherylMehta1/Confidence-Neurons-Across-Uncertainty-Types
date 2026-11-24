@@ -587,6 +587,44 @@ put_ci("rcJoint", g3(t4c, r"preference " + NUMCI.replace(r"\[", r"(?:,)? ?\[") i
 put_ci("rcUnk", g3(t4c, r"popularity gap among unknown facts: all " + NUMCI, "round4 unknown gap"), "round4_checks unknown-facts gap")
 put_ci("rcUnkClus", [0] + g3(t4c, r"unknown-facts gap \(all\): \[([+-][\d.]+), ([+-][\d.]+)\]", "round4 unknown clustered"), "round4_checks unknown-facts gap clustered")
 put_ci("rcUnkJoint", g3(t4c, r"after all corrections " + NUMCI, "round4 unknown joint"), "round4_checks unknown-facts gap after corrections")
+
+# MERe audit (2026-10-31): relation split, recognition cells, other families' corrected judge, name-form pairs
+tm = (HERE / "analysis/mere_checks.txt").read_text(encoding="utf-8")
+for nm, key in (("msIn", "inside"), ("msOut", "outside")):
+    m = grab(tm, key + r": preference ([+-][\d.]+) \[([+-][\d.]+), ([+-][\d.]+)\]; obscure known n=(\d+) rate ([\d.]+); popular unknown n=(\d+) rate ([\d.]+)", "mere_checks " + key)
+    mac(nm + "Diff", sgn(float(m.group(1))), "analysis/mere_checks.txt " + key); mac(nm + "DiffCI", ci(m.group(2), m.group(3)), "analysis/mere_checks.txt " + key + " CI")
+    mac(nm + "KnownN", m.group(4), "analysis/mere_checks.txt " + key + " obscure known n"); mac(nm + "UnkN", m.group(6), "analysis/mere_checks.txt " + key + " popular unknown n")
+    mac(nm + "KnownRate", f"{float(m.group(5)):.2f}", "analysis/mere_checks.txt " + key + " obscure known rate"); mac(nm + "UnkRate", f"{float(m.group(7)):.2f}", "analysis/mere_checks.txt " + key + " popular unknown rate")
+m = grab(tm, r"inside known gap: ([+-][\d.]+) \[([+-][\d.]+), ([+-][\d.]+)\]; obscure known n=(\d+) rate ([\d.]+); popular known n=(\d+) rate ([\d.]+)", "mere_checks known gap")
+mac("msKnownGap", sgn(float(m.group(1))), "analysis/mere_checks.txt inside known gap"); mac("msKnownGapCI", ci(m.group(2), m.group(3)), "analysis/mere_checks.txt inside known gap CI"); mac("msKnownPopN", m.group(6), "analysis/mere_checks.txt inside popular known n"); mac("msKnownPopRate", f"{float(m.group(7)):.2f}", "analysis/mere_checks.txt inside popular known rate")
+
+# within-relation check (analysis/within_relation_check.txt, post hoc; regex, 24 tokens)
+tw = (HERE / "analysis/within_relation_check.txt").read_text(encoding="utf-8")
+m = grab(tw, r"pooled \(all relations\): pop_known ([+-][\d.]+)  pop_unknown ([+-][\d.]+)  know_obscure ([+-][\d.]+)  know_popular ([+-][\d.]+)  pref ([+-][\d.]+)", "within pooled")
+for k, nm in enumerate(("PopKnown", "PopUnk", "KnowObs", "KnowPop", "Pref"), start=1):
+    mac("wrPooled" + nm, sgn(float(m.group(k))), "analysis/within_relation_check.txt pooled " + nm)
+for key, nm in (("pop_known", "PopKnown"), ("pop_unknown", "PopUnk"), ("know_obscure", "KnowObs"), ("know_popular", "KnowPop"), ("pref", "Pref")):
+    m = grab(tw, r"  " + key + r": ([+-][\d.]+) \[([+-][\d.]+), ([+-][\d.]+)\]", "within " + key)
+    mac("wr" + nm, sgn(float(m.group(1))), "analysis/within_relation_check.txt within " + key); mac("wr" + nm + "CI", ci(m.group(2), m.group(3)), "analysis/within_relation_check.txt within " + key + " CI")
+for rel, nm in (("composer", "Composer"), ("country", "Country"), ("sport", "Sport")):
+    m = grab(tw, r"\n" + rel + r" +[-\d.]+ +[-\d.]+ +[-\d.]+ +[-\d.]+ +([-\d.]+)", "within " + rel)
+    mac("wr" + nm, sgn(float(m.group(1))), "analysis/within_relation_check.txt " + rel + " pref")
+m = grab(tw, r"relations with every cell >= 3: (\d+)", "within n relations"); mac("wrNRel", m.group(1), "analysis/within_relation_check.txt relations with every cell >= 3")
+te6 = (R / "round3/e6_summary.txt").read_text(encoding="utf-8")
+m = grab(te6, r"unc/Unkn ([\d.]+)  unc/High ([\d.]+)  con/Unkn ([\d.]+)  con/High ([\d.]+)", "e6 K3 cells")
+mac("mcObsUnkRec", f"{float(m.group(1)):.2f}", "results/round3/e6_summary.txt K3 obscure unknown"); mac("mcPopUnkRec", f"{float(m.group(3)):.2f}", "results/round3/e6_summary.txt K3 popular unknown")
+thj = (R / "hedge_judge/summary.txt").read_text(encoding="utf-8")
+for nm, key in (("Qwen", "qwen"), ("Gemma", "gemma"), ("Mistral", "mistral")):
+    i0 = thj.index("== " + key + ":"); seg = thj[i0:thj.index("confabulator", i0)]
+    m = grab(seg, r"uncertain/Unknown\s+regex [\d.]+ -> judge-corrected ([\d.]+)", "hedge_judge " + key)
+    mac("mc" + nm + "ObsUnk", f"{float(m.group(1)):.2f}", "results/hedge_judge/summary.txt " + key + " obscure unknown corrected")
+    m = grab(seg, r"pop - know ([+-][\d.]+) \[([+-][\d.]+), ([+-][\d.]+)\]", "hedge_judge " + key)
+    mac("mc" + nm + "Diff", sgn(float(m.group(1))), "results/hedge_judge/summary.txt " + key + " pop-know"); mac("mc" + nm + "DiffCI", ci(m.group(2), m.group(3)), "results/hedge_judge/summary.txt " + key + " CI")
+tuc = (R / "unireps_checks/summary.txt").read_text(encoding="utf-8")
+i0 = tuc.index("pop_given_unknown:"); seg = tuc[i0:i0 + 600]
+m = grab(seg, r"pop_given_unknown: (\d+) pairs", "unireps_checks"); mac("mcUnkPairs", m.group(1), "results/unireps_checks/summary.txt unknown pairs")
+m = grab(seg, r"raw hedge gap ([+-][\d.]+)", "unireps_checks"); mac("mcUnkPairGap", sgn(float(m.group(1))), "results/unireps_checks/summary.txt unknown pairs raw gap")
+m = grab(seg, r"EQUAL surface form [^:]*: ([+-][\d.]+)", "unireps_checks"); mac("mcUnkPairSurface", sgn(float(m.group(1))), "results/unireps_checks/summary.txt unknown pairs at equal surface form")
 m = grab(t4c, r"obscure known: (\d+) of (\d+) guessable; the other (\d+) abstain at ([\d.]+); guessable ones at ([\d.]+)", "round4 guessable")
 mac("rcGuessN", m.group(1), "round4_checks (4) obscure-known guessable"); mac("rcNonGuessN", m.group(3), "round4_checks (4) obscure-known not guessable")
 mac("rcNonGuessAbs", f"{float(m.group(4)):.2f}", "round4_checks (4) abstention, not guessable"); mac("rcGuessAbs", f"{float(m.group(5)):.2f}", "round4_checks (4) abstention, guessable")

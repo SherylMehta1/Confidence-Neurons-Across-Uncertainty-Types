@@ -1,0 +1,4 @@
+all: preference +0.300 [+0.203, +0.396]; obscure known n=87 rate 0.433; popular unknown n=100 rate 0.133
+inside: preference +0.458 [+0.375, +0.542]; obscure known n=80 rate 0.458; popular unknown n=4 rate 0.000
+outside: preference +0.004 [-0.181, +0.307]; obscure known n=7 rate 0.143; popular unknown n=96 rate 0.139
+inside known gap: +0.458 [+0.375, +0.542]; obscure known n=80 rate 0.458; popular known n=18 rate 0.000

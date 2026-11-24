@@ -1,0 +1,229 @@
+\documentclass[manuscript,screen,review,anonymous,nonacm]{acmart}
+
+\usepackage{booktabs,graphicx}
+\usepackage[capitalise,noabbrev]{cleveref}
+\graphicspath{{../figures/}}
+\input{../numbers.tex}
+
+\newcommand{\idk}{``I don't know''}
+
+\begin{document}
+
+\title{In Llama, Saying ``I Don't Know'' Depends on Entity Popularity, Even Among Facts It Does Not Know}
+\author{Anonymous Author(s)}
+
+\begin{abstract}
+When a language model says \idk, we would like that to mean it lacks the fact. We test this in Llama-3.1-8B-Instruct by crossing entity popularity (top vs.\ bottom decile of Wikipedia page views in PopQA) with knowledge labels taken from the model's own forced answers; two LLM judges, not validated against human labels, score abstention. Among facts Llama does not know, it says \idk{} in \tcObsUnkAbs{} of sampled replies when the entity is obscure and \tcPopUnkAbs{} when it is popular (gap \rcUnk{} \rcUnkCI; \rcUnkJoint{} \rcUnkJointCI{} after three label corrections; post hoc), although answer entropy differs the same way there. Among facts it answers correctly when forced (greedy answer and at least 9 of 10 samples), it says \idk{} in \tcObsKnownAbs{} of replies when the entity is obscure and in none when it is popular, at similar entropy. Whether popularity matters more than knowledge is less settled. Obscure known minus popular unknown abstention is \hmLlamaDiff{} \hmLlamaDiffCI; it repeats with fresh replies (\frDiff), shrinks in new questions (\nqDiff) and survives removing facts recoverable from the name alone (\ncDiff). But it ranges from \hjLlamaDiff{} to \faLlamaRegexDiff{} across abstention measures, and the \hmLlamaDiff{} measure was adopted after \hjLlamaDiff{} was seen; it falls to \rcJoint{} \rcJointCI{} under the three label corrections; and resampling relations gives \rcClusCI. \rcTopThree{} of \gsObsKnownTotal{} obscure known facts come from three relations, and outside them it is \msOutDiff{} (\msOutKnownN{} facts). Gemma-2-9B shows a preference of the same sign when the prompt permits \idk; for three other families the judges disagree too much to measure it. We could not isolate a familiarity mechanism: obscure names are recognized less overall, but recognition does not explain the gap; in Llama, steering along popularity adds nothing beyond an abstention direction; and lens readouts do not locate the effect. In this model, \idk{} is not a plain report of a missing fact.
+\end{abstract}
+
+\keywords{abstention, uncertainty, hallucination, entity popularity, language models, steering vectors, evaluation}
+
+\maketitle
+
+\section{Introduction}
+
+Saying \idk{} when a fact is missing avoids the worst hallucinations \cite{kalai2025hallucinate}. To trust that statement, we need to know what it responds to: an evaluation that scores abstention as honest ignorance assumes it responds to the missing fact. Confidence estimates usually read uncertainty over answers \cite{kadavath2022know,kuhn2023semantic,stolfo2024confidence}, and models use such confidence when a prompt offers abstention \cite{kumaran2026confidence}. However, verbal and answer-level uncertainty diverge \cite{ji2025hedging}, so what a model's \idk{} actually tracks is less clear.
+
+One candidate is familiarity. In people, the sense of being able to answer depends on how familiar a question's terms are as well as on whether the answer can be retrieved \cite{reder1992,schwartz1992,koriat2001cascade}. In language models, ``known entity'' features suppress a default ``can't answer'' response. \citet{lindsey2025biology} propose that a familiar name can trigger these features when the fact is missing, so the model answers when it should abstain. We call this a \emph{misfire}. The converse failure is an unfamiliar name that does not suppress the default: the model then abstains on a fact it knows.
+
+Testing this requires separating familiarity from knowledge. Existing tests define an entity as known when the model answers about it correctly \cite{ferrando2025iknow}, so the two move together. Familiarity has been separated from factual reliability in representations \cite{brzezinka2026bielik} and shown to shape hallucination through fine-tuning data \cite{kang2025unfamiliar}, but, to our knowledge, not crossed with knowledge in abstention behavior. We use page-view popularity as the measurable stand-in for familiarity, and we cross it with knowledge. If abstention follows popularity, two cells show it: popular unknown facts should draw few \idk{} replies (misfires), and obscure known facts many (the default not suppressed).
+
+In Llama, abstention falls with popularity at both knowledge levels. The rest of this paper follows that result. We show how we separate the two factors (\cref{sec:setup}) and what Llama does (\cref{sec:main}). We then ask how far the result holds (\cref{sec:holds}), whether other models share it (\cref{sec:families}), and whether familiarity causes it (\cref{sec:mech}).
+
+\paragraph{Main Contributions.}
+\begin{enumerate}
+\item \textbf{Popularity Shapes Abstention in Llama:} among unknown facts the gap is \rcUnk{} \rcUnkCI{} (post hoc), and among known facts in the three relations that hold most of them \msKnownGap{} \msKnownGapCI{} (post hoc). Whether popularity beats knowledge is unsettled: \hmLlamaDiff{} \hmLlamaDiffCI, but it rests on a few relations and on the knowledge labels.
+\item \textbf{A Preference of the Same Sign in Gemma When Permitted:} \pmGemmaDiff{} \pmGemmaDiffCI{} under a permissive prompt, with fewer stress tests; the judges cannot measure Qwen, Mistral or OLMo-2.
+\item \textbf{Generic Abstention in Llama, Familiarity Not Isolated:} steering along obscure-minus-popular adds nothing in Llama beyond an abstention direction fitted on popular questions only. This does not rule out familiarity upstream.
+\end{enumerate}
+
+\section{Crossing Popularity With Knowledge}
+\label{sec:setup}
+
+To separate the two factors, each question needs a popularity level and a knowledge label measured separately, and abstention must be measured apart from both.
+
+\paragraph{Questions \& Labels.} We use the 16 relations of PopQA \cite{mallen2023popqa}. Within each relation, subjects in the bottom and top deciles of Wikipedia page views form the \emph{obscure} and \emph{popular} arms. Knowledge comes from the model's own answers \cite{gekhman2024slick}: we grade a greedy answer and ten samples ($T=0.7$) against gold aliases, under a \emph{forced-answer prompt} (the chat template plus the assistant prefix ``The answer is''). A fact is \emph{known} if the greedy answer and at least 9 samples are correct, and \emph{unknown} if neither the greedy answer nor any sample is; the band between is dropped. ``Known'' is thus specific to this prompt. This leaves \faLlamaN, \faQwenN, \faGemmaN{} and \faMistralN{} questions for Llama-3.1-8B-Instruct, Qwen2.5-7B-Instruct, Gemma-2-9B-it and Mistral-7B-Instruct-v0.3 \cite{llama3,qwen25,gemma2,mistral7b} (cell counts in \cref{app:robust}).
+
+\paragraph{Two Readouts.} \emph{Answer uncertainty} is the first-token entropy under the forced-answer prompt. The knowledge labels come from the same distribution, so entropy should follow knowledge; it serves as a control. \emph{Abstention} is measured with a \emph{free prompt} (the chat template alone): for up to 100 questions per popularity $\times$ knowledge cell (\hmLlamaItems{} in total), we draw three replies ($T=0.7$, up to 96 tokens). Two LLM judges (Qwen2.5-32B-Instruct, Gemma-2-27B-it) label each reply DONT\_KNOW, CLARIFY (asks which entity is meant) or ANSWER; a reply abstains when both say DONT\_KNOW. On Llama the judges agree at Cohen's $\kappa=\hmLlamaKappa$ \lkKappaCI, above a pre-specified bar of \kappaBar{} for the point estimate; on the other families they do not. We did not validate the judges against human labels (\cref{sec:limits}).
+
+\paragraph{Effects.} The popularity effect is the obscure-minus-popular difference in a readout, averaged over the two knowledge levels; the knowledge effect is the unknown-minus-known difference, averaged over popularity. Their difference is the model's \emph{popularity preference}: positive when abstention follows popularity more than knowledge. In this equally weighted $2\times2$, it equals abstention on obscure known facts minus abstention on popular unknown facts, a cross-cell difference rather than a within-relation estimate. The \emph{unknown-fact gap} is obscure minus popular abstention among unknown facts. Intervals are 95\% bootstraps over questions within cells unless stated; because arms are defined within relations, we also report relation-clustered intervals. Unless marked post hoc, every analysis followed a plan written before it ran (\emph{pre-specified}); the plans are self-recorded, not externally timestamped.
+
+\section{In Llama, Abstention Falls With Popularity at Both Knowledge Levels}
+\label{sec:main}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.72\linewidth]{fig_dissociation.pdf}
+\caption{\textbf{In Llama, abstention falls with popularity; answer entropy, a control, follows knowledge.} (a) Share of Llama's free replies both judges label \idk; (b) its first-token entropy when the reply must begin ``The answer is'' (values and $n$ in \cref{tab:cells}); (c) popularity and knowledge effects on that entropy in four instruct models. 95\% bootstrap intervals.}
+\Description{Three panels. Abstention falls from obscure to popular entities for both known and unknown facts. Entropy separates known from unknown facts at both popularity levels. Across four instruct models, the knowledge effect on entropy exceeds the popularity effect.}
+\label{fig:dissociation}
+\end{figure}
+
+With the two factors crossed, the first result is direct. On obscure entities whose facts it knows, Llama says \idk{} in \tcObsKnownAbs{} of replies; on popular entities whose facts it knows, it does so in none of the 300 sampled replies (\cref{tab:cells}; \svLlamaNone{} on 150 further such questions, \cref{app:steer}). Forced-answer entropy is similar in these two cells (\tcObsKnownEnt{} vs.\ \tcPopKnownEnt{} nats), so the answer distribution does not explain this, among facts selected for consistent answers. These facts are rare: the obscure pool has \lkObsPoolKnown{} known and \lkObsPoolUnk{} unknown facts. Among unknown facts, abstention is \tcObsUnkAbs{} on obscure and \tcPopUnkAbs{} on popular entities. The popularity effect on abstention is \hmLlamaPopEff{} \hmLlamaPopEffCI{} and the knowledge effect \hmLlamaKnowEff{} \hmLlamaKnowEffCI: a popularity preference of \hmLlamaDiff{} \hmLlamaDiffCI.
+
+\begin{table}[t]
+\caption{Llama-3.1-8B-Instruct by cell: share of free replies both judges label \idk, and forced-answer first-token entropy, with 95\% intervals; counts are for abstention, and entropy uses the full pool (\cref{app:robust}).}
+\label{tab:cells}
+\footnotesize\setlength{\tabcolsep}{4pt}\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{Obscure} & \multicolumn{2}{c}{Popular} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+& known & unknown & known & unknown \\
+\midrule
+Says \idk{} & \tcObsKnownAbs{} \tcObsKnownAbsCI & \tcObsUnkAbs{} \tcObsUnkAbsCI & \tcPopKnownAbs{} \tcPopKnownAbsCI & \tcPopUnkAbs{} \tcPopUnkAbsCI \\
+\quad questions & \tcObsKnownAbsN & \tcObsUnkAbsN & \tcPopKnownAbsN & \tcPopUnkAbsN \\
+Entropy (nats) & \tcObsKnownEnt{} \tcObsKnownEntCI & \tcObsUnkEnt{} \tcObsUnkEntCI & \tcPopKnownEnt{} \tcPopKnownEntCI & \tcPopUnkEnt{} \tcPopUnkEntCI \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Llama abstains about as often on obscure facts it knows as on obscure facts it does not (\tcObsKnownAbs{} vs.\ \tcObsUnkAbs). This pattern is what the misfire idea and its converse predict. But a preference this large depends on how abstention and knowledge were measured, and on which questions fill each cell, so we test these next.
+
+\section{The Popularity Effect Holds; Beating Knowledge Rests on a Few Relations}
+\label{sec:holds}
+
+We test the preference in the order a skeptical reader would: is it repeatable, are the obscure known facts really known, does it depend on the measure, and what does it rest on? \Cref{tab:robust} collects the estimates, and \cref{app:robust} gives method details.
+
+\paragraph{It Repeats, Then Shrinks in New Questions.} With fresh replies, the preference is \frDiff{} \frDiffCI. In new questions from the 10th--30th and 70th--90th page-view percentiles, it is smaller (\nqDiff{} \nqDiffCI; relation-clustered \nqClusCI), which the narrower contrast may contribute to.
+
+\paragraph{Guessing From the Name Does Not Explain It.} Repeating does not show that Llama knows the obscure facts: it could guess them from the name. We re-asked each known question with three pseudo-names (two letters swapped, one vowel changed), counting a fact as recoverable when the greedy answer is correct for at least two. Llama still recovered \ncObsRec{} of \ncObsProbed{} obscure known facts (\ncCountryRec{} of \ncCountryN{} country questions); these abstain less (\ncRecAbs) than the rest (\ncOtherAbs), and without them the preference is \ncDiff{} \ncDiffCI.
+
+\paragraph{Other Labels Shrink It.} The labels themselves can also be wrong. Where a paraphrased question also gives a label, it mostly agrees with the original ($\kappa=\lcKappa$, \lcBothN{} questions), but many known facts receive no label under it: only \eoObsKnownN{} of \gsObsKnownTotal{} obscure known facts stay known. These abstain at \eoObsKnown, and the preference is \eoDiff{} \eoDiffCI. ``Known'' also transfers poorly to the free prompt: replies that do not abstain contain the answer in \ecNonAbs{} of obscure known cases and \ecPopKnown{} of popular known cases, and on \ecBoth{} of \ecBothOf{} obscure known questions one reply gives the answer and another says \idk{} (post hoc), so some of this abstention may be accurate about what that prompt can retrieve. A larger model (Llama-3.3-70B) regraded popular unknown facts by meaning and moved \sePUKnown{} of 100 to known and \sePUInter{} to the dropped band; the preference becomes \seDiff{} \seDiffCI. Dropping every popular unknown question with the answer in any free reply (\lcPUAlias{} of them; post hoc) gives \lcAliasDrop{} \lcAliasDropCI. Three label corrections at once (\cref{tab:robust}, note b; post hoc) leave \rcJoint{} \rcJointCI, while the unknown-fact gap stays \rcUnkJoint{} \rcUnkJointCI.
+
+\paragraph{The Size Depends on the Measure.} The sign holds under six other measures of abstention, from \hjLlamaDiff{} to \faLlamaRegexDiff; we adopted the primary measure after the first pre-specified one returned the smallest of these. With a third judge the preference is \tjLlamaDiff; using a single larger judge's broader label for declining without naming a candidate, \sdDiff{} \sdDiffCI. These replies look like refusals rather than hidden answers: with aliases inside the subject's name excluded, at most \lcDKAliasMax{} of \idk{} replies in any cell contain the gold answer (post hoc). Why the corrected judge and the regex disagree on the same replies is not established. A readout inside a single prompt is mixed. The pre-specified readout at the forced-answer position, the first token's lean toward hedge tokens (refusal openers such as `` I'', `` not'', `` unknown''), shows no preference (\loLlamaDiff{} \loLlamaDiffCI). A reading at the free prompt, specified after seeing this, shows one: popularity raises the log-odds of a first token ``I'' more than knowledge does (difference \eoFreeIDiff{} \eoFreeIDiffCI).
+
+\paragraph{The Preference Rests on a Few Relations.} Llama knows few obscure facts: \rcTopThree{} of the \gsObsKnownTotal{} come from three relations (capital, country, sport), as do \nqTopThree{} of \nqObsKnownN{} in the new questions. With relations as the resampling unit, the preference's interval is \rcClusCI{} (post hoc; leave-one-relation-out \rcLoro), while the unknown-fact gap stays clear (\rcUnkClusCI). The leave-one-out range hides how uneven this is, because removing one relation leaves the other two. Outside the three relations the preference is \msOutDiff{} \msOutDiffCI{} (\msOutKnownN{} obscure known at \msOutKnownRate, \msOutUnkN{} popular unknown at \msOutUnkRate; post hoc); inside them it is \msInDiff{} \msInDiffCI, but with only \msInUnkN{} popular unknown questions. So the two cells that define the preference hold different kinds of question. Within the three relations, the popularity effect among known facts is clear: \msKnownGap{} \msKnownGapCI{} (\msInKnownN{} obscure against \msKnownPopN{} popular known; post hoc).
+
+\begin{table}[t]
+\caption{Llama's popularity preference under other measures of abstention and other knowledge labels, and the coefficient of the obscure arm under regression controls. Positive preferences mean abstention follows popularity more than knowledge. ``Corrected'': regex rates on 24-token replies corrected for the recall and precision of one LLM judge (Qwen2.5-32B-Instruct), measured on a subset labeled by that judge, not by people. Plan: pre-specified (pre) or post hoc. $n$: questions; blank means a subset of the row above it.}
+\label{tab:robust}
+\footnotesize\setlength{\tabcolsep}{3pt}\begin{tabular}{p{5.6cm}p{1.9cm}rll}
+\toprule
+Variant & Replies & $n$ & Plan & Estimate \\
+\midrule
+\multicolumn{5}{l}{\emph{Measures of abstention: popularity preference}} \\
+Two judges, both DONT\_KNOW (primary) & 3, 96 tokens & \hmLlamaItems & pre\textsuperscript{a} & \hmLlamaDiff{} \hmLlamaDiffCI \\
+Two judges, DONT\_KNOW or CLARIFY & same & \hmLlamaItems & pre & \hmLlamaSecDiff{} \hmLlamaSecDiffCI \\
+Three judges, majority & same & \hmLlamaItems & pre & \tjLlamaDiff{} \tjLlamaDiffCI \\
+70B judge, declines naming no candidate & same & \hmLlamaItems & pre & \sdDiff{} \sdDiffCI \\
+Regex detector & same & \hmLlamaItems & post hoc & \hmLlamaRegexDiff{} \hmLlamaRegexDiffCI \\
+Regex detector & 20, 24 tokens & \faLlamaN & pre & \faLlamaRegexDiff{} \faLlamaRegexDiffCI \\
+One LLM judge, corrected & same 24-token & \faLlamaN & pre & \hjLlamaDiff{} \hjLlamaDiffCI \\
+\midrule
+\multicolumn{5}{l}{\emph{Replications and name-cue control (two judges): popularity preference}} \\
+Fresh replies, same questions & 3, 96 tokens & \hmLlamaItems & pre & \frDiff{} \frDiffCI \\
+New questions, 10th--30th vs.\ 70th--90th pct. & same & \nqN & pre & \nqDiff{} \nqDiffCI \\
+Name-recoverable known facts removed & same & & pre & \ncDiff{} \ncDiffCI \\
+\midrule
+\multicolumn{5}{l}{\emph{Other knowledge labels (two judges): popularity preference}} \\
+Relabeled with a paraphrased prompt & 3, 96 tokens & \lcBothN & pre & \eoDiff{} \eoDiffCI \\
+\quad where both labelings agree & same & & post hoc & \lcCons{} \lcConsCI \\
+Unknown facts regraded by meaning & same & & pre & \seDiff{} \seDiffCI \\
+Popular unknown with the answer in a reply dropped & same & & post hoc & \lcAliasDrop{} \lcAliasDropCI \\
+Guessable answers removed & same & & post hoc & \gsDiff{} \gsDiffCI \\
+Three label corrections jointly\textsuperscript{b} & same & & post hoc & \rcJoint{} \rcJointCI \\
+\midrule
+\multicolumn{5}{l}{\emph{Regression controls (two judges): coefficient of the obscure arm}} \\
+Relation fixed effects and knowledge only & 3, 96 tokens & \hmLlamaItems & pre & \amObsBase \\
+\quad plus entity recognition & same & \ekN & pre & \ekObs{} \ekObsCI \\
+\quad plus namesake count & same & & post hoc & \amObs{} \amObsCI \\
+\bottomrule
+\end{tabular}
+
+\smallskip\footnotesize \textsuperscript{a}Plan written after the smallest measure here (\hjLlamaDiff) was seen, and before this one ran. \textsuperscript{b}Meaning-based regrade of unknown facts, popular unknown questions with the gold answer in any free reply dropped, and guessable facts removed. Relation-clustered 95\% intervals (resampling the 16 relations; post hoc): primary \rcClusCI, name-cue control \ncClusCI, new questions \nqClusCI; popularity gap among unknown facts \rcUnk{} \rcUnkClusCI.
+\end{table}
+
+So two results stand at different strengths. Llama abstains more on obscure entities at both knowledge levels: among unknown facts, and among known facts within comparable relations. The stronger claim, that popularity beats knowledge, is positive by point estimate in every row of \cref{tab:robust}, but its interval reaches zero once labels are corrected jointly or relations are resampled, it vanishes outside three relations, and the forced-answer readout shows none. Each result also has its own weakness. The known-fact contrast excludes entropy but rests on contested labels; the unknown-fact gap survives label corrections, but forced-answer entropy also differs there (\tcObsUnkEnt{} vs.\ \tcPopUnkEnt{} nats), so it may partly reflect answer uncertainty. All of this concerns one model, which raises the next question.
+
+\section{Gemma Leans the Same Way When Permitted}
+\label{sec:families}
+
+\paragraph{Plain Prompt: Too Few Abstentions to Measure.} Entropy follows knowledge in all four families (\cref{fig:dissociation}c), but the judges disagree on Qwen and Mistral. Gemma's three judges agree, and it abstains in at most \tjGemmaObsUnk{} of replies per cell, below the pre-specified 0.25 needed to estimate a preference (three-judge estimate \tjGemmaDiff{} \tjGemmaDiffCI). One corrected judge reads more abstention in these families (\mcQwenObsUnk, \mcGemmaObsUnk{} and \mcMistralObsUnk{} on obscure unknown facts), and it leans toward knowledge (\mcQwenDiff{} \mcQwenDiffCI, \mcGemmaDiff{} \mcGemmaDiffCI, \mcMistralDiff{} \mcMistralDiffCI), though the judges disagree on these families, so this reading is not established. A pre-specified four-family test on other readouts was inconclusive (\cref{app:families}).
+
+\paragraph{Permissive Prompt: Same Sign in Gemma.} To obtain enough abstentions, we ended each question with ``If you do not know the answer, say that you do not know.'' Llama and Gemma then abstain often and three judges agree (Fleiss $\kappa=\pmLlamaKappa$ and \pmGemmaKappa). The popularity preference is \pmLlamaDiff{} \pmLlamaDiffCI{} for Llama and \pmGemmaDiff{} \pmGemmaDiffCI{} for Gemma, which says \idk{} to \pmGemmaObsKnown{} of obscure known and \pmGemmaPopKnown{} of popular known questions. Gemma's estimate has not had Llama's label corrections or relation resampling, and the prompt invites abstaining. For Qwen, Mistral and OLMo-2-7B, the judges disagree (Fleiss $\kappa$ \pmQwenKappa--\pmMistralKappa), so their preferences are unmeasured (point estimates \pmQwenDiff, \pmMistralDiff, \pmOlmoDiff; \cref{app:families}).
+
+Where the judges pass the bar under this prompt, then, the sign is positive; we cannot say more about the others. Two models leaning the same way does not tell us why. If the cause is familiarity, the model should register obscure names as less familiar, and that should account for the gap. We test this with recognition and name measures, steering directions and lens readouts.
+
+\section{No Familiarity Mechanism Isolated}
+\label{sec:mech}
+
+\paragraph{Recognition Tracks Popularity but Does Not Explain the Gap.} Entity recognition, the share of Llama's completions of ``\{subject\} is'' that Llama-3.3-70B grades as matching the Wikidata description, correlates with log page views ($\rho=\ekRho$), and among unknown facts obscure names are recognized far less (\mcObsUnkRec{} vs.\ \mcPopUnkRec). So this measure does separate obscure from popular names. But among known facts, a selected group, the order reverses (\ekObsKnown{} vs.\ \ekPopKnown), and adding recognition shrinks the popularity coefficient by only \ekShrink. Wikidata name collisions (post hoc) leave it at \amObs{} \amObsCI. Mean name surprisal under base Llama is uncorrelated with log page views (Spearman \esRho), so it does not stand in for popularity. Name form matters for known facts only: between \scPopKnownPairs{} matched pairs of known facts, the regex abstention gap of \scPopKnownGap{} is \scPopKnownGapSurface{} \scPopKnownGapSurfaceCI{} at equal word frequency, token count and token rarity (post hoc), while across \mcUnkPairs{} unknown pairs it barely moves (\mcUnkPairGap{} to \mcUnkPairSurface).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.72\linewidth]{fig_steering.pdf}
+\caption{\textbf{In Llama, steering along the obscure-minus-popular direction adds little abstention beyond its overlap with an abstention direction.} Each bar adds one direction to the residual stream at a dose chosen on separate questions (1$\times$ its natural norm for Llama, 4$\times$ for Gemma) and is scored on 150 held-out popular questions the model knows. (a) Share of free replies both judges label \idk. (b) First-token entropy under the forced-answer prompt. Grey: mean of 5 random directions (dots: each direction). Hatched: obscure-minus-popular with its abstain-minus-answer component removed (cosine \svLlamaCos{} in Llama, \svGemmaCos{} in Gemma). Gemma's two judges agree below the pre-specified bar, so its bars in (a) are indicative only. Error bars: 95\% bootstrap over questions.}
+\Description{Two bar panels for Llama and Gemma. In Llama, the obscure-minus-popular direction raises the share saying I don't know, and removing its abstention component returns it near the random level. Entropy rises under all fitted directions.}
+\label{fig:steering}
+\end{figure}
+
+\paragraph{Steering Finds a Generic Abstention Signal.} Like work steering refusal along recognition directions \cite{ferrando2025iknow,brzezinka2026familiarity}, we fitted obscure-minus-popular, unknown-minus-known and abstain-minus-answer directions on half of the questions \cite{arditi2024refusal,rimsky2024caa}, chose the dose on a second set of popular known questions and scored a third (\cref{fig:steering}, \cref{app:steer}). In Llama, obscure-minus-popular adds \svLlamaDOne{} \svLlamaDOneCI{} abstention over random directions with two judges (short of the pre-specified $+0.10$ bar) and \gaFam{} \gaFamCI{} with a majority of three. It is nearly parallel to abstention directions fitted without any popularity contrast: cosine \wlLlamaCos{} for one fitted on obscure questions only and \gaCos{} for one fitted on popular questions only. Removing either leaves \wlLlamaDTwo{} \wlLlamaDTwoCI{} and \gaPerp{} \gaPerpCI{} (majority of three). In Gemma, on the three-judge scorer, \svGemmaMajDTwo{} \svGemmaMajDTwoCI{} survives removal. The arms the direction was fitted on differ in abstention, and the misfire account also predicts overlap with abstention. So in Llama the direction moves abstention without showing a popularity-specific route, and this neither shows nor rules out familiarity upstream; steering effects do not by themselves show that a model uses a feature \cite{che2026steering}.
+
+\paragraph{Lenses Show Both Factors in Base Models.} With prefitted Jacobian lenses \cite{gurnee2026workspace}, read at the forced-answer position in a pre-specified mid-depth window, popularity raises the hedge-token term in Llama-3.1-8B, Gemma-2-9B, Gemma-2-2B and OLMo-3-7B \cite{olmo3}, and knowledge raises it comparably or more in three of four (\cref{tab:lens}). Instruct partners with their own lenses lean further toward knowledge, and the claim that instruction tuning raises the preference, which required non-overlapping intervals for a pair, held for no pair; so this readout does not show where Llama-Instruct's preference arises. The pre-specified prediction that popularity's effect starts at a shallower depth than knowledge's was not supported (\jlSupports{} supporting, \jlContradicts{} contradicting and \jlUndecided{} undecided of the eight base and instruct models). So lens readouts show both factors at work but do not locate the effect.
+
+\section{Limitations}
+\label{sec:limits}
+
+Abstention is judged by LLMs not validated against human labels; their errors could differ by cell and could bias the preference in either direction. ``Known'' is specific to the forced-answer prompt and concentrated in three relations, and the preference is not a within-relation estimate. We adopted the primary measure after seeing the first. The unknown-fact gap and the relation splits are post hoc. The design contrasts extreme deciles, and the adjacent bands give a smaller preference. Popularity is a stand-in that also carries name form. The models have 2--9B parameters, and only two families could be measured. Hedging driven by ambiguity that the judges do not label as clarification is not excluded.
+
+\section{Conclusion}
+
+We began by asking what a model's \idk{} responds to. In Llama, on these questions, it varies with how popular the entity is, at both knowledge levels: \tcObsUnkAbs{} against \tcPopUnkAbs{} on facts it does not know, and \msInKnownRate{} against \msKnownPopRate{} on facts it answers correctly when forced, within the same three relations. Whether popularity outweighs knowledge is unsettled: the point estimate favors popularity, but it shrinks to \rcJoint{} \rcJointCI{} under joint label corrections and is \msOutDiff{} outside three relations. Gemma leans the same way when the prompt permits abstaining.
+
+\emph{Interpretation:} the result has the shape the misfire idea predicts, but we did not establish its mechanism. Llama recognizes obscure names less overall, yet recognition does not account for the gap, and steering isolates only a generic abstention signal in Llama. Surface features of names remain an open alternative, and answer uncertainty may contribute among unknown facts. Instruction tuning remains open, although our one test found no support for it. More investigation is needed, starting with human labels and within-relation designs.
+
+\emph{Recommendation:} an evaluation that reads abstention as a measure of what a model does not know should cross it with entity popularity, compare within relations, and report how the rates move across abstention measures and knowledge labels. Here, a single abstention rate would hide that the same statement varies with popularity among facts the model does not know, and the size of the comparison with knowledge moved from \hjLlamaDiff{} to \faLlamaRegexDiff{} with the measure alone.
+
+\appendix
+
+\section{Method Details}
+\label{app:robust}
+
+\emph{Design counts.} Llama's pool has \lkObsPoolKnown{} known, \lkObsPoolMaybe{} intermediate and \lkObsPoolUnk{} unknown obscure facts, and \lkPopPoolKnown{}, \lkPopPoolMaybe{} and \lkPopPoolUnk{} popular ones; the two-judge sample is a stratified random sample of 100 questions per cell (seed 0), or all of a smaller cell. Intervals for differences of cell means use 10,000 within-cell bootstraps (seed 0); linear probability models use 2,000 bootstraps over questions.
+
+\emph{Independent labels} (pre-specified). Knowledge was relabeled with one paraphrased question per relation, the assistant prefix ``Answer:'' and fresh samples, under the same rule. Of the \lcBothN{} questions labeled under both prompts, \lcKK{} are known under both, \lcUU{} unknown under both, \lcKU{} known only originally and \lcUK{} only under the paraphrase.
+
+\emph{Guessable answers} (post hoc). An answer is guessable if a gold alias of at least three characters appears in the subject's name, or it is its relation's most common answer with at least 20\% of the pool. By this rule \rcGuessN{} of the \gsObsKnownTotal{} obscure known facts are guessable; they abstain at \rcGuessAbs, and the other \rcNonGuessN{} at \rcNonGuessAbs.
+
+\section{Other Families}
+\label{app:families}
+
+The four-family test (pre-specified) asked whether hedging follows popularity more than knowledge and entropy the reverse: regex on free replies for Llama (reference; both hold), Qwen and Mistral (only entropy holds), and forced-answer hedge log-odds for Gemma (both hold, though this readout shows no preference in Llama).
+
+\emph{Permissive prompt} (pre-specified). Three replies, majority of three judges. Cell rates (obscure unknown, obscure known, popular unknown, popular known): Llama \pmLlamaObsUnk, \pmLlamaObsKnown, \pmLlamaPopUnk, \pmLlamaPopKnown; Gemma \pmGemmaObsUnk, \pmGemmaObsKnown, \pmGemmaPopUnk, \pmGemmaPopKnown. Qwen2.5-7B, Mistral-7B and OLMo-2-7B-Instruct (Fleiss $\kappa$ \pmQwenKappa, \pmMistralKappa, \pmOlmoKappa) give \pmQwenDiff{} \pmQwenDiffCI, \pmMistralDiff{} \pmMistralDiffCI{} and \pmOlmoDiff{} \pmOlmoDiffCI.
+
+\section{Steering}
+\label{app:steer}
+
+Pre-specified. Directions were fitted on a random half of each model's questions at layer round$(0.55\times(L-1))$, the last position of the free prompt: obscure minus popular and unknown minus known, and abstain minus answer (regex abstention rate at least 0.5 minus rate 0). Each direction was added at a dose $k\in\{0.5,1,2,4,8\}$ times the obscure-minus-popular direction's natural norm, at the last prompt position and every generated position. $k$ was chosen on 150 popular known questions as the smallest value at which that direction beat five random directions by 0.10 in regex abstention (\svLlamaDose$\times$ for Llama, \svGemmaDose$\times$ for Gemma). All conditions were scored on 150 further popular known questions.
+
+Obscure-minus-popular minus random, Llama and Gemma. Both judges: \svLlamaDOne{} \svLlamaDOneCI{} and \svGemmaDOne{} \svGemmaDOneCI; with abstention removed \svLlamaDTwo{} \svLlamaDTwoCI{} and \svGemmaDTwo{} \svGemmaDTwoCI. A majority of three judges (added by amendment before judging; the defensible scorer for Gemma): \svLlamaMajDOne{} \svLlamaMajDOneCI{} and \svGemmaMajDOne{} \svGemmaMajDOneCI; with abstention removed \svLlamaMajDTwo{} \svLlamaMajDTwoCI{} and \svGemmaMajDTwo{} \svGemmaMajDTwoCI.
+
+\emph{Within-level abstention direction} (pre-specified). Refitted on obscure questions only (\wlLlamaHi{} abstaining against \wlLlamaLo{} answering in Llama, \wlGemmaHi{} against \wlGemmaLo{} in Gemma), majority of three judges; cosine \wlLlamaCos{} and \wlGemmaCos; obscure-minus-popular over random adds \wlLlamaDOne{} \wlLlamaDOneCI{} and \wlGemmaDOne{} \wlGemmaDOneCI, and with this component removed \wlLlamaDTwo{} \wlLlamaDTwoCI{} and \wlGemmaDTwo{} \wlGemmaDTwoCI.
+
+\emph{Popular-arm abstention direction} (pre-specified). Refitted on popular questions only (\gaHi{} against \gaLo), 20 random directions, majority of three judges (Llama, dose 1). Over random it adds \gaAbst{} \gaAbstCI.
+
+\section{Lens}
+\label{app:lens}
+
+Pre-specified. Hedge term: log-sum-exp of lens log-probabilities of `` not'', `` I'', `` unknown'', `` unclear'' and `` no''; the full readout subtracts the same quantity for the answer-opening tokens `` a'', `` the'', `` that'', `` in'', `` Yes'' and `` yes''. Window: relative depth $\ell/(L-1)\in[1/3,2/3]$. 2,000 within-cell bootstraps.
+
+\begin{table}[h]
+\caption{Mid-depth window effects in base models (95\% intervals). Lenses are fitted per model: compare within a model.}
+\label{tab:lens}
+\scriptsize\setlength{\tabcolsep}{3pt}\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{Full readout} & \multicolumn{2}{c}{Hedge term alone} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Model & Popularity & Knowledge & Popularity & Knowledge \\
+\midrule
+\lwRows
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{../references}
+
+\end{document}

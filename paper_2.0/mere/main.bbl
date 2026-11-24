@@ -1,0 +1,407 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{25}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter does
+%%% not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+\makeatletter
+\@ifundefined{NAT@parse@date}{}{\let\NAT@parse@date@orig\NAT@parse@date}
+\@ifundefined{NAT@parse@date}{}{\def\NAT@parse@date#1#2#3#4#5#6@@{\NAT@parse@date@orig#1#2#3#4#5#6@@\def\NAT@tempyear{0000}\def\NAT@tempexlab{{?}}\ifx\NAT@year\NAT@tempyear\ifx\NAT@exlab\NAT@tempexlab\def\NAT@date{[n.\,d.]}\else\edef\NAT@date{[n.\,d.]\NAT@exlab}\fi\fi}}
+\makeatother
+
+\bibitem[Arditi et~al\mbox{.}(2024)]%
+        {arditi2024refusal}
+\bibfield{author}{\bibinfo{person}{Andy Arditi}, \bibinfo{person}{Oscar Obeso},
+  \bibinfo{person}{Aaquib Syed}, \bibinfo{person}{Daniel Paleka},
+  \bibinfo{person}{Nina Panickssery}, \bibinfo{person}{Wes Gurnee}, {and}
+  \bibinfo{person}{Neel Nanda}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Refusal in Language Models Is Mediated by a Single
+  Direction}. In \bibinfo{booktitle}{\emph{Advances in Neural Information
+  Processing Systems 37}} \emph{(\bibinfo{series}{NeurIPS 2024})}.
+  \bibinfo{publisher}{Neural Information Processing Systems Foundation, Inc.
+  (NeurIPS)}, \bibinfo{pages}{136037–136083}.
+\newblock
+\showeprint[arxiv]{2406.11717}
+\href{https://doi.org/10.52202/079017-4322}{doi:\nolinkurl{10.52202/079017-4322}}
+
+
+\bibitem[Brzezinka(2026a)]%
+        {brzezinka2026bielik}
+\bibfield{author}{\bibinfo{person}{Grzegorz Brzezinka}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{Does Bielik Know What It Doesn't Know? Activation
+  Dispersion Separates Entity Familiarity from Factual Reliability Across Model
+  Scale}.
+\newblock
+\showeprint[arxiv]{2607.07670}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2607.07670}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Brzezinka(2026b)]%
+        {brzezinka2026familiarity}
+\bibfield{author}{\bibinfo{person}{Grzegorz Brzezinka}.}
+  \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{Graded Entity-Familiarity Readouts in Language
+  Models: Polish Adaptation, Cross-Language Robustness, and Refusal Steering}.
+\newblock
+\showeprint[arxiv]{2607.13568}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2607.13568}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Che and Li(2026)]%
+        {che2026steering}
+\bibfield{author}{\bibinfo{person}{Tong Che} {and} \bibinfo{person}{Yilong
+  Li}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Does the Model Use the Feature? Separating Steering
+  from Mechanism in LLMs}.
+\newblock
+\showeprint[arxiv]{2610.07270}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2610.07270}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Ferrando et~al\mbox{.}(2025)]%
+        {ferrando2025iknow}
+\bibfield{author}{\bibinfo{person}{Javier Ferrando}, \bibinfo{person}{Oscar
+  Obeso}, \bibinfo{person}{Senthooran Rajamanoharan}, {and}
+  \bibinfo{person}{Neel Nanda}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Do I Know This Entity? Knowledge Awareness and
+  Hallucinations in Language Models}.
+\newblock
+\showeprint[arxiv]{2411.14257}
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=WCRQFlji2q}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Gekhman et~al\mbox{.}(2024)]%
+        {gekhman2024slick}
+\bibfield{author}{\bibinfo{person}{Zorik Gekhman}, \bibinfo{person}{Gal Yona},
+  \bibinfo{person}{Roee Aharoni}, \bibinfo{person}{Matan Eyal},
+  \bibinfo{person}{Amir Feder}, \bibinfo{person}{Roi Reichart}, {and}
+  \bibinfo{person}{Jonathan Herzig}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Does Fine-Tuning LLMs on New Knowledge Encourage
+  Hallucinations?}. In \bibinfo{booktitle}{\emph{Proceedings of the 2024
+  Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{7765–7784}.
+\newblock
+\showeprint[arxiv]{2405.05904}
+\href{https://doi.org/10.18653/v1/2024.emnlp-main.444}{doi:\nolinkurl{10.18653/v1/2024.emnlp-main.444}}
+
+
+\bibitem[Grattafiori et~al\mbox{.}(2024)]%
+        {llama3}
+\bibfield{author}{\bibinfo{person}{Aaron Grattafiori} {et~al\mbox{.}}}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{The Llama 3 Herd of Models}.
+\newblock
+\showeprint[arxiv]{2407.21783}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2407.21783}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Gurnee et~al\mbox{.}(2026)]%
+        {gurnee2026workspace}
+\bibfield{author}{\bibinfo{person}{Wes Gurnee} {et~al\mbox{.}}}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Verbalizable Representations Form a Global Workspace
+  in Language Models}.
+\newblock
+\showeprint[arxiv]{2607.15495}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2607.15495}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Ji et~al\mbox{.}(2025)]%
+        {ji2025hedging}
+\bibfield{author}{\bibinfo{person}{Ziwei Ji}, \bibinfo{person}{Lei Yu},
+  \bibinfo{person}{Yeskendir Koishekenov}, \bibinfo{person}{Yejin Bang},
+  \bibinfo{person}{Anthony Hartshorn}, \bibinfo{person}{Alan Schelten},
+  \bibinfo{person}{Cheng Zhang}, \bibinfo{person}{Pascale Fung}, {and}
+  \bibinfo{person}{Nicola Cancedda}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Calibrating Verbal Uncertainty as a Linear Feature
+  to Reduce Hallucinations}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2025 Conference on Empirical Methods in Natural Language Processing}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{3769–3793}.
+\newblock
+\showeprint[arxiv]{2503.14477}
+\href{https://doi.org/10.18653/v1/2025.emnlp-main.187}{doi:\nolinkurl{10.18653/v1/2025.emnlp-main.187}}
+
+
+\bibitem[Jiang et~al\mbox{.}(2023)]%
+        {mistral7b}
+\bibfield{author}{\bibinfo{person}{Albert~Q. Jiang} {et~al\mbox{.}}}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Mistral 7B}.
+\newblock
+\showeprint[arxiv]{2310.06825}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2310.06825}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kadavath et~al\mbox{.}(2022)]%
+        {kadavath2022know}
+\bibfield{author}{\bibinfo{person}{Saurav Kadavath} {et~al\mbox{.}}}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{Language Models (Mostly) Know What They Know}.
+\newblock
+\showeprint[arxiv]{2207.05221}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2207.05221}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kalai et~al\mbox{.}(2025)]%
+        {kalai2025hallucinate}
+\bibfield{author}{\bibinfo{person}{Adam~Tauman Kalai}, \bibinfo{person}{Ofir
+  Nachum}, \bibinfo{person}{Santosh~S. Vempala}, {and} \bibinfo{person}{Edwin
+  Zhang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Why Language Models Hallucinate}.
+\newblock
+\showeprint[arxiv]{2509.04664}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2509.04664}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kang et~al\mbox{.}(2025)]%
+        {kang2025unfamiliar}
+\bibfield{author}{\bibinfo{person}{Katie Kang}, \bibinfo{person}{Eric Wallace},
+  \bibinfo{person}{Claire Tomlin}, \bibinfo{person}{Aviral Kumar}, {and}
+  \bibinfo{person}{Sergey Levine}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Unfamiliar Finetuning Examples Control How Language
+  Models Hallucinate}. In \bibinfo{booktitle}{\emph{Proceedings of the 2025
+  Conference of the Nations of the Americas Chapter of the Association for
+  Computational Linguistics: Human Language Technologies (Volume 1: Long
+  Papers)}}. \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{3600–3612}.
+\newblock
+\showeprint[arxiv]{2403.05612}
+\href{https://doi.org/10.18653/v1/2025.naacl-long.183}{doi:\nolinkurl{10.18653/v1/2025.naacl-long.183}}
+
+
+\bibitem[Koriat and Levy-Sadot(2001)]%
+        {koriat2001cascade}
+\bibfield{author}{\bibinfo{person}{Asher Koriat} {and} \bibinfo{person}{Ravit
+  Levy-Sadot}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{The combined contributions of the cue-familiarity
+  and accessibility heuristics to feelings of knowing.}
+\newblock \bibinfo{journal}{\emph{Journal of Experimental Psychology: Learning,
+  Memory, and Cognition}} \bibinfo{volume}{27}, \bibinfo{number}{1}
+  (\bibinfo{year}{2001}), \bibinfo{pages}{34–53}.
+\newblock
+\showISSN{0278-7393}
+\href{https://doi.org/10.1037/0278-7393.27.1.34}{doi:\nolinkurl{10.1037/0278-7393.27.1.34}}
+
+
+\bibitem[Kuhn et~al\mbox{.}(2023)]%
+        {kuhn2023semantic}
+\bibfield{author}{\bibinfo{person}{Lorenz Kuhn}, \bibinfo{person}{Yarin Gal},
+  {and} \bibinfo{person}{Sebastian Farquhar}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Semantic Uncertainty: Linguistic Invariances for
+  Uncertainty Estimation in Natural Language Generation}.
+\newblock
+\showeprint[arxiv]{2302.09664}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2302.09664}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kumaran et~al\mbox{.}(2026)]%
+        {kumaran2026confidence}
+\bibfield{author}{\bibinfo{person}{Dharshan Kumaran},
+  \bibinfo{person}{Nathaniel Daw}, \bibinfo{person}{Simon Osindero},
+  \bibinfo{person}{Petar Veličković}, {and} \bibinfo{person}{Viorica
+  Patraucean}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{Causal Evidence that Language Models use Confidence
+  to Drive Behavior}}.
+\newblock
+\showeprint[arxiv]{2603.22161}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2603.22161}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lindsey et~al\mbox{.}(2025)]%
+        {lindsey2025biology}
+\bibfield{author}{\bibinfo{person}{Jack Lindsey} {et~al\mbox{.}}}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{{On the Biology of a Large Language Model}}.
+\newblock \bibinfo{howpublished}{Transformer Circuits Thread}.
+\newblock
+\urldef\tempurl%
+\url{https://transformer-circuits.pub/2025/attribution-graphs/biology.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Mallen et~al\mbox{.}(2023)]%
+        {mallen2023popqa}
+\bibfield{author}{\bibinfo{person}{Alex Mallen}, \bibinfo{person}{Akari Asai},
+  \bibinfo{person}{Victor Zhong}, \bibinfo{person}{Rajarshi Das},
+  \bibinfo{person}{Daniel Khashabi}, {and} \bibinfo{person}{Hannaneh
+  Hajishirzi}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{When Not to Trust Language Models: Investigating
+  Effectiveness of Parametric and Non-Parametric Memories}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 61st Annual Meeting of the
+  Association for Computational Linguistics (Volume 1: Long Papers)}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{9802–9822}.
+\newblock
+\showeprint[arxiv]{2212.10511}
+\href{https://doi.org/10.18653/v1/2023.acl-long.546}{doi:\nolinkurl{10.18653/v1/2023.acl-long.546}}
+
+
+\bibitem[Olmo et~al\mbox{.}(2025)]%
+        {olmo3}
+\bibfield{author}{\bibinfo{person}{Team Olmo} {et~al\mbox{.}}}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Olmo 3}.
+\newblock
+\showeprint[arxiv]{2512.13961}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2512.13961}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Qwen et~al\mbox{.}(2024)]%
+        {qwen25}
+\bibfield{author}{\bibinfo{person}{Qwen} {et~al\mbox{.}}}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Qwen2.5 Technical Report}.
+\newblock
+\showeprint[arxiv]{2412.15115}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2412.15115}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Reder and Ritter(1992)]%
+        {reder1992}
+\bibfield{author}{\bibinfo{person}{Lynne~M. Reder} {and}
+  \bibinfo{person}{Frank~E. Ritter}.} \bibinfo{year}{1992}\natexlab{}.
+\newblock \showarticletitle{What determines initial feeling of knowing?
+  Familiarity with question terms, not with the answer.}
+\newblock \bibinfo{journal}{\emph{Journal of Experimental Psychology: Learning,
+  Memory, and Cognition}} \bibinfo{volume}{18}, \bibinfo{number}{3}
+  (\bibinfo{date}{May} \bibinfo{year}{1992}), \bibinfo{pages}{435–451}.
+\newblock
+\showISSN{0278-7393}
+\href{https://doi.org/10.1037/0278-7393.18.3.435}{doi:\nolinkurl{10.1037/0278-7393.18.3.435}}
+
+
+\bibitem[Rimsky et~al\mbox{.}(2024)]%
+        {rimsky2024caa}
+\bibfield{author}{\bibinfo{person}{Nina Rimsky}, \bibinfo{person}{Nick
+  Gabrieli}, \bibinfo{person}{Julian Schulz}, \bibinfo{person}{Meg Tong},
+  \bibinfo{person}{Evan Hubinger}, {and} \bibinfo{person}{Alexander Turner}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Steering Llama 2 via Contrastive Activation
+  Addition}. In \bibinfo{booktitle}{\emph{Proceedings of the 62nd Annual
+  Meeting of the Association for Computational Linguistics (Volume 1: Long
+  Papers)}}. \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{pages}{15504–15522}.
+\newblock
+\showeprint[arxiv]{2312.06681}
+\href{https://doi.org/10.18653/v1/2024.acl-long.828}{doi:\nolinkurl{10.18653/v1/2024.acl-long.828}}
+
+
+\bibitem[Schwartz and Metcalfe(1992)]%
+        {schwartz1992}
+\bibfield{author}{\bibinfo{person}{Bennett~L. Schwartz} {and}
+  \bibinfo{person}{Janet Metcalfe}.} \bibinfo{year}{1992}\natexlab{}.
+\newblock \showarticletitle{Cue familiarity but not target retrievability
+  enhances feeling-of-knowing judgments.}
+\newblock \bibinfo{journal}{\emph{Journal of Experimental Psychology: Learning,
+  Memory, and Cognition}} \bibinfo{volume}{18}, \bibinfo{number}{5}
+  (\bibinfo{year}{1992}), \bibinfo{pages}{1074–1083}.
+\newblock
+\showISSN{0278-7393}
+\href{https://doi.org/10.1037/0278-7393.18.5.1074}{doi:\nolinkurl{10.1037/0278-7393.18.5.1074}}
+
+
+\bibitem[Stolfo et~al\mbox{.}(2024)]%
+        {stolfo2024confidence}
+\bibfield{author}{\bibinfo{person}{Alessandro Stolfo}, \bibinfo{person}{Ben
+  Wu}, \bibinfo{person}{Wes Gurnee}, \bibinfo{person}{Yonatan Belinkov},
+  \bibinfo{person}{Xingyi Song}, \bibinfo{person}{Mrinmaya Sachan}, {and}
+  \bibinfo{person}{Neel Nanda}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Confidence Regulation Neurons in Language Models}.
+  In \bibinfo{booktitle}{\emph{Advances in Neural Information Processing
+  Systems 37}} \emph{(\bibinfo{series}{NeurIPS 2024})}.
+  \bibinfo{publisher}{Neural Information Processing Systems Foundation, Inc.
+  (NeurIPS)}, \bibinfo{pages}{125019–125049}.
+\newblock
+\showeprint[arxiv]{2406.16254}
+\href{https://doi.org/10.52202/079017-3970}{doi:\nolinkurl{10.52202/079017-3970}}
+
+
+\bibitem[Team et~al\mbox{.}(2024)]%
+        {gemma2}
+\bibfield{author}{\bibinfo{person}{Gemma Team} {et~al\mbox{.}}}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Gemma 2: Improving Open Language Models at a
+  Practical Size}.
+\newblock
+\showeprint[arxiv]{2408.00118}
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2408.00118}
+\showURL{%
+\tempurl}
+
+
+\end{thebibliography}
