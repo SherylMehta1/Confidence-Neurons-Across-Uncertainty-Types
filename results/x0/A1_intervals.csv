@@ -1,0 +1,25 @@
+quantity,estimate,lo,hi,method,resamples_used
+"abstention, obscure known",0.43295,0.35249,0.517241,questions within cell,10000
+"abstention, obscure unknown",0.476667,0.406667,0.546667,questions within cell,10000
+"abstention, popular known",0,0,0,questions within cell,10000
+"abstention, popular unknown",0.133333,0.0833333,0.19,questions within cell,10000
+popularity effect,0.388142,0.32881,0.447874,questions within cell,10000
+knowledge effect,0.0885249,0.0296897,0.147337,questions within cell,10000
+margin,0.299617,0.203985,0.39659,questions within cell,10000
+gap among unknown,0.343333,0.253333,0.43,questions within cell,10000
+gap among known,0.43295,0.35249,0.517241,questions within cell,10000
+popularity effect,0.388142,0.189416,0.467459,relations only,9999
+knowledge effect,0.0885249,-0.00786349,0.294241,relations only,9999
+margin,0.299617,-0.0949186,0.431286,relations only,9999
+gap among unknown,0.343333,0.224326,0.461142,relations only,10000
+gap among known,0.43295,0.0606061,0.525424,relations only,9999
+popularity effect,0.388142,0.184185,0.482936,"relations, then questions",9999
+knowledge effect,0.0885249,-0.0203788,0.297921,"relations, then questions",9999
+margin,0.299617,-0.101511,0.456594,"relations, then questions",9999
+gap among unknown,0.343333,0.201797,0.482681,"relations, then questions",10000
+gap among known,0.43295,0.05,0.553049,"relations, then questions",9999
+"forced-answer entropy (pool), obscure known",0.951276,0.830578,1.08067,questions within cell,10000
+"forced-answer entropy (pool), obscure unknown",3.51017,3.45749,3.56244,questions within cell,10000
+"forced-answer entropy (pool), popular known",0.858408,0.803118,0.914403,questions within cell,10000
+"forced-answer entropy (pool), popular unknown",2.57742,2.46748,2.68693,questions within cell,10000
+"kappa(DONT_KNOW), two judges",0.618687,0.568243,0.667917,questions,10000

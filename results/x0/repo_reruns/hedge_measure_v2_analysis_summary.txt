@@ -1,0 +1,23 @@
+== llama: 387 items, 1161 samples; kappa(DONT_KNOW) = 0.62; unparsed 6; regex recall on 96-token replies = 0.99
+   primary (both DONT_KNOW)   cells unc/Unkn 0.477 unc/High 0.433 con/Unkn 0.133 con/High 0.000 | pop +0.388 [+0.328,+0.449] know +0.089 [+0.031,+0.147] pop-know +0.300 [+0.204,+0.398]
+   secondary (+CLARIFY)       cells unc/Unkn 0.647 unc/High 0.494 con/Unkn 0.183 con/High 0.010 | pop +0.474 [+0.414,+0.534] know +0.163 [+0.101,+0.223] pop-know +0.311 [+0.209,+0.414]
+   regex on new replies       cells unc/Unkn 0.847 unc/High 0.682 con/Unkn 0.253 con/High 0.007 | pop +0.634 [+0.564,+0.702] know +0.206 [+0.137,+0.276] pop-know +0.429 [+0.306,+0.547]
+   -> FAMILIARITY > KNOWLEDGE
+
+== qwen: 354 items, 1062 samples; kappa(DONT_KNOW) = 0.30; unparsed 8; regex recall on 96-token replies = 0.58
+   primary (both DONT_KNOW)   cells unc/Unkn 0.050 unc/High 0.000 con/Unkn 0.013 con/High 0.000 | pop +0.018 [+0.000,+0.035] know +0.032 [+0.015,+0.050] pop-know -0.013 [-0.037,+0.000]
+   secondary (+CLARIFY)       cells unc/Unkn 0.317 unc/High 0.049 con/Unkn 0.130 con/High 0.000 | pop +0.118 [+0.070,+0.167] know +0.199 [+0.150,+0.247] pop-know -0.081 [-0.154,-0.007]
+   regex on new replies       cells unc/Unkn 0.180 unc/High 0.031 con/Unkn 0.033 con/High 0.003 | pop +0.087 [+0.049,+0.129] know +0.090 [+0.049,+0.129] pop-know -0.002 [-0.048,+0.050]
+   -> UNMEASURED (judge agreement kappa < 0.60)
+
+== gemma: 400 items, 1200 samples; kappa(DONT_KNOW) = 0.47; unparsed 9; regex recall on 96-token replies = 0.48
+   primary (both DONT_KNOW)   cells unc/Unkn 0.047 unc/High 0.017 con/Unkn 0.013 con/High 0.000 | pop +0.025 [+0.007,+0.047] know +0.022 [+0.002,+0.043] pop-know +0.003 [-0.020,+0.030]
+   secondary (+CLARIFY)       cells unc/Unkn 0.220 unc/High 0.040 con/Unkn 0.067 con/High 0.000 | pop +0.097 [+0.057,+0.137] know +0.123 [+0.083,+0.165] pop-know -0.027 [-0.073,+0.020]
+   regex on new replies       cells unc/Unkn 0.073 unc/High 0.030 con/Unkn 0.047 con/High 0.000 | pop +0.028 [-0.002,+0.058] know +0.045 [+0.015,+0.077] pop-know -0.017 [-0.060,+0.027]
+   -> UNMEASURED (judge agreement kappa < 0.60)
+
+== mistral: 371 items, 1113 samples; kappa(DONT_KNOW) = 0.39; unparsed 5; regex recall on 96-token replies = 0.73
+   primary (both DONT_KNOW)   cells unc/Unkn 0.097 unc/High 0.000 con/Unkn 0.003 con/High 0.000 | pop +0.047 [+0.028,+0.068] know +0.050 [+0.032,+0.070] pop-know -0.003 [-0.010,+0.000]
+   secondary (+CLARIFY)       cells unc/Unkn 0.253 unc/High 0.019 con/Unkn 0.047 con/High 0.000 | pop +0.113 [+0.079,+0.148] know +0.141 [+0.107,+0.175] pop-know -0.028 [-0.061,+0.003]
+   regex on new replies       cells unc/Unkn 0.210 unc/High 0.066 con/Unkn 0.057 con/High 0.027 | pop +0.096 [+0.050,+0.143] know +0.087 [+0.043,+0.132] pop-know +0.009 [-0.047,+0.068]
+   -> UNMEASURED (judge agreement kappa < 0.60)

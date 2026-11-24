@@ -1,0 +1,35 @@
+(a) known cut-off at 8, 9 and 10 of 10 (with and without the greedy condition; unknown: 0 of 10, greedy wrong)
+  cutoff  greedy_condition  n_known  n_unknown  n_OK  n_OU  n_PK  n_PU  regex24_margin  regex_lo  regex_hi  two_judge_margin  two_lo  two_hi  two_judge_n_OK  two_judge_n_PK
+ 8 of 10              True      801       1540    96  1179   705   361           0.462     0.369     0.550               NaN     NaN     NaN             NaN             NaN
+ 8 of 10             False      803       1540    96  1179   707   361           0.462     0.369     0.550               NaN     NaN     NaN             NaN             NaN
+ 9 of 10              True      763       1540    87  1179   676   361           0.442     0.345     0.534             0.300   0.204   0.397            87.0           100.0
+ 9 of 10             False      763       1540    87  1179   676   361           0.442     0.345     0.534             0.300   0.204   0.397            87.0           100.0
+10 of 10              True      707       1540    73  1179   634   361           0.386     0.280     0.489             0.278   0.173   0.384            73.0            92.0
+10 of 10             False      707       1540    73  1179   634   361           0.386     0.280     0.489             0.278   0.173   0.384            73.0            92.0
+two-judge margins at 8 of 10 cannot be computed: questions at exactly 8 of 10 were never given judged free replies
+
+(b) random halves of the 10 stored samples (10,000 splits, same 9-of-10 rule = 5 of 5; greedy condition ignored in halves)
+           cell    n  n_10_of_10  n_9_of_10  n_0_of_10  half_gives_stored_label  halves_agree  half_gives_band  half_gives_opposite_label  any_half_flips
+  obscure known   87          73         14          0                    0.920         0.839            0.080                        0.0           0.161
+obscure unknown 1179           0          0       1179                    1.000         1.000            0.000                        0.0           0.000
+  popular known  676         634         42          0                    0.969         0.938            0.031                        0.0           0.062
+popular unknown  361           0          0        361                    1.000         1.000            0.000                        0.0           0.000
+These shares are fixed by the stored counts: a 10/10 or 0/10 question can never change, and a 9/10 question always changes in exactly one
+half, always to the dropped band and never to the opposite label. So '100% stable' for unknown is true by construction, not evidence.
+  obscure known: 14 of 87 facts at 9 of 10 (0.161); half of that is the share of halves that miss
+  popular known: 42 of 676 facts at 9 of 10 (0.062); half of that is the share of halves that miss
+
+(c) fresh evidence: test-retest of unknown labels on new forced answers (E7), re-graded with the same string grader
+new   Maybe  Unknown  share_same
+cell                            
+OU       16     1163       0.986
+PU       30      331       0.917
+
+(d) fresh evidence: labels from a paraphrased prompt (E1)
+slick_para  HighlyKnown  Maybe  Unknown  share_same  share_opposite
+cell                                                               
+OK                   27     49       11       0.310           0.126
+OU                    2     19     1158       0.982           0.002
+PK                  313    312       51       0.463           0.075
+PU                   25     80      256       0.709           0.069
+  obscure known, two-judge abstention by paraphrase label: HighlyKnown 0.457 (n=27); Maybe 0.456 (n=49); Unknown 0.273 (n=11)

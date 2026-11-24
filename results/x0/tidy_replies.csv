@@ -1,0 +1,1162 @@
+key,s,prop,cell,lab_qwen,lab_gemma,lab_llama70,lab_decline,qwen,gemma,llama70,both,either,majority3,both_clar,decline70,regex96,gold_incl,gold_excl
+author::From Hell letter,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::From Hell letter,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::From Hell letter,2,author,PK,ANSWER,DONT_KNOW,ANSWER,HEDGED_ANSWER,False,True,False,False,True,False,False,False,True,True,True
+author::Great Expectations,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Great Expectations,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Great Expectations,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Road,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Road,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Road,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Adventures of Tom Sawyer,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Adventures of Tom Sawyer,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Adventures of Tom Sawyer,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::How to Stop Worrying and Start Living,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::How to Stop Worrying and Start Living,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::How to Stop Worrying and Start Living,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Birds,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Birds,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Birds,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Holes,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Holes,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Holes,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Cell,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Cell,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Cell,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::India,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::India,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::India,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Sri Lanka,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Sri Lanka,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Sri Lanka,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Virginia,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Virginia,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Virginia,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::New Zealand,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::New Zealand,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::New Zealand,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::New York,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::New York,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::New York,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Papua New Guinea,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Papua New Guinea,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Papua New Guinea,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+color::A.C. Milan,0,color,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+color::A.C. Milan,1,color,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+color::A.C. Milan,2,color,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Yesterday,0,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Yesterday,1,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Yesterday,2,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Katmai National Park and Preserve,0,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Katmai National Park and Preserve,1,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Katmai National Park and Preserve,2,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Valparaiso University,0,country,PK,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,True,True
+country::Valparaiso University,1,country,PK,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,True,True
+country::Valparaiso University,2,country,PK,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,True,True
+director::Elf,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Elf,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Elf,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Mark Twain,0,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Mark Twain,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Mark Twain,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Lily Allen,0,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+father::Lily Allen,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Lily Allen,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Wayne Gretzky,0,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Wayne Gretzky,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Wayne Gretzky,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Rama,0,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Rama,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+father::Rama,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Al Gore,0,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Al Gore,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Al Gore,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Dwayne Johnson,0,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Dwayne Johnson,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Dwayne Johnson,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Martin Garrix,0,genre,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Martin Garrix,1,genre,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Martin Garrix,2,genre,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Benazir Bhutto,0,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Benazir Bhutto,1,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Benazir Bhutto,2,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Chris Brown,0,place of birth,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Chris Brown,1,place of birth,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Chris Brown,2,place of birth,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Juan Luis Guerra,0,place of birth,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Juan Luis Guerra,1,place of birth,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Juan Luis Guerra,2,place of birth,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Holiday,0,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Holiday,1,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Holiday,2,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+religion::Aung San Suu Kyi,0,religion,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+religion::Aung San Suu Kyi,1,religion,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+religion::Aung San Suu Kyi,2,religion,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::After Hours,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::After Hours,1,screenwriter,PK,DONT_KNOW,ANSWER,ANSWER,ANSWER,True,False,False,False,True,False,False,False,False,False,False
+screenwriter::After Hours,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Faculty,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Faculty,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Faculty,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Silence,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Silence,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Silence,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Coach Carter,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Coach Carter,1,screenwriter,PK,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Coach Carter,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Omen,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Omen,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Omen,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Joey Harrington,0,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Joey Harrington,1,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Joey Harrington,2,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Welling United F.C.,0,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Welling United F.C.,1,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Welling United F.C.,2,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Leyton Orient F.C.,0,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Leyton Orient F.C.,1,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Leyton Orient F.C.,2,sport,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Symposium,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Symposium,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Symposium,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::On the Road,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::On the Road,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::On the Road,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Bangladesh,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Bangladesh,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Bangladesh,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Afghanistan,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Afghanistan,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Afghanistan,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Company,0,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Company,1,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Company,2,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::The Mission,0,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::The Mission,1,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::The Mission,2,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::The Social Network,0,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::The Social Network,1,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::The Social Network,2,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Miami Vice,0,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Miami Vice,1,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Miami Vice,2,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Eastern United States,0,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Eastern United States,1,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Eastern United States,2,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Bouvet Island,0,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Bouvet Island,1,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Bouvet Island,2,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Judge,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Judge,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Judge,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::E.T. the Extra-Terrestrial,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::E.T. the Extra-Terrestrial,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::E.T. the Extra-Terrestrial,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Pride,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Pride,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Pride,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Matrix,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Matrix,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Matrix,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Next,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Next,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Next,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Rand Paul,0,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Rand Paul,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Rand Paul,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Krishna,0,father,PK,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Krishna,1,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+father::Krishna,2,father,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Beth Hart,0,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Beth Hart,1,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Beth Hart,2,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Precious,0,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Precious,1,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Precious,2,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Rocky,0,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Rocky,1,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Rocky,2,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The King and I,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The King and I,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The King and I,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Her,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Her,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Her,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Office Space,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Office Space,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Office Space,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::White Noise,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::White Noise,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::White Noise,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Timeline,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Timeline,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Timeline,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Midnight's Children,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Midnight's Children,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Midnight's Children,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Politics,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Politics,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Politics,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Moneyball,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Moneyball,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Moneyball,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Celebrated Jumping Frog of Calaveras County,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Celebrated Jumping Frog of Calaveras County,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Celebrated Jumping Frog of Calaveras County,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Our Town,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,True,True,True
+author::Our Town,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Our Town,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Treasure Island,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Treasure Island,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Treasure Island,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Fallen,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Fallen,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Fallen,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Camp of the Saints,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Camp of the Saints,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::The Camp of the Saints,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Passing,0,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Passing,1,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Passing,2,author,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Saudi Arabia,0,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Saudi Arabia,1,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::Saudi Arabia,2,capital,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Halloween,0,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Halloween,1,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Halloween,2,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Inside Out,0,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Inside Out,1,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Inside Out,2,composer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::British American Tobacco,0,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::British American Tobacco,1,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::British American Tobacco,2,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::USS Constitution,0,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::USS Constitution,1,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::USS Constitution,2,country,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Cell,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Cell,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Cell,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Beloved,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Beloved,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Beloved,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Changeling,0,director,PK,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,True,True
+director::The Changeling,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Changeling,2,director,PK,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,False,True,True
+director::Powder,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Powder,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Powder,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Invitation,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Invitation,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Invitation,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Thirteen,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Thirteen,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Thirteen,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Day After,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Day After,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Day After,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Tum Bin,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Tum Bin,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Tum Bin,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::2012,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::2012,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::2012,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Cars,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Cars,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Cars,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Iron Man,0,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Iron Man,1,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Iron Man,2,director,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Super Mario World,0,genre,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Super Mario World,1,genre,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Super Mario World,2,genre,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Kamya Panjabi,0,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Kamya Panjabi,1,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Kamya Panjabi,2,occupation,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Graduate,0,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Graduate,1,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Graduate,2,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Vertigo,0,producer,PK,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,True,True
+producer::Vertigo,1,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Vertigo,2,producer,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Hot Fuzz,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Hot Fuzz,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Hot Fuzz,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Jurassic Park,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Jurassic Park,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Jurassic Park,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Labyrinth,0,screenwriter,PK,DONT_KNOW,CLARIFY,ANSWER,ANSWER,True,False,False,False,True,False,True,False,False,True,True
+screenwriter::Labyrinth,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Labyrinth,2,screenwriter,PK,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Back to the Future,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Back to the Future,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Back to the Future,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Episodes,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Episodes,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Episodes,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Birds,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Birds,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Birds,2,screenwriter,PK,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Rocky,0,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Rocky,1,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Rocky,2,screenwriter,PK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital of::Delhi,0,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+capital of::Delhi,1,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+capital of::Delhi,2,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+capital of::Los Angeles,0,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital of::Los Angeles,1,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+capital of::Los Angeles,2,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::Gran Torino,0,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Gran Torino,1,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::Gran Torino,2,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::Metroid,0,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Metroid,1,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Metroid,2,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::Back to School,0,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::Back to School,1,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Back to School,2,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::Arrested Development,0,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,False,False,False
+composer::Arrested Development,1,composer,PU,CLARIFY,ANSWER,DONT_KNOW,DECLINE,False,False,True,False,False,False,False,True,False,False,False
+composer::Arrested Development,2,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::The Room,0,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::The Room,1,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::The Room,2,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Chrysler,0,country,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Chrysler,1,country,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+country::Chrysler,2,country,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Lost,0,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Lost,1,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Lost,2,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Can,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Can,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Can,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Little Prince,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Little Prince,1,genre,PU,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Little Prince,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Interview,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Interview,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Interview,2,genre,PU,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,True,True
+genre::Oasis,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Oasis,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Oasis,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Species,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Species,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Species,2,genre,PU,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,False,False
+genre::Glory,0,genre,PU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,True,False,False
+genre::Glory,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,True,False,False
+genre::Glory,2,genre,PU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,True,True
+genre::GG Allin,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::GG Allin,1,genre,PU,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,True,True
+genre::GG Allin,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Revenge,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Revenge,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Revenge,2,genre,PU,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+mother::Rekha,0,mother,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+mother::Rekha,1,mother,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+mother::Rekha,2,mother,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Ayumi Hamasaki,0,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Ayumi Hamasaki,1,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Ayumi Hamasaki,2,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Donald Trump,0,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Donald Trump,1,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Donald Trump,2,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Seungri,0,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+occupation::Seungri,1,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Seungri,2,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+occupation::Carl Linnaeus,0,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Carl Linnaeus,1,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Carl Linnaeus,2,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Bala,0,occupation,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Bala,1,occupation,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Bala,2,occupation,PU,DONT_KNOW,ANSWER,CLARIFY,CLARIFY,True,False,False,False,True,False,False,False,True,False,False
+"occupation::Tyler, the Creator",0,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"occupation::Tyler, the Creator",1,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"occupation::Tyler, the Creator",2,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::C. N. Annadurai,0,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::C. N. Annadurai,1,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::C. N. Annadurai,2,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Julius Erving,0,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Julius Erving,1,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Julius Erving,2,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Rahi Masoom Raza,0,place of birth,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+place of birth::Rahi Masoom Raza,1,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Rahi Masoom Raza,2,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Jeanne de Casalis,0,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Jeanne de Casalis,1,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Jeanne de Casalis,2,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::William Osler,0,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::William Osler,1,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::William Osler,2,place of birth,PU,ANSWER,UNPARSED,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Julee Cruise,0,place of birth,PU,DONT_KNOW,ANSWER,ANSWER,HEDGED_ANSWER,True,False,False,False,True,False,False,False,True,False,False
+place of birth::Julee Cruise,1,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Julee Cruise,2,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Petar Stambolić,0,place of birth,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+place of birth::Petar Stambolić,1,place of birth,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+place of birth::Petar Stambolić,2,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Glory,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Glory,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Glory,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+religion::Marilyn Monroe,0,religion,PU,ANSWER,CLARIFY,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,False,False
+religion::Marilyn Monroe,1,religion,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+religion::Marilyn Monroe,2,religion,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Snow White and the Seven Dwarfs,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Snow White and the Seven Dwarfs,1,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Snow White and the Seven Dwarfs,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Rent,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Rent,1,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Rent,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+sport::Indianapolis 500,0,sport,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Indianapolis 500,1,sport,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Indianapolis 500,2,sport,PU,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Phoenix,0,author,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,False,False,False
+author::Phoenix,1,author,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Phoenix,2,author,PU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+capital of::Seattle,0,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital of::Seattle,1,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+capital of::Seattle,2,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital of::Jerusalem,0,capital of,PU,ANSWER,ANSWER,ANSWER,DECLINE,False,False,False,False,False,False,False,True,False,True,True
+capital of::Jerusalem,1,capital of,PU,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital of::Jerusalem,2,capital of,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+composer::The Village,0,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::The Village,1,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::The Village,2,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::WarGames,0,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::WarGames,1,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::WarGames,2,composer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::The Other Woman,0,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::The Other Woman,1,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::The Other Woman,2,composer,PU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+genre::Alien,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Alien,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Alien,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Back to the Future,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Back to the Future,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Back to the Future,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Alex Reid,0,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+occupation::Alex Reid,1,occupation,PU,DONT_KNOW,CLARIFY,CLARIFY,DECLINE,True,False,False,False,True,False,True,True,True,False,False
+occupation::Alex Reid,2,occupation,PU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+occupation::Burna Boy,0,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Burna Boy,1,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+occupation::Burna Boy,2,occupation,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Eduardo Hurtado,0,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Eduardo Hurtado,1,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Eduardo Hurtado,2,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The Fighter,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Fighter,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Fighter,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Blade,0,producer,PU,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Blade,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Blade,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Her,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Her,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Her,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Career Opportunities,0,producer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Career Opportunities,1,producer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Career Opportunities,2,producer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Easy A,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::Easy A,1,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Easy A,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Tourist,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+screenwriter::The Tourist,1,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::The Tourist,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+sport::Anderson,0,sport,PU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+sport::Anderson,1,sport,PU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,False,False,False
+sport::Anderson,2,sport,PU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,False,False,False
+author::King James Version,0,author,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::King James Version,1,author,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::King James Version,2,author,PU,ANSWER,DONT_KNOW,ANSWER,DECLINE,False,True,False,False,True,False,False,True,False,True,True
+author::Real,0,author,PU,DONT_KNOW,ANSWER,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,False,False,True,False,False
+author::Real,1,author,PU,CLARIFY,CLARIFY,CLARIFY,DECLINE,False,False,False,False,False,False,True,True,True,False,False
+author::Real,2,author,PU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+author::Aida,0,author,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+author::Aida,1,author,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+author::Aida,2,author,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+author::Legion,0,author,PU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+author::Legion,1,author,PU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+author::Legion,2,author,PU,DONT_KNOW,ANSWER,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,False,False,True,True,True
+composer::31,0,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::31,1,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::31,2,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,True
+composer::Crash,0,composer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::Crash,1,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Crash,2,composer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Laika,0,country,PU,CLARIFY,DONT_KNOW,ANSWER,DECLINE,False,True,False,False,True,False,True,True,True,False,False
+country::Laika,1,country,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+country::Laika,2,country,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::The Fog,0,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Fog,1,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::The Fog,2,director,PU,CLARIFY,ANSWER,ANSWER,CLARIFY,False,False,False,False,False,False,False,False,False,True,True
+director::Vacation,0,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Vacation,1,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Vacation,2,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Cure,0,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Cure,1,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Cure,2,director,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,False,False,False
+director::Carrie,0,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Carrie,1,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Carrie,2,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Cocktail,0,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Cocktail,1,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Cocktail,2,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Love Don't Cost a Thing,0,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Love Don't Cost a Thing,1,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Love Don't Cost a Thing,2,director,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+father::Melora Hardin,0,father,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+father::Melora Hardin,1,father,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+father::Melora Hardin,2,father,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::MUD,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::MUD,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::MUD,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Police,0,genre,PU,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Police,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Police,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Too Short,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Too Short,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Too Short,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::MASH,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::MASH,1,genre,PU,ANSWER,UNPARSED,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::MASH,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Peter Paul Rubens,0,genre,PU,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,False,False
+genre::Peter Paul Rubens,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Peter Paul Rubens,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Dangerous,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Dangerous,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Dangerous,2,genre,PU,CLARIFY,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::All Good Things,0,genre,PU,CLARIFY,ANSWER,ANSWER,DECLINE,False,False,False,False,False,False,False,True,False,False,False
+genre::All Good Things,1,genre,PU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,True,False,False
+genre::All Good Things,2,genre,PU,DONT_KNOW,ANSWER,CLARIFY,DECLINE,True,False,False,False,True,False,False,True,True,False,False
+genre::The Good Life,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::The Good Life,1,genre,PU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+genre::The Good Life,2,genre,PU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+genre::The Invasion,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Invasion,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Invasion,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::Chris Jericho,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Chris Jericho,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Chris Jericho,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Rev,0,genre,PU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,True,False,False
+genre::The Rev,1,genre,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::The Rev,2,genre,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,HEDGED_ANSWER,True,True,True,True,True,True,True,False,True,False,False
+genre::Up in the Air,0,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Up in the Air,1,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Up in the Air,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::The Guess Who,0,genre,PU,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,True,True
+genre::The Guess Who,1,genre,PU,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+genre::The Guess Who,2,genre,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Paris,0,place of birth,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+place of birth::Paris,1,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Paris,2,place of birth,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Parnelli Jones,0,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+place of birth::Parnelli Jones,1,place of birth,PU,ANSWER,DONT_KNOW,ANSWER,ANSWER,False,True,False,False,True,False,False,False,False,False,False
+place of birth::Parnelli Jones,2,place of birth,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+place of birth::Halloween,0,place of birth,PU,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,False,False
+place of birth::Halloween,1,place of birth,PU,ANSWER,ANSWER,ANSWER,DECLINE,False,False,False,False,False,False,False,True,False,False,False
+place of birth::Halloween,2,place of birth,PU,ANSWER,ANSWER,ANSWER,DECLINE,False,False,False,False,False,False,False,True,False,False,False
+producer::Gladiator,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Gladiator,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Gladiator,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::The Internship,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::The Internship,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::The Internship,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Holes,0,producer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Holes,1,producer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Holes,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Game of Thrones,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Game of Thrones,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Game of Thrones,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::PK,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::PK,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::PK,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Boy,0,producer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::Boy,1,producer,PU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,True,False,False
+producer::Boy,2,producer,PU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::The Prestige,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::The Prestige,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::The Prestige,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::After Hours,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::After Hours,1,producer,PU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::After Hours,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::House on Haunted Hill,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::House on Haunted Hill,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::House on Haunted Hill,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Paid in Full,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Paid in Full,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Paid in Full,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Mission: Impossible – Rogue Nation,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Mission: Impossible – Rogue Nation,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::Mission: Impossible – Rogue Nation,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+producer::City of God,0,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::City of God,1,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::City of God,2,producer,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Powder,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Powder,1,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Powder,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::The Mist,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::The Mist,1,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::The Mist,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::The Notebook,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::The Notebook,1,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::The Notebook,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::PK,0,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::PK,1,screenwriter,PU,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::PK,2,screenwriter,PU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+capital::Orotina Canton,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Orotina Canton,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Orotina Canton,2,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::canton of Antibes-Biot,0,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::canton of Antibes-Biot,1,capital,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,True,False
+capital::canton of Antibes-Biot,2,capital,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,True,False
+capital::Gmina Brzeszcze,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Gmina Brzeszcze,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Gmina Brzeszcze,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Limoges,0,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::arrondissement of Limoges,1,capital,OK,ANSWER,CLARIFY,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::arrondissement of Limoges,2,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Vimmerby Municipality,0,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Vimmerby Municipality,1,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Vimmerby Municipality,2,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Gmina Radomsko,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Gmina Radomsko,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Gmina Radomsko,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Ungheni County,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Ungheni County,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Ungheni County,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Florac,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Florac,1,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::arrondissement of Florac,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Lyuberetsky District,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Lyuberetsky District,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Lyuberetsky District,2,capital,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+capital::Vozhegodsky District,0,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+capital::Vozhegodsky District,1,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+capital::Vozhegodsky District,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::canton of Mirambeau,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::canton of Mirambeau,1,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::canton of Mirambeau,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Muyinga Province,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Muyinga Province,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Muyinga Province,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Zofingen District,0,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::Zofingen District,1,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::Zofingen District,2,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Medzilaborce District,0,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Medzilaborce District,1,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Medzilaborce District,2,capital,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,True,False
+capital::Verbandsgemeinde Loreley,0,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+capital::Verbandsgemeinde Loreley,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Verbandsgemeinde Loreley,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Verbandsgemeinde Bad Ems,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Verbandsgemeinde Bad Ems,1,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::Verbandsgemeinde Bad Ems,2,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::arrondissement of Niort,0,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::arrondissement of Niort,1,capital,OK,ANSWER,ANSWER,ANSWER,DECLINE,False,False,False,False,False,False,False,True,False,True,False
+capital::arrondissement of Niort,2,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+color::Arsenal Fútbol Club,0,color,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+color::Arsenal Fútbol Club,1,color,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+color::Arsenal Fútbol Club,2,color,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Symphony, K. 19b",0,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Symphony, K. 19b",1,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Symphony, K. 19b",2,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",0,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",1,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",2,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::canton of Baugy,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::canton of Baugy,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::canton of Baugy,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Kuczynka,0,country,OK,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,True,True
+country::Kuczynka,1,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Kuczynka,2,country,OK,DONT_KNOW,UNPARSED,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Anaran Rural District,0,country,OK,ANSWER,DONT_KNOW,ANSWER,HEDGED_ANSWER,False,True,False,False,True,False,False,False,True,True,True
+country::Anaran Rural District,1,country,OK,DONT_KNOW,CLARIFY,CLARIFY,DECLINE,True,False,False,False,True,False,True,True,True,False,False
+country::Anaran Rural District,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Uñón District,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Uñón District,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Uñón District,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Bitchū-Kawamo Station,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Bitchū-Kawamo Station,1,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,False,False,True,True,True
+country::Bitchū-Kawamo Station,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Gawarzec Dolny,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Gawarzec Dolny,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Gawarzec Dolny,2,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Tangal-e Behdan,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Tangal-e Behdan,1,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Tangal-e Behdan,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Valdearcos de la Vega,0,country,OK,CLARIFY,CLARIFY,CLARIFY,DECLINE,False,False,False,False,False,False,True,True,True,False,False
+country::Valdearcos de la Vega,1,country,OK,DONT_KNOW,ANSWER,ANSWER,HEDGED_ANSWER,True,False,False,False,True,False,False,False,True,True,True
+country::Valdearcos de la Vega,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Dubicze Osoczne,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Dubicze Osoczne,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Dubicze Osoczne,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Tholuvankadu,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Tholuvankadu,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Tholuvankadu,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Riechheimer Berg,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Riechheimer Berg,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Riechheimer Berg,2,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Rubim do Norte River,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Rubim do Norte River,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Rubim do Norte River,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::112th United States Colored Infantry,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+country::112th United States Colored Infantry,1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::112th United States Colored Infantry,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+country::Kawahigashi Station,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Kawahigashi Station,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Kawahigashi Station,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Rizuiyeh,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Rizuiyeh,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Rizuiyeh,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+"country::Łazy, Sierpc County",0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Łazy, Sierpc County",1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Łazy, Sierpc County",2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Muratdere,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Muratdere,1,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Muratdere,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Gornji Davidovići,0,country,OK,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,True,True,True
+country::Gornji Davidovići,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Gornji Davidovići,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Tervola Radio and TV-Mast,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Tervola Radio and TV-Mast,1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Tervola Radio and TV-Mast,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Nowa Wieś Reszelska,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Nowa Wieś Reszelska,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Nowa Wieś Reszelska,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Ciucurul Orbului River,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Ciucurul Orbului River,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Ciucurul Orbului River,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+father::Giacomo Guardi,0,father,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+father::Giacomo Guardi,1,father,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+father::Giacomo Guardi,2,father,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+sport::1989–90 1. Slovenská národná hokejová liga season,0,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::1989–90 1. Slovenská národná hokejová liga season,1,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::1989–90 1. Slovenská národná hokejová liga season,2,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::1995 Cook Islands Round Cup,0,sport,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::1995 Cook Islands Round Cup,1,sport,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+sport::1995 Cook Islands Round Cup,2,sport,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::2011–12 Elon Phoenix men's basketball team,0,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::2011–12 Elon Phoenix men's basketball team,1,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::2011–12 Elon Phoenix men's basketball team,2,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::All-Ireland Senior Club Camogie Championship 1970,0,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::All-Ireland Senior Club Camogie Championship 1970,1,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::All-Ireland Senior Club Camogie Championship 1970,2,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::2012 Georgetown Hoyas men's soccer team,0,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::2012 Georgetown Hoyas men's soccer team,1,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+sport::2012 Georgetown Hoyas men's soccer team,2,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Poprad District,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Poprad District,1,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Poprad District,2,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::arrondissement of Nogent-le-Rotrou,0,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::arrondissement of Nogent-le-Rotrou,1,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::arrondissement of Nogent-le-Rotrou,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,False,True,False
+capital::Belorechensky District,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Belorechensky District,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Belorechensky District,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Plesetsky District,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Plesetsky District,1,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+capital::Plesetsky District,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Tarussky District,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Tarussky District,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Tarussky District,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Qasr-e Shirin County,0,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::Qasr-e Shirin County,1,capital,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,True,False
+capital::Qasr-e Shirin County,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Lannion,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Lannion,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Lannion,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+country::Khvajeh Soheyl,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Khvajeh Soheyl,1,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Khvajeh Soheyl,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Eslamabad-e Mashayekh,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Eslamabad-e Mashayekh,1,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Eslamabad-e Mashayekh,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Kılıçlı Kavlaklı,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Kılıçlı Kavlaklı,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Kılıçlı Kavlaklı,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Tartaczek,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Tartaczek,1,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Tartaczek,2,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Valea Seacă River,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Valea Seacă River,1,country,OK,ANSWER,CLARIFY,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,True,True,True
+country::Valea Seacă River,2,country,OK,DONT_KNOW,ANSWER,ANSWER,DECLINE,True,False,False,False,True,False,False,True,True,True,True
+country::Mohammadabad-e Razzaqzadeh,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Mohammadabad-e Razzaqzadeh,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Mohammadabad-e Razzaqzadeh,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Puzdrowizna,0,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Puzdrowizna,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Puzdrowizna,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Izvorul Morarului River,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Izvorul Morarului River,1,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Izvorul Morarului River,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+"country::Dąbkowice, Łódź Voivodeship",0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Dąbkowice, Łódź Voivodeship",1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Dąbkowice, Łódź Voivodeship",2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Wiesau,0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Wiesau,1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Wiesau,2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Dell,0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Dell,1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Dell,2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Wir, Masovian Voivodeship",0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Wir, Masovian Voivodeship",1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Wir, Masovian Voivodeship",2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Hatnagoda,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Hatnagoda,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Hatnagoda,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::Zanzibar national under-20 football team,0,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Zanzibar national under-20 football team,1,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::Zanzibar national under-20 football team,2,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::1973 Virginia Slims of Fort Lauderdale,0,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::1973 Virginia Slims of Fort Lauderdale,1,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+sport::1973 Virginia Slims of Fort Lauderdale,2,sport,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+capital::arrondissement of Castellane,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Castellane,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::arrondissement of Castellane,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+capital::Tikhvinsky District,0,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Tikhvinsky District,1,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Tikhvinsky District,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital::Chiprovtsi Municipality,0,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Chiprovtsi Municipality,1,capital,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,False
+capital::Chiprovtsi Municipality,2,capital,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,True,False
+"composer::Erfreute Zeit im neuen Bunde, BWV 83",0,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Erfreute Zeit im neuen Bunde, BWV 83",1,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Erfreute Zeit im neuen Bunde, BWV 83",2,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Das neugeborne Kindelein, BWV 122",0,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Das neugeborne Kindelein, BWV 122",1,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"composer::Das neugeborne Kindelein, BWV 122",2,composer,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Szczecin Scientific Society,0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Szczecin Scientific Society,1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Szczecin Scientific Society,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Chal Siah Manchatun Jowkar,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Chal Siah Manchatun Jowkar,1,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Chal Siah Manchatun Jowkar,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+"country::Kowale, Lower Silesian Voivodeship",0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Kowale, Lower Silesian Voivodeship",1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Kowale, Lower Silesian Voivodeship",2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Sarnowo, Chełmno County",0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Sarnowo, Chełmno County",1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Sarnowo, Chełmno County",2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+country::Cổ Linh,0,country,OK,CLARIFY,DONT_KNOW,DONT_KNOW,DECLINE,False,True,True,False,True,True,True,True,True,False,False
+country::Cổ Linh,1,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Cổ Linh,2,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Chalhuacocha,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Chalhuacocha,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Chalhuacocha,2,country,OK,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+country::Dəhnəxəlil,0,country,OK,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+country::Dəhnəxəlil,1,country,OK,ANSWER,ANSWER,DONT_KNOW,HEDGED_ANSWER,False,False,True,False,False,False,False,False,True,True,True
+country::Dəhnəxəlil,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Drăgăneasa River,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Drăgăneasa River,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Drăgăneasa River,2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Łodygowo, Pisz County",0,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Łodygowo, Pisz County",1,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Łodygowo, Pisz County",2,country,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+"country::Union State Bank, Wisconsin",0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+"country::Union State Bank, Wisconsin",1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+"country::Union State Bank, Wisconsin",2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Stare Brzóski,0,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Stare Brzóski,1,country,OK,DONT_KNOW,CLARIFY,CLARIFY,DECLINE,True,False,False,False,True,False,True,True,True,False,False
+country::Stare Brzóski,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Jeqjeq-e Pain,0,country,OK,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,True,True,True
+country::Jeqjeq-e Pain,1,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Jeqjeq-e Pain,2,country,OK,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Alice Walker: Beauty in Truth,0,director,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Alice Walker: Beauty in Truth,1,director,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+director::Alice Walker: Beauty in Truth,2,director,OK,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,True,True
+author::Partner,0,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Partner,1,author,OU,DONT_KNOW,ANSWER,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,False,False,True,False,False
+author::Partner,2,author,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+author::Therapy,0,author,OU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,True,False,False
+author::Therapy,1,author,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+author::Therapy,2,author,OU,DONT_KNOW,CLARIFY,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,True,False,True,False,False
+capital::Sánchez Carrión Province,0,capital,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+capital::Sánchez Carrión Province,1,capital,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+capital::Sánchez Carrión Province,2,capital,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital of::Leningradskaya,0,capital of,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+capital of::Leningradskaya,1,capital of,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+capital of::Leningradskaya,2,capital of,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Cue Ball Cat,0,composer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Cue Ball Cat,1,composer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Cue Ball Cat,2,composer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::The Light,0,composer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+composer::The Light,1,composer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::The Light,2,composer,OU,CLARIFY,DONT_KNOW,CLARIFY,DECLINE,False,True,False,False,True,False,True,True,True,False,False
+country::Mary,0,country,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,False,False,False
+country::Mary,1,country,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+country::Mary,2,country,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+director::Pilot,0,director,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+director::Pilot,1,director,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+director::Pilot,2,director,OU,CLARIFY,UNPARSED,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+"director::Thank You, Madame",0,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+"director::Thank You, Madame",1,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+"director::Thank You, Madame",2,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Distant Trumpet,0,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Distant Trumpet,1,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Distant Trumpet,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Sacrifice,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Sacrifice,1,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Sacrifice,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+father::Georg Adolf Erman,0,father,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+father::Georg Adolf Erman,1,father,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+father::Georg Adolf Erman,2,father,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+father::Princess Yamanobe,0,father,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+father::Princess Yamanobe,1,father,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+father::Princess Yamanobe,2,father,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+father::Mira Burt-Wintonick,0,father,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+father::Mira Burt-Wintonick,1,father,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+father::Mira Burt-Wintonick,2,father,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::Nightdreamers,0,genre,OU,DONT_KNOW,CLARIFY,ANSWER,HEDGED_ANSWER,True,False,False,False,True,False,True,False,True,False,False
+genre::Nightdreamers,1,genre,OU,DONT_KNOW,ANSWER,CLARIFY,DECLINE,True,False,False,False,True,False,False,True,True,False,False
+genre::Nightdreamers,2,genre,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+genre::Pieter Jacobsz Duyfhuysen,0,genre,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::Pieter Jacobsz Duyfhuysen,1,genre,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::Pieter Jacobsz Duyfhuysen,2,genre,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::William Michael Rooke,0,genre,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+genre::William Michael Rooke,1,genre,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+genre::William Michael Rooke,2,genre,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+genre::Me and My Friend,0,genre,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+genre::Me and My Friend,1,genre,OU,CLARIFY,UNPARSED,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+genre::Me and My Friend,2,genre,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::The Song of the Suburbs,0,genre,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::The Song of the Suburbs,1,genre,OU,CLARIFY,CLARIFY,CLARIFY,DECLINE,False,False,False,False,False,False,True,True,True,False,False
+genre::The Song of the Suburbs,2,genre,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+genre::Voyage,0,genre,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+genre::Voyage,1,genre,OU,DONT_KNOW,ANSWER,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,False,False,True,False,False
+genre::Voyage,2,genre,OU,CLARIFY,CLARIFY,DONT_KNOW,DECLINE,False,False,True,False,False,False,True,True,True,False,False
+occupation::Jörg A. Eggers,0,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Jörg A. Eggers,1,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Jörg A. Eggers,2,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Thomas Gifford,0,occupation,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+occupation::Thomas Gifford,1,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Thomas Gifford,2,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Domingo Eyzaguirre,0,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Domingo Eyzaguirre,1,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::Domingo Eyzaguirre,2,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Karl Bartholomaeus Heller,0,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Karl Bartholomaeus Heller,1,place of birth,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+place of birth::Karl Bartholomaeus Heller,2,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Aarno Maliniemi,0,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Aarno Maliniemi,1,place of birth,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+place of birth::Aarno Maliniemi,2,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Wellington Santos da Silva,0,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Wellington Santos da Silva,1,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Wellington Santos da Silva,2,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Masaru Inada,0,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Masaru Inada,1,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Masaru Inada,2,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Anders Orvin,0,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Anders Orvin,1,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Anders Orvin,2,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Gary Freear,0,place of birth,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+place of birth::Gary Freear,1,place of birth,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+place of birth::Gary Freear,2,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The Deal,0,producer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::The Deal,1,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The Deal,2,producer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::In the Family,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::In the Family,1,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::In the Family,2,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Let America Laugh,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Let America Laugh,1,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Let America Laugh,2,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Just Around the Corner,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Just Around the Corner,1,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Just Around the Corner,2,producer,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+producer::Early Man,0,producer,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::Early Man,1,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Early Man,2,producer,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+religion::Arturo Tabera Araoz,0,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Arturo Tabera Araoz,1,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Arturo Tabera Araoz,2,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Cosmo Francesco Ruppi,0,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Cosmo Francesco Ruppi,1,religion,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+religion::Cosmo Francesco Ruppi,2,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Pedro Lisímaco de Jesús Vílchez Vílchez,0,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Pedro Lisímaco de Jesús Vílchez Vílchez,1,religion,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+religion::Pedro Lisímaco de Jesús Vílchez Vílchez,2,religion,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+religion::Bellino Giusto Ghirard,0,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Bellino Giusto Ghirard,1,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+religion::Bellino Giusto Ghirard,2,religion,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::The Secret Call,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::The Secret Call,1,screenwriter,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+screenwriter::The Secret Call,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Democracy,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Democracy,1,screenwriter,OU,DONT_KNOW,DONT_KNOW,ANSWER,ANSWER,True,True,False,True,True,True,True,False,True,False,False
+screenwriter::Democracy,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Small Town,0,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Small Town,1,screenwriter,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+screenwriter::Small Town,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Jackson: My Life... Your Fault,0,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Jackson: My Life... Your Fault,1,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Jackson: My Life... Your Fault,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::Wojciech Jarmuż,0,sport,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+sport::Wojciech Jarmuż,1,sport,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::Wojciech Jarmuż,2,sport,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::Lukáš Bodeček,0,sport,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::Lukáš Bodeček,1,sport,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+sport::Lukáš Bodeček,2,sport,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Jääpeili,0,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Jääpeili,1,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Jääpeili,2,author,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+author::Follow The Music,0,author,OU,DONT_KNOW,CLARIFY,CLARIFY,DECLINE,True,False,False,False,True,False,True,True,True,False,False
+author::Follow The Music,1,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Follow The Music,2,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Schlager,0,composer,OU,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::Schlager,1,composer,OU,ANSWER,ANSWER,ANSWER,DECLINE,False,False,False,False,False,False,False,True,False,False,False
+composer::Schlager,2,composer,OU,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Hakeem's New Flame,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Hakeem's New Flame,1,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Hakeem's New Flame,2,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::The Other Person,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::The Other Person,1,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::The Other Person,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::Drill,0,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Drill,1,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Drill,2,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Anyone Else,0,genre,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+genre::Anyone Else,1,genre,OU,DONT_KNOW,CLARIFY,CLARIFY,DECLINE,True,False,False,False,True,False,True,True,True,False,False
+genre::Anyone Else,2,genre,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+occupation::John Finlay,0,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::John Finlay,1,occupation,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+occupation::John Finlay,2,occupation,OU,CLARIFY,DONT_KNOW,CLARIFY,DECLINE,False,True,False,False,True,False,True,True,True,False,False
+place of birth::Matt Moralee,0,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Matt Moralee,1,place of birth,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+place of birth::Matt Moralee,2,place of birth,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::The Accused,0,producer,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::The Accused,1,producer,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+producer::The Accused,2,producer,OU,DONT_KNOW,ANSWER,ANSWER,HEDGED_ANSWER,True,False,False,False,True,False,False,False,False,False,False
+producer::The Lucky Stiff,0,producer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::The Lucky Stiff,1,producer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::The Lucky Stiff,2,producer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::The List,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The List,1,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The List,2,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The Pioneers,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The Pioneers,1,producer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::The Pioneers,2,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::(One Glance Is) Holy,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::(One Glance Is) Holy,1,producer,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+producer::(One Glance Is) Holy,2,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Ecco fatto,0,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Ecco fatto,1,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Ecco fatto,2,screenwriter,OU,CLARIFY,CLARIFY,CLARIFY,DECLINE,False,False,False,False,False,False,True,True,True,False,False
+screenwriter::Ghost,0,screenwriter,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Ghost,1,screenwriter,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+screenwriter::Ghost,2,screenwriter,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+author::Shame,0,author,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+author::Shame,1,author,OU,CLARIFY,UNPARSED,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,False,False,False
+author::Shame,2,author,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+author::Death in Five Boxes,0,author,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+author::Death in Five Boxes,1,author,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+author::Death in Five Boxes,2,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::What You Make It,0,author,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+author::What You Make It,1,author,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+author::What You Make It,2,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Corridor,0,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Corridor,1,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Corridor,2,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Challenge,0,author,OU,DONT_KNOW,CLARIFY,CLARIFY,DECLINE,True,False,False,False,True,False,True,True,True,False,False
+author::Challenge,1,author,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+author::Challenge,2,author,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+author::Louis,0,author,OU,CLARIFY,ANSWER,CLARIFY,DECLINE,False,False,False,False,False,False,False,True,True,False,False
+author::Louis,1,author,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+author::Louis,2,author,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,True,False,False
+author::Dancing on Coral,0,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::Dancing on Coral,1,author,OU,DONT_KNOW,ANSWER,CLARIFY,DECLINE,True,False,False,False,True,False,False,True,True,False,False
+author::Dancing on Coral,2,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::The Techniques of Democracy,0,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+author::The Techniques of Democracy,1,author,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+author::The Techniques of Democracy,2,author,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+composer::Nelson,0,composer,OU,DONT_KNOW,ANSWER,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,False,False,True,False,False
+composer::Nelson,1,composer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,HEDGED_ANSWER,True,True,True,True,True,True,True,False,True,False,False
+composer::Nelson,2,composer,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+composer::String Quartet No. 3,0,composer,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+composer::String Quartet No. 3,1,composer,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,False,False,False
+composer::String Quartet No. 3,2,composer,OU,CLARIFY,CLARIFY,CLARIFY,HEDGED_ANSWER,False,False,False,False,False,False,True,False,False,False,False
+country::Sar Giz,0,country,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Sar Giz,1,country,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+country::Sar Giz,2,country,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+director::One of Those,0,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::One of Those,1,director,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+director::One of Those,2,director,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+director::Me First,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Me First,1,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Me First,2,director,OU,CLARIFY,CLARIFY,DONT_KNOW,CLARIFY,False,False,True,False,False,False,True,False,True,False,False
+director::Friends,0,director,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Friends,1,director,OU,ANSWER,ANSWER,ANSWER,HEDGED_ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Friends,2,director,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+director::Vanity,0,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Vanity,1,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Vanity,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Day by Day,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Day by Day,1,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Day by Day,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Hilde Warren und der Tod,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Hilde Warren und der Tod,1,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Hilde Warren und der Tod,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Turn to the Right,0,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Turn to the Right,1,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Turn to the Right,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Boots,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Boots,1,director,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+director::Boots,2,director,OU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,True,False,False
+director::The Call of the North,0,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::The Call of the North,1,director,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+director::The Call of the North,2,director,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+director::Bingo,0,director,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+director::Bingo,1,director,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,False,False,False
+director::Bingo,2,director,OU,CLARIFY,ANSWER,CLARIFY,CLARIFY,False,False,False,False,False,False,False,False,False,False,False
+genre::Mother,0,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Mother,1,genre,OU,DONT_KNOW,ANSWER,ANSWER,HEDGED_ANSWER,True,False,False,False,True,False,False,False,False,False,False
+genre::Mother,2,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::I Will Be There,0,genre,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+genre::I Will Be There,1,genre,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+genre::I Will Be There,2,genre,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+genre::The New World,0,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::The New World,1,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::The New World,2,genre,OU,ANSWER,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::The Angel,0,genre,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+genre::The Angel,1,genre,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+genre::The Angel,2,genre,OU,CLARIFY,ANSWER,ANSWER,CLARIFY,False,False,False,False,False,False,False,False,False,False,False
+genre::Options,0,genre,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::Options,1,genre,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+genre::Options,2,genre,OU,DONT_KNOW,ANSWER,DONT_KNOW,HEDGED_ANSWER,True,False,True,False,True,True,False,False,True,False,False
+genre::Scorpio,0,genre,OU,CLARIFY,ANSWER,ANSWER,ANSWER,False,False,False,False,False,False,False,False,False,False,False
+genre::Scorpio,1,genre,OU,CLARIFY,DONT_KNOW,ANSWER,HEDGED_ANSWER,False,True,False,False,True,False,True,False,False,True,True
+genre::Scorpio,2,genre,OU,CLARIFY,ANSWER,ANSWER,DECLINE,False,False,False,False,False,False,False,True,False,True,True
+producer::The Brat,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The Brat,1,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::The Brat,2,producer,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+producer::Cinema,0,producer,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,False,False,False
+producer::Cinema,1,producer,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+producer::Cinema,2,producer,OU,CLARIFY,CLARIFY,CLARIFY,CLARIFY,False,False,False,False,False,False,True,False,True,False,False
+producer::Menu,0,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+producer::Menu,1,producer,OU,DONT_KNOW,ANSWER,ANSWER,ANSWER,True,False,False,False,True,False,False,False,True,False,False
+producer::Menu,2,producer,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Watch Out,0,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Watch Out,1,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Watch Out,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Ars,0,screenwriter,OU,CLARIFY,DONT_KNOW,CLARIFY,CLARIFY,False,True,False,False,True,False,True,False,True,False,False
+screenwriter::Ars,1,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Ars,2,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Album,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Album,1,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Album,2,screenwriter,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+screenwriter::Guilty,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Guilty,1,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Guilty,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Excited,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Excited,1,screenwriter,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+screenwriter::Excited,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Second Best Bed,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Second Best Bed,1,screenwriter,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+screenwriter::Second Best Bed,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Bingo,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Bingo,1,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::Bingo,2,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::The Woods,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::The Woods,1,screenwriter,OU,DONT_KNOW,ANSWER,DONT_KNOW,DECLINE,True,False,True,False,True,True,False,True,True,False,False
+screenwriter::The Woods,2,screenwriter,OU,DONT_KNOW,CLARIFY,DONT_KNOW,DECLINE,True,False,True,False,True,True,True,True,True,False,False
+screenwriter::Because,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Because,1,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Because,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Le Journal d'une femme en blanc,0,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Le Journal d'une femme en blanc,1,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False
+screenwriter::Le Journal d'une femme en blanc,2,screenwriter,OU,DONT_KNOW,DONT_KNOW,DONT_KNOW,DECLINE,True,True,True,True,True,True,True,True,True,False,False

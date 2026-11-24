@@ -1,0 +1,388 @@
+key,qwen,gemma,llama70,both,either,majority3,both_clar,decline70,regex96,gold_incl,gold_excl,prop,arm,know,cell,s_pop,log_views,n_correct,greedy_ok,ok_bits,entropy,regex24,alias_in_name,alias_outside_name
+author::Aida,0,0,0,0,0,0,0,0,0,0,0,author,control,Unknown,PU,12809,9.4579,0,False,0000000000,2.61584,0,False,True
+author::Cell,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,8023,8.99007,10,True,1111111111,0.14898,0,False,True
+author::Challenge,0.333333,0,0,0,0.333333,0,0.666667,0.333333,0.666667,0,0,author,uncertain,Unknown,OU,77,4.34381,0,False,0000000000,3.71845,0.85,False,True
+author::Corridor,1,1,1,1,1,1,1,1,1,0,0,author,uncertain,Unknown,OU,71,4.26268,0,False,0000000000,4.33823,1,False,True
+author::Dancing on Coral,1,0.666667,0.666667,0.666667,1,0.666667,0.666667,1,1,0,0,author,uncertain,Unknown,OU,60,4.09434,0,False,0000000000,4.39597,1,False,True
+author::Death in Five Boxes,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,author,uncertain,Unknown,OU,81,4.39445,0,False,0000000000,2.60557,1,False,True
+author::Fallen,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,5968,8.69417,10,True,1111111111,0.472871,0,False,True
+author::Follow The Music,1,0.666667,0.666667,0.666667,1,0.666667,1,1,1,0,0,author,uncertain,Unknown,OU,49,3.89182,0,False,0000000000,4.44053,1,False,True
+author::From Hell letter,0,0.333333,0,0,0.333333,0,0,0,0.333333,1,1,author,control,HighlyKnown,PK,24403,10.1025,10,True,1111111111,0.56088,0,False,True
+author::Great Expectations,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,54249,10.9013,10,True,1111111111,0.159566,0,False,True
+author::Holes,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,20940,9.94942,10,True,1111111111,0.327205,0,False,True
+author::How to Stop Worrying and Start Living,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,5284,8.57244,10,True,1111111111,0.0919026,0,False,True
+author::Jääpeili,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,author,uncertain,Unknown,OU,50,3.91202,0,False,0000000000,3.47126,0.95,False,True
+author::King James Version,0,0.333333,0,0,0.333333,0,0,0.333333,0,1,1,author,control,Unknown,PU,71185,11.173,0,False,0000000000,1.15093,0,False,True
+author::Legion,0.333333,0,0.333333,0,0.333333,0.333333,0.666667,0,1,0.333333,0.333333,author,control,Unknown,PU,8183,9.00981,0,False,0000000000,2.89471,0.7,False,True
+author::Louis,0,0,0,0,0,0,0.333333,0.333333,1,0,0,author,uncertain,Unknown,OU,49,3.89182,0,False,0000000000,3.42775,1,False,True
+author::Midnight's Children,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,19128,9.85891,10,True,1111111111,0.265409,0,False,True
+author::Moneyball,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,27186,10.2105,10,True,1111111111,0.21299,0,False,True
+author::On the Road,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,33066,10.4063,10,True,1111111111,0.328114,0,False,True
+author::Our Town,0,0,0,0,0,0,0,0,0.333333,1,1,author,control,HighlyKnown,PK,16434,9.70711,10,True,1111111111,0.332649,0,False,True
+author::Partner,1,0.333333,1,0.333333,1,1,0.666667,0.666667,1,0,0,author,uncertain,Unknown,OU,36,3.58352,0,False,0000000000,4.72672,1,False,True
+author::Passing,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,36495,10.5049,10,True,1111111111,0.208263,0,False,True
+author::Phoenix,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.666667,0.666667,0.333333,0,0,author,control,Unknown,PU,4840,8.48467,0,False,0000000000,3.81629,0.45,False,True
+author::Politics,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,12106,9.40146,10,True,1111111111,0.4606,0,False,True
+author::Real,0.333333,0,0.333333,0,0.333333,0.333333,0.333333,0.333333,1,0,0,author,control,Unknown,PU,6224,8.73617,0,False,0000000000,3.7766,0.95,False,True
+author::Shame,0,0,0,0,0,0,0.666667,0,0.333333,0,0,author,uncertain,Unknown,OU,60,4.09434,0,False,0000000000,3.99897,0.1,False,True
+author::Symposium,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,16901,9.73513,10,True,1111111111,0.631252,0,False,True
+author::The Adventures of Tom Sawyer,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,38388,10.5555,10,True,1111111111,0.106192,0,False,True
+author::The Birds,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,9741,9.1841,10,True,1111111111,0.895893,0,False,True
+author::The Camp of the Saints,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,9318,9.1397,10,True,1111111111,0.193656,0,False,True
+author::The Celebrated Jumping Frog of Calaveras County,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,7418,8.91166,10,True,1111111111,0.238697,0,False,True
+author::The Road,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,33713,10.4256,10,True,1111111111,0.61229,0,False,True
+author::The Techniques of Democracy,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,author,uncertain,Unknown,OU,82,4.40672,0,False,0000000000,4.07716,1,False,True
+author::Therapy,0.333333,0.333333,0.333333,0,0.666667,0.333333,0.666667,0,1,0,0,author,uncertain,Unknown,OU,51,3.93183,0,False,0000000000,3.62363,0.95,False,True
+author::Timeline,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,5584,8.62766,10,True,1111111111,0.258975,0,False,True
+author::Treasure Island,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,51623,10.8517,10,True,1111111111,0.162037,0,False,True
+author::What You Make It,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,author,uncertain,Unknown,OU,47,3.85015,0,False,0000000000,4.91318,1,False,True
+author::White Noise,0,0,0,0,0,0,0,0,0,1,1,author,control,HighlyKnown,PK,14735,9.59798,10,True,1111111111,0.381145,0,False,True
+capital of::Delhi,0,0,0,0,0,0,0,0,0,0,0,capital of,control,Unknown,PU,219227,12.2979,0,False,0000000000,0.777025,0,False,True
+capital of::Jerusalem,0,0,0,0,0,0,0,0.333333,0,1,1,capital of,control,Unknown,PU,136734,11.8258,0,False,0000000000,1.74753,0,True,True
+capital of::Leningradskaya,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,capital of,uncertain,Unknown,OU,102,4.62497,0,False,0000000000,3.46838,0.75,False,True
+capital of::Los Angeles,0,0,0,0,0,0,0,0,0,0.333333,0.333333,capital of,control,Unknown,PU,379485,12.8466,0,False,0000000000,1.28782,0,False,True
+capital of::Seattle,0,0,0,0,0,0,0,0,0,0.666667,0.666667,capital of,control,Unknown,PU,149948,11.918,0,False,0000000000,0.803322,0,False,True
+capital::Afghanistan,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,683050,13.4343,10,True,1111111111,0.177655,0,False,True
+capital::Bangladesh,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,407891,12.9188,10,True,1111111111,0.0418703,0,False,True
+capital::Belorechensky District,1,1,1,1,1,1,1,1,1,0,0,capital,uncertain,HighlyKnown,OK,188,5.23644,10,True,1111111111,1.206,1,False,True
+capital::Chiprovtsi Municipality,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,1,0,capital,uncertain,HighlyKnown,OK,96,4.56435,10,True,1111111111,0.429256,0.65,True,False
+capital::Gmina Brzeszcze,1,1,1,1,1,1,1,1,1,1,0,capital,uncertain,HighlyKnown,OK,74,4.30407,10,True,1111111111,0.614167,1,True,False
+capital::Gmina Radomsko,1,1,1,1,1,1,1,1,1,1,0,capital,uncertain,HighlyKnown,OK,39,3.66356,10,True,1111111111,0.956915,1,True,False
+capital::India,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,1301086,14.0787,10,True,1111111111,0.14432,0,False,True
+capital::Lyuberetsky District,1,0.666667,1,0.666667,1,1,1,1,1,0,0,capital,uncertain,HighlyKnown,OK,200,5.29832,9,True,1101111111,0.599288,0.85,False,True
+capital::Medzilaborce District,0.333333,0,0.333333,0,0.333333,0.333333,0.333333,0.333333,0.333333,1,0,capital,uncertain,HighlyKnown,OK,139,4.93447,10,True,1111111111,0.247782,0.25,True,False
+capital::Muyinga Province,1,1,1,1,1,1,1,1,1,1,0,capital,uncertain,HighlyKnown,OK,205,5.32301,10,True,1111111111,0.833922,1,True,False
+capital::New York,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,362757,12.8015,10,True,1111111111,0.0191587,0,False,True
+capital::New Zealand,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,508758,13.1397,10,True,1111111111,0.198784,0,False,True
+capital::Orotina Canton,1,0.666667,1,0.666667,1,1,0.666667,1,1,1,0,capital,uncertain,HighlyKnown,OK,144,4.96981,9,True,1111011111,1.37566,1,True,True
+capital::Papua New Guinea,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,288000,12.5707,10,True,1111111111,0.101262,0,False,True
+capital::Plesetsky District,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,capital,uncertain,HighlyKnown,OK,210,5.34711,9,True,0111111111,1.64608,1,False,True
+capital::Poprad District,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,1,0,capital,uncertain,HighlyKnown,OK,198,5.28827,10,True,1111111111,0.205534,0.45,True,False
+capital::Qasr-e Shirin County,1,0.333333,1,0.333333,1,1,0.333333,1,1,1,0,capital,uncertain,HighlyKnown,OK,136,4.91265,10,True,1111111111,0.883166,0.95,True,False
+capital::Saudi Arabia,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,368537,12.8173,10,True,1111111111,0.0556592,0,False,True
+capital::Sri Lanka,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,319836,12.6756,10,True,1111111111,0.34504,0,False,True
+capital::Sánchez Carrión Province,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,capital,uncertain,Unknown,OU,99,4.59512,0,False,0000000000,2.86804,0.55,False,True
+capital::Tarussky District,1,1,1,1,1,1,1,1,1,0,0,capital,uncertain,HighlyKnown,OK,76,4.33073,10,True,1111111111,0.452538,1,False,True
+capital::Tikhvinsky District,1,1,1,1,1,1,1,1,1,0,0,capital,uncertain,HighlyKnown,OK,164,5.09987,10,True,1111111111,1.5448,0.95,False,True
+capital::Ungheni County,1,1,1,1,1,1,1,1,1,1,0,capital,uncertain,HighlyKnown,OK,75,4.31749,10,True,1111111111,0.869532,0.95,True,False
+capital::Verbandsgemeinde Bad Ems,1,0.333333,1,0.333333,1,1,0.333333,1,1,1,0,capital,uncertain,HighlyKnown,OK,44,3.78419,10,True,1111111111,2.14372,1,True,False
+capital::Verbandsgemeinde Loreley,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,capital,uncertain,HighlyKnown,OK,127,4.84419,10,True,1111111111,0.570378,1,False,True
+capital::Vimmerby Municipality,0,0,0,0,0,0,0,0,0,1,0,capital,uncertain,HighlyKnown,OK,193,5.26269,10,True,1111111111,0.367801,0,True,False
+capital::Virginia,0,0,0,0,0,0,0,0,0,1,1,capital,control,HighlyKnown,PK,289975,12.5775,10,True,1111111111,0.155881,0,False,True
+capital::Vozhegodsky District,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,capital,uncertain,HighlyKnown,OK,87,4.46591,10,True,1111111111,2.25738,1,False,True
+capital::Zofingen District,0.666667,0,0.666667,0,0.666667,0.666667,0,0.666667,0.666667,1,0,capital,uncertain,HighlyKnown,OK,109,4.69135,10,True,1111111111,0.413985,0.75,True,True
+capital::arrondissement of Castellane,1,1,1,1,1,1,1,1,1,1,0,capital,uncertain,HighlyKnown,OK,73,4.29046,10,True,1111111111,0.515899,0.75,True,True
+capital::arrondissement of Florac,1,0.666667,1,0.666667,1,1,0.666667,1,1,1,0,capital,uncertain,HighlyKnown,OK,85,4.44265,10,True,1111111111,0.512789,0.85,True,False
+capital::arrondissement of Lannion,1,1,1,1,1,1,1,1,1,1,0,capital,uncertain,HighlyKnown,OK,76,4.33073,10,True,1111111111,0.804172,0.75,True,True
+capital::arrondissement of Limoges,0,0,0,0,0,0,0,0,0,1,0,capital,uncertain,HighlyKnown,OK,143,4.96284,10,True,1111111111,0.628067,0.1,True,True
+capital::arrondissement of Niort,0.333333,0,0.333333,0,0.333333,0.333333,0,0.666667,0.333333,1,0,capital,uncertain,HighlyKnown,OK,121,4.79579,10,True,1111111111,0.892716,0.2,True,False
+capital::arrondissement of Nogent-le-Rotrou,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0,1,0,capital,uncertain,HighlyKnown,OK,60,4.09434,10,True,1111111111,0.43458,0.65,True,True
+capital::canton of Antibes-Biot,1,0,1,0,1,1,0.666667,1,1,1,0,capital,uncertain,HighlyKnown,OK,53,3.97029,10,True,1111111111,1.91879,0.9,True,False
+capital::canton of Mirambeau,1,0.666667,1,0.666667,1,1,0.666667,1,1,1,0,capital,uncertain,HighlyKnown,OK,30,3.4012,10,True,1111111111,1.01127,1,True,False
+color::A.C. Milan,0,0,0,0,0,0,0,0,0,1,1,color,control,HighlyKnown,PK,188472,12.1467,10,True,1111111111,2.29861,0,False,True
+color::Arsenal Fútbol Club,0,0,0,0,0,0,0,0,0,1,1,color,uncertain,HighlyKnown,OK,4555,8.42398,10,True,1111111111,1.65379,0,False,True
+composer::31,1,0.666667,1,0.666667,1,1,0.666667,1,1,0.333333,0.333333,composer,control,Unknown,PU,30163,10.3144,0,False,0000000000,5.13864,1,False,True
+composer::Arrested Development,0.666667,0.666667,1,0.666667,0.666667,0.666667,0.666667,1,0.333333,0,0,composer,control,Unknown,PU,84794,11.348,0,False,0000000000,5.0239,0.25,False,True
+composer::Back to School,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.333333,0.666667,0.666667,0,0,composer,control,Unknown,PU,26373,10.1801,0,False,0000000000,3.08805,0.6,False,True
+composer::Company,0,0,0,0,0,0,0,0,0,1,1,composer,control,HighlyKnown,PK,23448,10.0625,10,True,1111111111,0.137277,0,False,True
+composer::Crash,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,composer,control,Unknown,PU,42821,10.6648,0,False,0000000000,4.70155,0.95,False,True
+composer::Cue Ball Cat,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,composer,uncertain,Unknown,OU,70,4.2485,0,False,0000000000,5.42391,0.95,False,True
+"composer::Das neugeborne Kindelein, BWV 122",0,0,0,0,0,0,0,0,0,1,1,composer,uncertain,HighlyKnown,OK,153,5.03044,10,True,1111111111,0.955047,0,False,True
+"composer::Erfreute Zeit im neuen Bunde, BWV 83",0,0,0,0,0,0,0,0,0,1,1,composer,uncertain,HighlyKnown,OK,160,5.07517,10,True,1111111111,0.653267,0,False,True
+composer::Gran Torino,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,composer,control,Unknown,PU,51441,10.8482,0,False,0000000000,2.69535,1,False,True
+composer::Halloween,0,0,0,0,0,0,0,0,0,1,1,composer,control,HighlyKnown,PK,933638,13.7468,10,True,1111111111,0.428737,0,False,True
+composer::Inside Out,0,0,0,0,0,0,0,0,0,1,1,composer,control,HighlyKnown,PK,74976,11.2249,10,True,1111111111,0.65463,0,False,True
+composer::Metroid,0,0,0,0,0,0,0,0,0,1,1,composer,control,Unknown,PU,40382,10.6061,0,False,0000000000,1.41375,0.25,False,True
+composer::Miami Vice,0,0,0,0,0,0,0,0,0,1,1,composer,control,HighlyKnown,PK,45805,10.7321,10,True,1111111111,0.386849,0,False,True
+composer::Nelson,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.333333,0,0.666667,0,0,composer,uncertain,Unknown,OU,154,5.03695,0,False,0000000000,4.04584,0.75,False,True
+"composer::Reißt euch los, bedrängte Sinnen, BWV 224",0,0,0,0,0,0,0,0,0,1,1,composer,uncertain,HighlyKnown,OK,67,4.20469,10,True,1111111111,0.835899,0,False,True
+composer::Schlager,0,0,0,0,0,0,0,0.333333,0,0,0,composer,uncertain,Unknown,OU,138,4.92725,0,False,0000000000,2.0728,0,False,True
+composer::String Quartet No. 3,0,0,0,0,0,0,0.666667,0,0,0,0,composer,uncertain,Unknown,OU,76,4.33073,0,False,0000000000,2.45479,0,False,True
+"composer::Symphony, K. 19b",0,0,0,0,0,0,0,0,0,1,1,composer,uncertain,HighlyKnown,OK,119,4.77912,10,True,1111111111,0.776626,0.3,False,True
+composer::The Light,0.666667,0.666667,0.666667,0.333333,1,0.666667,0.666667,1,1,0,0,composer,uncertain,Unknown,OU,140,4.94164,0,False,0000000000,4.99912,1,False,True
+composer::The Mission,0,0,0,0,0,0,0,0,0,1,1,composer,control,HighlyKnown,PK,28686,10.2642,10,True,1111111111,0.521442,0,False,True
+composer::The Other Woman,1,0.333333,1,0.333333,1,1,0.666667,1,1,0,0,composer,control,Unknown,PU,28895,10.2714,0,False,0000000000,3.94491,1,False,True
+composer::The Room,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,composer,control,Unknown,PU,64610,11.0761,0,False,0000000000,3.35935,0.95,False,True
+composer::The Social Network,0,0,0,0,0,0,0,0,0,1,1,composer,control,HighlyKnown,PK,122369,11.7148,10,True,1111111111,0.303493,0,False,True
+composer::The Village,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.333333,0.666667,0.666667,0,0,composer,control,Unknown,PU,101240,11.5252,0,False,0000000000,2.75199,0.85,False,True
+composer::WarGames,0,0,0,0,0,0,0,0,0,0,0,composer,control,Unknown,PU,37446,10.5307,0,False,0000000000,2.29488,0,False,True
+composer::Yesterday,0,0,0,0,0,0,0,0,0,1,1,composer,control,HighlyKnown,PK,24406,10.1026,10,True,1111111111,0.150071,0,False,True
+country::112th United States Colored Infantry,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.333333,0.666667,0.666667,1,0.333333,country,uncertain,HighlyKnown,OK,35,3.55535,9,True,1011111111,2.61147,0.75,True,True
+country::Anaran Rural District,0.666667,0.666667,0.333333,0.333333,1,0.333333,0.666667,0.666667,1,0.333333,0.333333,country,uncertain,HighlyKnown,OK,40,3.68888,10,True,1111111111,1.05133,1,False,True
+country::Bitchū-Kawamo Station,1,0,1,0,1,1,0,0.666667,1,0.333333,0.333333,country,uncertain,HighlyKnown,OK,33,3.49651,10,True,1111111111,0.256725,0.7,False,True
+country::Bouvet Island,0,0,0,0,0,0,0,0,0,1,1,country,control,HighlyKnown,PK,31555,10.3595,10,True,1111111111,0.15986,0,False,True
+country::British American Tobacco,0,0,0,0,0,0,0,0,0,1,1,country,control,HighlyKnown,PK,26492,10.1846,10,True,1111111111,0.916505,0,False,True
+country::Chal Siah Manchatun Jowkar,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,country,uncertain,HighlyKnown,OK,34,3.52636,9,True,1111111101,1.47795,1,False,True
+country::Chalhuacocha,1,0.666667,1,0.666667,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,22,3.09104,10,True,1111111111,0.441884,1,False,True
+country::Chrysler,0,0,0,0,0,0,0,0,0,0.666667,0.666667,country,control,Unknown,PU,55586,10.9257,0,False,0000000000,1.75386,0,False,True
+country::Ciucurul Orbului River,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,7,1.94591,9,True,0111111111,1.66912,1,False,True
+country::Cổ Linh,0.666667,0.333333,1,0,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,40,3.68888,9,True,1110111111,1.0727,1,False,True
+country::Dell,0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,38,3.63759,10,True,1111111111,0.881311,0,False,True
+country::Drăgăneasa River,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.333333,0.333333,country,uncertain,HighlyKnown,OK,6,1.79176,10,True,1111111111,0.757027,0.95,False,True
+country::Dubicze Osoczne,1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,31,3.43399,10,True,1111111111,0.520046,1,False,True
+"country::Dąbkowice, Łódź Voivodeship",0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,14,2.63906,10,True,1111111111,0.2974,0,False,True
+country::Dəhnəxəlil,0.666667,0.333333,1,0.333333,0.666667,0.666667,0.333333,0.666667,1,0.333333,0.333333,country,uncertain,HighlyKnown,OK,34,3.52636,10,True,1111111111,0.718622,0.95,False,True
+country::Eastern United States,0,0,0,0,0,0,0,0,0,1,1,country,control,HighlyKnown,PK,14208,9.56156,10,True,1111111111,1.40247,0,True,True
+country::Eslamabad-e Mashayekh,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,22,3.09104,10,True,1111111111,1.03159,1,False,True
+country::Gawarzec Dolny,1,0.333333,1,0.333333,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,34,3.52636,10,True,1111111111,0.525431,0.8,False,True
+country::Gornji Davidovići,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.333333,0.666667,1,0.333333,0.333333,country,uncertain,HighlyKnown,OK,24,3.17805,10,True,1111111111,0.789037,0.85,False,True
+country::Hatnagoda,1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,30,3.4012,10,True,1111111111,0.837187,1,False,True
+country::Izvorul Morarului River,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,9,2.19722,9,True,1111111110,1.51469,1,False,True
+country::Jeqjeq-e Pain,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,1,0.333333,0.333333,country,uncertain,HighlyKnown,OK,27,3.29584,10,True,1111111111,1.00093,0.95,False,True
+country::Katmai National Park and Preserve,0,0,0,0,0,0,0,0,0,1,1,country,control,HighlyKnown,PK,6479,8.77632,10,True,1111111111,1.16346,0,False,True
+country::Kawahigashi Station,1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,36,3.58352,10,True,1111111111,0.7593,1,False,True
+country::Khvajeh Soheyl,1,0,1,0,1,1,0,1,1,0,0,country,uncertain,HighlyKnown,OK,30,3.4012,9,True,0111111111,1.23986,1,False,True
+"country::Kowale, Lower Silesian Voivodeship",0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,20,2.99573,10,True,1111111111,0.305231,0,False,True
+country::Kuczynka,0.666667,0,0.666667,0,0.666667,0.666667,0,0.666667,1,0.333333,0.333333,country,uncertain,HighlyKnown,OK,34,3.52636,10,True,1111111111,0.921,1,False,True
+country::Kılıçlı Kavlaklı,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,country,uncertain,HighlyKnown,OK,22,3.09104,9,True,1101111111,1.33551,1,False,True
+country::Laika,0,0.333333,0,0,0.333333,0,0.333333,0.333333,0.333333,0,0,country,control,Unknown,PU,37668,10.5366,0,False,0000000000,1.56298,0.05,False,True
+country::Mary,0,0,0,0,0,0,0.666667,0,0.333333,0,0,country,uncertain,Unknown,OU,37,3.61092,0,False,0000000000,2.18858,0.15,False,True
+country::Mohammadabad-e Razzaqzadeh,1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,19,2.94444,10,True,1111111111,1.39933,1,False,True
+country::Muratdere,1,0.666667,1,0.666667,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,40,3.68888,10,True,1111111111,0.938858,1,False,True
+country::Nowa Wieś Reszelska,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,32,3.46574,10,True,1111111111,0.327218,0.75,False,True
+country::Puzdrowizna,1,0.666667,1,0.666667,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,26,3.2581,10,True,1111111111,0.974076,1,False,True
+country::Riechheimer Berg,1,0.666667,1,0.666667,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,39,3.66356,10,True,1111111111,1.05342,1,False,True
+country::Rizuiyeh,1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,25,3.21888,10,True,1111111111,0.924278,1,False,True
+country::Rubim do Norte River,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,40,3.68888,10,True,1111111111,0.955138,1,False,True
+country::Sar Giz,1,0.666667,1,0.666667,1,1,1,1,1,0,0,country,uncertain,Unknown,OU,36,3.58352,0,False,0000000000,3.19082,1,False,True
+"country::Sarnowo, Chełmno County",0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,38,3.63759,10,True,1111111111,0.326838,0,False,True
+country::Stare Brzóski,1,0.666667,0.666667,0.666667,1,0.666667,1,1,1,0,0,country,uncertain,HighlyKnown,OK,30,3.4012,10,True,1111111111,0.715417,1,False,True
+country::Szczecin Scientific Society,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.666667,0.666667,country,uncertain,HighlyKnown,OK,36,3.58352,10,True,1111111111,0.420773,0.2,False,True
+country::Tangal-e Behdan,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,40,3.68888,10,True,1111111111,1.50852,1,False,True
+country::Tartaczek,1,0.333333,1,0.333333,1,1,0.666667,1,1,0,0,country,uncertain,HighlyKnown,OK,14,2.63906,10,True,1111111111,1.26596,1,False,True
+country::Tervola Radio and TV-Mast,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.333333,0.333333,country,uncertain,HighlyKnown,OK,28,3.3322,10,True,1111111111,0.335197,0.9,False,True
+country::Tholuvankadu,1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,23,3.13549,9,True,1111101111,1.4598,1,False,True
+country::USS Constitution,0,0,0,0,0,0,0,0,0,1,1,country,control,HighlyKnown,PK,94586,11.4573,10,True,1111111111,0.482855,0,False,True
+"country::Union State Bank, Wisconsin",1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,40,3.68888,9,True,1101111111,2.36318,1,False,True
+country::Uñón District,1,1,1,1,1,1,1,1,1,0,0,country,uncertain,HighlyKnown,OK,31,3.43399,10,True,1111111111,1.34553,1,False,True
+country::Valdearcos de la Vega,0.666667,0,0.333333,0,0.666667,0.333333,0.333333,0.666667,1,0.333333,0.333333,country,uncertain,HighlyKnown,OK,39,3.66356,10,True,1111111111,0.475451,0.9,False,True
+country::Valea Seacă River,0.666667,0.333333,0.333333,0.333333,0.666667,0.333333,0.333333,0.666667,1,0.666667,0.666667,country,uncertain,HighlyKnown,OK,2,0.693147,9,True,1111110111,1.40375,1,False,True
+country::Valparaiso University,0,1,0,0,1,0,0,0,0,1,1,country,control,HighlyKnown,PK,8242,9.017,9,True,1111011111,1.9761,0,False,True
+country::Wiesau,0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,37,3.61092,10,True,1111111111,0.419164,0,False,True
+"country::Wir, Masovian Voivodeship",0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,25,3.21888,10,True,1111111111,0.304915,0,False,True
+country::canton of Baugy,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,country,uncertain,HighlyKnown,OK,24,3.17805,10,True,1111111111,1.18774,1,False,True
+"country::Łazy, Sierpc County",0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,30,3.4012,10,True,1111111111,0.236212,0,False,True
+"country::Łodygowo, Pisz County",0,0,0,0,0,0,0,0,0,1,1,country,uncertain,HighlyKnown,OK,23,3.13549,10,True,1111111111,0.221708,0,False,True
+director::2012,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,65303,11.0868,10,True,1111111111,0.52521,0,False,True
+director::Alice Walker: Beauty in Truth,0,0,0,0,0,0,0,0,0,1,1,director,uncertain,HighlyKnown,OK,127,4.84419,10,True,1111111111,0.0845464,0,False,True
+director::Beloved,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,18636,9.83285,10,True,1111111111,0.452365,0,False,True
+director::Bingo,0.333333,0,0.333333,0,0.333333,0.333333,0,0.333333,0.333333,0,0,director,uncertain,Unknown,OU,94,4.54329,0,False,0000000000,3.44026,0.75,False,True
+director::Boots,0.666667,0.666667,0.666667,0.333333,1,0.666667,1,0.666667,1,0,0,director,uncertain,Unknown,OU,124,4.82028,0,False,0000000000,4.26119,1,False,True
+director::Carrie,0,0,0,0,0,0,0,0,0,0.333333,0.333333,director,control,Unknown,PU,80170,11.2919,0,False,0000000000,1.86525,0,False,True
+director::Cars,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,107210,11.5825,10,True,1111111111,0.486174,0,False,True
+director::Cocktail,0,0,0,0,0,0,0,0,0,0,0,director,control,Unknown,PU,18088,9.803,0,False,0000000000,3.59075,0,False,True
+director::Cure,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0,0,0,director,control,Unknown,PU,21692,9.9847,0,False,0000000000,4.40702,0.2,False,True
+director::Day by Day,1,1,1,1,1,1,1,1,1,0,0,director,uncertain,Unknown,OU,73,4.29046,0,False,0000000000,4.0941,0.95,False,True
+director::Distant Trumpet,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,director,uncertain,Unknown,OU,128,4.85203,0,False,0000000000,3.25267,1,False,True
+director::E.T. the Extra-Terrestrial,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,97322,11.4858,10,True,1111111111,1.23663,0,False,True
+director::Elf,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,50490,10.8295,10,True,1111111111,0.20488,0,False,True
+director::Friends,0,0,0,0,0,0,0,0,0,0,0,director,uncertain,Unknown,OU,134,4.89784,0,False,0000000000,1.37555,0,False,True
+director::Hakeem's New Flame,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,director,uncertain,Unknown,OU,5,1.60944,0,False,0000000000,3.49967,1,False,True
+director::Hilde Warren und der Tod,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,director,uncertain,Unknown,OU,112,4.7185,0,False,0000000000,4.03655,0.95,False,True
+director::Iron Man,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,104680,11.5587,10,True,1111111111,0.0526896,0,False,True
+director::Lost,0,0,0,0,0,0,0,0,0,1,1,director,control,Unknown,PU,154447,11.9476,0,False,0000000000,1.62654,0,False,True
+director::Love Don't Cost a Thing,0,0,0,0,0,0,0,0,0,0,0,director,control,Unknown,PU,16846,9.73187,0,False,0000000000,2.35831,0,False,True
+director::Me First,0.666667,0.666667,1,0.666667,0.666667,0.666667,1,0.666667,1,0,0,director,uncertain,Unknown,OU,78,4.35671,0,False,0000000000,4.24055,1,False,True
+director::Next,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,23191,10.0515,10,True,1111111111,0.822913,0,False,True
+director::One of Those,1,0,1,0,1,1,0.666667,1,1,0,0,director,uncertain,Unknown,OU,81,4.39445,0,False,0000000000,4.36959,0.95,False,True
+director::Pilot,0,0,0,0,0,0,0.333333,0,0.666667,0,0,director,uncertain,Unknown,OU,16,2.77259,0,False,0000000000,3.34656,0.4,False,True
+director::Powder,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,27940,10.2378,10,True,1111111111,1.44853,0,False,True
+director::Pride,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,17358,9.76181,10,True,1111111111,0.41902,0.05,False,True
+director::Sacrifice,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,director,uncertain,Unknown,OU,82,4.40672,0,False,0000000000,3.23649,1,False,True
+"director::Thank You, Madame",1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,director,uncertain,Unknown,OU,85,4.44265,0,False,0000000000,5.27416,1,False,True
+director::The Call of the North,1,0.666667,1,0.666667,1,1,1,1,1,0,0,director,uncertain,Unknown,OU,128,4.85203,0,False,0000000000,3.68273,0.95,False,True
+director::The Cell,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,25808,10.1584,10,True,1111111111,0.509842,0,False,True
+director::The Changeling,0,0.333333,0,0,0.333333,0,0.666667,0,0,1,1,director,control,HighlyKnown,PK,28865,10.2704,10,True,1111111111,2.05651,0.05,False,True
+director::The Day After,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,30548,10.3271,10,True,1111111111,0.398842,0,False,True
+director::The Fog,0,0,0,0,0,0,0,0,0,1,1,director,control,Unknown,PU,28646,10.2628,0,False,0000000000,1.7844,0,False,True
+director::The Invitation,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,27122,10.2081,10,True,1111111111,0.207595,0,False,True
+director::The Judge,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,26363,10.1797,10,True,1111111111,0.578628,0,False,True
+director::The Matrix,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,291114,12.5815,10,True,1111111111,1.1184,0,False,True
+director::The Other Person,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,director,uncertain,Unknown,OU,100,4.60517,0,False,0000000000,0.914478,1,False,True
+director::Thirteen,0,0,0,0,0,0,0,0,0,1,1,director,control,HighlyKnown,PK,33121,10.4079,10,True,1111111111,0.664448,0,False,True
+director::Tum Bin,0,0,0,0,0,0,0,0,0,0.666667,0.666667,director,control,HighlyKnown,PK,19205,9.86293,10,True,1111111111,0.498913,0,False,True
+director::Turn to the Right,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,director,uncertain,Unknown,OU,126,4.83628,0,False,0000000000,4.34628,1,False,True
+director::Vacation,0,0,0,0,0,0,0,0,0,0,0,director,control,Unknown,PU,33140,10.4085,0,False,0000000000,3.67805,0,False,True
+director::Vanity,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,director,uncertain,Unknown,OU,54,3.98898,0,False,0000000000,3.60767,1,False,True
+father::Al Gore,0,0,0,0,0,0,0,0,0,1,1,father,control,HighlyKnown,PK,121399,11.7068,9,True,1111011111,1.16651,0,True,True
+father::Dwayne Johnson,0,0,0,0,0,0,0,0,0,1,1,father,control,HighlyKnown,PK,636668,13.364,10,True,1111111111,0.0759426,0,False,True
+father::Georg Adolf Erman,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,father,uncertain,Unknown,OU,94,4.54329,0,False,0000000000,3.01191,1,False,True
+father::Giacomo Guardi,1,1,1,1,1,1,1,1,1,1,0,father,uncertain,HighlyKnown,OK,99,4.59512,9,True,1111110111,3.67394,1,True,True
+father::Krishna,0,0,0,0,0,0,0,0,0,1,1,father,control,HighlyKnown,PK,164554,12.011,10,True,1111111111,0.387202,0,False,True
+father::Lily Allen,0,0,0,0,0,0,0,0,0,0.666667,0.666667,father,control,HighlyKnown,PK,98451,11.4973,10,True,1111111111,0.817141,0,False,True
+father::Mark Twain,0,0,0,0,0,0,0,0,0,1,1,father,control,HighlyKnown,PK,146014,11.8915,10,True,1111111111,0.188634,0,False,True
+father::Melora Hardin,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,father,control,Unknown,PU,215189,12.2793,0,False,0000000000,4.22602,1,False,True
+father::Mira Burt-Wintonick,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,father,uncertain,Unknown,OU,118,4.77068,0,False,0000000000,4.29065,1,False,True
+father::Princess Yamanobe,1,0,1,0,1,1,0,1,1,0,0,father,uncertain,Unknown,OU,143,4.96284,0,False,0000000000,3.07167,0.95,False,True
+father::Rama,0,0,0,0,0,0,0,0,0,0.666667,0.666667,father,control,HighlyKnown,PK,93777,11.4487,10,True,1111111111,0.869735,0,False,True
+father::Rand Paul,0,0,0,0,0,0,0,0,0,1,1,father,control,HighlyKnown,PK,98029,11.493,10,True,1111111111,0.530026,0,False,True
+father::Wayne Gretzky,0,0,0,0,0,0,0,0,0,1,1,father,control,HighlyKnown,PK,210751,12.2584,10,True,1111111111,0.155646,0,False,True
+genre::Alien,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,273178,12.5179,0,False,0000000000,2.29441,0,False,True
+genre::All Good Things,0.333333,0.333333,0,0,0.666667,0,0.333333,0.666667,0.666667,0,0,genre,control,Unknown,PU,52993,10.8779,0,False,0000000000,3.36185,0.55,False,True
+genre::Anyone Else,0.666667,0,0.333333,0,0.666667,0.333333,0.666667,0.666667,1,0,0,genre,uncertain,Unknown,OU,102,4.62497,0,False,0000000000,3.19364,0.9,False,True
+genre::Back to the Future,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,150710,11.9231,0,False,0000000000,2.29612,0,False,True
+genre::Can,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,21119,9.95793,0,False,0000000000,2.57306,0,False,True
+genre::Chris Jericho,0,0,0,0,0,0,0,0,0,0.333333,0.333333,genre,control,Unknown,PU,75216,11.2281,0,False,0000000000,3.70431,0,False,True
+genre::Dangerous,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,34427,10.4466,0,False,0000000000,2.70208,0.2,False,True
+genre::Drill,0,0,0,0,0,0,0,0,0,0,0,genre,uncertain,Unknown,OU,47,3.85015,0,False,0000000000,2.49612,0,False,True
+genre::GG Allin,0,0.333333,0,0,0.333333,0,0,0,0,1,1,genre,control,Unknown,PU,61786,11.0314,0,False,0000000000,2.92857,0,False,True
+genre::Glory,0,0.333333,0,0,0.333333,0,0.333333,0,1,0.333333,0.333333,genre,control,Unknown,PU,33329,10.4142,0,False,0000000000,2.00968,0.55,False,True
+genre::I Will Be There,0,0,0,0,0,0,1,0,0,0,0,genre,uncertain,Unknown,OU,88,4.47734,0,False,0000000000,2.91283,0.8,False,True
+genre::MASH,0,0,0,0,0,0,0,0,0,0,0,genre,control,Unknown,PU,24711,10.115,0,False,0000000000,3.21311,0,False,True
+genre::MUD,0,0,0,0,0,0,0,0,0,0.333333,0.333333,genre,control,Unknown,PU,22045,10.0008,0,False,0000000000,3.59278,0,False,True
+genre::Martin Garrix,0,0,0,0,0,0,0,0,0,0.666667,0.666667,genre,control,HighlyKnown,PK,26282,10.1766,9,True,1111011111,2.72184,0,False,True
+genre::Me and My Friend,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.333333,0.666667,1,0,0,genre,uncertain,Unknown,OU,66,4.18965,0,False,0000000000,3.18332,1,False,True
+genre::Mother,0.333333,0,0,0,0.333333,0,0,0,0,0,0,genre,uncertain,Unknown,OU,79,4.36945,0,False,0000000000,3.53677,0.05,False,True
+genre::Nightdreamers,1,0,0.333333,0,1,0.333333,0.333333,0.666667,1,0,0,genre,uncertain,Unknown,OU,63,4.14313,0,False,0000000000,3.26794,1,False,True
+genre::Oasis,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,110761,11.6151,0,False,0000000000,2.15048,0,False,True
+genre::Options,1,0.666667,1,0.666667,1,1,0.666667,0.666667,1,0,0,genre,uncertain,Unknown,OU,119,4.77912,0,False,0000000000,2.72186,0.95,False,True
+genre::Peter Paul Rubens,0,0.333333,0,0,0.333333,0,0,0,0,0,0,genre,control,Unknown,PU,31008,10.342,0,False,0000000000,2.42329,0,False,True
+genre::Pieter Jacobsz Duyfhuysen,1,1,1,1,1,1,1,1,1,0,0,genre,uncertain,Unknown,OU,54,3.98898,0,False,0000000000,3.684,1,False,True
+genre::Revenge,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,43251,10.6748,0,False,0000000000,3.44493,0,False,True
+genre::Scorpio,0,0.333333,0,0,0.333333,0,0.333333,0.333333,0,0.666667,0.666667,genre,uncertain,Unknown,OU,95,4.55388,0,False,0000000000,3.52821,0.15,False,True
+genre::Species,0,0.333333,0,0,0.333333,0,0,0,0,0,0,genre,control,Unknown,PU,48238,10.7839,0,False,0000000000,1.68736,0,False,True
+genre::Super Mario World,0,0,0,0,0,0,0,0,0,1,1,genre,control,HighlyKnown,PK,21969,9.99739,10,True,1111111111,1.43475,0,False,True
+genre::The Angel,0,0,0,0,0,0,0.666667,0,0,0,0,genre,uncertain,Unknown,OU,75,4.31749,0,False,0000000000,1.99371,0.2,False,True
+genre::The Good Life,0,0,0,0,0,0,0.333333,0,0.666667,0,0,genre,control,Unknown,PU,25376,10.1416,0,False,0000000000,3.231,0.25,False,True
+genre::The Guess Who,0,0.333333,0,0,0.333333,0,0,0,0,1,1,genre,control,Unknown,PU,42206,10.6503,0,False,0000000000,2.78777,0,False,True
+genre::The Interview,0,0.333333,0,0,0.333333,0,0,0,0,1,1,genre,control,Unknown,PU,42217,10.6506,0,False,0000000000,3.04142,0,False,True
+genre::The Invasion,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,51885,10.8568,0,False,0000000000,2.95112,0.2,False,True
+genre::The Little Prince,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,72579,11.1924,0,False,0000000000,2.63987,0,False,True
+genre::The New World,0,0,0,0,0,0,0,0,0,0,0,genre,uncertain,Unknown,OU,89,4.48864,0,False,0000000000,3.04562,0,False,True
+genre::The Police,0,0,0,0,0,0,0,0,0,1,1,genre,control,Unknown,PU,112137,11.6275,0,False,0000000000,2.01365,0,False,True
+genre::The Rev,0.666667,1,0.666667,0.666667,1,0.666667,1,0.333333,1,0,0,genre,control,Unknown,PU,21301,9.96651,0,False,0000000000,2.56696,0.8,False,True
+genre::The Song of the Suburbs,0.666667,0.333333,0.666667,0.333333,0.666667,0.666667,0.666667,1,1,0,0,genre,uncertain,Unknown,OU,75,4.31749,0,False,0000000000,3.56069,1,False,True
+genre::Too Short,0,0,0,0,0,0,0,0,0,0,0,genre,control,Unknown,PU,25608,10.1507,0,False,0000000000,1.84424,0,False,True
+genre::Up in the Air,0,0,0,0,0,0,0,0,0,0,0,genre,control,Unknown,PU,34680,10.4539,0,False,0000000000,2.65332,0,False,True
+genre::Voyage,0.333333,0,0.666667,0,0.333333,0.333333,0.666667,0.333333,0.666667,0,0,genre,uncertain,Unknown,OU,94,4.54329,0,False,0000000000,1.90428,0.8,False,True
+genre::William Michael Rooke,1,0,1,0,1,1,0.333333,1,1,0,0,genre,uncertain,Unknown,OU,114,4.7362,0,False,0000000000,4.0739,1,False,True
+mother::Rekha,1,1,1,1,1,1,1,1,1,0,0,mother,control,Unknown,PU,244093,12.4053,0,False,0000000000,4.37444,0.9,False,True
+occupation::Alex Reid,0.666667,0,0.333333,0,0.666667,0.333333,0.666667,0.666667,0.666667,0,0,occupation,control,Unknown,PU,8236,9.01627,0,False,0000000000,3.12445,0.4,False,True
+occupation::Ayumi Hamasaki,0,0,0,0,0,0,0,0,0,1,1,occupation,control,Unknown,PU,19177,9.86147,0,False,0000000000,2.25964,0,False,True
+occupation::Bala,1,0.666667,0.666667,0.666667,1,0.666667,0.666667,0.666667,1,0,0,occupation,control,Unknown,PU,21931,9.99566,0,False,0000000000,2.59088,1,False,True
+occupation::Benazir Bhutto,0,0,0,0,0,0,0,0,0,1,1,occupation,control,HighlyKnown,PK,73051,11.1989,10,True,1111111111,2.36018,0,False,True
+occupation::Beth Hart,0,0,0,0,0,0,0,0,0,1,1,occupation,control,HighlyKnown,PK,25256,10.1368,9,True,1111111011,2.1036,0,False,True
+occupation::Burna Boy,0,0,0,0,0,0,0,0,0,1,1,occupation,control,Unknown,PU,62589,11.0443,0,False,0000000000,1.86211,0,False,True
+occupation::Carl Linnaeus,0,0,0,0,0,0,0,0,0,1,1,occupation,control,Unknown,PU,87289,11.377,0,False,0000000000,1.83066,0,False,True
+occupation::Domingo Eyzaguirre,1,1,1,1,1,1,1,1,1,0,0,occupation,uncertain,Unknown,OU,47,3.85015,0,False,0000000000,2.22115,1,False,True
+occupation::Donald Trump,0,0,0,0,0,0,0,0,0,1,1,occupation,control,Unknown,PU,15101521,16.5303,0,False,0000000000,1.99434,0,False,True
+occupation::John Finlay,0.666667,1,0.666667,0.666667,1,0.666667,1,1,1,0,0,occupation,uncertain,Unknown,OU,48,3.8712,0,False,0000000000,2.39308,1,False,True
+occupation::Jörg A. Eggers,1,1,1,1,1,1,1,1,1,0,0,occupation,uncertain,Unknown,OU,56,4.02535,0,False,0000000000,2.66158,1,False,True
+occupation::Kamya Panjabi,0,0,0,0,0,0,0,0,0,1,1,occupation,control,HighlyKnown,PK,17881,9.79149,10,True,1111111111,2.55905,0.2,False,True
+occupation::Seungri,0,0,0,0,0,0,0,0,0,0.333333,0.333333,occupation,control,Unknown,PU,30935,10.3396,0,False,0000000000,2.21204,0,False,True
+occupation::Thomas Gifford,1,0.666667,1,0.666667,1,1,1,1,1,0,0,occupation,uncertain,Unknown,OU,55,4.00733,0,False,0000000000,2.96542,1,False,True
+"occupation::Tyler, the Creator",0,0,0,0,0,0,0,0,0,1,1,occupation,control,Unknown,PU,194634,12.1789,0,False,0000000000,2.18985,0,False,True
+place of birth::Aarno Maliniemi,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,place of birth,uncertain,Unknown,OU,40,3.68888,0,False,0000000000,3.44439,1,False,True
+place of birth::Anders Orvin,1,1,1,1,1,1,1,1,1,0,0,place of birth,uncertain,Unknown,OU,50,3.91202,0,False,0000000000,3.12061,1,False,True
+place of birth::C. N. Annadurai,0,0,0,0,0,0,0,0,0,1,1,place of birth,control,Unknown,PU,56779,10.9469,0,False,0000000000,1.75362,0,False,True
+place of birth::Chris Brown,0,0,0,0,0,0,0,0,0,1,1,place of birth,control,HighlyKnown,PK,151737,11.9299,10,True,1111111111,0.697808,0,False,True
+place of birth::Eduardo Hurtado,1,1,1,1,1,1,1,1,1,0,0,place of birth,control,Unknown,PU,2339,7.75748,0,False,0000000000,2.38534,1,False,True
+place of birth::Gary Freear,1,0.333333,1,0.333333,1,1,0.666667,1,1,0,0,place of birth,uncertain,Unknown,OU,38,3.63759,0,False,0000000000,4.41604,1,False,True
+place of birth::Halloween,0,0,0,0,0,0,0,0.666667,0,0,0,place of birth,control,Unknown,PU,2360,7.76642,0,False,0000000000,3.0672,0,False,True
+place of birth::Jeanne de Casalis,1,1,1,1,1,1,1,1,1,0,0,place of birth,control,Unknown,PU,2730,7.91206,0,False,0000000000,3.98849,1,False,True
+place of birth::Juan Luis Guerra,0,0,0,0,0,0,0,0,0,1,1,place of birth,control,HighlyKnown,PK,13336,9.49822,10,True,1111111111,0.317703,0,False,True
+place of birth::Julee Cruise,1,0.666667,0.666667,0.666667,1,0.666667,0.666667,0.666667,1,0,0,place of birth,control,Unknown,PU,8179,9.00933,0,False,0000000000,3.28374,0.4,False,True
+place of birth::Julius Erving,0,0,0,0,0,0,0,0,0,1,1,place of birth,control,Unknown,PU,44653,10.7067,0,False,0000000000,0.368583,0,False,True
+place of birth::Karl Bartholomaeus Heller,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,place of birth,uncertain,Unknown,OU,49,3.89182,0,False,0000000000,4.02937,1,False,True
+place of birth::Masaru Inada,1,1,1,1,1,1,1,1,1,0,0,place of birth,uncertain,Unknown,OU,40,3.68888,0,False,0000000000,3.09908,1,False,True
+place of birth::Matt Moralee,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,place of birth,uncertain,Unknown,OU,55,4.00733,0,False,0000000000,4.13846,1,False,True
+place of birth::Paris,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,place of birth,control,Unknown,PU,3024,8.01434,0,False,0000000000,0.884924,0.45,False,True
+place of birth::Parnelli Jones,0,0.333333,0,0,0.333333,0,0,0,0,0.333333,0.333333,place of birth,control,Unknown,PU,2519,7.83162,0,False,0000000000,3.76476,0.2,False,True
+place of birth::Petar Stambolić,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,place of birth,control,Unknown,PU,2254,7.72046,0,False,0000000000,3.95795,0.95,False,True
+place of birth::Rahi Masoom Raza,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,place of birth,control,Unknown,PU,2930,7.98276,0,False,0000000000,3.40933,1,False,True
+place of birth::Wellington Santos da Silva,1,1,1,1,1,1,1,1,1,0,0,place of birth,uncertain,Unknown,OU,51,3.93183,0,False,0000000000,3.07009,1,False,True
+place of birth::William Osler,0,0,0,0,0,0,0,0,0,1,1,place of birth,control,Unknown,PU,9249,9.13227,0,False,0000000000,0.379782,0,False,True
+producer::(One Glance Is) Holy,1,0.666667,1,0.666667,1,1,1,1,1,0,0,producer,uncertain,Unknown,OU,156,5.04986,0,False,0000000000,3.24901,1,False,True
+producer::After Hours,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0,0,producer,control,Unknown,PU,31415,10.355,0,False,0000000000,4.6841,0.55,False,True
+producer::Blade,0,0,0,0,0,0,0,0,0,0.333333,0.333333,producer,control,Unknown,PU,73446,11.2043,0,False,0000000000,3.91674,0,False,True
+producer::Boy,0.666667,0.333333,0.666667,0,1,0.666667,0.333333,0.666667,1,0,0,producer,control,Unknown,PU,31991,10.3732,0,False,0000000000,4.69518,1,False,True
+producer::Career Opportunities,1,1,1,1,1,1,1,1,1,0,0,producer,control,Unknown,PU,40986,10.621,0,False,0000000000,3.61965,0.95,False,True
+producer::Cinema,0,0,0,0,0,0,1,0,0.666667,0,0,producer,uncertain,Unknown,OU,139,4.93447,0,False,0000000000,2.87211,0.15,False,True
+producer::City of God,0,0,0,0,0,0,0,0,0,0,0,producer,control,Unknown,PU,34043,10.4354,0,False,0000000000,2.76629,0,False,True
+producer::Early Man,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0.333333,0,0,producer,uncertain,Unknown,OU,9,2.19722,0,False,0000000000,2.56895,0.4,False,True
+producer::Game of Thrones,0,0,0,0,0,0,0,0,0,1,1,producer,control,Unknown,PU,428774,12.9687,0,False,0000000000,1.53001,0,False,True
+producer::Gladiator,0,0,0,0,0,0,0,0,0,0,0,producer,control,Unknown,PU,326466,12.6961,0,False,0000000000,1.58914,0,False,True
+producer::Glory,0,0,0,0,0,0,0,0,0,1,1,producer,control,Unknown,PU,33329,10.4142,0,False,0000000000,3.18393,0.1,False,True
+producer::Her,0,0,0,0,0,0,0,0,0,0.333333,0.333333,producer,control,Unknown,PU,70875,11.1687,0,False,0000000000,4.53381,0,False,True
+producer::Holes,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0,0,producer,control,Unknown,PU,41620,10.6363,0,False,0000000000,3.54384,0.35,False,True
+producer::House on Haunted Hill,0,0,0,0,0,0,0,0,0,0,0,producer,control,Unknown,PU,38482,10.5579,0,False,0000000000,2.0601,0.05,False,True
+producer::In the Family,1,1,1,1,1,1,1,1,1,0,0,producer,uncertain,Unknown,OU,67,4.20469,0,False,0000000000,3.68405,1,False,True
+producer::Just Around the Corner,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,0.666667,1,0,0,producer,uncertain,Unknown,OU,128,4.85203,0,False,0000000000,3.36693,1,False,True
+producer::Let America Laugh,1,1,1,1,1,1,1,1,1,0,0,producer,uncertain,Unknown,OU,205,5.32301,0,False,0000000000,4.00149,1,False,True
+producer::Menu,1,0.666667,0.666667,0.666667,1,0.666667,0.666667,0.666667,1,0,0,producer,uncertain,Unknown,OU,154,5.03695,0,False,0000000000,3.09035,1,False,True
+producer::Mission: Impossible – Rogue Nation,0,0,0,0,0,0,0,0,0,0.666667,0.666667,producer,control,Unknown,PU,51933,10.8577,0,False,0000000000,1.69854,0,False,True
+producer::PK,0,0,0,0,0,0,0,0,0,0,0,producer,control,Unknown,PU,40668,10.6132,0,False,0000000000,0.686931,0,False,True
+producer::Paid in Full,0,0,0,0,0,0,0,0,0,0,0,producer,control,Unknown,PU,36938,10.517,0,False,0000000000,4.25804,0,False,True
+producer::Precious,0,0,0,0,0,0,0,0,0,1,1,producer,control,HighlyKnown,PK,34767,10.4564,10,True,1111111111,1.99835,0,False,True
+producer::Rocky,0,0,0,0,0,0,0,0,0,1,1,producer,control,HighlyKnown,PK,83985,11.3384,9,True,1111101111,2.24294,0,False,True
+producer::The Accused,0.333333,0,0,0,0.333333,0,0,0,0,0,0,producer,uncertain,Unknown,OU,56,4.02535,0,False,0000000000,3.46753,0,False,True
+producer::The Brat,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,producer,uncertain,Unknown,OU,136,4.91265,0,False,0000000000,3.98834,1,False,True
+producer::The Deal,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,producer,uncertain,Unknown,OU,59,4.07754,0,False,0000000000,3.93691,1,False,True
+producer::The Fighter,0,0,0,0,0,0,0,0,0,1,1,producer,control,Unknown,PU,33107,10.4075,0,False,0000000000,2.3329,0,False,True
+producer::The Graduate,0,0,0,0,0,0,0,0,0,1,1,producer,control,HighlyKnown,PK,79381,11.282,9,True,1111111101,1.93233,0,False,True
+producer::The Holiday,0,0,0,0,0,0,0,0,0,1,1,producer,control,HighlyKnown,PK,101218,11.525,10,True,1111111111,0.416559,0,False,True
+producer::The Internship,0,0,0,0,0,0,0,0,0,0,0,producer,control,Unknown,PU,61374,11.0247,0,False,0000000000,0.458816,0,False,True
+producer::The List,1,1,1,1,1,1,1,1,1,0,0,producer,uncertain,Unknown,OU,169,5.1299,0,False,0000000000,3.78391,0.95,False,True
+producer::The Lucky Stiff,1,0,1,0,1,1,0,1,1,0,0,producer,uncertain,Unknown,OU,155,5.04343,0,False,0000000000,4.17679,1,False,True
+producer::The Pioneers,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,producer,uncertain,Unknown,OU,83,4.41884,0,False,0000000000,4.35737,1,False,True
+producer::The Prestige,0,0,0,0,0,0,0,0,0,0.333333,0.333333,producer,control,Unknown,PU,99894,11.5119,0,False,0000000000,0.57525,0,False,True
+producer::Vertigo,0,0.333333,0,0,0.333333,0,0,0,0,1,1,producer,control,HighlyKnown,PK,59537,10.9944,10,True,1111111111,1.09746,0,False,True
+religion::Arturo Tabera Araoz,1,1,1,1,1,1,1,1,1,0,0,religion,uncertain,Unknown,OU,73,4.29046,0,False,0000000000,2.04231,1,False,True
+religion::Aung San Suu Kyi,0,0,0,0,0,0,0,0,0,0.666667,0.666667,religion,control,HighlyKnown,PK,127882,11.7589,10,True,1111111111,1.39478,0,False,True
+religion::Bellino Giusto Ghirard,1,1,1,1,1,1,1,1,1,0,0,religion,uncertain,Unknown,OU,37,3.61092,0,False,0000000000,2.91525,1,False,True
+religion::Cosmo Francesco Ruppi,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,religion,uncertain,Unknown,OU,45,3.80666,0,False,0000000000,2.53742,1,False,True
+religion::Marilyn Monroe,0,0,0,0,0,0,0,0,0,0.333333,0.333333,religion,control,Unknown,PU,487061,13.0961,0,False,0000000000,2.05269,0,False,True
+religion::Pedro Lisímaco de Jesús Vílchez Vílchez,1,0.333333,1,0.333333,1,1,0.666667,1,1,0,0,religion,uncertain,Unknown,OU,28,3.3322,0,False,0000000000,2.3589,0.9,False,True
+screenwriter::After Hours,0.333333,0,0,0,0.333333,0,0,0,0,0.666667,0.666667,screenwriter,control,HighlyKnown,PK,31415,10.355,9,True,1101111111,1.04715,0,False,True
+screenwriter::Album,1,0.666667,1,0.666667,1,1,1,1,1,0,0,screenwriter,uncertain,Unknown,OU,109,4.69135,0,False,0000000000,4.4064,1,False,True
+screenwriter::Ars,0.666667,0.666667,0.666667,0.333333,1,0.666667,0.666667,0.666667,1,0,0,screenwriter,uncertain,Unknown,OU,145,4.97673,0,False,0000000000,4.29925,1,False,True
+screenwriter::Back to the Future,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,150710,11.9231,10,True,1111111111,1.39437,0,False,True
+screenwriter::Because,1,1,1,1,1,1,1,1,1,0,0,screenwriter,uncertain,Unknown,OU,104,4.64439,0,False,0000000000,3.49308,1,False,True
+screenwriter::Bingo,1,0.333333,1,0.333333,1,1,0.333333,1,1,0,0,screenwriter,uncertain,Unknown,OU,94,4.54329,0,False,0000000000,3.36303,0.9,False,True
+screenwriter::Coach Carter,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,48142,10.7819,10,True,1111111111,1.14481,0,False,True
+screenwriter::Democracy,1,1,0.666667,1,1,1,1,0.666667,1,0,0,screenwriter,uncertain,Unknown,OU,82,4.40672,0,False,0000000000,4.24007,0.95,False,True
+screenwriter::Easy A,0,0,0,0,0,0,0,0,0,0.666667,0.666667,screenwriter,control,Unknown,PU,42958,10.668,0,False,0000000000,2.39513,0,False,True
+screenwriter::Ecco fatto,0.666667,0,0.666667,0,0.666667,0.666667,0.333333,1,1,0,0,screenwriter,uncertain,Unknown,OU,192,5.2575,0,False,0000000000,3.48148,1,False,True
+screenwriter::Episodes,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,30268,10.3178,10,True,1111111111,1.29825,0.25,False,True
+screenwriter::Excited,1,0.666667,1,0.666667,1,1,1,1,1,0,0,screenwriter,uncertain,Unknown,OU,180,5.19296,0,False,0000000000,3.37749,1,False,True
+screenwriter::Ghost,0,0,0,0,0,0,0,0,0,0,0,screenwriter,uncertain,Unknown,OU,85,4.44265,0,False,0000000000,1.12073,0,False,True
+screenwriter::Guilty,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,screenwriter,uncertain,Unknown,OU,69,4.23411,0,False,0000000000,4.90396,0.95,False,True
+screenwriter::Her,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,70875,11.1687,10,True,1111111111,0.166935,0,False,True
+screenwriter::Hot Fuzz,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,50742,10.8345,10,True,1111111111,1.31453,0,False,True
+screenwriter::Jackson: My Life... Your Fault,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,screenwriter,uncertain,Unknown,OU,93,4.5326,0,False,0000000000,3.233,1,False,True
+screenwriter::Jurassic Park,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,184720,12.1266,10,True,1111111111,1.54947,0,False,True
+screenwriter::Labyrinth,0.333333,0,0,0,0.333333,0,0.333333,0,0,1,1,screenwriter,control,HighlyKnown,PK,71935,11.1835,10,True,1111111111,0.384673,0,False,True
+screenwriter::Le Journal d'une femme en blanc,1,1,1,1,1,1,1,1,1,0,0,screenwriter,uncertain,Unknown,OU,145,4.97673,0,False,0000000000,4.62495,1,False,True
+screenwriter::Office Space,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,62042,11.0356,9,True,1110111111,2.23553,0,False,True
+screenwriter::PK,0,0,0,0,0,0,0,0,0,0,0,screenwriter,control,Unknown,PU,40668,10.6132,0,False,0000000000,3.21133,0,False,True
+screenwriter::Powder,0,0,0,0,0,0,0,0,0,0,0,screenwriter,control,Unknown,PU,27940,10.2378,0,False,0000000000,2.69141,0.1,False,True
+screenwriter::Rent,0,0,0,0,0,0,0,0,0,0,0,screenwriter,control,Unknown,PU,31959,10.3722,0,False,0000000000,1.78007,0,False,True
+screenwriter::Rocky,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,83985,11.3384,10,True,1111111111,0.264816,0,False,True
+screenwriter::Second Best Bed,1,0.666667,1,0.666667,1,1,1,1,1,0,0,screenwriter,uncertain,Unknown,OU,194,5.26786,0,False,0000000000,3.88302,1,False,True
+screenwriter::Silence,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,58729,10.9807,10,True,1111111111,0.520605,0,False,True
+screenwriter::Small Town,1,0.333333,1,0.333333,1,1,0.666667,1,1,0,0,screenwriter,uncertain,Unknown,OU,157,5.05625,0,False,0000000000,3.42042,1,False,True
+screenwriter::Snow White and the Seven Dwarfs,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,Unknown,PU,85762,11.3593,0,False,0000000000,3.69193,0,False,True
+screenwriter::The Birds,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,79684,11.2858,10,True,1111111111,1.81028,0,False,True
+screenwriter::The Faculty,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,52202,10.8629,10,True,1111111111,0.270103,0,False,True
+screenwriter::The King and I,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,29613,10.296,10,True,1111111111,1.98597,0,False,True
+screenwriter::The Mist,0,0,0,0,0,0,0,0,0,0,0,screenwriter,control,Unknown,PU,76264,11.242,0,False,0000000000,3.00724,0,False,True
+screenwriter::The Notebook,0,0,0,0,0,0,0,0,0,0,0,screenwriter,control,Unknown,PU,90029,11.4079,0,False,0000000000,0.231073,0,False,True
+screenwriter::The Omen,0,0,0,0,0,0,0,0,0,1,1,screenwriter,control,HighlyKnown,PK,99370,11.5066,10,True,1111111111,1.09442,0,False,True
+screenwriter::The Secret Call,1,0.666667,1,0.666667,1,1,1,1,1,0,0,screenwriter,uncertain,Unknown,OU,112,4.7185,0,False,0000000000,3.0297,1,False,True
+screenwriter::The Tourist,0,0,0,0,0,0,0,0,0,0.333333,0.333333,screenwriter,control,Unknown,PU,44218,10.6969,0,False,0000000000,3.73513,0,False,True
+screenwriter::The Woods,1,0.333333,1,0.333333,1,1,0.666667,1,1,0,0,screenwriter,uncertain,Unknown,OU,124,4.82028,0,False,0000000000,3.49061,0.95,False,True
+screenwriter::Watch Out,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,screenwriter,uncertain,Unknown,OU,136,4.91265,0,False,0000000000,3.68153,0.95,False,True
+sport::1973 Virginia Slims of Fort Lauderdale,0,0,0,0,0,0,0,0,0,1,1,sport,uncertain,HighlyKnown,OK,31,3.43399,10,True,1111111111,0.961864,0.1,False,True
+sport::1989–90 1. Slovenská národná hokejová liga season,0,0,0,0,0,0,0,0,0,1,1,sport,uncertain,HighlyKnown,OK,28,3.3322,10,True,1111111111,0.881593,0,False,True
+sport::1995 Cook Islands Round Cup,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,sport,uncertain,HighlyKnown,OK,27,3.29584,10,True,1111111111,1.75769,0.55,False,True
+sport::2011–12 Elon Phoenix men's basketball team,0,0,0,0,0,0,0,0,0,1,0,sport,uncertain,HighlyKnown,OK,41,3.71357,10,True,1111111111,0.941818,0,True,True
+sport::2012 Georgetown Hoyas men's soccer team,0,0,0,0,0,0,0,0,0,1,0,sport,uncertain,HighlyKnown,OK,46,3.82864,10,True,1111111111,1.02448,0,True,True
+sport::All-Ireland Senior Club Camogie Championship 1970,0,0,0,0,0,0,0,0,0,1,0,sport,uncertain,HighlyKnown,OK,33,3.49651,10,True,1111111111,0.893612,0.35,True,False
+sport::Anderson,0,0.333333,0,0,0.333333,0,0.666667,0,0,0,0,sport,control,Unknown,PU,14892,9.60858,0,False,0000000000,2.41878,0.1,False,True
+sport::Indianapolis 500,0,0,0,0,0,0,0,0,0,1,1,sport,control,Unknown,PU,30423,10.323,0,False,0000000000,2.50934,0,False,True
+sport::Joey Harrington,0,0,0,0,0,0,0,0,0,1,1,sport,control,HighlyKnown,PK,10811,9.28832,10,True,1111111111,1.12684,0,False,True
+sport::Leyton Orient F.C.,0,0,0,0,0,0,0,0,0,1,1,sport,control,HighlyKnown,PK,25844,10.1598,10,True,1111111111,1.22627,0,False,True
+sport::Lukáš Bodeček,1,1,1,1,1,1,1,1,1,0,0,sport,uncertain,Unknown,OU,37,3.61092,0,False,0000000000,3.59711,1,False,True
+sport::Welling United F.C.,0,0,0,0,0,0,0,0,0,1,1,sport,control,HighlyKnown,PK,5135,8.54384,10,True,1111111111,1.15372,0,False,True
+sport::Wojciech Jarmuż,1,0.666667,1,0.666667,1,1,0.666667,1,1,0,0,sport,uncertain,Unknown,OU,24,3.17805,0,False,0000000000,4.68204,1,False,True
+sport::Zanzibar national under-20 football team,0,0,0,0,0,0,0,0,0,1,1,sport,uncertain,HighlyKnown,OK,34,3.52636,10,True,1111111111,0.752787,0,True,True

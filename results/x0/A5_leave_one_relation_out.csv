@@ -1,0 +1,296 @@
+measure,correction,left_out,n_OU,n_PU,gap,lo,hi
+both judges (primary),no correction,author,88,95,0.351794,0.257772,0.443863
+both judges (primary),no correction,capital,99,100,0.344781,0.254747,0.431919
+both judges (primary),no correction,capital of,99,96,0.335859,0.245468,0.42393
+both judges (primary),no correction,color,100,100,0.343333,0.253333,0.43
+both judges (primary),no correction,composer,95,90,0.380312,0.290059,0.467836
+both judges (primary),no correction,country,98,98,0.343537,0.255102,0.431973
+both judges (primary),no correction,director,84,93,0.344342,0.247056,0.439324
+both judges (primary),no correction,father,97,99,0.34635,0.257211,0.434451
+both judges (primary),no correction,genre,86,77,0.36263,0.265529,0.45722
+both judges (primary),no correction,mother,100,99,0.352088,0.26505,0.435928
+both judges (primary),no correction,occupation,96,92,0.324124,0.233239,0.412444
+both judges (primary),no correction,place of birth,93,89,0.354074,0.265797,0.440739
+both judges (primary),no correction,producer,87,83,0.330887,0.236163,0.423579
+both judges (primary),no correction,religion,96,99,0.330598,0.241267,0.416988
+both judges (primary),no correction,screenwriter,84,92,0.31539,0.218081,0.410456
+both judges (primary),no correction,sport,98,98,0.333333,0.244898,0.421769
+both judges (primary),all three,author,70,36,0.170635,0.0275133,0.31455
+both judges (primary),all three,capital,81,39,0.178538,0.0440013,0.309275
+both judges (primary),all three,capital of,81,38,0.17089,0.035196,0.305501
+both judges (primary),all three,composer,76,31,0.213639,0.0578558,0.361782
+both judges (primary),all three,country,79,39,0.181976,0.0461972,0.313751
+both judges (primary),all three,director,68,36,0.160131,0.0163399,0.305556
+both judges (primary),all three,father,78,39,0.179487,0.0427351,0.311966
+both judges (primary),all three,genre,68,34,0.210784,0.0686275,0.352941
+both judges (primary),all three,mother,81,38,0.197206,0.065619,0.324995
+both judges (primary),all three,occupation,80,37,0.174212,0.036937,0.30732
+both judges (primary),all three,place of birth,75,34,0.20915,0.073853,0.33817
+both judges (primary),all three,producer,69,31,0.153031,0.00637366,0.301231
+both judges (primary),all three,religion,81,39,0.178538,0.0440013,0.309275
+both judges (primary),all three,screenwriter,66,36,0.124579,-0.0193813,0.26936
+both judges (primary),all three,sport,81,39,0.178538,0.0440013,0.309275
+Qwen2.5-32B alone,no correction,author,88,95,0.566547,0.454147,0.6687
+Qwen2.5-32B alone,no correction,capital,99,100,0.554411,0.447239,0.651684
+Qwen2.5-32B alone,no correction,capital of,99,96,0.545244,0.436024,0.645202
+Qwen2.5-32B alone,no correction,color,100,100,0.556667,0.45,0.653333
+Qwen2.5-32B alone,no correction,composer,95,90,0.626316,0.522222,0.720663
+Qwen2.5-32B alone,no correction,country,98,98,0.557823,0.44898,0.656463
+Qwen2.5-32B alone,no correction,director,84,93,0.540835,0.426136,0.646697
+Qwen2.5-32B alone,no correction,father,97,99,0.557638,0.449616,0.655976
+Qwen2.5-32B alone,no correction,genre,86,77,0.552854,0.433655,0.662942
+Qwen2.5-32B alone,no correction,mother,100,99,0.564545,0.457709,0.661651
+Qwen2.5-32B alone,no correction,occupation,96,92,0.549819,0.438553,0.650823
+Qwen2.5-32B alone,no correction,place of birth,93,89,0.580081,0.472071,0.676816
+Qwen2.5-32B alone,no correction,producer,87,83,0.541015,0.422055,0.649772
+Qwen2.5-32B alone,no correction,religion,96,99,0.545139,0.436235,0.644465
+Qwen2.5-32B alone,no correction,screenwriter,84,92,0.514838,0.398206,0.622503
+Qwen2.5-32B alone,no correction,sport,98,98,0.547619,0.438776,0.646259
+Qwen2.5-32B alone,all three,author,70,36,0.337037,0.173009,0.502143
+Qwen2.5-32B alone,all three,capital,81,39,0.341247,0.185818,0.49636
+Qwen2.5-32B alone,all three,capital of,81,38,0.329326,0.173056,0.486468
+Qwen2.5-32B alone,all three,composer,76,31,0.439445,0.270497,0.602009
+Qwen2.5-32B alone,all three,country,79,39,0.348696,0.194742,0.502112
+Qwen2.5-32B alone,all three,director,68,36,0.293028,0.126893,0.45915
+Qwen2.5-32B alone,all three,father,78,39,0.333333,0.175214,0.487286
+Qwen2.5-32B alone,all three,genre,68,34,0.357843,0.191177,0.52451
+Qwen2.5-32B alone,all three,mother,81,38,0.355642,0.199913,0.510293
+Qwen2.5-32B alone,all three,occupation,80,37,0.359234,0.20056,0.517342
+Qwen2.5-32B alone,all three,place of birth,75,34,0.375817,0.216193,0.535294
+Qwen2.5-32B alone,all three,producer,69,31,0.303569,0.126847,0.479211
+Qwen2.5-32B alone,all three,religion,81,39,0.341247,0.185818,0.49636
+Qwen2.5-32B alone,all three,screenwriter,66,36,0.266835,0.0993266,0.43266
+Qwen2.5-32B alone,all three,sport,81,39,0.341247,0.185818,0.49636
+Gemma-2-27B alone,no correction,author,88,95,0.328629,0.234211,0.420097
+Gemma-2-27B alone,no correction,capital,99,100,0.32165,0.231481,0.408923
+Gemma-2-27B alone,no correction,capital of,99,96,0.310922,0.222012,0.399516
+Gemma-2-27B alone,no correction,color,100,100,0.32,0.23,0.406667
+Gemma-2-27B alone,no correction,composer,95,90,0.349708,0.253996,0.441331
+Gemma-2-27B alone,no correction,country,98,98,0.323129,0.231293,0.411565
+Gemma-2-27B alone,no correction,director,84,93,0.317588,0.221579,0.41129
+Gemma-2-27B alone,no correction,father,97,99,0.323198,0.231594,0.411644
+Gemma-2-27B alone,no correction,genre,86,77,0.360365,0.260747,0.455854
+Gemma-2-27B alone,no correction,mother,100,99,0.328317,0.241043,0.415017
+Gemma-2-27B alone,no correction,occupation,96,92,0.294384,0.202895,0.382854
+Gemma-2-27B alone,no correction,place of birth,93,89,0.330635,0.240059,0.418429
+Gemma-2-27B alone,no correction,producer,87,83,0.305683,0.207497,0.399298
+Gemma-2-27B alone,no correction,religion,96,99,0.30766,0.217272,0.39657
+Gemma-2-27B alone,no correction,screenwriter,84,92,0.28813,0.191339,0.383541
+Gemma-2-27B alone,no correction,sport,98,98,0.312925,0.221089,0.401361
+Gemma-2-27B alone,all three,author,70,36,0.152646,0.0084657,0.296568
+Gemma-2-27B alone,all three,capital,81,39,0.164926,0.030706,0.297254
+Gemma-2-27B alone,all three,capital of,81,38,0.156379,0.0206764,0.290462
+Gemma-2-27B alone,all three,composer,76,31,0.188172,0.0264574,0.337578
+Gemma-2-27B alone,all three,country,79,39,0.168885,0.0331062,0.301312
+Gemma-2-27B alone,all three,director,68,36,0.142702,-0.00163393,0.287596
+Gemma-2-27B alone,all three,father,78,39,0.166667,0.0299147,0.299145
+Gemma-2-27B alone,all three,genre,68,34,0.220588,0.0784315,0.362745
+Gemma-2-27B alone,all three,mother,81,38,0.182694,0.0524097,0.312979
+Gemma-2-27B alone,all three,occupation,80,37,0.159009,0.02241,0.294257
+Gemma-2-27B alone,all three,place of birth,75,34,0.192157,0.0559478,0.322092
+Gemma-2-27B alone,all three,producer,69,31,0.144928,-0.00124666,0.28892
+Gemma-2-27B alone,all three,religion,81,39,0.164926,0.030706,0.297254
+Gemma-2-27B alone,all three,screenwriter,66,36,0.107744,-0.0353534,0.251684
+Gemma-2-27B alone,all three,sport,81,39,0.164926,0.030706,0.297254
+Llama-3.3-70B alone,no correction,author,88,95,0.558134,0.444896,0.660573
+Llama-3.3-70B alone,no correction,capital,99,100,0.537475,0.430032,0.637845
+Llama-3.3-70B alone,no correction,capital of,99,96,0.528725,0.418455,0.630892
+Llama-3.3-70B alone,no correction,color,100,100,0.54,0.433333,0.64
+Llama-3.3-70B alone,no correction,composer,95,90,0.61306,0.508767,0.706438
+Llama-3.3-70B alone,no correction,country,98,98,0.540816,0.431973,0.639456
+Llama-3.3-70B alone,no correction,director,84,93,0.515873,0.397977,0.62212
+Llama-3.3-70B alone,no correction,father,97,99,0.540248,0.431324,0.639488
+Llama-3.3-70B alone,no correction,genre,86,77,0.542132,0.422677,0.65222
+Llama-3.3-70B alone,no correction,mother,100,99,0.54798,0.440741,0.645455
+Llama-3.3-70B alone,no correction,occupation,96,92,0.525664,0.411832,0.629076
+Llama-3.3-70B alone,no correction,place of birth,93,89,0.558898,0.449438,0.658572
+Llama-3.3-70B alone,no correction,producer,87,83,0.530074,0.409268,0.638881
+Llama-3.3-70B alone,no correction,religion,96,99,0.527462,0.417821,0.629209
+Llama-3.3-70B alone,no correction,screenwriter,84,92,0.49793,0.378878,0.606453
+Llama-3.3-70B alone,no correction,sport,98,98,0.530612,0.421769,0.632653
+Llama-3.3-70B alone,all three,author,70,36,0.336243,0.169312,0.502917
+Llama-3.3-70B alone,all three,capital,81,39,0.333966,0.178205,0.487504
+Llama-3.3-70B alone,all three,capital of,81,38,0.32272,0.165359,0.47878
+Llama-3.3-70B alone,all three,composer,76,31,0.447368,0.284805,0.602009
+Llama-3.3-70B alone,all three,country,79,39,0.340582,0.186844,0.493998
+Llama-3.3-70B alone,all three,director,68,36,0.28159,0.112745,0.44936
+Llama-3.3-70B alone,all three,father,78,39,0.324786,0.166667,0.478633
+Llama-3.3-70B alone,all three,genre,68,34,0.352941,0.186275,0.514706
+Llama-3.3-70B alone,all three,mother,81,38,0.349036,0.193307,0.503365
+Llama-3.3-70B alone,all three,occupation,80,37,0.33491,0.171267,0.497072
+Llama-3.3-70B alone,all three,place of birth,75,34,0.359869,0.195944,0.520405
+Llama-3.3-70B alone,all three,producer,69,31,0.306841,0.128865,0.482001
+Llama-3.3-70B alone,all three,religion,81,39,0.333966,0.178205,0.487504
+Llama-3.3-70B alone,all three,screenwriter,66,36,0.259259,0.0900673,0.425926
+Llama-3.3-70B alone,all three,sport,81,39,0.333966,0.178205,0.487504
+either judge,no correction,author,88,95,0.543381,0.432253,0.646651
+either judge,no correction,capital,99,100,0.531279,0.42678,0.628721
+either judge,no correction,capital of,99,96,0.520307,0.413507,0.621843
+either judge,no correction,color,100,100,0.533333,0.426667,0.63
+either judge,no correction,composer,95,90,0.595712,0.491813,0.694542
+either judge,no correction,country,98,98,0.537415,0.431973,0.639456
+either judge,no correction,director,84,93,0.514081,0.400787,0.620075
+either judge,no correction,father,97,99,0.534486,0.428021,0.632617
+either judge,no correction,genre,86,77,0.550589,0.432799,0.660878
+either judge,no correction,mother,100,99,0.540774,0.433973,0.637712
+either judge,no correction,occupation,96,92,0.520079,0.410171,0.623792
+either judge,no correction,place of birth,93,89,0.556643,0.449636,0.657283
+either judge,no correction,producer,87,83,0.51581,0.400682,0.624199
+either judge,no correction,religion,96,99,0.522201,0.416454,0.624158
+either judge,no correction,screenwriter,84,92,0.487578,0.371808,0.595411
+either judge,no correction,sport,98,98,0.527211,0.418367,0.629252
+either judge,all three,author,70,36,0.319048,0.152368,0.486243
+either judge,all three,capital,81,39,0.327635,0.169666,0.483697
+either judge,all three,capital of,81,38,0.314815,0.156595,0.47271
+either judge,all three,composer,76,31,0.413979,0.243906,0.582484
+either judge,all three,country,79,39,0.335605,0.17797,0.492483
+either judge,all three,director,68,36,0.275599,0.108932,0.44281
+either judge,all three,father,78,39,0.320513,0.162393,0.478632
+either judge,all three,genre,68,34,0.367647,0.20098,0.534314
+either judge,all three,mother,81,38,0.341131,0.182911,0.499033
+either judge,all three,occupation,80,37,0.344032,0.183094,0.505518
+either judge,all three,place of birth,75,34,0.358824,0.195817,0.52183
+either judge,all three,producer,69,31,0.295465,0.120305,0.471108
+either judge,all three,religion,81,39,0.327635,0.169666,0.483697
+either judge,all three,screenwriter,66,36,0.25,0.0824916,0.417508
+either judge,all three,sport,81,39,0.327635,0.169666,0.483697
+majority of three judges,no correction,author,88,95,0.557855,0.445056,0.660008
+majority of three judges,no correction,capital,99,100,0.537441,0.429933,0.635054
+majority of three judges,no correction,capital of,99,96,0.52883,0.419294,0.629111
+majority of three judges,no correction,color,100,100,0.54,0.433333,0.64
+majority of three judges,no correction,composer,95,90,0.609552,0.505068,0.703509
+majority of three judges,no correction,country,98,98,0.540816,0.431973,0.639456
+majority of three judges,no correction,director,84,93,0.519457,0.402202,0.625192
+majority of three judges,no correction,father,97,99,0.540178,0.431671,0.638726
+majority of three judges,no correction,genre,86,77,0.546461,0.428169,0.655844
+majority of three judges,no correction,mother,100,99,0.548013,0.440842,0.645185
+majority of three judges,no correction,occupation,96,92,0.525815,0.41244,0.628623
+majority of three judges,no correction,place of birth,93,89,0.559059,0.450244,0.657771
+majority of three judges,no correction,producer,87,83,0.530259,0.410885,0.637723
+majority of three judges,no correction,religion,96,99,0.527357,0.417824,0.62742
+majority of three judges,no correction,screenwriter,84,92,0.493616,0.374737,0.600936
+majority of three judges,no correction,sport,98,98,0.530612,0.421769,0.629252
+majority of three judges,all three,author,70,36,0.345503,0.180681,0.509537
+majority of three judges,all three,capital,81,39,0.342513,0.188034,0.49446
+majority of three judges,all three,capital of,81,38,0.331492,0.175439,0.486138
+majority of three judges,all three,composer,76,31,0.447368,0.284087,0.602716
+majority of three judges,all three,country,79,39,0.349129,0.195821,0.502218
+majority of three judges,all three,director,68,36,0.29085,0.124728,0.456427
+majority of three judges,all three,father,78,39,0.333333,0.179487,0.487179
+majority of three judges,all three,genre,68,34,0.367647,0.205882,0.529412
+majority of three judges,all three,mother,81,38,0.357808,0.204562,0.511588
+majority of three judges,all three,occupation,80,37,0.343919,0.18243,0.503378
+majority of three judges,all three,place of birth,75,34,0.369673,0.209412,0.528238
+majority of three judges,all three,producer,69,31,0.317594,0.141811,0.489014
+majority of three judges,all three,religion,81,39,0.342513,0.188034,0.49446
+majority of three judges,all three,screenwriter,66,36,0.263468,0.0968013,0.429293
+majority of three judges,all three,sport,81,39,0.342513,0.188034,0.49446
+"both judges, DONT_KNOW or CLARIFY",no correction,author,88,95,0.472289,0.38109,0.559297
+"both judges, DONT_KNOW or CLARIFY",no correction,capital,99,100,0.466498,0.379259,0.547003
+"both judges, DONT_KNOW or CLARIFY",no correction,capital of,99,96,0.455493,0.365843,0.541038
+"both judges, DONT_KNOW or CLARIFY",no correction,color,100,100,0.463333,0.376667,0.543333
+"both judges, DONT_KNOW or CLARIFY",no correction,composer,95,90,0.496881,0.405648,0.581292
+"both judges, DONT_KNOW or CLARIFY",no correction,country,98,98,0.459184,0.37415,0.544218
+"both judges, DONT_KNOW or CLARIFY",no correction,director,84,93,0.465182,0.37211,0.55466
+"both judges, DONT_KNOW or CLARIFY",no correction,father,97,99,0.471103,0.383208,0.555833
+"both judges, DONT_KNOW or CLARIFY",no correction,genre,86,77,0.462297,0.366808,0.55527
+"both judges, DONT_KNOW or CLARIFY",no correction,mother,100,99,0.471583,0.388013,0.551987
+"both judges, DONT_KNOW or CLARIFY",no correction,occupation,96,92,0.447162,0.358545,0.532613
+"both judges, DONT_KNOW or CLARIFY",no correction,place of birth,93,89,0.477105,0.389634,0.561641
+"both judges, DONT_KNOW or CLARIFY",no correction,producer,87,83,0.454739,0.361118,0.543969
+"both judges, DONT_KNOW or CLARIFY",no correction,religion,96,99,0.453704,0.365417,0.53609
+"both judges, DONT_KNOW or CLARIFY",no correction,screenwriter,84,92,0.431677,0.337302,0.520532
+"both judges, DONT_KNOW or CLARIFY",no correction,sport,98,98,0.462585,0.377551,0.547619
+"both judges, DONT_KNOW or CLARIFY",all three,author,70,36,0.272487,0.132798,0.412176
+"both judges, DONT_KNOW or CLARIFY",all three,capital,81,39,0.274454,0.1434,0.404875
+"both judges, DONT_KNOW or CLARIFY",all three,capital of,81,38,0.264782,0.132879,0.396145
+"both judges, DONT_KNOW or CLARIFY",all three,composer,76,31,0.29867,0.148122,0.445671
+"both judges, DONT_KNOW or CLARIFY",all three,country,79,39,0.26961,0.137831,0.401063
+"both judges, DONT_KNOW or CLARIFY",all three,director,68,36,0.25817,0.12037,0.397059
+"both judges, DONT_KNOW or CLARIFY",all three,father,78,39,0.282051,0.149573,0.410257
+"both judges, DONT_KNOW or CLARIFY",all three,genre,68,34,0.303922,0.166667,0.441177
+"both judges, DONT_KNOW or CLARIFY",all three,mother,81,38,0.291098,0.162227,0.419434
+"both judges, DONT_KNOW or CLARIFY",all three,occupation,80,37,0.286149,0.152365,0.417906
+"both judges, DONT_KNOW or CLARIFY",all three,place of birth,75,34,0.303137,0.171239,0.435033
+"both judges, DONT_KNOW or CLARIFY",all three,producer,69,31,0.250584,0.108618,0.393654
+"both judges, DONT_KNOW or CLARIFY",all three,religion,81,39,0.274454,0.1434,0.404875
+"both judges, DONT_KNOW or CLARIFY",all three,screenwriter,66,36,0.212963,0.074916,0.351852
+"both judges, DONT_KNOW or CLARIFY",all three,sport,81,39,0.274454,0.1434,0.404875
+70B strict decline,no correction,author,88,95,0.548445,0.4366,0.651316
+70B strict decline,no correction,capital,99,100,0.53431,0.430168,0.634916
+70B strict decline,no correction,capital of,99,96,0.528199,0.418666,0.628367
+70B strict decline,no correction,color,100,100,0.536667,0.433333,0.636667
+70B strict decline,no correction,composer,95,90,0.608382,0.506628,0.702729
+70B strict decline,no correction,country,98,98,0.540816,0.431973,0.639456
+70B strict decline,no correction,director,84,93,0.518177,0.404634,0.624299
+70B strict decline,no correction,father,97,99,0.537228,0.428859,0.635843
+70B strict decline,no correction,genre,86,77,0.532115,0.412715,0.642913
+70B strict decline,no correction,mother,100,99,0.544444,0.437306,0.64165
+70B strict decline,no correction,occupation,96,92,0.521437,0.409269,0.624551
+70B strict decline,no correction,place of birth,93,89,0.561838,0.453019,0.659901
+70B strict decline,no correction,producer,87,83,0.525135,0.407738,0.633708
+70B strict decline,no correction,religion,96,99,0.524621,0.419192,0.626686
+70B strict decline,no correction,screenwriter,84,92,0.492063,0.377329,0.603179
+70B strict decline,no correction,sport,98,98,0.527211,0.421769,0.629252
+70B strict decline,all three,author,70,36,0.313492,0.150787,0.47672
+70B strict decline,all three,capital,81,39,0.316239,0.163343,0.468511
+70B strict decline,all three,capital of,81,38,0.304094,0.150531,0.458198
+70B strict decline,all three,composer,76,31,0.421902,0.263006,0.579655
+70B strict decline,all three,country,79,39,0.323272,0.170288,0.47636
+70B strict decline,all three,director,68,36,0.264161,0.102383,0.429194
+70B strict decline,all three,father,78,39,0.307692,0.153846,0.461538
+70B strict decline,all three,genre,68,34,0.333333,0.171569,0.495098
+70B strict decline,all three,mother,81,38,0.330409,0.177929,0.483114
+70B strict decline,all three,occupation,80,37,0.32455,0.165642,0.483221
+70B strict decline,all three,place of birth,75,34,0.358039,0.197778,0.519618
+70B strict decline,all three,producer,69,31,0.283154,0.110644,0.453487
+70B strict decline,all three,religion,81,39,0.316239,0.163343,0.468511
+70B strict decline,all three,screenwriter,66,36,0.237374,0.0749157,0.401515
+70B strict decline,all three,sport,81,39,0.316239,0.163343,0.468511
+"regex, same 96-token replies",no correction,author,88,95,0.595016,0.482496,0.698727
+"regex, same 96-token replies",no correction,capital,99,100,0.591785,0.48175,0.692223
+"regex, same 96-token replies",no correction,capital of,99,96,0.581229,0.471275,0.683712
+"regex, same 96-token replies",no correction,color,100,100,0.593333,0.483333,0.693333
+"regex, same 96-token replies",no correction,composer,95,90,0.65575,0.549513,0.753026
+"regex, same 96-token replies",no correction,country,98,98,0.595238,0.486395,0.697279
+"regex, same 96-token replies",no correction,director,84,93,0.568868,0.456221,0.67435
+"regex, same 96-token replies",no correction,father,97,99,0.596133,0.487834,0.695617
+"regex, same 96-token replies",no correction,genre,86,77,0.609635,0.494111,0.716048
+"regex, same 96-token replies",no correction,mother,100,99,0.600875,0.493568,0.701213
+"regex, same 96-token replies",no correction,occupation,96,92,0.583031,0.471158,0.687349
+"regex, same 96-token replies",no correction,place of birth,93,89,0.617897,0.508107,0.718215
+"regex, same 96-token replies",no correction,producer,87,83,0.577667,0.459216,0.687901
+"regex, same 96-token replies",no correction,religion,96,99,0.584386,0.475274,0.68624
+"regex, same 96-token replies",no correction,screenwriter,84,92,0.554003,0.436504,0.662181
+"regex, same 96-token replies",no correction,sport,98,98,0.585034,0.47619,0.687075
+"regex, same 96-token replies",all three,author,70,36,0.356878,0.18836,0.525926
+"regex, same 96-token replies",all three,capital,81,39,0.372903,0.214941,0.530239
+"regex, same 96-token replies",all three,capital of,81,38,0.360082,0.200774,0.519926
+"regex, same 96-token replies",all three,composer,76,31,0.451471,0.275891,0.624363
+"regex, same 96-token replies",all three,country,79,39,0.377799,0.219728,0.535435
+"regex, same 96-token replies",all three,director,68,36,0.320261,0.153581,0.486928
+"regex, same 96-token replies",all three,father,78,39,0.367521,0.209402,0.525641
+"regex, same 96-token replies",all three,genre,68,34,0.421569,0.254902,0.583333
+"regex, same 96-token replies",all three,mother,81,38,0.386398,0.226554,0.544834
+"regex, same 96-token replies",all three,occupation,80,37,0.389865,0.226239,0.552703
+"regex, same 96-token replies",all three,place of birth,75,34,0.407712,0.240114,0.571654
+"regex, same 96-token replies",all three,producer,69,31,0.338943,0.16378,0.517376
+"regex, same 96-token replies",all three,religion,81,39,0.372903,0.214941,0.530239
+"regex, same 96-token replies",all three,screenwriter,66,36,0.300505,0.131313,0.470539
+"regex, same 96-token replies",all three,sport,81,39,0.372903,0.214941,0.530239
+"regex, 20 x 24-token replies, full pool",no correction,author,1038,339,0.630607,0.584304,0.673705
+"regex, 20 x 24-token replies, full pool",no correction,capital,1160,360,0.610972,0.566431,0.654057
+"regex, 20 x 24-token replies, full pool",no correction,capital of,1146,352,0.615775,0.571021,0.658746
+"regex, 20 x 24-token replies, full pool",no correction,color,1177,361,0.61366,0.569786,0.656032
+"regex, 20 x 24-token replies, full pool",no correction,composer,1095,328,0.661611,0.619726,0.703398
+"regex, 20 x 24-token replies, full pool",no correction,country,1159,343,0.608398,0.564569,0.652418
+"regex, 20 x 24-token replies, full pool",no correction,director,997,331,0.605436,0.558481,0.651329
+"regex, 20 x 24-token replies, full pool",no correction,father,1130,353,0.611226,0.567503,0.653271
+"regex, 20 x 24-token replies, full pool",no correction,genre,1032,276,0.576976,0.524986,0.629052
+"regex, 20 x 24-token replies, full pool",no correction,mother,1161,358,0.612296,0.567619,0.655312
+"regex, 20 x 24-token replies, full pool",no correction,occupation,1126,342,0.609066,0.56448,0.652555
+"regex, 20 x 24-token replies, full pool",no correction,place of birth,1127,333,0.643018,0.60095,0.68422
+"regex, 20 x 24-token replies, full pool",no correction,producer,1041,314,0.600547,0.55374,0.647182
+"regex, 20 x 24-token replies, full pool",no correction,religion,1145,344,0.598801,0.553325,0.642946
+"regex, 20 x 24-token replies, full pool",no correction,screenwriter,1009,326,0.591264,0.544967,0.637772
+"regex, 20 x 24-token replies, full pool",no correction,sport,1142,355,0.610978,0.565905,0.653172

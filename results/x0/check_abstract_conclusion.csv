@@ -1,0 +1,9 @@
+part,macro,paper_value,csv,csv_value,match
+abstract,tcObsUnkAbs,0.48,table1_reproduction.csv,0.476667,True
+abstract,tcPopUnkAbs,0.13,table1_reproduction.csv,0.133333,True
+abstract,tcObsKnownAbs,0.43,table1_reproduction.csv,0.43295,True
+abstract,rcTopThree,80,A2_relation_by_cell.csv,80,True
+abstract,gsObsKnownTotal,87,A2_relation_by_cell.csv,87,True
+abstract,(literal),3.1,CHECK BY HAND,,
+abstract,(literal),8,CHECK BY HAND,,
+abstract,(word 'zero'),0,table1_reproduction.csv,0,True

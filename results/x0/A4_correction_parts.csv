@@ -1,0 +1,5 @@
+cell,regex_share,precision,miss_rate,corrected,judged_regex_hedge,judged_regex_answer
+obscure known,0.678161,1,0.08,0.703908,50,50
+obscure unknown,0.84894,1,0.62,0.942597,50,50
+popular known,0.0246302,0.96,0.08,0.101675,50,50
+popular unknown,0.235873,1,0.44,0.572089,50,50

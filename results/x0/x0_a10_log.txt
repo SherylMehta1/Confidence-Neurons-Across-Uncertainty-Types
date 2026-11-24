@@ -1,0 +1,22 @@
+A10: 21 choices; every quoted repo number found in its source file
+                                           plan sha256_prefix      recorded matches                                                                          status
+      paper_2.0/PREREG/cross_model_agreement.md      ca29f0d4 none recorded         Post hoc: plan written after the point estimates had been seen (says so itself)
+          paper_2.0/PREREG/e10_instruct_lens.md      6af179ce      6af179ce    True                                                                   Pre-specified
+       paper_2.0/PREREG/e11_name_cue_control.md      f716d396      f716d396    True                                                                   Pre-specified
+paper_2.0/PREREG/e12_permissive_qwen_mistral.md      56831ebc      56831ebc    True                                                                   Pre-specified
+       paper_2.0/PREREG/e13_e14_replications.md      fbbc8c25      fbbc8c25    True                                                                   Pre-specified
+  paper_2.0/PREREG/e15_e16_olmo_and_steering.md      2b3e665d      2b3e665d    True                                                                   Pre-specified
+               paper_2.0/PREREG/e17_nla_qwen.md      2d6712e1      2d6712e1    True                                      Exploratory; result lost, nothing reported
+      paper_2.0/PREREG/e1_independent_labels.md      af50f53f      af50f53f    True                                                                   Pre-specified
+          paper_2.0/PREREG/e2_name_surprisal.md      2b69e06c      2b69e06c    True                                                                   Pre-specified
+              paper_2.0/PREREG/e3_lens_split.md      b2b916ce      b2b916ce    True                                                                   Pre-specified
+   paper_2.0/PREREG/e4_amendment_third_judge.md      7bed3826      7bed3826    True                 Pre-specified amendment (before judging); secondary scorer only
+             paper_2.0/PREREG/e4_steering_v3.md      18c74883      18c74883    True                                                                   Pre-specified
+             paper_2.0/PREREG/e5_third_judge.md      f35aa4d9      f35aa4d9    True                                                                   Pre-specified
+        paper_2.0/PREREG/e6_entity_knowledge.md      937b46e3      937b46e3    True                                                                   Pre-specified
+ paper_2.0/PREREG/e7_label_and_decline_audit.md      1498be91      1498be91    True                                                                   Pre-specified
+   paper_2.0/PREREG/e8_steering_within_level.md      05474954      05474954    True                                                                   Pre-specified
+       paper_2.0/PREREG/e9_permissive_prompt.md      f6459163      f6459163    True                                                                   Pre-specified
+                       hedge_judge_criterion.md      ae0bb807      ae0bb807    True                                                                   Pre-specified
+                  hedge_measure_v2_criterion.md      81acfc9f      81acfc9f    True                                                                   Pre-specified
+The hashes are self-recorded. Git shows criterion notes and results committed on the same day, so git does not prove the order.

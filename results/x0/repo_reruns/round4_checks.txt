@@ -1,0 +1,28 @@
+(1) relation mix of the 387-question sample (columns: obscure unknown, obscure known, popular unknown, popular known)
+arm            uncertain             control            
+know             Unknown HighlyKnown Unknown HighlyKnown
+prop                                                    
+author                12           0       5          21
+capital                1          27       0           9
+capital of             1           0       4           0
+color                  0           1       0           1
+composer               5           4      10           7
+country                2          46       2           6
+director              16           1       7          17
+father                 3           1       1           8
+genre                 14           0      23           2
+mother                 0           0       1           0
+occupation             4           0       8           3
+place of birth         7           0      11           2
+producer              13           0      17           5
+religion               4           0       1           1
+screenwriter          16           0       8          15
+sport                  2           7       2           3
+obscure known: 87 facts over 7 relations; top 3 relations hold 80 (92%): {'country': np.int64(46), 'capital': np.int64(27), 'sport': np.int64(7), 'composer': np.int64(4), 'color': np.int64(1)}
+(2) preference +0.300; within-cell item bootstrap [0.203 0.396]; relation-clustered bootstrap (5,000) [-0.099, +0.432]
+    leave-one-relation-out range [+0.244, +0.346] (lowest when dropping capital)
+(3) all corrections jointly (semantic regrade, popular-unknown alias drop with name echoes excluded, guessable removed): preference +0.140, within-cell bootstrap [-0.005  0.283]; n {'unc/Unkn': 81, 'unc/High': 58, 'con/Unkn': 39, 'con/High': 100}
+    cell rates: unc/Unkn 0.469  unc/High 0.431  con/Unkn 0.291  con/High 0.000
+(4) obscure known: 30 of 87 guessable; the other 57 abstain at 0.439; guessable ones at 0.422
+(5) popularity gap among unknown facts: all +0.343 [+0.253, +0.430]; after all corrections +0.179 [+0.043, +0.309]
+    relation-clustered bootstrap for the unknown-facts gap (all): [+0.229, +0.458]
