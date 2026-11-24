@@ -1,0 +1,111 @@
+draft,reason,old,new
+srw/main_v2.tex,corrected numbers,\input{../numbers.tex},"\input{../numbers_v2.tex}
+\input{../numbers_x2.tex}"
+srw/main_v2.tex,figure from corrected labels,fig_dissociation.pdf,fig_dissociation_v2.pdf
+srw/main_v2.tex,zero is now one reply in 300; X2,"on facts it answers correctly, \tcObsKnownAbs{} and zero.","on facts it answers correctly, \tcObsKnownAbs{} and \cPopKnownAbs{}. The effect of popularity holds across the whole popularity range (\xtAllN{} further questions)."
+srw/main_v2.tex,kappa interval now above the bar; disclosure,is above our pre-specified bar of \kappaBar{} at the point estimate but not across the whole interval.,is above our pre-specified bar of \kappaBar{} across the whole interval. (These labels correct an earlier faulty run of the Gemma judge; Appendix~\ref{app:judge}.)
+srw/main_v2.tex,zero is now one reply in 300,"the rate is \tcObsKnownAbs{} on obscure entities and, by the judges, zero in 300 sampled replies on popular ones.","the rate is \tcObsKnownAbs{} on obscure entities and, by the judges, \cPopKnownAbs{} (one of 300 sampled replies) on popular ones."
+srw/main_v2.tex,X2 added,So popularity affects when Llama says \idk. Because,"\paragraph{The Whole Popularity Range.} The design so far compares the extreme tenths. We therefore drew up to 300 questions per relation, spread evenly over the ten popularity tenths within it (\xtAllN{} questions, all \xtRel{} relations; four have fewer than 300), and regressed abstention on popularity rank and a knowledge score, the share of ten forced answers that are correct, with relation fixed effects (fractional logit; the plan was recorded before the run, with one dated amendment). Obscurity raises abstention: from the most to the least viewed question of a relation the coefficient is \xtAll{} \xtAllCI{} (relations resampled). Averaged over all questions, predicted abstention is \xtPredPop{} at the 90th percentile of popularity and \xtPredObs{} at the 10th. The coefficient is \xtMid{} \xtMidCI{} without the extreme tenths, \xtNoThree{} \xtNoThreeCI{} without country, capital and sport, and \xtAllRegex{} \xtAllRegexCI{} with the regex. Knowledge lowers abstention (\xtKnow{} \xtKnowCI); we do not rank the two coefficients, because their sizes depend on how the two variables are scaled (Appendix~\ref{app:range}).
+
+So popularity affects when Llama says \idk. Because"
+srw/main_v2.tex,families now measured,Gemma-2-9B also gives a positive margin when the prompt invites abstaining (Appendix~\ref{app:other}).,"When the prompt invites abstaining, Gemma-2-9B, Qwen2.5-7B and Mistral-7B also give positive margins and OLMo-2-7B does not (Appendix~\ref{app:other})."
+srw/main_v2.tex,regex and judges now agree,"on it, the margin over all questions is \wrPooledPref, larger than the judges' \hmLlamaDiff.","on it, the margin over all questions is \wrPooledPref, close to the judges' \hmLlamaDiff."
+srw/main_v2.tex,X2; kappa wording,The design contrasts the extreme tenths of popularity.,The main design contrasts the extreme tenths of popularity; the whole-range check is a regression in which knowledge is graded by string match. Judge agreement is agreement between two LLMs.
+srw/main_v2.tex,the bands are two tenths wide,"New questions, adjacent tenths &","New questions, 10th--30th vs.\ 70th--90th percentile &"
+srw/main_v2.tex,families now measured,"Qwen2.5-7B, Gemma-2-9B and Mistral-7B rarely say \idk{} by the judges' labels, and the judges disagree on Qwen and Mistral.","Qwen2.5-7B, Gemma-2-9B and Mistral-7B rarely say \idk{} by the judges' labels; three judges agree on Gemma and Mistral (Fleiss $\kappa=\tjGemmaKappa$ and \tjMistralKappa) and fall just short of the bar on Qwen (\tjQwenKappa)."
+srw/main_v2.tex,families now measured,"Three judges then agree on Llama and Gemma (Fleiss $\kappa=\pmLlamaKappa$ and \pmGemmaKappa), with margins \pmLlamaDiff{} \pmLlamaDiffCI{} and \pmGemmaDiff{} \pmGemmaDiffCI. For Qwen, Mistral and OLMo-2-7B the judges disagree (Fleiss $\kappa$ \pmQwenKappa--\pmMistralKappa), so we do not report margins.","Three judges then agree on all five models (Fleiss $\kappa$: Llama \pmLlamaKappa, Gemma \pmGemmaKappa, Qwen \pmQwenKappa, Mistral \pmMistralKappa, OLMo-2-7B \pmOlmoKappa). The margins are \pmLlamaDiff{} \pmLlamaDiffCI{} for Llama, \pmGemmaDiff{} \pmGemmaDiffCI{} for Gemma, \pmQwenDiff{} \pmQwenDiffCI{} for Qwen and \pmMistralDiff{} \pmMistralDiffCI{} for Mistral; for OLMo-2-7B the interval includes zero (\pmOlmoDiff{} \pmOlmoDiffCI)."
+srw/main_v2.tex,judge correction and X2 appendix,"\section{Other Models, Steering and Lens}","\section{Correction of One Judge}
+\label{app:judge}
+
+The labels of the Gemma-2-27B judge in an earlier version of this paper came from an incorrect forward pass: the default attention implementation of the transformers library (sdpa) omits the attention soft-capping that Gemma-2 uses. We found this in a later experiment, after the results above had been seen, so the correction is post hoc. The stored labels are reproduced exactly with that implementation; with eager attention, and with vLLM, the labels agree with each other on all 1{,}161 Llama replies and differ from the stored ones. We relabeled all \cRejudged{} stored replies with the same prompt and parser and kept the rule that both judges must say DONT\_KNOW. The two-judge agreement on Llama rose from $\kappa=\asPrintedKappa$ to \hmLlamaKappa{}, the margin from \asPrintedMargin{} \asPrintedMarginCI{} to \hmLlamaDiff{} \hmLlamaDiffCI, and the unknown-fact gap from \asPrintedUnk{} \asPrintedUnkCI{} to \rcUnk{} \rcUnkCI{} (after the label corrections, from \asPrintedUnkJoint{} \asPrintedUnkJointCI{} to \rcUnkJoint{} \rcUnkJointCI). Agreement between two LLM judges is not validation against people. Gemma-2-9B as a tested model was run with the same implementation; on 300 questions its forced answers were equally correct and its entropies nearly identical ($r=0.999$) with the correct one. Its steering and lens runs were not rerun.
+
+\section{The Whole Popularity Range}
+\label{app:range}
+
+\begin{table}[h]
+\centering
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrll}
+\toprule
+& $n$ & Two judges & Regex \\
+\midrule
+All tenths & \xtAllN & \xtAll{} \xtAllCI & \xtAllRegex{} \xtAllRegexCI \\
+Tenths 2 to 9 & \xtMidN & \xtMid{} \xtMidCI & \xtMidRegex{} \xtMidRegexCI \\
+Without three relations & \xtNoThreeN & \xtNoThree{} \xtNoThreeCI & \xtNoThreeRegex{} \xtNoThreeRegexCI \\
+Knowledge in 11 levels & \xtLevelsN & \xtLevels{} \xtLevelsCI & \xtLevelsRegex{} \xtLevelsRegexCI \\
+\bottomrule
+\end{tabular}
+\caption{Coefficient of obscurity (0 for the most viewed question of a relation, 1 for the least viewed) on abstention, with the knowledge score and relation fixed effects; fractional logit, 95\% intervals resampling whole relations (5,000 draws). Three relations: country, capital, sport. With the uncorrected labels of the Gemma judge the first two-judge entry is \xtOld{} \xtOldCI.}
+\label{tab:range}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{../../results/x2/fig_x2_gradient.pdf}
+\caption{Share of \idk{} replies by popularity tenth, for questions with 0, 1 to 8, and 9 or 10 of 10 forced answers correct. 95\% intervals resample questions.}
+\label{fig:range}
+\end{figure}
+
+The amendment replaced two pilot checks, after the pilot and before the full run, when the pilot revealed the judge fault (Appendix~\ref{app:judge}); sample, prompts, model and decision rules were unchanged. Replies were generated with vLLM. The knowledge score and the paper's known/unknown labels come from the same forced-answer prompt and string grader.
+
+\section{Other Models, Steering and Lens}"
+mere/main_v3.tex,corrected numbers,\input{../numbers.tex},"\input{../numbers_v2.tex}
+\input{../numbers_x2.tex}"
+mere/main_v3.tex,figure from corrected labels,fig_dissociation.pdf,fig_dissociation_v2.pdf
+mere/main_v3.tex,figure from corrected labels,fig_steering.pdf,fig_steering_v2.pdf
+mere/main_v3.tex,none is now one reply in 300,"it says \idk{} in \tcObsKnownAbs{} of replies when the entity is obscure and in none when it is popular, at similar entropy.","it says \idk{} in \tcObsKnownAbs{} of replies when the entity is obscure and in \cPopKnownAbs{} when it is popular, at similar entropy."
+mere/main_v3.tex,families now measured,Gemma-2-9B shows a preference of the same sign when the prompt permits \idk; for three other families the judges disagree too much to measure it.,"When the prompt permits \idk, Gemma-2-9B, Qwen2.5-7B and Mistral-7B show a preference of the same sign and OLMo-2-7B does not."
+mere/main_v3.tex,families now measured,"\item \textbf{A Preference of the Same Sign in Gemma When Permitted:} \pmGemmaDiff{} \pmGemmaDiffCI{} under a permissive prompt, with fewer stress tests; the judges cannot measure Qwen, Mistral or OLMo-2.","\item \textbf{The Same Sign in Three Other Families When Permitted, Not in a Fourth:} under a permissive prompt, \pmGemmaDiff{} \pmGemmaDiffCI{} for Gemma, \pmQwenDiff{} \pmQwenDiffCI{} for Qwen and \pmMistralDiff{} \pmMistralDiffCI{} for Mistral, with fewer stress tests; \pmOlmoDiff{} \pmOlmoDiffCI{} for OLMo-2."
+mere/main_v3.tex,kappas; disclosure,above a pre-specified bar of \kappaBar{} for the point estimate; on the other families they do not.,above a pre-specified bar of \kappaBar{} across the whole interval; on the plain prompt they also pass it for Gemma (\hmGemmaKappa) and Mistral (\hmMistralKappa) but not for Qwen (\hmQwenKappa). (These labels correct an earlier faulty run of the Gemma judge; \cref{app:judge}.)
+mere/main_v3.tex,none is now one reply in 300,it does so in none of the 300 sampled replies (\cref{tab:cells};,it does so in one of the 300 sampled replies (\cref{tab:cells};
+mere/main_v3.tex,joint-correction interval no longer reaches zero,"but its interval reaches zero once labels are corrected jointly or relations are resampled, it vanishes outside three relations,","but it shrinks once labels are corrected jointly (\rcJoint{} \rcJointCI), its interval reaches zero once relations are resampled, it vanishes outside three relations,"
+mere/main_v3.tex,families now measured,\section{Gemma Leans the Same Way When Permitted},"\section{When Permitted, Three Families Lean the Same Way and One Does Not}"
+mere/main_v3.tex,families now measured,"but the judges disagree on Qwen and Mistral. Gemma's three judges agree, and it abstains in at most \tjGemmaObsUnk{} of replies per cell, below the pre-specified 0.25 needed to estimate a preference (three-judge estimate \tjGemmaDiff{} \tjGemmaDiffCI).","but all three other families abstain rarely. Three judges agree on Gemma and Mistral (Fleiss $\kappa=\tjGemmaKappa$ and \tjMistralKappa) and fall just short of the bar on Qwen (\tjQwenKappa). Gemma and Mistral abstain in at most \tjGemmaObsUnk{} and \tjMistralObsUnk{} of replies per cell, below the pre-specified 0.25 needed to estimate a preference (three-judge estimates \tjGemmaDiff{} \tjGemmaDiffCI{} and \tjMistralDiff{} \tjMistralDiffCI)."
+mere/main_v3.tex,judges no longer disagree,"though the judges disagree on these families, so this reading is not established.","but it scores truncated 24-token replies with a different judge prompt, so this reading is not established."
+mere/main_v3.tex,families now measured,\paragraph{Permissive Prompt: Same Sign in Gemma.},"\paragraph{Permissive Prompt: Same Sign in Gemma, Qwen and Mistral, Not in OLMo-2.}"
+mere/main_v3.tex,families now measured,Llama and Gemma then abstain often and three judges agree (Fleiss $\kappa=\pmLlamaKappa$ and \pmGemmaKappa).,"All five models then abstain often and three judges agree (Fleiss $\kappa$: Llama \pmLlamaKappa, Gemma \pmGemmaKappa, Qwen \pmQwenKappa, Mistral \pmMistralKappa, OLMo-2-7B \pmOlmoKappa)."
+mere/main_v3.tex,families now measured,"Gemma's estimate has not had Llama's label corrections or relation resampling, and the prompt invites abstaining. For Qwen, Mistral and OLMo-2-7B, the judges disagree (Fleiss $\kappa$ \pmQwenKappa--\pmMistralKappa), so their preferences are unmeasured (point estimates \pmQwenDiff, \pmMistralDiff, \pmOlmoDiff; \cref{app:families}).","It is \pmQwenDiff{} \pmQwenDiffCI{} for Qwen and \pmMistralDiff{} \pmMistralDiffCI{} for Mistral; for OLMo-2-7B the interval includes zero (\pmOlmoDiff{} \pmOlmoDiffCI). These estimates have not had Llama's label corrections or relation resampling, and the prompt invites abstaining (\cref{app:families})."
+mere/main_v3.tex,families now measured,"Where the judges pass the bar under this prompt, then, the sign is positive; we cannot say more about the others. Two models leaning the same way does not tell us why.","Under this prompt, then, the preference is positive in four of five families and not distinguishable from zero in the fifth. Models leaning the same way does not tell us why."
+mere/main_v3.tex,Gemma's judges now agree," Gemma's two judges agree below the pre-specified bar, so its bars in (a) are indicative only. Error bars: 95\% bootstrap over questions.}", Error bars: 95\% bootstrap over questions.}
+mere/main_v3.tex,bar now met,with two judges (short of the pre-specified $+0.10$ bar) and,with two judges (above the pre-specified $+0.10$ bar) and
+mere/main_v3.tex,Gemma's judges now agree,(added by amendment before judging; the defensible scorer for Gemma):,(added by amendment before judging):
+mere/main_v3.tex,families now measured,and only two families could be measured.,and the families other than Llama were measured under one prompt with few checks.
+mere/main_v3.tex,families now measured,"Gemma leans the same way when the prompt permits abstaining.
+
+\emph{Interpretation:}","Gemma, Qwen and Mistral lean the same way when the prompt permits abstaining, and OLMo-2 does not.
+
+\emph{Interpretation:}"
+mere/main_v3.tex,judge correction,"\section{Other Families}
+\label{app:families}","\section{Correction of One Judge}
+\label{app:judge}
+
+The labels of the Gemma-2-27B judge in an earlier version of this paper came from an incorrect forward pass: the default attention implementation of the transformers library (sdpa) omits the attention soft-capping that Gemma-2 uses. We found this in a later experiment, after the results above had been seen, so the correction is post hoc. The stored labels are reproduced exactly with that implementation; with eager attention, and with vLLM, the labels agree with each other on all 1{,}161 Llama replies and differ from the stored ones. We relabeled all \cRejudged{} stored replies with the same prompt and parser and kept the rule that both judges must say DONT\_KNOW. The two-judge agreement on Llama rose from $\kappa=\asPrintedKappa$ to \hmLlamaKappa{}, the preference from \asPrintedMargin{} \asPrintedMarginCI{} to \hmLlamaDiff{} \hmLlamaDiffCI, and the unknown-fact gap from \asPrintedUnk{} \asPrintedUnkCI{} to \rcUnk{} \rcUnkCI{} (after the label corrections, from \asPrintedUnkJoint{} \asPrintedUnkJointCI{} to \rcUnkJoint{} \rcUnkJointCI). Agreement between two LLM judges is not validation against people. Gemma-2-9B as a tested model was run with the same implementation; on 300 questions its forced answers were equally correct and its entropies nearly identical ($r=0.999$) with the correct one. Its steering and lens runs were not rerun.
+
+\section{Other Families}
+\label{app:families}"
+main_v2.tex,corrected numbers,\input{numbers.tex},"\input{numbers_v2.tex}
+\input{numbers_x2.tex}"
+main_v2.tex,figure from corrected labels,fig_dissociation.pdf,fig_dissociation_v2.pdf
+main_v2.tex,figure from corrected labels,fig_steering.pdf,fig_steering_v2.pdf
+main_v2.tex,0% is now one reply in 300,and in \tcPopKnownAbsPct{} when it is popular.,and in under 1\% when it is popular.
+main_v2.tex,families now measured,Gemma-2-9B shows the same preference when the prompt permits \idk; for three other families the judges disagree too much to measure it.,"When the prompt permits \idk, Gemma-2-9B, Qwen2.5-7B and Mistral-7B show the same preference and OLMo-2-7B does not."
+main_v2.tex,families now measured,"Of five families, only Llama and Gemma let us measure it.","Under a prompt that permits \idk, we can measure it in five families."
+main_v2.tex,families now measured,"\item \textbf{Same Preference in Gemma When Permitted:} \pmGemmaDiff{} \pmGemmaDiffCI{} under a permissive prompt (\cref{sec:families}); the judges cannot measure Qwen, Mistral or OLMo-2.","\item \textbf{Same Preference in Three Other Families When Permitted, Not in a Fourth:} \pmGemmaDiff{} \pmGemmaDiffCI{} for Gemma, \pmQwenDiff{} \pmQwenDiffCI{} for Qwen and \pmMistralDiff{} \pmMistralDiffCI{} for Mistral under a permissive prompt; \pmOlmoDiff{} \pmOlmoDiffCI{} for OLMo-2 (\cref{sec:families})."
+main_v2.tex,kappas; disclosure,above a pre-specified bar of \kappaBar{} for the point estimate; on the other families they do not.,above a pre-specified bar of \kappaBar{} across the whole interval; they also pass it for Gemma (\hmGemmaKappa) and Mistral (\hmMistralKappa) but not for Qwen (\hmQwenKappa). (These labels correct an earlier faulty run of the Gemma judge; \cref{app:judge}.)
+main_v2.tex,never is now one reply in 300,"on popular entities whose facts it knows, it never does (\cref{tab:cells}).","on popular entities whose facts it knows, in one of 300 (\cref{tab:cells})."
+main_v2.tex,families now measured,\subsection{Other Families: Gemma Shares the Preference When Permitted},"\subsection{Other Families: Three Share the Preference When Permitted, One Does Not}"
+main_v2.tex,families now measured,"but Qwen, Gemma and Mistral rarely say \idk; Gemma abstains in at most \tjGemmaObsUnk{} of replies per cell, so its preference cannot be estimated.","but Qwen, Gemma and Mistral rarely say \idk; Gemma and Mistral abstain in at most \tjGemmaObsUnk{} and \tjMistralObsUnk{} of replies per cell, so their preferences cannot be estimated, and three judges fall just short of the bar on Qwen (Fleiss $\kappa=\tjQwenKappa$)."
+main_v2.tex,families now measured,"\paragraph{Permissive Prompt: Same Preference in Gemma.} With the permissive prompt, Llama and Gemma abstain often and three judges agree (Fleiss $\kappa=\pmLlamaKappa$ and \pmGemmaKappa).","\paragraph{Permissive Prompt: Same Preference in Gemma, Qwen and Mistral, Not in OLMo-2.} With the permissive prompt, all five models abstain often and three judges agree (Fleiss $\kappa$: Llama \pmLlamaKappa, Gemma \pmGemmaKappa, Qwen \pmQwenKappa, Mistral \pmMistralKappa, OLMo-2-7B \pmOlmoKappa)."
+main_v2.tex,families now measured,"For Qwen, Mistral and OLMo-2-7B, the judges disagree (Fleiss $\kappa$ \pmQwenKappa--\pmMistralKappa), so their preferences are unmeasured (point estimates \pmQwenDiff, \pmMistralDiff, \pmOlmoDiff; \cref{app:families}).",It is \pmQwenDiff{} \pmQwenDiffCI{} for Qwen and \pmMistralDiff{} \pmMistralDiffCI{} for Mistral; for OLMo-2-7B the interval includes zero (\pmOlmoDiff{} \pmOlmoDiffCI) (\cref{app:families}).
+main_v2.tex,bar now met,abstention over random directions (short of the pre-specified $+0.10$ bar).,abstention over random directions (above the pre-specified $+0.10$ bar).
+main_v2.tex,Mistral now measured,Three judges: popularity $-$ knowledge & \tjLlamaDiff & -- & \tjGemmaDiff & -- \\,Three judges: popularity $-$ knowledge & \tjLlamaDiff & -- & \tjGemmaDiff & \tjMistralDiff \\
+main_v2.tex,Mistral now measured,"three judges, Llama \tjLlamaDiffCI, Gemma \tjGemmaDiffCI;","three judges, Llama \tjLlamaDiffCI, Gemma \tjGemmaDiffCI, Mistral \tjMistralDiffCI;"
+main_v2.tex,families now measured,"are unmeasured under the same rule (Fleiss $\kappa$ \pmQwenKappa, \pmMistralKappa, \pmOlmoKappa); their point estimates are \pmQwenDiff{} \pmQwenDiffCI, \pmMistralDiff{} \pmMistralDiffCI{} and \pmOlmoDiff{} \pmOlmoDiffCI.","are measured under the same rule (Fleiss $\kappa$ \pmQwenKappa, \pmMistralKappa, \pmOlmoKappa): \pmQwenDiff{} \pmQwenDiffCI, \pmMistralDiff{} \pmMistralDiffCI{} and \pmOlmoDiff{} \pmOlmoDiffCI{} (before the judge correction, \cref{app:judge}, all three were unmeasured)."
+main_v2.tex,Gemma's judges now agree," Gemma's judges agree below the pre-specified bar, so its bars in (a) are indicative only; three-judge differences are in the text below.", Three-judge differences are in the text below.
+main_v2.tex,Gemma's judges now agree," For Gemma the secondary scorer is the defensible one, since its two judges agree below the bar.",
+main_v2.tex,judge correction,\section{Abstention and the forced-answer hedge readout in all four families},"\section{Correction of one judge}
+\label{app:judge}
+
+The labels of the Gemma-2-27B judge in an earlier version of this paper came from an incorrect forward pass: the default attention implementation of the transformers library (sdpa) omits the attention soft-capping that Gemma-2 uses. We found this in a later experiment, after the results above had been seen, so the correction is post hoc. The stored labels are reproduced exactly with that implementation; with eager attention, and with vLLM, the labels agree with each other on all 1{,}161 Llama replies and differ from the stored ones. We relabeled all \cRejudged{} stored replies with the same prompt and parser and kept the rule that both judges must say DONT\_KNOW. The two-judge agreement on Llama rose from $\kappa=\asPrintedKappa$ to \hmLlamaKappa{}, the preference from \asPrintedMargin{} \asPrintedMarginCI{} to \hmLlamaDiff{} \hmLlamaDiffCI, and the unknown-fact gap from \asPrintedUnk{} \asPrintedUnkCI{} to \rcUnk{} \rcUnkCI{} (after the label corrections, from \asPrintedUnkJoint{} \asPrintedUnkJointCI{} to \rcUnkJoint{} \rcUnkJointCI). Agreement between two LLM judges is not validation against people. Gemma-2-9B as a tested model was run with the same implementation; on 300 questions its forced answers were equally correct and its entropies nearly identical ($r=0.999$) with the correct one. Its steering and lens runs were not rerun.
+
+\section{Abstention and the forced-answer hedge readout in all four families}"

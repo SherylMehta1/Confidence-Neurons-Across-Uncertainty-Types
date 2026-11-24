@@ -13,7 +13,7 @@
 |---|---|---|
 | Permissive prompt, Qwen (E12) | unmeasured (Fleiss 0.40) | measured (0.74), follows popularity, +0.16 [+0.01, +0.31] |
 | Permissive prompt, Mistral (E12) | unmeasured (0.50) | measured (0.80), follows popularity, +0.17 [+0.06, +0.28] |
-| Permissive prompt, OLMo-2 (E15) | unmeasured (0.46) | measured (0.86), neither, -0.09 [-0.22, +0.04] |
+| Permissive prompt, OLMo-2 (E15) | unmeasured (0.46) | measured (0.86), neither, -0.09 [-0.21, +0.04] |
 | Plain prompt, Mistral (E5, two judges) | unmeasured (0.54) | measured (0.75), neither |
 | Plain prompt, Gemma (two judges) | unmeasured (0.47) | measured (0.95), no difference resolved |
 | Plain prompt, Qwen (E5) | unmeasured (0.41) | still unmeasured (0.59, bar 0.60) |
@@ -54,3 +54,7 @@ Figures 1a (dissociation) and steering also use the old labels. Any new sentence
 ## Files
 
 `todo.jsonl.gz` (replies judged), `rejudge_gemma27b.jsonl` (labels; 2,400 extra rows are the fresh Gemma-2-9B replies), `rejudge_qwen32b.jsonl` (check), `labels_by_file.csv`, `qwen_check.csv`, `verdicts.csv`, `macro_changes.csv`, `corrected/`, `gemma9b_*`. Scripts: `scripts/rejudge_*.py`, `scripts/gemma9b_*.py`.
+
+## 4. New paper versions (existing drafts unchanged)
+
+`scripts/make_papers_v2.py` writes new files only: `paper_2.0/srw/main_v2.tex`, `paper_2.0/mere/main_v3.tex` (MERe already had a v2), `paper_2.0/main_v2.tex`, `paper_2.0/numbers_v2.tex`, `paper_2.0/numbers_x2.tex`; `scripts/make_figs_v2.py` writes `paper_2.0/figures/fig_{dissociation,steering}_v2.*`. All 55 edits with old and new text: `paper_v2_changes.csv`. X2 is added to the SRW version only. Not compiled (no LaTeX here); page limits not checked. Titles and section 4's heading of SRW are unchanged.
