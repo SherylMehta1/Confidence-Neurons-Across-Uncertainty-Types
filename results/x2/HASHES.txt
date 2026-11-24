@@ -1,0 +1,7 @@
+7ec2da60ac4a5f04060402e1f0b271d499a575acb7a4da8e41837ed854783960  results/x2/x2_plan.md
+9278947a9937bf7d487680a0630fc4c0b16a73cab3d2fd5b6618278f011a9ffc  results/x2/sample.jsonl
+5e32435cc0498f09a3d1891e80cba06a546c23f1345c9811dda49b41d75782bf  scripts/x2_sample.py
+d6fd12ff4a9024ea70fdca6e5274a8cf01815ddbdf2bd004a5db9e2cf0944ed6  scripts/x2_run.py
+b699124870ae1eeb4c00230fb6ae218115ec3af91871a3e1321c0db4f239ae41  scripts/x2_pilot_check.py
+2d50b0ae470f811e822d978b2a7842757c5eb32495fa021776f3d0689aa03d10  scripts/x2_analysis.py
+recorded 2026-11-24T12:21:34Z, before any X2 model run

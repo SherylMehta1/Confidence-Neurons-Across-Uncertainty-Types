@@ -1,0 +1,17 @@
+prop,sampled,in_popqa,pilot,min_per_decile
+author,300,1408,16,30
+capital,300,622,7,30
+capital of,255,255,5,25
+color,34,34,3,3
+composer,300,880,17,30
+country,300,824,5,30
+director,300,1784,10,30
+father,300,562,15,30
+genre,300,1530,15,30
+mother,187,187,10,18
+occupation,300,531,24,30
+place of birth,300,584,14,30
+producer,300,1320,13,30
+religion,300,326,12,30
+screenwriter,300,1671,16,30
+sport,300,547,18,30
