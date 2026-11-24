@@ -1,0 +1,39 @@
+X2: 4376 questions, 16 relations; mean abstention two judges 0.466, regex short 0.551; knowledge bands {'0 of 10 correct': 2673, '9 or 10 of 10': 999, '1 to 8 of 10': 704}
+PRIMARY    two judges                                           both     n 4376 rel 16 | obscurity +3.676 [+2.731, +4.739] knowledge -0.970 [-1.624, -0.419] | predicted 0.205 (popular) to 0.726 (obscure) | not converged 0
+second     regex, 20 short replies                              regex24  n 4376 rel 16 | obscurity +4.410 [+3.319, +5.684] knowledge -1.512 [-2.168, -0.929] | predicted 0.255 (popular) to 0.821 (obscure) | not converged 0
+secondary  deciles 2 to 9 only                                  both     n 3501 rel 16 | obscurity +3.558 [+2.537, +4.739] knowledge -0.910 [-1.553, -0.301] | predicted 0.228 (popular) to 0.722 (obscure) | not converged 0
+secondary  knowledge score as 11 levels                         both     n 4376 rel 16 | obscurity +3.726 [+2.756, +4.817] | predicted 0.203 (popular) to 0.723 (obscure) | not converged 0
+secondary  plus greedy answer correct                           both     n 4376 rel 16 | obscurity +3.675 [+2.721, +4.740] knowledge -1.067 [-2.001, -0.257] | predicted 0.205 (popular) to 0.726 (obscure) | not converged 0
+secondary  without country, capital and sport                   both     n 3476 rel 13 | obscurity +3.418 [+2.462, +4.577] knowledge -1.343 [-1.972, -0.723] | predicted 0.239 (popular) to 0.730 (obscure) | not converged 0
+secondary  deciles 2 to 9 only                                  regex24  n 3501 rel 16 | obscurity +4.150 [+2.994, +5.488] knowledge -1.459 [-2.129, -0.818] | predicted 0.289 (popular) to 0.813 (obscure) | not converged 0
+secondary  knowledge score as 11 levels                         regex24  n 4376 rel 16 | obscurity +4.436 [+3.337, +5.722] | predicted 0.253 (popular) to 0.817 (obscure) | not converged 0
+secondary  plus greedy answer correct                           regex24  n 4376 rel 16 | obscurity +4.407 [+3.318, +5.686] knowledge -1.703 [-2.573, -0.893] | predicted 0.255 (popular) to 0.821 (obscure) | not converged 0
+secondary  without country, capital and sport                   regex24  n 3476 rel 13 | obscurity +4.100 [+2.993, +5.518] knowledge -1.854 [-2.349, -1.297] | predicted 0.291 (popular) to 0.827 (obscure) | not converged 0
+secondary  other abstention measure                             qwen     n 4376 rel 16 | obscurity +3.904 [+2.921, +5.010] knowledge -1.222 [-1.899, -0.630] | predicted 0.231 (popular) to 0.766 (obscure) | not converged 0
+secondary  other abstention measure                             gemma    n 4376 rel 16 | obscurity +3.634 [+2.730, +4.653] knowledge -1.032 [-1.641, -0.541] | predicted 0.211 (popular) to 0.731 (obscure) | not converged 0
+secondary  other abstention measure                             regex96  n 4376 rel 16 | obscurity +4.489 [+3.352, +5.795] knowledge -1.522 [-2.202, -0.922] | predicted 0.254 (popular) to 0.826 (obscure) | not converged 0
+DECISION (primary, obscurity coefficient +3.676 [+2.731, +4.739]): ABOVE ZERO: the popularity effect holds across the range (Llama, PopQA)
+band    0 of 10 correct  1 to 8 of 10  9 or 10 of 10    all
+decile                                                     
+1                 0.764         0.798          0.711  0.762
+2                 0.704         0.818          0.519  0.699
+3                 0.661         0.719          0.463  0.646
+4                 0.646         0.657          0.213  0.601
+5                 0.580         0.610          0.253  0.538
+6                 0.511         0.512          0.175  0.453
+7                 0.464         0.333          0.213  0.375
+8                 0.432         0.355          0.114  0.317
+9                 0.295         0.225          0.084  0.182
+10                0.219         0.089          0.019  0.087
+band    0 of 10 correct  1 to 8 of 10  9 or 10 of 10  all
+decile                                                   
+1                   368            33             38  439
+2                   339            53             45  437
+3                   333            57             49  439
+4                   321            68             47  436
+5                   306            70             62  438
+6                   291            71             76  438
+7                   245            78            114  437
+8                   210            91            137  438
+9                   146            86            206  438
+10                  114            97            225  436

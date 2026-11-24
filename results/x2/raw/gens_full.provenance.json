@@ -1,0 +1,16 @@
+{
+ "model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+ "seconds": 448,
+ "n": 4376,
+ "seed": 0,
+ "revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+ "vllm": "0.34.0",
+ "torch": "2.14.0+cu130",
+ "transformers": "5.22.2",
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "dtype": "bfloat16",
+ "script_sha256": "d6fd12ff4a9024ea70fdca6e5274a8cf01815ddbdf2bd004a5db9e2cf0944ed6",
+ "sample_sha256": "9278947a9937bf7d487680a0630fc4c0b16a73cab3d2fd5b6618278f011a9ffc",
+ "output_sha256": "07bec6f468d06fade2bead2fd295b20e6cc0d299808b03b83b67c41b41292e75",
+ "utc": "2026-11-24T13:21:05.806482+00:00"
+}
