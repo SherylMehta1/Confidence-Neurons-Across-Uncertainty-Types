@@ -1,0 +1,44 @@
+old,new
+"\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrll}
+\toprule
+& $n$ & Two judges & Regex \\","\small\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrll}
+\toprule
+& $n$ & Two judges & Regex \\"
+"\bottomrule
+\end{tabular}
+\caption{Coefficient of obscurity","\bottomrule
+\end{tabular}}
+\caption{Coefficient of obscurity"
+\input{../numbers_x2.tex},"\input{../numbers_x2.tex}
+\input{../numbers_x3.tex}"
+The effect of popularity holds across the whole popularity range (\xtAllN{} further questions).,"The effect of popularity holds across the whole popularity range (\xtAllN{} further questions), and a second model, Gemma-2-9B-it, shows it on the same questions when the prompt invites abstaining."
+because their sizes depend on how the two variables are scaled (Appendix~\ref{app:range}).,"because their sizes depend on how the two variables are scaled (Appendix~\ref{app:range}).
+
+\paragraph{A Second Model.} We repeated this check on Gemma-2-9B-it with the same questions, asked with the prompt that invites abstaining because Gemma rarely says \idk{} without it (Appendix~\ref{app:other}); knowledge is Gemma's own, and the plan was recorded before the run. Obscurity again raises abstention: \gxAll{} \gxAllCI, \gxMid{} \gxMidCI{} without the extreme tenths and \gxAllRegex{} \gxAllRegexCI{} with the regex. Predicted abstention is \gxPredPop{} at the 90th percentile of popularity and \gxPredObs{} at the 10th. The prompts differ between the two models, so the sizes are not comparable. The popularity effect thus holds for Llama-3.1-8B-Instruct and Gemma-2-9B-it on PopQA."
+"We study one model in depth, on one dataset; other models appear only in Figure~\ref{fig:dissociation}c and Appendix~\ref{app:other}.","We study one model in depth and a second in one check, under a prompt that invites abstaining, on one dataset; other models appear only in Figure~\ref{fig:dissociation}c and Appendix~\ref{app:other}."
+"\midrule
+All tenths & \xtAllN &","\midrule
+\multicolumn{4}{l}{\emph{Llama-3.1-8B-Instruct}} \\
+All tenths & \xtAllN &"
+"Knowledge in 11 levels & \xtLevelsN & \xtLevels{} \xtLevelsCI & \xtLevelsRegex{} \xtLevelsRegexCI \\
+","Knowledge in 11 levels & \xtLevelsN & \xtLevels{} \xtLevelsCI & \xtLevelsRegex{} \xtLevelsRegexCI \\
+\midrule
+\multicolumn{4}{l}{\emph{Gemma-2-9B-it, inviting prompt}} \\
+All tenths & \gxAllN & \gxAll{} \gxAllCI & \gxAllRegex{} \gxAllRegexCI \\
+Tenths 2 to 9 & \gxMidN & \gxMid{} \gxMidCI & \gxMidRegex{} \gxMidRegexCI \\
+Without three relations & \gxNoThreeN & \gxNoThree{} \gxNoThreeCI & \gxNoThreeRegex{} \gxNoThreeRegexCI \\
+Knowledge in 11 levels & \gxLevelsN & \gxLevels{} \gxLevelsCI & \gxLevelsRegex{} \gxLevelsRegexCI \\
+"
+With the uncorrected labels of the Gemma judge the first two-judge entry is \xtOld{} \xtOldCI.},With the uncorrected labels of the Gemma judge the first two-judge entry is \xtOld{} \xtOldCI. Gemma: the relation \gxDropped{} (\gxDroppedN{} questions) has no abstention and is dropped from the fits; \gxNoConv{} draws of the 11-level two-judge fit and \gxNoConvRegex{} of the regex fit did not converge and are dropped.}
+"The amendment replaced two pilot checks,","\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{../../results/x3/fig_x3_gradient.pdf}
+\caption{As Figure~\ref{fig:range}, for Gemma-2-9B-it with the prompt that invites abstaining.}
+\label{fig:gemmarange}
+\end{figure}
+
+For Llama, the amendment replaced two pilot checks,"
+The knowledge score and the paper's known/unknown labels come from the same forced-answer prompt and string grader.,"The knowledge score and the paper's known/unknown labels come from the same forced-answer prompt and string grader. The Gemma run used the same questions, judges and analysis and needed no amendment; knowledge lowers abstention there too (\gxKnow{} \gxKnowCI). One judge, Gemma-2-27B, is from the tested model's family; with Qwen alone the obscurity coefficient is \gxQwen{} \gxQwenCI."

@@ -1,0 +1,247 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\graphicspath{{../figures/}}
+\input{../numbers_v2.tex}
+\input{../numbers_x2.tex}
+\input{../numbers_x3.tex}
+
+\newcommand{\idk}{``I don't know''}
+
+\title{Does ``I Don't Know'' Track Knowledge or Popularity?\\Both, but Real-World Questions Cannot Say Which Matters More}
+
+\author{Anonymous}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+When a language model says \idk, we would like that to mean it lacks the fact. We ask whether Llama-3.1-8B-Instruct's \idk{} follows whether it knows a fact or how popular the entity is. We split questions from the PopQA dataset by entity popularity (bottom vs.\ top tenth of Wikipedia page views) and by whether Llama answers them correctly. Popularity matters whether or not Llama knows the fact. On facts it does not know, it says \idk{} in \tcObsUnkAbs{} of replies for obscure entities and \tcPopUnkAbs{} for popular ones; on facts it answers correctly, \tcObsKnownAbs{} and \cPopKnownAbs{}. The effect of popularity holds across the whole popularity range (\xtAllN{} further questions), and a second model, Gemma-2-9B-it, shows it on the same questions when the prompt invites abstaining. Over all questions together, popularity also seems to matter more than knowledge. But the obscure facts Llama knows come almost entirely from three types of fact (capital, country and sport: \rcTopThree{} of \gsObsKnownTotal). Comparing within a single type of fact, possible for country, composer and sport, gives no single answer: popularity matters more for country and less for the two smaller types. Questions about real entities therefore cannot settle which factor matters more. Tests of the model's internals do not show that a sense of familiarity explains the popularity effect. So \idk{} depends on popularity as well as knowledge, and evaluations that read it as a report of missing knowledge should compare questions within the same type of fact and across popularity levels.
+\end{abstract}
+
+\section{Introduction}
+
+Saying \idk{} when a fact is missing, instead of guessing, avoids a common source of hallucination \citep{kalai2025hallucinate}. Evaluations often read it that way, as a report that the model lacks the fact. Whether that reading holds depends on what the statement responds to. Model confidence is usually measured from the model's answers \citep{kadavath2022know,kuhn2023semantic}, but what a model says about its uncertainty and what its answers show can diverge \citep{ji2025hedging}.
+
+One alternative is familiarity with the entity asked about. In people, the feeling of being able to answer depends on how familiar a question's terms are, not only on whether the answer can be retrieved \citep{reder1992,koriat2001cascade}. In language models, internal signals that fire for entities the model knows suppress a default ``can't answer'' response, and \citet{lindsey2025biology} propose that a familiar name can trigger them when the fact is missing. If so, \idk{} should depend on familiarity separately from knowledge. The account also makes a sharper prediction. Where familiarity and knowledge disagree, abstention should follow familiarity: models should rarely abstain on familiar entities whose facts they lack, and often on unfamiliar entities whose facts they know.
+
+Testing this requires separating familiarity from knowledge, which usually move together: an entity counts as known when the model answers about it correctly \citep{ferrando2025iknow}. We use Wikipedia page views as a measurable stand-in for familiarity and cross them with knowledge taken from the model's own answers. We answer three questions in order: does popularity affect \idk{} (Section~\ref{sec:main}); does it matter more than knowledge, as the sharper prediction says (Section~\ref{sec:relations}); and does a sense of familiarity inside the model explain the popularity effect (Section~\ref{sec:mech})?
+
+\paragraph{Main Contributions.}
+\begin{enumerate}
+\item \textbf{Popularity Affects Abstention at Both Knowledge Levels:} in Llama-3.1-8B-Instruct, obscure entities draw more \idk{} replies whether or not the model knows the fact (within relations, the known-fact part rests mainly on one relation).
+\item \textbf{Real-World Questions Cannot Say Which Factor Matters More:} over all questions, popularity seems to outweigh knowledge, but obscure known facts cluster in a few types of fact, and within types the comparison goes both ways.
+\item \textbf{No Familiarity Explanation Found:} recognition, steering and lens tests do not show that familiarity explains the popularity effect.
+\end{enumerate}
+
+\section{Design}
+\label{sec:setup}
+
+\paragraph{Questions \& Labels.} PopQA \citep{mallen2023popqa} groups its questions into 16 \emph{relations}, each a type of fact, such as a country's capital or an athlete's sport. Within each relation, subjects in the bottom and top tenth of page views form the \emph{obscure} and \emph{popular} groups. Knowledge comes from Llama's own answers, adapting \citet{gekhman2024slick}. We prompt with the chat template plus the start of the reply ``The answer is'' (the \emph{forced-answer prompt}), and grade a greedy answer and ten samples ($T=0.7$) against the gold answers. A fact is \emph{known} if the greedy answer and at least 9 samples are correct, and \emph{unknown} if neither the greedy answer nor any sample is. This leaves \faLlamaN{} questions.
+
+\paragraph{Abstention.} We ask each question with the chat template alone (the \emph{free prompt}). For up to 100 questions in each of the four popularity $\times$ knowledge cells (\hmLlamaItems{} in total), we draw three replies ($T=0.7$, up to 96 tokens). A reply counts as \idk{} when two LLM judges (Qwen2.5-32B-Instruct, Gemma-2-27B-it) both label it so. Their agreement, Cohen's $\kappa=\hmLlamaKappa$ \lkKappaCI, is above our pre-specified bar of \kappaBar{} across the whole interval. (These labels correct an earlier faulty run of the Gemma judge; Appendix~\ref{app:judge}.) As a second measure covering every question, a regex detector scores 20 short replies (up to 24 tokens) for each of the \faLlamaN{} questions. Neither measure is validated against human labels.
+
+\paragraph{Effects.} The \emph{popularity effect} is obscure minus popular abstention, averaged over the two knowledge levels; the \emph{knowledge effect} is unknown minus known, averaged over the two popularity levels. Both are positive when obscurity or missing knowledge raises abstention. Their difference is the \emph{popularity margin}: positive when abstention follows popularity more than knowledge. Intervals are 95\% bootstrap intervals from resampling questions within each cell. Each analysis followed a plan written before it ran, except those marked \emph{post hoc} (chosen after seeing data). The primary measure was itself adopted after an earlier measure was seen (Appendix~\ref{app:robust}).
+
+\section{Popularity Affects Abstention at Both Knowledge Levels}
+\label{sec:main}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{fig_dissociation_v2.pdf}
+\caption{\textbf{In Llama, abstention falls with popularity at both knowledge levels; answer entropy, a control, follows knowledge much more than popularity.} (a) Share of free replies both judges label \idk; (b) entropy of the first answer token after ``The answer is''; (c) popularity and knowledge effects on that entropy in four instruct models. 95\% bootstrap intervals.}
+\label{fig:dissociation}
+\end{figure*}
+
+Table~\ref{tab:cells} and Figure~\ref{fig:dissociation}a give the four cells. Among facts Llama does not know, it says \idk{} in \tcObsUnkAbs{} of replies on obscure entities and \tcPopUnkAbs{} on popular ones, a gap of \rcUnk{} \rcUnkCI{} (post hoc). The gap shrinks to \rcUnkJoint{} \rcUnkJointCI{} after three corrections to the knowledge labels (Appendix~\ref{app:robust}; post hoc) but stays positive. Among facts it answers correctly, the rate is \tcObsKnownAbs{} on obscure entities and, by the judges, \cPopKnownAbs{} (one of 300 sampled replies) on popular ones. These are genuine declines rather than hidden answers: at most \lcDKAliasMax{} of \idk{} replies in any cell contain the gold answer (post hoc, not counting answers that merely repeat the subject's name).
+
+As a control, we measure how unsure Llama is of its answer: the entropy of the first answer token after ``The answer is''. It follows knowledge much more than popularity (Figure~\ref{fig:dissociation}b; panel c shows the same in four instruct models). In the two known cells it is similar (\tcObsKnownEnt{} vs.\ \tcPopKnownEnt{} nats), so the gap between them is not explained by how sure Llama is of its answer.
+
+\begin{table}[t]
+\centering
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{Obscure} & \multicolumn{2}{c}{Popular} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+& known & unknown & known & unknown \\
+\midrule
+Says \idk{} & \tcObsKnownAbs & \tcObsUnkAbs & \tcPopKnownAbs & \tcPopUnkAbs \\
+Questions & \tcObsKnownAbsN & \tcObsUnkAbsN & \tcPopKnownAbsN & \tcPopUnkAbsN \\
+Entropy (nats) & \tcObsKnownEnt & \tcObsUnkEnt & \tcPopKnownEnt & \tcPopUnkEnt \\
+\bottomrule
+\end{tabular}
+\caption{Llama-3.1-8B-Instruct by cell: share of free replies both judges label \idk, and first-answer-token entropy (intervals in Appendix~\ref{app:robust}).}
+\label{tab:cells}
+\end{table}
+
+\paragraph{The Whole Popularity Range.} The design so far compares the extreme tenths. We therefore drew up to 300 questions per relation, spread evenly over the ten popularity tenths within it (\xtAllN{} questions, all \xtRel{} relations; four have fewer than 300), and regressed abstention on popularity rank and a knowledge score, the share of ten forced answers that are correct, with relation fixed effects (fractional logit; the plan was recorded before the run, with one dated amendment). Obscurity raises abstention: from the most to the least viewed question of a relation the coefficient is \xtAll{} \xtAllCI{} (relations resampled). Averaged over all questions, predicted abstention is \xtPredPop{} at the 90th percentile of popularity and \xtPredObs{} at the 10th. The coefficient is \xtMid{} \xtMidCI{} without the extreme tenths, \xtNoThree{} \xtNoThreeCI{} without country, capital and sport, and \xtAllRegex{} \xtAllRegexCI{} with the regex. Knowledge lowers abstention (\xtKnow{} \xtKnowCI); we do not rank the two coefficients, because their sizes depend on how the two variables are scaled (Appendix~\ref{app:range}).
+
+\paragraph{A Second Model.} We repeated this check on Gemma-2-9B-it with the same questions, asked with the prompt that invites abstaining because Gemma rarely says \idk{} without it (Appendix~\ref{app:other}); knowledge is Gemma's own, and the plan was recorded before the run. Obscurity again raises abstention: \gxAll{} \gxAllCI, \gxMid{} \gxMidCI{} without the extreme tenths and \gxAllRegex{} \gxAllRegexCI{} with the regex. Predicted abstention is \gxPredPop{} at the 90th percentile of popularity and \gxPredObs{} at the 10th. The prompts differ between the two models, so the sizes are not comparable. The popularity effect thus holds for Llama-3.1-8B-Instruct and Gemma-2-9B-it on PopQA.
+
+So popularity affects when Llama says \idk. Because obscure known facts cluster in a few relations, the next section checks this within relations, as part of asking how popularity compares with knowledge.
+
+\section{Over All Questions, Popularity Seems to Outweigh Knowledge; Within Relations the Answer Differs}
+\label{sec:relations}
+
+Over all questions together, the popularity effect on abstention is \hmLlamaPopEff{} \hmLlamaPopEffCI{} and the knowledge effect \hmLlamaKnowEff{} \hmLlamaKnowEffCI, a popularity margin of \hmLlamaDiff{} \hmLlamaDiffCI. The margin stays positive under other judges and labels, though it shrinks under some (Table~\ref{tab:robust}). It repeats with fresh replies (\frDiff{} \frDiffCI). Llama might guess some obscure facts from the name alone, so we removed those it still answers when the name is misspelled; the margin is then \ncDiff{} \ncDiffCI. When the prompt invites abstaining, Gemma-2-9B, Qwen2.5-7B and Mistral-7B also give positive margins and OLMo-2-7B does not (Appendix~\ref{app:other}).
+
+Yet the margin compares cells that hold different kinds of question. In this design it equals abstention on obscure known facts minus abstention on popular unknown facts, because the other two cells cancel. Llama knows few obscure facts: \rcTopThree{} of the \gsObsKnownTotal{} come from three relations (capital, country, sport), while only \msInUnkN{} of the 100 popular unknown questions do. Outside those three relations the margin is \msOutDiff{} \msOutDiffCI, from only \msOutKnownN{} obscure known facts (post hoc). If whole relations, rather than questions, are resampled, the interval for the overall margin widens to \rcClusCI.
+
+\begin{table}[t]
+\centering
+\footnotesize\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+Difference in abstention & All & Within relations \\
+\midrule
+Obscure $-$ popular, known & \wrPooledPopKnown & \wrPopKnown{} \wrPopKnownCI \\
+Obscure $-$ popular, unknown & \wrPooledPopUnk & \wrPopUnk{} \wrPopUnkCI \\
+Unknown $-$ known, obscure & \wrPooledKnowObs & \wrKnowObs{} \wrKnowObsCI \\
+Unknown $-$ known, popular & \wrPooledKnowPop & \wrKnowPop{} \wrKnowPopCI \\
+\midrule
+Popularity margin & \wrPooledPref & \wrPref{} \wrPrefCI \\
+\bottomrule
+\end{tabular}}
+\caption{Holding the relation fixed, regex measure on all \faLlamaN{} labeled questions. All: every relation together. Within: mean over the three relations with at least 3 questions in every cell (country, composer, sport), resampling questions within relation and cell. Post hoc.}
+\label{tab:within}
+\end{table}
+
+To compare the factors directly, we hold the relation fixed (Table~\ref{tab:within}). Only the regex measure covers enough questions for this; on it, the margin over all questions is \wrPooledPref, close to the judges' \hmLlamaDiff. Only three relations have at least three questions in every cell: country, composer and sport. They overlap with, but are not the same as, the three that hold most obscure known facts. Averaged over them, popularity and knowledge have similar effects, and the margin is \wrPref{} \wrPrefCI. The average hides opposite results. In country, the only relation with at least ten questions in every cell and home to most obscure known facts, the margin is \wrCountry{} (a point estimate), larger than over all questions. In composer and sport, whose obscure known cells are tiny, it is \wrComposer{} and \wrSport. Popularity's effect on known facts within relations also comes almost entirely from country.
+
+So the overall margin mixes relations, and holding the relation fixed does not give one answer. Questions about real entities cannot settle whether popularity outweighs knowledge, because the questions that would decide it, obscure facts the model knows, exist in only a few relations. What they do show is that popularity matters alongside knowledge. That leaves the question of what the popularity effect is.
+
+\section{No Familiarity Signal Found to Explain the Popularity Effect}
+\label{sec:mech}
+
+If the popularity effect is familiarity, Llama should register obscure names as unfamiliar, and that signal should account for the effect. We test this three ways.
+
+\paragraph{Recognition.} We asked Llama to describe each entity, and Llama-3.3-70B graded the description against Wikidata. Recognition rises with page views (rank correlation \ekRho; among unknown facts \mcObsUnkRec{} obscure vs.\ \mcPopUnkRec{} popular), so Llama does register obscure names as less familiar. But controlling for recognition reduces the popularity effect on abstention by only \ekShrink.
+
+\paragraph{Steering.} We added fixed vectors to the model's hidden states \citep{arditi2024refusal}. The vector from popular toward obscure questions raises abstention, but it points almost the same way as a vector that triggers abstention, fitted on popular questions alone (cosine similarity \gaCos). After subtracting that shared part, it raises abstention by only \gaPerp{} \gaPerpCI{} more than random vectors (Appendix~\ref{app:other}). Such steering effects do not show that a model uses a signal in normal operation \citep{che2026steering}, so this neither shows nor rules out a familiarity signal earlier in the model.
+
+\paragraph{Lens.} Reading out the middle layers of four base models with Jacobian lenses \citep{gurnee2026workspace} shows obscurity and missing knowledge both raising the score of hedging words such as ``not'' and ``unknown'' (Appendix~\ref{app:other}). This shows both factors at work but does not show where the instruct model's behavior arises.
+
+So Llama registers obscure names as less familiar, but none of the three tests shows that this explains the popularity effect.
+
+\section{Conclusion}
+
+We asked whether Llama's \idk{} follows knowledge or popularity. It follows both: obscurity raises abstention whether or not the model knows the fact (within relations, for known facts, mainly in one relation), and so does missing knowledge. Which matters more cannot be settled with questions about real entities. The overall answer, popularity, compares obscure facts in a few relations with popular facts in others, and within relations the answer differs, because obscure facts a model knows are rare outside a few types of fact. Llama does register obscure names as less familiar, but that signal does not explain the popularity effect, and page views also carry other properties of names, so the effect's cause remains to be shown. Both open points call for the same design: assigning familiarity and knowledge at random, for example by training on invented entities. For evaluation, the practical point is that Llama's abstention rate measures more than missing knowledge, and it should be compared within relations and across popularity levels.
+
+\section*{Limitations}
+
+We study one model in depth and a second in one check, under a prompt that invites abstaining, on one dataset; other models appear only in Figure~\ref{fig:dissociation}c and Appendix~\ref{app:other}. Abstention is scored by LLM judges and a regex, neither validated against human labels, and their errors could differ by cell. Knowledge labels come from a single forced-answer prompt and transfer imperfectly to other prompts. The within-relation comparison rests on three relations (country, composer, sport) with small cells and on the regex measure. The main design contrasts the extreme tenths of popularity; the whole-range check is a regression in which knowledge is graded by string match. Judge agreement is agreement between two LLMs. Several analyses were chosen after seeing data and are marked post hoc. Page views stand in for familiarity and also carry other properties of names.
+
+\bibliography{../references}
+
+\appendix
+
+\section{Robustness of the Overall Margin}
+\label{app:robust}
+
+\begin{table}[h]
+\centering
+\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{4.3cm}l}
+\toprule
+Variant & Margin \\
+\midrule
+Two judges (primary; adopted post hoc) & \hmLlamaDiff{} \hmLlamaDiffCI \\
+Three judges, majority & \tjLlamaDiff{} \tjLlamaDiffCI \\
+Regex on the judged replies (post hoc) & \hmLlamaRegexDiff{} \hmLlamaRegexDiffCI \\
+One judge, corrected & \hjLlamaDiff{} \hjLlamaDiffCI \\
+Fresh replies & \frDiff{} \frDiffCI \\
+New questions, 10th--30th vs.\ 70th--90th percentile & \nqDiff{} \nqDiffCI \\
+Name-guessable facts removed & \ncDiff{} \ncDiffCI \\
+Unknown facts regraded by meaning & \seDiff{} \seDiffCI \\
+Three label corrections (post hoc) & \rcJoint{} \rcJointCI \\
+\bottomrule
+\end{tabular}
+\caption{Llama's overall popularity margin under other measures and labels. The primary two-judge measure was adopted after the corrected one-judge measure (\hjLlamaDiff) was seen. After the three label corrections, the unknown-fact gap is \rcUnkJoint{} \rcUnkJointCI. Cell intervals for Table~\ref{tab:cells}: obscure known \tcObsKnownAbsCI, obscure unknown \tcObsUnkAbsCI, popular known \tcPopKnownAbsCI, popular unknown \tcPopUnkAbsCI.}
+\label{tab:robust}
+\end{table}
+
+\section{Correction of One Judge}
+\label{app:judge}
+
+The labels of the Gemma-2-27B judge in an earlier version of this paper came from an incorrect forward pass: the default attention implementation of the transformers library (sdpa) omits the attention soft-capping that Gemma-2 uses. We found this in a later experiment, after the results above had been seen, so the correction is post hoc. The stored labels are reproduced exactly with that implementation; with eager attention, and with vLLM, the labels agree with each other on all 1{,}161 Llama replies and differ from the stored ones. We relabeled all \cRejudged{} stored replies with the same prompt and parser and kept the rule that both judges must say DONT\_KNOW. The two-judge agreement on Llama rose from $\kappa=\asPrintedKappa$ to \hmLlamaKappa{}, the margin from \asPrintedMargin{} \asPrintedMarginCI{} to \hmLlamaDiff{} \hmLlamaDiffCI, and the unknown-fact gap from \asPrintedUnk{} \asPrintedUnkCI{} to \rcUnk{} \rcUnkCI{} (after the label corrections, from \asPrintedUnkJoint{} \asPrintedUnkJointCI{} to \rcUnkJoint{} \rcUnkJointCI). Agreement between two LLM judges is not validation against people. Gemma-2-9B as a tested model was run with the same implementation; on 300 questions its forced answers were equally correct and its entropies nearly identical ($r=0.999$) with the correct one. Its steering and lens runs were not rerun.
+
+\section{The Whole Popularity Range}
+\label{app:range}
+
+\begin{table}[h]
+\centering
+\small\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrll}
+\toprule
+& $n$ & Two judges & Regex \\
+\midrule
+\multicolumn{4}{l}{\emph{Llama-3.1-8B-Instruct}} \\
+All tenths & \xtAllN & \xtAll{} \xtAllCI & \xtAllRegex{} \xtAllRegexCI \\
+Tenths 2 to 9 & \xtMidN & \xtMid{} \xtMidCI & \xtMidRegex{} \xtMidRegexCI \\
+Without three relations & \xtNoThreeN & \xtNoThree{} \xtNoThreeCI & \xtNoThreeRegex{} \xtNoThreeRegexCI \\
+Knowledge in 11 levels & \xtLevelsN & \xtLevels{} \xtLevelsCI & \xtLevelsRegex{} \xtLevelsRegexCI \\
+\midrule
+\multicolumn{4}{l}{\emph{Gemma-2-9B-it, inviting prompt}} \\
+All tenths & \gxAllN & \gxAll{} \gxAllCI & \gxAllRegex{} \gxAllRegexCI \\
+Tenths 2 to 9 & \gxMidN & \gxMid{} \gxMidCI & \gxMidRegex{} \gxMidRegexCI \\
+Without three relations & \gxNoThreeN & \gxNoThree{} \gxNoThreeCI & \gxNoThreeRegex{} \gxNoThreeRegexCI \\
+Knowledge in 11 levels & \gxLevelsN & \gxLevels{} \gxLevelsCI & \gxLevelsRegex{} \gxLevelsRegexCI \\
+\bottomrule
+\end{tabular}}
+\caption{Coefficient of obscurity (0 for the most viewed question of a relation, 1 for the least viewed) on abstention, with the knowledge score and relation fixed effects; fractional logit, 95\% intervals resampling whole relations (5,000 draws). Three relations: country, capital, sport. With the uncorrected labels of the Gemma judge the first two-judge entry is \xtOld{} \xtOldCI. Gemma: the relation \gxDropped{} (\gxDroppedN{} questions) has no abstention and is dropped from the fits; \gxNoConv{} draws of the 11-level two-judge fit and \gxNoConvRegex{} of the regex fit did not converge and are dropped.}
+\label{tab:range}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{../../results/x2/fig_x2_gradient.pdf}
+\caption{Share of \idk{} replies by popularity tenth, for questions with 0, 1 to 8, and 9 or 10 of 10 forced answers correct. 95\% intervals resample questions.}
+\label{fig:range}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{../../results/x3/fig_x3_gradient.pdf}
+\caption{As Figure~\ref{fig:range}, for Gemma-2-9B-it with the prompt that invites abstaining.}
+\label{fig:gemmarange}
+\end{figure}
+
+For Llama, the amendment replaced two pilot checks, after the pilot and before the full run, when the pilot revealed the judge fault (Appendix~\ref{app:judge}); sample, prompts, model and decision rules were unchanged. Replies were generated with vLLM. The knowledge score and the paper's known/unknown labels come from the same forced-answer prompt and string grader. The Gemma run used the same questions, judges and analysis and needed no amendment; knowledge lowers abstention there too (\gxKnow{} \gxKnowCI). One judge, Gemma-2-27B, is from the tested model's family; with Qwen alone the obscurity coefficient is \gxQwen{} \gxQwenCI.
+
+\section{Other Models, Steering and Lens}
+\label{app:other}
+
+\paragraph{Other models.} On the free prompt, Qwen2.5-7B, Gemma-2-9B and Mistral-7B rarely say \idk{} by the judges' labels; three judges agree on Gemma and Mistral (Fleiss $\kappa=\tjGemmaKappa$ and \tjMistralKappa) and fall just short of the bar on Qwen (\tjQwenKappa). Ending each question with ``If you do not know the answer, say that you do not know'' raises abstention. Three judges then agree on all five models (Fleiss $\kappa$: Llama \pmLlamaKappa, Gemma \pmGemmaKappa, Qwen \pmQwenKappa, Mistral \pmMistralKappa, OLMo-2-7B \pmOlmoKappa). The margins are \pmLlamaDiff{} \pmLlamaDiffCI{} for Llama, \pmGemmaDiff{} \pmGemmaDiffCI{} for Gemma, \pmQwenDiff{} \pmQwenDiffCI{} for Qwen and \pmMistralDiff{} \pmMistralDiffCI{} for Mistral; for OLMo-2-7B the interval includes zero (\pmOlmoDiff{} \pmOlmoDiffCI).
+
+\paragraph{Steering.} Vectors were fitted on half of the questions at layer round$(0.55(L-1))$ and the last position of the free prompt; the strength was chosen on a second set of popular known questions, and effects were scored on a third by a majority of three judges. The abstention vector was fitted on \gaHi{} abstaining against \gaLo{} answering popular questions. Compared with 20 random vectors, the abstention vector itself raises abstention by \gaAbst{} \gaAbstCI, and the popular-to-obscure vector by \gaFam{} \gaFamCI.
+
+\paragraph{Lens.} Effects at middle layers in base models (95\% intervals): the full readout compares hedging words with answer-opening words; the hedge term counts hedging words alone.
+
+\begin{table}[h]
+\centering
+\scriptsize\setlength{\tabcolsep}{2pt}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{Full readout} & \multicolumn{2}{c}{Hedge term} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Model & Obscurity & Not knowing & Obscurity & Not knowing \\
+\midrule
+\lwRows
+\bottomrule
+\end{tabular}}
+\caption{Lens effects in base models. Lenses are fitted per model, so compare within a model.}
+\label{tab:lens}
+\end{table}
+
+\end{document}
