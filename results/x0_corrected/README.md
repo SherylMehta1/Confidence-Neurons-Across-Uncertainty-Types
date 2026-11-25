@@ -1,4 +1,4 @@
-# X0 with corrected Gemma-27B labels (re-frozen 24 Nov 2026, branch arr-x2)
+# X0 with corrected Gemma-27B labels (re-frozen 24 Nov 2026, branch arr-v2)
 
 These numbers supersede `results/x0/`, which is kept unchanged as the record of the paper as printed. Only the Gemma-2-27B judge labels changed (soft-capping on; see `../rejudge_gemma/README.md`); the two-judge rule and every script, seed and draw count are the same.
 Rebuild: `sh results/x0_corrected/run_all.sh <python> <empty scratch dir>` (about 2.5 min; needs scipy and torch). It builds a shadow repo with corrected labels, regenerates the repo's summaries there, and runs the X0 scripts on it. Run with the old labels, the same pipeline reproduces `results/x0/` (all numbers).

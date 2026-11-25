@@ -1,4 +1,4 @@
-# Gemma judge: re-judging of all stored replies, and the Gemma-2-9B check (24 Nov 2026, branch arr-x2)
+# Gemma judge: re-judging of all stored replies, and the Gemma-2-9B check (24 Nov 2026, branch arr-v2)
 
 ## 1. Re-judging
 

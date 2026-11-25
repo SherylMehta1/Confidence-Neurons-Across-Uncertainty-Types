@@ -1,4 +1,4 @@
-# X2 results (run 24 Nov 2026, branch arr-x2)
+# X2 results (run 24 Nov 2026, branch arr-v2)
 
 Plan: `x2_plan.md` (committed 45d74be before any run). Amendment: `x2_amendment_1.md` (committed 87fa209 after the pilot, before the full run). Hashes: `HASHES.txt`.
 Sample 4,376 PopQA questions (all 16 relations, up to 30 per within-relation popularity decile), Llama-3.1-8B-Instruct, vLLM 0.34.0. Not the 5,000 of the draft: four relations have fewer than 300 questions.

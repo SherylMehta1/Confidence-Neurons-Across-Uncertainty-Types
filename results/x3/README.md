@@ -1,4 +1,4 @@
-# X3 results: the X2 test on Gemma-2-9B-it (run 25 Nov 2026, branch arr-x3)
+# X3 results: the X2 test on Gemma-2-9B-it (run 25 Nov 2026, branch arr-v2)
 
 Plan: `x3_plan.md` (commit ce22206, 04:44 UTC, before any run; hashes in `HASHES.txt`). No amendment. Same 4,376 questions as X2, the paper's permissive prompt, vLLM 0.34.0 (correct Gemma-2 attention), judges Qwen2.5-32B and Gemma-2-27B (correct attention). Analysis: the hashed `scripts/x2_analysis.py`, unchanged (`scripts/x3_analysis.py` swaps folders and names only).
 
