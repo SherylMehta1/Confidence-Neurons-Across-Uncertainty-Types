@@ -1,0 +1,16 @@
+check,value,rule,passed
+questions with all outputs,200,= 200,True
+empty 96-token replies,0,= 0,True
+qwen32b: missing labels,0,= 0,True
+qwen32b: empty judge outputs,0,= 0,True
+qwen32b: off-format share,0.0,<= 0.01,True
+gemma27b: missing labels,0,= 0,True
+gemma27b: empty judge outputs,0,= 0,True
+gemma27b: off-format share,0.0,<= 0.01,True
+greedy correctness equals the stored one (n=40),1.0,>= 0.95,True
+information only: correlation of knowledge score with the stored share correct,0.986,report,True
+two-judge abstention,0.3467,0.05 to 0.95,True
+two-judge kappa,"0.796 [0.726, 0.862]",>= 0.60,True
+"qwen32b: DONT_KNOW labels equal the reference on the paper's 1,161 Llama replies (stored)",1.0,>= 0.95,True
+"gemma27b: DONT_KNOW labels equal the reference on the paper's 1,161 Llama replies (eager)",1.0,>= 0.95,True
+"information only: regex rate, 20 short replies",0.4485,report,True

@@ -1,0 +1,600 @@
+{"key": "author::Eclipse", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Eclipse", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Eclipse", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Bed", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Bed", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Bed", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Hello Sailor", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Hello Sailor", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Hello Sailor", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Way Up High", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Way Up High", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Way Up High", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Far Out", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Far Out", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "author::Far Out", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::The Interruption of Everything", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Interruption of Everything", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Interruption of Everything", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Home Free!", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Home Free!", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Home Free!", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Society", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Society", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Society", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Real World", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Real World", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Real World", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::The Lagoon", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Lagoon", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Lagoon", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Hand That First Held Mine", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Hand That First Held Mine", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Hand That First Held Mine", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Little Things", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Little Things", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::Little Things", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "author::The Task", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Task", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Task", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Buddha", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Buddha", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Buddha", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Will to Power", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Will to Power", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::The Will to Power", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Enchiridion of Epictetus", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Enchiridion of Epictetus", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "author::Enchiridion of Epictetus", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Gmina Secemin", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "capital::Gmina Secemin", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "capital::Gmina Secemin", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "capital::Atenas, Alajuela, Costa Rica", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Atenas, Alajuela, Costa Rica", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Atenas, Alajuela, Costa Rica", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Hodh Ech Chargui Region", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Hodh Ech Chargui Region", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Hodh Ech Chargui Region", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::McDowell County", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::McDowell County", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::McDowell County", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::County Durham", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::County Durham", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::County Durham", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Montserrat", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Montserrat", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Montserrat", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Saudi Arabia", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Saudi Arabia", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital::Saudi Arabia", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Howard", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Howard", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Howard", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::H\u00f8jby", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::H\u00f8jby", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "capital of::H\u00f8jby", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "capital of::Archer City", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Archer City", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Archer City", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Elizabeth", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "capital of::Elizabeth", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Elizabeth", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Milan", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Milan", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "capital of::Milan", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::Rotherham United F.C.", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::Rotherham United F.C.", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::Rotherham United F.C.", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::AFC Bournemouth", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::AFC Bournemouth", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::AFC Bournemouth", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::Sheffield United F.C.", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::Sheffield United F.C.", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "color::Sheffield United F.C.", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Hope", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "composer::The Hope", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Hope", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::That's What Love Is Made Of", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::That's What Love Is Made Of", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "composer::That's What Love Is Made Of", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Nun komm, der Heiden Heiland, BWV 62", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Nun komm, der Heiden Heiland, BWV 62", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Nun komm, der Heiden Heiland, BWV 62", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Milan", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Milan", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Milan", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Aa Divasam", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "composer::Aa Divasam", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "composer::Aa Divasam", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "composer::Dham", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Dham", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Dham", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Piano Trio", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Piano Trio", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Piano Trio", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Flower", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::Flower", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Flower", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::The Split", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::The Split", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "composer::The Split", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "composer::Abominable", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Abominable", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Abominable", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Cardinal", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Cardinal", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Cardinal", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Fog of War", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Fog of War", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::The Fog of War", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Manhattan", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Manhattan", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Manhattan", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Minnale", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Minnale", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Minnale", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Imagine", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Imagine", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Imagine", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Halloween", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Halloween", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Halloween", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Toy Story", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Toy Story", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "composer::Toy Story", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Cham Karim", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "country::Cham Karim", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "country::Cham Karim", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "country::Chot\u00fd\u010dany", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Chot\u00fd\u010dany", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Chot\u00fd\u010dany", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Mayville", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "country::Mayville", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "country::Mayville", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "country::Moon", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Moon", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Moon", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Carson River", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Carson River", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "country::Carson River", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::Lovely", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Lovely", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Lovely", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Superstar", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::Superstar", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::Superstar", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::A Woman", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "director::A Woman", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "director::A Woman", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "director::Like You Know It All", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Like You Know It All", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Like You Know It All", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Crave", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Crave", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Crave", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Salvage", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Salvage", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "director::Salvage", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Priceless", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "director::Priceless", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::Priceless", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::Style", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "director::Style", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "director::Style", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "director::The Adventures of Pluto Nash", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::The Adventures of Pluto Nash", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::The Adventures of Pluto Nash", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::My Own Private Idaho", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::My Own Private Idaho", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "director::My Own Private Idaho", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Dance in the Dark", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Dance in the Dark", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Dance in the Dark", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Clemente Palma", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Clemente Palma", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Clemente Palma", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Pierre Joxe", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Pierre Joxe", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Pierre Joxe", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Jayappa Scindia", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Jayappa Scindia", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Jayappa Scindia", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Hooge", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "father::Hooge", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "father::Hooge", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "father::Jitendra Narayan", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Jitendra Narayan", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Jitendra Narayan", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Tiridates III of Armenia", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Tiridates III of Armenia", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Tiridates III of Armenia", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Naphtali", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Naphtali", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Naphtali", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Dan", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Dan", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "father::Dan", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Tamar", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Tamar", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Tamar", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Rajshree", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Rajshree", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Rajshree", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "father::Rahul Bhatt", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Rahul Bhatt", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Rahul Bhatt", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Hel", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Hel", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Hel", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Tyr", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Tyr", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Tyr", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Vision", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Vision", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "father::Vision", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Tempting The Gods: The Selected Stories of Tanith Lee, Volume 1", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Tempting The Gods: The Selected Stories of Tanith Lee, Volume 1", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Tempting The Gods: The Selected Stories of Tanith Lee, Volume 1", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "genre::June", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::June", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::June", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::The Body", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Body", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Body", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Jun", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::Jun", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "genre::Jun", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::Chambers", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Chambers", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Chambers", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Governor", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Governor", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Governor", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Once", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Once", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::The Once", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Liquid", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Liquid", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Liquid", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::A State of Mind", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "genre::A State of Mind", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "genre::A State of Mind", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "genre::Mary's Child", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "genre::Mary's Child", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "genre::Mary's Child", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::The Legacy", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::The Legacy", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::The Legacy", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::Accused", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Accused", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Accused", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Yield", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Yield", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "genre::Yield", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Up All Night", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Up All Night", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Up All Night", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Milk", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Milk", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "genre::Milk", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Signe Hebbe", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "mother::Signe Hebbe", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "mother::Signe Hebbe", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "mother::Maria Alekseyevna of Russia", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Maria Alekseyevna of Russia", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Maria Alekseyevna of Russia", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Hethum II, King of Armenia", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "mother::Hethum II, King of Armenia", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "mother::Hethum II, King of Armenia", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "mother::Alexandros II of Epirus", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Alexandros II of Epirus", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Alexandros II of Epirus", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Amenhotep I", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Amenhotep I", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Amenhotep I", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Isabel Neville, Duchess of Clarence", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Isabel Neville, Duchess of Clarence", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Isabel Neville, Duchess of Clarence", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Mao Anqing", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Mao Anqing", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Mao Anqing", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Menelaus", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Menelaus", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Menelaus", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Charles V, Holy Roman Emperor", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Charles V, Holy Roman Emperor", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Charles V, Holy Roman Emperor", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Al\u012b ibn Ab\u012b \u1e6c\u0101lib", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Al\u012b ibn Ab\u012b \u1e6c\u0101lib", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "mother::Al\u012b ibn Ab\u012b \u1e6c\u0101lib", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Elvin Penner", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Elvin Penner", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Elvin Penner", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Edward Norton", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Edward Norton", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Edward Norton", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Augustine Steward", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Augustine Steward", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Augustine Steward", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::George Rankin", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::George Rankin", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::George Rankin", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Maev-Ann Wren", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Maev-Ann Wren", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Maev-Ann Wren", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Ya'akov Ahimeir", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Ya'akov Ahimeir", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Ya'akov Ahimeir", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Jacob Kraemer", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Jacob Kraemer", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Jacob Kraemer", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::John Floyd", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::John Floyd", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::John Floyd", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Charlotte von Hagn", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Charlotte von Hagn", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Charlotte von Hagn", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Frequency", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "occupation::Frequency", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Frequency", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Sarah Dawn Finer", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Sarah Dawn Finer", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Sarah Dawn Finer", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::William Molyneux", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::William Molyneux", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::William Molyneux", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Lord George Hamilton", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Lord George Hamilton", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Lord George Hamilton", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Henry Tizard", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Henry Tizard", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Henry Tizard", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Lisa McRee", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Lisa McRee", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Lisa McRee", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Galina Starovoytova", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Galina Starovoytova", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Galina Starovoytova", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::William Murray, 1st Earl of Mansfield", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::William Murray, 1st Earl of Mansfield", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::William Murray, 1st Earl of Mansfield", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Reinhold Mack", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Reinhold Mack", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Reinhold Mack", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Mohamed Bazoum", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Mohamed Bazoum", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Mohamed Bazoum", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Eric Flynn", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Eric Flynn", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Eric Flynn", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "occupation::Brigitte Bardot", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Brigitte Bardot", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Brigitte Bardot", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Leigh Whannell", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Leigh Whannell", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Leigh Whannell", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Donald Trump", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Donald Trump", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Donald Trump", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Mark T. Vande Hei", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Mark T. Vande Hei", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "occupation::Mark T. Vande Hei", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Gustavo Grondona", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Gustavo Grondona", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Gustavo Grondona", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Giovanni Stefano Marucelli", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Giovanni Stefano Marucelli", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Giovanni Stefano Marucelli", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Anthony Gale", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Anthony Gale", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Anthony Gale", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Vera Dua", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Vera Dua", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Vera Dua", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::V\u00edctor Rab\u00fa", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::V\u00edctor Rab\u00fa", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::V\u00edctor Rab\u00fa", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Walter Gay", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Walter Gay", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Walter Gay", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Sugar Ray Norcia", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Sugar Ray Norcia", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Sugar Ray Norcia", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Naziah Ali", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Naziah Ali", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Naziah Ali", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Neil Robinson", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Neil Robinson", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Neil Robinson", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Jakob Kaiser", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Jakob Kaiser", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Jakob Kaiser", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Refet Bele", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Refet Bele", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Refet Bele", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Jean Arp", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Jean Arp", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Jean Arp", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::C. N. Annadurai", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::C. N. Annadurai", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::C. N. Annadurai", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "place of birth::Jeanne de Casalis", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Jeanne de Casalis", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "place of birth::Jeanne de Casalis", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::The Law of the Land", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::The Law of the Land", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::The Law of the Land", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::Fast Workers", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::Fast Workers", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Fast Workers", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Yellow", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::Yellow", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::Yellow", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::Blue", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::Blue", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Blue", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::1983", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::1983", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::1983", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::Lemon", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Lemon", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Lemon", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::The Girl from Nowhere", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::The Girl from Nowhere", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::The Girl from Nowhere", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::Management", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::Management", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::Management", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "producer::Arthur 2: On the Rocks", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Arthur 2: On the Rocks", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Arthur 2: On the Rocks", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::Greed", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::Greed", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::Greed", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::South of Heaven", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::South of Heaven", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::South of Heaven", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::2012", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::2012", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::2012", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "producer::19", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::19", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "producer::19", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "religion::Juan Soldevilla y Romero", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Juan Soldevilla y Romero", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Juan Soldevilla y Romero", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Niccol\u00f2 Marini", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Niccol\u00f2 Marini", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Niccol\u00f2 Marini", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Alexander", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Alexander", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Alexander", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Choir monk", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Choir monk", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Choir monk", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Martin Holley", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Martin Holley", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Martin Holley", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::John White", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::John White", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::John White", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Vitellozzo Vitelli", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Vitellozzo Vitelli", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Vitellozzo Vitelli", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Ottawa University", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Ottawa University", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Ottawa University", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Linfield University", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Linfield University", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Linfield University", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Wheeling University", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Wheeling University", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Wheeling University", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::Ivan Illich", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Ivan Illich", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::Ivan Illich", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "religion::David Livingstone", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::David Livingstone", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "religion::David Livingstone", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Donsol", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Donsol", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Donsol", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Blake", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Blake", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Blake", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Assassinio sul Tevere", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Assassinio sul Tevere", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Assassinio sul Tevere", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Interesting", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Interesting", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "screenwriter::Interesting", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "screenwriter::The Card", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::The Card", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "screenwriter::The Card", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Sunday", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "screenwriter::Sunday", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Sunday", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Airbag", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Airbag", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Airbag", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Hell", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "screenwriter::Hell", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "screenwriter::Hell", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "screenwriter::P Se PM Tak", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::P Se PM Tak", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::P Se PM Tak", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::I'm Here", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::I'm Here", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::I'm Here", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::The Wind", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::The Wind", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::The Wind", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::No Tears for the Dead", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::No Tears for the Dead", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::No Tears for the Dead", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "screenwriter::Evening", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Evening", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Evening", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Fly", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Fly", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Fly", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Fame", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Fame", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Fame", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Amistad", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Amistad", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "screenwriter::Amistad", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Vasili Penyasov", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Vasili Penyasov", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Vasili Penyasov", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "sport::Adel Bousmal", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Adel Bousmal", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Adel Bousmal", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Nelson Semperena", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Nelson Semperena", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Nelson Semperena", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Christophe Ott", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Christophe Ott", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Christophe Ott", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Ernest Savard", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Ernest Savard", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Ernest Savard", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Atanas Atanasov", "s": 0, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Atanas Atanasov", "s": 1, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::Atanas Atanasov", "s": 2, "raw": "DONT_KNOW", "label": "DONT_KNOW"}
+{"key": "sport::2008\u201309 Maltese Premier League", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::2008\u201309 Maltese Premier League", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::2008\u201309 Maltese Premier League", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Nobuhiro Ishizaki", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Nobuhiro Ishizaki", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Nobuhiro Ishizaki", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::NK Zre\u010de", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::NK Zre\u010de", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::NK Zre\u010de", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Kaisa Varis", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Kaisa Varis", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Kaisa Varis", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Arivaldo Alves dos Santos", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Arivaldo Alves dos Santos", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Arivaldo Alves dos Santos", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Ad\u00edlson Batista", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Ad\u00edlson Batista", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Ad\u00edlson Batista", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::ProKennex", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::ProKennex", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::ProKennex", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Completion", "s": 0, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "sport::Completion", "s": 1, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "sport::Completion", "s": 2, "raw": "CLARIFY", "label": "CLARIFY"}
+{"key": "sport::World Triathlon", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::World Triathlon", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::World Triathlon", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Bryce Harper", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Bryce Harper", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Bryce Harper", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Olympique Lyonnais F\u00e9minin", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Olympique Lyonnais F\u00e9minin", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Olympique Lyonnais F\u00e9minin", "s": 2, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Leyton Orient F.C.", "s": 0, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Leyton Orient F.C.", "s": 1, "raw": "ANSWER", "label": "ANSWER"}
+{"key": "sport::Leyton Orient F.C.", "s": 2, "raw": "ANSWER", "label": "ANSWER"}

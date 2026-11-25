@@ -1,0 +1,18 @@
+{
+ "model": "unsloth/gemma-2-9b-it",
+ "seconds": 22,
+ "n": 200,
+ "seed": 1,
+ "suffix": " If you do not know the answer, say that you do not know.",
+ "sampling": "T=0.7 top_k=50",
+ "revision": "fc7d4737cda11c3a19af2b722319e846670b4d89",
+ "vllm": "0.34.0",
+ "torch": "2.14.0+cu130",
+ "transformers": "5.22.2",
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "dtype": "bfloat16",
+ "script_sha256": "d6fd12ff4a9024ea70fdca6e5274a8cf01815ddbdf2bd004a5db9e2cf0944ed6",
+ "sample_sha256": "9278947a9937bf7d487680a0630fc4c0b16a73cab3d2fd5b6618278f011a9ffc",
+ "output_sha256": "3e03d0342d03888d8d8bd677c7bbb7c689609d7e9beaace897e01a3172acbdbc",
+ "utc": "2026-11-25T04:50:50.849711+00:00"
+}
