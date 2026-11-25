@@ -1,0 +1,121 @@
+outcome,band,decile,n,mean,lo,hi,method,draws,seed
+both,all,1,439,0.528474,0.486712,0.570995,questions within decile and band,5000,0
+both,all,2,437,0.438596,0.395881,0.481312,questions within decile and band,5000,0
+both,all,3,439,0.413819,0.374336,0.454822,questions within decile and band,5000,0
+both,all,4,436,0.399847,0.357034,0.444954,questions within decile and band,5000,0
+both,all,5,438,0.352359,0.313527,0.392713,questions within decile and band,5000,0
+both,all,6,438,0.321157,0.281583,0.361492,questions within decile and band,5000,0
+both,all,7,437,0.258581,0.222731,0.29672,questions within decile and band,5000,0
+both,all,8,438,0.188737,0.156012,0.222222,questions within decile and band,5000,0
+both,all,9,438,0.115677,0.0890411,0.143836,questions within decile and band,5000,0
+both,all,10,436,0.0443425,0.0275229,0.0634557,questions within decile and band,5000,0
+both,0 of 10 correct,1,355,0.553052,0.506103,0.6,questions within decile and band,5000,0
+both,0 of 10 correct,2,346,0.475915,0.427746,0.524085,questions within decile and band,5000,0
+both,0 of 10 correct,3,334,0.44511,0.39521,0.492016,questions within decile and band,5000,0
+both,0 of 10 correct,4,341,0.45259,0.40567,0.500489,questions within decile and band,5000,0
+both,0 of 10 correct,5,318,0.408805,0.360587,0.458071,questions within decile and band,5000,0
+both,0 of 10 correct,6,285,0.391813,0.34152,0.443275,questions within decile and band,5000,0
+both,0 of 10 correct,7,258,0.325581,0.276453,0.379845,questions within decile and band,5000,0
+both,0 of 10 correct,8,221,0.306184,0.253394,0.36052,questions within decile and band,5000,0
+both,0 of 10 correct,9,163,0.222904,0.167689,0.280164,questions within decile and band,5000,0
+both,0 of 10 correct,10,126,0.134921,0.0820106,0.193122,questions within decile and band,5000,0
+both,1 to 8 of 10,1,37,0.567568,0.414414,0.711712,questions within decile and band,5000,0
+both,1 to 8 of 10,2,44,0.462121,0.325758,0.598485,questions within decile and band,5000,0
+both,1 to 8 of 10,3,53,0.528302,0.402516,0.647799,questions within decile and band,5000,0
+both,1 to 8 of 10,4,47,0.340426,0.219858,0.468085,questions within decile and band,5000,0
+both,1 to 8 of 10,5,57,0.315789,0.204678,0.432749,questions within decile and band,5000,0
+both,1 to 8 of 10,6,73,0.319635,0.228311,0.420091,questions within decile and band,5000,0
+both,1 to 8 of 10,7,80,0.308333,0.216667,0.404167,questions within decile and band,5000,0
+both,1 to 8 of 10,8,87,0.16092,0.091954,0.237548,questions within decile and band,5000,0
+both,1 to 8 of 10,9,85,0.113725,0.054902,0.180392,questions within decile and band,5000,0
+both,1 to 8 of 10,10,88,0.0265152,0.00378788,0.0606061,questions within decile and band,5000,0
+both,9 or 10 of 10,1,47,0.312057,0.198582,0.432624,questions within decile and band,5000,0
+both,9 or 10 of 10,2,47,0.141844,0.0567376,0.241135,questions within decile and band,5000,0
+both,9 or 10 of 10,3,52,0.0961538,0.0320513,0.166667,questions within decile and band,5000,0
+both,9 or 10 of 10,4,48,0.0833333,0.0208333,0.166667,questions within decile and band,5000,0
+both,9 or 10 of 10,5,63,0.100529,0.037037,0.174603,questions within decile and band,5000,0
+both,9 or 10 of 10,6,80,0.0708333,0.025,0.125,questions within decile and band,5000,0
+both,9 or 10 of 10,7,99,0.043771,0.010101,0.0875421,questions within decile and band,5000,0
+both,9 or 10 of 10,8,130,0.00769231,0,0.0179487,questions within decile and band,5000,0
+both,9 or 10 of 10,9,190,0.0245614,0.00526316,0.0473684,questions within decile and band,5000,0
+both,9 or 10 of 10,10,222,0,0,0,questions within decile and band,5000,0
+regex24,all,1,439,0.655125,0.615034,0.694991,questions within decile and band,5000,0
+regex24,all,2,437,0.575858,0.532491,0.618996,questions within decile and band,5000,0
+regex24,all,3,439,0.511731,0.469473,0.553303,questions within decile and band,5000,0
+regex24,all,4,436,0.508601,0.466396,0.551723,questions within decile and band,5000,0
+regex24,all,5,438,0.445548,0.405134,0.487103,questions within decile and band,5000,0
+regex24,all,6,438,0.395091,0.354566,0.43653,questions within decile and band,5000,0
+regex24,all,7,437,0.332265,0.291759,0.372998,questions within decile and band,5000,0
+regex24,all,8,438,0.241324,0.205137,0.276715,questions within decile and band,5000,0
+regex24,all,9,438,0.151941,0.122603,0.182877,questions within decile and band,5000,0
+regex24,all,10,436,0.0608945,0.0419725,0.0815367,questions within decile and band,5000,0
+regex24,0 of 10 correct,1,355,0.698732,0.655775,0.740849,questions within decile and band,5000,0
+regex24,0 of 10 correct,2,346,0.633671,0.586846,0.681358,questions within decile and band,5000,0
+regex24,0 of 10 correct,3,334,0.56482,0.516014,0.613473,questions within decile and band,5000,0
+regex24,0 of 10 correct,4,341,0.580645,0.534457,0.628299,questions within decile and band,5000,0
+regex24,0 of 10 correct,5,318,0.524843,0.476411,0.574371,questions within decile and band,5000,0
+regex24,0 of 10 correct,6,285,0.489825,0.439123,0.540004,questions within decile and band,5000,0
+regex24,0 of 10 correct,7,258,0.427519,0.374608,0.480814,questions within decile and band,5000,0
+regex24,0 of 10 correct,8,221,0.390498,0.335967,0.446606,questions within decile and band,5000,0
+regex24,0 of 10 correct,9,163,0.304601,0.244785,0.367485,questions within decile and band,5000,0
+regex24,0 of 10 correct,10,126,0.17619,0.121032,0.236121,questions within decile and band,5000,0
+regex24,1 to 8 of 10,1,37,0.585135,0.444595,0.72027,questions within decile and band,5000,0
+regex24,1 to 8 of 10,2,44,0.571591,0.437472,0.698892,questions within decile and band,5000,0
+regex24,1 to 8 of 10,3,53,0.563208,0.438679,0.681132,questions within decile and band,5000,0
+regex24,1 to 8 of 10,4,47,0.393617,0.267021,0.526596,questions within decile and band,5000,0
+regex24,1 to 8 of 10,5,57,0.341228,0.22807,0.458794,questions within decile and band,5000,0
+regex24,1 to 8 of 10,6,73,0.365068,0.271233,0.465771,questions within decile and band,5000,0
+regex24,1 to 8 of 10,7,80,0.35875,0.266859,0.455016,questions within decile and band,5000,0
+regex24,1 to 8 of 10,8,87,0.214368,0.138491,0.296566,questions within decile and band,5000,0
+regex24,1 to 8 of 10,9,85,0.139412,0.0770588,0.211176,questions within decile and band,5000,0
+regex24,1 to 8 of 10,10,88,0.0477273,0.0170455,0.0875,questions within decile and band,5000,0
+regex24,9 or 10 of 10,1,47,0.380851,0.259574,0.50641,questions within decile and band,5000,0
+regex24,9 or 10 of 10,2,47,0.154255,0.0648936,0.260638,questions within decile and band,5000,0
+regex24,9 or 10 of 10,3,52,0.118269,0.05,0.197139,questions within decile and band,5000,0
+regex24,9 or 10 of 10,4,48,0.109375,0.03125,0.200026,questions within decile and band,5000,0
+regex24,9 or 10 of 10,5,63,0.139683,0.0666468,0.220635,questions within decile and band,5000,0
+regex24,9 or 10 of 10,6,80,0.085,0.031875,0.15,questions within decile and band,5000,0
+regex24,9 or 10 of 10,7,99,0.0626263,0.0252525,0.106061,questions within decile and band,5000,0
+regex24,9 or 10 of 10,8,130,0.00576923,0.00153846,0.0123077,questions within decile and band,5000,0
+regex24,9 or 10 of 10,9,190,0.0265789,0.00894079,0.0494737,questions within decile and band,5000,0
+regex24,9 or 10 of 10,10,222,0.000675676,0,0.00157658,questions within decile and band,5000,0
+regex96,all,1,439,0.662111,0.621109,0.703113,questions within decile and band,5000,0
+regex96,all,2,437,0.575896,0.532418,0.618612,questions within decile and band,5000,0
+regex96,all,3,439,0.522399,0.47836,0.56492,questions within decile and band,5000,0
+regex96,all,4,436,0.505352,0.461009,0.550459,questions within decile and band,5000,0
+regex96,all,5,438,0.450533,0.406393,0.495434,questions within decile and band,5000,0
+regex96,all,6,438,0.405632,0.363775,0.447489,questions within decile and band,5000,0
+regex96,all,7,437,0.334859,0.293669,0.375286,questions within decile and band,5000,0
+regex96,all,8,438,0.248858,0.212329,0.287671,questions within decile and band,5000,0
+regex96,all,9,438,0.149163,0.119482,0.179604,questions within decile and band,5000,0
+regex96,all,10,436,0.059633,0.0397554,0.0810398,questions within decile and band,5000,0
+regex96,0 of 10 correct,1,355,0.702347,0.658216,0.74554,questions within decile and band,5000,0
+regex96,0 of 10 correct,2,346,0.633911,0.587645,0.680154,questions within decile and band,5000,0
+regex96,0 of 10 correct,3,334,0.57485,0.526946,0.622754,questions within decile and band,5000,0
+regex96,0 of 10 correct,4,341,0.576735,0.526882,0.626588,questions within decile and band,5000,0
+regex96,0 of 10 correct,5,318,0.532495,0.477987,0.583857,questions within decile and band,5000,0
+regex96,0 of 10 correct,6,285,0.502924,0.451433,0.555556,questions within decile and band,5000,0
+regex96,0 of 10 correct,7,258,0.428941,0.375969,0.484496,questions within decile and band,5000,0
+regex96,0 of 10 correct,8,221,0.404223,0.343891,0.464555,questions within decile and band,5000,0
+regex96,0 of 10 correct,9,163,0.298569,0.235174,0.361963,questions within decile and band,5000,0
+regex96,0 of 10 correct,10,126,0.174603,0.113757,0.238095,questions within decile and band,5000,0
+regex96,1 to 8 of 10,1,37,0.648649,0.513514,0.783784,questions within decile and band,5000,0
+regex96,1 to 8 of 10,2,44,0.568182,0.424242,0.712121,questions within decile and band,5000,0
+regex96,1 to 8 of 10,3,53,0.584906,0.465409,0.710692,questions within decile and band,5000,0
+regex96,1 to 8 of 10,4,47,0.397163,0.262411,0.531915,questions within decile and band,5000,0
+regex96,1 to 8 of 10,5,57,0.333333,0.222222,0.450292,questions within decile and band,5000,0
+regex96,1 to 8 of 10,6,73,0.388128,0.292237,0.493151,questions within decile and band,5000,0
+regex96,1 to 8 of 10,7,80,0.3625,0.266667,0.4625,questions within decile and band,5000,0
+regex96,1 to 8 of 10,8,87,0.214559,0.1341,0.298851,questions within decile and band,5000,0
+regex96,1 to 8 of 10,9,85,0.129412,0.0666667,0.2,questions within decile and band,5000,0
+regex96,1 to 8 of 10,10,88,0.0416667,0.00757576,0.0833333,questions within decile and band,5000,0
+regex96,9 or 10 of 10,1,47,0.368794,0.241135,0.496454,questions within decile and band,5000,0
+regex96,9 or 10 of 10,2,47,0.156028,0.0638298,0.262411,questions within decile and band,5000,0
+regex96,9 or 10 of 10,3,52,0.121795,0.0448718,0.205128,questions within decile and band,5000,0
+regex96,9 or 10 of 10,4,48,0.104167,0.0208333,0.208333,questions within decile and band,5000,0
+regex96,9 or 10 of 10,5,63,0.142857,0.0634921,0.232804,questions within decile and band,5000,0
+regex96,9 or 10 of 10,6,80,0.075,0.0291667,0.129167,questions within decile and band,5000,0
+regex96,9 or 10 of 10,7,99,0.0673401,0.026936,0.114478,questions within decile and band,5000,0
+regex96,9 or 10 of 10,8,130,0.00769231,0,0.0179487,questions within decile and band,5000,0
+regex96,9 or 10 of 10,9,190,0.0298246,0.0105263,0.0526316,questions within decile and band,5000,0
+regex96,9 or 10 of 10,10,222,0.0015015,0,0.0045045,questions within decile and band,5000,0

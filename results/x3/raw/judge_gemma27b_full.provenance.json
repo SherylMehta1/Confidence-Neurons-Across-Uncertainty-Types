@@ -1,0 +1,16 @@
+{
+ "model": "unsloth/gemma-2-27b-it",
+ "repetition_penalty": 1.0,
+ "seconds": 116,
+ "n": 13128,
+ "revision": "c3d7bab17f14fbda4ad59f1dec764eb7562c7e55",
+ "vllm": "0.34.0",
+ "torch": "2.14.0+cu130",
+ "transformers": "5.22.2",
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "dtype": "bfloat16",
+ "script_sha256": "d6fd12ff4a9024ea70fdca6e5274a8cf01815ddbdf2bd004a5db9e2cf0944ed6",
+ "sample_sha256": "9278947a9937bf7d487680a0630fc4c0b16a73cab3d2fd5b6618278f011a9ffc",
+ "output_sha256": "8fadd087331c80954df216d163b3687cb6164d8cd9fa55aaadf65fe9509f0ed2",
+ "utc": "2026-11-25T05:13:48.616888+00:00"
+}
