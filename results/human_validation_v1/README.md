@@ -64,3 +64,7 @@ The fake key had 120 ids in the four cells, with random judge verdicts. The two 
 ## Checksums
 
 `CHECKSUMS.txt` (SHA-256) covers both sheets, both keys, `score_human.py`, `test_score_human.py`, `plan.md` and this README. `plan.md` also lists the hashes fixed before scoring. Verify with `shasum -a 256 -c CHECKSUMS.txt` from inside this folder.
+
+## Record
+
+- 28 Nov 2026: `plan.md` and every file in this folder were first committed, before any labelling, in commit `833d9116594fd314a492b3fb6e875890d398807c` (arr-v2, 2026-11-28 19:02:46 +0530). This line was added in a later commit because a commit cannot contain its own hash.
